@@ -1,0 +1,125 @@
+{
+  "source": "Supplied fresh_qubits_pra (1).pdf, Table I; Eqs. (2), (3)/(28), (4)",
+  "scope": "Exact binomial-tail scalar model; does not verify the general theorem or simulate the quantum unitary.",
+  "time_convention": "T is the largest integer with lambda**T >= 1/2; t=0 is the write and t counts subsequent hold cycles.",
+  "method": "Exact rational binomial sum; outward-rounded Decimal logarithm and square-root bounds certify integer floors.",
+  "parameters": {
+    "q": "0.9",
+    "copies": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "decimal_precision": 80
+  },
+  "python_version": "3.14.7",
+  "command": [
+    "python",
+    "scripts/reproduce_table1.py",
+    "--output-dir",
+    "results/table1"
+  ],
+  "rows": [
+    {
+      "q": "0.9",
+      "copies": 1,
+      "fresh_qubits": 3,
+      "total_qubits": 4,
+      "logical_error": "0.05",
+      "decay_factor": "0.9",
+      "lifetime_cycles": 6,
+      "guaranteed_cycles": 0,
+      "decimal_precision": 80,
+      "working_precision": 84
+    },
+    {
+      "q": "0.9",
+      "copies": 3,
+      "fresh_qubits": 5,
+      "total_qubits": 8,
+      "logical_error": "0.00725",
+      "decay_factor": "0.9855",
+      "lifetime_cycles": 47,
+      "guaranteed_cycles": 3,
+      "decimal_precision": 80,
+      "working_precision": 86
+    },
+    {
+      "q": "0.9",
+      "copies": 5,
+      "fresh_qubits": 7,
+      "total_qubits": 12,
+      "logical_error": "0.001158125",
+      "decay_factor": "0.99768375",
+      "lifetime_cycles": 298,
+      "guaranteed_cycles": 15,
+      "decimal_precision": 80,
+      "working_precision": 86
+    },
+    {
+      "q": "0.9",
+      "copies": 7,
+      "fresh_qubits": 9,
+      "total_qubits": 16,
+      "logical_error": "0.000193578125",
+      "decay_factor": "0.99961284375",
+      "lifetime_cycles": 1790,
+      "guaranteed_cycles": 83,
+      "decimal_precision": 80,
+      "working_precision": 88
+    },
+    {
+      "q": "0.9",
+      "copies": 9,
+      "fresh_qubits": 11,
+      "total_qubits": 20,
+      "logical_error": "0.00003322220703125",
+      "decay_factor": "0.9999335555859375",
+      "lifetime_cycles": 10431,
+      "guaranteed_cycles": 440,
+      "decimal_precision": 80,
+      "working_precision": 90
+    },
+    {
+      "q": "0.9",
+      "copies": 11,
+      "fresh_qubits": 13,
+      "total_qubits": 24,
+      "logical_error": "0.00000580134505859375",
+      "decay_factor": "0.9999883973098828125",
+      "lifetime_cycles": 59739,
+      "guaranteed_cycles": 2316,
+      "decimal_precision": 80,
+      "working_precision": 92
+    },
+    {
+      "q": "0.9",
+      "copies": 13,
+      "fresh_qubits": 15,
+      "total_qubits": 28,
+      "logical_error": "0.000001025544931689453125",
+      "decay_factor": "0.99999794891013662109375",
+      "lifetime_cycles": 337940,
+      "guaranteed_cycles": 12191,
+      "decimal_precision": 80,
+      "working_precision": 92
+    },
+    {
+      "q": "0.9",
+      "copies": 15,
+      "fresh_qubits": 17,
+      "total_qubits": 32,
+      "logical_error": "1.82957337871337890625E-7",
+      "decay_factor": "0.99999963408532425732421875",
+      "lifetime_cycles": 1894286,
+      "guaranteed_cycles": 64163,
+      "decimal_precision": 80,
+      "working_precision": 94
+    }
+  ]
+}

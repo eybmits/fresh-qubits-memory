@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fresh-qubits-memory"
+version = "0.1.0"
+description = "Reproducible majority-refresh calculations for a fresh-qubit reset-memory research project"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "Markus Baumann"}]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/eybmits/fresh-qubits-memory"
+
+[tool.setuptools.packages.find]
+where = ["src"]

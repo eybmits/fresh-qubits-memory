@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this research repository, cite it and consult paper/manuscript.bib for the supplied manuscript."
+type: software
+title: "Fresh Qubits Memory: Research and Reproduction Workspace"
+authors:
+  - family-names: Baumann
+    given-names: Markus
+    affiliation: Ludwig-Maximilians-Universität München
+version: 0.1.0
+repository-code: "https://github.com/eybmits/fresh-qubits-memory"
+abstract: "Research workspace and independent numerical reproduction of the majority-refresh example in the supplied Fresh qubits set the memory manuscript."
+keywords:
+  - quantum reservoir computing
+  - memory
+  - depolarizing noise
+  - fresh qubits
+  - reproducibility
