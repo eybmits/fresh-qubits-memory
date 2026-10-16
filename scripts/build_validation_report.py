@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Build a reviewable validation report from saved, seeded experiment rows."""
+"""Rebuild the historical revision-3 report from its frozen experiment inputs.
+
+The narrative includes observations and verification receipts from the original
+run. It is not a general report generator for new simulations. Fixed input
+hashes prevent those historical statements from being paired with new data.
+"""
 
 import csv
 import hashlib
@@ -16,12 +21,51 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, Tabl
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'results/empirical-2026-10-16'
 
+# Approved input bytes from the original 16 October 2026 run. Do not derive this
+# set from the mutable output manifest: a new run needs a newly reviewed report.
+FROZEN_INPUT_SHA256 = {
+    'active_passive.csv': '3364ab46eeb4f06b009f7215843830e5226c84f76e2b972978f57da26904a88d',
+    'cooling.csv': '53ded75c42a50af3502bc619f1a8812b44953b2a3e9ffb358fb7efd002da0ca1',
+    'correlated_noise.csv': '2127736b92b7262ce6df2d90dec781c10012dc852162108d57218ca030491fa2',
+    'full_channel.csv': '8fc3222c4a45226d46ca5f08efd4e64a486e0d6812de1edc0b63230fdc0adfa8',
+    'importance_replicates.csv': '0269cab426d6d4143de89b0e23e945c0f765f2ecfc992f0d5b3c24c7fef12c46',
+    'importance_sampling.csv': 'f79be9f0bb513cc3e1ff41ea86102d3e558e975c0da4c4cfd0e349219a9ef0be',
+    'metadata.json': 'db2ffd1b356aa3b3b2d6d6878f24b278613c88d68385940d9a98b9c5cd6fce6e',
+    'noise_controls.csv': '6cc86788bafb76deeec3fb540b5e06f09a5a0834577b7f6652103d7961208d0c',
+    'physical_errors.csv': 'da08b2d38003aaa5a5a3587f344cc5b7d844ef267576bda979472957798de15c',
+    'physical_trajectories.csv': '055a9c4b5cb3426f2d15d8f707337c7517f348e0a8cba3ef9df7615a08ac5343',
+    'quantum_and_noise.png': 'e3d7491dadb20110df246b6ae57ac7c30dcf2116ec0053f1bd6f812002e4ad9b',
+    'quantum_checks.csv': '67dcffc3eba008fc3e5d544d0b69e1ab751501bf7ffe717af5a19ce741ac620f',
+    'quantum_curves.csv': 'f0fe9bac133dd10e256a0d4a9456e8dc571d84c75d5de8081bd8d4c86867dc80',
+    'quantum_signed_operators.csv': '80cd603f11be4eebfcdc8074d723ab652dd3b5eecc57f5de80b78f7cd6dd7e65',
+    'shift_register.csv': '6363fe6f03611fd26f93d8cfee46eba5c9dc9dedfa86627438cb152d74f7d810',
+    'validation_overview.png': '2207dce123b21c71c6f90c0a65f118d409a89c9a4fbb7b48a76e1554bce76765',
+}
+
+
+def verify_frozen_inputs(directory):
+    """Reject missing or altered historical evidence before writing outputs."""
+    problems = []
+    for name, expected in FROZEN_INPUT_SHA256.items():
+        path = directory / name
+        if not path.is_file():
+            problems.append(f'{name}: missing')
+        elif hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+            problems.append(f'{name}: SHA-256 mismatch')
+    if problems:
+        raise ValueError(
+            'This generator only rebuilds the frozen 16 October 2026 revision-3 '
+            'report. New simulation results require a separately reviewed report. '
+            'No report outputs were written.\n' + '\n'.join(problems)
+        )
+
 
 def read(name):
     return list(csv.DictReader((OUT/(name+'.csv')).open()))
 
 
 def main():
+    verify_frozen_inputs(OUT)
     meta=json.loads((OUT/'metadata.json').read_text())
     direct=read('physical_errors')
     rare=read('importance_sampling')

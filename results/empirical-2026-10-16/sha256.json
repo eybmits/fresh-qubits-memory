@@ -20,8 +20,8 @@
   "results/empirical-2026-10-16/validation_overview.pdf": "74dc18e0bda99b99e2e4b26528e09f7ca348631b47c040bef338e1669249f704",
   "results/empirical-2026-10-16/validation_overview.png": "2207dce123b21c71c6f90c0a65f118d409a89c9a4fbb7b48a76e1554bce76765",
   "results/empirical-2026-10-16/validation_report.pdf": "8bdf252c20be3eaec60a5dbfb045bbe8f193ae9a23a346b4e9a4c7dabae642fc",
-  "scripts/validate_empirical.py": "775cd688c456da444d3708e55c25ec70892b5f3c53f1fcf2df1f90240ace046e",
-  "scripts/build_validation_report.py": "101656bc1cae3e1c9bc32aae7c4bc25ebcaefbbdfda28cb7ed775566e155463b",
+  "scripts/validate_empirical.py": "756a89b902eb875c0e22c849b63c380157581582599f4cc31d60af6934819287",
+  "scripts/build_validation_report.py": "f180b25d8147987f826bb8c09571330202d5871660c8df40e259599b215c3b73",
   "src/fresh_qubits_memory/validation.py": "c61aa7de572c8da37d83785cb2874704153bb0659a991923cc76373cd2dd5a7a",
   "tests/test_validation.py": "7b5ef3d62650c4548b89367c42fc72101403d4b5fb610f871a43bc3317c765b8",
   "experiments/empirical-2026-10-16.md": "5b4e2040945d7e940c4a41b95b41fa89fad73138959ea543bcaba892c0563dc5"

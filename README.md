@@ -52,9 +52,10 @@ The [protocol](experiments/empirical-2026-10-16.md), CSV data, seeds, source has
 ```bash
 python -m pip install -e ".[validation]"
 PYTHONPATH=src python -m unittest discover -s tests -v
-MPLCONFIGDIR=work/mpl-cache OPENBLAS_NUM_THREADS=1 python scripts/validate_empirical.py
-python scripts/build_validation_report.py
+MPLCONFIGDIR=work/mpl-cache OPENBLAS_NUM_THREADS=1 python scripts/validate_empirical.py --output-dir results/local/empirical-replay
 ```
+
+Keep new runs separate from the archived evidence. `python scripts/build_validation_report.py` rebuilds the historical report from its frozen inputs and rejects changed data before writing. Its prose describes the original revision 3 experiment, not a new run or the current manuscript revision.
 
 ## Repository map
 

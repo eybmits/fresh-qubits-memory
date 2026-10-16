@@ -13,6 +13,7 @@ import math
 import os
 from pathlib import Path
 import platform
+import shlex
 import subprocess
 import sys
 import time
@@ -437,7 +438,7 @@ def main():
         print(json.dumps(summary[label]),flush=True)
     plots(out)
     files=['paper/source/memory_limits.tex','src/fresh_qubits_memory/validation.py','scripts/validate_empirical.py','experiments/empirical-2026-10-16.md']
-    metadata=dict(seed=SEED,child_seeds={'full_channel':SEED+1,'sampling':SEED+2,'quantum':SEED+3,'cooling':SEED+4,'importance_sampling':SEED+5},precision='float64 / complex128; exact Fraction reference majority tails',python=platform.python_version(),numpy=np.__version__,scipy=scipy.__version__,matplotlib=matplotlib.__version__,git_base=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),command='MPLCONFIGDIR=work/mpl-cache OPENBLAS_NUM_THREADS=1 python3 scripts/validate_empirical.py --output-dir results/empirical-2026-10-16',source_sha256={p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in files},summary=summary)
+    metadata=dict(seed=SEED,child_seeds={'full_channel':SEED+1,'sampling':SEED+2,'quantum':SEED+3,'cooling':SEED+4,'importance_sampling':SEED+5},precision='float64 / complex128; exact Fraction reference majority tails',python=platform.python_version(),numpy=np.__version__,scipy=scipy.__version__,matplotlib=matplotlib.__version__,git_base=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),command=shlex.join([sys.executable,str(Path(__file__).resolve()),*sys.argv[1:]]),working_directory=str(Path.cwd()),output_directory=str(out.resolve()),environment={name:os.environ.get(name) for name in ('MPLCONFIGDIR','OPENBLAS_NUM_THREADS')},source_sha256={p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in files},summary=summary)
     (out/'metadata.json').write_text(json.dumps(metadata,indent=2,allow_nan=False)+'\n')
     print('All experiments complete; outputs in '+str(out),flush=True)
 
