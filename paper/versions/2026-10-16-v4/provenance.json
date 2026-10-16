@@ -23,8 +23,8 @@
   ],
   "output": {
     "path": "paper/memory_limits_2026-10-16-v4.pdf",
-    "sha256": "fcd218eeb823eebed218c6d09b55ddd77def82f3a54baefe87734da7d113826d",
-    "size_bytes": 839535,
+    "sha256": "e0d8176e9f3ba77a8ab3c5c7a0e4c4bde36b492422a2703dc1999a471b9bdff6",
+    "size_bytes": 842474,
     "pages": 17
   },
   "source_files": [
@@ -150,8 +150,8 @@
     },
     {
       "path": "paper/source/memory_limits.tex",
-      "sha256": "5bad1a4fafdf9edeb21a0207760efe3bded9e49a640ffa93475be93735421cc1",
-      "size_bytes": 86464
+      "sha256": "6064ac62cb625443af37f509d1d1a1fcd4b36d8e45a2d92c8c1356e82cdc5d48",
+      "size_bytes": 86848
     },
     {
       "path": "paper/source/refs.bib",
@@ -225,7 +225,8 @@
     "Normalized twocolumn to APS reprint; added Contact author prefix and PDF metadata; fixed date to 16 October 2026.",
     "Repaired three array/REVTeX table preambles with native paragraph columns and equivalent cell-local alignment.",
     "Named Markus explicitly in existing assistance acknowledgment without newly certifying its claims.",
-    "Updated source reproduction instructions; mathematical prose, equations, figure assets and numerical data otherwise retained."
+    "Updated source reproduction instructions; mathematical prose, equations, figure assets and numerical data otherwise retained.",
+    "Author-metadata correction: added all three verified ORCID identifiers with linked icons and both QAR-Lab/chair affiliations, including department and Oettingenstrasse postal address; title, author order, abstract and scientific body unchanged."
   ],
   "previous_version": {
     "provenance": "paper/versions/2026-10-16/provenance.json",
@@ -259,13 +260,73 @@
     "washout_worst_checked_trace_distance": 5.805e-07,
     "exact_numbers_max_abs_difference": 5.72e-14,
     "rep_curve_points_identical": 700,
-    "full_simulation_campaigns_rerun": false
+    "full_simulation_campaigns_rerun": false,
+    "author_metadata_correction": {
+      "pdf_pages": 17,
+      "abstract_and_entire_source_after_begin_abstract_identical_to_commit": "701742a",
+      "three_orcid_urls_verified": true,
+      "both_affiliations_assigned_to_all_three_authors": true,
+      "all17pages_rendered_and_reviewed_after_correction": true,
+      "no_overfull_or_unresolved": true,
+      "aps_orcid_authentication": false,
+      "upload_source_fresh_compile_succeeded": true,
+      "upload_source_pdf_text_exact": true,
+      "upload_source_all17pages_pixel_identical_at900px": true
+    }
   },
   "build": {
     "command": "latexmk -cd -pdf -interaction=nonstopmode -halt-on-error -outdir=../../work/manuscript-build-2026-10-16-v4 paper/source/memory_limits.tex",
     "class": "REVTeX 4.2f",
     "options": "aps,pra,reprint,superscriptaddress,floatfix",
-    "engine": "pdfTeX 1.40.27 (TeX Live 2025)"
+    "engine": "pdfTeX 1.40.27 (TeX Live 2025)",
+    "additional_front_matter_package": "orcidlink (with TikZ dependencies)"
   },
-  "status": "Prepared manuscript; not submitted. Build and numerical checks are not proof review or acceptance."
+  "status": "Manuscript prepared; unsubmitted APS draft es2026oct16_686 exists. No file upload; browser upload permission declined. No final submission or author declarations accepted.",
+  "previous_revision_4_outputs": [
+    {
+      "reason": "Before ORCID and dual-affiliation correction",
+      "source_commit": "701742a",
+      "path": "paper/memory_limits_2026-10-16-v4.pdf",
+      "sha256": "fcd218eeb823eebed218c6d09b55ddd77def82f3a54baefe87734da7d113826d",
+      "size_bytes": 839535,
+      "pages": 17
+    }
+  ],
+  "author_identifiers": [
+    {
+      "name": "Markus Baumann",
+      "orcid": "0009-0007-3575-1006",
+      "affiliation_ids": [
+        "qar",
+        "mobile"
+      ]
+    },
+    {
+      "name": "Jonas Stein",
+      "orcid": "0000-0001-5727-9151",
+      "affiliation_ids": [
+        "qar",
+        "mobile"
+      ]
+    },
+    {
+      "name": "Claudia Linnhoff-Popien",
+      "orcid": "0000-0001-6284-9286",
+      "affiliation_ids": [
+        "qar",
+        "mobile"
+      ]
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "qar",
+      "name": "Quantum Applications and Research Laboratory (QAR-Lab), Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany"
+    },
+    {
+      "id": "mobile",
+      "name": "Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany"
+    }
+  ],
+  "author_metadata_sources": "paper/submission/2026-10-16-v4/author_metadata_sources.txt"
 }
