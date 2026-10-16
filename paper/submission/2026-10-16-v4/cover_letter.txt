@@ -1,0 +1,24 @@
+16 October 2026
+
+Editors of Physical Review A
+
+Dear Editors,
+
+Please consider our manuscript, "The Memory Limits of Noisy Quantum Reservoirs," by Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien, as a Regular Article in Physical Review A.
+
+Quantum reservoir computing uses a fixed quantum system to process sequential inputs. A basic design question is how long past inputs can remain distinguishable when noise acts at every step. Our manuscript identifies the supply of reinitialized input qubits as the resource controlling a universal bound on driven memory under independent depolarizing noise.
+
+For fixed noise strength and accuracy, we establish an upper bound on memory depth that is exponential in the number k of reinitialized input qubits per step and independent of total reservoir size. The bound applies uniformly to reservoir unitaries and input encodings after initialization has washed out. A reversible repetition-code construction attains exponential scaling in k. We also show how additional unital noise preserves the upper bound and how non-unital relaxation supplies another entropy sink.
+
+The revised manuscript includes density-matrix simulations of transverse-field Ising and Haar-random reservoirs, with scans of reservoir size, input-register width, noise strength, and evolution time. These compute sampled memory-depth witnesses, interpreted as lower bounds obtained from a finite set of input histories. They illustrate the behavior of standard architectures alongside the attainable construction; they do not evaluate the exact supremum over all histories or constitute a trained forecasting benchmark.
+
+The work connects open quantum dynamics, information retention, and resources for quantum information processing. We believe it will interest Physical Review A readers studying noisy quantum systems, quantum channels, and quantum reservoir computing. The manuscript establishes a memory-resource law without claiming quantum computational advantage.
+
+Proofs, detailed numerical methods, and a disclosure of language-model assistance are included in the manuscript. The Supplemental Material contains the simulator, supplied simulation data, numerical calculations, and figure-generation sources, with dependencies and reproduction instructions.
+
+Thank you for considering the manuscript.
+
+Sincerely,
+Markus Baumann
+Ludwig-Maximilians-Universität München
+markus.baumann@campus.lmu.de

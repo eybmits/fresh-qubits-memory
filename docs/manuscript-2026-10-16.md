@@ -1,6 +1,8 @@
 # Manuscript revision: 16 October 2026
 
-The current draft is **The Memory Limits of Noisy Quantum Reservoirs** ([PDF](../paper/memory_limits_2026-10-16.pdf), [source](../paper/source/memory_limits.tex)).
+This historical revision is **The Memory Limits of Noisy Quantum Reservoirs** ([PDF](../paper/memory_limits_2026-10-16.pdf), [archived source](../paper/versions/2026-10-16/source-final-v3.zip)).
+
+Superseded by [revision 4](manuscript-2026-10-16-v4.md); the checks below describe this earlier version.
 
 ## Changes in this update
 

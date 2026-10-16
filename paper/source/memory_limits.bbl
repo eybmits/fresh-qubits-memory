@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{34}%
+\begin{thebibliography}{35}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -318,6 +318,15 @@
   {https://doi.org/10.22331/q-2024-03-20-1291} {\bibfield  {journal} {\bibinfo
   {journal} {Quantum}\ }\textbf {\bibinfo {volume} {8}},\ \bibinfo {pages}
   {1291} (\bibinfo {year} {2024})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Freiheit}\ and\ \citenamefont
+  {Campaioli}(2026)}]{Freiheit2026}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Freiheit}}\ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Campaioli}},\ }\href@noop {} {\bibinfo {title} {Superextensive learning in
+  quantum reservoirs at the onset of information scrambling}} (\bibinfo {year}
+  {2026}),\ \Eprint {https://arxiv.org/abs/2608.25511} {arXiv:2608.25511
+  [quant-ph]} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Aharonov}\ \emph {et~al.}(1996)\citenamefont
   {Aharonov}, \citenamefont {Ben-Or}, \citenamefont {Impagliazzo},\ and\
   \citenamefont {Nisan}}]{Aharonov1996}%
@@ -387,8 +396,8 @@
 \bibitem [{SM()}]{SM}%
   \BibitemOpen
   \href@noop {} {}\bibinfo {note} {See Supplemental Material at [URL will be
-  inserted by publisher] for a Python script that reproduces all numerical
-  values and data figures of this article.}\BibitemShut {Stop}%
+  inserted by publisher] for the Python code that reproduces all numerical
+  values, simulations, and data figures of this article.}\BibitemShut {Stop}%
 \bibitem [{\citenamefont {Nelson}\ \emph {et~al.}(2026)\citenamefont {Nelson},
   \citenamefont {Rajakumar},\ and\ \citenamefont {Gullans}}]{Nelson2026}%
   \BibitemOpen
@@ -402,6 +411,20 @@
   Informatics (LIPIcs)}, Vol.\ \bibinfo {volume} {383}\ (\bibinfo  {publisher}
   {Schloss Dagstuhl--Leibniz-Zentrum f\"ur Informatik},\ \bibinfo {year}
   {2026})\ pp.\ \bibinfo {pages} {38:1--38:13}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Mart\'inez-Pe\~na}\ \emph {et~al.}(2021)\citenamefont
+  {Mart\'inez-Pe\~na}, \citenamefont {Giorgi}, \citenamefont {Nokkala},
+  \citenamefont {Soriano},\ and\ \citenamefont {Zambrini}}]{MartinezPena2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Mart\'inez-Pe\~na}}, \bibinfo {author} {\bibfnamefont {G.~L.}\ \bibnamefont
+  {Giorgi}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Nokkala}},
+  \bibinfo {author} {\bibfnamefont {M.~C.}\ \bibnamefont {Soriano}},\ and\
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Zambrini}},\ }\bibfield
+  {title} {\bibinfo {title} {Dynamical phase transitions in quantum reservoir
+  computing},\ }\href {https://doi.org/10.1103/PhysRevLett.127.100502}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
+  {\bibinfo {volume} {127}},\ \bibinfo {pages} {100502} (\bibinfo {year}
+  {2021})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Xiong}\ \emph {et~al.}(2025)\citenamefont {Xiong},
   \citenamefont {Facelli}, \citenamefont {Sahebi}, \citenamefont {Agnel},
   \citenamefont {Chotibut}, \citenamefont {Thanasilp},\ and\ \citenamefont
@@ -445,20 +468,6 @@
   computing}} (\bibinfo {year} {2026}),\ \Eprint
   {https://arxiv.org/abs/2609.23429} {arXiv:2609.23429 [quant-ph]} \BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {Mart\'inez-Pe\~na}\ \emph {et~al.}(2021)\citenamefont
-  {Mart\'inez-Pe\~na}, \citenamefont {Giorgi}, \citenamefont {Nokkala},
-  \citenamefont {Soriano},\ and\ \citenamefont {Zambrini}}]{MartinezPena2021}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
-  {Mart\'inez-Pe\~na}}, \bibinfo {author} {\bibfnamefont {G.~L.}\ \bibnamefont
-  {Giorgi}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Nokkala}},
-  \bibinfo {author} {\bibfnamefont {M.~C.}\ \bibnamefont {Soriano}},\ and\
-  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Zambrini}},\ }\bibfield
-  {title} {\bibinfo {title} {Dynamical phase transitions in quantum reservoir
-  computing},\ }\href {https://doi.org/10.1103/PhysRevLett.127.100502}
-  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
-  {\bibinfo {volume} {127}},\ \bibinfo {pages} {100502} (\bibinfo {year}
-  {2021})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Hoeffding}(1963)}]{Hoeffding1963}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont

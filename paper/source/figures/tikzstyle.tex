@@ -1,0 +1,47 @@
+% Shared TikZ style for the schematics. Same typeface, size (8 pt) and palette as figstyle.py:
+% blue = memory / reservoir dynamics, red = noise and the limit, purple = input, greys = neutral.
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathreplacing,patterns.meta,shapes.geometric,shadows}
+\definecolor{cInk}{HTML}{1A1A1A}
+\definecolor{cBlue}{HTML}{3C7FE0}
+\definecolor{cBlueDark}{HTML}{1D4C9C}
+\definecolor{cBlueLight}{HTML}{8DB8F0}
+\definecolor{cBlueFill}{HTML}{DDE9F9}
+\definecolor{cRed}{HTML}{EF4B3B}
+\definecolor{cRedDark}{HTML}{B8301F}
+\definecolor{cRedFill}{HTML}{FCE3DE}
+\definecolor{cPurple}{HTML}{9B4FE0}
+\definecolor{cPurpleDark}{HTML}{6B2CAB}
+\definecolor{cPurpleFill}{HTML}{EFE2FB}
+\definecolor{cGreyDark}{HTML}{4A4A4A}
+\definecolor{cGrey}{HTML}{8C8C8C}
+\definecolor{cGreyLight}{HTML}{B4B4B4}
+\definecolor{cGreyFill}{HTML}{EDEDED}
+\definecolor{cShadow}{HTML}{B5B5B5}
+\tikzset{
+  every node/.style={font=\fontsize{8}{9.6}\selectfont},
+  lbl/.style={font=\fontsize{8}{9.6}\selectfont},
+  ttl/.style={font=\fontsize{8}{9.6}\selectfont,anchor=base west,inner sep=0pt},
+  ttlr/.style={font=\fontsize{8}{9.6}\selectfont,anchor=base east,inner sep=0pt},
+  wire/.style={line width=0.65pt,cInk},
+  ublk/.style={draw=cInk,line width=0.6pt,fill=cBlue,rounded corners=1.6pt},
+  iblk/.style={draw=cInk,line width=0.6pt,rounded corners=1.6pt,preaction={fill=cPurple},
+    pattern={Lines[angle=55,distance=2.2pt,line width=0.85pt]},pattern color=white},
+  nbox/.style={draw=cInk,line width=0.55pt,fill=cRed,rounded corners=1.1pt},
+  feat/.style={draw=cInk,line width=0.6pt,fill=white,rounded corners=2pt,inner sep=1.6pt,
+    minimum width=0.98cm,minimum height=0.44cm},
+  legbox/.style={draw=cInk,line width=0.8pt,fill=white,rounded corners=2.4pt,
+    drop shadow={shadow xshift=1.2pt,shadow yshift=-1.2pt,fill=cShadow,opacity=1}},
+  arr/.style={line width=0.65pt,-{Stealth[length=3.6pt,width=3.2pt]}},
+  brc/.style={decorate,decoration={brace,amplitude=2.6pt},line width=0.55pt},
+}
+\newcommand{\Discard}[3][cInk]{%
+  \draw[line width=0.75pt,#1] (#2,{#3-0.1}) -- (#2,{#3+0.1});
+  \draw[line width=0.75pt,#1] ({#2+0.05},{#3-0.064}) -- ({#2+0.05},{#3+0.064});
+  \draw[line width=0.75pt,#1] ({#2+0.1},{#3-0.03}) -- ({#2+0.1},{#3+0.03});}
+\providecommand{\ket}[1]{|#1\rangle}
+\providecommand{\nrm}[2]{\lvert #1\rvert_{#2}}

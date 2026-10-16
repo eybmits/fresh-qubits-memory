@@ -1,0 +1,271 @@
+{
+  "version_date": "2026-10-16",
+  "revision": 4,
+  "title": "The Memory Limits of Noisy Quantum Reservoirs",
+  "authors": [
+    "Markus Baumann",
+    "Jonas Stein",
+    "Claudia Linnhoff-Popien"
+  ],
+  "inputs": [
+    {
+      "original_filename": "memory_limits (5).pdf",
+      "archived_path": "paper/versions/2026-10-16-v4/memory_limits-supplied.pdf",
+      "sha256": "c8260c8b6b62a243be015304048fdb192be4b7a316477bdd091f21c1e5967e23",
+      "size_bytes": 756185
+    },
+    {
+      "original_filename": "memory_limits_source (1).zip",
+      "archived_path": "paper/versions/2026-10-16-v4/memory_limits_source-original.zip",
+      "sha256": "9c8e39615c544028fbc2cce1cbf7718fcddee4e813abdaffdf58405171fafbd9",
+      "size_bytes": 1112060
+    }
+  ],
+  "output": {
+    "path": "paper/memory_limits_2026-10-16-v4.pdf",
+    "sha256": "fcd218eeb823eebed218c6d09b55ddd77def82f3a54baefe87734da7d113826d",
+    "size_bytes": 839535,
+    "pages": 17
+  },
+  "source_files": [
+    {
+      "path": "paper/source/README.txt",
+      "sha256": "12ef3172ce752ee6a6a337ae64edbfd1fecf83f040275276c25a2faf564c29b4",
+      "size_bytes": 3761
+    },
+    {
+      "path": "paper/source/fig1.pdf",
+      "sha256": "1f94e477032af5df6710db439f157354c0ee3a55fc9f90111bf6e86714542b87",
+      "size_bytes": 150403
+    },
+    {
+      "path": "paper/source/fig2.pdf",
+      "sha256": "1d410b622de3d750f7e4f03075ead0f0a7a96192bbf11c60cb1b7d81ef3881c5",
+      "size_bytes": 90641
+    },
+    {
+      "path": "paper/source/fig3.pdf",
+      "sha256": "7a05e5ce4dc9386297aa7962ef028b4c10115a8e4a82697e3ba27bbc9461704b",
+      "size_bytes": 90477
+    },
+    {
+      "path": "paper/source/fig4.pdf",
+      "sha256": "575d8acb94d68f0d290878db1c9cac14d41536043dcc467841d29d05b0ca4519",
+      "size_bytes": 74616
+    },
+    {
+      "path": "paper/source/figA1.pdf",
+      "sha256": "a6012bbc729543a7821d619315bc4d3626f1eead047daab39b0901f04f6e37c1",
+      "size_bytes": 90358
+    },
+    {
+      "path": "paper/source/figA2.pdf",
+      "sha256": "b6f08b99aad524f801189d85bfb2c924e93baf08a77daf7b81175a9d225f8bcd",
+      "size_bytes": 71558
+    },
+    {
+      "path": "paper/source/figA3.pdf",
+      "sha256": "fa33701a2d1a2022d8f7e230ea323a24d9c622a5f5537ae737fedb2d677a7628",
+      "size_bytes": 71006
+    },
+    {
+      "path": "paper/source/figA4.pdf",
+      "sha256": "736cfcbefb2d41f6bd2fc4be778b72a630397346c6cd2ab46329a1c5c2d0ec00",
+      "size_bytes": 75587
+    },
+    {
+      "path": "paper/source/figures/fig1.tex",
+      "sha256": "2208345527d06ca3fbbf1cd79885aa11a6c2f86912c4146989b621fe38d70def",
+      "size_bytes": 6117
+    },
+    {
+      "path": "paper/source/figures/fig1_panels.py",
+      "sha256": "49a982c1ab702877ebbc9bc59de4fbd62bbaf107efb90341f68e8692db1d4c7a",
+      "size_bytes": 7010
+    },
+    {
+      "path": "paper/source/figures/fig1a.pdf",
+      "sha256": "e510e76926c90b0b30f3df75f399b03cf2fa8fb02cce64583d1dc5ce957d44f7",
+      "size_bytes": 70412
+    },
+    {
+      "path": "paper/source/figures/fig1c.pdf",
+      "sha256": "d43967ba093da7c457d0dbb9d005594687ff3bb0d2d58d5c357f442e4ef4b361",
+      "size_bytes": 80709
+    },
+    {
+      "path": "paper/source/figures/fig1d.pdf",
+      "sha256": "7642406d0753cff691d0e94d828075fde829061d76a98f4959ec34a166fcc728",
+      "size_bytes": 79641
+    },
+    {
+      "path": "paper/source/figures/fig2.py",
+      "sha256": "4efb012d80b59e4a4c17816f2486ce238baccce177573734acf9bec4908a9dd8",
+      "size_bytes": 4103
+    },
+    {
+      "path": "paper/source/figures/fig3.tex",
+      "sha256": "dbcabb283467edb27728d993007fa3853dfd1ecd9a7bc2d2f4cd5e8e288439e3",
+      "size_bytes": 3440
+    },
+    {
+      "path": "paper/source/figures/fig3bc.pdf",
+      "sha256": "95d0cd7bd1e70b06a1d8902fc84e5652757d512f9414315d02d8150ff14bec53",
+      "size_bytes": 86804
+    },
+    {
+      "path": "paper/source/figures/fig3bc.py",
+      "sha256": "865987c24b787ed6c0b5a9b11d871d4a4312f16576fc821750639f982b8b9c9f",
+      "size_bytes": 2701
+    },
+    {
+      "path": "paper/source/figures/fig4.py",
+      "sha256": "b909003d32026c99228da270c0bed37a2546e5971a50efc00aac92e381ce930b",
+      "size_bytes": 5152
+    },
+    {
+      "path": "paper/source/figures/figA.py",
+      "sha256": "d946ffecc2bf2868599cabd759d41f56f2fa85be0a962e2d8415da969bf284d8",
+      "size_bytes": 5865
+    },
+    {
+      "path": "paper/source/figures/figA4.py",
+      "sha256": "757937a5b116cd05b51db19b9fe5e13736fd615730ed56f1b13a0e1030e22c10",
+      "size_bytes": 3250
+    },
+    {
+      "path": "paper/source/figures/figstyle.py",
+      "sha256": "f0045537958b49afe76a78b70c68f7e8b24ac105ea17765603ec3cc79082638a",
+      "size_bytes": 6251
+    },
+    {
+      "path": "paper/source/figures/tikzstyle.tex",
+      "sha256": "413ed740ab12d86adaafee7a4bc5fe98b5b032594cd72baad1acd1af79e4347f",
+      "size_bytes": 2456
+    },
+    {
+      "path": "paper/source/memory_limits.bbl",
+      "sha256": "892e0970fa9dad4503aea0ff04ee60d25fb95ed4287b0eccd32d16b74f66ae6e",
+      "size_bytes": 29637
+    },
+    {
+      "path": "paper/source/memory_limits.tex",
+      "sha256": "5bad1a4fafdf9edeb21a0207760efe3bded9e49a640ffa93475be93735421cc1",
+      "size_bytes": 86464
+    },
+    {
+      "path": "paper/source/refs.bib",
+      "sha256": "fb0458f67037cb7b12797f4fc0e58344b126dec50984c0a1015d1ffc7a31ad99",
+      "size_bytes": 11594
+    },
+    {
+      "path": "paper/source/sim/campaign.py",
+      "sha256": "13d57cca5437979b9d4baf7047006b385ba91e5be24e3a0fb28441be1d723c84",
+      "size_bytes": 2188
+    },
+    {
+      "path": "paper/source/sim/campaign_extra.py",
+      "sha256": "bd2746453a2389cfae36507638880f79d3d23e45a61bd4fa0b23e1dd0b93e270",
+      "size_bytes": 1278
+    },
+    {
+      "path": "paper/source/sim/check_washout.py",
+      "sha256": "f14299044d548551e47dfd41af30980c92e6b121c51ae7ffa95dca334f286f63",
+      "size_bytes": 714
+    },
+    {
+      "path": "paper/source/sim/exact_numbers.json",
+      "sha256": "0361f1513b3805b70e668e0d02816edc525a29de323690dbc4069afbfbcc601e",
+      "size_bytes": 86029
+    },
+    {
+      "path": "paper/source/sim/exact_numbers.py",
+      "sha256": "174a4870c4b18b7fa4cb509a36e7d606230e65a05c7d009a39c8ce7acb4bafc9",
+      "size_bytes": 5458
+    },
+    {
+      "path": "paper/source/sim/qrc_sim.py",
+      "sha256": "b6d7aabdf9112853ae71467556ba7aca160a68561a010f9fffc11a56f08540b0",
+      "size_bytes": 4255
+    },
+    {
+      "path": "paper/source/sim/rep_curve.json",
+      "sha256": "ccde0e49d5b9bd1ebc3858e8927a1fa41d817612b53f7971d9c9baa314f6b192",
+      "size_bytes": 30795
+    },
+    {
+      "path": "paper/source/sim/rep_curve.py",
+      "sha256": "83ed8f7af6d00cf0ada94a2e32116b31ff9475279072f58c984c1d54e39f6418",
+      "size_bytes": 1588
+    },
+    {
+      "path": "paper/source/sim/results_extra.json",
+      "sha256": "5cd7d660ec68c4d6f2df2df3e534c5768fd06fd057e91488934147831c0ad41e",
+      "size_bytes": 588
+    },
+    {
+      "path": "paper/source/sim/results_main.json",
+      "sha256": "bb6aa0ca3735c172098ac6b8cf1efc85320b1d7427a52e824f6b14806146336e",
+      "size_bytes": 42929
+    },
+    {
+      "path": "paper/source/sim/results_qscan.json",
+      "sha256": "b7f0f2e941476901d97fe8559c145a7754d278a694d0ac7008dfc25dd532025f",
+      "size_bytes": 24766
+    },
+    {
+      "path": "paper/source/sim/test_sim.py",
+      "sha256": "b1ce0e39bb0859c6bf4a0118914825b6cf808860c5f115b0ada1695ee3266097",
+      "size_bytes": 2628
+    }
+  ],
+  "changes": [
+    "Imported latest user-supplied 17-page revision and complete simulation/figure package.",
+    "Preserved approved three-author order; incoming package had only Markus.",
+    "Normalized twocolumn to APS reprint; added Contact author prefix and PDF metadata; fixed date to 16 October 2026.",
+    "Repaired three array/REVTeX table preambles with native paragraph columns and equivalent cell-local alignment.",
+    "Named Markus explicitly in existing assistance acknowledgment without newly certifying its claims.",
+    "Updated source reproduction instructions; mathematical prose, equations, figure assets and numerical data otherwise retained."
+  ],
+  "previous_version": {
+    "provenance": "paper/versions/2026-10-16/provenance.json",
+    "final_source_archive": "paper/versions/2026-10-16/source-final-v3.zip",
+    "source_archive_sha256": "255a21b8dab80274cc400dcafdc0c09b9b02ed453cf403ba7e0b2c01beb538ae",
+    "pdf": "paper/memory_limits_2026-10-16.pdf"
+  },
+  "validation": {
+    "abstract_unchanged": true,
+    "body_normalized_matches_supplied_except_attribution_and_table_formatting": true,
+    "unchanged_nontext_assets": 36,
+    "bibtex_regeneration_matches_supplied_bbl": true,
+    "unresolved_references": false,
+    "overfull_boxes": false,
+    "all_8_figures_and_5_tables_present": true,
+    "all_17_pages_rendered": true,
+    "all_fonts_embedded_Type1": true,
+    "nonfatal_warnings": [
+      "nameref label compatibility",
+      "REVTeX deferred float during clearpage; all floats rendered",
+      "underfull paragraphs",
+      "BibTeX style control and missing year for publisher-assigned Supplemental Material placeholder"
+    ],
+    "supplied_diagnostics": [
+      "sim/test_sim.py",
+      "sim/check_washout.py",
+      "sim/exact_numbers.py",
+      "sim/rep_curve.py"
+    ],
+    "repetition_max_abs_error": 2.45e-15,
+    "washout_worst_checked_trace_distance": 5.805e-07,
+    "exact_numbers_max_abs_difference": 5.72e-14,
+    "rep_curve_points_identical": 700,
+    "full_simulation_campaigns_rerun": false
+  },
+  "build": {
+    "command": "latexmk -cd -pdf -interaction=nonstopmode -halt-on-error -outdir=../../work/manuscript-build-2026-10-16-v4 paper/source/memory_limits.tex",
+    "class": "REVTeX 4.2f",
+    "options": "aps,pra,reprint,superscriptaddress,floatfix",
+    "engine": "pdfTeX 1.40.27 (TeX Live 2025)"
+  },
+  "status": "Prepared manuscript; not submitted. Build and numerical checks are not proof review or acceptance."
+}

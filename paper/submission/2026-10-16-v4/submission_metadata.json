@@ -1,0 +1,60 @@
+{
+  "status": "Prepared locally; no APS portal draft, upload or submission. Login, Markus ORCID and author declarations remain pending.",
+  "journal": "Physical Review A",
+  "article_type": "Regular Article",
+  "title": "The Memory Limits of Noisy Quantum Reservoirs",
+  "authors": [
+    {
+      "given": "Markus",
+      "family": "Baumann",
+      "email_from_manuscript": "markus.baumann@campus.lmu.de",
+      "corresponding": true,
+      "orcid": null
+    },
+    {
+      "given": "Jonas",
+      "family": "Stein",
+      "email": "jonas.stein@ifi.lmu.de",
+      "orcid": "0000-0001-5727-9151",
+      "metadata_sources": [
+        "https://www.ifi.lmu.de/mvs/en/team/contact-page/jonas-stein-ef892b38.html"
+      ],
+      "orcid_status": "Publicly linked by institutional profile; not authenticated for this submission"
+    },
+    {
+      "given": "Claudia",
+      "family": "Linnhoff-Popien",
+      "email": "linnhoff@ifi.lmu.de",
+      "orcid": "0000-0001-6284-9286",
+      "metadata_sources": [
+        "https://www.ifi.lmu.de/mvs/en/team/contact-page/claudia-linnhoff-popien-5eb3fc37.html",
+        "https://epub.ub.uni-muenchen.de/view/autoren/Linnhoff-Popien=3AClaudia=3A=3A.html"
+      ],
+      "orcid_status": "Listed by institutional repository; not authenticated for this submission"
+    }
+  ],
+  "affiliation": "Ludwig-Maximilians-Universität München, Geschwister-Scholl-Platz 1, 80539 München, Germany",
+  "abstract": "Quantum reservoir computing processes time series by injecting one input per time step into a fixed, noisy quantum system and training only a linear readout. A reservoir can solve a temporal task only if the inputs the task needs are still present in its state. What fundamentally limits this memory? Adding qubits seems the natural way to extend it. However, noise injects entropy into every qubit at every time step, and under depolarizing noise a reservoir can remove this entropy steadily only through the input qubits that are reinitialized at each time step. Here we show that this number, not the size of the reservoir, sets the memory. With k reinitialized input qubits per time step, the largest attainable memory depth at fixed accuracy is exp[Θ(k)] time steps once the initial state has been washed out, independent of the total number of qubits. The upper bound holds for every reservoir unitary and input encoding, and an explicit construction shows that the exponential scaling is attainable. Retaining an input for T time steps therefore requires Θ(log T) reinitialized input qubits per time step. Unital noise leaves this limit unchanged, whereas non-unital noise acts as an additional entropy sink. These results identify reinitialized input qubits, not reservoir size, as the fundamental resource for memory in quantum reservoir computing, and make memory a quantity that can be budgeted in the design of quantum reservoirs.",
+  "data_availability": "The code that reproduces all numerical values, simulations, and data figures of this article is provided as Supplemental Material~\\cite{SM}.",
+  "category_proposal": "Theoretical",
+  "physh_primary_proposal": "Quantum channels",
+  "declarations_pending_author_confirmation": [
+    "All coauthors agree to this submission and satisfy authorship requirements",
+    "No concurrent consideration by another journal; any related manuscripts disclosed",
+    "Funding and potential conflicts of interest",
+    "Exact AI tool/version and the existing human-verification assertions",
+    "Corresponding author ORCID authenticated through APS"
+  ],
+  "not_elected": [
+    "Paid open access",
+    "Paid print colour",
+    "Copyright or licence agreement"
+  ],
+  "not_included": "Separate earlier repository empirical-validation report and its experiments; these are distinct from the new manuscript sim/ study.",
+  "manuscript_change": "None: approved title, authors and latest abstract preserved",
+  "author_metadata_verified_on": "2026-10-16",
+  "version": "v4",
+  "data_availability_plain": "The code that reproduces all numerical values, simulations, and data figures of this article is provided as Supplemental Material [Supplemental Material].",
+  "numerical_evidence": "Supplied density-matrix simulations of Ising and Haar reservoirs, reported as sampled memory-depth witnesses/lower bounds. No exact supremum over input histories and no trained forecasting benchmark.",
+  "registration_preparation": "Pending; last observed not logged in; no new APS account created by this workflow"
+}
