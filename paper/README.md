@@ -2,16 +2,16 @@
 
 ## Current version: 16 October 2026
 
-**Input Reinitialization Sets the Memory of Noisy Quantum Reservoirs**
+**The Memory Limits of Noisy Quantum Reservoirs**
 
-Markus Baumann, Ludwig-Maximilians-Universität München
+Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien, Ludwig-Maximilians-Universität München
 
 - [Current PDF](memory_limits_2026-10-16.pdf)
 - [Editable LaTeX](source/memory_limits.tex), [bibliography](source/refs.bib), and figure assets/sources in [source/](source/)
 - [Version provenance](versions/2026-10-16/provenance.json)
 - [Version scope and checks](../docs/manuscript-2026-10-16.md)
 
-This revision starts from the user-supplied `memory_limits_source.zip` and `memory_limits (1).pdf`, received on 16 October 2026. The supplied PDF and source archive are preserved byte-for-byte in [versions/2026-10-16/](versions/2026-10-16/). The working source incorporates the user's replacement abstract verbatim, a matching new title, PDF metadata, and a table-formatting compatibility repair. Its mathematical body and figure assets are otherwise retained from the supplied source.
+This revision starts from the user-supplied `memory_limits_source.zip` and `memory_limits (1).pdf`, received on 16 October 2026. The supplied PDF and source archive are preserved byte-for-byte in [versions/2026-10-16/](versions/2026-10-16/). The working source incorporates the user's replacement abstract verbatim, the restored supplied title, the requested three-author list, PDF metadata, and a table-formatting compatibility repair. The acknowledgments name Markus Baumann explicitly to preserve the original attribution of the disclosed assistance. Its mathematical body and figure assets are otherwise retained from the supplied source.
 
 Build from the repository root with a TeX distribution containing REVTeX 4.2, pdfLaTeX, BibTeX, and latexmk:
 

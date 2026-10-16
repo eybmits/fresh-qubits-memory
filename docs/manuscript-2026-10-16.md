@@ -1,10 +1,10 @@
 # Manuscript revision: 16 October 2026
 
-The current draft is **Input Reinitialization Sets the Memory of Noisy Quantum Reservoirs** ([PDF](../paper/memory_limits_2026-10-16.pdf), [source](../paper/source/memory_limits.tex)).
+The current draft is **The Memory Limits of Noisy Quantum Reservoirs** ([PDF](../paper/memory_limits_2026-10-16.pdf), [source](../paper/source/memory_limits.tex)).
 
 ## Changes in this update
 
-The user supplied a new 12-page manuscript and its complete LaTeX package, including bibliography, figure assets and sources, and a numerical supplement. This update imports that revision, replaces its abstract with the user's exact text, changes its title and PDF metadata, and repairs the two table preambles for the installed REVTeX/LaTeX combination. The mathematical prose, equations, bibliography entries, and figure assets from the supplied revision are retained. Original inputs and checksums are archived in [the provenance record](../paper/versions/2026-10-16/provenance.json).
+The user supplied a new 12-page manuscript and its complete LaTeX package, including bibliography, figure assets and sources, and a numerical supplement. This update imports that revision, replaces its abstract with the user's exact text, updates its front matter and PDF metadata, and repairs the two table preambles for the installed REVTeX/LaTeX combination. The mathematical prose, equations, bibliography entries, and figure assets from the supplied revision are retained. Original inputs and checksums are archived in [the provenance record](../paper/versions/2026-10-16/provenance.json).
 
 The 15 October source PDF and numerical baseline are preserved. The newly supplied revision already differs substantially from it:
 
@@ -19,6 +19,10 @@ The noise interpretation remains conditional: a fixed independent depolarizing l
 ## Abstract follow-up
 
 The second revision on 16 October replaces the abstract's majority-vote description with the requested sentence ending “and an explicit construction shows that the exponential scaling is attainable.” The remainder of the abstract, title, and manuscript body are unchanged. The earlier PDF and abstract hashes and commit are retained in the provenance history.
+
+## Title and author correction
+
+The third revision restores **The Memory Limits of Noisy Quantum Reservoirs** and lists **Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien**, in that order, as requested. The latest abstract is unchanged. The acknowledgments name Markus Baumann explicitly, retaining the original attribution rather than assigning the disclosed activities to the added coauthors. The common university affiliation is LMU Munich.
 
 ## Validation
 

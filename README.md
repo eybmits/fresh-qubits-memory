@@ -1,10 +1,10 @@
-# Fresh Qubits Set the Memory
+# The Memory Limits of Noisy Quantum Reservoirs
 
-Scientific project for **“Input Reinitialization Sets the Memory of Noisy Quantum Reservoirs”** by Markus Baumann (LMU Munich).
+Scientific project for **“The Memory Limits of Noisy Quantum Reservoirs”** by Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien (LMU Munich).
 
 The manuscript studies how the number of freshly prepared input qubits per cycle limits the memory of a noisy quantum reservoir. This repository preserves the supplied manuscript versions, provides editable LaTeX sources and figures, records a research and validation plan, and includes an independent numerical reproduction of the majority-refresh example.
 
-**Current manuscript (16 October 2026):** [PDF](paper/memory_limits_2026-10-16.pdf) · [LaTeX source](paper/source/memory_limits.tex) · [build instructions and version history](paper/README.md). This version imports the newly supplied manuscript and replaces its title and abstract. The earlier 15 October PDF remains unchanged. The supplied manuscripts are the source of the theoretical claims; the numerical checks do not verify their proofs. Publication and peer-review status are not established by the supplied material.
+**Current manuscript (16 October 2026):** [PDF](paper/memory_limits_2026-10-16.pdf) · [LaTeX source](paper/source/memory_limits.tex) · [build instructions and version history](paper/README.md). This version imports the newly supplied manuscript and uses the requested abstract, restores the supplied title, and updates the author list. The earlier 15 October PDF remains unchanged. The supplied manuscripts are the source of the theoretical claims; the numerical checks do not verify their proofs. Publication and peer-review status are not established by the supplied material.
 
 ## Scientific scope
 

@@ -22,18 +22,20 @@
 \newcommand{\runin}[1]{\textbf{#1}}
 
 \hypersetup{
-  pdftitle={Input Reinitialization Sets the Memory of Noisy Quantum Reservoirs},
-  pdfauthor={Markus Baumann},
+  pdftitle={The Memory Limits of Noisy Quantum Reservoirs},
+  pdfauthor={Markus Baumann, Jonas Stein, Claudia Linnhoff-Popien},
   pdfsubject={Memory limits of quantum reservoirs with reinitialized inputs},
   pdfkeywords={quantum reservoir computing, memory, input reinitialization, depolarizing noise}
 }
 
 \begin{document}
 
-\title{Input Reinitialization Sets the Memory of Noisy Quantum Reservoirs}
+\title{The Memory Limits of Noisy Quantum Reservoirs}
 
 \author{Markus Baumann}
 \email{markus.baumann@campus.lmu.de}
+\author{Jonas Stein}
+\author{Claudia Linnhoff-Popien}
 \affiliation{Ludwig-Maximilians-Universit\"at M\"unchen, Geschwister-Scholl-Platz 1, 80539 M\"unchen, Germany}
 
 \begin{abstract}
@@ -325,7 +327,7 @@ In this work, we have identified the resource that limits the memory of noisy qu
 For the design of quantum reservoirs, these results make the number of reinitialized qubits per time step, together with the non-unital part of the noise, the parameter that controls memory. When a reservoir forgets too quickly, the first parameter to check is therefore not its size or its Hamiltonian, but its supply of freshly prepared qubits. Several questions remain open. The constants of the upper bound are far from tight, and closing the gap between the two exponents would turn the scaling law into a quantitative design rule. Extending the bound to measurement feedback and to non-Markovian noise would cover further experimental platforms. An experiment that varies $k$ at fixed reservoir size could test the predicted scaling directly. Perhaps most relevant for applications is the question whether one can predict, for a given time series, how many reinitialized input qubits a quantum reservoir needs to retain its task-relevant information. Answering it would connect the memory limit derived here with concrete reservoir design.
 
 \begin{acknowledgments}
-The author used large language models, including Claude Opus 5.5 (Anthropic), to assist with developing and checking proofs, checking the literature, running numerical checks, and drafting the text. The author directed this use, checked all proofs and derivations, verified every numerical value with the script provided as Supplemental Material~\cite{SM}, and takes full responsibility for the content of this article.
+Markus Baumann used large language models, including Claude Opus 5.5 (Anthropic), to assist with developing and checking proofs, checking the literature, running numerical checks, and drafting the text. Markus Baumann directed this use, checked all proofs and derivations, verified every numerical value with the script provided as Supplemental Material~\cite{SM}, and takes full responsibility for the content of this article.
 \end{acknowledgments}
 
 \section*{Data availability}

@@ -1,4 +1,4 @@
-Input Reinitialization Sets the Memory of Noisy Quantum Reservoirs -- source files
+The Memory Limits of Noisy Quantum Reservoirs -- source files
 
 Build (REVTeX 4.2, BibTeX with apsrev4-2):
   pdflatex memory_limits && bibtex memory_limits && pdflatex memory_limits && pdflatex memory_limits

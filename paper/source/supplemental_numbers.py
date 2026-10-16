@@ -1,5 +1,5 @@
 """Supplemental Material: reproduces every numerical value quoted in
-'Input Reinitialization Sets the Memory of Noisy Quantum Reservoirs'.
+'The Memory Limits of Noisy Quantum Reservoirs'.
 Requires: Python >= 3.9, mpmath. Run: python3 supplemental_numbers.py"""
 from fractions import Fraction
 from math import comb, ceil, log
