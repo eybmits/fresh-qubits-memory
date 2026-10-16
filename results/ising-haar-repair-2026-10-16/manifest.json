@@ -1,0 +1,35 @@
+{
+  "base_commit": "f511729a3219ad1a29ed78be8392a60e04072226",
+  "unchanged_paper_tree": "194e7706e5136837f849713b3931ffef47fb6e65",
+  "date": "2026-10-16",
+  "sources": {
+    "scripts/simulate_global_repair.py": "0ea4378a2fa00e8cdd2491082935e39b06c4e3c05c9d547a0c9e65264c265dbe",
+    "scripts/simulate_modular_repair.py": "1c8b8264e0dc482d710080471b2e9d724d9fff94cf3506455610387283065100",
+    "scripts/plot_ising_haar_repair.py": "db2b0204aeb6193763e10fa9ced5277aa89849d0e96004223d0d34494dc8edfd",
+    "tests/test_global_repair.py": "a4daf39d2c4f62cfda983a469fd2f0acd17d953e250b5b44094fdc6111526f9c",
+    "tests/test_modular_repair.py": "c5e5adbf1120db6bea5c7e73727ace901f4932318d3901458992db28cd5bd76a",
+    "paper/source/sim/qrc_sim.py": "b6d7aabdf9112853ae71467556ba7aca160a68561a010f9fffc11a56f08540b0",
+    "experiments/ising-haar-repair-2026-10-16.md": "f3311ee01faf497b37314b3e96b5de7357cc26062bf0b9995c0d695156031c38"
+  },
+  "artifacts": {
+    "REPORT.md": "8439b254b769f5c90f2be8f0267a9537f8d03084940ad56e85beaa12ee342e1d",
+    "global/curves.csv": "9235bb9b129b4153dd4516c6749292f75ca2b2bff7d6e99fbf13c14a2db8a9bd",
+    "global/depths.csv": "68a296f42c508ae0ff9401b82d737b795db309ca95dadc02fe588b234c1b6651",
+    "global/metadata.json": "75d61e5f0c516faffdd157e9f6b115da20a58646c9839f45093af9501f753cb7",
+    "global_decoded.pdf": "e962d88170436bf1bce516f5af2e679a43385919ede8a8cfcd3c58b3db9483bd",
+    "global_decoded.png": "06882d5a0888549cf7db07329ca6ebd3d256bb4dc1a2ac52daec2d848570ea75",
+    "global_fixed_readout.pdf": "5e78dc7499d4e1fd000f3fd445d59b411c67d7a37ba137f69820ef2e3cdfc0de",
+    "global_fixed_readout.png": "09fbf07b2ae156ce48a3a00cae19afd14aaed0142ccdfec3b2f1f5e989518f1e",
+    "global_native.pdf": "563e3dab0b6d9a374d8fec373f7a521729422bc84a9801fab12f45368c093031",
+    "global_native.png": "401187670114646f37c964c9466e595bbd9000d100cb5dcd398c15522e5cd710",
+    "modular/channel_checks.csv": "8e19940470785536169e7b46392ca89731ed6107219a6ca7b66457b32253f4d5",
+    "modular/curves.csv": "e6f8361166db542b2f035078198329c71519ce2aaf34046a3b104e975b12335d",
+    "modular/depths.csv": "31975b98071f11c3923c03153e8750f1ee3c7924715307590d13e5a61da2821b",
+    "modular/metadata.json": "32d8dbb468753db1233874b59b211f85738d436008b1fb7fc5264140193a7d6f",
+    "modular/unitaries.json": "a80576f67b86b43a5147af2bc70b4c5f7bd7335e09a0d0743bcbe49961d0fb04",
+    "modular_repair.pdf": "2ca69c8310f02b3518f6ef46a5c07c80574e4f449ce99d9477234b2ba9217c32",
+    "modular_repair.png": "86485f4b64802ca1d02b816f2c7b06e4665f1ab69123d95185ad00cf1b9ed1b4",
+    "summary.json": "cd5150fa2055bf69fb7d2a8d355f7d509d6a1219fe7354b7246082bd728ffa2d",
+    "validation.json": "f1b61d89e77e9f55acb94051f089291041a8d6c3f0c2a503dd5584d640300c2e"
+  }
+}

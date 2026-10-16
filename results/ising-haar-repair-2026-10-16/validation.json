@@ -1,0 +1,20 @@
+{
+  "repository_tests": 22,
+  "standalone_bundle_tests": 10,
+  "all_passed": true,
+  "fresh_bundle_replay_byte_identical": [
+    "global/curves.csv",
+    "global/depths.csv",
+    "modular/curves.csv",
+    "modular/depths.csv",
+    "modular/channel_checks.csv",
+    "modular/unitaries.json"
+  ],
+  "paper_changed": false,
+  "checks": [
+    "Full-ancilla independent global channel reference",
+    "Dense modular channel reference",
+    "Exact threshold and revival-safe stopping"
+  ],
+  "date": "2026-10-16"
+}

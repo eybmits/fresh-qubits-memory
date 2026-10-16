@@ -1,0 +1,127 @@
+{
+  "n": 12,
+  "core_qubits": 5,
+  "q": 0.9,
+  "epsilon": 0.01,
+  "replicates": 8,
+  "base_seed": 2026101602,
+  "unitaries": [
+    {
+      "model": "ising",
+      "replicate": 0,
+      "seed": 2026101602,
+      "sha256": "3fe5222840da1bf15e6e16c5971a13a974d4e5d7b87986d1539c72b4d94ec561"
+    },
+    {
+      "model": "ising",
+      "replicate": 1,
+      "seed": 2026101603,
+      "sha256": "561f3f0e92d2bf60d5bc1a059dad48430c25e16996208617eac958756771a246"
+    },
+    {
+      "model": "ising",
+      "replicate": 2,
+      "seed": 2026101604,
+      "sha256": "fcf35fef2afbb78f5c950ed85a9e858140190e1ee0a295ccecce61fe9aea512e"
+    },
+    {
+      "model": "ising",
+      "replicate": 3,
+      "seed": 2026101605,
+      "sha256": "4b1cad3e2222dc9bfc07596efd3588e6780ff62a6d1e71dbc25cc02c8648ad9b"
+    },
+    {
+      "model": "ising",
+      "replicate": 4,
+      "seed": 2026101606,
+      "sha256": "8fc5d9cfa9c586c875fd9fb94059bc9c0fa39c309c3bdb4ac5fc99b0e06b4811"
+    },
+    {
+      "model": "ising",
+      "replicate": 5,
+      "seed": 2026101607,
+      "sha256": "027658fb3b5d4defe8e0aea4c053b36d0c59a8e7dd7d5f3b17bf226a996bdefc"
+    },
+    {
+      "model": "ising",
+      "replicate": 6,
+      "seed": 2026101608,
+      "sha256": "f944d498a9d2cf6482b6c1861130788212602936083c3f3af01798137b1e6f6f"
+    },
+    {
+      "model": "ising",
+      "replicate": 7,
+      "seed": 2026101609,
+      "sha256": "c540a5e6c8c29011467de1cf0556a8d20b77b3751df4f32fc0a4d1246939ddb3"
+    },
+    {
+      "model": "haar",
+      "replicate": 0,
+      "seed": 2026102602,
+      "sha256": "7c5e72eefe66db60a6cdae337e16729aff38738d9889d2aeda6951c6c7d4fd22"
+    },
+    {
+      "model": "haar",
+      "replicate": 1,
+      "seed": 2026102603,
+      "sha256": "ca8a91df0e9c2fa30589c865ee4e91cfe0eaf8ab2ae25efd924244b80c9b0100"
+    },
+    {
+      "model": "haar",
+      "replicate": 2,
+      "seed": 2026102604,
+      "sha256": "82d2281b0652d63956efa0012f7445c75f3401471cb1a185d4a2af3761ad742e"
+    },
+    {
+      "model": "haar",
+      "replicate": 3,
+      "seed": 2026102605,
+      "sha256": "a7e5232370ec4ea3a0c97d63bad6afa2a70a8d39cd99bfb11eb41643f8148904"
+    },
+    {
+      "model": "haar",
+      "replicate": 4,
+      "seed": 2026102606,
+      "sha256": "7a58b20b61fec3902d3496467148fd76e48677e599f54c30fa5cd089683ca44e"
+    },
+    {
+      "model": "haar",
+      "replicate": 5,
+      "seed": 2026102607,
+      "sha256": "a9077c7008aebc917a07ab96622e9b18762e9e03758b97a1808980d840ee4bb2"
+    },
+    {
+      "model": "haar",
+      "replicate": 6,
+      "seed": 2026102608,
+      "sha256": "78aa2604878fd9a334ef38985606d3675ca998427474deb9a1ce9570ac182908"
+    },
+    {
+      "model": "haar",
+      "replicate": 7,
+      "seed": 2026102609,
+      "sha256": "cf7255cd8476370cb60978aa3061413482df0b6e9ef4246d32b87c4e3f8718dd"
+    }
+  ],
+  "precision": "complex128",
+  "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "numpy": "2.4.2",
+  "scipy": "1.18.0",
+  "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+  "argv": [
+    "scripts/simulate_global_repair.py",
+    "--output-dir",
+    "results/ising-haar-repair-2026-10-16/global"
+  ],
+  "seconds": 2.871220375003759,
+  "method": "Exact 32x32 reduced-core CPTP channels; conditional correlations retained",
+  "metrics": "Core trace witness and fixed initial-Helstrom linear-readout witness",
+  "source_hashes": {
+    "simulate_global_repair.py": "0ea4378a2fa00e8cdd2491082935e39b06c4e3c05c9d547a0c9e65264c265dbe",
+    "qrc_sim.py": "b6d7aabdf9112853ae71467556ba7aca160a68561a010f9fffc11a56f08540b0"
+  },
+  "outputs": {
+    "depths.csv": "68a296f42c508ae0ff9401b82d737b795db309ca95dadc02fe588b234c1b6651",
+    "curves.csv": "9235bb9b129b4153dd4516c6749292f75ca2b2bff7d6e99fbf13c14a2db8a9bd"
+  }
+}

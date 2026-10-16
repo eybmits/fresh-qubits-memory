@@ -1,0 +1,73 @@
+{
+  "method": "Exact conditional product-state channel; signed weights propagated per cycle",
+  "architecture": "Two-qubit Ising/Haar encoders embedded in a modular majority-repaired hybrid",
+  "not_claimed": "Not an unchanged or global Ising/Haar reservoir; no trained forecasting task or hardware",
+  "resources": {
+    "n": 22,
+    "copies": [
+      1,
+      3,
+      5
+    ],
+    "k": [
+      4,
+      8,
+      12
+    ],
+    "fresh_per_copy": 2,
+    "control_qubits": 2,
+    "active_qubits": [
+      6,
+      14,
+      22
+    ],
+    "spectator_qubits": [
+      16,
+      8,
+      0
+    ]
+  },
+  "input": "One write input b=0 or 1 followed by identical hold inputs",
+  "initial_state": "Writing swaps out the entire prior memory, so written state is independent of initialization",
+  "unitaries": "Same U for every module and every r for a replicate; full fixed repair circuit depends on r",
+  "ising_parameters": {
+    "module_qubits": 2,
+    "J": 1,
+    "h": 1,
+    "tau": 10,
+    "Hamiltonian": "J12 X1 X2 + Z1 + Z2; J12 uniform [-0.5,0.5]"
+  },
+  "seed_bases": {
+    "ising": 621100,
+    "haar": 621200
+  },
+  "replicates": 8,
+  "noise": "Independent local depolarization on all physical qubits after each ideal cycle",
+  "q": 0.9,
+  "epsilon": 0.01,
+  "readout": "Fixed linear observable U(Z tensor I)Udag on the first two-qubit module",
+  "depth": "1 + largest delay with half absolute readout difference > epsilon; write delay is zero",
+  "stopping_rule": "Continue until one-module trace distance <= epsilon, bounding all later readout revivals; depth records last above-threshold contrast",
+  "passive_control": "Same encoded writes/resources/noise; during holds decode and encode cancel without repair",
+  "dense_reference": "Independent dense 2r-qubit reduced-memory channel, explicit vote enumeration and Pauli noise; r=1,3",
+  "precision": "complex128/float64",
+  "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "numpy": "2.4.2",
+  "scipy": "1.18.0",
+  "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+  "seconds": 0.42595220799557865,
+  "argv": [
+    "scripts/simulate_modular_repair.py",
+    "--output-dir",
+    "results/ising-haar-repair-2026-10-16/modular",
+    "--replicates",
+    "8"
+  ],
+  "script_sha256": "1c8b8264e0dc482d710080471b2e9d724d9fff94cf3506455610387283065100",
+  "outputs": {
+    "depths.csv": "31975b98071f11c3923c03153e8750f1ee3c7924715307590d13e5a61da2821b",
+    "curves.csv": "e6f8361166db542b2f035078198329c71519ce2aaf34046a3b104e975b12335d",
+    "channel_checks.csv": "8e19940470785536169e7b46392ca89731ed6107219a6ca7b66457b32253f4d5",
+    "unitaries.json": "a80576f67b86b43a5147af2bc70b4c5f7bd7335e09a0d0743bcbe49961d0fb04"
+  }
+}
