@@ -43,6 +43,19 @@ The script writes CSV values and JSON metadata. The committed [baseline output](
 
 Optional flags are `--q`, `--copies`, and `--precision`; see `--help`. The implementation accepts odd `r` from 1 to 255 and finite-decimal `q` in `(0,1)` with at most 100 decimal places. Output precision is 30–512 digits; adaptive working precision is capped at 4096 digits and extreme cases that exceed the bound are rejected. See the [validation record](docs/validation.md) for the tested scope and the manuscript's display-rounding convention.
 
+## Independent numerical validation
+
+The [16 October validation report](results/empirical-2026-10-16/REPORT.md) ([PDF](results/empirical-2026-10-16/validation_report.pdf)) adds complete diagonal-channel simulations through 16 qubits, fixed-size physical trajectories, eight million direct error-pattern trials, rare-event importance sampling, 56 small quantum reservoirs, noise controls, and the cooling pipeline. The complete majority channel matches the predicted response within `2.10e-14`. The rare-event estimate for `k=17` is 1.898 million half-life cycles (approximate 99% interval 1.893–1.903 million), consistent with the model prediction; this is not a direct million-cycle hardware observation. The report also identifies two prose qualifications: size can help individual architectures below the uniform ceiling, and additional unital noise preserves the upper bound but can reduce attainable memory.
+
+The [protocol](experiments/empirical-2026-10-16.md), CSV data, seeds, source hashes and uncertainty intervals are preserved. Universal proof validity and asymptotic optimality are not established by finite simulations. Install optional dependencies and reproduce with:
+
+```bash
+python -m pip install -e ".[validation]"
+PYTHONPATH=src python -m unittest discover -s tests -v
+MPLCONFIGDIR=work/mpl-cache OPENBLAS_NUM_THREADS=1 python scripts/validate_empirical.py
+python scripts/build_validation_report.py
+```
+
 ## Repository map
 
 | Path | Purpose |
@@ -58,7 +71,7 @@ Optional flags are `--q`, `--copies`, and `--precision`; see `--help`. The imple
 | [data/](data/) | Data provenance and storage conventions |
 | [results/](results/) | Small reproducible outputs and interpretation |
 
-Start with the [research plan](docs/research-plan.md), whose equation anchors and learning workstream refer to the original 15 October version. Proof review and full physical-construction validation remain research tasks. The 16 October source package now includes the LaTeX, bibliography, figure sources, and supplemental numerical script in [paper/source/](paper/source/).
+Start with the [research plan](docs/research-plan.md), whose equation anchors and learning workstream refer to the original 15 October version. The new numerical report addresses several construction checks; general proof review, hardware validation, and gate-level implementation remain research tasks. The revision 5 source package includes the LaTeX, bibliography, figure sources, simulator and saved numerical datasets in [paper/source/](paper/source/).
 
 ## Citation and reuse
 

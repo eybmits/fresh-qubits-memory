@@ -1,5 +1,7 @@
 # Initial validation record
 
+**Follow-up:** the [16 October independent numerical validation](../results/empirical-2026-10-16/REPORT.md) extends this scalar baseline to the full diagonal construction, physical sampling, small quantum channels, and cooling. The historical record below describes the original six tests only. With the optional validation dependencies installed, the current suite has 12 passing test methods.
+
 Validated on 15 October 2026 with Python 3.14.7 in an isolated virtual environment. The package installed successfully with `python -m pip install -e .`.
 
 ```bash

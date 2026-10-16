@@ -1,0 +1,9 @@
+{
+  "trajectory_pointwise_95_coverage": 88,
+  "trajectory_points": 97,
+  "maximum_marginal_standardized_residual": 2.533932190591461,
+  "cooling_nonvacuous_bound_rows": 17,
+  "cooling_bounds_above_upper_95_interval": 0,
+  "unit_tests_passed": 12,
+  "original_baseline_csv_identical": true
+}
