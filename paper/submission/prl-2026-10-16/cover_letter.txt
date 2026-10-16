@@ -1,0 +1,23 @@
+16 October 2026
+
+Editors of Physical Review Letters
+
+Dear Editors,
+
+Please consider "The Memory Limits of Noisy Quantum Reservoirs," by Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien, as a Letter in Physical Review Letters.
+
+The work asks which physical resources control the persistence of information in a quantum system driven by sequential inputs. Under independent depolarizing noise, we establish a universal upper bound on memory depth that is exponential in the number of reinitialized input qubits per step and independent of reservoir size, at fixed noise and accuracy after initialization decays. An explicit reversible construction attains the exponential scaling. The extension to an entropy budget explains why additional unital noise preserves the bound and why non-unital cooling supplies a further resource.
+
+We believe the connection between information retention, open quantum dynamics, and physical computing offers a case for interest beyond quantum reservoir computing. The result distinguishes an architecture-independent resource limit from the performance of any particular reservoir. Numerical Ising and Haar examples provide sampled memory-depth witnesses; they do not establish the supremum over histories, forecasting performance, or quantum computational advantage.
+
+The proposed Letter will present the central theorem, physical mechanism, and matching construction concisely, with essential derivations and reproducibility details assigned to appropriate supporting material. The existing full manuscript discloses language-model assistance; that disclosure will be retained in the PRL version.
+
+Thank you for considering the work.
+
+Sincerely,
+Markus Baumann
+Quantum Applications and Research Laboratory (QAR-Lab)
+Chair of Mobile and Distributed Systems
+Department of Computer Science, Ludwig-Maximilians-Universität München
+Oettingenstraße 67, 80538 München, Germany
+markus.baumann@campus.lmu.de

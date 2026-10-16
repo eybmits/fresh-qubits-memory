@@ -4,7 +4,7 @@ Scientific project for **“The Memory Limits of Noisy Quantum Reservoirs”** b
 
 The manuscript studies how the number of freshly prepared input qubits per cycle limits the memory of a noisy quantum reservoir. This repository preserves the supplied manuscript versions, provides editable LaTeX sources and figures, records a research and validation plan, and includes an independent numerical reproduction of the majority-refresh example.
 
-**Current manuscript (16 October 2026, revision 4):** [17-page PDF](paper/memory_limits_2026-10-16-v4.pdf) · [LaTeX source](paper/source/memory_limits.tex) · [version history and build](paper/README.md) · [PRA template audit](docs/pra-template-check-2026-10-16.md). The latest supplied revision adds simulation data and eight figures. The approved title, abstract and author order are retained; the layout uses REVTeX 4.2 with `aps,pra,reprint`. Earlier PDFs and input ZIPs are preserved. Publication and peer-review status are not established by the supplied material.
+**Current manuscript (16 October 2026, revision 5):** [21-page PDF](paper/memory_limits_2026-10-16-v5.pdf) · [LaTeX source](paper/source/memory_limits.tex) · [version history and build](paper/README.md) · [PRA template audit](docs/pra-template-check-2026-10-16-v5.md). The latest supplied revision expands the proof explanations and constants glossary; the simulation data are unchanged. The approved title, abstract and author order are retained; the layout uses REVTeX 4.2 with `aps,pra,reprint`. Earlier PDFs and input ZIPs are preserved. Publication and peer-review status are not established by the supplied material. A separate PRL portal draft has been started, but this full PRA-style manuscript exceeds the PRL length limit; no paper has been submitted.
 
 ## Scientific scope
 
@@ -17,13 +17,13 @@ p_r=\sum_{j=(r+1)/2}^{r}\binom{r}{j}p^j(1-p)^{r-j},\qquad
 \lambda_r=1-2p_r,\qquad f_b(t)=(-1)^b q\lambda_r^t.
 $$
 
-Table I of the original 15 October manuscript reports the largest integer $T_r$ with $\lambda_r^{T_r}\geq 1/2$; the same lifetimes appear in Table IV and Figure 3 of the current manuscript. At $q=0.9$, $r=15$ ($k=17$) gives **1,894,286 hold cycles**. These are ideal-unitary/noise cycles, not elementary gate cycles.
+Table I of the original 15 October manuscript reports the largest integer $T_r$ with $\lambda_r^{T_r}\geq 1/2$; the same lifetimes appear in Table V and Figure 3 of the current manuscript. At $q=0.9$, $r=15$ ($k=17$) gives **1,894,286 hold cycles**. These are ideal-unitary/noise cycles, not elementary gate cycles.
 
-The exponential upper and lower bounds match in order, not in constants. A long memory does not establish classical computational hardness: the example above has a one-scalar recurrence. The current manuscript focuses on memory limits and does not contain the earlier classical-learning theorem. See the [current version note](docs/manuscript-2026-10-16-v4.md); the [original paper summary](docs/paper-summary.md) remains explicitly tied to the 15 October baseline.
+The exponential upper and lower bounds match in order, not in constants. A long memory does not establish classical computational hardness: the example above has a one-scalar recurrence. The current manuscript focuses on memory limits and does not contain the earlier classical-learning theorem. See the [current version note](docs/manuscript-2026-10-16-v5.md); the [original paper summary](docs/paper-summary.md) remains explicitly tied to the 15 October baseline.
 
-## Supplied numerical study in revision 4
+## Supplied numerical study in revision 5
 
-The new manuscript includes Ising and Haar reservoir simulations with streaming inputs, noise/evolution-time scans, and an exact repetition-code comparison. Their sampled depths are lower witnesses over five continuations, not certified maximization over all histories. No forecasting readout is trained; the Mackey–Glass plot is illustrative. The diagnostic scripts and exact-number/repetition calculations were rerun successfully; the full campaigns were not rerun. See the [revision check record](docs/manuscript-2026-10-16-v4.md).
+The manuscript retains the Ising and Haar reservoir simulations with streaming inputs, noise/evolution-time scans, and an exact repetition-code comparison from revision 4. Revision 5 expands the proof exposition and changes the evolution-time label to $J\Delta t$; the simulator and datasets are byte-identical. Their sampled depths are lower witnesses over five continuations, not certified maximization over all histories. No forecasting readout is trained; the Mackey–Glass plot is illustrative. The diagnostic scripts and exact-number/repetition calculations passed in revision 4; their source code is unchanged in revision 5. The full campaigns were not rerun. See the [revision check record](docs/manuscript-2026-10-16-v5.md).
 
 ## Quick start
 
@@ -48,7 +48,7 @@ Optional flags are `--q`, `--copies`, and `--precision`; see `--help`. The imple
 | Path | Purpose |
 | --- | --- |
 | [paper/](paper/) | Current PDF, editable source, archived inputs, provenance and draft citations |
-| [docs/manuscript-2026-10-16-v4.md](docs/manuscript-2026-10-16-v4.md) | Current version scope and validation record |
+| [docs/manuscript-2026-10-16-v5.md](docs/manuscript-2026-10-16-v5.md) | Current version scope and validation record |
 | [docs/paper-summary.md](docs/paper-summary.md) | Source-grounded model, claims and limitations |
 | [docs/research-plan.md](docs/research-plan.md) | Prioritized scientific work and acceptance criteria |
 | [src/fresh_qubits_memory/](src/fresh_qubits_memory/) | Majority-error and readable-lifetime calculations |
@@ -62,6 +62,6 @@ Start with the [research plan](docs/research-plan.md), whose equation anchors an
 
 ## Citation and reuse
 
-[CITATION.cff](CITATION.cff) describes this research repository; [paper/manuscript.bib](paper/manuscript.bib) records the supplied manuscript without inventing a DOI or journal acceptance. Each supplied input is preserved byte-for-byte; [current provenance](paper/versions/2026-10-16-v4/provenance.json) records the input and rebuilt output hashes.
+[CITATION.cff](CITATION.cff) describes this research repository; [paper/manuscript.bib](paper/manuscript.bib) records the supplied manuscript without inventing a DOI or journal acceptance. Each supplied input is preserved byte-for-byte; [current provenance](paper/versions/2026-10-16-v5/provenance.json) records the input and rebuilt output hashes.
 
 No open-source license has been selected. Public release and licensing are separate project decisions.

@@ -1,0 +1,174 @@
+{
+  "title": "The Memory Limits of Noisy Quantum Reservoirs",
+  "authors": [
+    {
+      "given": "Markus",
+      "family": "Baumann",
+      "email_from_manuscript": "markus.baumann@campus.lmu.de",
+      "corresponding": true,
+      "orcid": "0009-0007-3575-1006",
+      "affiliation_ids": [
+        "qar",
+        "mobile"
+      ],
+      "affiliations": [
+        "Quantum Applications and Research Laboratory (QAR-Lab), Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany",
+        "Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany"
+      ],
+      "orcid_status": "Identifier verified from prior manuscripts/institutional records; not authenticated for this APS submission",
+      "metadata_sources": [
+        "/Users/superposition/Documents/Codex/2026-10-11/was-m/work/compact-funding168-spaced-fresh-source/paper/main.tex:51",
+        "/Users/superposition/Documents/Codex/2026-08-05/ich/work/qrc_dissipation_engineering/paper/dissipation_qrc.tex:92"
+      ]
+    },
+    {
+      "given": "Jonas",
+      "family": "Stein",
+      "email": "jonas.stein@ifi.lmu.de",
+      "orcid": "0000-0001-5727-9151",
+      "metadata_sources": [
+        "https://www.ifi.lmu.de/mvs/en/team/contact-page/jonas-stein-ef892b38.html"
+      ],
+      "orcid_status": "Identifier verified from prior manuscripts/institutional records; not authenticated for this APS submission",
+      "affiliation_ids": [
+        "qar",
+        "mobile"
+      ],
+      "affiliations": [
+        "Quantum Applications and Research Laboratory (QAR-Lab), Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany",
+        "Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany"
+      ]
+    },
+    {
+      "given": "Claudia",
+      "family": "Linnhoff-Popien",
+      "email": "linnhoff@ifi.lmu.de",
+      "orcid": "0000-0001-6284-9286",
+      "metadata_sources": [
+        "https://www.ifi.lmu.de/mvs/en/team/contact-page/claudia-linnhoff-popien-5eb3fc37.html",
+        "https://epub.ub.uni-muenchen.de/view/autoren/Linnhoff-Popien=3AClaudia=3A=3A.html"
+      ],
+      "orcid_status": "Identifier verified from prior manuscripts/institutional records; not authenticated for this APS submission",
+      "affiliation_ids": [
+        "qar",
+        "mobile"
+      ],
+      "affiliations": [
+        "Quantum Applications and Research Laboratory (QAR-Lab), Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany",
+        "Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany"
+      ]
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "qar",
+      "name": "Quantum Applications and Research Laboratory (QAR-Lab), Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany"
+    },
+    {
+      "id": "mobile",
+      "name": "Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany"
+    }
+  ],
+  "affiliation_sources": [
+    "https://arxiv.org/html/2608.14181v1",
+    "https://arxiv.org/html/2609.31027v1",
+    "https://qarlab.de/team/",
+    "https://www.ifi.lmu.de/mvs/en/"
+  ],
+  "abstract": "Quantum reservoir computing processes time series by injecting one input per time step into a fixed, noisy quantum system and training only a linear readout. A reservoir can solve a temporal task only if the inputs the task needs are still present in its state. What fundamentally limits this memory? Adding qubits seems the natural way to extend it. However, noise injects entropy into every qubit at every time step, and under depolarizing noise a reservoir can remove this entropy steadily only through the input qubits that are reinitialized at each time step. Here we show that this number, not the size of the reservoir, sets the memory. With k reinitialized input qubits per time step, the largest attainable memory depth at fixed accuracy is exp[Θ(k)] time steps once the initial state has been washed out, independent of the total number of qubits. The upper bound holds for every reservoir unitary and input encoding, and an explicit construction shows that the exponential scaling is attainable. Retaining an input for T time steps therefore requires Θ(log T) reinitialized input qubits per time step. Unital noise leaves this limit unchanged, whereas non-unital noise acts as an additional entropy sink. These results identify reinitialized input qubits, not reservoir size, as the fundamental resource for memory in quantum reservoir computing, and make memory a quantity that can be budgeted in the design of quantum reservoirs.",
+  "data_availability": "The code that reproduces all numerical values, simulations, and data figures of this article is provided as Supplemental Material~\\cite{SM}.",
+  "data_availability_plain": "The code that reproduces all numerical values, simulations, and data figures of this article is provided as Supplemental Material.",
+  "author_metadata_verified_on": "2026-10-16",
+  "category_proposal": "Theoretical",
+  "physh_primary_proposal": "Quantum channels",
+  "declarations_pending_author_confirmation": [
+    "All coauthors agree to this submission and satisfy authorship requirements",
+    "No concurrent consideration by another journal; any related manuscripts disclosed",
+    "Funding and potential conflicts of interest",
+    "Exact AI tool/version and the existing human-verification assertions",
+    "Corresponding author ORCID authenticated through APS"
+  ],
+  "not_elected": [
+    "Paid open access",
+    "Paid print colour",
+    "Copyright or licence agreement"
+  ],
+  "account_status": "Authenticated; verify/correct displayed profile name to Markus Baumann and affiliation. Academic title not verified; manuscript uses no academic title.",
+  "journal": "Physical Review Letters",
+  "article_type": "Letter",
+  "prepared_date": "2026-10-16",
+  "status": "Authenticated APS account; unsubmitted PRL draft es2026oct16_693 created. No files uploaded and no author fields entered. Current v5 full manuscript is not PRL-ready; no condensed PRL manuscript has been created or authorized.",
+  "portal": {
+    "journal": "Physical Review Letters",
+    "article_type": "Letter",
+    "temporary_draft_id": "es2026oct16_693",
+    "url": "https://authors.aps.org/Submissions/submissions/es2026oct16_693/file_info/edit",
+    "authenticated": true,
+    "account_email": "markus.baumann@campus.lmu.de",
+    "section": "Quantum Information, Science, and Technology",
+    "subsection": "Quantum Algorithms and Computation",
+    "formal_collaboration": false,
+    "current_step": "Manage Files; manuscript PDF required to continue",
+    "files_uploaded": false,
+    "author_fields_entered": false,
+    "submitted": false,
+    "fees_or_agreements_accepted": false,
+    "final_submission_authorized": false
+  },
+  "related_pra_preparation": {
+    "temporary_draft_id": "es2026oct16_686",
+    "submitted": false,
+    "files_uploaded": false,
+    "relationship": "Existing unsubmitted PRA preparation; no joint submission declared. PRA files left unchanged."
+  },
+  "manuscript_readiness": {
+    "prl_manuscript_ready": false,
+    "ready_manuscript_path": null,
+    "source_manuscript": "/Users/superposition/Documents/Codex/2026-10-15/https-github-com-eybmits-fresh-qubits/work/fresh-qubits-memory/paper/memory_limits_2026-10-16-v5.pdf",
+    "source_pages": 21,
+    "source_sha256": "69a83d1a0c0f4bab16b29e879efd2226f0f16fc6a0b2c8701a5e7544b315ea76",
+    "required_action": "Prepare a concise PRL Letter and allocate essential specialist material to End Matter and appropriate Supplemental Material; recheck length and layout before upload.",
+    "source_pdf_included_in_prl_bundle": false,
+    "source_revision": "v5",
+    "supplied_pdf_pages": 21,
+    "source_pdf_status": "Integrated full v5 PRA-style manuscript, 21 pages; not a PRL short manuscript.",
+    "condensed_prl_manuscript_authorized": false,
+    "short_version_question": "User has not answered whether to create a short PRL version or only prepare the portal draft."
+  },
+  "journal_requirements": {
+    "author_guidelines": "https://journals.aps.org/prl/authors",
+    "checked_on": "2026-10-16",
+    "core_word_limit": 3750,
+    "end_matter_page_limit": 2,
+    "justification_words": 100,
+    "length_note": "Word limit is the journal core limit, not a raw count of the full source including references; use APS length guidance for figures/equations."
+  },
+  "justification": "We identify a resource law for memory in noisy quantum dynamics. At fixed accuracy and independent depolarizing noise, the greatest attainable memory depth grows exponentially with the number of qubits reinitialized per step, independently of reservoir size after initialization decays. A uniform upper bound and an explicit construction establish both sides of this scaling. Additional unital noise preserves the bound, while cooling supplies another entropy sink. This connects quantum information retention, open system dynamics, and physical computing through a shared resource accounting. We believe this perspective can interest physicists beyond reservoir computing and guide the design of driven quantum devices.",
+  "justification_word_count": 100,
+  "justification_count_method": "Whitespace-separated tokens; no hyphenated words or mathematical symbols in the paragraph.",
+  "editorial_case_status": "Reasoned author case for PRL interest, not an independent certification of novelty, significance, proof validity or editorial suitability.",
+  "numerical_scope": "Ising/Haar simulations provide sampled memory-depth witnesses/lower bounds. No exact supremum, trained forecasting benchmark or quantum computational advantage is claimed.",
+  "historical_length_audit": {
+    "revision": "v4 only, not v5",
+    "ordinary_texcount_words": 5960,
+    "breakdown": {
+      "body": 5015,
+      "headings": 156,
+      "captions": 789,
+      "display_equation_rows": 15,
+      "display_equation_word_equivalent": 240,
+      "four_double_column_figures_word_equivalent": 1047.65,
+      "two_tables_minimum_word_equivalent": 195
+    },
+    "conservative_prl_equivalent_lower_estimate": 7443,
+    "core_limit": 3750,
+    "qualification": "Estimate from local length audit, not an official APS count; v5 was not assessed by this count."
+  },
+  "current_length_audit": {
+    "revision": "incoming v5 before integration clarifications",
+    "ordinary_texcount_words": 6218,
+    "conservative_prl_equivalent_lower_estimate": 7733,
+    "core_limit": 3750,
+    "qualification": "Conservative local estimate supplied by length-audit agent; not an official APS count. A separate PRL manuscript does not yet exist."
+  }
+}

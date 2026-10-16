@@ -1,0 +1,29 @@
+16 October 2026
+
+Editors of Physical Review A
+
+Dear Editors,
+
+Please consider our manuscript, "The Memory Limits of Noisy Quantum Reservoirs," by Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien, as a Regular Article in Physical Review A.
+
+Quantum reservoir computing uses a fixed quantum system to process sequential inputs. A basic design question is how long past inputs can remain distinguishable when noise acts at every step. Our manuscript identifies the supply of reinitialized input qubits as the resource controlling a universal bound on driven memory under independent depolarizing noise.
+
+For fixed noise strength and accuracy, we establish an upper bound on memory depth that is exponential in the number k of reinitialized input qubits per step and independent of total reservoir size. The bound applies uniformly to reservoir unitaries and input encodings after initialization has washed out. A reversible repetition-code construction attains exponential scaling in k. We also show how additional unital noise preserves the upper bound and how non-unital relaxation supplies another entropy sink.
+
+The revised manuscript develops the mathematical framework in detail: normalized norms quantify distinguishability and purity, a bound on the image of the identity defines the input budget, and the analysis separates initialization washout from the memory of unique echo states. The noise extension states the conditions under which additional unital channels preserve the upper bound and how non-unital channels contribute to the budget.
+
+Density-matrix simulations of transverse-field Ising and Haar-random reservoirs provide sampled memory-depth witnesses under finite sets of input continuations. These are lower bounds, not exact suprema over input histories or trained forecasting benchmarks.
+
+The work connects open quantum dynamics, information retention, and resources for quantum information processing. We believe it will interest Physical Review A readers studying noisy quantum systems, quantum channels, and quantum reservoir computing. The manuscript establishes a memory-resource law without claiming quantum computational advantage.
+
+Proofs, detailed numerical methods, and a disclosure of language-model assistance are included in the manuscript. The Supplemental Material contains the simulator, supplied simulation data, numerical calculations, and figure-generation sources, with dependencies and reproduction instructions.
+
+Thank you for considering the manuscript.
+
+Sincerely,
+Markus Baumann
+Quantum Applications and Research Laboratory (QAR-Lab)
+Chair of Mobile and Distributed Systems
+Department of Computer Science, Ludwig-Maximilians-Universität München
+Oettingenstraße 67, 80538 München, Germany
+markus.baumann@campus.lmu.de

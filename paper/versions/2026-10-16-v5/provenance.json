@@ -1,0 +1,272 @@
+{
+  "version": "v5",
+  "received_date": "2026-10-16",
+  "title": "The Memory Limits of Noisy Quantum Reservoirs",
+  "authors": [
+    "Markus Baumann",
+    "Jonas Stein",
+    "Claudia Linnhoff-Popien"
+  ],
+  "input_files": [
+    {
+      "original_name": "memory_limits (9).pdf",
+      "archived_path": "paper/versions/2026-10-16-v5/memory_limits-supplied.pdf",
+      "sha256": "bc7a9f9eb6094555372c577478b00644babb896b0c69b9b28704bc25df2a9aa2",
+      "bytes": 788042
+    },
+    {
+      "original_name": "memory_limits_source (2).zip",
+      "archived_path": "paper/versions/2026-10-16-v5/memory_limits_source-original.zip",
+      "sha256": "81b8f7a102821dde7801460c51bc9e68edca62bdb89e122f9161f1adb98da8df",
+      "bytes": 1118189
+    }
+  ],
+  "supplied_pdf_pages": 21,
+  "previous_final_source": {
+    "path": "paper/versions/2026-10-16-v4/source-final-v4.zip",
+    "sha256": "aaeb00bacdb62c916a45181a380133295c3fc9c706f135878518449ab6ef1606"
+  },
+  "normalization": [
+    "PRA reprint option, PDF metadata and fixed date",
+    "Restore approved three-author byline, three ORCID links and two affiliations",
+    "Four native paragraph table preambles; no cell-content changes",
+    "Singular AI verification attribution names Markus Baumann",
+    "README reproduction and status clarifications"
+  ],
+  "status": "Integrated and visually verified; full PRA-style manuscript, not PRL-length compliant; no submission",
+  "unchanged_simulation_files": true,
+  "wording_clarifications": [
+    {
+      "before": "The threshold $k_q$ is the smallest number of input qubits for which the majority vote is reliable enough for the lower bound",
+      "after": "The threshold $k_q$ is a sufficient number of input qubits for the majority vote to be reliable enough for the lower bound"
+    },
+    {
+      "before": "the largest purity that a reservoir can maintain.",
+      "after": "an upper bound on the purity that a reservoir can maintain."
+    },
+    {
+      "before": "largest gain of the 2-norm in one time step (Lemma~\\ref{lem:cap})",
+      "after": "prefactor in the interpolated 2-norm bound (Lemma~\\ref{lem:cap})"
+    },
+    {
+      "before": "smallest $k$ of the lower bound (Appendix~\\ref{app:lower})",
+      "after": "sufficient threshold for the lower bound (Appendix~\\ref{app:lower})"
+    },
+    {
+      "before": "The threshold $k_q$ is thus the smallest number of input qubits for which the majority vote is reliable enough for this estimate;",
+      "after": "The threshold $k_q$ is thus a sufficient number of input qubits for the majority vote to be reliable enough for this estimate;"
+    },
+    {
+      "before": "\\subsection{Every unital qubit channel contains depolarizing noise}",
+      "after": "\\subsection{Unital qubit channels with full-rank Choi matrices contain depolarizing noise}"
+    }
+  ],
+  "output_pdf": {
+    "path": "paper/memory_limits_2026-10-16-v5.pdf",
+    "sha256": "69a83d1a0c0f4bab16b29e879efd2226f0f16fc6a0b2c8701a5e7544b315ea76",
+    "bytes": 873584,
+    "pages": 21
+  },
+  "validation": [
+    "21 pages rendered and visually inspected; eight figures and six tables visible",
+    "Three correct ORCID link annotations and both affiliation markers verified",
+    "BibTeX regeneration byte-identical to supplied BBL",
+    "No unresolved references or overfull boxes; nonfatal nameref/deferred-float warnings remain",
+    "12 repository unit tests pass; scientific simulation code and data unchanged, full campaigns not rerun",
+    "Normalized body matches supplied source after reversing recorded wording edits, attribution and table formatting",
+    "All 36 other supplied files are byte-identical; title and abstract retained exactly",
+    "All font instances are embedded Type 1"
+  ],
+  "source_files": [
+    {
+      "path": "README.txt",
+      "sha256": "87bd6c9abfb320570b2dc1efe263303735d7e6cc6a912d95634885f52baa9434",
+      "bytes": 3976
+    },
+    {
+      "path": "fig1.pdf",
+      "sha256": "1f94e477032af5df6710db439f157354c0ee3a55fc9f90111bf6e86714542b87",
+      "bytes": 150403
+    },
+    {
+      "path": "fig2.pdf",
+      "sha256": "1d410b622de3d750f7e4f03075ead0f0a7a96192bbf11c60cb1b7d81ef3881c5",
+      "bytes": 90641
+    },
+    {
+      "path": "fig3.pdf",
+      "sha256": "7a05e5ce4dc9386297aa7962ef028b4c10115a8e4a82697e3ba27bbc9461704b",
+      "bytes": 90477
+    },
+    {
+      "path": "fig4.pdf",
+      "sha256": "575d8acb94d68f0d290878db1c9cac14d41536043dcc467841d29d05b0ca4519",
+      "bytes": 74616
+    },
+    {
+      "path": "figA1.pdf",
+      "sha256": "a6012bbc729543a7821d619315bc4d3626f1eead047daab39b0901f04f6e37c1",
+      "bytes": 90358
+    },
+    {
+      "path": "figA2.pdf",
+      "sha256": "b6f08b99aad524f801189d85bfb2c924e93baf08a77daf7b81175a9d225f8bcd",
+      "bytes": 71558
+    },
+    {
+      "path": "figA3.pdf",
+      "sha256": "fa33701a2d1a2022d8f7e230ea323a24d9c622a5f5537ae737fedb2d677a7628",
+      "bytes": 71006
+    },
+    {
+      "path": "figA4.pdf",
+      "sha256": "f5745ffc43ebfaa56b1be4d1180037948df6d18c8a0c5746ac5aa8c5f1b97e81",
+      "bytes": 75898
+    },
+    {
+      "path": "figures/fig1.tex",
+      "sha256": "2208345527d06ca3fbbf1cd79885aa11a6c2f86912c4146989b621fe38d70def",
+      "bytes": 6117
+    },
+    {
+      "path": "figures/fig1_panels.py",
+      "sha256": "49a982c1ab702877ebbc9bc59de4fbd62bbaf107efb90341f68e8692db1d4c7a",
+      "bytes": 7010
+    },
+    {
+      "path": "figures/fig1a.pdf",
+      "sha256": "e510e76926c90b0b30f3df75f399b03cf2fa8fb02cce64583d1dc5ce957d44f7",
+      "bytes": 70412
+    },
+    {
+      "path": "figures/fig1c.pdf",
+      "sha256": "d43967ba093da7c457d0dbb9d005594687ff3bb0d2d58d5c357f442e4ef4b361",
+      "bytes": 80709
+    },
+    {
+      "path": "figures/fig1d.pdf",
+      "sha256": "7642406d0753cff691d0e94d828075fde829061d76a98f4959ec34a166fcc728",
+      "bytes": 79641
+    },
+    {
+      "path": "figures/fig2.py",
+      "sha256": "4efb012d80b59e4a4c17816f2486ce238baccce177573734acf9bec4908a9dd8",
+      "bytes": 4103
+    },
+    {
+      "path": "figures/fig3.tex",
+      "sha256": "dbcabb283467edb27728d993007fa3853dfd1ecd9a7bc2d2f4cd5e8e288439e3",
+      "bytes": 3440
+    },
+    {
+      "path": "figures/fig3bc.pdf",
+      "sha256": "95d0cd7bd1e70b06a1d8902fc84e5652757d512f9414315d02d8150ff14bec53",
+      "bytes": 86804
+    },
+    {
+      "path": "figures/fig3bc.py",
+      "sha256": "865987c24b787ed6c0b5a9b11d871d4a4312f16576fc821750639f982b8b9c9f",
+      "bytes": 2701
+    },
+    {
+      "path": "figures/fig4.py",
+      "sha256": "b909003d32026c99228da270c0bed37a2546e5971a50efc00aac92e381ce930b",
+      "bytes": 5152
+    },
+    {
+      "path": "figures/figA.py",
+      "sha256": "d946ffecc2bf2868599cabd759d41f56f2fa85be0a962e2d8415da969bf284d8",
+      "bytes": 5865
+    },
+    {
+      "path": "figures/figA4.py",
+      "sha256": "4dd55d462311ba5c9d0097adadc12199c7b3ebc36f195319edf26ec659595413",
+      "bytes": 3254
+    },
+    {
+      "path": "figures/figstyle.py",
+      "sha256": "f0045537958b49afe76a78b70c68f7e8b24ac105ea17765603ec3cc79082638a",
+      "bytes": 6251
+    },
+    {
+      "path": "figures/tikzstyle.tex",
+      "sha256": "413ed740ab12d86adaafee7a4bc5fe98b5b032594cd72baad1acd1af79e4347f",
+      "bytes": 2456
+    },
+    {
+      "path": "memory_limits.bbl",
+      "sha256": "892e0970fa9dad4503aea0ff04ee60d25fb95ed4287b0eccd32d16b74f66ae6e",
+      "bytes": 29637
+    },
+    {
+      "path": "memory_limits.tex",
+      "sha256": "bd16774fa5514e11ebc5eaa5a1705fbe1dc9d088b3fb67ccc9e634ef1741fa10",
+      "bytes": 107205
+    },
+    {
+      "path": "refs.bib",
+      "sha256": "fb0458f67037cb7b12797f4fc0e58344b126dec50984c0a1015d1ffc7a31ad99",
+      "bytes": 11594
+    },
+    {
+      "path": "sim/campaign.py",
+      "sha256": "13d57cca5437979b9d4baf7047006b385ba91e5be24e3a0fb28441be1d723c84",
+      "bytes": 2188
+    },
+    {
+      "path": "sim/campaign_extra.py",
+      "sha256": "bd2746453a2389cfae36507638880f79d3d23e45a61bd4fa0b23e1dd0b93e270",
+      "bytes": 1278
+    },
+    {
+      "path": "sim/check_washout.py",
+      "sha256": "f14299044d548551e47dfd41af30980c92e6b121c51ae7ffa95dca334f286f63",
+      "bytes": 714
+    },
+    {
+      "path": "sim/exact_numbers.json",
+      "sha256": "0361f1513b3805b70e668e0d02816edc525a29de323690dbc4069afbfbcc601e",
+      "bytes": 86029
+    },
+    {
+      "path": "sim/exact_numbers.py",
+      "sha256": "174a4870c4b18b7fa4cb509a36e7d606230e65a05c7d009a39c8ce7acb4bafc9",
+      "bytes": 5458
+    },
+    {
+      "path": "sim/qrc_sim.py",
+      "sha256": "b6d7aabdf9112853ae71467556ba7aca160a68561a010f9fffc11a56f08540b0",
+      "bytes": 4255
+    },
+    {
+      "path": "sim/rep_curve.json",
+      "sha256": "ccde0e49d5b9bd1ebc3858e8927a1fa41d817612b53f7971d9c9baa314f6b192",
+      "bytes": 30795
+    },
+    {
+      "path": "sim/rep_curve.py",
+      "sha256": "83ed8f7af6d00cf0ada94a2e32116b31ff9475279072f58c984c1d54e39f6418",
+      "bytes": 1588
+    },
+    {
+      "path": "sim/results_extra.json",
+      "sha256": "5cd7d660ec68c4d6f2df2df3e534c5768fd06fd057e91488934147831c0ad41e",
+      "bytes": 588
+    },
+    {
+      "path": "sim/results_main.json",
+      "sha256": "bb6aa0ca3735c172098ac6b8cf1efc85320b1d7427a52e824f6b14806146336e",
+      "bytes": 42929
+    },
+    {
+      "path": "sim/results_qscan.json",
+      "sha256": "b7f0f2e941476901d97fe8559c145a7754d278a694d0ac7008dfc25dd532025f",
+      "bytes": 24766
+    },
+    {
+      "path": "sim/test_sim.py",
+      "sha256": "b1ce0e39bb0859c6bf4a0118914825b6cf808860c5f115b0ada1695ee3266097",
+      "bytes": 2628
+    }
+  ]
+}

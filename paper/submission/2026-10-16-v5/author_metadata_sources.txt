@@ -1,0 +1,39 @@
+Author identifiers and affiliations - checked 16 October 2026
+
+Markus Baumann
+Email: markus.baumann@campus.lmu.de
+ORCID: 0009-0007-3575-1006
+Verified in previous camera-ready/manuscript sources:
+/Users/superposition/Documents/Codex/2026-10-11/was-m/work/compact-funding168-spaced-fresh-source/paper/main.tex:51
+/Users/superposition/Documents/Codex/2026-08-05/ich/work/qrc_dissipation_engineering/paper/dissipation_qrc.tex:92
+The live ORCID endpoint was unavailable. No live ORCID authentication claimed.
+
+Jonas Stein
+Email: jonas.stein@ifi.lmu.de
+ORCID: 0000-0001-5727-9151
+https://www.ifi.lmu.de/mvs/en/team/contact-page/jonas-stein-ef892b38.html
+The official institutional page lists the email and links the ORCID.
+
+Claudia Linnhoff-Popien
+Email: linnhoff@ifi.lmu.de
+ORCID: 0000-0001-6284-9286
+https://www.ifi.lmu.de/mvs/en/team/contact-page/claudia-linnhoff-popien-5eb3fc37.html
+https://epub.ub.uni-muenchen.de/view/autoren/Linnhoff-Popien=3AClaudia=3A=3A.html
+
+All three authors have both affiliations:
+1. Quantum Applications and Research Laboratory (QAR-Lab), Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany
+2. Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany
+
+Prior public manuscripts corroborating QAR-Lab and chair/group assignments:
+https://arxiv.org/html/2608.14181v1
+https://arxiv.org/html/2609.31027v1
+Official team/chair/address sources:
+https://qarlab.de/team/
+https://www.ifi.lmu.de/mvs/en/
+
+These identifiers have not been authenticated for this APS submission.
+Affiliations and institutional positions do not certify paper-specific
+contributions or coauthor approval. No academic title is inferred for Markus.
+The APS profile currently displays Dr. Markus and unaffiliated. Verify/correct
+the name to Markus Baumann and the affiliations; academic title is not verified.
+The manuscript uses Markus Baumann without an academic title.

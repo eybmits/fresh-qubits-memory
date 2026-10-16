@@ -1,8 +1,8 @@
 # Manuscript revision 4: 16 October 2026
 
-Current manuscript: **The Memory Limits of Noisy Quantum Reservoirs**, by Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien.
+Historical manuscript (superseded by revision 5): **The Memory Limits of Noisy Quantum Reservoirs**, by Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien.
 
-[PDF](../paper/memory_limits_2026-10-16-v4.pdf) | [LaTeX](../paper/source/memory_limits.tex) | [Input/output provenance](../paper/versions/2026-10-16-v4/provenance.json) | [PRA template audit](pra-template-check-2026-10-16.md)
+[PDF](../paper/memory_limits_2026-10-16-v4.pdf) | [Frozen LaTeX/source ZIP](../paper/versions/2026-10-16-v4/source-final-v4.zip) | [Input/output provenance](../paper/versions/2026-10-16-v4/provenance.json) | [PRA template audit](pra-template-check-2026-10-16.md)
 
 ## Source and changes
 

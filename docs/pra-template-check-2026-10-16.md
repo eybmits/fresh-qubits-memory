@@ -1,5 +1,7 @@
 # Physical Review A template check — 16 October 2026
 
+Historical audit of revision 4. See [the revision 5 audit](pra-template-check-2026-10-16-v5.md) for the current manuscript.
+
 The updated manuscript uses the official APS REVTeX 4.2 class with the Physical Review A journal option:
 
 ```latex

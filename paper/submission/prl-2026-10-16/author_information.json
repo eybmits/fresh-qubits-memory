@@ -1,0 +1,72 @@
+{
+  "authors": [
+    {
+      "given": "Markus",
+      "family": "Baumann",
+      "email_from_manuscript": "markus.baumann@campus.lmu.de",
+      "corresponding": true,
+      "orcid": "0009-0007-3575-1006",
+      "affiliation_ids": [
+        "qar",
+        "mobile"
+      ],
+      "affiliations": [
+        "Quantum Applications and Research Laboratory (QAR-Lab), Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany",
+        "Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany"
+      ],
+      "orcid_status": "Identifier verified from prior manuscripts/institutional records; not authenticated for this APS submission",
+      "metadata_sources": [
+        "/Users/superposition/Documents/Codex/2026-10-11/was-m/work/compact-funding168-spaced-fresh-source/paper/main.tex:51",
+        "/Users/superposition/Documents/Codex/2026-08-05/ich/work/qrc_dissipation_engineering/paper/dissipation_qrc.tex:92"
+      ]
+    },
+    {
+      "given": "Jonas",
+      "family": "Stein",
+      "email": "jonas.stein@ifi.lmu.de",
+      "orcid": "0000-0001-5727-9151",
+      "metadata_sources": [
+        "https://www.ifi.lmu.de/mvs/en/team/contact-page/jonas-stein-ef892b38.html"
+      ],
+      "orcid_status": "Identifier verified from prior manuscripts/institutional records; not authenticated for this APS submission",
+      "affiliation_ids": [
+        "qar",
+        "mobile"
+      ],
+      "affiliations": [
+        "Quantum Applications and Research Laboratory (QAR-Lab), Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany",
+        "Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany"
+      ]
+    },
+    {
+      "given": "Claudia",
+      "family": "Linnhoff-Popien",
+      "email": "linnhoff@ifi.lmu.de",
+      "orcid": "0000-0001-6284-9286",
+      "metadata_sources": [
+        "https://www.ifi.lmu.de/mvs/en/team/contact-page/claudia-linnhoff-popien-5eb3fc37.html",
+        "https://epub.ub.uni-muenchen.de/view/autoren/Linnhoff-Popien=3AClaudia=3A=3A.html"
+      ],
+      "orcid_status": "Identifier verified from prior manuscripts/institutional records; not authenticated for this APS submission",
+      "affiliation_ids": [
+        "qar",
+        "mobile"
+      ],
+      "affiliations": [
+        "Quantum Applications and Research Laboratory (QAR-Lab), Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany",
+        "Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany"
+      ]
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "qar",
+      "name": "Quantum Applications and Research Laboratory (QAR-Lab), Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany"
+    },
+    {
+      "id": "mobile",
+      "name": "Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany"
+    }
+  ],
+  "orcid_authentication": "Identifiers verified from prior manuscripts/institutional records; APS authentication remains separate and pending."
+}

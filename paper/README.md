@@ -1,37 +1,41 @@
 # Manuscript versions and source
 
-## Current version: 16 October 2026, revision 4
+## Current version: 16 October 2026, revision 5
 
 **The Memory Limits of Noisy Quantum Reservoirs**
 
-Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien (LMU Munich)
+Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien, each affiliated with QAR-Lab and the Chair of Mobile and Distributed Systems, Department of Computer Science, LMU Munich. The PDF includes all three ORCID links.
 
-- [Current 17-page PDF](memory_limits_2026-10-16-v4.pdf)
-- [Editable LaTeX](source/memory_limits.tex), [bibliography](source/refs.bib), [source reproduction instructions](source/README.txt)
-- [Received ZIP/PDF and provenance](versions/2026-10-16-v4/provenance.json)
-- [Revision scope and checks](../docs/manuscript-2026-10-16-v4.md), [official PRA template audit](../docs/pra-template-check-2026-10-16.md)
+- [Current 21-page PDF](memory_limits_2026-10-16-v5.pdf)
+- [Editable LaTeX](source/memory_limits.tex), [bibliography](source/refs.bib), [build instructions](source/README.txt)
+- [Received ZIP/PDF and provenance](versions/2026-10-16-v5/provenance.json)
+- [Revision scope and checks](../docs/manuscript-2026-10-16-v5.md), [PRA format and PRL length audit](../docs/pra-template-check-2026-10-16-v5.md)
 
-This imports the newly supplied `memory_limits (5).pdf` and `memory_limits_source (1).zip`. The earlier approved title, exact abstract and three-author order are retained. The update includes eight figures, five tables, and supplied Ising/Haar and repetition-code simulations with saved datasets. Those simulations are distinct from the repository's earlier independent empirical report.
+Imported from `memory_limits (9).pdf` and `memory_limits_source (2).zip`. The title and approved abstract are unchanged. The main changes are expanded proof explanations, a constants glossary, and consistent evolution-time notation. The simulator, saved datasets and bibliography are unchanged from revision 4. Four local wording distinctions were clarified without changing equations; all transformations are recorded in the provenance.
 
-The manuscript uses the official APS REVTeX 4.2 class with `aps,pra,reprint`. All fonts in the rebuilt PDF are embedded Type 1. Three table preambles were repaired for TeX Live 2025 without changing their contents. The mathematical body is otherwise retained from the supplied revision; see the checks and remaining interpretation notes above.
+This is the full manuscript in official APS REVTeX 4.2 with `aps,pra,reprint`. It has eight figures and six tables. Four paragraph-column table preambles were normalized for the installed REVTeX/array incompatibility without changing cell content, apart from the separately documented wording clarifications.
 
-Build from the repository root (TeX Live with REVTeX 4.2, pdfLaTeX and BibTeX):
+Build from the repository root (TeX Live with REVTeX 4.2, pdfLaTeX, BibTeX and orcidlink):
 
 ```bash
 latexmk -cd -pdf -interaction=nonstopmode -halt-on-error \
-  -outdir=../../work/manuscript-build-2026-10-16-v4 paper/source/memory_limits.tex
-(cd work/manuscript-build-2026-10-16-v4 && BIBINPUTS=../../paper/source: bibtex memory_limits)
+  -outdir=../../work/manuscript-build-2026-10-16-v5 paper/source/memory_limits.tex
+(cd work/manuscript-build-2026-10-16-v5 && BIBINPUTS=../../paper/source: bibtex memory_limits)
 latexmk -cd -pdf -interaction=nonstopmode -halt-on-error \
-  -outdir=../../work/manuscript-build-2026-10-16-v4 paper/source/memory_limits.tex
+  -outdir=../../work/manuscript-build-2026-10-16-v5 paper/source/memory_limits.tex
 ```
 
-The supplied BBL is included and matches BibTeX regeneration. The source ZIP prepared for APS embeds that bibliography in its upload copy; the editable source keeps BibTeX. No shell escape is needed. The current simulation supplement needs Python 3 with NumPy, SciPy and mpmath; figure generation also needs matplotlib, LaTeX, TikZ, Helvetica and cm-super. Follow [source/README.txt](source/README.txt), including the final copy step for generated figure PDFs.
+The supplied BBL matches BibTeX regeneration. The separately prepared APS source ZIP embeds that bibliography; editable source keeps BibTeX. No shell escape is needed. The simulation supplement uses NumPy and SciPy; figure generation additionally needs matplotlib, LaTeX, TikZ, Helvetica and cm-super. Follow the final figure-copy step in [source/README.txt](source/README.txt).
 
-The current PDF, source ZIP and complete supplement are prepared locally for a PRA Regular Article. They have not been submitted. Original PDFs and input archives remain immutable; publication metadata is not fabricated.
+An unsubmitted PRL Letter draft has been started, but the current full manuscript exceeds PRL's 3750-word-equivalent core limit. A separate short Letter is still required. [PRL administrative drafts](submission/prl-2026-10-16/README.TXT) record its status and the 100-word justification. The earlier PRA draft is also unsubmitted. No manuscript has been uploaded, no fees or agreements accepted, and no journal acceptance is implied.
+
+## Previous revision 4: 16 October 2026
+
+The [17-page PDF](memory_limits_2026-10-16-v4.pdf), [final source snapshot](versions/2026-10-16-v4/source-final-v4.zip), [original inputs/provenance](versions/2026-10-16-v4/provenance.json), and [historical check record](../docs/manuscript-2026-10-16-v4.md) are preserved. Its received source introduced the supplied numerical campaigns, datasets and eight-figure layout.
 
 ## Previous revision 3: 16 October 2026
 
-The [12-page PDF](memory_limits_2026-10-16.pdf), [final source snapshot](versions/2026-10-16/source-final-v3.zip), [original inputs/provenance](versions/2026-10-16/provenance.json), and [historical scope/checks](../docs/manuscript-2026-10-16.md) are preserved. It used the approved abstract and three-author order; its source has now been superseded in `source/` by revision 4.
+The [12-page PDF](memory_limits_2026-10-16.pdf), [final source snapshot](versions/2026-10-16/source-final-v3.zip), [original inputs/provenance](versions/2026-10-16/provenance.json), and [historical scope/checks](../docs/manuscript-2026-10-16.md) are preserved. It used the approved abstract and three-author order; its source has now been superseded in `source/` by revision 5.
 
 ## Original version: 15 October 2026
 
