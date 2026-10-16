@@ -21,7 +21,7 @@
   ],
   "output": {
     "path": "paper/memory_limits_2026-10-16.pdf",
-    "sha256": "ed357e277c026068613a57e956f84166f982ee82cb43f2bc84b0e50fa68eb735",
+    "sha256": "df87af353c96b0a91d9295feff9aea6a1e24a226b2eb65c8e455568c9a0c344b",
     "size_bytes": 704439,
     "pages": 12
   },
@@ -103,8 +103,8 @@
     },
     {
       "path": "paper/source/memory_limits.tex",
-      "sha256": "b2d224d498525c08c727f89d8f8301860427514d6ccb0a3422819571ab33b626",
-      "size_bytes": 61905
+      "sha256": "7ac4b6f0a5edeb3f7771de45fe540ad9a1ce5ad09640f6eab6ba5a12d01d4533",
+      "size_bytes": 61874
     },
     {
       "path": "paper/source/refs.bib",
@@ -122,9 +122,10 @@
     "Replaced abstract verbatim with user-requested text.",
     "Changed title and PDF metadata.",
     "Replaced array-dependent table preambles with native paragraph columns and equivalent cell-local alignment for REVTeX 4.2f compatibility.",
-    "Updated title references in source README and supplement docstring; scientific body and calculations otherwise unchanged."
+    "Updated title references in source README and supplement docstring; scientific body and calculations otherwise unchanged.",
+    "Follow-up abstract revision: replaced the majority-vote description with the user-requested explicit-construction sentence; title and body unchanged."
   ],
-  "abstract_sha256": "57ad62ff61dd170d986d79150b8e52ab3369de7b2ea27eb8d6c1934ef83cf896",
+  "abstract_sha256": "4b5d8b2ea604ad6b3bfe8561bf98f8f941438065e45dcf4743381d146f7129d2",
   "build": {
     "command": "latexmk -cd -pdf -interaction=nonstopmode -halt-on-error -outdir=../../work/manuscript-build-2026-10-16 paper/source/memory_limits.tex",
     "engine": "pdfTeX 1.40.27 (TeX Live 2025)",
@@ -141,11 +142,20 @@
     "existing_test_methods_passed": 6,
     "supplement_mpmath_version": "1.3.0",
     "majority_lifetimes_match_baseline": true,
-    "layout": "All pages rendered; first page and tables inspected at higher resolution."
+    "layout": "Revision 2: all 12 pages rendered and inspected; first page inspected at higher resolution."
   },
   "notes": [
     "The 15 October source remains immutable with provenance in paper/provenance.json.",
     "Supplemental Material publisher URL and year remain unavailable in the supplied bibliography.",
     "Build and numerical checks do not independently validate mathematical proofs, novelty, or publication status."
-  ]
+  ],
+  "previous_revisions": [
+    {
+      "revision": 1,
+      "commit": "31b259a01b35a480ffc865d3c930b0dfdeadc2d0",
+      "output_sha256": "ed357e277c026068613a57e956f84166f982ee82cb43f2bc84b0e50fa68eb735",
+      "abstract_sha256": "57ad62ff61dd170d986d79150b8e52ab3369de7b2ea27eb8d6c1934ef83cf896"
+    }
+  ],
+  "revision": 2
 }

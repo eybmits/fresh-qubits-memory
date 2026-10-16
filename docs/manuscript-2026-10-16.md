@@ -16,6 +16,10 @@ The 15 October source PDF and numerical baseline are preserved. The newly suppli
 
 The noise interpretation remains conditional: a fixed independent depolarizing layer is assumed per time step. Additional unital layers preserve the upper bound; they need not preserve the particular construction's achievable lifetime. No gate-level fault-tolerance statement follows from the ideal-unitary/noise-cycle model.
 
+## Abstract follow-up
+
+The second revision on 16 October replaces the abstract's majority-vote description with the requested sentence ending “and an explicit construction shows that the exponential scaling is attainable.” The remainder of the abstract, title, and manuscript body are unchanged. The earlier PDF and abstract hashes and commit are retained in the provenance history.
+
 ## Validation
 
 - The replacement abstract is checked byte-for-byte against the requested LaTeX text.
