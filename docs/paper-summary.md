@@ -1,5 +1,7 @@
 # Manuscript summary
 
+**Historical scope:** this page describes the immutable 15 October 2026 manuscript. For the current 16 October version, its state-based memory definition and supplied source package, see [the current version note](manuscript-2026-10-16.md). Equation/table anchors and the classical-learning result below belong to the earlier version.
+
 ## Source and evidence status
 
 **Title:** *Fresh qubits set the memory: A sharp reset–memory law and classical learning of noisy quantum reservoirs*

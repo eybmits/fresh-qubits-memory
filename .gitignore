@@ -16,6 +16,7 @@ data/raw/
 results/local/
 *.aux
 *.bbl
+!paper/source/memory_limits.bbl
 *.blg
 *.fdb_latexmk
 *.fls

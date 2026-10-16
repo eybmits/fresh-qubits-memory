@@ -8,7 +8,7 @@ authors:
     affiliation: Ludwig-Maximilians-Universität München
 version: 0.1.0
 repository-code: "https://github.com/eybmits/fresh-qubits-memory"
-abstract: "Research workspace and independent numerical reproduction of the majority-refresh example in the supplied Fresh qubits set the memory manuscript."
+abstract: "Research workspace for Input Reinitialization Sets the Memory of Noisy Quantum Reservoirs, with editable manuscript sources and an independent numerical reproduction of the majority-refresh example."
 keywords:
   - quantum reservoir computing
   - memory

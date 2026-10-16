@@ -1,0 +1,151 @@
+{
+  "version_date": "2026-10-16",
+  "title": "Input Reinitialization Sets the Memory of Noisy Quantum Reservoirs",
+  "authors": [
+    "Markus Baumann"
+  ],
+  "source_title": "The Memory Limits of Noisy Quantum Reservoirs",
+  "inputs": [
+    {
+      "original_filename": "memory_limits_source.zip",
+      "archived_path": "paper/versions/2026-10-16/memory_limits_source-original.zip",
+      "sha256": "59db60df36cb16425ac2f13ab1ed7d680d9dec57beadf1f281aa2c2ae3a3a464",
+      "size_bytes": 335952
+    },
+    {
+      "original_filename": "memory_limits (1).pdf",
+      "archived_path": "paper/versions/2026-10-16/memory_limits-supplied.pdf",
+      "sha256": "cd51352095dcfd062130c1012297d0e79f0c8887c609422a3108ef1991a95b5a",
+      "size_bytes": 589977
+    }
+  ],
+  "output": {
+    "path": "paper/memory_limits_2026-10-16.pdf",
+    "sha256": "ed357e277c026068613a57e956f84166f982ee82cb43f2bc84b0e50fa68eb735",
+    "size_bytes": 704439,
+    "pages": 12
+  },
+  "source_files": [
+    {
+      "path": "paper/source/README.txt",
+      "sha256": "eea57c37396044654e78f82ce9ae4b0151b9451e2da3c95cf82fda99bcb8dacc",
+      "size_bytes": 626
+    },
+    {
+      "path": "paper/source/fig1.pdf",
+      "sha256": "1524f59d66a4080eff4d248ac1fafb18d7e0efb92c7c214c6892f3892f9a7c64",
+      "size_bytes": 88637
+    },
+    {
+      "path": "paper/source/fig3.pdf",
+      "sha256": "cce99bfaf9441c123caa0f907dfab3cf1b3b6304843f540369cb8423e3b62c85",
+      "size_bytes": 71530
+    },
+    {
+      "path": "paper/source/fig4a.pdf",
+      "sha256": "22384763d55a9ab1860a37270cc92126205a6966340b55985262545bf60cc203",
+      "size_bytes": 64313
+    },
+    {
+      "path": "paper/source/fig_limit.pdf",
+      "sha256": "7d04b8d6d67fcdc1c42408f7eb7ffa70b0b8e3d27e7be97d9fa99bc751369f45",
+      "size_bytes": 53925
+    },
+    {
+      "path": "paper/source/fig_repetition.pdf",
+      "sha256": "86c764aae8c37954ddf89af5836f207be5d6c1446a264000f7327637f28f7849",
+      "size_bytes": 32606
+    },
+    {
+      "path": "paper/source/figures/fig1_standalone.tex",
+      "sha256": "0c119daca2267176eaffa4e4c6bd9f7baa2bc6fa1b0d5211453bae672a32d99d",
+      "size_bytes": 297
+    },
+    {
+      "path": "paper/source/figures/fig1_tikz.tex",
+      "sha256": "deb6d8bb2185ffd33575728fafe8b578f8d00ee6edda866276db69731b5b9cf2",
+      "size_bytes": 4630
+    },
+    {
+      "path": "paper/source/figures/fig3_standalone.tex",
+      "sha256": "d4b6603600bfad92a153e95ce2b5b8233d8f6fd4ec88a6072a12f9330f68b579",
+      "size_bytes": 297
+    },
+    {
+      "path": "paper/source/figures/fig3_tikz.tex",
+      "sha256": "552d59761d2208b2361d6fe5349c2a855574557472d9ef629cb81eac800f2c55",
+      "size_bytes": 1445
+    },
+    {
+      "path": "paper/source/figures/fig4a_standalone.tex",
+      "sha256": "95a700e15ef418199a08c5c8d8d382fd28ee8d66a55495c0cc73ae82e8642dc6",
+      "size_bytes": 298
+    },
+    {
+      "path": "paper/source/figures/fig4a_tikz.tex",
+      "sha256": "2e5e88c65978b922dda8dfce25f1c03c43ee5760b3501941a3429f7fec5efc44",
+      "size_bytes": 2722
+    },
+    {
+      "path": "paper/source/figures/figs.tex",
+      "sha256": "6e019416b06007d49aa36764018eda065bceaa564bccc3bfb6fc35fdc09bd1eb",
+      "size_bytes": 313
+    },
+    {
+      "path": "paper/source/figures/make_figures.py",
+      "sha256": "bf0c988ab2578d0498f2c0f4d924809601299ab49f784cba7533b8b3ff42bfd3",
+      "size_bytes": 6967
+    },
+    {
+      "path": "paper/source/memory_limits.bbl",
+      "sha256": "09038aac8896aaca4c6a088ffa4febc16f5bd5cd9c570f4029944c632c1379ad",
+      "size_bytes": 29103
+    },
+    {
+      "path": "paper/source/memory_limits.tex",
+      "sha256": "b2d224d498525c08c727f89d8f8301860427514d6ccb0a3422819571ab33b626",
+      "size_bytes": 61905
+    },
+    {
+      "path": "paper/source/refs.bib",
+      "sha256": "eb3ad75d2c822fb97dc1d0ccf3a850fec14a7e8833950f9ddddb0935556297f9",
+      "size_bytes": 11276
+    },
+    {
+      "path": "paper/source/supplemental_numbers.py",
+      "sha256": "5a7f92f1348b6eba691dfb0380a80a8520e94de93a871bc21160272c2b2bc581",
+      "size_bytes": 2896
+    }
+  ],
+  "changes": [
+    "Imported supplied 16 October LaTeX manuscript package.",
+    "Replaced abstract verbatim with user-requested text.",
+    "Changed title and PDF metadata.",
+    "Replaced array-dependent table preambles with native paragraph columns and equivalent cell-local alignment for REVTeX 4.2f compatibility.",
+    "Updated title references in source README and supplement docstring; scientific body and calculations otherwise unchanged."
+  ],
+  "abstract_sha256": "57ad62ff61dd170d986d79150b8e52ab3369de7b2ea27eb8d6c1934ef83cf896",
+  "build": {
+    "command": "latexmk -cd -pdf -interaction=nonstopmode -halt-on-error -outdir=../../work/manuscript-build-2026-10-16 paper/source/memory_limits.tex",
+    "engine": "pdfTeX 1.40.27 (TeX Live 2025)",
+    "class": "REVTeX 4.2f",
+    "latexmk": "4.86a",
+    "bibliography": "Supplied BBL matches BibTeX regeneration byte-for-byte."
+  },
+  "validation": {
+    "requested_abstract_exact": true,
+    "scientific_body_unchanged_except_table_formatting": true,
+    "original_2026_10_15_pdf_preserved": true,
+    "unresolved_references": false,
+    "overfull_boxes": false,
+    "existing_test_methods_passed": 6,
+    "supplement_mpmath_version": "1.3.0",
+    "majority_lifetimes_match_baseline": true,
+    "layout": "All pages rendered; first page and tables inspected at higher resolution."
+  },
+  "notes": [
+    "The 15 October source remains immutable with provenance in paper/provenance.json.",
+    "Supplemental Material publisher URL and year remain unavailable in the supplied bibliography.",
+    "Build and numerical checks do not independently validate mathematical proofs, novelty, or publication status."
+  ]
+}

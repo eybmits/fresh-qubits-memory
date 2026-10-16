@@ -1,5 +1,7 @@
 # Research plan
 
+**Version scope:** equation/table references and the learning workstream below refer to the 15 October 2026 baseline. The [16 October revision](manuscript-2026-10-16.md) now supplies LaTeX, bibliography, figure sources, and a numerical supplement; it focuses on state-based memory depth and omits the former classical-learning theorem. Keep this plan as the baseline roadmap until a scientific review updates its individual tasks.
+
 This plan turns the supplied manuscript into an auditable scientific project. It separates reproduction of reported results from mathematical review and new research. A completed numerical check must be recorded with its command, parameters, output, tolerance, and software version; passing it does not certify a theorem.
 
 ## Priority 0 — Establish a reliable baseline
