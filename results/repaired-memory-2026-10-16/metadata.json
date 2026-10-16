@@ -1,0 +1,40 @@
+{
+  "n": 12,
+  "q": 0.9,
+  "epsilon": 0.01,
+  "copies": [
+    1,
+    3,
+    5
+  ],
+  "k": [
+    3,
+    5,
+    7
+  ],
+  "precision": "float64",
+  "method": "Explicit complete diagonal channel, 4096 entries; no extrapolation",
+  "input": "One write input b=0 or b=1, followed by identical hold inputs",
+  "depth_definition": "1 + largest delay with contrast > epsilon; write is delay 0",
+  "unitary": "Fixed within each trajectory; corresponding majority circuit for each k",
+  "noise": "Independent depolarization on every physical qubit after each ideal gate cycle",
+  "seed": null,
+  "randomness": "None: exact probability propagation",
+  "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "numpy": "2.4.2",
+  "matplotlib": "3.11.0",
+  "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+  "seconds": 7.317423290980514,
+  "argv": [
+    "scripts/simulate_repaired_memory.py",
+    "--output-dir",
+    "results/repaired-memory-2026-10-16"
+  ],
+  "script_sha256": "42db603a123e957b665b3d470b92b09e80c872d73dfa5838bb36e3527038ba00",
+  "outputs": {
+    "curves.csv": "555f1e3352d32da0f1b520b8d1845c1e03196339bccecc7236e81e8ff5ff8515",
+    "depths.csv": "deef7be7183350cb22fa40f07a4360cfd5ff48857be075f2b9c6994b40c30b7e",
+    "repaired_memory.png": "ff658b9327cdebec8080e445d0d58827c77788a2a496ceb41312787de90747dd",
+    "repaired_memory.pdf": "bcfbc80a6a68f36e0699224f4061af025e2841b0c0f5e42b69361e2ac8938c70"
+  }
+}

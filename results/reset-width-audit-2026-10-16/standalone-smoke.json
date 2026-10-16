@@ -1,0 +1,25 @@
+{
+  "standalone_run_seconds": 4.680233874998521,
+  "standalone_sources": {
+    "sim/audit_reset_width.py": "6c7db5023ff7db4adfe435c36f07857493e84475f985a145782afb29b2b4f5b6",
+    "sim/reset-width-audit-2026-10-16.md": "a214438a110393eac39a3e02e5315881eb762a65af830ff5608125523c844e9f",
+    "sim/qrc_sim.py": "b6d7aabdf9112853ae71467556ba7aca160a68561a010f9fffc11a56f08540b0"
+  },
+  "standalone_layout": "standalone_source_package",
+  "all_six_csvs_match_repository": true,
+  "csv_sha256": {
+    "fixed_size_repair_curves.csv": "429c552978f84fe8252a669b30ede232534848e719381fcc58bf5d33e8aa68bf",
+    "channel_checks.csv": "921f3c9bde8417508f6117982798e3e84696be575a7cee5a1603990617679f52",
+    "paired_depths.csv": "d1e0d579badafe37493c9a2a11b09d41c464dd727f572af38c3ec0751b6533ef",
+    "fixed_size_repair_depths.csv": "967d8dbd9bc4953f0360f2da710d56276fe7512e9ae5cb8ce37e194d77743206",
+    "paired_continuations.csv": "845bd2b193b20c81c9fb2ea071780814aeb15a99c9d3372996ea3cf8ac40595c",
+    "paired_curves_replicate0.csv": "0bd009242a9a0f5e528a7f401574bb8937dca4d3eee1035c583b98a87754373b"
+  },
+  "missing_optional_provenance": [
+    "sim/campaign.py",
+    "sim/results_main.json"
+  ],
+  "missing_required_protocol_rejected": true,
+  "default_package_root_output_verified": true,
+  "working_directory_independent": true
+}

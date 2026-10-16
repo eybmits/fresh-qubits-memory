@@ -1,0 +1,33 @@
+{
+  "seed": 2026101601,
+  "q": 0.9,
+  "epsilon": 0.01,
+  "precision": "complex128 / float64",
+  "command": "/opt/homebrew/opt/python@3.14/bin/python3.14 scripts/audit_reset_width.py",
+  "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "numpy": "2.4.2",
+  "scipy": "1.18.0",
+  "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+  "seconds": 4.661133749992587,
+  "channel_checks": 30,
+  "paired_configurations": 80,
+  "unitary_realizations": 16,
+  "maximum_channel_error": 1.1102230246251565e-16,
+  "layout": "research_repository",
+  "sources": {
+    "scripts/audit_reset_width.py": "6c7db5023ff7db4adfe435c36f07857493e84475f985a145782afb29b2b4f5b6",
+    "experiments/reset-width-audit-2026-10-16.md": "a214438a110393eac39a3e02e5315881eb762a65af830ff5608125523c844e9f",
+    "paper/source/sim/qrc_sim.py": "b6d7aabdf9112853ae71467556ba7aca160a68561a010f9fffc11a56f08540b0",
+    "paper/source/sim/campaign.py": "13d57cca5437979b9d4baf7047006b385ba91e5be24e3a0fb28441be1d723c84",
+    "paper/source/sim/results_main.json": "bb6aa0ca3735c172098ac6b8cf1efc85320b1d7427a52e824f6b14806146336e"
+  },
+  "missing_optional_provenance": [],
+  "outputs": {
+    "fixed_size_repair_curves.csv": "429c552978f84fe8252a669b30ede232534848e719381fcc58bf5d33e8aa68bf",
+    "channel_checks.csv": "921f3c9bde8417508f6117982798e3e84696be575a7cee5a1603990617679f52",
+    "paired_depths.csv": "d1e0d579badafe37493c9a2a11b09d41c464dd727f572af38c3ec0751b6533ef",
+    "fixed_size_repair_depths.csv": "967d8dbd9bc4953f0360f2da710d56276fe7512e9ae5cb8ce37e194d77743206",
+    "paired_continuations.csv": "845bd2b193b20c81c9fb2ea071780814aeb15a99c9d3372996ea3cf8ac40595c",
+    "paired_curves_replicate0.csv": "0bd009242a9a0f5e528a7f401574bb8937dca4d3eee1035c583b98a87754373b"
+  }
+}
