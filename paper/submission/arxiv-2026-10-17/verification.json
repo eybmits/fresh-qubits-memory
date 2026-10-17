@@ -1,0 +1,82 @@
+{
+  "checked_on": "2026-10-17",
+  "status": "local_preflight_passed_not_uploaded",
+  "archive": {
+    "path": "paper/submission/arxiv-2026-10-17/arxiv-source.zip",
+    "bytes": 1213734,
+    "sha256": "2d817003d8de80a1a9fe85407cece0ab51d6892437300740d2c22bbc2aa901fb"
+  },
+  "pdf": {
+    "path": "paper/memory_limits_prl_2026-10-17.pdf",
+    "bytes": 868288,
+    "sha256": "79c465433e4d0d766dfb41eee23ef1e7fd6f465a8e1a588a2a53d56685b70e2e"
+  },
+  "compiler": "pdfTeX 1.40.27 (TeX Live 2025)",
+  "build_commands": [
+    "pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error memory_limits_prl.tex",
+    "bibtex memory_limits_prl",
+    "pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error memory_limits_prl.tex (three additional passes)"
+  ],
+  "fresh_extraction_build": true,
+  "shell_escape": false,
+  "pages": 22,
+  "letter_and_references_pages": 6,
+  "supplement_pages": 16,
+  "bibliography_regenerated_byte_identical": true,
+  "cited_bibliography_entries": 38,
+  "included_figure_pdfs": 11,
+  "unresolved_references_or_citations": 0,
+  "overfull_boxes": 0,
+  "fonts_all_embedded": true,
+  "nonfatal_build_warnings": [
+    "REVTeX defaults to 10pt when no type size is specified",
+    "nameref detects redefined label",
+    "epstopdf notes that shell escape is disabled; all supplied figures are already PDFs"
+  ],
+  "pdf_text_equal_to_active_source_build": true,
+  "visual_review": "All 22 pages rendered; overview review plus detailed final checks of title/byline, Fig. 4, references, supplemental title/contents, and Table S2. No clipping or overlap found.",
+  "source_file_count": 51,
+  "archive_entry_count": 54,
+  "complete_source_reconstruction_byte_identical": true,
+  "deterministic_zip_regeneration": true,
+  "documented_source_configuration_checked": true,
+  "scientific_checks": {
+    "repository_unittests": {
+      "passed": 22,
+      "command": "PYTHONPATH=src OPENBLAS_NUM_THREADS=1 python3 -m unittest discover -s tests -v"
+    },
+    "supplied_checks": [
+      "checks/verify_constants.py",
+      "checks/verify_simple_proof.py",
+      "sim/test_sim.py",
+      "sim/quoted_numbers.py"
+    ],
+    "small_replay": {
+      "models": [
+        "ising",
+        "haar"
+      ],
+      "n": 3,
+      "k": 1,
+      "q": 0.9,
+      "realizations_per_model": 6,
+      "all_depths_and_washout_counts_equal": true,
+      "max_curve_difference_ising": 8.372e-14,
+      "max_curve_difference_haar": 1.555e-14
+    },
+    "large_campaign_rerun": false,
+    "proof_certification": false,
+    "review_record": "docs/manuscript-2026-10-17-prl.md"
+  },
+  "pending_for_submission": [
+    "Author review of the three scientific presentation qualifications in the import record",
+    "User-selected arXiv license",
+    "Account/category endorsement if required",
+    "Review arXiv-generated preview and finalize submission"
+  ],
+  "arxiv_portal_used": false,
+  "license_selected": false,
+  "submission_terms_accepted": false,
+  "uploaded": false,
+  "submitted": false
+}

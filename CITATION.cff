@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this research repository, cite it and consult paper/manuscript.bib for the supplied manuscript."
+message: "If you use this research repository, cite the manuscript below; historical manuscript citations are in paper/manuscript.bib."
 type: software
 title: "Fresh Qubits Memory: Research and Reproduction Workspace"
 authors:
@@ -8,10 +8,29 @@ authors:
     affiliation: Ludwig-Maximilians-Universität München
 version: 0.1.0
 repository-code: "https://github.com/eybmits/fresh-qubits-memory"
-abstract: "Research workspace for The Memory Limits of Noisy Quantum Reservoirs, with editable manuscript sources and an independent numerical reproduction of the majority-refresh example."
+abstract: "Research workspace for The Fundamental Memory Ceiling of Noisy Quantum Reservoirs, with editable Letter and Supplemental Material sources, supplied numerical campaigns, and independent historical validation."
 keywords:
   - quantum reservoir computing
   - memory
   - depolarizing noise
   - fresh qubits
   - reproducibility
+preferred-citation:
+  type: unpublished
+  title: "The Fundamental Memory Ceiling of Noisy Quantum Reservoirs"
+  authors:
+    - family-names: Baumann
+      given-names: Markus
+      orcid: "https://orcid.org/0009-0007-3575-1006"
+      affiliation: "QAR-Lab and Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München"
+    - family-names: Stein
+      given-names: Jonas
+      orcid: "https://orcid.org/0000-0001-5727-9151"
+      affiliation: "QAR-Lab and Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München"
+    - family-names: Linnhoff-Popien
+      given-names: Claudia
+      orcid: "https://orcid.org/0000-0001-6284-9286"
+      affiliation: "QAR-Lab and Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München"
+  year: 2026
+  notes: "PRL-format manuscript revision dated 17 October 2026; prepared for arXiv submission. No arXiv identifier or journal acceptance assigned."
+  url: "https://github.com/eybmits/fresh-qubits-memory"

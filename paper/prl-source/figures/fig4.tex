@@ -1,0 +1,53 @@
+% Fig. 4: panel a (circuit, drawn here) and panels b, c (fig4bc.pdf from matplotlib, included at 100%).
+% Width 7.05 in = 17.907 cm, height 2.05 in = 5.207 cm. Panel a is 2.65 in = 6.731 cm wide.
+% Titles sit 0.367 cm below the top edge, as in the matplotlib panels.
+\documentclass[border=0pt]{standalone}
+\input{tikzstyle}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\useasboundingbox (0,0) rectangle (17.907,5.207);
+\node[anchor=north west,inner sep=0pt,outer sep=0pt] at (6.731,5.207) {\includegraphics{fig4bc.pdf}};
+\node[ttl] at (0,4.840) {\textbf{a}\enspace Error-correcting reservoir};
+\begin{scope}[shift={(0.16,0)}]
+\def\yc{3.86}\def\yb{3.54}\def\ya{3.16}\def\yaa{2.84}\def\yab{2.52}\def\yx{1.98}\def\yxa{1.66}\def\yxb{1.34}
+\def\xw{2.40}\def\xn{4.18}\def\xd{4.55}
+% reservoir unitary U = write + swap (blue background), input register (purple background)
+\fill[cBlueFill,rounded corners=2.5pt] (2.10,1.10) rectangle (3.84,4.08);
+\node[text=cBlueDark,anchor=south] at (2.97,4.10) {$U$};
+\fill[cPurpleFill,rounded corners=2.5pt] (1.28,2.36) rectangle (1.94,4.08);
+\node[text=cPurpleDark,anchor=south] at (1.61,4.10) {input register};
+\node[anchor=east] at (1.92,\yc) {$\ket{c}$};
+\node[anchor=east] at (1.92,\yb) {$\ket{b}$};
+\foreach \y in {\ya,\yaa,\yab} \node[anchor=east] at (1.92,\y) {$\ket{0}$};
+\foreach \y in {\yc,\yb,\ya,\yaa,\yab} \draw[wire] (1.94,\y) -- (\xd,\y);
+\foreach \y in {\yx,\yxa,\yxb} \draw[wire] (1.28,\y) -- (4.80,\y);
+\foreach \y in {\yx,\yxa,\yxb} \draw[wire,-{Stealth[length=2.8pt,width=2.6pt]}] (4.70,\y) -- (4.92,\y);
+% write gate: F of the memory content (or the bit b) into the ancillas
+\draw[line width=0.7pt,cBlueDark] (\xw,\yxb) -- (\xw,\yc);
+\foreach \y in {\yx,\yxa,\yxb,\yc,\yb} \fill[cBlueDark] (\xw,\y) circle (1.6pt);
+\foreach \y in {\ya,\yaa,\yab} {\draw[cBlueDark,line width=0.7pt,fill=white] (\xw,\y) circle (0.09);
+  \draw[cBlueDark,line width=0.7pt] ({\xw-0.09},\y) -- ({\xw+0.09},\y) (\xw,{\y-0.09}) -- (\xw,{\y+0.09});}
+\node[draw=cBlueDark,line width=0.6pt,fill=white,rounded corners=1.2pt,inner sep=1.4pt] at (\xw,2.25) {$F$};
+% swaps of ancillas and memory qubits
+\foreach \sx/\sa/\sm in {2.98/3.16/1.98,3.26/2.84/1.66,3.54/2.52/1.34}{
+  \draw[line width=0.7pt,cBlueDark] (\sx,\sa) -- (\sx,\sm);
+  \foreach \y in {\sa,\sm} \draw[line width=0.95pt,cBlueDark] ({\sx-0.065},{\y-0.065}) -- ({\sx+0.065},{\y+0.065})
+    ({\sx-0.065},{\y+0.065}) -- ({\sx+0.065},{\y-0.065});}
+% noise on every qubit
+\foreach \y in {\yc,\yb,\ya,\yaa,\yab,\yx,\yxa,\yxb} \path[nbox] ({\xn-0.095},{\y-0.095}) rectangle ({\xn+0.095},{\y+0.095});
+% discard of the input register at the next input injection
+\foreach \y in {\yc,\yb,\ya,\yaa,\yab} {\Discard{\xd}{\y}}
+\draw[brc] (4.80,{\yc+0.12}) -- (4.80,{\yab-0.12})
+  node[midway,right=2.4pt,align=left,text=cPurpleDark]{discarded:\\old copies\\leave};
+\draw[brc] (5.04,{\yx+0.12}) -- (5.04,{\yxb-0.12})
+  node[midway,right=2.4pt,align=left]{refreshed\\copies};
+\draw[brc] (1.22,{\yxb-0.12}) -- (1.22,{\yx+0.12})
+  node[midway,left=2.4pt,align=right]{memory,\\$r$ qubits};
+% column labels
+\node[text=cBlueDark,anchor=base] at (\xw,0.80) {write};
+\node[text=cBlueDark,anchor=base] at (3.26,0.80) {swap};
+\node[text=cRedDark,anchor=base] at (\xn,0.80) {noise};
+\end{scope}
+\node[align=left,anchor=south west,inner sep=0pt] at (0.0,0.02) {$F=\mathrm{maj}(x)$ for a blank input ($c=0$),\\$F=b$ to store the bit $b$ ($c=1$)};
+\end{tikzpicture}
+\end{document}

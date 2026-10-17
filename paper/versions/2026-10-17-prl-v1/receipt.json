@@ -1,0 +1,31 @@
+{
+  "received_date": "2026-10-17",
+  "inputs": [
+    {
+      "original_name": "memory_limits_prl_source (1).zip",
+      "archived_path": "paper/versions/2026-10-17-prl-v1/source-original.zip",
+      "bytes": 1211066,
+      "sha256": "09e3ceca1e6f4ff07cc10f72362cce5c290549f8e374a46fd015ae36f7660f66"
+    },
+    {
+      "original_name": "memory_limits_prl (4).tex",
+      "archived_path": "paper/versions/2026-10-17-prl-v1/memory_limits_prl-supplied.tex",
+      "bytes": 86802,
+      "sha256": "6b2d3fb06c42463f4948018af81ea84ac97ce48ecf94296791a336057d7127d2"
+    },
+    {
+      "original_name": "memory_limits_prl (16).pdf",
+      "archived_path": "paper/versions/2026-10-17-prl-v1/memory_limits_prl-supplied.pdf",
+      "bytes": 805572,
+      "sha256": "5dabf9b605090fd69dc23eed58d6d021c1739f5388268539dba8493fb37c1b73"
+    },
+    {
+      "original_name": "fig4.pdf",
+      "archived_path": "paper/versions/2026-10-17-prl-v1/fig4-supplied.pdf",
+      "bytes": 68407,
+      "sha256": "5f04d161888130327252cb5368987680d5f5d21ffaab1feaeb9c67314f3a9263"
+    }
+  ],
+  "separate_tex_matches_zip": true,
+  "separate_figure_matches_zip": true
+}

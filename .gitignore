@@ -17,6 +17,7 @@ results/local/
 *.aux
 *.bbl
 !paper/source/memory_limits.bbl
+!paper/prl-source/memory_limits_prl.bbl
 *.blg
 *.fdb_latexmk
 *.fls
