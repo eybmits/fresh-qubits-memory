@@ -1,0 +1,24 @@
+{
+  "canonical_source_sha256": "68c7a0c76e8bbb124068c6c63cd3edb4c454e56bab09560273e20de9668d5f9a",
+  "changes": [
+    "Only Claude Opus 5.5 named for substantive assistance after the user clarified GPT was editorial-only.",
+    "Replaced verified all results with reviewed the outputs; retained substantive roles and code-validation references."
+  ],
+  "combined_pdf_sha256": "aab7b663bd613167c1604f69940f42f805fcc800d6d1b1b957fe2e9e1bfa69b0",
+  "edition": "2026-10-18-prl-v6",
+  "model_name_status": "Claude Opus 5.5 previously explicitly confirmed by the user; substantive usage follows author account.",
+  "original_receipt": "paper/versions/2026-10-18-prl-v5/receipt.json",
+  "parent_commit": "17ff77b5dc2b14a6650246959beb1aa6c5064fc3",
+  "parent_version": "2026-10-18-prl-v5",
+  "policy_reference": "https://journals.aps.org/authors/appropriate-use-ai-tools",
+  "scientific_changes": false,
+  "source_snapshot_sha256": "b9680ff7c355339b2e3dd961647f8774dfa396ee1af80182b9e1d6f0283650c5",
+  "user_clarification": "GPT half nur bei Sprache und Formatierung",
+  "user_clarification_date": "2026-10-18",
+  "verification_record": "paper/versions/2026-10-18-prl-v6/verification.json",
+  "package_hashes": {
+    "PRL": "d08c207a55b6e0032135f58504fba10afdc7ccf291548a99d93e8923e8b3c03c",
+    "Zenodo": "c68e384252345ab896daf9175e76eb3a82a7b71c9cd46b1f13822135baaf3c43",
+    "arXiv": "74275959dc4fd4edb1c385823bf3f5a416f63808220c9848f4a94bd96bc7b247"
+  }
+}

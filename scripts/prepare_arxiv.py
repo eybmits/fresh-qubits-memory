@@ -15,7 +15,8 @@ import zipfile
 
 REPO = Path(__file__).resolve().parents[1]
 MAIN = "memory_limits_prl.tex"
-EDITION = "2026-10-18"
+EDITION = "2026-10-18-prl-v6"
+EDITION_DATE = "2026-10-18"
 EXPECTED_COMBINED_PAGES = 24
 ZIP_DATE = (2026, 10, 18, 0, 0, 0)
 FINAL_FIGURES = [f"fig{i}.pdf" for i in range(1, 5)] + [
@@ -268,7 +269,8 @@ def build(source, output, author_path):
             raise ValueError("ZIP content verification failed")
     metadata = {
         "status": "prepared_locally_not_uploaded_or_submitted",
-        "edition_date": EDITION,
+        "edition": EDITION,
+        "edition_date": EDITION_DATE,
         "title": title,
         "authors": ", ".join(a["given"] + " " + a["family"] for a in authors["authors"]),
         "abstract": abstract,
@@ -296,7 +298,8 @@ def build(source, output, author_path):
     }
     manifest = {
         "format": 1,
-        "edition_date": EDITION,
+        "edition": EDITION,
+        "edition_date": EDITION_DATE,
         "archive": zip_path.name,
         "archive_sha256": digest(zip_path.read_bytes()),
         "archive_bytes": zip_path.stat().st_size,
@@ -323,7 +326,7 @@ def build(source, output, author_path):
 
 
 def instructions(figure_tex_count):
-    return f"""# arXiv upload preparation — 18 October 2026, revision 5
+    return f"""# arXiv upload preparation — 18 October 2026, revision 6
 
 This directory is a local preparation package. Nothing has been uploaded or
 submitted; no license or submission agreement has been accepted.
@@ -358,13 +361,13 @@ the repository public. Code/data are also included in this arXiv source ZIP.
 
 ## Author review
 
-The [revision review](../../../docs/manuscript-2026-10-18-prl-v5.md) records the
-new source import and the applied clarifications: numerical depths are sampled
-estimates, k comparisons use independently sampled unitary ensembles, and the
-continuous crossings in Figure 4 differ from integer depths. The revised
-manuscript now states these distinctions. Finite checks and packaging do not
-certify the universal theorem. The author's supplied verification statements
-remain the author's responsibility.
+The [revision review](../../../docs/manuscript-2026-10-18-prl-v6.md) records the
+shortened AI disclosure and the user's clarification of the tools' roles.
+The numerical qualifications are unchanged: depths are sampled estimates,
+k comparisons use independently sampled unitary ensembles, and continuous
+crossings in Figure 4 differ from integer depths. Finite checks and packaging
+do not certify the universal theorem. The author's statement about reviewing
+AI outputs remains the author's responsibility.
 
 ## What is in the ZIP
 
@@ -434,7 +437,7 @@ before final submission.
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source-dir", type=Path, default=REPO / "paper/prl-source")
-    parser.add_argument("--output-dir", type=Path, default=REPO / "paper/submission/arxiv-2026-10-18-v5")
+    parser.add_argument("--output-dir", type=Path, default=REPO / "paper/submission/arxiv-2026-10-18-v6")
     parser.add_argument("--author-file", type=Path, default=REPO / "paper/author_information.json")
     args = parser.parse_args()
     build(args.source_dir.resolve(), args.output_dir.resolve(), args.author_file.resolve())

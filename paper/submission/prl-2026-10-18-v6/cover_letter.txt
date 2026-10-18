@@ -1,0 +1,81 @@
+Markus Baumann
+Quantum Applications and Research Laboratory (QAR-Lab)
+Chair of Mobile and Distributed Systems, Department of Computer Science
+Ludwig-Maximilians-Universität München
+Oettingenstraße 67, 80538 München, Germany
+markus.baumann@campus.lmu.de
+
+Munich, October 18, 2026
+
+To the Editors of Physical Review Letters
+
+Dear Editors,
+
+Please consider “The Fundamental Memory Ceiling of Noisy Quantum Reservoirs,” by Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien, for publication as a Letter in Physical Review Letters.
+
+Main result
+
+How much memory can fresh qubits sustain under noise? Under local Markovian depolarizing noise, we prove that the optimal input-memory depth scales as exp[Θ(k)] with k qubits refreshed per step, independently of total system size. This holds after initialization washout, at fixed noise strength and a fixed, sufficiently small distinguishability threshold. The upper bound covers arbitrary reservoir unitaries and input encodings within the model, without external classical memory or feedback. A unitary, measurement-free error-correcting construction attains the exponential scaling. Retaining an input for T steps therefore requires Θ(log T) refreshed qubits per step, and our construction attains this scaling.
+
+Why Physical Review Letters
+
+Entropy removal sets the memory ceiling. Because the bound depends on an entropy-removal budget, its scope extends beyond reservoir computing to other quantum dynamics under the same noise and resource assumptions. This connects quantum information, open-system dynamics, and physical computing through an optimal resource law. Suitable error-correcting reservoirs with mid-circuit resets provide a route to testing the predicted scaling.
+
+Materials and declarations
+
+Complete proofs and the construction analysis are in the Supplemental Material; code and data accompany it in a source archive. All supplemental references appear in the Letter. AI use is disclosed in the Acknowledgments and Supplemental Material; as corresponding author, I take responsibility for the results and that use.
+
+The manuscript has not previously been submitted to a Physical Review journal and is not under consideration elsewhere. All authors declare no competing interests and no conflicts with the suggested referees or alternates, listed on page 2. We request no referee exclusions.
+
+Thank you for considering our manuscript.
+
+Sincerely,
+Markus Baumann
+On behalf of Jonas Stein and Claudia Linnhoff-Popien
+
+Suggested referees
+
+Michael J. Gullans
+National Institute of Standards and Technology (NIST); Joint Center for Quantum Information and Computer Science (QuICS), University of Maryland, USA
+mgullans@umd.edu
+Memory and error correction in noisy quantum circuits
+
+Daniel Stilck França
+Department of Mathematical Sciences, University of Copenhagen, Denmark
+dsfranca@math.ku.dk
+Entropy-based limitations of noisy quantum devices
+
+Alexander Müller-Hermes
+Department of Mathematics, University of Oslo, Norway
+muellerh@math.uio.no
+Hypercontractivity of quantum channels and resource bounds for fault tolerance
+
+Roberta Zambrini
+Instituto de Física Interdisciplinar y Sistemas Complejos, IFISC (CSIC-UIB), Palma de Mallorca, Spain
+roberta@ifisc.uib-csic.es
+Quantum reservoir computing and dissipation as a resource
+
+Hakan E. Türeci
+Department of Electrical and Computer Engineering, Princeton University, USA
+tureci@princeton.edu
+Quantum reservoir computing and superconducting quantum hardware
+
+Alternate referees
+
+Omar Fawzi
+Inria; Laboratoire de l’Informatique du Parallélisme (LIP), École normale supérieure de Lyon, France
+omar.fawzi@ens-lyon.fr
+
+Juan-Pablo Ortega
+School of Physical and Mathematical Sciences, Nanyang Technological University, Singapore
+juan-pablo.ortega@ntu.edu.sg
+
+Kohei Nakajima
+Department of Mechano-Informatics, Graduate School of Information Science and Technology, The University of Tokyo, Japan
+k-nakajima@isi.imi.i.u-tokyo.ac.jp
+
+Naoki Yamamoto
+Department of Applied Physics and Physico-Informatics, Faculty of Science and Technology, Keio University, Japan
+yamamoto@appi.keio.ac.jp
+
+Excluded referees: none.

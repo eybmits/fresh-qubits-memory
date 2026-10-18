@@ -17,7 +17,7 @@ from prepare_arxiv import (
 )
 
 
-EDITION = "2026-10-18-prl-v5"
+EDITION = "2026-10-18-prl-v6"
 GENERATOR = "scripts/prepare_zenodo.py"
 SOURCE_ARCHIVE = "memory_limits_prl_source.zip"
 HANDOFF_ARCHIVE = "zenodo-handoff.zip"
@@ -64,7 +64,7 @@ def readme(metadata, source_count):
         f"- {author['name']} — ORCID {author['orcid']}"
         for author in metadata["creators"]
     )
-    return f'''# Lokaler Zenodo-Entwurf: PRL revision 5
+    return f'''# Lokaler Zenodo-Entwurf: PRL revision 6
 
 Für **{metadata['title']}** liegen die aktuellen Dateien lokal bereit.
 Es wurde kein Zenodo-Datensatz angelegt, nichts hochgeladen oder veröffentlicht
@@ -180,7 +180,7 @@ def build(source, output, input_package):
             "of constants and proof steps, and LaTeX and plotting sources. "
             "README.txt describes the contents, dependencies, and reproduction "
             "commands. Numerical checks are distinct from a proof of the universal "
-            "memory bound. This is the local PRL revision 5 source edition dated "
+            "memory bound. This is the local PRL revision 6 source edition dated "
             "18 October 2026; no journal acceptance or public deposition is claimed."
         ),
         "keywords": received.get("keywords", []),
@@ -234,7 +234,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, default=REPO / "paper/prl-source")
     parser.add_argument("--output", type=Path,
-                        default=REPO / "paper/submission/zenodo-2026-10-18-v5")
+                        default=REPO / "paper/submission/zenodo-2026-10-18-v6")
     parser.add_argument("--input-package", type=Path, default=DEFAULT_INPUT)
     args = parser.parse_args()
     build(args.source.resolve(), args.output.resolve(), args.input_package.resolve())

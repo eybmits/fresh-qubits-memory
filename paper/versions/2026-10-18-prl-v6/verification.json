@@ -1,0 +1,74 @@
+{
+  "bibliography_regenerated_byte_identical": true,
+  "changed_canonical_source_files": [
+    "memory_limits_prl.tex"
+  ],
+  "changed_extracted_text_pages": [
+    5,
+    24
+  ],
+  "date": "2026-10-18",
+  "full_numerical_campaign_rerun": false,
+  "letter_pages": 6,
+  "overfull_boxes": 0,
+  "pages": 24,
+  "repository_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python3 -m unittest discover -s tests -q",
+    "passed": 22
+  },
+  "scope": "Two AI-disclosure paragraphs; no scientific changes.",
+  "shell_escape": false,
+  "source_file_count": 54,
+  "submitted": false,
+  "supplement_pages": 18,
+  "unchanged_other_source_files": 53,
+  "unresolved_references_or_citations": 0,
+  "uploaded": false,
+  "visually_reviewed_changed_pages": [
+    5,
+    24
+  ],
+  "package_checks": {
+    "edition": "2026-10-18-prl-v6",
+    "source_files": 54,
+    "packages": {
+      "PRL": {
+        "manifest_files_verified": 22,
+        "source_mappings_verified": 54,
+        "outer_sha256": "d08c207a55b6e0032135f58504fba10afdc7ccf291548a99d93e8923e8b3c03c"
+      },
+      "Zenodo": {
+        "manifest_files_verified": 5,
+        "source_mappings_verified": 54,
+        "outer_sha256": "c68e384252345ab896daf9175e76eb3a82a7b71c9cd46b1f13822135baaf3c43"
+      },
+      "arXiv": {
+        "archive_entries_verified": 57,
+        "source_mappings_verified": 54,
+        "archive_sha256": "74275959dc4fd4edb1c385823bf3f5a416f63808220c9848f4a94bd96bc7b247"
+      }
+    },
+    "changed_source_files_since_v5": [
+      "memory_limits_prl.tex"
+    ],
+    "pages": {
+      "combined": 24,
+      "letter": 6,
+      "supplement": 18
+    },
+    "letter_and_sm_text_match_combined": true,
+    "admin_files_preserved": [
+      "cover_letter.txt",
+      "cover_letter.pdf",
+      "referees.txt",
+      "referees.json",
+      "cover_letter_notes.txt"
+    ],
+    "user_justification_byte_identical": true,
+    "user_justification_words": 100,
+    "source_zip_identical_prl_zenodo": true,
+    "source_zip_sha256": "b9680ff7c355339b2e3dd961647f8774dfa396ee1af80182b9e1d6f0283650c5",
+    "combined_pdf_sha256": "aab7b663bd613167c1604f69940f42f805fcc800d6d1b1b957fe2e9e1bfa69b0",
+    "checks_scope": "Package contents, manifests, source equality, PDF text and page counts; no new scientific experiments or proof certification."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-18",
+  "scope": "Canonical build plus byte-identical source reconstruction; no separate fresh-extraction TeX build repeated.",
+  "canonical_combined_build_passed": true,
+  "pages": 24,
+  "source_reconstruction_byte_identical": true,
+  "source_file_count": 54,
+  "archive_entry_count": 57,
+  "bibliography_unchanged": true,
+  "unresolved_references_or_citations": 0,
+  "overfull_boxes": 0,
+  "changed_text_pages_from_v5": [
+    5,
+    24
+  ],
+  "changed_pages_visual_review": "passed",
+  "archive_sha256": "74275959dc4fd4edb1c385823bf3f5a416f63808220c9848f4a94bd96bc7b247",
+  "pdf_sha256": "aab7b663bd613167c1604f69940f42f805fcc800d6d1b1b957fe2e9e1bfa69b0",
+  "uploaded": false,
+  "submitted": false
+}

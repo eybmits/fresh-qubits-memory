@@ -31,7 +31,7 @@ from prepare_arxiv import (
 )
 
 
-EDITION = "2026-10-18-v5"
+EDITION = "2026-10-18-v6"
 GENERATOR = "scripts/prepare_prl.py"
 DEFAULT_JUSTIFICATION = REPO / "paper/versions/2026-10-18-prl-v5/justification-user.txt"
 ADMIN = REPO / "paper/submission-admin/prl-2026-10-18"
@@ -286,8 +286,8 @@ archive is included with the proposed Supplemental Material deposit.
 
 The user confirmed on 18 October 2026 that the disclosed model name
 “Claude Opus 5.5” is correct. The workflow does not independently certify the
-manuscript's author statements about checking every derivation and numerical
-result, AI-tool rights, coauthor consent, originality, or exclusive submission.
+manuscript's author statements about reviewing AI outputs, AI-tool rights,
+coauthor consent, originality, or exclusive submission.
 Build, consistency and numerical checks are evidence of their specific scope;
 they are not a complete independent proof review or a prediction of acceptance.
 
@@ -494,7 +494,7 @@ def main():
     parser.add_argument("--combined-pdf", type=Path, required=True,
                         help=f"Freshly compiled {sum(EXPECTED_PAGES)}-page combined Letter and Supplemental Material")
     parser.add_argument("--output-dir", type=Path,
-                        default=REPO / "paper/submission/prl-2026-10-18-v5")
+                        default=REPO / "paper/submission/prl-2026-10-18-v6")
     parser.add_argument("--input-package", type=Path,
                         default=REPO / "paper/versions/2026-10-18-prl-v5/submission-original.zip")
     parser.add_argument("--justification-file", type=Path, default=DEFAULT_JUSTIFICATION,
