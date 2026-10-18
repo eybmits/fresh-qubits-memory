@@ -1,0 +1,23 @@
+Title: The Fundamental Memory Ceiling of Noisy Quantum Reservoirs
+Authors: Markus Baumann, Jonas Stein, Claudia Linnhoff-Popien
+Affiliation: Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany
+Contact: markus.baumann@campus.lmu.de
+
+Description: Supplemental Material containing the proofs, exact analysis of
+the error-correcting reservoir, entropy budget for general noise, simulation
+methods, and complete source, code and data for the article.
+
+Files:
+memory_limits_prl_SM.pdf — Supplemental Material, pages S1–S18. Equations,
+figures and tables carry an S prefix; unprefixed references refer to the Letter.
+memory_limits_prl_source.zip — combined Letter and Supplemental Material in
+LaTeX; bibliography; figure PDFs and generation sources; simulation programs,
+saved datasets and independent calculation checks. Unpack and follow README.txt.
+
+Minimum requirements: a PDF reader for the supplement; Python 3 with numpy,
+scipy, mpmath and matplotlib for the numerical/plotting programs; pdfLaTeX and
+BibTeX with REVTeX 4.2 and the packages listed in README.txt for the documents.
+The plotting sources additionally use the fonts and TeX packages stated there.
+
+The code repository is https://github.com/eybmits/fresh-qubits-memory .
+All reproduction files are also included in this Supplemental Material deposit.

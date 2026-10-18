@@ -31,7 +31,7 @@ from prepare_arxiv import (
 )
 
 
-EDITION = "2026-10-18-v6"
+EDITION = "2026-10-18-v7"
 GENERATOR = "scripts/prepare_prl.py"
 DEFAULT_JUSTIFICATION = REPO / "paper/versions/2026-10-18-prl-v5/justification-user.txt"
 ADMIN = REPO / "paper/submission-admin/prl-2026-10-18"
@@ -494,7 +494,7 @@ def main():
     parser.add_argument("--combined-pdf", type=Path, required=True,
                         help=f"Freshly compiled {sum(EXPECTED_PAGES)}-page combined Letter and Supplemental Material")
     parser.add_argument("--output-dir", type=Path,
-                        default=REPO / "paper/submission/prl-2026-10-18-v6")
+                        default=REPO / "paper/submission/prl-2026-10-18-v7")
     parser.add_argument("--input-package", type=Path,
                         default=REPO / "paper/versions/2026-10-18-prl-v5/submission-original.zip")
     parser.add_argument("--justification-file", type=Path, default=DEFAULT_JUSTIFICATION,

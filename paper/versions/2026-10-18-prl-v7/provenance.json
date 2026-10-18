@@ -1,0 +1,24 @@
+{
+  "ai_disclosure_changed": false,
+  "canonical_source_sha256": "b18ac7bd7258dc3a504ca2690a7fb39baf9fcc5965c9bc1387882050deeea115",
+  "changes": [
+    "Removed the chair and department lines from the Letter and supplemental bylines.",
+    "Synchronized the shared author metadata, cover letter, citation metadata, and PRL/arXiv/Zenodo packages."
+  ],
+  "combined_pdf_sha256": "d5d23fb5f94cfab49ab23d29f04c92574b3da7a2b4cdb24328d8c16caebf10fc",
+  "edition": "2026-10-18-prl-v7",
+  "original_receipt": "paper/versions/2026-10-18-prl-v5/receipt.json",
+  "package_hashes": {
+    "PRL": "9234c566ac1a7bd5a5f562b05cfcd9c0f047c032e32f1619f0566db3a5a2c7f2",
+    "Zenodo": "a5716249d5b19ff636a0bf6e87016486caf97292b07d911313f7f430619b21eb",
+    "arXiv": "bc4d286dbcb5d5c288984fd16e25fb8803aa6239109c35b706cb606c109ab3ca"
+  },
+  "parent_commit": "9b8ea0d01b8eac49c1650781c0abaaceae6b3ec4",
+  "parent_version": "2026-10-18-prl-v6",
+  "scientific_changes": false,
+  "shared_affiliation": "Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany",
+  "source_snapshot_sha256": "af07163c06e32090b39b4fe6e7a9913df1de4932131c6d4b37fbf15eaa5ecb0a",
+  "user_request": "Shorten affiliation to the laboratory rather than including the chair and department.",
+  "user_request_date": "2026-10-18",
+  "verification_record": "paper/versions/2026-10-18-prl-v7/verification.json"
+}

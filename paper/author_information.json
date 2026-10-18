@@ -2,7 +2,7 @@
   "affiliations": [
     {
       "id": "lmu_qar_mvs",
-      "name": "Quantum Applications and Research Laboratory (QAR-Lab), Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany"
+      "name": "Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany"
     }
   ],
   "authors": [
@@ -40,6 +40,6 @@
       "orcid_authenticated_in_arxiv": null
     }
   ],
-  "metadata_source": "Previously confirmed three-author identifiers; shared affiliation/address formatting requested on 18 October 2026.",
+  "metadata_source": "Previously confirmed three-author identifiers; on 18 October 2026 the user requested shortening the shared affiliation to QAR-Lab and LMU, keeping the address.",
   "verification": "Names and ORCID order matched to the current manuscript; portal authentication was not performed."
 }

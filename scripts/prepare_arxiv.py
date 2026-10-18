@@ -15,7 +15,7 @@ import zipfile
 
 REPO = Path(__file__).resolve().parents[1]
 MAIN = "memory_limits_prl.tex"
-EDITION = "2026-10-18-prl-v6"
+EDITION = "2026-10-18-prl-v7"
 EDITION_DATE = "2026-10-18"
 EXPECTED_COMBINED_PAGES = 24
 ZIP_DATE = (2026, 10, 18, 0, 0, 0)
@@ -326,7 +326,7 @@ def build(source, output, author_path):
 
 
 def instructions(figure_tex_count):
-    return f"""# arXiv upload preparation — 18 October 2026, revision 6
+    return f"""# arXiv upload preparation — 18 October 2026, revision 7
 
 This directory is a local preparation package. Nothing has been uploaded or
 submitted; no license or submission agreement has been accepted.
@@ -361,8 +361,9 @@ the repository public. Code/data are also included in this arXiv source ZIP.
 
 ## Author review
 
-The [revision review](../../../docs/manuscript-2026-10-18-prl-v6.md) records the
-shortened AI disclosure and the user's clarification of the tools' roles.
+The [revision review](../../../docs/manuscript-2026-10-18-prl-v7.md) records the
+shortened shared affiliation, retaining the full QAR-Lab name, LMU, and address.
+The AI disclosure remains unchanged from revision 6.
 The numerical qualifications are unchanged: depths are sampled estimates,
 k comparisons use independently sampled unitary ensembles, and continuous
 crossings in Figure 4 differ from integer depths. Finite checks and packaging
@@ -437,7 +438,7 @@ before final submission.
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source-dir", type=Path, default=REPO / "paper/prl-source")
-    parser.add_argument("--output-dir", type=Path, default=REPO / "paper/submission/arxiv-2026-10-18-v6")
+    parser.add_argument("--output-dir", type=Path, default=REPO / "paper/submission/arxiv-2026-10-18-v7")
     parser.add_argument("--author-file", type=Path, default=REPO / "paper/author_information.json")
     args = parser.parse_args()
     build(args.source_dir.resolve(), args.output_dir.resolve(), args.author_file.resolve())

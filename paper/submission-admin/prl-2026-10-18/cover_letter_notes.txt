@@ -8,6 +8,11 @@ three-author manuscript and its single shared affiliation. It distinguishes
 the optimal memory scaling from performance of arbitrary reservoir dynamics.
 The supplied first-person responsibility declaration remains specific to Markus.
 
+The user subsequently requested shortening the affiliation to Quantum Applications
+and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München, while
+retaining the Oettingenstraße address. Chair and department were removed from
+the letterhead to match manuscript revision 7.
+
 At the user's request the prose was subsequently shortened by about one third,
 with three section headings, a compact letterhead, and more generous body type.
 The one-page letter retains the scientific assumptions and confirmed declarations;

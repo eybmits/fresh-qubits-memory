@@ -1,0 +1,26 @@
+{
+  "archive_entry_count": 57,
+  "archive_sha256": "bc4d286dbcb5d5c288984fd16e25fb8803aa6239109c35b706cb606c109ab3ca",
+  "bibliography_unchanged": true,
+  "canonical_combined_build_passed": true,
+  "changed_pages_visual_review": "passed",
+  "changed_text_pages_from_v6": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "date": "2026-10-18",
+  "overfull_boxes": 0,
+  "pages": 24,
+  "pdf_sha256": "d5d23fb5f94cfab49ab23d29f04c92574b3da7a2b4cdb24328d8c16caebf10fc",
+  "scope": "Canonical build plus byte-identical source reconstruction; no separate fresh-extraction TeX build repeated.",
+  "source_file_count": 54,
+  "source_reconstruction_byte_identical": true,
+  "submitted": false,
+  "unresolved_references_or_citations": 0,
+  "uploaded": false
+}

@@ -1,0 +1,90 @@
+{
+  "bibliography_regenerated_byte_identical": true,
+  "changed_canonical_source_files": [
+    "memory_limits_prl.tex"
+  ],
+  "changed_extracted_text_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "cover_first_page_visual_review": "passed",
+  "date": "2026-10-18",
+  "full_numerical_campaign_rerun": false,
+  "letter_pages": 6,
+  "overfull_boxes": 0,
+  "package_checks": {
+    "admin_files_match_current_canonical": [
+      "cover_letter.txt",
+      "cover_letter.pdf",
+      "referees.txt",
+      "referees.json",
+      "cover_letter_notes.txt"
+    ],
+    "affiliation_checked_across_all_packages": true,
+    "changed_source_files_since_v6": [
+      "memory_limits_prl.tex"
+    ],
+    "checks_scope": "Package contents, manifests, source equality, affiliations, PDF text and page counts; no new scientific experiments or proof certification.",
+    "combined_pdf_sha256": "d5d23fb5f94cfab49ab23d29f04c92574b3da7a2b4cdb24328d8c16caebf10fc",
+    "edition": "2026-10-18-prl-v7",
+    "letter_and_sm_text_match_combined": true,
+    "packages": {
+      "PRL": {
+        "manifest_files_verified": 22,
+        "outer_sha256": "9234c566ac1a7bd5a5f562b05cfcd9c0f047c032e32f1619f0566db3a5a2c7f2",
+        "source_mappings_verified": 54
+      },
+      "Zenodo": {
+        "manifest_files_verified": 5,
+        "outer_sha256": "a5716249d5b19ff636a0bf6e87016486caf97292b07d911313f7f430619b21eb",
+        "source_mappings_verified": 54
+      },
+      "arXiv": {
+        "archive_entries_verified": 57,
+        "archive_sha256": "bc4d286dbcb5d5c288984fd16e25fb8803aa6239109c35b706cb606c109ab3ca",
+        "source_mappings_verified": 54
+      }
+    },
+    "pages": {
+      "combined": 24,
+      "cover_letter": 2,
+      "letter": 6,
+      "supplement": 18
+    },
+    "referee_contacts_unchanged_since_v6": true,
+    "removed_chair_and_department_checked_in_tex_pdf_cover_author_metadata_citation": true,
+    "shared_affiliation": "Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany",
+    "source_files": 54,
+    "source_zip_identical_prl_zenodo": true,
+    "source_zip_sha256": "af07163c06e32090b39b4fe6e7a9913df1de4932131c6d4b37fbf15eaa5ecb0a",
+    "user_justification_byte_identical": true,
+    "user_justification_words": 100
+  },
+  "pages": 24,
+  "repository_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python3 -m unittest discover -s tests -q",
+    "passed": 22
+  },
+  "scope": "Shared affiliation shortened in Letter, supplement, cover, and submission metadata; no scientific or AI-disclosure changes.",
+  "shell_escape": false,
+  "source_file_count": 54,
+  "submitted": false,
+  "supplement_pages": 18,
+  "unchanged_other_source_files": 53,
+  "unresolved_references_or_citations": 0,
+  "uploaded": false,
+  "visually_reviewed_changed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ]
+}

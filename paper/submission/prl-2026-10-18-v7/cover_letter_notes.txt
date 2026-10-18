@@ -1,0 +1,53 @@
+LOCAL PREPARATION NOTES - NOT PART OF THE COVER LETTER
+Prepared: October 18, 2026
+Manuscript: The Fundamental Memory Ceiling of Noisy Quantum Reservoirs
+Authors: Markus Baumann, Jonas Stein, Claudia Linnhoff-Popien
+
+The cover letter follows the user's replacement draft, adapted to the current
+three-author manuscript and its single shared affiliation. It distinguishes
+the optimal memory scaling from performance of arbitrary reservoir dynamics.
+The supplied first-person responsibility declaration remains specific to Markus.
+
+The user subsequently requested shortening the affiliation to Quantum Applications
+and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München, while
+retaining the Oettingenstraße address. Chair and department were removed from
+the letterhead to match manuscript revision 7.
+
+At the user's request the prose was subsequently shortened by about one third,
+with three section headings, a compact letterhead, and more generous body type.
+The one-page letter retains the scientific assumptions and confirmed declarations;
+the complete referee list remains on page 2.
+
+The no-prior-Physical-Review-submission and exclusive-submission statements are
+author declarations supplied in the user's draft, not independently audited
+submission-history findings. No excluded referees were requested by the user.
+
+On October 18, 2026, Markus explicitly confirmed that no competing interests and
+no conflicts with the proposed referees apply to all three authors: "Ja, für
+alle drei bestätigt". The cover letter includes this author-provided declaration.
+This is not an independent external conflict clearance. Coauthor consent to the
+final submission is not certified by this preparation.
+
+The five proposed referees and four alternates have been retained. Professional
+emails and affiliations were checked against the sources in referees.json.
+Public contact verification does not establish absence of personal, financial,
+supervisory or collaborative conflicts for all authors.
+
+Roberta Zambrini's institutional page lists PRL Divisional Associate Editor
+service in 2020-2026, without an exact end date. This is recorded for editorial
+eligibility review and is not evidence of a conflict with the authors.
+Source: https://ifisc.uib-csic.es//~roberta/
+
+The letter contains no arXiv number or Zenodo DOI because neither has been
+provided or established. The separate 100-word PRL justification is unchanged.
+No manuscript content is changed. No portal entry, message or submission is made.
+
+Author address: the current manuscript and confirmed author_information.json;
+independently consistent with https://qarlab.de/en/our-team/ and
+https://www.ifi.lmu.de/mvs/en/research/quards.html .
+PRL cover-letter guidance (context, findings, submission history, referees):
+https://journals.aps.org/prl/authors#cover-letter
+
+Regenerate the cover letter and verified referee TXT with:
+python3 scripts/prepare_prl_cover.py
+This requires pdfLaTeX; no network or submission account is accessed.

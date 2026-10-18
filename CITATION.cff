@@ -5,7 +5,7 @@ title: "Fresh Qubits Memory: Research and Reproduction Workspace"
 authors:
   - family-names: Baumann
     given-names: Markus
-    affiliation: Ludwig-Maximilians-Universität München
+    affiliation: "Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München"
 version: 0.1.0
 repository-code: "https://github.com/eybmits/fresh-qubits-memory"
 abstract: "Research workspace for The Fundamental Memory Ceiling of Noisy Quantum Reservoirs, with editable Letter and Supplemental Material sources, supplied numerical campaigns, and independent historical validation."
@@ -22,15 +22,15 @@ preferred-citation:
     - family-names: Baumann
       given-names: Markus
       orcid: "https://orcid.org/0009-0007-3575-1006"
-      affiliation: "QAR-Lab and Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München"
+      affiliation: "Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München"
     - family-names: Stein
       given-names: Jonas
       orcid: "https://orcid.org/0000-0001-5727-9151"
-      affiliation: "QAR-Lab and Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München"
+      affiliation: "Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München"
     - family-names: Linnhoff-Popien
       given-names: Claudia
       orcid: "https://orcid.org/0000-0001-6284-9286"
-      affiliation: "QAR-Lab and Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München"
+      affiliation: "Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München"
   year: 2026
-  notes: "PRL-format manuscript revision 6 dated 18 October 2026; separate Letter and Supplemental Material prepared locally for PRL, with a combined arXiv source package and a local unpublished Zenodo metadata draft. No arXiv identifier or journal acceptance assigned. The linked repository is private pending a separate public release."
+  notes: "PRL-format manuscript revision 7 dated 18 October 2026; separate Letter and Supplemental Material prepared locally for PRL, with a combined arXiv source package and a local unpublished Zenodo metadata draft. No arXiv identifier or journal acceptance assigned. The linked repository is private pending a separate public release."
   url: "https://github.com/eybmits/fresh-qubits-memory"
