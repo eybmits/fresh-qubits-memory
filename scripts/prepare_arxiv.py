@@ -231,6 +231,8 @@ def build(source, output, author_path):
     }
     files["00README.json"] = json_bytes(config)
     files["anc/reconstruct_source.py"] = reconstruction_script(mapping)
+    figure_tex_count = sum(name.startswith("figure_sources/") and name.endswith(".tex")
+                           for name in files)
     files["anc/README.txt"] = (
         "Reproducibility material for " + title + "\n\n"
         "Download and unpack the COMPLETE arXiv source archive, then run:\n"
@@ -239,7 +241,7 @@ def build(source, output, author_path):
         "restores the original complete layout: manuscript, bibliography, final\n"
         "figure PDFs, README, figures/, sim/, and checks/. No scientific source\n"
         "or data bytes are changed. Follow README.txt in the restored directory.\n\n"
-        "The four TikZ .tex sources are in figure_sources/ outside anc/, because\n"
+        f"The {figure_tex_count} figure-construction .tex sources are in figure_sources/ outside anc/, because\n"
         "arXiv recommends excluding TeX files from ancillary directories. They\n"
         "are explicitly ignored during manuscript compilation in 00README.json.\n"
         "Only memory_limits_prl.tex is a top-level compilation target; it uses\n"
@@ -314,13 +316,13 @@ def build(source, output, author_path):
     (output / "title.txt").write_text(title + "\n")
     (output / "abstract.txt").write_text(abstract + "\n")
     (output / "authors.txt").write_text(metadata["authors"] + "\n")
-    (output / "README.md").write_text(instructions())
+    (output / "README.md").write_text(instructions(figure_tex_count))
     print(json.dumps({"archive": str(zip_path), "sha256": manifest["archive_sha256"],
                       "source_files": len(originals), "archive_entries": len(files)}, indent=2))
 
 
-def instructions():
-    return """# arXiv upload preparation — 18 October 2026, revision 3
+def instructions(figure_tex_count):
+    return f"""# arXiv upload preparation — 18 October 2026, revision 4
 
 This directory is a local preparation package. Nothing has been uploaded or
 submitted; no license or submission agreement has been accepted.
@@ -355,7 +357,7 @@ the repository public. Code/data are also included in this arXiv source ZIP.
 
 ## Author review
 
-The [revision review](../../../docs/manuscript-2026-10-18-prl-v3.md) records the
+The [revision review](../../../docs/manuscript-2026-10-18-prl-v4.md) records the
 new source import and the applied clarifications: numerical depths are sampled
 estimates, k comparisons use independently sampled unitary ensembles, and the
 continuous crossings in Figure 4 differ from integer depths. The revised
@@ -367,8 +369,8 @@ remain the author's responsibility.
 
 The root contains the manuscript, matched `.bbl`, `refs.bib`, and 11 final figure
 PDFs. It excludes the compiled manuscript PDF, logs, caches and unrelated files.
-`00README.json` specifies the sole top-level file and explicitly ignores four
-TikZ figure-construction sources in `figure_sources/`. All other reproducibility
+`00README.json` specifies the sole top-level file and explicitly ignores
+{figure_tex_count} figure-construction TeX sources in `figure_sources/`. All other reproducibility
 code, data and original build instructions are in `anc/reproducibility/`.
 The source bytes are copied unchanged from `paper/prl-source/`.
 
@@ -431,7 +433,7 @@ before final submission.
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source-dir", type=Path, default=REPO / "paper/prl-source")
-    parser.add_argument("--output-dir", type=Path, default=REPO / "paper/submission/arxiv-2026-10-18-v3")
+    parser.add_argument("--output-dir", type=Path, default=REPO / "paper/submission/arxiv-2026-10-18-v4")
     parser.add_argument("--author-file", type=Path, default=REPO / "paper/author_information.json")
     args = parser.parse_args()
     build(args.source_dir.resolve(), args.output_dir.resolve(), args.author_file.resolve())

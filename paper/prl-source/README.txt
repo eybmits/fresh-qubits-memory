@@ -1,13 +1,14 @@
 The Fundamental Memory Ceiling of Noisy Quantum Reservoirs -- Physical Review Letters version, source files
 Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien, LMU Munich
 
-Repository edition: 18 October 2026, revision 3. The three confirmed authors, ORCIDs
-and one shared QAR-Lab/chair/LMU address are retained. The date is fixed and the
-array package is pinned to the arXiv-documented REVTeX-compatible release.
-Numerical prose/captions explicitly distinguish sampled estimates, unitary
-ensembles across k, and continuous crossings from integer depths.
-Reference [28] and the code section link to the GitHub repository; the author
-will make the currently private repository public separately.
+Repository edition: 18 October 2026, revision 4. The confirmed three authors,
+ORCIDs, one shared QAR-Lab/chair/LMU address, and code link are retained.
+The fixed date and array-package pin support reproducible TeX Live 2025 builds.
+Numerical captions distinguish sampled estimates, independent ensembles across k,
+and continuous threshold crossings from integer memory depths. The abstract and
+Figure 3 distinguish the optimal memory ceiling from any individual reservoir
+performance; Figure 3 is a schematic, not a numerical dataset.
+
 
 Manuscript (REVTeX 4.2, prl option): one file with the Letter followed by the Supplemental Material
   pdflatex memory_limits_prl && bibtex memory_limits_prl && pdflatex memory_limits_prl && pdflatex memory_limits_prl
@@ -20,15 +21,15 @@ Manuscript (REVTeX 4.2, prl option): one file with the Letter followed by the Su
   Supplemental-Material reference. This archive (code and data) is the source archive named in the Data
   availability statement and in Sec. IX of the Supplemental Material; upload it with the Supplemental Material.
 
-Length of the Letter (APS length guide, journals.aps.org/authors/length-guide; limit 3750 words)
-  Text (2398), captions (260), data-availability statement (25)       2683 words
+Local estimate of Letter length (APS length guide, journals.aps.org/authors/length-guide; limit 3750 words)
+  Text (2312), captions (356), data-availability statement (25)       2693 words
   Displayed equations: 7 rows x 16 words                             112 words
   Fig. 1 (one-column, aspect 1.43): 150/1.43 + 20                    125 words
   Fig. 2 (two-column, aspect 2.88): 300/(0.5 x 2.88) + 40            249 words
-  Fig. 3 (two-column, aspect 3.81)                                   197 words
+  Fig. 3 (two-column, aspect 2.71)                                   261 words
   Fig. 4 (two-column, aspect 3.44)                                   214 words
-  Total                                                            ~3580 words
-  Abstract: 590 characters (limit of the PRL instructions: 600 characters; not counted in the 3750 words).
+  Total                                                            ~3654 words
+  Abstract: 575 rendered characters (limit of the PRL instructions: 600 characters; not counted in the 3750 words).
   Recount after every edit:  python3 checks/wordcount.py memory_limits_prl.tex .
 
 Figures (final PDFs in this folder; sources in figures/)
@@ -38,7 +39,8 @@ Figures (final PDFs in this folder; sources in figures/)
   Fig. 1   fig1.pdf  <- figures/fig1.tex (TikZ; scope of the theorem as nested classes)
   Fig. 2   fig2.pdf  <- figures/fig2.tex (TikZ; panel b, the reservoir, and the bottom row of boxes)
                        + fig2a.pdf <- figures/fig2a.py (panel a, square axes)
-  Fig. 3   fig3.pdf  <- figures/fig3.py (the memory limit, schematic)
+  Fig. 3   fig3.pdf  <- figures/fig3.tex (TikZ; panel a, the reservoirs A, B, C and their memory windows)
+                       + fig3b.pdf <- figures/fig3b.py (panel b, the limit versus k)
   Fig. 4   fig4.pdf  <- figures/fig4.tex (TikZ; panel a) + fig4bc.pdf <- figures/fig4bc.py, which also prints the
                        exact memory depth of the copies without repair quoted in the text
   Fig. S1-S7  figS1.pdf ... figS7.pdf <- figures/figS.py
@@ -47,7 +49,7 @@ Figures (final PDFs in this folder; sources in figures/)
   Build, from inside figures/:
     pdflatex fig1.tex
     python3 fig2a.py && pdflatex fig2.tex
-    python3 fig3.py
+    python3 fig3b.py && pdflatex fig3.tex
     python3 fig4bc.py && pdflatex fig4.tex
     python3 figS.py
   The scripts read the data in ../sim and write the PDFs into figures/.
@@ -83,11 +85,5 @@ Checks
                               and the concentration of the examples)
   checks/wordcount.py         length of the Letter according to the APS length guide
 
-Justification for the editors (PRL asks for about 100 words at submission)
-  We prove a fundamental resource limitation for an entire class of open quantum systems. With k fresh qubits
-  per time step, no noisy quantum dynamics retains information for longer than exp[O(k)] time steps, however
-  large it is: a universal no-go result that covers every architecture within a well-defined noise model,
-  including ones not yet conceived, and whose exponential scaling an explicit reservoir attains. The result
-  identifies entropy removal, not size, as the resource that limits memory, and it reaches beyond quantum
-  reservoir computing to the stabilization of information in noisy quantum systems in general, including
-  measurement-free error correction.
+Justification for the editors (user-provided wording)
+  How long can a noisy quantum system remember past inputs? We establish a universal memory ceiling under local Markovian depolarizing noise: with k qubits refreshed per step, the maximum memory depth scales as exp[Θ(k)], regardless of system size, dynamics, or input encoding. We prove a size-independent upper bound and construct a measurement-free error-correction scheme that achieves the same exponential scaling, establishing an optimal resource law. This is a limit on an entire class of quantum dynamics, not on one computing architecture. By identifying entropy removal as the resource governing memory, our result connects quantum information, nonequilibrium physics, and physical computing.

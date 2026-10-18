@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-18",
+  "fresh_extraction_build": true,
+  "fresh_build_pdf_text_identical": true,
+  "bibliography_regenerated_byte_identical": true,
+  "source_reconstruction_byte_identical": true,
+  "source_file_count": 53,
+  "archive_entry_count": 56,
+  "deterministic_zip_regeneration": true,
+  "pages": 22,
+  "unresolved_references_or_citations": 0,
+  "overfull_boxes": 0,
+  "shell_escape": false,
+  "status": "local_preflight_passed_not_uploaded",
+  "archive_sha256": "44124c690fa1e01e809d3eef95ff0068f9a379e7bdb5f6943470a08455c75c13",
+  "pdf_sha256": "d731a107602e138f87f1d50797542f2f7daf45453411331202d19c4559dbfc1c",
+  "local_aps_word_estimate": 3654,
+  "prl_word_limit": 3750,
+  "abstract_rendered_characters": 575,
+  "justification_words_whitespace": 100,
+  "repository_tests": {
+    "passed": 22,
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src OPENBLAS_NUM_THREADS=1 python3 -m unittest discover -s tests -v"
+  },
+  "scientific_checks": {
+    "unchanged_json_datasets": 13,
+    "unchanged_simulation_scripts": 8,
+    "full_campaign_rerun": false,
+    "scope": "Source/data consistency and repository regression checks. No new scientific campaign or complete proof audit."
+  },
+  "code_repository_visibility": "private",
+  "uploaded": false,
+  "submitted": false,
+  "license_selected": false,
+  "visibility_changed": false
+}

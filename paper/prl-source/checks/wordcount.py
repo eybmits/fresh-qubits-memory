@@ -8,11 +8,11 @@ Usage: python3 wordcount.py ../tex/memory_limits_prl.tex ../figs"""
 import re, sys, subprocess, os
 
 tex = open(sys.argv[1]).read()
+tex = re.sub(r"(?m)(?<!\\)%.*$", "", tex)                  # comments are not printed
 figdir = sys.argv[2]
 main = tex[tex.index(r"\maketitle"):tex.index(r"\begin{acknowledgments}")]
 das = tex[tex.index(r"\runin{Data availability.}"):tex.index(r"\bibliography{refs}")]
 abstract = tex[tex.index(r"\begin{abstract}") + 16:tex.index(r"\end{abstract}")]
-main = re.sub(r"(?m)%.*$", "", main)
 
 # ---- figures: captions count as text, the figure itself by its aspect ratio
 figs = re.findall(r"\\begin\{figure(\*?)\}.*?\\includegraphics(?:\[[^\]]*\])?\{([^}]*)\}.*?\\caption\{(.*?)\}\s*\\label",
@@ -38,6 +38,7 @@ body = re.sub(r"\\begin\{(equation|align|gather)\*?\}.*?\\end\{\1\*?\}", " ", bo
 
 def count_words(s):
     s = re.sub(r"\$[^$]*\$", " MATH ", s)                # inline math = one word
+    s = re.sub(r"\\nocite\{[^}]*\}", " ", s)               # not printed
     s = re.sub(r"~?\\cite\{[^}]*\}", " [REF] ", s)          # a citation = one word
     s = re.sub(r"\\(eq)?ref\{[^}]*\}", "N", s)
     s = re.sub(r"\\(runin|emph|textbf|textit|label|caption)\{", " ", s)

@@ -1,0 +1,9 @@
+{
+  "removed_obsolete_source_files": [
+    "figures/fig3.py"
+  ],
+  "source_file_count": 53,
+  "justification_words_whitespace": 100,
+  "justification_characters": 699,
+  "metadata_restored": true
+}

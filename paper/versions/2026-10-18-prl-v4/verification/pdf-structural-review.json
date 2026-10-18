@@ -1,0 +1,101 @@
+{
+  "combined": {
+    "file": "paper/memory_limits_prl_2026-10-18-v4.pdf",
+    "sha256": "d731a107602e138f87f1d50797542f2f7daf45453411331202d19c4559dbfc1c",
+    "pages": 22,
+    "pdf_author": "Markus Baumann, Jonas Stein, Claudia Linnhoff-Popien",
+    "font_rows": 142,
+    "nonembedded_font_rows": [],
+    "important_uris": {
+      "https://orcid.org/0009-0007-3575-1006": [
+        1,
+        7
+      ],
+      "https://orcid.org/0000-0001-5727-9151": [
+        1,
+        7
+      ],
+      "https://orcid.org/0000-0001-6284-9286": [
+        1,
+        7
+      ],
+      "mailto:markus.baumann@campus.lmu.de": [
+        5
+      ],
+      "https://github.com/eybmits/fresh-qubits-memory": [
+        6,
+        6,
+        22
+      ]
+    },
+    "first_page_author_presence": {
+      "Markus Baumann": true,
+      "Jonas Stein": true,
+      "Claudia Linnhoff-Popien": true
+    },
+    "first_page_address_count": 1,
+    "first_page_lmu_count": 1
+  },
+  "letter": {
+    "file": "paper/submission/prl-2026-10-18-v4/memory_limits_prl_letter.pdf",
+    "sha256": "ec074fe8e418ff2e2921d238034d7f158c249a978327b332a29eb52c11f06681",
+    "pages": 6,
+    "pdf_author": "Markus Baumann, Jonas Stein, Claudia Linnhoff-Popien",
+    "font_rows": 80,
+    "nonembedded_font_rows": [],
+    "important_uris": {
+      "https://orcid.org/0009-0007-3575-1006": [
+        1
+      ],
+      "https://orcid.org/0000-0001-5727-9151": [
+        1
+      ],
+      "https://orcid.org/0000-0001-6284-9286": [
+        1
+      ],
+      "mailto:markus.baumann@campus.lmu.de": [
+        5
+      ],
+      "https://github.com/eybmits/fresh-qubits-memory": [
+        6,
+        6
+      ]
+    },
+    "first_page_author_presence": {
+      "Markus Baumann": true,
+      "Jonas Stein": true,
+      "Claudia Linnhoff-Popien": true
+    },
+    "first_page_address_count": 1,
+    "first_page_lmu_count": 1
+  },
+  "sm": {
+    "file": "paper/submission/prl-2026-10-18-v4/2_supplemental_material/memory_limits_prl_SM.pdf",
+    "sha256": "1c5e68a563e9ad5df28dccedbbea9884d447f8e366608df4a43062b6b6882c9a",
+    "pages": 16,
+    "pdf_author": "Markus Baumann, Jonas Stein, Claudia Linnhoff-Popien",
+    "font_rows": 84,
+    "nonembedded_font_rows": [],
+    "important_uris": {
+      "https://orcid.org/0009-0007-3575-1006": [
+        1
+      ],
+      "https://orcid.org/0000-0001-5727-9151": [
+        1
+      ],
+      "https://orcid.org/0000-0001-6284-9286": [
+        1
+      ],
+      "https://github.com/eybmits/fresh-qubits-memory": [
+        16
+      ]
+    },
+    "first_page_author_presence": {
+      "Markus Baumann": true,
+      "Jonas Stein": true,
+      "Claudia Linnhoff-Popien": true
+    },
+    "first_page_address_count": 1,
+    "first_page_lmu_count": 1
+  }
+}

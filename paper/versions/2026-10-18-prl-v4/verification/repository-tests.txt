@@ -1,0 +1,27 @@
+test_actual_channel_against_full_physical_dilation (test_global_repair.GlobalRepairTests.test_actual_channel_against_full_physical_dilation) ... ok
+test_no_noise_preserves_repetition_code_with_decoding (test_global_repair.GlobalRepairTests.test_no_noise_preserves_repetition_code_with_decoding) ... ok
+test_repair_keeps_conditional_remainder_coherence (test_global_repair.GlobalRepairTests.test_repair_keeps_conditional_remainder_coherence) ... ok
+test_exact_error_against_enumerated_outcomes (test_majority.MajorityTests.test_exact_error_against_enumerated_outcomes) ... ok
+test_input_validation (test_majority.MajorityTests.test_input_validation) ... ok
+test_markov_recurrence_and_error_bound (test_majority.MajorityTests.test_markov_recurrence_and_error_bound) ... ok
+test_single_copy_and_exact_threshold (test_majority.MajorityTests.test_single_copy_and_exact_threshold) ... ok
+test_table_one_entries (test_majority.MajorityTests.test_table_one_entries) ... ok
+test_tiny_errors_do_not_round_lifetime_to_infinity (test_majority.MajorityTests.test_tiny_errors_do_not_round_lifetime_to_infinity) ... ok
+test_dense_channels_match_factorized_signed_and_positive_states (test_modular_repair.ModularRepairTests.test_dense_channels_match_factorized_signed_and_positive_states) ... ok
+test_exact_threshold_is_not_counted_as_remembered (test_modular_repair.ModularRepairTests.test_exact_threshold_is_not_counted_as_remembered) ... ok
+test_identity_encoder_recovers_known_majority_crossings (test_modular_repair.ModularRepairTests.test_identity_encoder_recovers_known_majority_crossings) ... ok
+test_module_unitaries_match_supplied_reservoir_builders (test_modular_repair.ModularRepairTests.test_module_unitaries_match_supplied_reservoir_builders) ... ok
+test_noise_implementation_on_entangled_state (test_modular_repair.ModularRepairTests.test_noise_implementation_on_entangled_state) ... ok
+test_noiseless_repair_preserves_both_logical_values (test_modular_repair.ModularRepairTests.test_noiseless_repair_preserves_both_logical_values) ... ok
+test_stopping_rule_bounds_later_readout_revivals (test_modular_repair.ModularRepairTests.test_stopping_rule_bounds_later_readout_revivals) ... ok
+test_classical_channel_equals_quantum_diagonal_restriction (test_validation.ChannelValidationTests.test_classical_channel_equals_quantum_diagonal_restriction) ... ok
+test_cooling_joint_count_transition_matches_bit_enumeration (test_validation.ChannelValidationTests.test_cooling_joint_count_transition_matches_bit_enumeration) ... ok
+test_depolarizing_against_independent_full_kraus_sum (test_validation.ChannelValidationTests.test_depolarizing_against_independent_full_kraus_sum) ... ok
+test_known_upper_constant (test_validation.ChannelValidationTests.test_known_upper_constant) ... ok
+test_partial_trace_reset_destroys_bell_correlations (test_validation.ChannelValidationTests.test_partial_trace_reset_destroys_bell_correlations) ... ok
+test_single_copy_cycle_order_and_permutation (test_validation.ChannelValidationTests.test_single_copy_cycle_order_and_permutation) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.125s
+
+OK

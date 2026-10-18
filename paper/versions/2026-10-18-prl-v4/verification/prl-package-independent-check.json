@@ -1,0 +1,50 @@
+{
+  "all_manifest_hashes_match": true,
+  "outer_zip_crc_and_content_match": true,
+  "outer_zip_sha256": "29937e1294323847fd11a8c553df9a5fa94dadc427d46d2edcc12385acaa2e37",
+  "canonical_source_files": 53,
+  "source_zip_all_files_byte_identical": true,
+  "manuscript_zip_all_files_byte_identical": true,
+  "pdf_pages": {
+    "letter": 6,
+    "supplement": 16,
+    "combined": 22
+  },
+  "letter_and_supplement_text_matches_combined": true,
+  "all_three_authors_in_both_pdf_bylines_and_metadata": true,
+  "shared_address_once_per_byline": true,
+  "github_url_clickable_in_both_pdfs": true,
+  "justification_exact_user_bytes": true,
+  "justification_words": 100,
+  "justification_sha256": "8e7bf893c630f20364bba3a933ac54c2e9bed02a83da26148a90b24b284049e3",
+  "supplemental_link_validation": {
+    "dangling_links": 0,
+    "preserved_internal_links": 91,
+    "preserved_uri_links": 4,
+    "removed_links_to_separate_letter": 75
+  },
+  "letter_pdf_sha256": "ec074fe8e418ff2e2921d238034d7f158c249a978327b332a29eb52c11f06681",
+  "supplement_pdf_sha256": "1c5e68a563e9ad5df28dccedbbea9884d447f8e366608df4a43062b6b6882c9a",
+  "deterministic_second_build": {
+    "prl-submission.zip": {
+      "byte_identical": true,
+      "sha256": "29937e1294323847fd11a8c553df9a5fa94dadc427d46d2edcc12385acaa2e37"
+    },
+    "manuscript-source.zip": {
+      "byte_identical": true,
+      "sha256": "83cb1aa61d9bfce8515a98c6568ce35f9dfa6277c8af1f8b5a54b8e6f90f510d"
+    },
+    "justification.txt": {
+      "byte_identical": true,
+      "sha256": "8e7bf893c630f20364bba3a933ac54c2e9bed02a83da26148a90b24b284049e3"
+    },
+    "memory_limits_prl_letter.pdf": {
+      "byte_identical": true,
+      "sha256": "ec074fe8e418ff2e2921d238034d7f158c249a978327b332a29eb52c11f06681"
+    },
+    "2_supplemental_material/memory_limits_prl_SM.pdf": {
+      "byte_identical": true,
+      "sha256": "1c5e68a563e9ad5df28dccedbbea9884d447f8e366608df4a43062b6b6882c9a"
+    }
+  }
+}

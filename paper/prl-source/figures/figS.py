@@ -74,7 +74,7 @@ for x in E["const_table"]:
 a.set_yscale("log"); a.set_xlim(0, 1); a.set_ylim(1e-3, 3e4)
 a.set_yticks([1e-2, 1, 1e2, 1e4])
 legend(a, loc="upper left", handlelength=1.4, borderaxespad=0.4)
-xlabel(a, "Noise strength", "q")
+xlabel(a, "Noise parameter", "q")
 ylabel(a, "Bits per input qubit")
 panel(a, "a", "Exponents")
 

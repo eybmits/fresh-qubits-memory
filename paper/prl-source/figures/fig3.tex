@@ -1,0 +1,119 @@
+% Fig. 3: the memory limit (schematic). Width 7.05 in = 17.907 cm, height 2.60 in = 6.604 cm.
+% Panel a (drawn here): one input stream u_t (a sine) drives three reservoirs, drawn as qubit lattices at the same
+% lattice spacing: B (n = 200, k = 2) on top, A (n = 20, k = 2) in the middle, C (n = 20, k = 4) below, so that both
+% comparisons start from A. Input qubits are purple. In each lane, the inputs within the limit are on blue (within
+% reach; the curve fades as the influence of an input decays with its age), older inputs on red (out of reach for every
+% reservoir with this k), separated by the red wall of the limit, as on the memory axis of Fig. 1(c). B and A share the
+% limit W_{q,2}; C, which is A with two more input qubits, reaches back to W_{q,4}.
+% Panel b (fig3b.pdf, matplotlib, included at 100%): the limit versus k between the two bounds of Theorem 1.
+\documentclass[border=0pt]{standalone}
+\input{tikzstyle}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\def\H{6.604}
+\useasboundingbox (0,0) rectangle (17.907,\H);
+\node[anchor=north west,inner sep=0pt,outer sep=0pt] at (11.10,\H) {\includegraphics{fig3b.pdf}};
+% =================================================================================== panel a
+\node[ttl] at (0,{\H-0.367}) {\textbf{a}\enspace Input qubits, not size, set the limit};
+% ------------------------------------------------------------------ geometry
+\def\xL{1.95}\def\xT{6.20}\def\xE{6.38}% track: start, present (time t), rounded end
+\def\hT{0.33}% half height of a track
+\def\wTwo{4.65}\def\wFour{2.40}% walls: t - W_{q,2} and t - W_{q,4}
+\def\yB{5.25}\def\yA{3.78}\def\yC{2.15}% lane centres: B on top, A in the middle, C below
+\def\amp{0.19}% amplitude of the input curve
+\def\uT{0.149}% value of the curve at time t (cm above the lane centre)
+\def\xP{6.85}% front-left qubit of every reservoir
+% the input stream, a sine with 5.5 periods along the track that ends at time t on a rising flank
+\newcommand{\Curve}[1]{plot[domain=0:1,samples=181]
+  ({\xL+0.06+(\xT-\xL-0.06)*\x},{#1+\amp*sin(deg(2*pi*5.5*(\x-1)+0.9))})}
+% ------------------------------------------------------------------ a lane: track, input curve, wall, current input
+% #1 lane centre, #2 wall position
+\newcommand{\Lane}[2]{%
+  \begin{scope}
+    \clip[rounded corners=0.13cm] (\xL,{#1-\hT}) rectangle (\xE,{#1+\hT});
+    \fill[cRedFill] (\xL,{#1-\hT}) rectangle (#2,{#1+\hT});
+    \fill[cBlueFill] (#2,{#1-\hT}) rectangle (\xE,{#1+\hT});
+    \begin{scope}\clip (\xL,{#1-1}) rectangle (#2,{#1+1});
+      \draw[cGreyLight,line width=0.9pt,line join=round] \Curve{#1};
+    \end{scope}
+    % within reach: the curve fades from the present (black) towards the limit, as the influence of an input
+    % decays with its age
+    \foreach \s in {0,...,11} {
+      \pgfmathsetmacro\xa{#2+(\xE-#2)*\s/12}\pgfmathsetmacro\xb{#2+(\xE-#2)*(\s+1)/12}
+      \pgfmathtruncatemacro\fadeval{40+60*(\s+0.5)/12}
+      \begin{scope}\clip (\xa,{#1-1}) rectangle ({\xb+0.002},{#1+1});
+        \draw[cInk!\fadeval!cGreyLight,line width=0.9pt,line join=round] \Curve{#1};
+      \end{scope}}
+  \end{scope}
+  \draw[cGrey,line width=0.6pt,rounded corners=0.13cm] (\xL,{#1-\hT}) rectangle (\xE,{#1+\hT});
+  \draw[cRed,line width=2.0pt] (#2,{#1-\hT-0.07}) -- (#2,{#1+\hT+0.07});
+  \fill[cPurple,draw=white,line width=0.5pt] (\xT,{#1+\uT}) circle[radius=0.062];}
+% ------------------------------------------------------------------ a reservoir: qubit lattice on a tilted plate
+% #1,#2 front-left qubit; #3 columns; #4 rows; #5 input qubits (purple, front row from the left)
+\def\dx{0.16}\def\sx{0.083}\def\sy{0.092}\def\rq{0.058}
+\newcommand{\Plate}[5]{%
+  \pgfmathsetmacro\cA{#3-1+0.75}\pgfmathsetmacro\rA{#4-1+0.75}%
+  \pgfmathtruncatemacro\nC{#3-1}\pgfmathtruncatemacro\nR{#4-1}%
+  \coordinate (p00) at ({#1-0.75*\dx-0.75*\sx},{#2-0.75*\sy});
+  \coordinate (p10) at ({#1+\cA*\dx-0.75*\sx},{#2-0.75*\sy});
+  \coordinate (p11) at ({#1+\cA*\dx+\rA*\sx},{#2+\rA*\sy});
+  \coordinate (p01) at ({#1-0.75*\dx+\rA*\sx},{#2+\rA*\sy});
+  \fill[cShadow!55] ($(p00)+(0.05,-0.10)$) -- ($(p10)+(0.05,-0.10)$) -- ($(p11)+(0.05,-0.10)$) -- (p11) -- (p10) -- cycle;
+  \fill[cGreyLight] (p00) -- (p10) -- ($(p10)+(0,-0.07)$) -- ($(p00)+(0,-0.07)$) -- cycle;
+  \fill[cGrey] (p10) -- (p11) -- ($(p11)+(0,-0.07)$) -- ($(p10)+(0,-0.07)$) -- cycle;
+  \shade[top color=white,bottom color=cGreyFill,draw=cGreyLight,line width=0.5pt] (p00) -- (p10) -- (p11) -- (p01) -- cycle;
+  % input register: the input qubits on a purple field, as in Fig. 4(a)
+  \pgfmathsetmacro\kA{#5-1+0.60}
+  \filldraw[fill=cPurpleFill,draw=cPurple,line width=0.6pt,rounded corners=0.05cm]
+    ({#1-0.60*\dx-0.60*\sx},{#2-0.60*\sy}) -- ({#1+\kA*\dx-0.60*\sx},{#2-0.60*\sy})
+    -- ({#1+\kA*\dx+0.60*\sx},{#2+0.60*\sy}) -- ({#1-0.60*\dx+0.60*\sx},{#2+0.60*\sy}) -- cycle;
+  \foreach \j in {0,...,\nR} {
+    \foreach \i in {0,...,\nC} {
+      \ifnum\i<\nC\relax
+        \draw[cGreyLight,line width=0.5pt] ({#1+\i*\dx+\j*\sx},{#2+\j*\sy}) -- ({#1+(\i+1)*\dx+\j*\sx},{#2+\j*\sy});\fi
+      \ifnum\j<\nR\relax
+        \draw[cGreyLight,line width=0.5pt] ({#1+\i*\dx+\j*\sx},{#2+\j*\sy}) -- ({#1+\i*\dx+(\j+1)*\sx},{#2+(\j+1)*\sy});\fi
+    }}
+  \foreach \j in {\nR,...,0} {
+    \foreach \i in {0,...,\nC} {
+      \pgfmathtruncatemacro\isin{(\j==0)&&(\i<#5)}
+      \ifnum\isin=1 \shade[ball color=cPurple!80!white] ({#1+\i*\dx+\j*\sx},{#2+\j*\sy}) circle[radius=\rq];
+      \else \shade[ball color=cBlue] ({#1+\i*\dx+\j*\sx},{#2+\j*\sy}) circle[radius=\rq];\fi
+    }}}
+% ------------------------------------------------------------------ the three lanes
+\Lane{\yB}{\wTwo}
+\Lane{\yA}{\wTwo}
+\Lane{\yC}{\wFour}
+\Plate{\xP}{\yB-0.33}{20}{10}{2}
+\Plate{\xP}{\yA-0.06}{5}{4}{2}
+\Plate{\xP}{\yC-0.06}{5}{4}{4}
+% input stream into the input qubits
+\foreach \y/\dy in {\yB/0.33,\yA/0.06,\yC/0.06}
+  \draw[arr,cPurple,line width=0.8pt] ({\xT+0.08},{\y+\uT}) to[out=0,in=150] ({\xP-0.10},{\y-\dy+0.05});
+% ------------------------------------------------------------------ labels of the lanes
+\newcommand{\LaneLabel}[4]{% y, letter, line with n, line with k
+  \node[anchor=base west,inner sep=0pt] at (0,{#1+0.04}) {\textbf{#2}};
+  \node[anchor=base west,inner sep=0pt] at (0.42,{#1+0.04}) {#3};
+  \node[anchor=base west,inner sep=0pt] at (0.42,{#1-0.32}) {#4};}
+\LaneLabel{\yB}{B}{$\bm{n=200}$}{$k=2$}
+\LaneLabel{\yA}{A}{$n=20$}{$k=2$}
+\LaneLabel{\yC}{C}{$n=20$}{\textcolor{cPurpleDark}{$\bm{k=4}$}}
+% region names above the top lane
+\node[anchor=base east,inner sep=0pt,text=cRedDark] at ({\wTwo-0.14},{\yB+\hT+0.17}) {\textbf{out of reach, for any $\bm n$}};
+\node[anchor=base west,inner sep=0pt,text=cBlueDark] at ({\wTwo+0.14},{\yB+\hT+0.17}) {\textbf{within reach}};
+% same limit for B and A
+\draw[cRed,line width=0.8pt,dash pattern=on 2.2pt off 1.6pt] (\wTwo,{\yB-\hT-0.07}) -- (\wTwo,{\yA+\hT+0.07});
+\node[anchor=west,inner sep=0pt,text=cRedDark] at ({\wTwo+0.12},{(\yA+\yB)/2}) {same limit};
+% two more input qubits: higher limit
+\def\yP{{(\yA+\yC)/2-0.12}}
+\draw[arr,cPurple,line width=0.9pt] (\wTwo,\yP) -- ({\wFour+0.05},\yP);
+\node[anchor=base,inner sep=0pt,text=cPurpleDark] at ({(\wTwo+\wFour)/2},{(\yA+\yC)/2+0.06}) {$+2$ input qubits: higher limit};
+% ------------------------------------------------------------------ time axis
+\def\yX{1.27}
+\draw[line width=0.8pt,cInk] (\xL,\yX) -- (\xE,\yX);
+\foreach \x/\l in {\wFour/{t-W_{q,4}},\wTwo/{t-W_{q,2}},\xT/{t}} {
+  \draw[line width=0.8pt,cInk] (\x,\yX) -- (\x,{\yX-0.106});
+  \node[anchor=north,inner sep=0pt] at (\x,{\yX-0.19}) {$\l$};}
+\node[anchor=base,inner sep=0pt] at ({(\xL+\xE)/2},0.25) {\textbf{Time step}};
+\end{tikzpicture}
+\end{document}

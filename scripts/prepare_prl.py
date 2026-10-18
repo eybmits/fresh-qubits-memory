@@ -31,8 +31,9 @@ from prepare_arxiv import (
 )
 
 
-EDITION = "2026-10-18-v3"
+EDITION = "2026-10-18-v4"
 GENERATOR = "scripts/prepare_prl.py"
+DEFAULT_JUSTIFICATION = REPO / "paper/versions/2026-10-18-prl-v4/justification-user.txt"
 MANUSCRIPT_FILES = [MAIN, "refs.bib", "memory_limits_prl.bbl"] + [
     f"fig{i}.pdf" for i in range(1, 5)
 ]
@@ -246,6 +247,8 @@ not a single manuscript file to upload indiscriminately to the APS portal.
    is the reproducibility deposit cited by the paper; it includes the combined
    manuscript, bibliography, figures, simulator, saved data, and checks.
 3. Review `cover_letter.txt` and `justification.txt` before using their text.
+   `justification.txt` contains the exact text supplied by the user for this
+   revision, with no heading; it is ready to paste into the justification field.
    The cover letter is a draft: its exclusive-submission statement needs final
    confirmation by the authors. Coauthor approval and any prior submission
    history have not been verified by this preparation workflow.
@@ -357,7 +360,7 @@ def safe_output(output, files):
         path.chmod(0o644)
 
 
-def build(combined_pdf, output, input_package):
+def build(combined_pdf, output, input_package, justification_file=DEFAULT_JUSTIFICATION):
     source = REPO / "paper/prl-source"
     originals = source_files(source)
     combined_text = originals[MAIN].decode()
@@ -399,6 +402,9 @@ def build(combined_pdf, output, input_package):
     with zipfile.ZipFile(input_package) as archive:
         templates = {name: archive.read(name) for name in
                      ("cover_letter.txt", "justification.txt", "submission_notes.txt")}
+    justification = justification_file.read_bytes()
+    if not justification.decode("utf-8").strip():
+        raise ValueError("The user-supplied justification is empty")
     files = {"1_manuscript/" + name: data for name, data in letter_files.items()}
     files.update({
         "memory_limits_prl_letter.pdf": letter_pdf,
@@ -408,7 +414,7 @@ def build(combined_pdf, output, input_package):
         "2_supplemental_material/README.TXT": supplemental_readme(title, authors),
         "author_information.json": authors_path.read_bytes(),
         "cover_letter.txt": prepare_cover(templates["cover_letter.txt"].decode(), names),
-        "justification.txt": templates["justification.txt"],
+        "justification.txt": justification,
         "README.md": readme(title, names),
         "build_verification.json": json_bytes(verification),
     })
@@ -420,6 +426,12 @@ def build(combined_pdf, output, input_package):
         "combined_pdf": {"name": combined_pdf.name, "sha256": digest(combined_data)},
         "template_inputs": {name: {"sha256": digest(data), "bytes": len(data)}
                             for name, data in templates.items()},
+        "user_justification": {
+            "name": justification_file.name,
+            "sha256": digest(justification),
+            "bytes": len(justification),
+            "handling": "Copied byte-for-byte without a heading; replaces the archived ZIP justification.",
+        },
         "canonical_source_mapping": {
             name: {"repository_path": "paper/prl-source/" + name,
                    "archive": "2_supplemental_material/memory_limits_prl_source.zip",
@@ -437,7 +449,8 @@ def build(combined_pdf, output, input_package):
             "Packed every selected canonical reproduction source with deterministic ZIP metadata.",
             "Adapted the cover letter to three authors and a uniform memory ceiling claim.",
             "Retained the supplied exclusivity sentence in the draft cover letter; README records pending author attestations.",
-            "Retained the received justification; replaced stale submission notes with current README.",
+            "Used the user's exact replacement justification without a heading; retained the original ZIP text in input provenance.",
+            "Replaced stale submission notes with the current README.",
         ],
     }
     files["manifest.json"] = json_bytes(manifest)
@@ -455,12 +468,15 @@ def main():
     parser.add_argument("--combined-pdf", type=Path, required=True,
                         help="Freshly compiled 22-page combined Letter and Supplemental Material")
     parser.add_argument("--output-dir", type=Path,
-                        default=REPO / "paper/submission/prl-2026-10-18-v3")
+                        default=REPO / "paper/submission/prl-2026-10-18-v4")
     parser.add_argument("--input-package", type=Path,
-                        default=REPO / "paper/versions/2026-10-18-prl-v3/submission-original.zip")
+                        default=REPO / "paper/versions/2026-10-18-prl-v4/submission-original.zip")
+    parser.add_argument("--justification-file", type=Path, default=DEFAULT_JUSTIFICATION,
+                        help="User-approved plain UTF-8 text copied byte-for-byte to justification.txt")
     args = parser.parse_args()
     try:
-        result = build(args.combined_pdf.resolve(), args.output_dir.resolve(), args.input_package.resolve())
+        result = build(args.combined_pdf.resolve(), args.output_dir.resolve(),
+                       args.input_package.resolve(), args.justification_file.resolve())
     except (ValueError, OSError, subprocess.SubprocessError, zipfile.BadZipFile) as error:
         parser.exit(1, f"PRL package not written: {error}\n")
     print(json.dumps(result, indent=2))

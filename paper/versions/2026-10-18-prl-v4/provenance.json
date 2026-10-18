@@ -1,0 +1,263 @@
+{
+  "artifacts": [
+    {
+      "bytes": 969568,
+      "path": "paper/memory_limits_prl_2026-10-18-v4.pdf",
+      "sha256": "d731a107602e138f87f1d50797542f2f7daf45453411331202d19c4559dbfc1c"
+    },
+    {
+      "bytes": 5746,
+      "path": "paper/submission/arxiv-2026-10-18-v4/README.md",
+      "sha256": "ebc765a80367d0eb93127996b0c695bff9fa9c346266c3e408f5afe6e7a39a6f"
+    },
+    {
+      "bytes": 586,
+      "path": "paper/submission/arxiv-2026-10-18-v4/abstract.txt",
+      "sha256": "8d87ddf696726986670e985cb5c1e3a6869323836be8f4add91d390273885df7"
+    },
+    {
+      "bytes": 1354173,
+      "path": "paper/submission/arxiv-2026-10-18-v4/arxiv-source.zip",
+      "sha256": "44124c690fa1e01e809d3eef95ff0068f9a379e7bdb5f6943470a08455c75c13"
+    },
+    {
+      "bytes": 1324,
+      "path": "paper/submission/arxiv-2026-10-18-v4/author_information.json",
+      "sha256": "e76e09bddc6bc428ef438213619b9145b4f491dd72ca7556d41e96b5d80c7f16"
+    },
+    {
+      "bytes": 53,
+      "path": "paper/submission/arxiv-2026-10-18-v4/authors.txt",
+      "sha256": "3765b5be90e052407bc28a2a31173d1313c71b6d46220deabfac68ae57f4c01e"
+    },
+    {
+      "bytes": 19524,
+      "path": "paper/submission/arxiv-2026-10-18-v4/package-manifest.json",
+      "sha256": "95a187bb76c49f76a5d0f92b39fadbf44d300314586319465c9261e64b125105"
+    },
+    {
+      "bytes": 2453,
+      "path": "paper/submission/arxiv-2026-10-18-v4/submission_metadata.json",
+      "sha256": "cd9be718b63a7747d914deb457f64171a1d3b0c61a44914c095ae1e619176adb"
+    },
+    {
+      "bytes": 59,
+      "path": "paper/submission/arxiv-2026-10-18-v4/title.txt",
+      "sha256": "765e1ce958243ccc1d7da68a6b48bf47ab4a500903e68e6a4e2e729ecd454c5d"
+    },
+    {
+      "bytes": 9731,
+      "path": "paper/submission/arxiv-2026-10-18-v4/verification.json",
+      "sha256": "2f3d0b5e177a024ead498abe27c450964ad16ad0d157a974399b14b50e5d9207"
+    },
+    {
+      "bytes": 72090,
+      "path": "paper/submission/prl-2026-10-18-v4/1_manuscript/fig1.pdf",
+      "sha256": "3cb894b0e2e15d10571230fbd25732a39dd9f3dc5b02829112d264b9a691c44b"
+    },
+    {
+      "bytes": 99349,
+      "path": "paper/submission/prl-2026-10-18-v4/1_manuscript/fig2.pdf",
+      "sha256": "5322fdcd0ad7b900d81ea536c00aa32a729515c4877e89081fab54cd3622295f"
+    },
+    {
+      "bytes": 168671,
+      "path": "paper/submission/prl-2026-10-18-v4/1_manuscript/fig3.pdf",
+      "sha256": "822cf59816de4b0bd6b7d7ebdfbcb0fc0deefeaab90b29c7e12f08b82cfbdce4"
+    },
+    {
+      "bytes": 68407,
+      "path": "paper/submission/prl-2026-10-18-v4/1_manuscript/fig4.pdf",
+      "sha256": "5f04d161888130327252cb5368987680d5f5d21ffaab1feaeb9c67314f3a9263"
+    },
+    {
+      "bytes": 32543,
+      "path": "paper/submission/prl-2026-10-18-v4/1_manuscript/memory_limits_prl.bbl",
+      "sha256": "b037dde12264d43c85e15e6263f004defa8047b5707f82a9563907c71b11fbe0"
+    },
+    {
+      "bytes": 23025,
+      "path": "paper/submission/prl-2026-10-18-v4/1_manuscript/memory_limits_prl.tex",
+      "sha256": "9ed2031e3036be0369bfdbfe62088a812113f23f0433186ce1a02c2b254f1037"
+    },
+    {
+      "bytes": 13151,
+      "path": "paper/submission/prl-2026-10-18-v4/1_manuscript/refs.bib",
+      "sha256": "b6f680c7b308f38a2df8ac0d62dd433efaa325b7c7f0bcbef11649895135c4dc"
+    },
+    {
+      "bytes": 1483,
+      "path": "paper/submission/prl-2026-10-18-v4/2_supplemental_material/README.TXT",
+      "sha256": "8a128ad5a7997f23985a2dd6de276bcd0d2b1cae9eab04fd9c51e73c12b3b985"
+    },
+    {
+      "bytes": 744560,
+      "path": "paper/submission/prl-2026-10-18-v4/2_supplemental_material/memory_limits_prl_SM.pdf",
+      "sha256": "1c5e68a563e9ad5df28dccedbbea9884d447f8e366608df4a43062b6b6882c9a"
+    },
+    {
+      "bytes": 1347741,
+      "path": "paper/submission/prl-2026-10-18-v4/2_supplemental_material/memory_limits_prl_source.zip",
+      "sha256": "5ead68d8cc31e21adfea747baed1a8999a9ef8b19856c0413a3ec131ef2447fe"
+    },
+    {
+      "bytes": 4437,
+      "path": "paper/submission/prl-2026-10-18-v4/README.md",
+      "sha256": "0723f9845bb45880cfaadf562a2a9dd4fc8f708282be14d8028641dc2597b41e"
+    },
+    {
+      "bytes": 1409,
+      "path": "paper/submission/prl-2026-10-18-v4/author_information.json",
+      "sha256": "d97d5e4f41dfeb6c592784d8d15516e75ff7bdd94cc3ce7be610af9648dc86a4"
+    },
+    {
+      "bytes": 3041,
+      "path": "paper/submission/prl-2026-10-18-v4/build_verification.json",
+      "sha256": "d85b3b6a5fb0cef5239151e620c3c300f23c2817aa5010466fc24dbcfd4e9c24"
+    },
+    {
+      "bytes": 2075,
+      "path": "paper/submission/prl-2026-10-18-v4/cover_letter.txt",
+      "sha256": "ec4c797e36271ef1dfb139e19bc2af2283dd764f05559865c7e187df1e9e141b"
+    },
+    {
+      "bytes": 701,
+      "path": "paper/submission/prl-2026-10-18-v4/justification.txt",
+      "sha256": "8e7bf893c630f20364bba3a933ac54c2e9bed02a83da26148a90b24b284049e3"
+    },
+    {
+      "bytes": 21848,
+      "path": "paper/submission/prl-2026-10-18-v4/manifest.json",
+      "sha256": "f0a2775c67eb0c0d685ff1432e8c0474a924e461b0b39add2ea913e498a173e9"
+    },
+    {
+      "bytes": 408803,
+      "path": "paper/submission/prl-2026-10-18-v4/manuscript-source.zip",
+      "sha256": "83cb1aa61d9bfce8515a98c6568ce35f9dfa6277c8af1f8b5a54b8e6f90f510d"
+    },
+    {
+      "bytes": 672235,
+      "path": "paper/submission/prl-2026-10-18-v4/memory_limits_prl_letter.pdf",
+      "sha256": "ec074fe8e418ff2e2921d238034d7f158c249a978327b332a29eb52c11f06681"
+    },
+    {
+      "bytes": 3474810,
+      "path": "paper/submission/prl-2026-10-18-v4/prl-submission.zip",
+      "sha256": "29937e1294323847fd11a8c553df9a5fa94dadc427d46d2edcc12385acaa2e37"
+    },
+    {
+      "bytes": 701,
+      "path": "paper/versions/2026-10-18-prl-v4/justification-user.txt",
+      "sha256": "8e7bf893c630f20364bba3a933ac54c2e9bed02a83da26148a90b24b284049e3"
+    },
+    {
+      "bytes": 1347741,
+      "path": "paper/versions/2026-10-18-prl-v4/source-final-prl-v4.zip",
+      "sha256": "5ead68d8cc31e21adfea747baed1a8999a9ef8b19856c0413a3ec131ef2447fe"
+    }
+  ],
+  "base_commit": "942bbd4031d1f50ef5a5403b897b63372a9b1af8",
+  "changed_source_files_since_previous_version": [
+    "README.txt",
+    "checks/wordcount.py",
+    "fig1.pdf",
+    "fig3.pdf",
+    "figS2.pdf",
+    "figures/fig1.tex",
+    "figures/fig3.tex",
+    "figures/fig3b.pdf",
+    "figures/fig3b.py",
+    "figures/figS.py",
+    "memory_limits_prl.tex"
+  ],
+  "changes": [
+    "Imported the 53-file source export; all five received files preserved byte-for-byte. Standalone and nested source ZIPs, standalone TeX and Figure 3 match.",
+    "Retained new abstract/introduction, updated Figures 1/3/S2, supplemental prose precision corrections and comment/nocite-aware word counter. Simulation code, 13 JSON datasets and displayed equations are unchanged.",
+    "Restored approved three authors, ORCIDs, one shared QAR-Lab/chair/department/LMU address, fixed date, REVTeX-compatible array pin, compact SM contents and Markus-specific AI attribution.",
+    "Retained sampled-estimator, separately sampled unitary ensembles across k and continuous-versus-integer threshold qualifications.",
+    "Qualified abstract opening and Figure 3 caption to describe the optimal memory ceiling rather than guaranteed individual reservoir performance.",
+    "Restored reference [28] and code-section GitHub link; regenerated BBL with 38 references.",
+    "Used exact user-supplied PRL justification: 100 whitespace-delimited words, with no heading. Original ZIP text remains archived.",
+    "Prepared independently compiled 6-page PRL Letter and 16-page SM, full code/data ZIP, combined 22-page arXiv source package and updated current documentation."
+  ],
+  "code_repository_visibility": "private",
+  "confirmed_decisions": [
+    "Retain Markus Baumann, Jonas Stein and Claudia Linnhoff-Popien with approved ORCIDs.",
+    "One shared QAR-Lab/chair/department/LMU affiliation and address per byline.",
+    "Link repository in reference28; keep GitHub private for user to publish separately.",
+    "User explicitly confirmed Claude Opus 5.5 model name on 2026-10-18."
+  ],
+  "date": "2026-10-18",
+  "historical_versions_preserved": true,
+  "local_handoff": "outputs/submission-ready-2026-10-18-v4 (thread workspace, outside repository)",
+  "original_inputs_byte_preserved": true,
+  "previous_version_provenance": "paper/versions/2026-10-18-prl-v3/provenance.json",
+  "prl_build_record": "paper/submission/prl-2026-10-18-v4/build_verification.json",
+  "receipt": "paper/versions/2026-10-18-prl-v4/receipt.json",
+  "removed_obsolete_active_source_files": [
+    "figures/fig3.py"
+  ],
+  "request": "Update all current manuscript and submission artifacts from the five new supplied files, include exact user-provided PRL justification, and commit/push.",
+  "scientific_scope": "Version/consistency audit, regression tests and package/render QA; no new scientific campaign, full proof certification or acceptance claim.",
+  "source_file_hashes": {
+    "README.txt": "0096dc1e0285bd950e046824b65f9b2d85d1fad38aa996e1d82bf7e6643f4b53",
+    "checks/verify_constants.py": "c34b6ef9744e8ab5b019f604ffa2a0e5398c11fbca538e60658573fce9b0868a",
+    "checks/verify_simple_proof.py": "95ecc42e00dd3d58fe8e65fec9fb84fc8b3e7dddfda376e25bdc2526adba4588",
+    "checks/wordcount.py": "76cd405bc1469e2bf3eca74baef35d4be5a90b522b936054833c3cdcb41ed745",
+    "fig1.pdf": "3cb894b0e2e15d10571230fbd25732a39dd9f3dc5b02829112d264b9a691c44b",
+    "fig2.pdf": "5322fdcd0ad7b900d81ea536c00aa32a729515c4877e89081fab54cd3622295f",
+    "fig3.pdf": "822cf59816de4b0bd6b7d7ebdfbcb0fc0deefeaab90b29c7e12f08b82cfbdce4",
+    "fig4.pdf": "5f04d161888130327252cb5368987680d5f5d21ffaab1feaeb9c67314f3a9263",
+    "figS1.pdf": "1d16e0ffc879ba190634e22222336aae474f6671f3541530487ce04b331d6c33",
+    "figS2.pdf": "cdc2c3a0dde564951426f90a5c4de52202532b8e7feacc0b814f0ebfb10e3a30",
+    "figS3.pdf": "0afbcbff4289e946a66d9ef17ac134ab4764b5218911f8e519f73a1a629ff973",
+    "figS4.pdf": "c50d9867b5972600c153b9d0fb95ed97d04f537c0d0348c9dddd7381f0cb3026",
+    "figS5.pdf": "f7c17d49a38a0d023a1021b2ba689451001be1278b40adf5cc54df8e0c1180f7",
+    "figS6.pdf": "629132677eedf3ec74b2637a9395f6d8276c04a06d95de39f8e090c41cdad876",
+    "figS7.pdf": "b45bfda377e9015df02a87b91af02c4b6b81ee24a62e4584a1ad37cac1b5c918",
+    "figures/fig1.tex": "4bbdd992172c0b99f0a5b23bb5cf7149f9265ae8bfb78f771ed2d06a1a8236a8",
+    "figures/fig2.tex": "4866400a15e6086fbae492e9e325a815abc5333afd7eb3f5d96cf3aa29fb3b3f",
+    "figures/fig2a.pdf": "570754b8bf65a93304837e05cbdc98ce386d43a9dc9f00e335306f961484ff5e",
+    "figures/fig2a.py": "bb301fbdcb69f0abab5b73808c515416050a9014993de8e16daa75e5cd8224ef",
+    "figures/fig3.tex": "2e191c9ce5fd20a6658392ce290d5ed819cd3234f2d2b556d944d89c8b12c692",
+    "figures/fig3b.pdf": "5e9f20b06e01961e9de5c5e2e33d090cd73c67d69b22dd3c10d026c75c3ec6c4",
+    "figures/fig3b.py": "099f4f0988bd5ced413ce180baf35b5068618d27b68d8954e1dbbb5c0ff4deb8",
+    "figures/fig4.tex": "57b0844ff77e453e92ddb271f3738ca5013ce03804ffe09c33f50b3dc21b838f",
+    "figures/fig4bc.pdf": "1a6400c8979958e6f196e47c8e60a7fa5c893f16bcd56a13fbb0e192d59c0cc9",
+    "figures/fig4bc.py": "351f2ec7aadc2b8d368b6020f34655ef937b35409cc2058f38303ada2fe0d76e",
+    "figures/figS.py": "e7d8e99cb5cf4840db4b0abeb65699213fa7c3f926b360b42ed82d1be972c9cc",
+    "figures/figstyle.py": "f0045537958b49afe76a78b70c68f7e8b24ac105ea17765603ec3cc79082638a",
+    "figures/tikzstyle.tex": "413ed740ab12d86adaafee7a4bc5fe98b5b032594cd72baad1acd1af79e4347f",
+    "memory_limits_prl.bbl": "b037dde12264d43c85e15e6263f004defa8047b5707f82a9563907c71b11fbe0",
+    "memory_limits_prl.tex": "5e0a59d2336a0cea42cecaba62f157477060b9eadddc2e04872383854497670e",
+    "refs.bib": "b6f680c7b308f38a2df8ac0d62dd433efaa325b7c7f0bcbef11649895135c4dc",
+    "sim/campaign.py": "8d296197a2881a7d29f5267dc3c33e5264f639d6cbdaf53ede7c26f60997d765",
+    "sim/exact_numbers.json": "b4437247cc8722f7415ebecf2fea179b5642b521f7c3a8a70538df6f2219adea",
+    "sim/exact_numbers.py": "1a98b3d0f3e58460d42d698c2b88d83582e7c976d90e242b5dcb9d5aa4005b96",
+    "sim/merge.py": "2df27f2a47d2d386d2fbb1ecf5ae637ca0cb887b5625c55059317ad9873f3055",
+    "sim/qrc_sim.py": "5224eb19b1d2b90166e81bba360b8417fbdf0ccd74a5471be9b3db7ed43b2390",
+    "sim/quoted_numbers.py": "c2e7ec4bfaf791f66060efb9da627a9f8182a1f1268e0d89a7a6cf43863f435c",
+    "sim/rep_curve.json": "ccde0e49d5b9bd1ebc3858e8927a1fa41d817612b53f7971d9c9baa314f6b192",
+    "sim/rep_curve.py": "7a819a626e1f29d09abf43a8a5194247120ec0e6e196a0c6d0f8651f15678bf1",
+    "sim/results_cold.json": "b417161b768aad61ad2b61145785cb50074a9345caadb1b09b421629c463889c",
+    "sim/results_cold_haar.json": "2bdba05fbc2d2e4ab37d9acdd3bec6f4ef9db888ab9dceac6d3a3e3e50a5fff1",
+    "sim/results_cold_ising.json": "d3c06a018675902dbb1300272dc12bbb9b49b1ffc9e05b602b2dd05ca00ed064",
+    "sim/results_main.json": "1de4aebae50ff13b8cd47a008a2851e5cbba847fc5ebc867955fecfedbaca46f",
+    "sim/results_main_haar.json": "6c7cfb5dff2cc39661d2a3b6f13dade79b55d5f4dd8ee26d3189639330e45a5f",
+    "sim/results_main_ising.json": "4620fb6d5517c4954dcb3093ca14fec611fde767eecdc604dc89c14e5eb0af33",
+    "sim/results_noise.json": "0bb4bedca595473907009a2098674769ce107dfe879a7acbe716cbe83d4a7cbc",
+    "sim/results_noise_haar.json": "ddf8c7f713ef3db22bf82235668d4e477ccf507bb1e06f70918ce1a767de7e65",
+    "sim/results_noise_ising.json": "22f00a8deb8b468872cd5c10f87ac4bed01eefd8dd6a906fa36b76d9196cb9d8",
+    "sim/results_tau.json": "c4ee7005e10e65d6b26638d1eaa5f3b37a39397ec863b4ea20f503f43539b2fe",
+    "sim/run_all.sh": "ea55d4c9bfc9fe19faa0dabd030e4052a172803ff6af754a74e38aaae5d700e9",
+    "sim/test_sim.py": "9c46cfdaef8eed73a019b4c0d3cdfd52cb200c7c90e295ae2257f19f98c65599",
+    "sim/validate_pairs.json": "25d5ce7eec2b61fcaadab702fb60cb9eb88d317a8d2dd8e366f3bfc58c899892",
+    "sim/validate_pairs.py": "605f447493068ce93391ff1f36c73e7b3abb49434c121f78c101f985019b2918"
+  },
+  "status": "Prepared locally; not uploaded or submitted.",
+  "unchanged_json_dataset_count": 13,
+  "unchanged_simulation_python_count": 8,
+  "verification_record": "paper/submission/arxiv-2026-10-18-v4/verification.json",
+  "version": "2026-10-18-prl-v4",
+  "visibility_changed": false
+}

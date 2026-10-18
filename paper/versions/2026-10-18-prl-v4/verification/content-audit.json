@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-18",
+  "compared_to_commit": "942bbd4031d1f50ef5a5403b897b63372a9b1af8",
+  "file_changes": {
+    "old_count": 51,
+    "new_count": 53,
+    "added": [
+      "figures/fig3.tex",
+      "figures/fig3b.pdf",
+      "figures/fig3b.py"
+    ],
+    "removed": [
+      "figures/fig3.py"
+    ],
+    "changed": [
+      "README.txt",
+      "checks/wordcount.py",
+      "fig1.pdf",
+      "fig3.pdf",
+      "figS2.pdf",
+      "figures/fig1.tex",
+      "figures/figS.py",
+      "memory_limits_prl.bbl",
+      "memory_limits_prl.tex",
+      "refs.bib"
+    ]
+  },
+  "input_checks": {
+    "all_53_full_and_nested_files_identical": true,
+    "standalone_tex_equals_full": true,
+    "standalone_fig3_equals_full": true,
+    "outer_letter_tex_is_combined_prefix": true,
+    "outer_shared_file_matches": {
+      "fig4.pdf": true,
+      "refs.bib": true,
+      "fig2.pdf": true,
+      "fig3.pdf": true,
+      "fig1.pdf": true,
+      "memory_limits_prl.bbl": true
+    },
+    "letter_pdf_text_equals_combined_first_6_pages": false,
+    "sm_pdf_text_equals_combined_last_16_pages": true,
+    "all_simulation_json_unchanged": true,
+    "simulation_json_count": 13,
+    "all_simulation_python_unchanged": true,
+    "simulation_python_count": 8,
+    "letter_pdf_layout_text_equals_combined_first_6_pages": false,
+    "letter_pdf_text_difference_explanation": "Default text extraction differs only in reading-order position of affiliation superscript 1 and one blank line; layout-mode normalized comparison recorded separately.",
+    "letter_pdf_layout_text_whitespace_normalized_equal": false,
+    "letter_content_from_date_whitespace_normalized_equal": true,
+    "displayed_equation_blocks_unchanged": true
+  },
+  "justification": {
+    "words_whitespace": 100,
+    "unicode_characters_without_newline": 699,
+    "sha256_file": "8e7bf893c630f20364bba3a933ac54c2e9bed02a83da26148a90b24b284049e3",
+    "matches_user_requested_text": true
+  },
+  "received_wordcount": {
+    "body": 2309,
+    "captions": 325,
+    "data_availability": 25,
+    "displayed_math": 112,
+    "figures_rounded": 849,
+    "total_approx": 3620,
+    "limit": 3750,
+    "method_status": "Approximate TeX parser; equation and figure equivalent formulas agree with APS guide, not an APS-certified count."
+  },
+  "official_sources": [
+    {
+      "url": "https://journals.aps.org/authors/length-guide",
+      "checked": "2026-10-18",
+      "finding": "3750-word PRL limit; text + displayed math + figures + tables; single-column displayed equations 16 words/row; single-column figures 150/aspect+20 and double-column figures 300/(0.5*aspect)+40."
+    },
+    {
+      "url": "https://journals.aps.org/prl/authors",
+      "checked": "2026-10-18",
+      "finding": "100-word justification requested."
+    }
+  ],
+  "limits": "Read-only version/content audit. No new proof validation or simulation campaign rerun; unchanged numerical files do not establish mathematical correctness."
+}

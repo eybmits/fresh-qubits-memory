@@ -1,37 +1,43 @@
 # Manuscript versions and source
 
-## Current version: 18 October 2026, PRL revision 3
+## Current version: 18 October 2026, PRL revision 4
 
 **The Fundamental Memory Ceiling of Noisy Quantum Reservoirs**
 
 Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien share one combined affiliation: Quantum Applications and Research Laboratory (QAR-Lab), Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany. The shared address appears once in each of the Letter and Supplemental Material bylines. All three approved ORCID links and the campus.lmu.de contact address are retained in the [canonical author record](author_information.json).
 
-- [Combined PDF](memory_limits_prl_2026-10-18-v3.pdf), [six-page Letter](submission/prl-2026-10-18-v3/memory_limits_prl_letter.pdf), [sixteen-page Supplemental Material](submission/prl-2026-10-18-v3/2_supplemental_material/memory_limits_prl_SM.pdf)
+- [Combined PDF](memory_limits_prl_2026-10-18-v4.pdf), [six-page Letter](submission/prl-2026-10-18-v4/memory_limits_prl_letter.pdf), [sixteen-page Supplemental Material](submission/prl-2026-10-18-v4/2_supplemental_material/memory_limits_prl_SM.pdf)
 - [Editable LaTeX](prl-source/memory_limits_prl.tex), [bibliography](prl-source/refs.bib), [build instructions](prl-source/README.txt)
-- [Received originals and receipt](versions/2026-10-18-prl-v3/receipt.json), [provenance](versions/2026-10-18-prl-v3/provenance.json), [final source snapshot](versions/2026-10-18-prl-v3/source-final-prl-v3.zip)
-- [Revision scope and checks](../docs/manuscript-2026-10-18-prl-v3.md)
-- [PRL handoff ZIP](submission/prl-2026-10-18-v3/prl-submission.zip) and [upload instructions](submission/prl-2026-10-18-v3/README.md)
-- [Prepared arXiv source ZIP](submission/arxiv-2026-10-18-v3/arxiv-source.zip)
+- [Received originals and receipt](versions/2026-10-18-prl-v4/receipt.json), [provenance](versions/2026-10-18-prl-v4/provenance.json), [final source snapshot](versions/2026-10-18-prl-v4/source-final-prl-v4.zip)
+- [Revision scope and checks](../docs/manuscript-2026-10-18-prl-v4.md)
+- [PRL handoff ZIP](submission/prl-2026-10-18-v4/prl-submission.zip) and [upload instructions](submission/prl-2026-10-18-v4/README.md)
+- [Prepared arXiv source ZIP](submission/arxiv-2026-10-18-v4/arxiv-source.zip)
 - [Upload guide: separate PRL PDFs and combined arXiv version](submission/README.md)
 
-This edition imports `memory_limits_prl_submission.zip`, `memory_limits_prl_letter.pdf`, `memory_limits_prl_SM.pdf`, and `submission_notes.txt`, preserving the supplied originals. It incorporates the supplied proof and precision corrections, updated references and figures, and the 309-step single-qubit depth. The three confirmed authors, ORCIDs, one shared affiliation, and GitHub URL in reference [28] are retained. The manuscript also now explains the finite-history estimate, independent unitary sampling across `k`, and the continuous thresholds in Figure 4(b).
+This edition imports `memory_limits_prl_submission (1).zip`, `memory_limits_prl_source (3).zip`, `memory_limits_prl (6).tex`, `fig3 (1).pdf`, and `memory_limits_prl (28).pdf`, preserving all five supplied originals. The two full-source archives have the same 53 files; the standalone TeX and Figure 3 match their archived counterparts byte for byte. It incorporates the new abstract, Figures 1, 3, and S2, and the singular-value clarification of normalized Schatten norms. The abstract and Figure 3 are qualified to describe the optimal memory ceiling. The three confirmed authors, ORCIDs, one shared affiliation, and GitHub URL in reference [28] are retained, as are the finite-history, independent-ensemble, and continuous-crossing clarifications.
 
-The canonical source combines the Letter and supplement using APS REVTeX 4.2 with `aps,prl,twocolumn`, four main figures, and seven supplemental figures. The combined PDF has 22 pages. The PRL handoff provides a separately compiled six-page Letter and a sixteen-page supplement, with matching text documented in the [PRL build verification](submission/prl-2026-10-18-v3/build_verification.json). Its source archive includes the full reproduction code and data. The final Letter has a local estimate of 3580 equivalent words against the 3750-word PRL limit; its abstract has 590 rendered characters. Neither the estimate nor compilation is an editorial eligibility decision.
+The [PRL justification TXT](submission/prl-2026-10-18-v4/justification.txt) preserves the user's exact new 100-word text. Its immutable received copy is [justification-user.txt](versions/2026-10-18-prl-v4/justification-user.txt).
+
+The canonical source combines the Letter and supplement using APS REVTeX 4.2 with `aps,prl,twocolumn`, four main figures, and seven supplemental figures. The combined PDF has 22 pages. The PRL handoff provides a separately compiled six-page Letter and a sixteen-page supplement, with matching text documented in the [PRL build verification](submission/prl-2026-10-18-v4/build_verification.json). Its source archive includes the full reproduction code and data. The final Letter has a local estimate of 3654 equivalent words against the 3750-word PRL limit; its abstract has 575 rendered characters. Neither the estimate nor compilation is an editorial eligibility decision.
 
 Build the combined manuscript from the repository root (TeX Live with REVTeX 4.2, pdfLaTeX, BibTeX, and orcidlink):
 
 ```bash
 latexmk -cd -pdf -interaction=nonstopmode -halt-on-error \
-  -outdir=../../work/manuscript-build-2026-10-18-prl-v3 paper/prl-source/memory_limits_prl.tex
+  -outdir=../../work/manuscript-build-2026-10-18-prl-v4 paper/prl-source/memory_limits_prl.tex
 ```
 
 A matching BBL is included. Reference [28] identifies the supplement/source archive, the GitHub repository, and the references cited only in the supplement. No shell escape is needed to compile from the bundled figure PDFs. Rerunning simulations needs NumPy and SciPy, and the constants checker additionally needs mpmath. Rebuilding figures also needs matplotlib, LaTeX, TikZ, Helvetica, and cm-super; follow [prl-source/README.txt](prl-source/README.txt).
 
-All 13 supplied JSON datasets remain unchanged. The 22 repository tests pass, and an isolated replay of the repetition reservoir reproduces full-state depth 316 and single-qubit depth 309. The full-state curve matches exactly and the single-qubit curve agrees within `1.11e-16`. These finite checks and the sampled proof diagnostics do not certify the universal theorem. The large campaign was not rerun for this import.
+The simulator and all 13 supplied JSON datasets are unchanged from revision 3. Its isolated repetition-curve replay reproduced full-state depth 316 and single-qubit depth 309, with full-state agreement exact and single-qubit agreement within `1.11e-16`. These remain historical checks; the large campaign was not rerun for revision 4. The canonical combined PDF compiles without unresolved citations or references, multiply defined labels, or overfull boxes, and all 22 repository tests pass. The separate PRL Letter and SM text match the combined PDF, and a fresh arXiv source extraction compiles to the same text. Source reconstruction and deterministic package checks pass. All 22 combined-document pages pass visual review, and the separate PDFs retain the corresponding text and layouts. See the [revision note](../docs/manuscript-2026-10-18-prl-v4.md) for the checks and their scope. Finite checks and sampled proof diagnostics do not certify the universal theorem.
 
 The user confirmed the disclosed model name Claude Opus 5.5 on 18 October 2026. The manuscript's supplied verification statements remain attributed to Markus Baumann; automated checks do not independently establish those human attestations.
 
 The repository remains **private**, as explicitly requested; the user will make it public separately. Nothing has been uploaded or submitted. PRL author attestations and portal preview, arXiv license choice and preview, and any publication options remain for the actual submission. The prepared code/data archives do not depend on public GitHub access. Historical PRL and PRA administrative drafts remain preserved and are not the current upload package.
+
+## Previous PRL revision 3: 18 October 2026
+
+The [22-page PDF](memory_limits_prl_2026-10-18-v3.pdf), [provenance](versions/2026-10-18-prl-v3/provenance.json), [PRL package](submission/prl-2026-10-18-v3/README.md), [arXiv source ZIP](submission/arxiv-2026-10-18-v3/arxiv-source.zip), and [revision record](../docs/manuscript-2026-10-18-prl-v3.md) are preserved unchanged. This edition imported proof and precision corrections, updated references and figures, and the 309-step single-qubit depth. It introduced the finite-history estimator, independent unitary sampling across `k`, and continuous-versus-integer threshold clarifications retained in revision 4. Its recorded 22-test pass, isolated repetition replay, 3580-word estimate, and 590-character abstract belong to that edition.
 
 ## Previous PRL revision 2: 18 October 2026
 

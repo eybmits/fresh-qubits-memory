@@ -1,0 +1,493 @@
+{
+  "canonical_source_mapping": {
+    "README.txt": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "README.txt",
+      "bytes": 7769,
+      "repository_path": "paper/prl-source/README.txt",
+      "sha256": "0096dc1e0285bd950e046824b65f9b2d85d1fad38aa996e1d82bf7e6643f4b53"
+    },
+    "checks/verify_constants.py": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "checks/verify_constants.py",
+      "bytes": 3588,
+      "repository_path": "paper/prl-source/checks/verify_constants.py",
+      "sha256": "c34b6ef9744e8ab5b019f604ffa2a0e5398c11fbca538e60658573fce9b0868a"
+    },
+    "checks/verify_simple_proof.py": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "checks/verify_simple_proof.py",
+      "bytes": 2530,
+      "repository_path": "paper/prl-source/checks/verify_simple_proof.py",
+      "sha256": "95ecc42e00dd3d58fe8e65fec9fb84fc8b3e7dddfda376e25bdc2526adba4588"
+    },
+    "checks/wordcount.py": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "checks/wordcount.py",
+      "bytes": 3520,
+      "repository_path": "paper/prl-source/checks/wordcount.py",
+      "sha256": "76cd405bc1469e2bf3eca74baef35d4be5a90b522b936054833c3cdcb41ed745"
+    },
+    "fig1.pdf": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "fig1.pdf",
+      "bytes": 72090,
+      "repository_path": "paper/prl-source/fig1.pdf",
+      "sha256": "3cb894b0e2e15d10571230fbd25732a39dd9f3dc5b02829112d264b9a691c44b"
+    },
+    "fig2.pdf": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "fig2.pdf",
+      "bytes": 99349,
+      "repository_path": "paper/prl-source/fig2.pdf",
+      "sha256": "5322fdcd0ad7b900d81ea536c00aa32a729515c4877e89081fab54cd3622295f"
+    },
+    "fig3.pdf": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "fig3.pdf",
+      "bytes": 168671,
+      "repository_path": "paper/prl-source/fig3.pdf",
+      "sha256": "822cf59816de4b0bd6b7d7ebdfbcb0fc0deefeaab90b29c7e12f08b82cfbdce4"
+    },
+    "fig4.pdf": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "fig4.pdf",
+      "bytes": 68407,
+      "repository_path": "paper/prl-source/fig4.pdf",
+      "sha256": "5f04d161888130327252cb5368987680d5f5d21ffaab1feaeb9c67314f3a9263"
+    },
+    "figS1.pdf": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "figS1.pdf",
+      "bytes": 76207,
+      "repository_path": "paper/prl-source/figS1.pdf",
+      "sha256": "1d16e0ffc879ba190634e22222336aae474f6671f3541530487ce04b331d6c33"
+    },
+    "figS2.pdf": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "figS2.pdf",
+      "bytes": 90523,
+      "repository_path": "paper/prl-source/figS2.pdf",
+      "sha256": "cdc2c3a0dde564951426f90a5c4de52202532b8e7feacc0b814f0ebfb10e3a30"
+    },
+    "figS3.pdf": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "figS3.pdf",
+      "bytes": 71559,
+      "repository_path": "paper/prl-source/figS3.pdf",
+      "sha256": "0afbcbff4289e946a66d9ef17ac134ab4764b5218911f8e519f73a1a629ff973"
+    },
+    "figS4.pdf": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "figS4.pdf",
+      "bytes": 87982,
+      "repository_path": "paper/prl-source/figS4.pdf",
+      "sha256": "c50d9867b5972600c153b9d0fb95ed97d04f537c0d0348c9dddd7381f0cb3026"
+    },
+    "figS5.pdf": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "figS5.pdf",
+      "bytes": 71005,
+      "repository_path": "paper/prl-source/figS5.pdf",
+      "sha256": "f7c17d49a38a0d023a1021b2ba689451001be1278b40adf5cc54df8e0c1180f7"
+    },
+    "figS6.pdf": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "figS6.pdf",
+      "bytes": 80232,
+      "repository_path": "paper/prl-source/figS6.pdf",
+      "sha256": "629132677eedf3ec74b2637a9395f6d8276c04a06d95de39f8e090c41cdad876"
+    },
+    "figS7.pdf": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "figS7.pdf",
+      "bytes": 57107,
+      "repository_path": "paper/prl-source/figS7.pdf",
+      "sha256": "b45bfda377e9015df02a87b91af02c4b6b81ee24a62e4584a1ad37cac1b5c918"
+    },
+    "figures/fig1.tex": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "figures/fig1.tex",
+      "bytes": 8639,
+      "repository_path": "paper/prl-source/figures/fig1.tex",
+      "sha256": "4bbdd992172c0b99f0a5b23bb5cf7149f9265ae8bfb78f771ed2d06a1a8236a8"
+    },
+    "figures/fig2.tex": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "figures/fig2.tex",
+      "bytes": 6651,
+      "repository_path": "paper/prl-source/figures/fig2.tex",
+      "sha256": "4866400a15e6086fbae492e9e325a815abc5333afd7eb3f5d96cf3aa29fb3b3f"
+    },
+    "figures/fig2a.pdf": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "figures/fig2a.pdf",
+      "bytes": 59425,
+      "repository_path": "paper/prl-source/figures/fig2a.pdf",
+      "sha256": "570754b8bf65a93304837e05cbdc98ce386d43a9dc9f00e335306f961484ff5e"
+    },
+    "figures/fig2a.py": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "figures/fig2a.py",
+      "bytes": 3054,
+      "repository_path": "paper/prl-source/figures/fig2a.py",
+      "sha256": "bb301fbdcb69f0abab5b73808c515416050a9014993de8e16daa75e5cd8224ef"
+    },
+    "figures/fig3.tex": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "figures/fig3.tex",
+      "bytes": 7644,
+      "repository_path": "paper/prl-source/figures/fig3.tex",
+      "sha256": "2e191c9ce5fd20a6658392ce290d5ed819cd3234f2d2b556d944d89c8b12c692"
+    },
+    "figures/fig3b.pdf": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "figures/fig3b.pdf",
+      "bytes": 113072,
+      "repository_path": "paper/prl-source/figures/fig3b.pdf",
+      "sha256": "5e9f20b06e01961e9de5c5e2e33d090cd73c67d69b22dd3c10d026c75c3ec6c4"
+    },
+    "figures/fig3b.py": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "figures/fig3b.py",
+      "bytes": 5592,
+      "repository_path": "paper/prl-source/figures/fig3b.py",
+      "sha256": "099f4f0988bd5ced413ce180baf35b5068618d27b68d8954e1dbbb5c0ff4deb8"
+    },
+    "figures/fig4.tex": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "figures/fig4.tex",
+      "bytes": 3441,
+      "repository_path": "paper/prl-source/figures/fig4.tex",
+      "sha256": "57b0844ff77e453e92ddb271f3738ca5013ce03804ffe09c33f50b3dc21b838f"
+    },
+    "figures/fig4bc.pdf": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "figures/fig4bc.pdf",
+      "bytes": 55452,
+      "repository_path": "paper/prl-source/figures/fig4bc.pdf",
+      "sha256": "1a6400c8979958e6f196e47c8e60a7fa5c893f16bcd56a13fbb0e192d59c0cc9"
+    },
+    "figures/fig4bc.py": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "figures/fig4bc.py",
+      "bytes": 6303,
+      "repository_path": "paper/prl-source/figures/fig4bc.py",
+      "sha256": "351f2ec7aadc2b8d368b6020f34655ef937b35409cc2058f38303ada2fe0d76e"
+    },
+    "figures/figS.py": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "figures/figS.py",
+      "bytes": 17327,
+      "repository_path": "paper/prl-source/figures/figS.py",
+      "sha256": "e7d8e99cb5cf4840db4b0abeb65699213fa7c3f926b360b42ed82d1be972c9cc"
+    },
+    "figures/figstyle.py": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "figures/figstyle.py",
+      "bytes": 6251,
+      "repository_path": "paper/prl-source/figures/figstyle.py",
+      "sha256": "f0045537958b49afe76a78b70c68f7e8b24ac105ea17765603ec3cc79082638a"
+    },
+    "figures/tikzstyle.tex": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "figures/tikzstyle.tex",
+      "bytes": 2456,
+      "repository_path": "paper/prl-source/figures/tikzstyle.tex",
+      "sha256": "413ed740ab12d86adaafee7a4bc5fe98b5b032594cd72baad1acd1af79e4347f"
+    },
+    "memory_limits_prl.bbl": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "memory_limits_prl.bbl",
+      "bytes": 32543,
+      "repository_path": "paper/prl-source/memory_limits_prl.bbl",
+      "sha256": "b037dde12264d43c85e15e6263f004defa8047b5707f82a9563907c71b11fbe0"
+    },
+    "memory_limits_prl.tex": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "memory_limits_prl.tex",
+      "bytes": 89058,
+      "repository_path": "paper/prl-source/memory_limits_prl.tex",
+      "sha256": "5e0a59d2336a0cea42cecaba62f157477060b9eadddc2e04872383854497670e"
+    },
+    "refs.bib": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "refs.bib",
+      "bytes": 13151,
+      "repository_path": "paper/prl-source/refs.bib",
+      "sha256": "b6f680c7b308f38a2df8ac0d62dd433efaa325b7c7f0bcbef11649895135c4dc"
+    },
+    "sim/campaign.py": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/campaign.py",
+      "bytes": 3649,
+      "repository_path": "paper/prl-source/sim/campaign.py",
+      "sha256": "8d296197a2881a7d29f5267dc3c33e5264f639d6cbdaf53ede7c26f60997d765"
+    },
+    "sim/exact_numbers.json": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/exact_numbers.json",
+      "bytes": 86015,
+      "repository_path": "paper/prl-source/sim/exact_numbers.json",
+      "sha256": "b4437247cc8722f7415ebecf2fea179b5642b521f7c3a8a70538df6f2219adea"
+    },
+    "sim/exact_numbers.py": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/exact_numbers.py",
+      "bytes": 5589,
+      "repository_path": "paper/prl-source/sim/exact_numbers.py",
+      "sha256": "1a98b3d0f3e58460d42d698c2b88d83582e7c976d90e242b5dcb9d5aa4005b96"
+    },
+    "sim/merge.py": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/merge.py",
+      "bytes": 600,
+      "repository_path": "paper/prl-source/sim/merge.py",
+      "sha256": "2df27f2a47d2d386d2fbb1ecf5ae637ca0cb887b5625c55059317ad9873f3055"
+    },
+    "sim/qrc_sim.py": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/qrc_sim.py",
+      "bytes": 6763,
+      "repository_path": "paper/prl-source/sim/qrc_sim.py",
+      "sha256": "5224eb19b1d2b90166e81bba360b8417fbdf0ccd74a5471be9b3db7ed43b2390"
+    },
+    "sim/quoted_numbers.py": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/quoted_numbers.py",
+      "bytes": 2716,
+      "repository_path": "paper/prl-source/sim/quoted_numbers.py",
+      "sha256": "c2e7ec4bfaf791f66060efb9da627a9f8182a1f1268e0d89a7a6cf43863f435c"
+    },
+    "sim/rep_curve.json": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/rep_curve.json",
+      "bytes": 30795,
+      "repository_path": "paper/prl-source/sim/rep_curve.json",
+      "sha256": "ccde0e49d5b9bd1ebc3858e8927a1fa41d817612b53f7971d9c9baa314f6b192"
+    },
+    "sim/rep_curve.py": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/rep_curve.py",
+      "bytes": 1768,
+      "repository_path": "paper/prl-source/sim/rep_curve.py",
+      "sha256": "7a819a626e1f29d09abf43a8a5194247120ec0e6e196a0c6d0f8651f15678bf1"
+    },
+    "sim/results_cold.json": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/results_cold.json",
+      "bytes": 17078,
+      "repository_path": "paper/prl-source/sim/results_cold.json",
+      "sha256": "b417161b768aad61ad2b61145785cb50074a9345caadb1b09b421629c463889c"
+    },
+    "sim/results_cold_haar.json": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/results_cold_haar.json",
+      "bytes": 7319,
+      "repository_path": "paper/prl-source/sim/results_cold_haar.json",
+      "sha256": "2bdba05fbc2d2e4ab37d9acdd3bec6f4ef9db888ab9dceac6d3a3e3e50a5fff1"
+    },
+    "sim/results_cold_ising.json": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/results_cold_ising.json",
+      "bytes": 9759,
+      "repository_path": "paper/prl-source/sim/results_cold_ising.json",
+      "sha256": "d3c06a018675902dbb1300272dc12bbb9b49b1ffc9e05b602b2dd05ca00ed064"
+    },
+    "sim/results_main.json": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/results_main.json",
+      "bytes": 100892,
+      "repository_path": "paper/prl-source/sim/results_main.json",
+      "sha256": "1de4aebae50ff13b8cd47a008a2851e5cbba847fc5ebc867955fecfedbaca46f"
+    },
+    "sim/results_main_haar.json": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/results_main_haar.json",
+      "bytes": 40337,
+      "repository_path": "paper/prl-source/sim/results_main_haar.json",
+      "sha256": "6c7cfb5dff2cc39661d2a3b6f13dade79b55d5f4dd8ee26d3189639330e45a5f"
+    },
+    "sim/results_main_ising.json": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/results_main_ising.json",
+      "bytes": 60555,
+      "repository_path": "paper/prl-source/sim/results_main_ising.json",
+      "sha256": "4620fb6d5517c4954dcb3093ca14fec611fde767eecdc604dc89c14e5eb0af33"
+    },
+    "sim/results_noise.json": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/results_noise.json",
+      "bytes": 65077,
+      "repository_path": "paper/prl-source/sim/results_noise.json",
+      "sha256": "0bb4bedca595473907009a2098674769ce107dfe879a7acbe716cbe83d4a7cbc"
+    },
+    "sim/results_noise_haar.json": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/results_noise_haar.json",
+      "bytes": 22622,
+      "repository_path": "paper/prl-source/sim/results_noise_haar.json",
+      "sha256": "ddf8c7f713ef3db22bf82235668d4e477ccf507bb1e06f70918ce1a767de7e65"
+    },
+    "sim/results_noise_ising.json": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/results_noise_ising.json",
+      "bytes": 42455,
+      "repository_path": "paper/prl-source/sim/results_noise_ising.json",
+      "sha256": "22f00a8deb8b468872cd5c10f87ac4bed01eefd8dd6a906fa36b76d9196cb9d8"
+    },
+    "sim/results_tau.json": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/results_tau.json",
+      "bytes": 22580,
+      "repository_path": "paper/prl-source/sim/results_tau.json",
+      "sha256": "c4ee7005e10e65d6b26638d1eaa5f3b37a39397ec863b4ea20f503f43539b2fe"
+    },
+    "sim/run_all.sh": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/run_all.sh",
+      "bytes": 573,
+      "repository_path": "paper/prl-source/sim/run_all.sh",
+      "sha256": "ea55d4c9bfc9fe19faa0dabd030e4052a172803ff6af754a74e38aaae5d700e9"
+    },
+    "sim/test_sim.py": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/test_sim.py",
+      "bytes": 2647,
+      "repository_path": "paper/prl-source/sim/test_sim.py",
+      "sha256": "9c46cfdaef8eed73a019b4c0d3cdfd52cb200c7c90e295ae2257f19f98c65599"
+    },
+    "sim/validate_pairs.json": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/validate_pairs.json",
+      "bytes": 5550,
+      "repository_path": "paper/prl-source/sim/validate_pairs.json",
+      "sha256": "25d5ce7eec2b61fcaadab702fb60cb9eb88d317a8d2dd8e366f3bfc58c899892"
+    },
+    "sim/validate_pairs.py": {
+      "archive": "2_supplemental_material/memory_limits_prl_source.zip",
+      "archive_path": "sim/validate_pairs.py",
+      "bytes": 4508,
+      "repository_path": "paper/prl-source/sim/validate_pairs.py",
+      "sha256": "605f447493068ce93391ff1f36c73e7b3abb49434c121f78c101f985019b2918"
+    }
+  },
+  "changes_from_received_package": [
+    "Derived Letter-only sources from the current canonical combined manuscript.",
+    "Compiled the Letter independently without shell escape and refreshed its bibliography.",
+    "Split the SM from the supplied fresh combined PDF and set title, authors and S page labels.",
+    "Retained the three confirmed authors, their ORCIDs, and one shared affiliation.",
+    "Packed every selected canonical reproduction source with deterministic ZIP metadata.",
+    "Adapted the cover letter to three authors and a uniform memory ceiling claim.",
+    "Retained the supplied exclusivity sentence in the draft cover letter; README records pending author attestations.",
+    "Used the user's exact replacement justification without a heading; retained the original ZIP text in input provenance.",
+    "Replaced stale submission notes with the current README."
+  ],
+  "combined_pdf": {
+    "name": "memory_limits_prl_2026-10-18-v4.pdf",
+    "sha256": "d731a107602e138f87f1d50797542f2f7daf45453411331202d19c4559dbfc1c"
+  },
+  "edition": "2026-10-18-v4",
+  "files": {
+    "1_manuscript/fig1.pdf": {
+      "bytes": 72090,
+      "sha256": "3cb894b0e2e15d10571230fbd25732a39dd9f3dc5b02829112d264b9a691c44b"
+    },
+    "1_manuscript/fig2.pdf": {
+      "bytes": 99349,
+      "sha256": "5322fdcd0ad7b900d81ea536c00aa32a729515c4877e89081fab54cd3622295f"
+    },
+    "1_manuscript/fig3.pdf": {
+      "bytes": 168671,
+      "sha256": "822cf59816de4b0bd6b7d7ebdfbcb0fc0deefeaab90b29c7e12f08b82cfbdce4"
+    },
+    "1_manuscript/fig4.pdf": {
+      "bytes": 68407,
+      "sha256": "5f04d161888130327252cb5368987680d5f5d21ffaab1feaeb9c67314f3a9263"
+    },
+    "1_manuscript/memory_limits_prl.bbl": {
+      "bytes": 32543,
+      "sha256": "b037dde12264d43c85e15e6263f004defa8047b5707f82a9563907c71b11fbe0"
+    },
+    "1_manuscript/memory_limits_prl.tex": {
+      "bytes": 23025,
+      "sha256": "9ed2031e3036be0369bfdbfe62088a812113f23f0433186ce1a02c2b254f1037"
+    },
+    "1_manuscript/refs.bib": {
+      "bytes": 13151,
+      "sha256": "b6f680c7b308f38a2df8ac0d62dd433efaa325b7c7f0bcbef11649895135c4dc"
+    },
+    "2_supplemental_material/README.TXT": {
+      "bytes": 1483,
+      "sha256": "8a128ad5a7997f23985a2dd6de276bcd0d2b1cae9eab04fd9c51e73c12b3b985"
+    },
+    "2_supplemental_material/memory_limits_prl_SM.pdf": {
+      "bytes": 744560,
+      "sha256": "1c5e68a563e9ad5df28dccedbbea9884d447f8e366608df4a43062b6b6882c9a"
+    },
+    "2_supplemental_material/memory_limits_prl_source.zip": {
+      "bytes": 1347741,
+      "sha256": "5ead68d8cc31e21adfea747baed1a8999a9ef8b19856c0413a3ec131ef2447fe"
+    },
+    "README.md": {
+      "bytes": 4437,
+      "sha256": "0723f9845bb45880cfaadf562a2a9dd4fc8f708282be14d8028641dc2597b41e"
+    },
+    "author_information.json": {
+      "bytes": 1409,
+      "sha256": "d97d5e4f41dfeb6c592784d8d15516e75ff7bdd94cc3ce7be610af9648dc86a4"
+    },
+    "build_verification.json": {
+      "bytes": 3041,
+      "sha256": "d85b3b6a5fb0cef5239151e620c3c300f23c2817aa5010466fc24dbcfd4e9c24"
+    },
+    "cover_letter.txt": {
+      "bytes": 2075,
+      "sha256": "ec4c797e36271ef1dfb139e19bc2af2283dd764f05559865c7e187df1e9e141b"
+    },
+    "justification.txt": {
+      "bytes": 701,
+      "sha256": "8e7bf893c630f20364bba3a933ac54c2e9bed02a83da26148a90b24b284049e3"
+    },
+    "manuscript-source.zip": {
+      "bytes": 408803,
+      "sha256": "83cb1aa61d9bfce8515a98c6568ce35f9dfa6277c8af1f8b5a54b8e6f90f510d"
+    },
+    "memory_limits_prl_letter.pdf": {
+      "bytes": 672235,
+      "sha256": "ec074fe8e418ff2e2921d238034d7f158c249a978327b332a29eb52c11f06681"
+    }
+  },
+  "generator": "scripts/prepare_prl.py",
+  "input_package": {
+    "name": "submission-original.zip",
+    "sha256": "55a30adf81acb13d8ec4d7bcd8e0c646c0c5f92473b58f1f20724334748130a5"
+  },
+  "official_sources": {
+    "length_guide": "https://journals.aps.org/authors/length-guide",
+    "prl_author_instructions": "https://journals.aps.org/prl/authors",
+    "supplemental_material": "https://journals.aps.org/authors/supplemental-material-instructions",
+    "web_submission": "https://journals.aps.org/authors/web-submission-guidelines-physical-review"
+  },
+  "status": "Prepared locally; not uploaded or submitted; author attestations pending.",
+  "template_inputs": {
+    "cover_letter.txt": {
+      "bytes": 1912,
+      "sha256": "b36b83929d5d714127b9c9093f24651e100efe4b77922dc02cf2c557bafc0011"
+    },
+    "justification.txt": {
+      "bytes": 729,
+      "sha256": "a208b8ddfbec92a109b3036d7a7b0d0552fc5982dcc53a400dfdb33b5ef9cf11"
+    },
+    "submission_notes.txt": {
+      "bytes": 5052,
+      "sha256": "af2517c60b920083a58c12b9d5a151a6bee68058ec671c26c0d3a137d0dcf9d4"
+    }
+  },
+  "user_justification": {
+    "bytes": 701,
+    "handling": "Copied byte-for-byte without a heading; replaces the archived ZIP justification.",
+    "name": "justification-user.txt",
+    "sha256": "8e7bf893c630f20364bba3a933ac54c2e9bed02a83da26148a90b24b284049e3"
+  }
+}
