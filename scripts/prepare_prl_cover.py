@@ -10,6 +10,7 @@ import tempfile
 
 REPO = Path(__file__).resolve().parents[1]
 ADMIN = REPO / "paper/submission-admin/prl-2026-10-18"
+HEADINGS = {"Main result", "Why Physical Review Letters", "Materials and declarations"}
 
 
 def tex(text):
@@ -19,7 +20,10 @@ def tex(text):
         "~": r"\textasciitilde{}", "^": r"\textasciicircum{}",
         "Θ": r"\ensuremath{\Theta}", "’": "'", "“": "``", "”": "''",
     }
-    return "".join(replacements.get(c, c) for c in text)
+    escaped = "".join(replacements.get(c, c) for c in text)
+    return escaped.replace(
+        r"exp[\ensuremath{\Theta}(k)]", r"\ensuremath{\exp[\Theta(k)]}"
+    ).replace(r"\ensuremath{\Theta}(log T)", r"\ensuremath{\Theta(\log T)}")
 
 
 def main():
@@ -29,7 +33,7 @@ def main():
     tex_sections = []
     for key, title in (("suggested", "Suggested referees"), ("alternates", "Alternate referees")):
         text_sections.append(title)
-        tex_sections.append(r"\section*{" + title + "}")
+        tex_sections.append(r"\coverheading{" + title + "}")
         for ref in referees[key]:
             lines = [ref["name"], ref["affiliation"], ref["email"]]
             if ref.get("expertise"):
@@ -50,13 +54,32 @@ def main():
     with_sources += "\n" + referees["verification_scope"] + "\n"
     (ADMIN / "referees.txt").write_text(with_sources)
     paragraphs = body.split("\n\n")
-    rendered_body = "\n\n".join("\\\\\n".join(tex(line) for line in p.splitlines()) for p in paragraphs)
+    sender = paragraphs[0].splitlines()
+    header = (
+        r"\begin{minipage}[t]{0.78\textwidth}"
+        + r"{\sffamily\bfseries\fontsize{15}{18}\selectfont " + tex(sender[0]) + "}\\\\[4pt]\n"
+        + r"{\fontsize{9}{11}\selectfont "
+        + "\\\\\n".join(tex(line) for line in sender[1:])
+        + r"}\end{minipage}\hfill\begin{minipage}[t]{0.20\textwidth}\raggedleft"
+        + r"\fontsize{9}{11}\selectfont Munich\\October 18, 2026\end{minipage}"
+        + r"\par\vspace{8pt}{\color{rulegray}\hrule height 0.5pt}\vspace{12pt}"
+    )
+    rendered = []
+    for paragraph in paragraphs[2:]:
+        if paragraph in HEADINGS:
+            rendered.append(r"\coverheading{" + tex(paragraph) + "}")
+        else:
+            rendered.append("\\\\\n".join(tex(line) for line in paragraph.splitlines()))
+    rendered_body = header + "\n\n" + "\n\n".join(rendered)
     source = r"""\documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-\usepackage[a4paper,top=17mm,bottom=17mm,left=20mm,right=20mm]{geometry}
+\usepackage[a4paper,top=19mm,bottom=19mm,left=22mm,right=22mm]{geometry}
 \usepackage{microtype}
+\usepackage{xcolor}
+\definecolor{rulegray}{gray}{0.65}
+\newcommand{\coverheading}[1]{\par\addvspace{7pt}\noindent{\sffamily\bfseries\fontsize{10.5}{13}\selectfont #1}\par\nobreak\vspace{1pt}}
 \usepackage[hidelinks]{hyperref}
 \input{glyphtounicode}\pdfgentounicode=1
 \hypersetup{pdftitle={Cover Letter - PRL Submission},pdfauthor={Markus Baumann}}
@@ -64,13 +87,13 @@ def main():
 \setlength{\parindent}{0pt}\setlength{\parskip}{6pt}
 \pagestyle{empty}
 \begin{document}
-\fontsize{10.5}{12.5}\selectfont
+\fontsize{11}{13.5}\selectfont
 """ + rendered_body + r"""
 \newpage
 \fontsize{10.5}{12.5}\selectfont
-\textbf{Referee suggestions}\hfill Markus Baumann et al.\\
+{\sffamily\bfseries\fontsize{15}{18}\selectfont Referee suggestions}\hfill Markus Baumann et al.\\[4pt]
 The Fundamental Memory Ceiling of Noisy Quantum Reservoirs
-\vspace{3pt}
+\par\vspace{7pt}{\color{rulegray}\hrule height 0.5pt}\vspace{5pt}
 """ + "\n\n".join(tex_sections) + "\n\\end{document}\n"
     environment = os.environ.copy()
     environment.update(SOURCE_DATE_EPOCH="1792281600", FORCE_SOURCE_DATE="1", TZ="UTC")

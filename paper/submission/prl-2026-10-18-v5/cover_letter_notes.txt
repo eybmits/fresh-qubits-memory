@@ -8,6 +8,11 @@ three-author manuscript and its single shared affiliation. It distinguishes
 the optimal memory scaling from performance of arbitrary reservoir dynamics.
 The supplied first-person responsibility declaration remains specific to Markus.
 
+At the user's request the prose was subsequently shortened by about one third,
+with three section headings, a compact letterhead, and more generous body type.
+The one-page letter retains the scientific assumptions and confirmed declarations;
+the complete referee list remains on page 2.
+
 The no-prior-Physical-Review-submission and exclusive-submission statements are
 author declarations supplied in the user's draft, not independently audited
 submission-history findings. No excluded referees were requested by the user.

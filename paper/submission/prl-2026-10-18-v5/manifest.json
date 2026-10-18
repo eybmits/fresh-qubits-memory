@@ -1,19 +1,19 @@
 {
   "administrative_inputs": {
     "cover_letter.pdf": {
-      "bytes": 97823,
+      "bytes": 163100,
       "repository_path": "paper/submission-admin/prl-2026-10-18/cover_letter.pdf",
-      "sha256": "ae2ede9d813e7e3cc730cf03200c0a6ed90e8b3c0807fd833a7f888fd9c8a959"
+      "sha256": "f2e263b8b92600c4158e7d3b4a8d5e2200c81cf0f68b96630bf0257e8399ff75"
     },
     "cover_letter.txt": {
-      "bytes": 5194,
+      "bytes": 4138,
       "repository_path": "paper/submission-admin/prl-2026-10-18/cover_letter.txt",
-      "sha256": "568e9bad17c8602587b194da04a9180b6d7773a6a9377d0a41d357d999d22afd"
+      "sha256": "632db1b52d48f5a5ec1a6dfff266e7123f55d212fb7da036121506b1ce188d70"
     },
     "cover_letter_notes.txt": {
-      "bytes": 2433,
+      "bytes": 2721,
       "repository_path": "paper/submission-admin/prl-2026-10-18/cover_letter_notes.txt",
-      "sha256": "1042a502d2cc68ad80af7fbdf0f67c7b114387736f42257a4914deef8126f248"
+      "sha256": "d11586e9fda301f7c4e080ded71250fe4949ba5fb565734113ca572e9270bd1d"
     },
     "referees.json": {
       "bytes": 4125,
@@ -482,16 +482,16 @@
       "sha256": "e1f558c34341a232028497cad60ca32c60dae2c4307fcac2935c7983e06329ab"
     },
     "cover_letter.pdf": {
-      "bytes": 97823,
-      "sha256": "ae2ede9d813e7e3cc730cf03200c0a6ed90e8b3c0807fd833a7f888fd9c8a959"
+      "bytes": 163100,
+      "sha256": "f2e263b8b92600c4158e7d3b4a8d5e2200c81cf0f68b96630bf0257e8399ff75"
     },
     "cover_letter.txt": {
-      "bytes": 5194,
-      "sha256": "568e9bad17c8602587b194da04a9180b6d7773a6a9377d0a41d357d999d22afd"
+      "bytes": 4138,
+      "sha256": "632db1b52d48f5a5ec1a6dfff266e7123f55d212fb7da036121506b1ce188d70"
     },
     "cover_letter_notes.txt": {
-      "bytes": 2433,
-      "sha256": "1042a502d2cc68ad80af7fbdf0f67c7b114387736f42257a4914deef8126f248"
+      "bytes": 2721,
+      "sha256": "d11586e9fda301f7c4e080ded71250fe4949ba5fb565734113ca572e9270bd1d"
     },
     "justification.txt": {
       "bytes": 721,

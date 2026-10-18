@@ -85,7 +85,9 @@ Zambrini's listed 2020–2026 PRL editorial role for eligibility review.
 
 `scripts/prepare_prl_cover.py` reproducibly renders the administrative source in
 `paper/submission-admin/prl-2026-10-18/`; `scripts/prepare_prl.py` incorporates it
-into the PRL handoff. Both cover pages were visually inspected, no placeholders
+into the PRL handoff. At the user's request the letter was shortened by about
+one third and given three headings and a compact letterhead; the referee list
+remains on page 2. Both cover pages were visually inspected, no placeholders
 remain, and repeated rendering is byte-identical. This administrative update
 does not change the manuscript, its simulations, the 100-word justification,
 or the arXiv and Zenodo packages.

@@ -11,21 +11,23 @@ To the Editors of Physical Review Letters
 
 Dear Editors,
 
-Please consider our manuscript, “The Fundamental Memory Ceiling of Noisy Quantum Reservoirs,” by Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien, for publication as a Letter in Physical Review Letters.
+Please consider “The Fundamental Memory Ceiling of Noisy Quantum Reservoirs,” by Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien, for publication as a Letter in Physical Review Letters.
 
-Quantum reservoir computing uses the dynamics of a driven quantum system to process temporal information. Our manuscript addresses a basic resource question: how much input memory can a given supply of fresh qubits sustain under noise, and can increasing the total system size overcome this limitation?
+Main result
 
-Under local Markovian depolarizing noise, we establish a universal, size-independent upper bound on input memory in the long-time, echo-state regime. At fixed noise strength and a fixed, sufficiently small distinguishability threshold, the optimal memory depth attainable with k qubits refreshed per time step scales as exp[Θ(k)]. The upper bound holds for arbitrary reservoir unitaries and input encodings within the model, without external classical memory or feedback. An explicit reservoir using unitary, measurement-free error correction attains the same exponential scaling. Consequently, Θ(log T) refreshed qubits per time step are necessary and sufficient, in the optimal construction, to retain a past input for T time steps within this setting.
+How much memory can fresh qubits sustain under noise? Under local Markovian depolarizing noise, we prove that the optimal input-memory depth scales as exp[Θ(k)] with k qubits refreshed per step, independently of total system size. This holds after initialization washout, at fixed noise strength and a fixed, sufficiently small distinguishability threshold. The upper bound covers arbitrary reservoir unitaries and input encodings within the model, without external classical memory or feedback. A unitary, measurement-free error-correcting construction attains the exponential scaling. Retaining an input for T steps therefore requires Θ(log T) refreshed qubits per step, and our construction attains this scaling.
 
-The central physical insight is that entropy removal sets the attainable memory depth. Under the stated noise assumptions, the upper bound depends on input and control operations through their entropy-removal budget. Its scope therefore extends beyond reservoir computing to a broader class of noisy quantum dynamics with a bounded supply of fresh qubits, including measurement-free error correction. The result connects temporal information processing with the resource requirements of error correction and identifies a concrete design objective: the supply of refreshed qubits and the dynamics that use them to protect memory.
+Why Physical Review Letters
 
-This connection between quantum information, open-system dynamics, and physical computing makes the manuscript relevant to the broad readership of Physical Review Letters. It also provides a resource-scaling prediction for experiments using suitable error-correcting reservoir dynamics and mid-circuit resets.
+Entropy removal sets the memory ceiling. Because the bound depends on an entropy-removal budget, its scope extends beyond reservoir computing to other quantum dynamics under the same noise and resource assumptions. This connects quantum information, open-system dynamics, and physical computing through an optimal resource law. Suitable error-correcting reservoirs with mid-circuit resets provide a route to testing the predicted scaling.
 
-The Supplemental Material contains complete proofs and an exact analysis of the error-correcting construction; simulation code and data are included in the accompanying source archive. All references cited in the Supplemental Material are listed in the Letter. The use of AI tools is disclosed in the Acknowledgments and Supplemental Material. As corresponding author, I take responsibility for the reported results and the disclosed use of AI tools.
+Materials and declarations
 
-The manuscript has not previously been submitted to a Physical Review journal and is not under consideration elsewhere. The authors declare no competing interests. None of the suggested referees or alternates has a conflict of interest with any of the authors. Our referee suggestions are listed on the following page. We request no referee exclusions.
+Complete proofs and the construction analysis are in the Supplemental Material; code and data accompany it in a source archive. All supplemental references appear in the Letter. AI use is disclosed in the Acknowledgments and Supplemental Material; as corresponding author, I take responsibility for the results and that use.
 
-Thank you for considering our manuscript. We look forward to the editors’ and referees’ assessment.
+The manuscript has not previously been submitted to a Physical Review journal and is not under consideration elsewhere. All authors declare no competing interests and no conflicts with the suggested referees or alternates, listed on page 2. We request no referee exclusions.
+
+Thank you for considering our manuscript.
 
 Sincerely,
 Markus Baumann
