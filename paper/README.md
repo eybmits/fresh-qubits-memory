@@ -12,6 +12,7 @@ Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien share one combined affi
 - [Revision scope and verification](../docs/manuscript-2026-10-18-prl-v7.md)
 - [PRL handoff ZIP](submission/prl-2026-10-18-v7/prl-submission.zip) and [upload instructions](submission/prl-2026-10-18-v7/README.md)
 - [Prepared arXiv source ZIP](submission/arxiv-2026-10-18-v7/arxiv-source.zip)
+- [arXiv draft 8248308: upload record and generated PDF](submission-records/arxiv-2026-10-18-v7/README.md)
 - [Local Zenodo handoff](submission/zenodo-2026-10-18-v7/README.md)
 - [Upload guide: separate PRL PDFs, combined arXiv version, and Zenodo draft](submission/README.md)
 
@@ -36,7 +37,7 @@ All eight simulator Python files and all 13 supplied JSON datasets are unchanged
 
 The user confirmed the disclosed model name Claude Opus 5.5 and clarified GPT's editorial-only role on 18 October 2026. The unchanged disclosure statements remain attributed to Markus Baumann; automated checks do not independently establish those human attestations.
 
-The repository remains **private**, as explicitly requested; the user will make it public separately. Nothing has been uploaded or submitted. PRL author attestations and portal preview, arXiv license choice and preview, and publication options remain for the actual submission. The local Zenodo draft has the three authors and ORCIDs but deliberately leaves license, access, publication date, and DOI unset; the supplied CC BY 4.0/open-access proposal is preserved as unselected input content. Historical PRL and PRA administrative drafts are preserved and are not the current upload package.
+The repository remains **private**, as explicitly requested. On 18 October 2026, revision 7 was uploaded to arXiv draft **8248308**, its metadata was saved, and the user selected arXiv's non-exclusive distribution license. The portal compiler reported **SUCCEEDED** and produced the 24-page document preserved with the [upload record](submission-records/arxiv-2026-10-18-v7/README.md). The final **Submit** action was left open; the draft has not been submitted or announced, and no public arXiv identifier is assigned. PRL and Zenodo packages remain local preparations. The local Zenodo draft leaves license, access, publication date, and DOI unset; its supplied CC BY 4.0/open-access proposal remains unselected. Pre-upload packages, their preparation-status metadata, and historical PRL/PRA administrative drafts remain preserved unchanged.
 
 ## Previous PRL revision 6: 18 October 2026
 

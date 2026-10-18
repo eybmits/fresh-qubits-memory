@@ -1,11 +1,13 @@
 # Current upload files: PRL, arXiv, and local Zenodo draft
 
-Manuscript revision 7, 18 October 2026. PRL and arXiv preparations use the same scientific
-content and the same three authors. The files are prepared locally; no upload or
-submission has taken place. Revision 7 shortens the shared affiliation to Quantum
-Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität
-München, retaining the existing address. Scientific content, figures, simulation
-code, datasets, and the AI disclosure remain unchanged from revision 6.
+Manuscript revision 7, 18 October 2026. PRL and arXiv packages use the same scientific
+content and the same three authors. Revision 7 has been uploaded to arXiv draft
+**8248308**, with successful compilation and saved metadata; the final **Submit**
+action was left open. PRL and Zenodo remain local preparations. Revision 7 shortens
+the shared affiliation to Quantum Applications and Research Laboratory (QAR-Lab),
+Ludwig-Maximilians-Universität München, retaining the existing address. Scientific
+content, figures, simulation code, datasets, and the AI disclosure remain unchanged
+from revision 6.
 
 ## Physical Review Letters
 
@@ -40,15 +42,20 @@ Source: [APS web submission guidelines, Uploading Files](https://journals.aps.or
 | File | Purpose |
 | --- | --- |
 | [Combined PDF, 24 pages](../memory_limits_prl_2026-10-18-v7.pdf) | Preview of the Letter followed by the full supplement |
-| [arXiv source ZIP](arxiv-2026-10-18-v7/arxiv-source.zip) | Upload this source archive; the single main file builds both parts together |
-| [arXiv instructions and metadata](arxiv-2026-10-18-v7/README.md) | Title, abstract, authors and remaining portal fields |
+| [arXiv source ZIP](arxiv-2026-10-18-v7/arxiv-source.zip) | Source archive uploaded to draft 8248308; one main file builds both parts together |
+| [arXiv instructions and metadata](arxiv-2026-10-18-v7/README.md) | Frozen pre-upload instructions and metadata |
+| [arXiv upload record and generated PDF](../submission-records/arxiv-2026-10-18-v7/README.md) | Observed draft status, saved metadata, and actual portal-generated document |
 
 The main file is `memory_limits_prl.tex`. The ZIP includes all eleven figures,
 matching bibliography, and reproducibility code/data. The combined PDF is a
 preview outside the TeX source ZIP; it is not an extra compilation target.
 
-GitHub remains private as requested. The author will change visibility
-separately. arXiv license choice and final portal actions remain pending.
+The portal compiler reported **SUCCEEDED** and produced a 24-page PDF. Metadata
+was saved, and the user selected arXiv's non-exclusive distribution license. The
+final **Submit** action was left open: draft 8248308 has not been submitted or
+announced and is not a public arXiv identifier. The linked upload record is the
+current status record; the pre-upload packages and their original pending-status
+metadata remain unchanged. GitHub remains private as requested.
 
 ## Local Zenodo draft
 

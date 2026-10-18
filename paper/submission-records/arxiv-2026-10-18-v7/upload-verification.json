@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-18",
+  "draft_id": "8248308",
+  "preview_url": "https://arxiv.org/submit/8248308/preview",
+  "edition": "2026-10-18-prl-v7",
+  "source_commit": "3a13086be2df5dce05899c736832c4e4b8700436",
+  "uploaded_source_zip_sha256": "bc4d286dbcb5d5c288984fd16e25fb8803aa6239109c35b706cb606c109ab3ca",
+  "uploaded": true,
+  "submitted": false,
+  "public_arxiv_identifier": null,
+  "submission_agreement": "accepted by user in browser before proceeding to Add Files",
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "license_selected_by": "user in browser",
+  "primary_category": "quant-ph",
+  "cross_lists": [],
+  "title": "The Fundamental Memory Ceiling of Noisy Quantum Reservoirs",
+  "authors": [
+    "Markus Baumann",
+    "Jonas Stein",
+    "Claudia Linnhoff-Popien"
+  ],
+  "metadata_saved": true,
+  "doi": null,
+  "journal_reference": null,
+  "report_number": null,
+  "compiler": "pdflatex",
+  "texlive": 2025,
+  "arxiv_compilation_status": "SUCCEEDED",
+  "top_level_file": "memory_limits_prl.tex",
+  "all_uploaded_files_retained": true,
+  "scanner_warning": "7 missing dependencies referenced by retained noncompiled figure-construction sources; sole main TeX compiled successfully.",
+  "arxiv_generated_pdf_sha256": "3ae3605d5968aae35186cc0ec282bdde7689c40579c95d84112d3fce928aafc0",
+  "pages": 24,
+  "pdf_comparison": {
+    "page_1": "Text matches canonical after removing arXiv draft watermark and normalizing whitespace.",
+    "pages_2_through_24": "Extracted text byte-identical to canonical.",
+    "unresolved_question_mark_references": 0,
+    "visual_review_pages": [
+      1,
+      7,
+      24
+    ],
+    "visual_review": "passed; no clipping, overlaps, or missing glyphs observed on inspected pages",
+    "fonts": "All 140 original embedded font records retained. arXiv adds 13 font records, including 12 unembedded standard fonts and embedded NimbusRoman. Poppler emits a font-type mismatch warning; inspected rendering shows no visible defect."
+  },
+  "html_generation_status": "Portal reports successful conversion; HTML contents not independently inspected.",
+  "screenshot": "preview-before-submit.jpg",
+  "final_action": "Submit button left unclicked; draft available for user review."
+}

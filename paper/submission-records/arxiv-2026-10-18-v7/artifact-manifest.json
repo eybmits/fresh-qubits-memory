@@ -1,0 +1,21 @@
+{
+  "recorded_date": "2026-10-18",
+  "files": {
+    "arxiv-generated-8248308.pdf": {
+      "sha256": "3ae3605d5968aae35186cc0ec282bdde7689c40579c95d84112d3fce928aafc0",
+      "size_bytes": 931763
+    },
+    "preview-before-submit.jpg": {
+      "sha256": "4738c27ef5cd64e26e696a4e9534b95742d66a6cb9f95e483979b741f5f287c2",
+      "size_bytes": 237217
+    },
+    "upload-verification.json": {
+      "sha256": "c8c9b5234f4cb0aa7b304694f3bf83050f19a0f087c98941e505243a4e934ba5",
+      "size_bytes": 2238
+    },
+    "README.txt": {
+      "sha256": "48e75eecdce35afd1546cc99c3aa372094de5fbb9234e4f45f60731f7b0636cd",
+      "size_bytes": 431
+    }
+  }
+}

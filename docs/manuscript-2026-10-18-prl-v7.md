@@ -54,5 +54,9 @@ of 3688 word equivalents remains historical evidence for that identical body.
 It is not an APS editorial eligibility determination. The abstract and the
 100-word justification are unchanged.
 
-All packages are local preparations. No manuscript submission, publication,
-DOI reservation, license choice, or repository-visibility change was performed.
+At preparation time all packages were local, with no manuscript submission,
+publication, DOI reservation, license choice, or repository-visibility change.
+The later [arXiv upload record](../paper/submission-records/arxiv-2026-10-18-v7/README.md)
+documents draft 8248308, the user's license choice, and successful arXiv PDF
+processing. Final submission was left open; the original preparation snapshots
+remain unchanged.
