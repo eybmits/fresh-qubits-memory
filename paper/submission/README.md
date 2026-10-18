@@ -11,29 +11,35 @@ from revision 6.
 
 ## Physical Review Letters
 
+The current PRL handoff uses the user's replacement cover letter (cover revision 2).
+The cover PDF is one page; referee suggestions are supplied separately.
+The manuscript remains revision 7 and the uploaded arXiv version is unchanged.
+
 | File | Upload role |
 | --- | --- |
-| [Cover letter PDF](prl-2026-10-18-v7/cover_letter.pdf) / [TXT](prl-2026-10-18-v7/cover_letter.txt) | Concise correspondence with three headings on page 1; referee suggestions on page 2 |
-| [Referee contacts and sources](prl-2026-10-18-v7/referees.txt) | Verified affiliations and professional emails for five suggestions and four alternates |
-| [PRL justification TXT, 100 words](prl-2026-10-18-v7/justification.txt) | Paste verbatim into the PRL significance/justification field |
-| [Letter PDF, 6 pages](prl-2026-10-18-v7/memory_limits_prl_letter.pdf) | Main manuscript, including figures and references |
-| [Supplement PDF, 18 pages](prl-2026-10-18-v7/2_supplemental_material/memory_limits_prl_SM.pdf) | “Upload supplemental files” |
-| [Code and data ZIP](prl-2026-10-18-v7/2_supplemental_material/memory_limits_prl_source.zip) | Accompanying Supplemental Material deposit |
-| [Supplement description](prl-2026-10-18-v7/2_supplemental_material/README.TXT) | Description and requirements for the Supplemental Material deposit |
+| [Cover letter PDF](prl-2026-10-18-v7-cover-v2/cover_letter.pdf) / [TXT](prl-2026-10-18-v7-cover-v2/cover_letter.txt) | One-page replacement letter with three headings and three numbered results; referees supplied separately |
+| [Referee contacts and sources](prl-2026-10-18-v7-cover-v2/referees.txt) | Verified affiliations and professional emails for five suggestions and four alternates |
+| [PRL justification TXT, 100 words](prl-2026-10-18-v7-cover-v2/justification.txt) | Paste verbatim into the PRL significance/justification field |
+| [Letter PDF, 6 pages](prl-2026-10-18-v7-cover-v2/memory_limits_prl_letter.pdf) | Main manuscript, including figures and references |
+| [Supplement PDF, 18 pages](prl-2026-10-18-v7-cover-v2/2_supplemental_material/memory_limits_prl_SM.pdf) | “Upload supplemental files” |
+| [Code and data ZIP](prl-2026-10-18-v7-cover-v2/2_supplemental_material/memory_limits_prl_source.zip) | Accompanying Supplemental Material deposit |
+| [Supplement description](prl-2026-10-18-v7-cover-v2/2_supplemental_material/README.TXT) | Description and requirements for the Supplemental Material deposit |
 
 The Letter and supplement belong to one submission and are uploaded as separate
 PDFs. APS requires only PDFs for initial manuscript review; manuscript TeX
 sources are requested after acceptance. The code/data ZIP is the research
 material cited by the paper and accompanies the supplement.
 
-The [complete PRL handoff ZIP](prl-2026-10-18-v7/prl-submission.zip) also retains
+The [complete PRL handoff ZIP](prl-2026-10-18-v7-cover-v2/prl-submission.zip) also retains
 manuscript sources for later production, author information, a draft cover
-letter and the justification. Unpack it and follow the [PRL upload guide](prl-2026-10-18-v7/README.md).
+letter and the justification. Unpack it and follow the [PRL upload guide](prl-2026-10-18-v7-cover-v2/README.md).
 
-The shortened cover letter uses three section headings, the three authors, and
-the shared QAR-Lab/LMU address. [Preparation notes](prl-2026-10-18-v7/cover_letter_notes.txt)
+The replacement cover letter uses three section headings, the three authors, and
+the shared QAR-Lab/LMU address. [Preparation notes](prl-2026-10-18-v7-cover-v2/cover_letter_notes.txt)
 record the supplied submission-history statements and the user's explicit
 all-author conflict declaration. No correspondence has been sent.
+The [cover revision record](../../docs/prl-cover-letter-2026-10-18-v2.md)
+documents the formatting and preservation checks.
 
 Source: [APS web submission guidelines, Uploading Files](https://journals.aps.org/authors/web-submission-guidelines-physical-review#uploading-files), checked 18 October 2026.
 

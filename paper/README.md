@@ -6,11 +6,11 @@
 
 Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien share one combined affiliation: Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany. The shared address appears once in each of the Letter and Supplemental Material bylines. All three approved ORCID links and the campus.lmu.de contact address are retained in the [canonical author record](author_information.json).
 
-- [Combined PDF](memory_limits_prl_2026-10-18-v7.pdf), [Letter](submission/prl-2026-10-18-v7/memory_limits_prl_letter.pdf), [Supplemental Material](submission/prl-2026-10-18-v7/2_supplemental_material/memory_limits_prl_SM.pdf)
+- [Combined PDF](memory_limits_prl_2026-10-18-v7.pdf), [Letter](submission/prl-2026-10-18-v7-cover-v2/memory_limits_prl_letter.pdf), [Supplemental Material](submission/prl-2026-10-18-v7-cover-v2/2_supplemental_material/memory_limits_prl_SM.pdf)
 - [Editable LaTeX](prl-source/memory_limits_prl.tex), [bibliography](prl-source/refs.bib), [build instructions](prl-source/README.txt)
 - [Received originals and receipt](versions/2026-10-18-prl-v5/receipt.json), [provenance](versions/2026-10-18-prl-v7/provenance.json), [final source snapshot](versions/2026-10-18-prl-v7/source-final-prl-v7.zip)
 - [Revision scope and verification](../docs/manuscript-2026-10-18-prl-v7.md)
-- [PRL handoff ZIP](submission/prl-2026-10-18-v7/prl-submission.zip) and [upload instructions](submission/prl-2026-10-18-v7/README.md)
+- [PRL handoff ZIP](submission/prl-2026-10-18-v7-cover-v2/prl-submission.zip) and [upload instructions](submission/prl-2026-10-18-v7-cover-v2/README.md)
 - [Prepared arXiv source ZIP](submission/arxiv-2026-10-18-v7/arxiv-source.zip)
 - [arXiv draft 8248308: upload record and generated PDF](submission-records/arxiv-2026-10-18-v7/README.md)
 - [Local Zenodo handoff](submission/zenodo-2026-10-18-v7/README.md)
@@ -20,9 +20,9 @@ This edition shortens the shared affiliation to Quantum Applications and Researc
 
 The integration retains the numerical interpretation qualifications: sampled histories estimate the memory supremum, unitary ensembles are sampled separately across `k`, and continuous threshold crossings are rounded up for integer depths. The abstract and Figure 3 describe the optimal attainable ceiling rather than automatic memory improvement in every reservoir. The memory-capacity discussion explicitly assumes finite positive input variance; its readout-resolution range and initialization-washout statement are qualified in the source. See the [revision note](../docs/manuscript-2026-10-18-prl-v7.md) for exact scope and evidence.
 
-The [PRL justification TXT](submission/prl-2026-10-18-v7/justification.txt) retains the latest user-approved 100-word text byte for byte, including the supplied LaTeX delimiters. Its current frozen input is [justification-user.txt](versions/2026-10-18-prl-v5/justification-user.txt); the previous two paragraphs remain in the revision 4 archive.
+The [PRL justification TXT](submission/prl-2026-10-18-v7-cover-v2/justification.txt) retains the latest user-approved 100-word text byte for byte, including the supplied LaTeX delimiters. Its current frozen input is [justification-user.txt](versions/2026-10-18-prl-v5/justification-user.txt); the previous two paragraphs remain in the revision 4 archive.
 
-The canonical source combines the Letter and supplement using APS REVTeX 4.2 with `aps,prl,twocolumn`, four main figures, and seven supplemental figures. Current page counts, local length accounting, and build/package checks are recorded in the [revision note](../docs/manuscript-2026-10-18-prl-v7.md) and [PRL build verification](submission/prl-2026-10-18-v7/build_verification.json). The abstract is unchanged. Local length estimates do not constitute an APS editorial eligibility decision.
+The canonical source combines the Letter and supplement using APS REVTeX 4.2 with `aps,prl,twocolumn`, four main figures, and seven supplemental figures. Current page counts, local length accounting, and build/package checks are recorded in the [revision note](../docs/manuscript-2026-10-18-prl-v7.md) and [PRL build verification](submission/prl-2026-10-18-v7-cover-v2/build_verification.json). The abstract is unchanged. Local length estimates do not constitute an APS editorial eligibility decision.
 
 Build the combined manuscript from the repository root (TeX Live with REVTeX 4.2, pdfLaTeX, BibTeX, and orcidlink):
 

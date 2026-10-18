@@ -14,67 +14,22 @@ Please consider “The Fundamental Memory Ceiling of Noisy Quantum Reservoirs,�
 
 Main result
 
-How much memory can fresh qubits sustain under noise? Under local Markovian depolarizing noise, we prove that the optimal input-memory depth scales as exp[Θ(k)] with k qubits refreshed per step, independently of total system size. This holds after initialization washout, at fixed noise strength and a fixed, sufficiently small distinguishability threshold. The upper bound covers arbitrary reservoir unitaries and input encodings within the model, without external classical memory or feedback. A unitary, measurement-free error-correcting construction attains the exponential scaling. Retaining an input for T steps therefore requires Θ(log T) refreshed qubits per step, and our construction attains this scaling.
+How long can a noisy quantum system remember past inputs? We establish an optimal resource law: with k qubits refreshed per step, the maximum attainable input-memory depth scales as exp[Θ(k)]. This holds under local Markovian depolarizing noise, after initialization washout, at fixed noise strength and a fixed, sufficiently small distinguishability threshold, without external classical memory or feedback. Three results establish its significance:
+
+1. No-go theorem. A size-independent upper bound holds for arbitrary unitaries and input encodings. Increasing system size at fixed refresh budget cannot sustain arbitrarily long input memory.
+
+2. Attainability. An explicit unitary, measurement-free error-correcting construction achieves exponential memory. Thus, Θ(log T) refreshed qubits per step are necessary and sufficient to retain an input for T steps.
+
+3. Universality. The proof depends only on the entropy budget of each noisy step. The bound therefore extends beyond quantum reservoir computing to an entire class of quantum dynamics under the same noise and resource assumptions, including measurement-free error correction.
 
 Why Physical Review Letters
 
-Entropy removal sets the memory ceiling. Because the bound depends on an entropy-removal budget, its scope extends beyond reservoir computing to other quantum dynamics under the same noise and resource assumptions. This connects quantum information, open-system dynamics, and physical computing through an optimal resource law. Suitable error-correcting reservoirs with mid-circuit resets provide a route to testing the predicted scaling.
+Noise introduces entropy throughout the system, while refreshed qubits provide a limited outlet. We turn this physical competition into a quantitative, optimal relation between entropy removal and information lifetime. The advance is not merely that old inputs eventually fade, but a determination of how much memory a given supply of fresh qubits can sustain. This architecture-independent law connects quantum information, nonequilibrium physics, and physical computing, providing a fundamental benchmark of relevance to PRL’s broad readership.
 
 Materials and declarations
 
-Complete proofs and the construction analysis are in the Supplemental Material; code and data accompany it in a source archive. All supplemental references appear in the Letter. AI use is disclosed in the Acknowledgments and Supplemental Material; as corresponding author, I take responsibility for the results and that use.
-
-The manuscript has not previously been submitted to a Physical Review journal and is not under consideration elsewhere. All authors declare no competing interests and no conflicts with the suggested referees or alternates, listed on page 2. We request no referee exclusions.
-
-Thank you for considering our manuscript.
+Complete proofs, code, and data accompany the manuscript. AI use is disclosed; as corresponding author, I take responsibility for the results and that use. The manuscript has not previously been submitted to a Physical Review journal and is not under consideration elsewhere. All authors declare no competing interests or conflicts with the suggested referees. Referee suggestions are provided separately; we request no exclusions.
 
 Sincerely,
 Markus Baumann
 On behalf of Jonas Stein and Claudia Linnhoff-Popien
-
-Suggested referees
-
-Michael J. Gullans
-National Institute of Standards and Technology (NIST); Joint Center for Quantum Information and Computer Science (QuICS), University of Maryland, USA
-mgullans@umd.edu
-Memory and error correction in noisy quantum circuits
-
-Daniel Stilck França
-Department of Mathematical Sciences, University of Copenhagen, Denmark
-dsfranca@math.ku.dk
-Entropy-based limitations of noisy quantum devices
-
-Alexander Müller-Hermes
-Department of Mathematics, University of Oslo, Norway
-muellerh@math.uio.no
-Hypercontractivity of quantum channels and resource bounds for fault tolerance
-
-Roberta Zambrini
-Instituto de Física Interdisciplinar y Sistemas Complejos, IFISC (CSIC-UIB), Palma de Mallorca, Spain
-roberta@ifisc.uib-csic.es
-Quantum reservoir computing and dissipation as a resource
-
-Hakan E. Türeci
-Department of Electrical and Computer Engineering, Princeton University, USA
-tureci@princeton.edu
-Quantum reservoir computing and superconducting quantum hardware
-
-Alternate referees
-
-Omar Fawzi
-Inria; Laboratoire de l’Informatique du Parallélisme (LIP), École normale supérieure de Lyon, France
-omar.fawzi@ens-lyon.fr
-
-Juan-Pablo Ortega
-School of Physical and Mathematical Sciences, Nanyang Technological University, Singapore
-juan-pablo.ortega@ntu.edu.sg
-
-Kohei Nakajima
-Department of Mechano-Informatics, Graduate School of Information Science and Technology, The University of Tokyo, Japan
-k-nakajima@isi.imi.i.u-tokyo.ac.jp
-
-Naoki Yamamoto
-Department of Applied Physics and Physico-Informatics, Faculty of Science and Technology, Keio University, Japan
-yamamoto@appi.keio.ac.jp
-
-Excluded referees: none.

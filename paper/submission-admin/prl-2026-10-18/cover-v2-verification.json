@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-18",
+  "parent_commit": "2edca44bfa22f8a78b82840add92c2d7fb6ffd69",
+  "scope": "User-supplied replacement PRL cover letter; administrative changes only.",
+  "manuscript_edition": "2026-10-18-v7",
+  "source": "Complete replacement letter supplied in this chat. Substantive wording retained; inline math and emphasis normalized for PDF and plain text. Approved QAR-Lab/LMU letterhead retained.",
+  "checks": {
+    "cover_pages": 1,
+    "headings": 3,
+    "numbered_results": 3,
+    "standalone_cover": true,
+    "referees_supplied_separately": true,
+    "visual_qa": "Passed: rendered A4 page checked for legibility, headings, numbering, formulas, and complete signature.",
+    "render_command": "pdftoppm -scale-to 1400 -png cover_letter.pdf /private/tmp/prl-cover-v2",
+    "latex_shell_escape": false,
+    "overfull_boxes": false,
+    "plain_text_matches_formatted_source": true,
+    "manifest_files_verified": 22,
+    "zip_crc_and_member_equality": "passed",
+    "unchanged_package_files": [
+      "1_manuscript/fig1.pdf",
+      "1_manuscript/fig2.pdf",
+      "1_manuscript/fig3.pdf",
+      "1_manuscript/fig4.pdf",
+      "1_manuscript/memory_limits_prl.bbl",
+      "1_manuscript/memory_limits_prl.tex",
+      "1_manuscript/refs.bib",
+      "2_supplemental_material/README.TXT",
+      "2_supplemental_material/memory_limits_prl_SM.pdf",
+      "2_supplemental_material/memory_limits_prl_source.zip",
+      "abstract.txt",
+      "author_information.json",
+      "build_verification.json",
+      "justification.txt",
+      "manuscript-source.zip",
+      "memory_limits_prl_letter.pdf",
+      "referees.json",
+      "referees.txt"
+    ],
+    "changed_package_files": [
+      "README.md",
+      "cover_letter.pdf",
+      "cover_letter.txt",
+      "cover_letter_notes.txt",
+      "manifest.json",
+      "prl-submission.zip"
+    ],
+    "preserved_paths_unchanged_against_parent": [
+      "paper/prl-source",
+      "paper/memory_limits_prl_2026-10-18-v7.pdf",
+      "paper/submission/prl-2026-10-18-v7",
+      "paper/submission/arxiv-2026-10-18-v7",
+      "paper/submission/zenodo-2026-10-18-v7",
+      "paper/submission-records/arxiv-2026-10-18-v7"
+    ],
+    "tests": {
+      "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python3 -m unittest discover -s tests -v",
+      "passed": 22,
+      "failed": 0,
+      "setup_note": "Initial run without PYTHONPATH could not import the local src package. Rerun with repository src path passed."
+    },
+    "new_numerical_campaigns": false
+  },
+  "artifacts": {
+    "paper/submission-admin/prl-2026-10-18/cover_letter_body.txt": {
+      "bytes": 2785,
+      "sha256": "986c67de8d3c2ac36f35fc7bb81fcb7d8f016dc954ef874c24b2b827bb34da32"
+    },
+    "paper/submission-admin/prl-2026-10-18/cover_letter.txt": {
+      "bytes": 2745,
+      "sha256": "d09ed97744413fd60a74f856dadb12cbb0d3d8e9d1edf5af3ed529bad7aa3280"
+    },
+    "paper/submission-admin/prl-2026-10-18/cover_letter.pdf": {
+      "bytes": 137391,
+      "sha256": "944dd2a7b3e05817324021048220a32ef7cbe3bb4c22a340430874d654a06236"
+    },
+    "paper/submission-admin/prl-2026-10-18/referees.txt": {
+      "bytes": 2876,
+      "sha256": "7f7f90a65c51e9fd2bc32c292865b135bc5cb787e915e87df3fe3953ee988b9d"
+    },
+    "paper/submission-admin/prl-2026-10-18/referees.json": {
+      "bytes": 4125,
+      "sha256": "44e936610873e5892f377a09c35003ea139866dc4352edb85bb2c931172b15f6"
+    },
+    "paper/submission/prl-2026-10-18-v7-cover-v2/prl-submission.zip": {
+      "bytes": 3584971,
+      "sha256": "d3d536cf11f8689674bac1891c7e0d4c2e0564f9371569087f5f4cbd9058ed3b"
+    }
+  },
+  "declarations": "Submission history, exclusive consideration, and all-author conflicts are user-provided declarations; not independently audited.",
+  "external_actions": {
+    "portal_changed": false,
+    "correspondence_sent": false,
+    "final_submission_made": false
+  }
+}

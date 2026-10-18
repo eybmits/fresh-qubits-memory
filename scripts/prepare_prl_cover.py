@@ -4,6 +4,7 @@
 import json
 import os
 from pathlib import Path
+import re
 import subprocess
 import tempfile
 
@@ -11,6 +12,11 @@ import tempfile
 REPO = Path(__file__).resolve().parents[1]
 ADMIN = REPO / "paper/submission-admin/prl-2026-10-18"
 HEADINGS = {"Main result", "Why Physical Review Letters", "Materials and declarations"}
+INLINE = re.compile(r"(\\\(.+?\\\)|\*\*.+?\*\*|\*[^*\n]+\*)")
+MATH_TEXT = {
+    "k": "k", "T": "T", r"\exp[\Theta(k)]": "exp[Θ(k)]",
+    r"\Theta(\log T)": "Θ(log T)",
+}
 
 
 def tex(text):
@@ -26,28 +32,38 @@ def tex(text):
     ).replace(r"\ensuremath{\Theta}(log T)", r"\ensuremath{\Theta(\log T)}")
 
 
+def inline(text, plain=False):
+    """Render the replacement letter's emphasis and four known inline formulas."""
+    result = []
+    for part in INLINE.split(text):
+        if part.startswith(r"\(") and part.endswith(r"\)"):
+            expression = part[2:-2]
+            if expression not in MATH_TEXT:
+                raise ValueError(f"Unreviewed inline math: {expression}")
+            result.append(MATH_TEXT[expression] if plain else part)
+        elif part.startswith("**") and part.endswith("**"):
+            result.append(part[2:-2] if plain else r"\textbf{" + tex(part[2:-2]) + "}")
+        elif part.startswith("*") and part.endswith("*"):
+            result.append(part[1:-1] if plain else r"\emph{" + tex(part[1:-1]) + "}")
+        else:
+            result.append(part if plain else tex(part))
+    return "".join(result)
+
+
 def main():
     body = (ADMIN / "cover_letter_body.txt").read_text().strip()
     referees = json.loads((ADMIN / "referees.json").read_text())
     text_sections = []
-    tex_sections = []
     for key, title in (("suggested", "Suggested referees"), ("alternates", "Alternate referees")):
         text_sections.append(title)
-        tex_sections.append(r"\coverheading{" + title + "}")
         for ref in referees[key]:
             lines = [ref["name"], ref["affiliation"], ref["email"]]
             if ref.get("expertise"):
                 lines.append(ref["expertise"])
             text_sections.append("\n".join(lines))
-            tex_sections.append(
-                r"\begin{samepage}\textbf{" + tex(lines[0]) + "}\\\\\n"
-                + "\\\\\n".join(tex(line) for line in lines[1:])
-                + "\n\\end{samepage}\\par\\vspace{5pt}"
-            )
     text_sections.append("Excluded referees: none.")
-    tex_sections.append("Excluded referees: none.")
     referee_text = "\n\n".join(text_sections) + "\n"
-    (ADMIN / "cover_letter.txt").write_text(body + "\n\n" + referee_text)
+    (ADMIN / "cover_letter.txt").write_text(inline(body, plain=True) + "\n")
     with_sources = referee_text + "\nVerified institutional sources (checked October 18, 2026):\n"
     for ref in referees["suggested"] + referees["alternates"]:
         with_sources += "\n" + ref["name"] + "\n" + "\n".join(ref["sources"]) + "\n"
@@ -65,11 +81,24 @@ def main():
         + r"\par\vspace{8pt}{\color{rulegray}\hrule height 0.5pt}\vspace{12pt}"
     )
     rendered = []
+    in_list = False
     for paragraph in paragraphs[2:]:
+        numbered = re.fullmatch(r"([1-3])\. (.+)", paragraph, re.DOTALL)
+        if numbered:
+            if not in_list:
+                rendered.append(r"\begin{enumerate}[leftmargin=1.6em,itemsep=3pt,topsep=3pt,parsep=0pt]")
+                in_list = True
+            rendered.append(r"\item " + inline(numbered.group(2)))
+            continue
+        if in_list:
+            rendered.append(r"\end{enumerate}")
+            in_list = False
         if paragraph in HEADINGS:
             rendered.append(r"\coverheading{" + tex(paragraph) + "}")
         else:
-            rendered.append("\\\\\n".join(tex(line) for line in paragraph.splitlines()))
+            rendered.append("\\\\\n".join(inline(line) for line in paragraph.splitlines()))
+    if in_list:
+        rendered.append(r"\end{enumerate}")
     rendered_body = header + "\n\n" + "\n\n".join(rendered)
     source = r"""\documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
@@ -77,6 +106,7 @@ def main():
 \usepackage{lmodern}
 \usepackage[a4paper,top=19mm,bottom=19mm,left=22mm,right=22mm]{geometry}
 \usepackage{microtype}
+\usepackage{enumitem}
 \usepackage{xcolor}
 \definecolor{rulegray}{gray}{0.65}
 \newcommand{\coverheading}[1]{\par\addvspace{7pt}\noindent{\sffamily\bfseries\fontsize{10.5}{13}\selectfont #1}\par\nobreak\vspace{1pt}}
@@ -88,13 +118,7 @@ def main():
 \pagestyle{empty}
 \begin{document}
 \fontsize{11}{13.5}\selectfont
-""" + rendered_body + r"""
-\newpage
-\fontsize{10.5}{12.5}\selectfont
-{\sffamily\bfseries\fontsize{15}{18}\selectfont Referee suggestions}\hfill Markus Baumann et al.\\[4pt]
-The Fundamental Memory Ceiling of Noisy Quantum Reservoirs
-\par\vspace{7pt}{\color{rulegray}\hrule height 0.5pt}\vspace{5pt}
-""" + "\n\n".join(tex_sections) + "\n\\end{document}\n"
+""" + rendered_body + "\n\\end{document}\n"
     environment = os.environ.copy()
     environment.update(SOURCE_DATE_EPOCH="1792281600", FORCE_SOURCE_DATE="1", TZ="UTC")
     with tempfile.TemporaryDirectory(prefix="prl-cover-") as temporary:

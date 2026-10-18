@@ -3,20 +3,22 @@ Prepared: October 18, 2026
 Manuscript: The Fundamental Memory Ceiling of Noisy Quantum Reservoirs
 Authors: Markus Baumann, Jonas Stein, Claudia Linnhoff-Popien
 
-The cover letter follows the user's replacement draft, adapted to the current
-three-author manuscript and its single shared affiliation. It distinguishes
-the optimal memory scaling from performance of arbitrary reservoir dynamics.
-The supplied first-person responsibility declaration remains specific to Markus.
+The current cover letter follows the user's complete replacement of October 18,
+2026 (cover revision 2), retaining the approved letterhead and address. Its body
+is preserved without substantive edits; only math delimiters and emphasis are
+normalized for typeset PDF and plain text. The first-person responsibility
+declaration remains specific to Markus.
 
 The user subsequently requested shortening the affiliation to Quantum Applications
 and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München, while
 retaining the Oettingenstraße address. Chair and department were removed from
 the letterhead to match manuscript revision 7.
 
-At the user's request the prose was subsequently shortened by about one third,
-with three section headings, a compact letterhead, and more generous body type.
-The one-page letter retains the scientific assumptions and confirmed declarations;
-the complete referee list remains on page 2.
+The one-page letter has three headings and three numbered results: No-go theorem,
+Attainability, and Universality. Referee suggestions are now separate in
+referees.txt and referees.json, as stated in the user's new text; they are not
+appended to either cover_letter.txt or cover_letter.pdf. The previous cover
+remains in the original revision-7 PRL package and Git history.
 
 The no-prior-Physical-Review-submission and exclusive-submission statements are
 author declarations supplied in the user's draft, not independently audited
@@ -40,7 +42,8 @@ Source: https://ifisc.uib-csic.es//~roberta/
 
 The letter contains no arXiv number or Zenodo DOI because neither has been
 provided or established. The separate 100-word PRL justification is unchanged.
-No manuscript content is changed. No portal entry, message or submission is made.
+No manuscript content is changed. This cover update makes no portal entry,
+message or final submission. The separate arXiv upload record remains unchanged.
 
 Author address: the current manuscript and confirmed author_information.json;
 independently consistent with https://qarlab.de/en/our-team/ and

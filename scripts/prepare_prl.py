@@ -32,6 +32,7 @@ from prepare_arxiv import (
 
 
 EDITION = "2026-10-18-v7"
+PACKAGE_REVISION = EDITION + "-cover-v2"
 GENERATOR = "scripts/prepare_prl.py"
 DEFAULT_JUSTIFICATION = REPO / "paper/versions/2026-10-18-prl-v5/justification-user.txt"
 ADMIN = REPO / "paper/submission-admin/prl-2026-10-18"
@@ -236,12 +237,15 @@ def administrative_files(author_names):
 
 
 def readme(title, author_names):
-    return f"""# PRL submission preparation — {EDITION}
+    return f"""# PRL submission preparation — {EDITION}, cover letter revision 2
 
 {title}
 {', '.join(author_names)}
 
-This is a local, unsubmitted preparation package. Nothing was uploaded or sent.
+This is a local, unsubmitted PRL preparation package. This cover-letter update
+has not been uploaded or sent. The manuscript remains revision 7; this package
+replaces only its administrative cover-letter material. The earlier PRL package
+and the separate arXiv draft upload remain preserved.
 The outer `prl-submission.zip` is a convenient handoff; unpack it first. It is
 not a single manuscript file to upload indiscriminately to the APS portal.
 
@@ -252,12 +256,13 @@ not a single manuscript file to upload indiscriminately to the APS portal.
    complete source/code/data ZIP, and descriptive `README.TXT`. The source ZIP
    is the reproducibility deposit cited by the paper; it includes the combined
    manuscript, bibliography, figures, simulator, saved data, and checks.
-3. Review `cover_letter.txt` or the two-page `cover_letter.pdf`; its second page
-   contains the five suggested referees and four alternates. `referees.txt`
-   and `referees.json` supply verified professional emails and source links.
+3. Review the standalone `cover_letter.txt` or `cover_letter.pdf`. Referee
+   suggestions are supplied separately in `referees.txt` and `referees.json`,
+   with verified professional emails and source links for the five suggestions
+   and four alternates; no referee list is appended to the cover letter.
    `cover_letter_notes.txt` records the scope of author declarations and the
    user's confirmed all-author conflict statement. The cover follows the user's
-   replacement draft of 18 October and has no placeholders or preparation notes.
+   latest replacement text of 18 October and has no placeholders or preparation notes.
    `abstract.txt` contains the manuscript abstract as plain Unicode text, with
    its character count checked against the portal's 600-character limit.
    `justification.txt` contains the exact text supplied by the user for this
@@ -439,7 +444,15 @@ def build(combined_pdf, output, input_package, justification_file=DEFAULT_JUSTIF
     manifest = {
         "generator": GENERATOR,
         "edition": EDITION,
-        "status": "Prepared locally; not uploaded or submitted; author attestations pending.",
+        "package_revision": PACKAGE_REVISION,
+        "administrative_revision": {
+            "name": "cover-v2",
+            "scope": "User-supplied replacement cover letter; referee suggestions supplied separately.",
+            "cover_letter_pages": len(PdfReader(BytesIO(files["cover_letter.pdf"])).pages),
+            "referees_appended_to_cover": False,
+            "manuscript_edition_unchanged": True,
+        },
+        "status": "PRL package prepared locally; not uploaded or submitted; final author review pending.",
         "input_package": {"name": input_package.name, "sha256": digest(input_package.read_bytes())},
         "combined_pdf": {"name": combined_pdf.name, "sha256": digest(combined_data)},
         "template_inputs": {name: {"sha256": digest(data), "bytes": len(data)}
@@ -470,8 +483,8 @@ def build(combined_pdf, output, input_package, justification_file=DEFAULT_JUSTIF
             "Split the SM from the supplied fresh combined PDF and set title, authors and S page labels.",
             "Retained the three confirmed authors, their ORCIDs, and one shared affiliation.",
             "Packed every selected canonical reproduction source with deterministic ZIP metadata.",
-            "Replaced the archived cover-letter template with the user's latest draft, adapted to three authors and the canonical affiliation.",
-            "Added a rendered two-page cover letter and source-verified professional contacts for five suggested referees and four alternates.",
+            "Replaced the archived cover-letter template with the user's latest supplied text, retaining the canonical three-author affiliation header.",
+            "Added a standalone rendered cover letter; source-verified professional contacts for five suggested referees and four alternates remain in separate files.",
             "Retained the user's submission-history and exclusivity declarations and explicit all-author competing-interest/referee-conflict confirmation.",
             "Used the user's exact replacement justification without a heading; retained the original ZIP text in input provenance.",
             "Prepared plain Unicode abstract text with a checked 600-character maximum.",
@@ -494,7 +507,7 @@ def main():
     parser.add_argument("--combined-pdf", type=Path, required=True,
                         help=f"Freshly compiled {sum(EXPECTED_PAGES)}-page combined Letter and Supplemental Material")
     parser.add_argument("--output-dir", type=Path,
-                        default=REPO / "paper/submission/prl-2026-10-18-v7")
+                        default=REPO / ("paper/submission/prl-" + PACKAGE_REVISION))
     parser.add_argument("--input-package", type=Path,
                         default=REPO / "paper/versions/2026-10-18-prl-v5/submission-original.zip")
     parser.add_argument("--justification-file", type=Path, default=DEFAULT_JUSTIFICATION,
