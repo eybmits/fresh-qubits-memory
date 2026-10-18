@@ -1,0 +1,30 @@
+{
+  "received_on": "2026-10-18",
+  "inputs": [
+    {
+      "original_name": "memory_limits_prl_submission.zip",
+      "archived_path": "paper/versions/2026-10-18-prl-v3/submission-original.zip",
+      "bytes": 2660565,
+      "sha256": "9331df41e75132931c46149968ead2a0aa6b3addc141560d58a046360b53fcba"
+    },
+    {
+      "original_name": "memory_limits_prl_letter.pdf",
+      "archived_path": "paper/versions/2026-10-18-prl-v3/letter-supplied.pdf",
+      "bytes": 517550,
+      "sha256": "e16e7b3f03432c98f068af566bbec4b8b588d60a2ef4960fa5faf53cff60ed9b"
+    },
+    {
+      "original_name": "memory_limits_prl_SM.pdf",
+      "archived_path": "paper/versions/2026-10-18-prl-v3/supplement-supplied.pdf",
+      "bytes": 701575,
+      "sha256": "4705dda439da4af08f387415df99a8cc7c88de5614c5498024d524ecfc8dfeb3"
+    },
+    {
+      "original_name": "submission_notes.txt",
+      "archived_path": "paper/versions/2026-10-18-prl-v3/submission-notes-supplied.txt",
+      "bytes": 5052,
+      "sha256": "8e9a68ea55e3555994a3d3d4aaeac76c35a55e2f8b23d63458a36051d2638828"
+    }
+  ],
+  "standalone_inputs_equal_zip": true
+}

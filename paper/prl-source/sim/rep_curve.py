@@ -30,4 +30,6 @@ pr = float(sum(Fraction(comb(r, j)) * Fraction(1, 20) ** j * Fraction(19, 20) **
 lam = 1 - 2 * pr
 json.dump(dict(D=D, readout=[q * lam ** l for l in range(700)], lam=lam), open("rep_curve.json", "w"))
 W = 1 + max(i for i, v in enumerate(D) if v > 1e-2)
-print("W(0.01) full state:", W, " readout bound:", np.log(q / 1e-2) / -np.log(lam))
+W1 = 1 + max(l for l in range(700) if q * lam ** l > 1e-2)          # same convention, single-qubit readout
+print("W(0.01) full state:", W, " single-qubit readout:", W1, " (Eq. S18 without rounding:",
+      np.log(q / 1e-2) / -np.log(lam), ")")

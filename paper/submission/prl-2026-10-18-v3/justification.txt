@@ -1,0 +1,3 @@
+Justification (98 words; paste into the PRL submission form)
+
+We prove a fundamental resource limitation for an entire class of open quantum systems. With k fresh qubits per time step, no noisy quantum dynamics retains information for longer than exp[O(k)] time steps, however large it is: a universal no-go result that covers every architecture within a well-defined noise model, including ones not yet conceived, and whose exponential scaling an explicit reservoir attains. The result identifies entropy removal, not size, as the resource that limits memory, and it reaches beyond quantum reservoir computing to the stabilization of information in noisy quantum systems in general, including measurement-free error correction.

@@ -1,0 +1,11 @@
+abstract characters (plain text approx.): 594
+text (body, theorem)      2398
+captions                   260 [32, 58, 33, 137]
+data availability           25
+displayed math   7 rows    112
+figure fig1.pdf   3.40 x 2.38 in, aspect 1.429 -> 125 words
+figure fig2.pdf   7.05 x 2.45 in, aspect 2.878 -> 249 words
+figure fig3.pdf   7.05 x 1.85 in, aspect 3.811 -> 197 words
+figure fig4.pdf   7.05 x 2.05 in, aspect 3.439 -> 214 words
+figures                    785
+TOTAL                     3580   (limit 3750)

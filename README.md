@@ -4,9 +4,11 @@ Scientific project for **“The Fundamental Memory Ceiling of Noisy Quantum Rese
 
 The manuscript studies how the number of freshly prepared input qubits per cycle limits the memory of a noisy quantum reservoir. This repository preserves the supplied manuscript versions, provides editable LaTeX sources and figures, records a research and validation plan, and includes an independent numerical reproduction of the majority-refresh example.
 
-**Current manuscript (18 October 2026, PRL revision 2):** [PDF](paper/memory_limits_prl_2026-10-18.pdf) · [LaTeX source](paper/prl-source/memory_limits_prl.tex) · [version history and build](paper/README.md) · [revision record](docs/manuscript-2026-10-18-prl.md) · [arXiv source package](paper/submission/arxiv-2026-10-18/arxiv-source.zip). This edition combines the QAR-Lab and chair affiliations into one block, printing their shared address once per byline, and adds the GitHub link to reference [28] and the code/data information. The three authors and ORCIDs are unchanged. It retains the supplied PRL Letter, Supplemental Material, scientific results, and datasets imported on 17 October. Earlier manuscripts and independent experiments remain available.
+**Current manuscript (18 October 2026, PRL revision 3):** [combined PDF](paper/memory_limits_prl_2026-10-18-v3.pdf) · [Letter PDF](paper/submission/prl-2026-10-18-v3/memory_limits_prl_letter.pdf) · [Supplemental Material](paper/submission/prl-2026-10-18-v3/2_supplemental_material/memory_limits_prl_SM.pdf) · [LaTeX source](paper/prl-source/memory_limits_prl.tex) · [revision record](docs/manuscript-2026-10-18-prl-v3.md). The new submission export supplies proof and precision corrections, updated references and figures, and a 309-step single-qubit depth. This edition retains the three confirmed authors, ORCIDs, one shared affiliation, and the GitHub link in reference [28]. It also clarifies the finite-history memory estimator, independently sampled unitaries in comparisons across `k`, and continuous versus integer threshold crossings. Earlier manuscripts and experiments remain preserved.
 
-**Access and submission status:** the GitHub repository remains private at the user's request; the user will make it public separately. A working link for authorized collaborators does not establish public code access. The arXiv ZIP includes reproducibility code and data, but nothing has been uploaded or submitted and no submission license has been selected. Local readiness depends on the new build/package checks recorded with this revision; no arXiv identifier or journal acceptance is claimed.
+**Prepared packages:** [PRL handoff and instructions](paper/submission/prl-2026-10-18-v3/README.md) · [arXiv source package](paper/submission/arxiv-2026-10-18-v3/arxiv-source.zip) · [source snapshot](paper/versions/2026-10-18-prl-v3/source-final-prl-v3.zip). The PRL package separates the six-page Letter from the sixteen-page supplement and includes the full code/data archive. The final Letter has a local estimate of **3580 word equivalents** against PRL's 3750 limit; this is not an APS eligibility decision.
+
+**Access and submission status:** the GitHub repository remains private at the user's request; the user will make it public separately. The code/data archives are included in the prepared packages. Nothing has been uploaded or submitted, no submission license has been selected, and no arXiv identifier or journal acceptance is claimed. Portal preview, author attestations, and publication choices remain part of the actual submission.
 
 ## Scientific scope
 
@@ -21,7 +23,7 @@ $$
 
 Table I of the original 15 October manuscript reports the largest integer $T_r$ with $\lambda_r^{T_r}\geq 1/2$; the current PRL revision gives these lifetimes in the Supplemental Material, section “The error-correcting reservoir,” and Figure S4. At $q=0.9$, $r=15$ ($k=17$) gives **1,894,286 hold cycles**. These are ideal-unitary/noise cycles, not elementary gate cycles.
 
-The exponential upper and lower bounds match in order, not in constants. A long memory does not establish classical computational hardness: the example above has a one-scalar recurrence. The current manuscript focuses on memory limits and does not contain the earlier classical-learning theorem. See the [current version note](docs/manuscript-2026-10-18-prl.md) and [17 October scientific import record](docs/manuscript-2026-10-17-prl.md); the [original paper summary](docs/paper-summary.md) remains explicitly tied to the 15 October baseline.
+The exponential upper and lower bounds match in order, not in constants. A long memory does not establish classical computational hardness: the example above has a one-scalar recurrence. The current manuscript focuses on memory limits and does not contain the earlier classical-learning theorem. See the [current version note](docs/manuscript-2026-10-18-prl-v3.md) and [17 October scientific import record](docs/manuscript-2026-10-17-prl.md); the [original paper summary](docs/paper-summary.md) remains explicitly tied to the 15 October baseline.
 
 ## Supplied numerical study in the PRL revision
 
@@ -29,7 +31,7 @@ The new [simulator and datasets](paper/prl-source/sim/) cover Ising and Haar res
 
 During the 17 October import, the supplied diagnostic scripts completed successfully. A replay of all six realizations for each of two small configurations (`n=3`, `k=1`, `q=0.9`, Ising and Haar) reproduced the saved depths and washout step counts exactly; forgetting curves agreed within `8.4e-14`. These are historical checks of the unchanged scientific code and data, not a new campaign on 18 October. The full large campaign was not rerun. No forecasting readout was trained; Figure 2 illustrates a temporal task.
 
-Three qualifications matter when reading these results: the finite set of history pairs gives an estimator/lower witness of the supremum defining memory depth; the unitary seed depends on `k`, so changing `k` compares different sampled unitaries; and Figure 4(b) uses continuous threshold crossings while the depth definition is integer-valued (about 308.08 versus 309 steps at `k=5`). These observations are recorded without rewriting the supplied scientific content. See the [revision record](docs/manuscript-2026-10-17-prl.md).
+Revision 3 now states the three interpretation qualifications in the manuscript: finite history pairs estimate rather than exhaust the supremum defining memory depth; unitaries are sampled independently across `k`; and Figure 4(b) plots continuous threshold crossings, with integer depths rounded up. The updated single-qubit depth is **309**, while the full-state depth is **316** at `k=5`, `q=0.9`, and `ε=0.01`. An isolated replay reproduced the full-state curve exactly and the single-qubit curve within `1.11e-16`; all 13 supplied JSON datasets remain unchanged. The 22 repository tests pass. These bounded checks and the sampled proof diagnostics do not certify the universal theorem. See the [revision 3 record](docs/manuscript-2026-10-18-prl-v3.md).
 
 ## Quick start
 
@@ -70,7 +72,7 @@ Keep new runs separate from the archived evidence. `python scripts/build_validat
 | [paper/](paper/) | Current PDF, editable source, archived inputs, provenance and draft citations |
 | [paper/prl-source/](paper/prl-source/) | Current Letter, Supplemental Material, figures, simulator and supplied data |
 | [paper/source/](paper/source/) | Preserved revision 5 source used by historical experiments |
-| [docs/manuscript-2026-10-18-prl.md](docs/manuscript-2026-10-18-prl.md) | Current metadata/link corrections and readiness record |
+| [docs/manuscript-2026-10-18-prl-v3.md](docs/manuscript-2026-10-18-prl-v3.md) | Current submission export, precision corrections and readiness record |
 | [docs/manuscript-2026-10-17-prl.md](docs/manuscript-2026-10-17-prl.md) | Supplied scientific revision and historical validation record |
 | [docs/paper-summary.md](docs/paper-summary.md) | Source-grounded model, claims and limitations |
 | [docs/research-plan.md](docs/research-plan.md) | Prioritized scientific work and acceptance criteria |
@@ -85,6 +87,6 @@ Start with the [research plan](docs/research-plan.md), whose equation anchors an
 
 ## Citation and reuse
 
-[CITATION.cff](CITATION.cff) describes this research repository; [paper/manuscript.bib](paper/manuscript.bib) records the supplied manuscript without inventing a DOI or journal acceptance. Each supplied input is preserved byte-for-byte; [current provenance](paper/versions/2026-10-18-prl-v2/provenance.json) records this edition's changes and artifact hashes. The [canonical author record](paper/author_information.json) supplies the retained names, ORCIDs, and combined affiliation.
+[CITATION.cff](CITATION.cff) describes this research repository; [paper/manuscript.bib](paper/manuscript.bib) records the supplied manuscript without inventing a DOI or journal acceptance. Each supplied input is preserved byte-for-byte; [current provenance](paper/versions/2026-10-18-prl-v3/provenance.json) records this edition's changes and artifact hashes. The [canonical author record](paper/author_information.json) supplies the retained names, ORCIDs, and combined affiliation.
 
 No software license has been selected. An arXiv submission license is a separate choice and is not assigned by this repository metadata.

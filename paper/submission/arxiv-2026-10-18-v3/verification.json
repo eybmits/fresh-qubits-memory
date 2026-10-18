@@ -1,0 +1,142 @@
+{
+  "abstract_rendered_characters": 590,
+  "all_three_author_names_and_orcids_retained": true,
+  "archive": {
+    "bytes": 1214009,
+    "path": "paper/submission/arxiv-2026-10-18-v3/arxiv-source.zip",
+    "sha256": "ae700291bef40429547486528f8f1683a21761fd0064315a34c694d5f3712331"
+  },
+  "archive_entry_count": 54,
+  "bibliography_regenerated_byte_identical": true,
+  "checked_on": "2026-10-18",
+  "cited_bibliography_entries": 38,
+  "code_repository_url": "https://github.com/eybmits/fresh-qubits-memory",
+  "code_repository_visibility": "private",
+  "compiler": "pdfTeX1.40.27 (TeX Live2025)",
+  "deterministic_zip_regeneration": true,
+  "fonts_all_embedded": true,
+  "fresh_build_pdf_text_identical": true,
+  "fresh_extraction_build": true,
+  "github_pdf_link_pages": [
+    6,
+    22
+  ],
+  "letter_and_references_pages": 6,
+  "license_selected": false,
+  "local_aps_word_estimate": 3580,
+  "overfull_boxes": 0,
+  "pages": 22,
+  "pdf": {
+    "bytes": 897938,
+    "path": "paper/memory_limits_prl_2026-10-18-v3.pdf",
+    "sha256": "5bb0c681f05e2ed4543264f87c1dabd3589ddbcbf61b00ca3119dea44d25607d"
+  },
+  "pending_for_submission": [
+    "Author review of administrative drafts and portal attestations",
+    "User makes GitHub public separately for access through repository URL; code/data already accompany packages",
+    "User-selected arXiv license",
+    "Portal account/endorsement as applicable and generated PDF preview",
+    "Explicit final submission"
+  ],
+  "prl_word_limit": 3750,
+  "repository_tests": {
+    "command": "PYTHONPATH=src OPENBLAS_NUM_THREADS=1 python3 -m unittest discover -s tests -v",
+    "passed": 22
+  },
+  "scientific_checks": {
+    "full_ising_haar_campaign_rerun": false,
+    "rep_curve": {
+      "byte_equal": false,
+      "full_state_depth": 316,
+      "json_equal": false,
+      "lambda_difference": 0.0,
+      "max_D_difference": 0.0,
+      "max_readout_difference": 1.1102230246251565e-16,
+      "single_readout_depth": 309
+    },
+    "scope": "Finite numerical diagnostics and affected-curve replay; not universal proof certification.",
+    "unchanged_json_datasets": 13,
+    "verify_constants_exit_code": 0,
+    "verify_simple_proof_exit_code": 0
+  },
+  "shell_escape": false,
+  "source_file_count": 51,
+  "source_reconstruction_byte_identical": true,
+  "status": "local_preflight_passed_not_uploaded",
+  "street_address_occurrences": {
+    "main_author_block": 1,
+    "supplement_author_block": 1
+  },
+  "submitted": false,
+  "supplement_code_reference_number": 28,
+  "supplement_pages": 16,
+  "unresolved_references_or_citations": 0,
+  "uploaded": false,
+  "visibility_changed": false,
+  "visibility_instruction": "User will make the repository public separately.",
+  "visual_review": {
+    "all_16_sm_pages_pixel_identical_to_combined": true,
+    "byline_three_authors": true,
+    "code_url": "https://github.com/eybmits/fresh-qubits-memory",
+    "code_url_in_reference_28": true,
+    "code_url_in_sm_code_section": true,
+    "combined_detail_pages": [
+      1,
+      4,
+      6,
+      7,
+      22
+    ],
+    "combined_pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "date": "2026-10-18",
+    "font_objects_checked": 136,
+    "fonts_embedded": true,
+    "letter_page_6_difference": "Normal REVTeX end-of-document balancing into two columns; text is identical and both renderings are legible.",
+    "letter_pages": 6,
+    "letter_pages_1_to_5_pixel_identical_to_combined": true,
+    "limitations": [
+      "No authenticated live access to ORCID or GitHub was tested; exact PDF URI targets were inspected.",
+      "No independent publisher acceptance or all-proof certification is implied."
+    ],
+    "one_shared_address_per_title_block": true,
+    "orcid_targets": [
+      "https://orcid.org/0009-0007-3575-1006",
+      "https://orcid.org/0000-0001-5727-9151",
+      "https://orcid.org/0000-0001-6284-9286"
+    ],
+    "render_dpi_all_pages": 90,
+    "render_dpi_details": 160,
+    "reviewer_scope": "Independent render and structural review, not scientific or publisher acceptance certification",
+    "sha256": {
+      "combined": "5bb0c681f05e2ed4543264f87c1dabd3589ddbcbf61b00ca3119dea44d25607d",
+      "letter": "46a47f38e19904105d79b0c13060e4ec3da2a5b186fc666378ad07520fe093a4",
+      "sm": "45144cf2a1801653ed93fdaf564e26a490e7c9fb277ac8e26bcdd393c79befdb"
+    },
+    "sm_pages": 16,
+    "status": "pass",
+    "visual_findings": []
+  }
+}

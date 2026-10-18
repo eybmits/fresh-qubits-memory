@@ -320,7 +320,7 @@ def build(source, output, author_path):
 
 
 def instructions():
-    return """# arXiv upload preparation — 18 October 2026
+    return """# arXiv upload preparation — 18 October 2026, revision 3
 
 This directory is a local preparation package. Nothing has been uploaded or
 submitted; no license or submission agreement has been accepted.
@@ -355,12 +355,13 @@ the repository public. Code/data are also included in this arXiv source ZIP.
 
 ## Author review
 
-The [import review](../../../docs/manuscript-2026-10-18-prl.md) records three
-scientific presentation qualifications: finite history sampling estimates the
-formal supremum; changing k also changes sampled unitaries; and Figure 4 mixes
-continuous crossings with integer depths (about 308.08 versus 309). The supplied
-scientific text and figures were preserved. These are separate from compilation
-and packaging checks.
+The [revision review](../../../docs/manuscript-2026-10-18-prl-v3.md) records the
+new source import and the applied clarifications: numerical depths are sampled
+estimates, k comparisons use independently sampled unitary ensembles, and the
+continuous crossings in Figure 4 differ from integer depths. The revised
+manuscript now states these distinctions. Finite checks and packaging do not
+certify the universal theorem. The author's supplied verification statements
+remain the author's responsibility.
 
 ## What is in the ZIP
 
@@ -430,7 +431,7 @@ before final submission.
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source-dir", type=Path, default=REPO / "paper/prl-source")
-    parser.add_argument("--output-dir", type=Path, default=REPO / "paper/submission/arxiv-2026-10-18")
+    parser.add_argument("--output-dir", type=Path, default=REPO / "paper/submission/arxiv-2026-10-18-v3")
     parser.add_argument("--author-file", type=Path, default=REPO / "paper/author_information.json")
     args = parser.parse_args()
     build(args.source_dir.resolve(), args.output_dir.resolve(), args.author_file.resolve())

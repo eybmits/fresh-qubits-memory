@@ -1,6 +1,6 @@
 # Manuscript summary
 
-**Historical scope:** this page describes the immutable 15 October 2026 manuscript. For the current 18 October PRL edition, see [the current version note](manuscript-2026-10-18-prl.md); its state-based memory definition and supplied scientific changes are documented in the [17 October import record](manuscript-2026-10-17-prl.md). Equation/table anchors and the classical-learning result below belong to the earlier version.
+**Historical scope:** this page describes the immutable 15 October 2026 manuscript. For the current 18 October PRL revision 3, see [the current version note](manuscript-2026-10-18-prl-v3.md); its state-based memory definition and supplied scientific changes are documented in the [17 October import record](manuscript-2026-10-17-prl.md). Equation/table anchors and the classical-learning result below belong to the earlier version.
 
 ## Source and evidence status
 

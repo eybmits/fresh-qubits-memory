@@ -1,0 +1,67 @@
+PRL-Submission: The Fundamental Memory Ceiling of Noisy Quantum Reservoirs (Markus Baumann)
+==========================================================================================
+
+1. Was hochladen
+----------------
+Manuskript (LaTeX):            1_manuscript/
+                               memory_limits_prl.tex (nur der Letter), memory_limits_prl.bbl, refs.bib, fig1-4.pdf
+                               (kompiliert ohne Fehler zu 6 Seiten; Kontroll-PDF: memory_limits_prl_letter.pdf)
+Supplemental Material:         2_supplemental_material/
+                               memory_limits_prl_SM.pdf (S1-S16), memory_limits_prl_source.zip (Code + Daten),
+                               README.TXT (von APS fuer jede SM-Ablage verlangt)
+Cover letter:                  cover_letter.txt
+Justification (Formularfeld):  justification.txt (98 Woerter)
+
+2. Rahmenbedingungen (PRL / APS) - Stand der Pruefung
+-----------------------------------------------------
+Laenge <= 3750 Woerter           3548 nach APS-Laengenrechner (Text 2395, Captions 231, Data availability 25,
+                                 Gleichungen 112, Figures 785); Referenzen, Abstract, Acknowledgments zaehlen nicht.
+Abstract <= 600 Zeichen          590 Zeichen inkl. Leerzeichen, ohne Zitate.
+Figures                          8 pt Schrift (Grossbuchstaben ~2 mm), Linien >= 0.5 pt, Vektor-PDF, in Reihenfolge
+                                 der ersten Erwaehnung nummeriert, jede Figure auf eigener Seite.
+Abkuerzungen                     QRC definiert; "QEC" in Fig. 1 ausgeschrieben ("error correction").
+Referenzen                       alle zitierten Arbeiten in der Liste, alle Autoren genannt; Preprints nur, wo es
+                                 keine Zeitschriftenversion gibt (geprueft Okt. 2026); Mele et al. jetzt
+                                 Nat. Phys. 22, 751 (2026); Autorenliste Yasuda et al. auf arXiv-v2 aktualisiert.
+Supplemental Material            eigene Datei; alle SM-Zitate stehen in der Referenzliste des Letters; die
+                                 SM-Referenz [28] nennt "which includes Refs. [36-38]" (die nur im SM zitierten
+                                 Arbeiten), wie von APS vorgeschrieben.
+KI-Offenlegung (APS-Policy)      Acknowledgments: Werkzeug + Version, wofuer, wie geprueft; Methodenteil (SM Sec. IX):
+                                 Code mit KI-Unterstuetzung geschrieben und vom Autor geprueft.
+Data availability statement      Pflicht; wird im Formular aus Antworten erzeugt (siehe Punkt 3).
+Byline / E-Mail                  Affiliation und Korrespondenz-E-Mail als Endnote vorhanden.
+
+3. Im Einreichungsformular zu erledigen
+---------------------------------------
+a) Data availability: APS raet, Daten nicht nur im SM, sondern in einem Repositorium abzulegen.
+   Empfohlen: memory_limits_prl_source.zip bei Zenodo hochladen -> DOI. Dann im Formular die Vorlage
+   "The data that support the findings of this article are openly available [N]." waehlen und im Manuskript
+   (1) in refs.bib ergaenzen:
+       @misc{Baumann2026data,
+         author    = {Baumann, Markus},
+         title     = {Code and data for ``The Fundamental Memory Ceiling of Noisy Quantum Reservoirs''},
+         publisher = {Zenodo},
+         year      = {2026},
+         doi       = {10.5281/zenodo.XXXXXXX}
+       }
+   (2) den Satz zu Data availability ersetzen durch:
+       \runin{Data availability.}The data that support the findings of this article are openly available~\cite{Baumann2026data}.
+   (Ohne Zenodo bleibt der jetzige Satz gueltig: Code und Daten liegen dem SM bei.)
+b) KI: im Formular bestaetigen, dass das Werkzeug keine Rechte an den Inhalten beansprucht und keine
+   Nutzungsbeschraenkungen auferlegt. Die Versionsangabe "Claude Opus 5.5" pruefen: Falls in frueheren Sitzungen
+   andere Versionen benutzt wurden, alle nennen.
+c) Farbe: "color online only" waehlen (online kostenlos; Farbdruck kostet).
+d) PhySH (Vorschlaege): Quantum information processing; Quantum computation; Reservoir computing;
+   Open quantum systems; Quantum error correction; Quantum noise / decoherence; Quantum memories.
+   PRL-Sektion: Quantum Information, Science, and Technology.
+e) Finanzierung: falls vorhanden, in den Acknowledgments ergaenzen (APS: keine Titel, Daten, Widmungen).
+f) ORCID im System verknuepfen; Korrespondenzautor angeben.
+g) Gutachter (optional): Kandidaten aus dem Feld sind z. B. die Autoren der Refs. zu Quanten-Reservoir-
+   Computing mit Rauschen und Gedaechtnis (Zambrini/Giorgi, Nakajima, Fujii) und zu verrauschten Quanten-
+   schaltungen (Stilck Franca, Eisert, Fawzi) - nur nach eigener Pruefung auf Interessenkonflikte eintragen.
+h) Falls der Text bereits auf arXiv steht, die arXiv-Nummer im Formular angeben.
+
+4. Optionale Stilpunkte (kein Ablehnungsgrund)
+----------------------------------------------
+- Der APS-Leitfaden nennt Panel-Labels "(a), (b)"; die Figures nutzen fette "a, b" (in PRL ueblich).
+- Der Leitfaden empfiehlt mindestens 2 mm Schrifthoehe; Hoch- und Tiefstellungen in Formeln sind kleiner (ueblich).

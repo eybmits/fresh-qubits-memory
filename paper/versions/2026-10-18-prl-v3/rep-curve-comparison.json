@@ -1,0 +1,9 @@
+{
+  "byte_equal": false,
+  "json_equal": false,
+  "max_D_difference": 0.0,
+  "max_readout_difference": 1.1102230246251565e-16,
+  "lambda_difference": 0.0,
+  "full_state_depth": 316,
+  "single_readout_depth": 309
+}

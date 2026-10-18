@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-18",
+  "status": "pass",
+  "reviewer_scope": "Independent render and structural review, not scientific or publisher acceptance certification",
+  "render_dpi_all_pages": 90,
+  "render_dpi_details": 160,
+  "combined_pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "combined_detail_pages": [
+    1,
+    4,
+    6,
+    7,
+    22
+  ],
+  "letter_pages": 6,
+  "sm_pages": 16,
+  "visual_findings": [],
+  "byline_three_authors": true,
+  "one_shared_address_per_title_block": true,
+  "orcid_targets": [
+    "https://orcid.org/0009-0007-3575-1006",
+    "https://orcid.org/0000-0001-5727-9151",
+    "https://orcid.org/0000-0001-6284-9286"
+  ],
+  "code_url": "https://github.com/eybmits/fresh-qubits-memory",
+  "code_url_in_reference_28": true,
+  "code_url_in_sm_code_section": true,
+  "fonts_embedded": true,
+  "font_objects_checked": 136,
+  "all_16_sm_pages_pixel_identical_to_combined": true,
+  "letter_pages_1_to_5_pixel_identical_to_combined": true,
+  "letter_page_6_difference": "Normal REVTeX end-of-document balancing into two columns; text is identical and both renderings are legible.",
+  "sha256": {
+    "combined": "5bb0c681f05e2ed4543264f87c1dabd3589ddbcbf61b00ca3119dea44d25607d",
+    "letter": "46a47f38e19904105d79b0c13060e4ec3da2a5b186fc666378ad07520fe093a4",
+    "sm": "45144cf2a1801653ed93fdaf564e26a490e7c9fb277ac8e26bcdd393c79befdb"
+  },
+  "limitations": [
+    "No authenticated live access to ORCID or GitHub was tested; exact PDF URI targets were inspected.",
+    "No independent publisher acceptance or all-proof certification is implied."
+  ]
+}

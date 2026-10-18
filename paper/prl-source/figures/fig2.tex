@@ -1,21 +1,21 @@
 % Fig. 2: panel a (matplotlib PDF, included at 100%) and panel b, the reservoir, drawn here.
-% Width 7.05 in = 17.907 cm, height 2.375 in = 6.033 cm. Panel a has square axes and is 1.68 in = 4.267 cm wide; panel b
-% is drawn at 1.078 times its original size (coordinates only: text, line widths and symbols keep their size), so that
+% Width 7.05 in = 17.907 cm, height 2.45 in = 6.223 cm. Panel a has square axes and is 1.54 in = 3.912 cm wide; panel b
+% is drawn at 1.105 times its original size (coordinates only: text, line widths and symbols keep their size), so that
 % the reservoir carries the figure. Both titles sit 10.4 bp = 0.367 cm below the top, as in the matplotlib panels. The
 % bottom row holds the formula of the task (under panel a) and the three legend boxes of panel b.
 \documentclass[border=0pt]{standalone}
 \input{tikzstyle}
 \begin{document}
 \begin{tikzpicture}[x=1cm,y=1cm]
-\useasboundingbox (0,0) rectangle (17.907,6.033);
-\node[anchor=north west,inner sep=0pt,outer sep=0pt] at (0,6.033) {\includegraphics{fig2a.pdf}};
+\useasboundingbox (0,0) rectangle (17.907,6.223);
+\node[anchor=north west,inner sep=0pt,outer sep=0pt] at (0,6.223) {\includegraphics{fig2a.pdf}};
 % formula of the task, in a box of the legend style, under panel a; the gap to the first legend box of panel b
 % (0.18 cm) equals the gaps between the legend boxes
-\path[legbox] (0.30,0.06) rectangle (4.25,0.901);
-\node[align=center,inner sep=0pt] at (2.275,0.4805) {target of the forecast:\\[1pt]$y_{t+1}=0.7\,u_t+0.3\,u_{t-100}$};
+\path[legbox] (0.12,0.06) rectangle (3.872,0.922);
+\node[align=center,inner sep=0pt] at (1.996,0.491) {target of the forecast:\\[1pt]$y_{t+1}=0.7\,u_t+0.3\,u_{t-100}$};
 % =================================================================================== panel b
-\def\XB{4.427}\def\SB{1.078}
-\node[ttl] at (\XB,5.666) {\textbf{b}\enspace Quantum reservoir computer};
+\def\XB{4.072}\def\SB{1.105}
+\node[ttl] at (\XB,5.856) {\textbf{b}\enspace Quantum reservoir computer};
 % legend bottom (y = 0.06) stays 0.06 cm above the bottom edge: shift y by 0.06 (1 - s)
 \begin{scope}[shift={(\XB,{0.06*(1-\SB)})},scale=\SB]
 % ------------------------------------------------------------------ geometry

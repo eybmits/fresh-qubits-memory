@@ -175,7 +175,8 @@
 \bibitem [{\citenamefont {Yasuda}\ \emph {et~al.}(2023)\citenamefont {Yasuda},
   \citenamefont {Suzuki}, \citenamefont {Kubota}, \citenamefont {Nakajima},
   \citenamefont {Gao}, \citenamefont {Zhang}, \citenamefont {Shimono},
-  \citenamefont {Nurdin},\ and\ \citenamefont {Yamamoto}}]{Yasuda2023}%
+  \citenamefont {Matsuo}, \citenamefont {Ananthanarayanan}, \citenamefont
+  {Nurdin},\ and\ \citenamefont {Yamamoto}}]{Yasuda2023}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
   {Yasuda}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Suzuki}},
@@ -183,8 +184,10 @@
   {author} {\bibfnamefont {K.}~\bibnamefont {Nakajima}}, \bibinfo {author}
   {\bibfnamefont {Q.}~\bibnamefont {Gao}}, \bibinfo {author} {\bibfnamefont
   {W.}~\bibnamefont {Zhang}}, \bibinfo {author} {\bibfnamefont
-  {S.}~\bibnamefont {Shimono}}, \bibinfo {author} {\bibfnamefont {H.~I.}\
-  \bibnamefont {Nurdin}},\ and\ \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {Shimono}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {Matsuo}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {Ananthanarayanan}}, \bibinfo {author} {\bibfnamefont
+  {H.~I.}\ \bibnamefont {Nurdin}},\ and\ \bibinfo {author} {\bibfnamefont
   {N.}~\bibnamefont {Yamamoto}},\ }\href@noop {} {\bibinfo {title} {Quantum
   reservoir computing with repeated measurements on superconducting devices}}
   (\bibinfo {year} {2023}),\ \Eprint {https://arxiv.org/abs/2310.06706}
@@ -362,10 +365,10 @@
   {\bibfnamefont {J.}~\bibnamefont {Eisert}}, \bibinfo {author} {\bibfnamefont
   {D.}~\bibnamefont {Stilck~Fran\c{c}a}},\ and\ \bibinfo {author}
   {\bibfnamefont {Y.}~\bibnamefont {Quek}},\ }\bibfield  {title} {\bibinfo
-  {title} {Noise-induced shallow circuits and absence of barren plateaus},\
-  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Nat. Phys.}\ }
-  (\bibinfo {year} {2026})},\ \bibinfo {note} {in press},\ \Eprint
-  {https://arxiv.org/abs/2403.13927} {arXiv:2403.13927} \BibitemShut {NoStop}%
+  {title} {Noise-induced shallow circuits and the absence of barren plateaus},\
+  }\href {https://doi.org/10.1038/s41567-026-03245-z} {\bibfield  {journal}
+  {\bibinfo  {journal} {Nat. Phys.}\ }\textbf {\bibinfo {volume} {22}},\
+  \bibinfo {pages} {751} (\bibinfo {year} {2026})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Heu{\ss}en}\ \emph {et~al.}(2024)\citenamefont
   {Heu{\ss}en}, \citenamefont {Locher},\ and\ \citenamefont
   {M\"uller}}]{Heussen2024}%
@@ -394,11 +397,12 @@
   \bibinfo {pages} {68:1--68:20}\BibitemShut {NoStop}%
 \bibitem [{SM()}]{SM}%
   \BibitemOpen
-  \href@noop {} {}\bibinfo {note} {See the Supplemental Material included in
-  this manuscript and the accompanying source archive for the complete proofs,
-  the exact analysis of the error-correcting reservoir, the entropy budget
-  beyond depolarizing noise, the details of the simulations, and the Python
-  code that reproduces all numerical values and data figures. Code repository:
+  \href@noop {} {}\bibinfo {note} {See the Supplemental Material accompanying
+  this manuscript for the complete proofs, the exact analysis of the
+  error-correcting reservoir, the entropy budget beyond depolarizing noise, the
+  details of the simulations, and the Python code that reproduces all numerical
+  values and data figures, which includes
+  Refs.~\cite{vonNeumann1956,Nelson2026,Xiong2025}. Code repository:
   \url{https://github.com/eybmits/fresh-qubits-memory}.}\BibitemShut {Stop}%
 \bibitem [{\citenamefont {Jaeger}(2002)}]{Jaeger2002}%
   \BibitemOpen

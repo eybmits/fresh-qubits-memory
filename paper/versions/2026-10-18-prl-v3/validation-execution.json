@@ -1,0 +1,32 @@
+[
+  {
+    "name": "rep_curve",
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "rep_curve.py"
+    ],
+    "cwd": "/Users/superposition/Documents/Codex/2026-10-15/https-github-com-eybmits-fresh-qubits/work/fresh-qubits-memory/work/prl-v3/audit/rep-curve-run",
+    "returncode": 0,
+    "elapsed_seconds": 10.526480833010282
+  },
+  {
+    "name": "verify_simple_proof",
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "/Users/superposition/Documents/Codex/2026-10-15/https-github-com-eybmits-fresh-qubits/work/fresh-qubits-memory/work/prl-v3/full-source/checks/verify_simple_proof.py"
+    ],
+    "cwd": "/Users/superposition/Documents/Codex/2026-10-15/https-github-com-eybmits-fresh-qubits/work/fresh-qubits-memory/work/prl-v3/audit",
+    "returncode": 0,
+    "elapsed_seconds": 0.24328991601942107
+  },
+  {
+    "name": "verify_constants",
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "/Users/superposition/Documents/Codex/2026-10-15/https-github-com-eybmits-fresh-qubits/work/fresh-qubits-memory/work/prl-v3/full-source/checks/verify_constants.py"
+    ],
+    "cwd": "/Users/superposition/Documents/Codex/2026-10-15/https-github-com-eybmits-fresh-qubits/work/fresh-qubits-memory/work/prl-v3/audit",
+    "returncode": 0,
+    "elapsed_seconds": 2.5030165829812177
+  }
+]
