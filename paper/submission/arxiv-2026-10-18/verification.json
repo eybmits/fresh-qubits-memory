@@ -1,0 +1,56 @@
+{
+  "checked_on": "2026-10-18",
+  "status": "local_preflight_passed_not_uploaded",
+  "archive": {
+    "path": "paper/submission/arxiv-2026-10-18/arxiv-source.zip",
+    "bytes": 1213952,
+    "sha256": "97befcdac881f467726ec575480e03be29005a48df50cacb60b0985e9a5492a9"
+  },
+  "pdf": {
+    "path": "paper/memory_limits_prl_2026-10-18.pdf",
+    "bytes": 896875,
+    "sha256": "888d623e3b4a40b1709181023d5c1599b31851a793c270322616aed7ee700fec"
+  },
+  "pages": 22,
+  "letter_and_references_pages": 6,
+  "supplement_pages": 16,
+  "compiler": "pdfTeX 1.40.27 (TeX Live 2025)",
+  "fresh_extraction_build": true,
+  "shell_escape": false,
+  "bibliography_regenerated_byte_identical": true,
+  "cited_bibliography_entries": 38,
+  "supplement_code_reference_number": 28,
+  "github_pdf_link_pages": [
+    6,
+    22
+  ],
+  "code_repository_url": "https://github.com/eybmits/fresh-qubits-memory",
+  "code_repository_visibility": "private",
+  "visibility_changed": false,
+  "visibility_instruction": "User will make the repository public separately.",
+  "street_address_occurrences": {
+    "main_author_block": 1,
+    "supplement_author_block": 1
+  },
+  "all_three_author_names_and_orcids_retained": true,
+  "source_file_count": 51,
+  "archive_entry_count": 54,
+  "source_reconstruction_byte_identical": true,
+  "deterministic_zip_regeneration": true,
+  "fonts_all_embedded": true,
+  "overfull_boxes": 0,
+  "unresolved_references_or_citations": 0,
+  "scientific_code_data_figures_unchanged": true,
+  "scientific_checks": "No scientific calculations changed; prior finite checks are documented in paper/submission/arxiv-2026-10-17/verification.json and were not rerun for this metadata/link edit.",
+  "visual_review": "All 22 pages rendered; pages 1, 5, 6, 7 and 22 inspected in detail. Shared address appears once per title block; reference [28] and section IX have visible clickable GitHub links. No clipping or overlap found.",
+  "pending_for_submission": [
+    "User makes GitHub repository public for external readers (explicitly deferred by user)",
+    "Author review of the three scientific presentation qualifications",
+    "User-selected arXiv license",
+    "Account/endorsement if required and arXiv-generated preview review",
+    "Explicit final submission"
+  ],
+  "uploaded": false,
+  "submitted": false,
+  "license_selected": false
+}

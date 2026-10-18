@@ -15,8 +15,8 @@ import zipfile
 
 REPO = Path(__file__).resolve().parents[1]
 MAIN = "memory_limits_prl.tex"
-EDITION = "2026-10-17"
-ZIP_DATE = (2026, 10, 17, 0, 0, 0)
+EDITION = "2026-10-18"
+ZIP_DATE = (2026, 10, 18, 0, 0, 0)
 FINAL_FIGURES = [f"fig{i}.pdf" for i in range(1, 5)] + [
     f"figS{i}.pdf" for i in range(1, 8)
 ]
@@ -201,7 +201,7 @@ def author_metadata(source_text, author_path):
     return {
         "authors": authors,
         "affiliations": previous["affiliations"],
-        "metadata_source": "paper/submission/prl-2026-10-16/author_information.json",
+        "metadata_source": "paper/author_information.json",
         "verification": "Names and ORCID order matched to the current manuscript; portal authentication was not performed.",
     }
 
@@ -285,7 +285,10 @@ def build(source, output, author_path):
         "compiler": "pdflatex",
         "texlive_version": 2025,
         "main_file": MAIN,
-        "official_requirements_checked": EDITION,
+        "official_requirements_checked": "2026-10-17",
+        "code_repository_url": "https://github.com/eybmits/fresh-qubits-memory",
+        "code_repository_visibility_at_preparation": "private",
+        "code_repository_access_note": "User will make the repository public separately; no visibility change authorized.",
         "official_sources": OFFICIAL_SOURCES,
     }
     manifest = {
@@ -317,7 +320,7 @@ def build(source, output, author_path):
 
 
 def instructions():
-    return """# arXiv upload preparation — 17 October 2026
+    return """# arXiv upload preparation — 18 October 2026
 
 This directory is a local preparation package. Nothing has been uploaded or
 submitted; no license or submission agreement has been accepted.
@@ -343,9 +346,16 @@ endorsement required by the portal, inspect the arXiv-generated PDF, accept the
 submission terms, and explicitly finalize the submission. These actions have
 not been performed here. License grants for an announced version are irrevocable.
 
+## Code link
+
+Reference [28] and the supplemental code section link to
+https://github.com/eybmits/fresh-qubits-memory. At the user's request, the repository
+remains PRIVATE. Readers can use this GitHub link only after the author makes
+the repository public. Code/data are also included in this arXiv source ZIP.
+
 ## Author review
 
-The [import review](../../../docs/manuscript-2026-10-17-prl.md) records three
+The [import review](../../../docs/manuscript-2026-10-18-prl.md) records three
 scientific presentation qualifications: finite history sampling estimates the
 formal supremum; changing k also changes sampled unitaries; and Figure 4 mixes
 continuous crossings with integer depths (about 308.08 versus 309). The supplied
@@ -420,8 +430,8 @@ before final submission.
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source-dir", type=Path, default=REPO / "paper/prl-source")
-    parser.add_argument("--output-dir", type=Path, default=REPO / "paper/submission/arxiv-2026-10-17")
-    parser.add_argument("--author-file", type=Path, default=REPO / "paper/submission/prl-2026-10-16/author_information.json")
+    parser.add_argument("--output-dir", type=Path, default=REPO / "paper/submission/arxiv-2026-10-18")
+    parser.add_argument("--author-file", type=Path, default=REPO / "paper/author_information.json")
     args = parser.parse_args()
     build(args.source_dir.resolve(), args.output_dir.resolve(), args.author_file.resolve())
 

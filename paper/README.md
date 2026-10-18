@@ -1,31 +1,39 @@
 # Manuscript versions and source
 
-## Current version: 17 October 2026, PRL revision
+## Current version: 18 October 2026, PRL revision 2
 
 **The Fundamental Memory Ceiling of Noisy Quantum Reservoirs**
 
-Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien, each affiliated with QAR-Lab and the Chair of Mobile and Distributed Systems, Department of Computer Science, LMU Munich. The working manuscript retains all three approved ORCID links and the campus.lmu.de contact address.
+Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien share one combined affiliation: Quantum Applications and Research Laboratory (QAR-Lab), Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany. The shared address appears once in each of the Letter and Supplemental Material bylines. All three approved ORCID links and the campus.lmu.de contact address are retained in the [canonical author record](author_information.json).
 
-- [Current 22-page PDF](memory_limits_prl_2026-10-17.pdf)
+- [Current PDF](memory_limits_prl_2026-10-18.pdf)
 - [Editable LaTeX](prl-source/memory_limits_prl.tex), [bibliography](prl-source/refs.bib), [supplied build instructions](prl-source/README.txt)
-- [Received inputs and provenance](versions/2026-10-17-prl-v1/provenance.json)
-- [Revision scope and checks](../docs/manuscript-2026-10-17-prl.md)
-- [Prepared arXiv source ZIP](submission/arxiv-2026-10-17/arxiv-source.zip)
+- [Revision provenance](versions/2026-10-18-prl-v2/provenance.json)
+- [Revision scope and checks](../docs/manuscript-2026-10-18-prl.md)
+- [Prepared arXiv source ZIP](submission/arxiv-2026-10-18/arxiv-source.zip)
 
-Imported from `memory_limits_prl_source (1).zip`, `memory_limits_prl (4).tex`, `memory_limits_prl (16).pdf`, and `fig4.pdf`. The standalone TeX and Figure 4 are byte-identical to their ZIP counterparts. The original inputs are preserved; the active edition integrates the author metadata confirmed by the user. It uses the new supplied title and abstract.
+This edition corrects the repeated affiliation address and adds the GitHub URL to the existing Supplemental Material reference [28] and the code/data information. It keeps all 38 bibliography entries and the existing title, abstract, scientific text, figures, simulation code, and datasets. The date is fixed to October 18, 2026. The [17 October import record](../docs/manuscript-2026-10-17-prl.md) documents the supplied files and earlier scientific changes.
 
-This version is a PRL Letter followed by Supplemental Material in one file, using official APS REVTeX 4.2 with `aps,prl,twocolumn`. It has four main figures and seven supplemental figures. It changes the upper-bound constants, proof exposition, and numerical campaigns. The import record separates these supplied scientific changes from local metadata and build adjustments; finite checks do not certify the theorem.
+The manuscript is a PRL Letter followed by Supplemental Material in one file, using APS REVTeX 4.2 with `aps,prl,twocolumn`. It has four main figures and seven supplemental figures. The rebuilt edition has 22 pages (six Letter/reference pages and sixteen supplement pages); the current [verification record](submission/arxiv-2026-10-18/verification.json) records fresh build and package results. Compilation and finite numerical checks do not certify the theorem.
 
 Build from the repository root (TeX Live with REVTeX 4.2, pdfLaTeX, BibTeX, and orcidlink):
 
 ```bash
 latexmk -cd -pdf -interaction=nonstopmode -halt-on-error \
-  -outdir=../../work/manuscript-build-2026-10-17-prl paper/prl-source/memory_limits_prl.tex
+  -outdir=../../work/manuscript-build-2026-10-18-prl paper/prl-source/memory_limits_prl.tex
 ```
 
-The matching BBL is included and matches BibTeX regeneration byte for byte. Its supplemental-material entry points to the included supplement/source archive, replacing the received publisher-URL placeholder. The integrated PDF has six pages of Letter/references and sixteen pages of Supplemental Material. No shell escape is needed to compile the manuscript from its bundled figure PDFs. Rerunning simulations needs NumPy and SciPy, and the constants checker additionally needs mpmath. Rebuilding figures also needs matplotlib, LaTeX, TikZ, Helvetica, and cm-super; follow [prl-source/README.txt](prl-source/README.txt), then copy the generated figure PDFs to the manuscript directory before compiling.
+A matching BBL is included. Reference [28] identifies the included supplement/source archive and the GitHub repository. No shell escape is needed to compile the manuscript from its bundled figure PDFs. Rerunning simulations needs NumPy and SciPy, and the constants checker additionally needs mpmath. Rebuilding figures also needs matplotlib, LaTeX, TikZ, Helvetica, and cm-super; follow [prl-source/README.txt](prl-source/README.txt), then copy the generated figure PDFs to the manuscript directory before compiling.
 
-The arXiv package is prepared for review and upload. No arXiv identifier, acceptance, or completed submission is implied. Historical [PRL administrative drafts](submission/prl-2026-10-16/README.TXT) and PRA drafts are preserved; their manuscript details and earlier length audit are historical. The supplied PRL counter reports about 3542 word equivalents for this Letter, not a journal eligibility decision.
+The repository remains **private**, as explicitly requested; the user will make it public separately. The URL therefore does not yet provide public code access. The arXiv source ZIP includes code/data as ancillary material, but it has not been uploaded or submitted. License choice, account/category checks, and inspection of the arXiv-generated preview remain pending. The [current note](../docs/manuscript-2026-10-18-prl.md) retains the three scientific interpretation qualifications; technical readiness is distinct from scientific certification.
+
+Historical [PRL administrative drafts](submission/prl-2026-10-16/README.TXT) and PRA drafts are preserved; their manuscript details and earlier length audit are historical. The supplied PRL counter reported about 3542 word equivalents during the 17 October import, not a journal eligibility decision.
+
+## Previous PRL revision 1: 17 October 2026
+
+The [22-page PDF](memory_limits_prl_2026-10-17.pdf), [received inputs and provenance](versions/2026-10-17-prl-v1/provenance.json), [arXiv source ZIP](submission/arxiv-2026-10-17/arxiv-source.zip), and [import/check record](../docs/manuscript-2026-10-17-prl.md) are preserved unchanged. That edition imported `memory_limits_prl_source (1).zip`, `memory_limits_prl (4).tex`, `memory_limits_prl (16).pdf`, and `fig4.pdf`; the standalone TeX and Figure 4 matched their ZIP counterparts byte for byte. It restored the confirmed three authors and ORCIDs, with two affiliation blocks sharing the same street address.
+
+The supplied scientific revision introduced the current title and abstract, improved upper-bound constants, reorganized proofs, and new numerical campaigns. Its import record reports the checks performed on 17 October, including the bounded twelve-realization replay, 22 repository tests, and a fresh-package build. These remain historical evidence for the unchanged scientific sources; they are not relabeled as new checks for revision 2. The archived edition and its package were not uploaded or submitted.
 
 ## Previous revision 5: 16 October 2026
 

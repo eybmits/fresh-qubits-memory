@@ -398,8 +398,8 @@
   this manuscript and the accompanying source archive for the complete proofs,
   the exact analysis of the error-correcting reservoir, the entropy budget
   beyond depolarizing noise, the details of the simulations, and the Python
-  code that reproduces all numerical values and data figures.}\BibitemShut
-  {Stop}%
+  code that reproduces all numerical values and data figures. Code repository:
+  \url{https://github.com/eybmits/fresh-qubits-memory}.}\BibitemShut {Stop}%
 \bibitem [{\citenamefont {Jaeger}(2002)}]{Jaeger2002}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont

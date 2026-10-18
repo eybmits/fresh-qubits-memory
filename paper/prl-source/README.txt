@@ -1,10 +1,13 @@
 The Fundamental Memory Ceiling of Noisy Quantum Reservoirs -- Physical Review Letters version, source files
 Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien, LMU Munich
 
-Repository edition: 17 October 2026. The three-author list, ORCIDs and QAR-Lab/chair
+Repository edition: 18 October 2026. The three-author list, ORCIDs and QAR-Lab/chair
 affiliations were retained at the author's explicit request. The manuscript date is
-fixed to 17 October 2026. The array package uses its 2016 compatibility release,
+fixed to 18 October 2026. The array package uses its 2016 compatibility release,
 as recommended by arXiv for the REVTeX/TeX Live 2025 table incompatibility.
+Both institutional units now share a single address block in the Letter and
+Supplemental Material. Reference [28] and the code section contain the GitHub URL;
+the author will make the currently private repository public separately.
 The scientific text, equations, figures, scripts and datasets are unchanged from
 the supplied PRL source. Both title blocks carry the three authors; the received
 AI-use acknowledgement explicitly names Markus Baumann. The supplement contents

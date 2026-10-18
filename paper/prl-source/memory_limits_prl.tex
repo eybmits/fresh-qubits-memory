@@ -41,12 +41,11 @@
 \email[Contact author: ]{markus.baumann@campus.lmu.de}
 \author{Jonas Stein\,\orcidlink{0000-0001-5727-9151}}
 \author{Claudia Linnhoff-Popien\,\orcidlink{0000-0001-6284-9286}}
-\affiliation{Quantum Applications and Research Laboratory (QAR-Lab), Department of Computer Science,
-Ludwig-Maximilians-Universit\"at M\"unchen, Oettingenstra\ss e 67, 80538 M\"unchen, Germany}
-\affiliation{Chair of Mobile and Distributed Systems, Department of Computer Science,
+\affiliation{Quantum Applications and Research Laboratory (QAR-Lab),
+Chair of Mobile and Distributed Systems, Department of Computer Science,
 Ludwig-Maximilians-Universit\"at M\"unchen, Oettingenstra\ss e 67, 80538 M\"unchen, Germany}
 
-\date{October 17, 2026}
+\date{October 18, 2026}
 
 \begin{abstract}
 Adding qubits seems the natural way to extend the memory of a noisy quantum reservoir. We show that it is not: with $k$ input qubits reinitialized per time step, the longest memory any reservoir can attain under depolarizing noise is $\exp[\Theta(k)]$ time steps, whatever its size, dynamics, and input encoding. A universal upper bound and an explicit reservoir that attains the exponential scaling establish this optimal resource law. It extends to an entropy budget for general noise and applies to any noisy quantum dynamics refreshed by fresh qubits, including measurement-free error correction.
@@ -206,9 +205,8 @@ The signal still decays, but at a rate that is exponentially small in $r$. Two i
 \begin{center}
 {\large\bfseries Supplemental Material:\\[3pt] The Fundamental Memory Ceiling of Noisy Quantum Reservoirs}\\[10pt]
 Markus Baumann\,\orcidlink{0009-0007-3575-1006}, Jonas Stein\,\orcidlink{0000-0001-5727-9151}, and Claudia Linnhoff-Popien\,\orcidlink{0000-0001-6284-9286}\\[3pt]
-{\small\itshape Quantum Applications and Research Laboratory (QAR-Lab), Department of Computer Science,\\
-Ludwig-Maximilians-Universit\"at M\"unchen, Oettingenstra\ss e 67, 80538 M\"unchen, Germany}\\[3pt]
-{\small\itshape Chair of Mobile and Distributed Systems, Department of Computer Science,\\
+{\small\itshape Quantum Applications and Research Laboratory (QAR-Lab),\\
+Chair of Mobile and Distributed Systems, Department of Computer Science,\\
 Ludwig-Maximilians-Universit\"at M\"unchen, Oettingenstra\ss e 67, 80538 M\"unchen, Germany}
 \end{center}
 
@@ -766,6 +764,8 @@ Memory depth is necessary for a temporal task, but it is not sufficient. A reser
 %======================================================================
 \section{Code and data}
 \label{sm:code}
+
+Project repository: \url{https://github.com/eybmits/fresh-qubits-memory}.
 %======================================================================
 
 The source archive of this Supplemental Material contains the code and data behind every number, table, and figure. The folder \texttt{sim} holds the density-matrix simulator and the memory-depth estimator (\texttt{qrc\_sim.py}), the simulation runs (\texttt{campaign.py}, \texttt{merge.py}), the validation of the code and of the estimator (\texttt{test\_sim.py}, \texttt{validate\_pairs.py}), the error-correcting reservoir (\texttt{rep\_curve.py}), the exact constants, half-lives, washout times, and the cooling reservoir (\texttt{exact\_numbers.py}), and all results as JSON files. The folder \texttt{figures} holds the sources of all figures, and the folder \texttt{checks} independent checks of the constants and of the elementary steps of the proof (\texttt{verify\_constants.py}, \texttt{verify\_simple\_proof.py}). A README file lists the commands that rebuild every figure from these data.
