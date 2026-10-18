@@ -27,7 +27,7 @@ letter and the justification. Unpack it and follow the [PRL upload guide](prl-20
 
 The cover letter uses the user's replacement draft, three authors, and the shared
 QAR-Lab/LMU address. [Preparation notes](prl-2026-10-18-v5/cover_letter_notes.txt)
-separate the supplied submission-history statements from the still-pending
+record the supplied submission-history statements and the user's explicit
 all-author conflict declaration. No correspondence has been sent.
 
 Source: [APS web submission guidelines, Uploading Files](https://journals.aps.org/authors/web-submission-guidelines-physical-review#uploading-files), checked 18 October 2026.

@@ -1,19 +1,19 @@
 {
   "administrative_inputs": {
     "cover_letter.pdf": {
-      "bytes": 97485,
+      "bytes": 97823,
       "repository_path": "paper/submission-admin/prl-2026-10-18/cover_letter.pdf",
-      "sha256": "9f33220b096d54c5883c142f7565218c43c0af6dc8c50b9853c22661524924d1"
+      "sha256": "ae2ede9d813e7e3cc730cf03200c0a6ed90e8b3c0807fd833a7f888fd9c8a959"
     },
     "cover_letter.txt": {
-      "bytes": 5067,
+      "bytes": 5194,
       "repository_path": "paper/submission-admin/prl-2026-10-18/cover_letter.txt",
-      "sha256": "7ca983356c315df768d536bf624bf33634a4aa5b79745b34d9def8cc4e6d00b2"
+      "sha256": "568e9bad17c8602587b194da04a9180b6d7773a6a9377d0a41d357d999d22afd"
     },
     "cover_letter_notes.txt": {
-      "bytes": 2377,
+      "bytes": 2433,
       "repository_path": "paper/submission-admin/prl-2026-10-18/cover_letter_notes.txt",
-      "sha256": "7b28e69e75888356d1d771d29e8f0776bf38d368dc5099b0cb121c0bd12b122c"
+      "sha256": "1042a502d2cc68ad80af7fbdf0f67c7b114387736f42257a4914deef8126f248"
     },
     "referees.json": {
       "bytes": 4125,
@@ -414,7 +414,7 @@
     "Packed every selected canonical reproduction source with deterministic ZIP metadata.",
     "Replaced the archived cover-letter template with the user's latest draft, adapted to three authors and the canonical affiliation.",
     "Added a rendered two-page cover letter and source-verified professional contacts for five suggested referees and four alternates.",
-    "Retained the user's submission-history and exclusivity declarations; notes distinguish pending all-author conflict confirmation.",
+    "Retained the user's submission-history and exclusivity declarations and explicit all-author competing-interest/referee-conflict confirmation.",
     "Used the user's exact replacement justification without a heading; retained the original ZIP text in input provenance.",
     "Prepared plain Unicode abstract text with a checked 600-character maximum.",
     "Replaced stale submission notes with the current README."
@@ -466,8 +466,8 @@
       "sha256": "b7d2636a1c32f21011c917cf6364a30fda481ed8b255afb1737acf46ea20c08f"
     },
     "README.md": {
-      "bytes": 4935,
-      "sha256": "5008512503056bcde7bebb13a3a3ae371344e763c2215f44bbbf79d7698f9883"
+      "bytes": 4941,
+      "sha256": "65c89991951c9f5e5023a2b06aa392c7bd9c118a9a95ec124e44b61752dda967"
     },
     "abstract.txt": {
       "bytes": 590,
@@ -482,16 +482,16 @@
       "sha256": "e1f558c34341a232028497cad60ca32c60dae2c4307fcac2935c7983e06329ab"
     },
     "cover_letter.pdf": {
-      "bytes": 97485,
-      "sha256": "9f33220b096d54c5883c142f7565218c43c0af6dc8c50b9853c22661524924d1"
+      "bytes": 97823,
+      "sha256": "ae2ede9d813e7e3cc730cf03200c0a6ed90e8b3c0807fd833a7f888fd9c8a959"
     },
     "cover_letter.txt": {
-      "bytes": 5067,
-      "sha256": "7ca983356c315df768d536bf624bf33634a4aa5b79745b34d9def8cc4e6d00b2"
+      "bytes": 5194,
+      "sha256": "568e9bad17c8602587b194da04a9180b6d7773a6a9377d0a41d357d999d22afd"
     },
     "cover_letter_notes.txt": {
-      "bytes": 2377,
-      "sha256": "7b28e69e75888356d1d771d29e8f0776bf38d368dc5099b0cb121c0bd12b122c"
+      "bytes": 2433,
+      "sha256": "1042a502d2cc68ad80af7fbdf0f67c7b114387736f42257a4914deef8126f248"
     },
     "justification.txt": {
       "bytes": 721,

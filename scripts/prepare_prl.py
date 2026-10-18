@@ -256,7 +256,7 @@ not a single manuscript file to upload indiscriminately to the APS portal.
    contains the five suggested referees and four alternates. `referees.txt`
    and `referees.json` supply verified professional emails and source links.
    `cover_letter_notes.txt` records the scope of author declarations and the
-   pending all-author conflict confirmation. The cover follows the user's
+   user's confirmed all-author conflict statement. The cover follows the user's
    replacement draft of 18 October and has no placeholders or preparation notes.
    `abstract.txt` contains the manuscript abstract as plain Unicode text, with
    its character count checked against the portal's 600-character limit.
@@ -472,7 +472,7 @@ def build(combined_pdf, output, input_package, justification_file=DEFAULT_JUSTIF
             "Packed every selected canonical reproduction source with deterministic ZIP metadata.",
             "Replaced the archived cover-letter template with the user's latest draft, adapted to three authors and the canonical affiliation.",
             "Added a rendered two-page cover letter and source-verified professional contacts for five suggested referees and four alternates.",
-            "Retained the user's submission-history and exclusivity declarations; notes distinguish pending all-author conflict confirmation.",
+            "Retained the user's submission-history and exclusivity declarations and explicit all-author competing-interest/referee-conflict confirmation.",
             "Used the user's exact replacement justification without a heading; retained the original ZIP text in input provenance.",
             "Prepared plain Unicode abstract text with a checked 600-character maximum.",
             "Replaced stale submission notes with the current README.",

@@ -23,7 +23,7 @@ This connection between quantum information, open-system dynamics, and physical 
 
 The Supplemental Material contains complete proofs and an exact analysis of the error-correcting construction; simulation code and data are included in the accompanying source archive. All references cited in the Supplemental Material are listed in the Letter. The use of AI tools is disclosed in the Acknowledgments and Supplemental Material. As corresponding author, I take responsibility for the reported results and the disclosed use of AI tools.
 
-The manuscript has not previously been submitted to a Physical Review journal and is not under consideration elsewhere. Our suggested referees and alternates are listed on the following page. We request no referee exclusions.
+The manuscript has not previously been submitted to a Physical Review journal and is not under consideration elsewhere. The authors declare no competing interests. None of the suggested referees or alternates has a conflict of interest with any of the authors. Our referee suggestions are listed on the following page. We request no referee exclusions.
 
 Thank you for considering our manuscript. We look forward to the editors’ and referees’ assessment.
 

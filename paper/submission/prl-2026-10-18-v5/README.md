@@ -18,7 +18,7 @@ not a single manuscript file to upload indiscriminately to the APS portal.
    contains the five suggested referees and four alternates. `referees.txt`
    and `referees.json` supply verified professional emails and source links.
    `cover_letter_notes.txt` records the scope of author declarations and the
-   pending all-author conflict confirmation. The cover follows the user's
+   user's confirmed all-author conflict statement. The cover follows the user's
    replacement draft of 18 October and has no placeholders or preparation notes.
    `abstract.txt` contains the manuscript abstract as plain Unicode text, with
    its character count checked against the portal's 600-character limit.

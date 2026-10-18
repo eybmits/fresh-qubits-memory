@@ -78,8 +78,9 @@ The [two-page PDF](../paper/submission/prl-2026-10-18-v5/cover_letter.pdf) and
 referees and four alternates with professional contact details checked against
 institutional sources. The [contact record](../paper/submission/prl-2026-10-18-v5/referees.json)
 preserves those sources. The user's submission-history and exclusivity statements
-are retained as author declarations; blanket conflict clearance for all three
-authors has been requested and is not asserted. The preparation notes also record
+are retained as author declarations. The user subsequently confirmed absence of
+competing interests and conflicts with the proposed referees for all three
+authors; the letter now includes that declaration. The preparation notes also record
 Zambrini's listed 2020–2026 PRL editorial role for eligibility review.
 
 `scripts/prepare_prl_cover.py` reproducibly renders the administrative source in
