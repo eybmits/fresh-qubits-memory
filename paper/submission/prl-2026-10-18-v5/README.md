@@ -14,14 +14,18 @@ not a single manuscript file to upload indiscriminately to the APS portal.
    complete source/code/data ZIP, and descriptive `README.TXT`. The source ZIP
    is the reproducibility deposit cited by the paper; it includes the combined
    manuscript, bibliography, figures, simulator, saved data, and checks.
-3. Review `cover_letter.txt` and `justification.txt` before using their text.
+3. Review `cover_letter.txt` or the two-page `cover_letter.pdf`; its second page
+   contains the five suggested referees and four alternates. `referees.txt`
+   and `referees.json` supply verified professional emails and source links.
+   `cover_letter_notes.txt` records the scope of author declarations and the
+   pending all-author conflict confirmation. The cover follows the user's
+   replacement draft of 18 October and has no placeholders or preparation notes.
    `abstract.txt` contains the manuscript abstract as plain Unicode text, with
    its character count checked against the portal's 600-character limit.
    `justification.txt` contains the exact text supplied by the user for this
    revision, with no heading; it is ready to paste into the justification field.
-   The cover letter is a draft: its exclusive-submission statement needs final
-   confirmation by the authors. Coauthor approval and any prior submission
-   history have not been verified by this preparation workflow.
+   Submission history and exclusivity reproduce the user's declarations;
+   coauthor approval and conflict clearance are not independently certified.
 4. Enter the confirmed author order, contact address, ORCIDs and one shared
    affiliation from `author_information.json`. The identifiers are copied from
    the approved author record; authentication in the portal remains separate.

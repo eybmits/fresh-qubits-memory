@@ -1,0 +1,79 @@
+Markus Baumann
+Quantum Applications and Research Laboratory (QAR-Lab)
+Chair of Mobile and Distributed Systems, Department of Computer Science
+Ludwig-Maximilians-Universität München
+Oettingenstraße 67, 80538 München, Germany
+markus.baumann@campus.lmu.de
+
+Munich, October 18, 2026
+
+To the Editors of Physical Review Letters
+
+Dear Editors,
+
+Please consider our manuscript, “The Fundamental Memory Ceiling of Noisy Quantum Reservoirs,” by Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien, for publication as a Letter in Physical Review Letters.
+
+Quantum reservoir computing uses the dynamics of a driven quantum system to process temporal information. Our manuscript addresses a basic resource question: how much input memory can a given supply of fresh qubits sustain under noise, and can increasing the total system size overcome this limitation?
+
+Under local Markovian depolarizing noise, we establish a universal, size-independent upper bound on input memory in the long-time, echo-state regime. At fixed noise strength and a fixed, sufficiently small distinguishability threshold, the optimal memory depth attainable with k qubits refreshed per time step scales as exp[Θ(k)]. The upper bound holds for arbitrary reservoir unitaries and input encodings within the model, without external classical memory or feedback. An explicit reservoir using unitary, measurement-free error correction attains the same exponential scaling. Consequently, Θ(log T) refreshed qubits per time step are necessary and sufficient, in the optimal construction, to retain a past input for T time steps within this setting.
+
+The central physical insight is that entropy removal sets the attainable memory depth. Under the stated noise assumptions, the upper bound depends on input and control operations through their entropy-removal budget. Its scope therefore extends beyond reservoir computing to a broader class of noisy quantum dynamics with a bounded supply of fresh qubits, including measurement-free error correction. The result connects temporal information processing with the resource requirements of error correction and identifies a concrete design objective: the supply of refreshed qubits and the dynamics that use them to protect memory.
+
+This connection between quantum information, open-system dynamics, and physical computing makes the manuscript relevant to the broad readership of Physical Review Letters. It also provides a resource-scaling prediction for experiments using suitable error-correcting reservoir dynamics and mid-circuit resets.
+
+The Supplemental Material contains complete proofs and an exact analysis of the error-correcting construction; simulation code and data are included in the accompanying source archive. All references cited in the Supplemental Material are listed in the Letter. The use of AI tools is disclosed in the Acknowledgments and Supplemental Material. As corresponding author, I take responsibility for the reported results and the disclosed use of AI tools.
+
+The manuscript has not previously been submitted to a Physical Review journal and is not under consideration elsewhere. Our suggested referees and alternates are listed on the following page. We request no referee exclusions.
+
+Thank you for considering our manuscript. We look forward to the editors’ and referees’ assessment.
+
+Sincerely,
+Markus Baumann
+On behalf of Jonas Stein and Claudia Linnhoff-Popien
+
+Suggested referees
+
+Michael J. Gullans
+National Institute of Standards and Technology (NIST); Joint Center for Quantum Information and Computer Science (QuICS), University of Maryland, USA
+mgullans@umd.edu
+Memory and error correction in noisy quantum circuits
+
+Daniel Stilck França
+Department of Mathematical Sciences, University of Copenhagen, Denmark
+dsfranca@math.ku.dk
+Entropy-based limitations of noisy quantum devices
+
+Alexander Müller-Hermes
+Department of Mathematics, University of Oslo, Norway
+muellerh@math.uio.no
+Hypercontractivity of quantum channels and resource bounds for fault tolerance
+
+Roberta Zambrini
+Instituto de Física Interdisciplinar y Sistemas Complejos, IFISC (CSIC-UIB), Palma de Mallorca, Spain
+roberta@ifisc.uib-csic.es
+Quantum reservoir computing and dissipation as a resource
+
+Hakan E. Türeci
+Department of Electrical and Computer Engineering, Princeton University, USA
+tureci@princeton.edu
+Quantum reservoir computing and superconducting quantum hardware
+
+Alternate referees
+
+Omar Fawzi
+Inria; Laboratoire de l’Informatique du Parallélisme (LIP), École normale supérieure de Lyon, France
+omar.fawzi@ens-lyon.fr
+
+Juan-Pablo Ortega
+School of Physical and Mathematical Sciences, Nanyang Technological University, Singapore
+juan-pablo.ortega@ntu.edu.sg
+
+Kohei Nakajima
+Department of Mechano-Informatics, Graduate School of Information Science and Technology, The University of Tokyo, Japan
+k-nakajima@isi.imi.i.u-tokyo.ac.jp
+
+Naoki Yamamoto
+Department of Applied Physics and Physico-Informatics, Faculty of Science and Technology, Keio University, Japan
+yamamoto@appi.keio.ac.jp
+
+Excluded referees: none.

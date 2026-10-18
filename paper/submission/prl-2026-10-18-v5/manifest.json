@@ -1,4 +1,31 @@
 {
+  "administrative_inputs": {
+    "cover_letter.pdf": {
+      "bytes": 97485,
+      "repository_path": "paper/submission-admin/prl-2026-10-18/cover_letter.pdf",
+      "sha256": "9f33220b096d54c5883c142f7565218c43c0af6dc8c50b9853c22661524924d1"
+    },
+    "cover_letter.txt": {
+      "bytes": 5067,
+      "repository_path": "paper/submission-admin/prl-2026-10-18/cover_letter.txt",
+      "sha256": "7ca983356c315df768d536bf624bf33634a4aa5b79745b34d9def8cc4e6d00b2"
+    },
+    "cover_letter_notes.txt": {
+      "bytes": 2377,
+      "repository_path": "paper/submission-admin/prl-2026-10-18/cover_letter_notes.txt",
+      "sha256": "7b28e69e75888356d1d771d29e8f0776bf38d368dc5099b0cb121c0bd12b122c"
+    },
+    "referees.json": {
+      "bytes": 4125,
+      "repository_path": "paper/submission-admin/prl-2026-10-18/referees.json",
+      "sha256": "44e936610873e5892f377a09c35003ea139866dc4352edb85bb2c931172b15f6"
+    },
+    "referees.txt": {
+      "bytes": 2876,
+      "repository_path": "paper/submission-admin/prl-2026-10-18/referees.txt",
+      "sha256": "7f7f90a65c51e9fd2bc32c292865b135bc5cb787e915e87df3fe3953ee988b9d"
+    }
+  },
   "canonical_source_mapping": {
     "README.txt": {
       "archive": "2_supplemental_material/memory_limits_prl_source.zip",
@@ -385,8 +412,9 @@
     "Split the SM from the supplied fresh combined PDF and set title, authors and S page labels.",
     "Retained the three confirmed authors, their ORCIDs, and one shared affiliation.",
     "Packed every selected canonical reproduction source with deterministic ZIP metadata.",
-    "Adapted the cover letter to three authors and a uniform memory ceiling claim.",
-    "Retained the supplied exclusivity sentence in the draft cover letter; README records pending author attestations.",
+    "Replaced the archived cover-letter template with the user's latest draft, adapted to three authors and the canonical affiliation.",
+    "Added a rendered two-page cover letter and source-verified professional contacts for five suggested referees and four alternates.",
+    "Retained the user's submission-history and exclusivity declarations; notes distinguish pending all-author conflict confirmation.",
     "Used the user's exact replacement justification without a heading; retained the original ZIP text in input provenance.",
     "Prepared plain Unicode abstract text with a checked 600-character maximum.",
     "Replaced stale submission notes with the current README."
@@ -438,8 +466,8 @@
       "sha256": "b7d2636a1c32f21011c917cf6364a30fda481ed8b255afb1737acf46ea20c08f"
     },
     "README.md": {
-      "bytes": 4615,
-      "sha256": "5bbf900353c3a88b7524d450847109537942c80823afb316db7def7756424959"
+      "bytes": 4935,
+      "sha256": "5008512503056bcde7bebb13a3a3ae371344e763c2215f44bbbf79d7698f9883"
     },
     "abstract.txt": {
       "bytes": 590,
@@ -453,9 +481,17 @@
       "bytes": 3196,
       "sha256": "e1f558c34341a232028497cad60ca32c60dae2c4307fcac2935c7983e06329ab"
     },
+    "cover_letter.pdf": {
+      "bytes": 97485,
+      "sha256": "9f33220b096d54c5883c142f7565218c43c0af6dc8c50b9853c22661524924d1"
+    },
     "cover_letter.txt": {
-      "bytes": 2200,
-      "sha256": "7bdf06a577869e4dd5bdc2dbae9cb15b1237f9da6293d3f9b3719b0c7ba4fc70"
+      "bytes": 5067,
+      "sha256": "7ca983356c315df768d536bf624bf33634a4aa5b79745b34d9def8cc4e6d00b2"
+    },
+    "cover_letter_notes.txt": {
+      "bytes": 2377,
+      "sha256": "7b28e69e75888356d1d771d29e8f0776bf38d368dc5099b0cb121c0bd12b122c"
     },
     "justification.txt": {
       "bytes": 721,
@@ -468,6 +504,14 @@
     "memory_limits_prl_letter.pdf": {
       "bytes": 653299,
       "sha256": "0b65617bd6205c7ec77dce79db590c1e197624cd4458916616ccdc9284cf9299"
+    },
+    "referees.json": {
+      "bytes": 4125,
+      "sha256": "44e936610873e5892f377a09c35003ea139866dc4352edb85bb2c931172b15f6"
+    },
+    "referees.txt": {
+      "bytes": 2876,
+      "sha256": "7f7f90a65c51e9fd2bc32c292865b135bc5cb787e915e87df3fe3953ee988b9d"
     }
   },
   "generator": "scripts/prepare_prl.py",

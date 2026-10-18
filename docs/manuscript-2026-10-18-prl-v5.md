@@ -69,6 +69,26 @@ The received `.zenodo.json` named only Markus Baumann and suggested CC BY 4.0 an
 
 License, access right, publication date, and DOI are intentionally absent from `zenodo_metadata_draft.json`. The received proposal is preserved in the immutable input and provenance. The draft is not an automatic `.zenodo.json` integration or a complete API request: Zenodo's documented defaults must not be confused with an author's decision. The source ZIP is the same canonical code/data material prepared for PRL. Creator/ORCID and metadata field names were checked against the [official Zenodo documentation](https://developers.zenodo.org/#deposit-metadata); no live portal validation or deposition was performed.
 
+## Cover-letter update
+
+The cover letter was subsequently replaced with the user's detailed 18 October
+draft, adapted to the three-author manuscript and the shared QAR-Lab/LMU address.
+The [two-page PDF](../paper/submission/prl-2026-10-18-v5/cover_letter.pdf) and
+[TXT](../paper/submission/prl-2026-10-18-v5/cover_letter.txt) include five suggested
+referees and four alternates with professional contact details checked against
+institutional sources. The [contact record](../paper/submission/prl-2026-10-18-v5/referees.json)
+preserves those sources. The user's submission-history and exclusivity statements
+are retained as author declarations; blanket conflict clearance for all three
+authors has been requested and is not asserted. The preparation notes also record
+Zambrini's listed 2020–2026 PRL editorial role for eligibility review.
+
+`scripts/prepare_prl_cover.py` reproducibly renders the administrative source in
+`paper/submission-admin/prl-2026-10-18/`; `scripts/prepare_prl.py` incorporates it
+into the PRL handoff. Both cover pages were visually inspected, no placeholders
+remain, and repeated rendering is byte-identical. This administrative update
+does not change the manuscript, its simulations, the 100-word justification,
+or the arXiv and Zenodo packages.
+
 ## Submission status
 
 The repository remains private at the user's request. Code and data are included in the handoff archives independently of public GitHub access. No upload, final submission, DOI registration/reservation, license selection, or repository visibility change occurred. Portal previews, author attestations, funding and publication choices remain for the corresponding author's review. Zenodo licensing, arXiv licensing, and any repository software license are separate decisions; none is selected by creating these local packages.

@@ -8,6 +8,8 @@ submission has taken place.
 
 | File | Upload role |
 | --- | --- |
+| [Cover letter PDF](prl-2026-10-18-v5/cover_letter.pdf) / [TXT](prl-2026-10-18-v5/cover_letter.txt) | Updated correspondence for the editors; referee suggestions on page 2 |
+| [Referee contacts and sources](prl-2026-10-18-v5/referees.txt) | Verified affiliations and professional emails for five suggestions and four alternates |
 | [PRL justification TXT, 100 words](prl-2026-10-18-v5/justification.txt) | Paste verbatim into the PRL significance/justification field |
 | [Letter PDF, 6 pages](prl-2026-10-18-v5/memory_limits_prl_letter.pdf) | Main manuscript, including figures and references |
 | [Supplement PDF, 18 pages](prl-2026-10-18-v5/2_supplemental_material/memory_limits_prl_SM.pdf) | “Upload supplemental files” |
@@ -22,6 +24,11 @@ material cited by the paper and accompanies the supplement.
 The [complete PRL handoff ZIP](prl-2026-10-18-v5/prl-submission.zip) also retains
 manuscript sources for later production, author information, a draft cover
 letter and the justification. Unpack it and follow the [PRL upload guide](prl-2026-10-18-v5/README.md).
+
+The cover letter uses the user's replacement draft, three authors, and the shared
+QAR-Lab/LMU address. [Preparation notes](prl-2026-10-18-v5/cover_letter_notes.txt)
+separate the supplied submission-history statements from the still-pending
+all-author conflict declaration. No correspondence has been sent.
 
 Source: [APS web submission guidelines, Uploading Files](https://journals.aps.org/authors/web-submission-guidelines-physical-review#uploading-files), checked 18 October 2026.
 
