@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "source_files_verified": 54,
+  "deterministic_second_build": true,
+  "all_manifest_hashes_verified": true,
+  "outer_archive_bytes_verified": true,
+  "three_author_ORCIDs_verified": true,
+  "citation_revision": 5,
+  "license_access_publication_date_DOI_unset": true,
+  "source_archive_sha256": "b7d2636a1c32f21011c917cf6364a30fda481ed8b255afb1737acf46ea20c08f",
+  "handoff_archive_sha256": "5fcc0b126c0fee213a39aa00401a0a310c1978b40a4c2ae26fac727513000715",
+  "scope": "Local content and packaging verification; no upload or live Zenodo validation.",
+  "source_archive_identical_to_final_PRL": true
+}

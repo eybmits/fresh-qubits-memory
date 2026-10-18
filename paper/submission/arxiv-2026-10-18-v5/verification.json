@@ -1,0 +1,202 @@
+{
+  "date": "2026-10-18",
+  "fresh_extraction_build": true,
+  "fresh_build_pdf_text_identical": true,
+  "bibliography_regenerated_byte_identical": true,
+  "source_reconstruction_byte_identical": true,
+  "source_file_count": 54,
+  "archive_entry_count": 57,
+  "deterministic_zip_regeneration": true,
+  "pages": 24,
+  "letter_and_references_pages": 6,
+  "supplement_pages": 18,
+  "unresolved_references_or_citations": 0,
+  "overfull_boxes": 0,
+  "shell_escape": false,
+  "status": "local_preflight_passed_not_uploaded",
+  "archive_sha256": "56a3b79839913bd0779ce68d9e15e8386637b3a8d147263bf2d939537a57824e",
+  "pdf_sha256": "90f0e19e58f22fcdac6fc5c01ce5864adc6b4f87641498bcb53924884c956a62",
+  "aps_word_count": {
+    "method": "APS length guide with CTAN wordcount.tex",
+    "guide_url": "https://journals.aps.org/authors/length-guide",
+    "source_sha256": "cd713685bed963fb0cb0b82b60261e3f7cf2716558ba1cf4d975803502424efe",
+    "typeset_words": 2729,
+    "characters_including_spaces": 15798,
+    "displayed_equation_rows": 7,
+    "equation_word_equivalent": 112,
+    "figures": [
+      {
+        "file": "fig1.pdf",
+        "double_column": false,
+        "width_pt": 245.083,
+        "height_pt": 171.496,
+        "aspect_ratio": 1.42908872510146,
+        "word_equivalent": 124.96199246785784
+      },
+      {
+        "file": "fig2.pdf",
+        "double_column": true,
+        "width_pt": 507.6,
+        "height_pt": 176.4,
+        "aspect_ratio": 2.877551020408163,
+        "word_equivalent": 248.51063829787236
+      },
+      {
+        "file": "fig3.pdf",
+        "double_column": true,
+        "width_pt": 507.6,
+        "height_pt": 185.669,
+        "aspect_ratio": 2.733897419601549,
+        "word_equivalent": 259.46690307328606
+      },
+      {
+        "file": "fig4.pdf",
+        "double_column": true,
+        "width_pt": 507.6,
+        "height_pt": 147.6,
+        "aspect_ratio": 3.439024390243903,
+        "word_equivalent": 214.46808510638297
+      }
+    ],
+    "figure_word_equivalent": 847.4076189453992,
+    "total_word_equivalent": 3688.407618945399,
+    "total_rounded": 3688,
+    "prl_limit": 3750,
+    "tex_errors": []
+  },
+  "simple_source_word_estimate": 3524,
+  "prl_word_limit": 3750,
+  "abstract_rendered_characters": 588,
+  "justification_words_whitespace": 100,
+  "repository_tests": {
+    "passed": 22,
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src OPENBLAS_NUM_THREADS=1 python3 -m unittest discover -s tests -v"
+  },
+  "scientific_checks": {
+    "unchanged_json_datasets": 13,
+    "unchanged_simulation_scripts": 8,
+    "full_campaign_rerun": false,
+    "scope": "Version/source consistency, regression tests, selected new algebra and package/render QA. No complete proof or novelty certification."
+  },
+  "code_repository_visibility": "private",
+  "supplement_code_reference_number": 27,
+  "uploaded": false,
+  "submitted": false,
+  "license_selected": false,
+  "visibility_changed": false,
+  "visual_review": {
+    "pdf": "paper/memory_limits_prl_2026-10-18-v5.pdf",
+    "sha256": "90f0e19e58f22fcdac6fc5c01ce5864adc6b4f87641498bcb53924884c956a62",
+    "page_count": 24,
+    "visually_reviewed_all_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "contact_sheets": [
+      "contact-1.png",
+      "contact-2.png",
+      "contact-3.png",
+      "contact-4.png",
+      "contact-5.png",
+      "contact-6.png"
+    ],
+    "detailed_review": [
+      "main byline and abstract",
+      "SM byline and contents",
+      "Figure3 and caption",
+      "Figure4 and caption",
+      "reference27 across pages5-6",
+      "new memory-capacity paragraph on S7",
+      "last code/data section on S18"
+    ],
+    "layout_issues": [],
+    "font_records": 140,
+    "all_fonts_embedded": true,
+    "all_fonts_type1": true,
+    "unicode_map_font_records": 64,
+    "fonts_without_unicode_map": 76,
+    "unicode_note": "Main Latin Modern prose fonts have ToUnicode maps; some imported figure fonts do not. Do not claim every embedded font has ToUnicode.",
+    "final_table_review_page": 18,
+    "other_23_pages_pixel_identical_to_prior_visual_review": true,
+    "standalone_sm_all_18_pages_pixel_identical": true,
+    "standalone_letter_pages_1_to_5_pixel_identical": true,
+    "standalone_letter_final_page_visual_review": "Reference-only page6 balances into two columns; visually clean, extracted characters identical to combined page6.",
+    "all_standalone_pdf_text_matches_combined": true
+  },
+  "prl_package_verification": {
+    "status": "passed",
+    "edition": "2026-10-18-prl-v5",
+    "checks": [
+      "Exact managed file set and every manifest hash/size",
+      "Outer ZIP CRC, members and byte equality",
+      "54 source mappings byte-identical to canonical source",
+      "Seven Letter source files match production ZIP",
+      "Justification bytes match approved latest 100-word user text",
+      "Plain Unicode abstract matches independent extraction and has 588 characters",
+      "PDF page counts 24=6+18; Letter and SM text equal combined ranges",
+      "SM page labels S1-S18; final Table S2 unital-noise upper-bound wording present",
+      "PDF author metadata and GitHub URLs present; Letter has three ORCID links",
+      "Two complete PRL builds have identical outer ZIP hash"
+    ],
+    "source_files": 54,
+    "managed_files": 20,
+    "outer_zip_sha256": "7553076dbf5e5fb86f1735264c2975ab93e4e89142e762c7848b1d1468202103",
+    "pages": {
+      "combined": 24,
+      "letter": 6,
+      "supplement": 18
+    },
+    "justification_words": 100,
+    "abstract_characters": 588,
+    "pdf_uri_counts": {
+      "combined": 66,
+      "letter": 62,
+      "supplement": 4
+    },
+    "scope": "Independent technical packaging and metadata checks; not proof verification, portal validation or submission."
+  },
+  "zenodo_package_verification": {
+    "status": "passed",
+    "source_files_verified": 54,
+    "deterministic_second_build": true,
+    "all_manifest_hashes_verified": true,
+    "outer_archive_bytes_verified": true,
+    "three_author_ORCIDs_verified": true,
+    "citation_revision": 5,
+    "license_access_publication_date_DOI_unset": true,
+    "source_archive_sha256": "b7d2636a1c32f21011c917cf6364a30fda481ed8b255afb1737acf46ea20c08f",
+    "handoff_archive_sha256": "5fcc0b126c0fee213a39aa00401a0a310c1978b40a4c2ae26fac727513000715",
+    "scope": "Local content and packaging verification; no upload or live Zenodo validation.",
+    "source_archive_identical_to_final_PRL": true
+  },
+  "verification_record_directory": "paper/versions/2026-10-18-prl-v5/verification",
+  "code_repository_url": "https://github.com/eybmits/fresh-qubits-memory",
+  "all_three_author_names_and_orcids_retained": true,
+  "street_address_occurrences": {
+    "main_author_block": 1,
+    "supplement_author_block": 1
+  },
+  "compiler": "pdfTeX 1.40.27 (TeX Live 2025)"
+}

@@ -53,11 +53,12 @@
 \bibitem [{\citenamefont {Jaeger}(2001)}]{Jaeger2001}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
-  {Jaeger}},\ }\href@noop {} {\emph {\bibinfo {title} {The ``echo state''
-  approach to analysing and training recurrent neural networks}}},\ \bibinfo
-  {type} {GMD Report}\ \bibinfo {number} {148}\ (\bibinfo  {institution}
-  {German National Research Center for Information Technology},\ \bibinfo
-  {year} {2001})\BibitemShut {NoStop}%
+  {Jaeger}},\ }\href
+  {https://www.ai.rug.nl/minds/uploads/EchoStatesTechRep.pdf} {\emph {\bibinfo
+  {title} {The ``echo state'' approach to analysing and training recurrent
+  neural networks}}},\ \bibinfo {type} {GMD Report}\ \bibinfo {number} {148}\
+  (\bibinfo  {institution} {German National Research Center for Information
+  Technology},\ \bibinfo {year} {2001})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Maass}\ \emph {et~al.}(2002)\citenamefont {Maass},
   \citenamefont {Natschl\"ager},\ and\ \citenamefont {Markram}}]{Maass2002}%
   \BibitemOpen
@@ -66,9 +67,10 @@
   {Natschl\"ager}},\ and\ \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
   {Markram}},\ }\bibfield  {title} {\bibinfo {title} {Real-time computing
   without stable states: A new framework for neural computation based on
-  perturbations},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {Neural Comput.}\ }\textbf {\bibinfo {volume} {14}},\ \bibinfo {pages} {2531}
-  (\bibinfo {year} {2002})}\BibitemShut {NoStop}%
+  perturbations},\ }\href {https://doi.org/10.1162/089976602760407955}
+  {\bibfield  {journal} {\bibinfo  {journal} {Neural Comput.}\ }\textbf
+  {\bibinfo {volume} {14}},\ \bibinfo {pages} {2531} (\bibinfo {year}
+  {2002})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Jaeger}\ and\ \citenamefont
   {Haas}(2004)}]{JaegerHaas2004}%
   \BibitemOpen
@@ -86,9 +88,9 @@
   {Luko\v{s}evi\v{c}ius}}\ and\ \bibinfo {author} {\bibfnamefont
   {H.}~\bibnamefont {Jaeger}},\ }\bibfield  {title} {\bibinfo {title}
   {Reservoir computing approaches to recurrent neural network training},\
-  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Comput. Sci.
-  Rev.}\ }\textbf {\bibinfo {volume} {3}},\ \bibinfo {pages} {127} (\bibinfo
-  {year} {2009})}\BibitemShut {NoStop}%
+  }\href {https://doi.org/10.1016/j.cosrev.2009.03.005} {\bibfield  {journal}
+  {\bibinfo  {journal} {Comput. Sci. Rev.}\ }\textbf {\bibinfo {volume} {3}},\
+  \bibinfo {pages} {127} (\bibinfo {year} {2009})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Tanaka}\ \emph {et~al.}(2019)\citenamefont {Tanaka},
   \citenamefont {Yamane}, \citenamefont {H\'eroux}, \citenamefont {Nakane},
   \citenamefont {Kanazawa}, \citenamefont {Takeda}, \citenamefont {Numata},
@@ -169,9 +171,10 @@
   {author} {\bibfnamefont {K.}~\bibnamefont {Yasuoka}},\ and\ \bibinfo {author}
   {\bibfnamefont {N.}~\bibnamefont {Yamamoto}},\ }\bibfield  {title} {\bibinfo
   {title} {Natural quantum reservoir computing for temporal information
-  processing},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Sci.
-  Rep.}\ }\textbf {\bibinfo {volume} {12}},\ \bibinfo {pages} {1353} (\bibinfo
-  {year} {2022})}\BibitemShut {NoStop}%
+  processing},\ }\href {https://doi.org/10.1038/s41598-022-05061-w} {\bibfield
+  {journal} {\bibinfo  {journal} {Sci. Rep.}\ }\textbf {\bibinfo {volume}
+  {12}},\ \bibinfo {pages} {1353} (\bibinfo {year} {2022})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Yasuda}\ \emph {et~al.}(2023)\citenamefont {Yasuda},
   \citenamefont {Suzuki}, \citenamefont {Kubota}, \citenamefont {Nakajima},
   \citenamefont {Gao}, \citenamefont {Zhang}, \citenamefont {Shimono},
@@ -221,36 +224,15 @@
   computational resource for reservoir computing}} (\bibinfo {year} {2024}),\
   \Eprint {https://arxiv.org/abs/2409.07886} {arXiv:2409.07886 [quant-ph]}
   \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Dao}\ \emph {et~al.}(2026)\citenamefont {Dao},
-  \citenamefont {Yilmaz}, \citenamefont {Shehzad}, \citenamefont {Pere},
-  \citenamefont {Ghosh}, \citenamefont {Wittmann}, \citenamefont
-  {Brunschwiler}, \citenamefont {Cortiana}, \citenamefont {O'Meara},
-  \citenamefont {Woerner},\ and\ \citenamefont {Tacchino}}]{Dao2026}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
-  {Dao}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Yilmaz}},
-  \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Shehzad}}, \bibinfo
-  {author} {\bibfnamefont {C.}~\bibnamefont {Pere}}, \bibinfo {author}
-  {\bibfnamefont {K.}~\bibnamefont {Ghosh}}, \bibinfo {author} {\bibfnamefont
-  {I.}~\bibnamefont {Wittmann}}, \bibinfo {author} {\bibfnamefont
-  {T.}~\bibnamefont {Brunschwiler}}, \bibinfo {author} {\bibfnamefont
-  {G.}~\bibnamefont {Cortiana}}, \bibinfo {author} {\bibfnamefont
-  {C.}~\bibnamefont {O'Meara}}, \bibinfo {author} {\bibfnamefont
-  {S.}~\bibnamefont {Woerner}},\ and\ \bibinfo {author} {\bibfnamefont
-  {F.}~\bibnamefont {Tacchino}},\ }\href@noop {} {\bibinfo {title} {Breaking
-  concentration barriers for quantum extreme learning on digital quantum
-  processors}} (\bibinfo {year} {2026}),\ \Eprint
-  {https://arxiv.org/abs/2603.13005} {arXiv:2603.13005 [quant-ph]} \BibitemShut
-  {NoStop}%
 \bibitem [{\citenamefont {Boyd}\ and\ \citenamefont {Chua}(1985)}]{Boyd1985}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
   {Boyd}}\ and\ \bibinfo {author} {\bibfnamefont {L.~O.}\ \bibnamefont
   {Chua}},\ }\bibfield  {title} {\bibinfo {title} {Fading memory and the
-  problem of approximating nonlinear operators with {V}olterra series},\
-  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {IEEE Trans.
-  Circuits Syst.}\ }\textbf {\bibinfo {volume} {32}},\ \bibinfo {pages} {1150}
-  (\bibinfo {year} {1985})}\BibitemShut {NoStop}%
+  problem of approximating nonlinear operators with {V}olterra series},\ }\href
+  {https://doi.org/10.1109/TCS.1985.1085649} {\bibfield  {journal} {\bibinfo
+  {journal} {IEEE Trans. Circuits Syst.}\ }\textbf {\bibinfo {volume} {32}},\
+  \bibinfo {pages} {1150} (\bibinfo {year} {1985})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Mart\'inez-Pe\~na}\ and\ \citenamefont
   {Ortega}(2023)}]{MartinezPena2023}%
   \BibitemOpen
@@ -402,23 +384,25 @@
   error-correcting reservoir, the entropy budget beyond depolarizing noise, the
   details of the simulations, and the Python code that reproduces all numerical
   values and data figures, which includes
-  Refs.~\cite{vonNeumann1956,Nelson2026,Xiong2025}. Code repository:
+  Refs.~\cite{vonNeumann1956,Nelson2026,Xiong2025,Dao2026}. Code repository:
   \url{https://github.com/eybmits/fresh-qubits-memory}.}\BibitemShut {Stop}%
 \bibitem [{\citenamefont {Jaeger}(2002)}]{Jaeger2002}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
-  {Jaeger}},\ }\href@noop {} {\emph {\bibinfo {title} {Short term memory in
-  echo state networks}}},\ \bibinfo {type} {GMD Report}\ \bibinfo {number}
-  {152}\ (\bibinfo  {institution} {German National Research Center for
-  Information Technology},\ \bibinfo {year} {2002})\BibitemShut {NoStop}%
+  {Jaeger}},\ }\href
+  {https://www.ai.rug.nl/minds/uploads/STMEchoStatesTechRep.pdf} {\emph
+  {\bibinfo {title} {Short term memory in echo state networks}}},\ \bibinfo
+  {type} {GMD Report}\ \bibinfo {number} {152}\ (\bibinfo  {institution}
+  {German National Research Center for Information Technology},\ \bibinfo
+  {year} {2002})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {King}(2014)}]{King2014}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
   {King}},\ }\bibfield  {title} {\bibinfo {title} {Hypercontractivity for
-  semigroups of unital qubit channels},\ }\href@noop {} {\bibfield  {journal}
-  {\bibinfo  {journal} {Commun. Math. Phys.}\ }\textbf {\bibinfo {volume}
-  {328}},\ \bibinfo {pages} {285} (\bibinfo {year} {2014})}\BibitemShut
-  {NoStop}%
+  semigroups of unital qubit channels},\ }\href
+  {https://doi.org/10.1007/s00220-014-1982-4} {\bibfield  {journal} {\bibinfo
+  {journal} {Commun. Math. Phys.}\ }\textbf {\bibinfo {volume} {328}},\
+  \bibinfo {pages} {285} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Cubitt}\ \emph {et~al.}(2015)\citenamefont {Cubitt},
   \citenamefont {Kastoryano}, \citenamefont {Montanaro},\ and\ \citenamefont
   {Temme}}]{Cubitt2015}%
@@ -427,10 +411,10 @@
   {Cubitt}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Kastoryano}},
   \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Montanaro}},\ and\
   \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Temme}},\ }\bibfield
-  {title} {\bibinfo {title} {Quantum reverse hypercontractivity},\ }\href@noop
-  {} {\bibfield  {journal} {\bibinfo  {journal} {J. Math. Phys.}\ }\textbf
-  {\bibinfo {volume} {56}},\ \bibinfo {pages} {102204} (\bibinfo {year}
-  {2015})}\BibitemShut {NoStop}%
+  {title} {\bibinfo {title} {Quantum reverse hypercontractivity},\ }\href
+  {https://doi.org/10.1063/1.4933219} {\bibfield  {journal} {\bibinfo
+  {journal} {J. Math. Phys.}\ }\textbf {\bibinfo {volume} {56}},\ \bibinfo
+  {pages} {102204} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Mart\'inez-Pe\~na}\ \emph {et~al.}(2021)\citenamefont
   {Mart\'inez-Pe\~na}, \citenamefont {Giorgi}, \citenamefont {Nokkala},
   \citenamefont {Soriano},\ and\ \citenamefont {Zambrini}}]{MartinezPena2021}%
@@ -463,10 +447,10 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
   {Hoeffding}},\ }\bibfield  {title} {\bibinfo {title} {Probability
-  inequalities for sums of bounded random variables},\ }\href@noop {}
-  {\bibfield  {journal} {\bibinfo  {journal} {J. Am. Stat. Assoc.}\ }\textbf
-  {\bibinfo {volume} {58}},\ \bibinfo {pages} {13} (\bibinfo {year}
-  {1963})}\BibitemShut {NoStop}%
+  inequalities for sums of bounded random variables},\ }\href
+  {https://doi.org/10.1080/01621459.1963.10500830} {\bibfield  {journal}
+  {\bibinfo  {journal} {J. Am. Stat. Assoc.}\ }\textbf {\bibinfo {volume}
+  {58}},\ \bibinfo {pages} {13} (\bibinfo {year} {1963})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Cao}\ \emph {et~al.}(2026)\citenamefont {Cao},
   \citenamefont {Gong}, \citenamefont {Lin}, \citenamefont {Zeng},\ and\
   \citenamefont {Xiang}}]{Cao2026}%
@@ -484,13 +468,13 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {von
   Neumann}},\ }\bibfield  {title} {\bibinfo {title} {Probabilistic logics and
-  the synthesis of reliable organisms from unreliable components},\ }in\
-  \href@noop {} {\emph {\bibinfo {booktitle} {Automata Studies}}},\ \bibinfo
-  {editor} {edited by\ \bibinfo {editor} {\bibfnamefont {C.~E.}\ \bibnamefont
-  {Shannon}}\ and\ \bibinfo {editor} {\bibfnamefont {J.}~\bibnamefont
-  {McCarthy}}}\ (\bibinfo  {publisher} {Princeton University Press},\ \bibinfo
-  {address} {Princeton},\ \bibinfo {year} {1956})\ p.~\bibinfo {pages}
-  {43}\BibitemShut {NoStop}%
+  the synthesis of reliable organisms from unreliable components},\ }in\ \href
+  {https://doi.org/10.1515/9781400882618-003} {\emph {\bibinfo {booktitle}
+  {Automata Studies}}},\ \bibinfo {editor} {edited by\ \bibinfo {editor}
+  {\bibfnamefont {C.~E.}\ \bibnamefont {Shannon}}\ and\ \bibinfo {editor}
+  {\bibfnamefont {J.}~\bibnamefont {McCarthy}}}\ (\bibinfo  {publisher}
+  {Princeton University Press},\ \bibinfo {address} {Princeton},\ \bibinfo
+  {year} {1956})\ pp.\ \bibinfo {pages} {43--98}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Nelson}\ \emph {et~al.}(2026)\citenamefont {Nelson},
   \citenamefont {Rajakumar},\ and\ \citenamefont {Gullans}}]{Nelson2026}%
   \BibitemOpen
@@ -520,4 +504,25 @@
   }\href {https://doi.org/10.1007/s42484-025-00239-7} {\bibfield  {journal}
   {\bibinfo  {journal} {Quantum Mach. Intell.}\ }\textbf {\bibinfo {volume}
   {7}},\ \bibinfo {pages} {20} (\bibinfo {year} {2025})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Dao}\ \emph {et~al.}(2026)\citenamefont {Dao},
+  \citenamefont {Yilmaz}, \citenamefont {Shehzad}, \citenamefont {Pere},
+  \citenamefont {Ghosh}, \citenamefont {Wittmann}, \citenamefont
+  {Brunschwiler}, \citenamefont {Cortiana}, \citenamefont {O'Meara},
+  \citenamefont {Woerner},\ and\ \citenamefont {Tacchino}}]{Dao2026}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Dao}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Yilmaz}},
+  \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Shehzad}}, \bibinfo
+  {author} {\bibfnamefont {C.}~\bibnamefont {Pere}}, \bibinfo {author}
+  {\bibfnamefont {K.}~\bibnamefont {Ghosh}}, \bibinfo {author} {\bibfnamefont
+  {I.}~\bibnamefont {Wittmann}}, \bibinfo {author} {\bibfnamefont
+  {T.}~\bibnamefont {Brunschwiler}}, \bibinfo {author} {\bibfnamefont
+  {G.}~\bibnamefont {Cortiana}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {O'Meara}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {Woerner}},\ and\ \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {Tacchino}},\ }\href@noop {} {\bibinfo {title} {Breaking
+  concentration barriers for quantum extreme learning on digital quantum
+  processors}} (\bibinfo {year} {2026}),\ \Eprint
+  {https://arxiv.org/abs/2603.13005} {arXiv:2603.13005 [quant-ph]} \BibitemShut
+  {NoStop}%
 \end{thebibliography}%

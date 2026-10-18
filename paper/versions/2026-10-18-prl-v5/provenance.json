@@ -1,0 +1,320 @@
+{
+  "artifacts": [
+    {
+      "bytes": 928409,
+      "path": "paper/memory_limits_prl_2026-10-18-v5.pdf",
+      "sha256": "90f0e19e58f22fcdac6fc5c01ce5864adc6b4f87641498bcb53924884c956a62"
+    },
+    {
+      "bytes": 5776,
+      "path": "paper/submission/arxiv-2026-10-18-v5/README.md",
+      "sha256": "6959191a435f09b033fb57810bba331d327f580d23a3b87a9b4af7094933a709"
+    },
+    {
+      "bytes": 599,
+      "path": "paper/submission/arxiv-2026-10-18-v5/abstract.txt",
+      "sha256": "3059b11003c4ca31588ba04613b53c5469cc4c7365f62f76c7b27766c20c15e1"
+    },
+    {
+      "bytes": 1354752,
+      "path": "paper/submission/arxiv-2026-10-18-v5/arxiv-source.zip",
+      "sha256": "56a3b79839913bd0779ce68d9e15e8386637b3a8d147263bf2d939537a57824e"
+    },
+    {
+      "bytes": 1324,
+      "path": "paper/submission/arxiv-2026-10-18-v5/author_information.json",
+      "sha256": "e76e09bddc6bc428ef438213619b9145b4f491dd72ca7556d41e96b5d80c7f16"
+    },
+    {
+      "bytes": 53,
+      "path": "paper/submission/arxiv-2026-10-18-v5/authors.txt",
+      "sha256": "3765b5be90e052407bc28a2a31173d1313c71b6d46220deabfac68ae57f4c01e"
+    },
+    {
+      "bytes": 19901,
+      "path": "paper/submission/arxiv-2026-10-18-v5/package-manifest.json",
+      "sha256": "6cd178447d1156b1ae102182b5a686e12817c5c1179784372f0fbe17b5534d4e"
+    },
+    {
+      "bytes": 2450,
+      "path": "paper/submission/arxiv-2026-10-18-v5/submission_metadata.json",
+      "sha256": "c7736484014a9b08a05c8d294b7d6d6cc385299122a6d92403d29bcd0d473f09"
+    },
+    {
+      "bytes": 59,
+      "path": "paper/submission/arxiv-2026-10-18-v5/title.txt",
+      "sha256": "765e1ce958243ccc1d7da68a6b48bf47ab4a500903e68e6a4e2e729ecd454c5d"
+    },
+    {
+      "bytes": 6992,
+      "path": "paper/submission/arxiv-2026-10-18-v5/verification.json",
+      "sha256": "75d862623dd484d587bab4bb6d073e1760c0bfe93e776f8f358fce78fa57bcee"
+    },
+    {
+      "bytes": 72127,
+      "path": "paper/submission/prl-2026-10-18-v5/1_manuscript/fig1.pdf",
+      "sha256": "58e62b7439de6da40df1e71670a33c7012639f9b1b2ebc1f249125d2ba1007e4"
+    },
+    {
+      "bytes": 99349,
+      "path": "paper/submission/prl-2026-10-18-v5/1_manuscript/fig2.pdf",
+      "sha256": "616e5e74660dab893c49b671a115f4ad96f5f3e4dcd0f20e4143bd44ad2670a5"
+    },
+    {
+      "bytes": 163783,
+      "path": "paper/submission/prl-2026-10-18-v5/1_manuscript/fig3.pdf",
+      "sha256": "21afd8370247326ea714ecb8191e7c2bbf66093db0c98a5ebcc8378e324f097e"
+    },
+    {
+      "bytes": 72270,
+      "path": "paper/submission/prl-2026-10-18-v5/1_manuscript/fig4.pdf",
+      "sha256": "71ff5094b17ab49ba09f65793f1981ebc072141d24ea489f36371540e3530fe9"
+    },
+    {
+      "bytes": 32959,
+      "path": "paper/submission/prl-2026-10-18-v5/1_manuscript/memory_limits_prl.bbl",
+      "sha256": "1a8cbdc5b85664ce1cf941520b64c9a931dd98d94454e28f0e1b70408cb7dd7f"
+    },
+    {
+      "bytes": 22215,
+      "path": "paper/submission/prl-2026-10-18-v5/1_manuscript/memory_limits_prl.tex",
+      "sha256": "55b1a63ce6404226e256a65e6f8f6ff3efe9cae7b14c7a02ad2d87f782ce98c0"
+    },
+    {
+      "bytes": 13651,
+      "path": "paper/submission/prl-2026-10-18-v5/1_manuscript/refs.bib",
+      "sha256": "94231ab2a11b7658121cdafda79fc3aab798ef8219786a662a30124a0a839af7"
+    },
+    {
+      "bytes": 1483,
+      "path": "paper/submission/prl-2026-10-18-v5/2_supplemental_material/README.TXT",
+      "sha256": "6b903751543f71af60689c6747f0f98e8d37561776eab5b658f49cb4d5e49cc1"
+    },
+    {
+      "bytes": 747008,
+      "path": "paper/submission/prl-2026-10-18-v5/2_supplemental_material/memory_limits_prl_SM.pdf",
+      "sha256": "496eb85c94365a37b3a81bf2f6967be5b37caa18ce197d41b6dca1d40ffa2eea"
+    },
+    {
+      "bytes": 1348221,
+      "path": "paper/submission/prl-2026-10-18-v5/2_supplemental_material/memory_limits_prl_source.zip",
+      "sha256": "b7d2636a1c32f21011c917cf6364a30fda481ed8b255afb1737acf46ea20c08f"
+    },
+    {
+      "bytes": 4615,
+      "path": "paper/submission/prl-2026-10-18-v5/README.md",
+      "sha256": "5bbf900353c3a88b7524d450847109537942c80823afb316db7def7756424959"
+    },
+    {
+      "bytes": 590,
+      "path": "paper/submission/prl-2026-10-18-v5/abstract.txt",
+      "sha256": "389c9f967a7064f82a12d44deb4f0f9fb1d50dcfea60cced7cff56f0f7bfe121"
+    },
+    {
+      "bytes": 1409,
+      "path": "paper/submission/prl-2026-10-18-v5/author_information.json",
+      "sha256": "d97d5e4f41dfeb6c592784d8d15516e75ff7bdd94cc3ce7be610af9648dc86a4"
+    },
+    {
+      "bytes": 3196,
+      "path": "paper/submission/prl-2026-10-18-v5/build_verification.json",
+      "sha256": "e1f558c34341a232028497cad60ca32c60dae2c4307fcac2935c7983e06329ab"
+    },
+    {
+      "bytes": 2200,
+      "path": "paper/submission/prl-2026-10-18-v5/cover_letter.txt",
+      "sha256": "7bdf06a577869e4dd5bdc2dbae9cb15b1237f9da6293d3f9b3719b0c7ba4fc70"
+    },
+    {
+      "bytes": 721,
+      "path": "paper/submission/prl-2026-10-18-v5/justification.txt",
+      "sha256": "268db2e33705bdb66700766cce0a30e62fdbf92eff6293754cd8765a708e94fb"
+    },
+    {
+      "bytes": 22397,
+      "path": "paper/submission/prl-2026-10-18-v5/manifest.json",
+      "sha256": "b869e16c8989d412e3e2f31c81c1baf5f09aa8ad42dc030cc71b6d68486c5bce"
+    },
+    {
+      "bytes": 406716,
+      "path": "paper/submission/prl-2026-10-18-v5/manuscript-source.zip",
+      "sha256": "f2420ae7881e8ae5a14671d65713699072830f76ff266bf598b2626b2ee8b5da"
+    },
+    {
+      "bytes": 653299,
+      "path": "paper/submission/prl-2026-10-18-v5/memory_limits_prl_letter.pdf",
+      "sha256": "0b65617bd6205c7ec77dce79db590c1e197624cd4458916616ccdc9284cf9299"
+    },
+    {
+      "bytes": 3445460,
+      "path": "paper/submission/prl-2026-10-18-v5/prl-submission.zip",
+      "sha256": "7553076dbf5e5fb86f1735264c2975ab93e4e89142e762c7848b1d1468202103"
+    },
+    {
+      "bytes": 2064,
+      "path": "paper/submission/zenodo-2026-10-18-v5/CITATION.cff",
+      "sha256": "94f0c837d9cc3aaa29700f9c3bbeba7d03eb5ba7a957af496984d83cf20fda1e"
+    },
+    {
+      "bytes": 3377,
+      "path": "paper/submission/zenodo-2026-10-18-v5/README.md",
+      "sha256": "84a9595e0c47343722ff0a5894c3d268433580b1d8eea98f6d1731df782bf529"
+    },
+    {
+      "bytes": 1409,
+      "path": "paper/submission/zenodo-2026-10-18-v5/author_information.json",
+      "sha256": "d97d5e4f41dfeb6c592784d8d15516e75ff7bdd94cc3ce7be610af9648dc86a4"
+    },
+    {
+      "bytes": 17626,
+      "path": "paper/submission/zenodo-2026-10-18-v5/manifest.json",
+      "sha256": "cd6f64cfc89b769f53bbea72283977193e1b141dbbbb83b5beb1175882e2c4d7"
+    },
+    {
+      "bytes": 1348221,
+      "path": "paper/submission/zenodo-2026-10-18-v5/memory_limits_prl_source.zip",
+      "sha256": "b7d2636a1c32f21011c917cf6364a30fda481ed8b255afb1737acf46ea20c08f"
+    },
+    {
+      "bytes": 1355124,
+      "path": "paper/submission/zenodo-2026-10-18-v5/zenodo-handoff.zip",
+      "sha256": "5fcc0b126c0fee213a39aa00401a0a310c1978b40a4c2ae26fac727513000715"
+    },
+    {
+      "bytes": 2124,
+      "path": "paper/submission/zenodo-2026-10-18-v5/zenodo_metadata_draft.json",
+      "sha256": "4e84123e6edbfd0712f16435e5acb815e667fe6d00ca0e48a8d66f87d0060955"
+    },
+    {
+      "bytes": 721,
+      "path": "paper/versions/2026-10-18-prl-v5/justification-user.txt",
+      "sha256": "268db2e33705bdb66700766cce0a30e62fdbf92eff6293754cd8765a708e94fb"
+    },
+    {
+      "bytes": 1348221,
+      "path": "paper/versions/2026-10-18-prl-v5/source-final-prl-v5.zip",
+      "sha256": "b7d2636a1c32f21011c917cf6364a30fda481ed8b255afb1737acf46ea20c08f"
+    }
+  ],
+  "base_commit": "5a511adca5b240f63a3aaf2ca4c89c704336ae97",
+  "changed_source_files_since_previous_version": [
+    "README.txt",
+    "checks/aps_wordcount.py",
+    "checks/wordcount.py",
+    "fig1.pdf",
+    "fig2.pdf",
+    "fig3.pdf",
+    "fig4.pdf",
+    "figS1.pdf",
+    "figS3.pdf",
+    "figS4.pdf",
+    "figS5.pdf",
+    "figS6.pdf",
+    "figS7.pdf",
+    "figures/fig1.tex",
+    "figures/fig3.tex",
+    "figures/fig3a.pdf",
+    "figures/fig3a.py",
+    "figures/fig4bc.pdf",
+    "figures/fig4bc.py",
+    "figures/tikzstyle.tex",
+    "memory_limits_prl.bbl",
+    "memory_limits_prl.tex",
+    "refs.bib"
+  ],
+  "code_repository_visibility": "private",
+  "confirmed_decisions": [
+    "Retain Markus Baumann, Jonas Stein and Claudia Linnhoff-Popien with approved ORCIDs.",
+    "One shared QAR-Lab/chair/department/LMU affiliation and address per byline.",
+    "Link repository in reference28; keep GitHub private for user to publish separately.",
+    "User explicitly confirmed Claude Opus 5.5 model name on 2026-10-18."
+  ],
+  "date": "2026-10-18",
+  "historical_versions_preserved": true,
+  "local_handoff": "outputs/submission-ready-2026-10-18-v5 (thread workspace, outside repository)",
+  "local_render_archive": "work-archives/prl-update-2026-10-18-v5 (thread workspace, outside repository)",
+  "original_inputs_byte_preserved": true,
+  "previous_justification_update": "paper/versions/2026-10-18-prl-v4/justification-update-v2.json",
+  "previous_version_provenance": "paper/versions/2026-10-18-prl-v4/provenance.json",
+  "receipt": "paper/versions/2026-10-18-prl-v5/receipt.json",
+  "removed_obsolete_active_source_files": [
+    "figures/fig3b.py",
+    "figures/fig3b.pdf"
+  ],
+  "request": "Update everything to the new final manuscript, source, PRL submission and Zenodo bundles.",
+  "scientific_scope": "Bounded source/consistency audit, selected new algebra checks, regression tests and packaging/render QA. No new full simulation campaign or complete proof/novelty/acceptance certification.",
+  "source_file_hashes": {
+    "README.txt": "d37a6713622472ed3f09cc87988cbb31fb992f5c04ab3c4b7becfead4d1ffe3d",
+    "checks/aps_wordcount.py": "5931e9b2fbb6e63ae3281841c6fc9d1781e2b4f6e4b294e175435205cc5056fa",
+    "checks/verify_constants.py": "c34b6ef9744e8ab5b019f604ffa2a0e5398c11fbca538e60658573fce9b0868a",
+    "checks/verify_simple_proof.py": "95ecc42e00dd3d58fe8e65fec9fb84fc8b3e7dddfda376e25bdc2526adba4588",
+    "checks/wordcount.py": "20941a54257f6079a6dc73d5a2eef3b872cba28fda4cf7825b4f445f8b1e9c3f",
+    "fig1.pdf": "58e62b7439de6da40df1e71670a33c7012639f9b1b2ebc1f249125d2ba1007e4",
+    "fig2.pdf": "616e5e74660dab893c49b671a115f4ad96f5f3e4dcd0f20e4143bd44ad2670a5",
+    "fig3.pdf": "21afd8370247326ea714ecb8191e7c2bbf66093db0c98a5ebcc8378e324f097e",
+    "fig4.pdf": "71ff5094b17ab49ba09f65793f1981ebc072141d24ea489f36371540e3530fe9",
+    "figS1.pdf": "f169035a7af7fedc70f7398807248c78c5c1d50cd9deb37e0d852c7c02a1ddb6",
+    "figS2.pdf": "cdc2c3a0dde564951426f90a5c4de52202532b8e7feacc0b814f0ebfb10e3a30",
+    "figS3.pdf": "54063902308a84f813f9bca7fee91359f45721c89fde7781be4b8ef749a51caf",
+    "figS4.pdf": "ce9605c8ca9dc3de9640a2470f455e9f6f2d6fa3955e6740e050bf701fa7e075",
+    "figS5.pdf": "cfcc92f896daec6b92a9272bac01f3574f0e3a01c0e0f8b01d63d1cb74df8441",
+    "figS6.pdf": "917772ae6be8e2bdb12234720202da0f584c80677deb429dad42a707510d542e",
+    "figS7.pdf": "e0cda8cdeef93c0f5112b87ed1351edee7c2b12e53124cb8b2873dc419b58534",
+    "figures/fig1.tex": "4000dedf1413a9c5e6de27cb860a7e35846e997093ab55f678d3c17eaafd429a",
+    "figures/fig2.tex": "4866400a15e6086fbae492e9e325a815abc5333afd7eb3f5d96cf3aa29fb3b3f",
+    "figures/fig2a.pdf": "570754b8bf65a93304837e05cbdc98ce386d43a9dc9f00e335306f961484ff5e",
+    "figures/fig2a.py": "bb301fbdcb69f0abab5b73808c515416050a9014993de8e16daa75e5cd8224ef",
+    "figures/fig3.tex": "e49222adefa04e8b7795f7608af5bfc937a24ea3fcd79533cebbb01c466c92de",
+    "figures/fig3a.pdf": "64e4f669a0a517d10177d534c85a36268cc5905a97debc871be119a43fd3b681",
+    "figures/fig3a.py": "d6c4ce330713124f458e816106012c62c00586b96cebe8e6d9401ebaed57bed9",
+    "figures/fig4.tex": "57b0844ff77e453e92ddb271f3738ca5013ce03804ffe09c33f50b3dc21b838f",
+    "figures/fig4bc.pdf": "2d194b075daf24f0c51f88c1a7bdf905f7bab8e666ee1753a4b23afdfb6765ab",
+    "figures/fig4bc.py": "c74ddd9935cf429b9167c5f03a829701f1d9b0e97f0d6da3a4818a9a13ae4555",
+    "figures/figS.py": "e7d8e99cb5cf4840db4b0abeb65699213fa7c3f926b360b42ed82d1be972c9cc",
+    "figures/figstyle.py": "f0045537958b49afe76a78b70c68f7e8b24ac105ea17765603ec3cc79082638a",
+    "figures/tikzstyle.tex": "816e35861a8e58d3acaa810670b2fc96be2645e5381e05c581e26494d4a54ada",
+    "memory_limits_prl.bbl": "1a8cbdc5b85664ce1cf941520b64c9a931dd98d94454e28f0e1b70408cb7dd7f",
+    "memory_limits_prl.tex": "cd713685bed963fb0cb0b82b60261e3f7cf2716558ba1cf4d975803502424efe",
+    "refs.bib": "94231ab2a11b7658121cdafda79fc3aab798ef8219786a662a30124a0a839af7",
+    "sim/campaign.py": "8d296197a2881a7d29f5267dc3c33e5264f639d6cbdaf53ede7c26f60997d765",
+    "sim/exact_numbers.json": "b4437247cc8722f7415ebecf2fea179b5642b521f7c3a8a70538df6f2219adea",
+    "sim/exact_numbers.py": "1a98b3d0f3e58460d42d698c2b88d83582e7c976d90e242b5dcb9d5aa4005b96",
+    "sim/merge.py": "2df27f2a47d2d386d2fbb1ecf5ae637ca0cb887b5625c55059317ad9873f3055",
+    "sim/qrc_sim.py": "5224eb19b1d2b90166e81bba360b8417fbdf0ccd74a5471be9b3db7ed43b2390",
+    "sim/quoted_numbers.py": "c2e7ec4bfaf791f66060efb9da627a9f8182a1f1268e0d89a7a6cf43863f435c",
+    "sim/rep_curve.json": "ccde0e49d5b9bd1ebc3858e8927a1fa41d817612b53f7971d9c9baa314f6b192",
+    "sim/rep_curve.py": "7a819a626e1f29d09abf43a8a5194247120ec0e6e196a0c6d0f8651f15678bf1",
+    "sim/results_cold.json": "b417161b768aad61ad2b61145785cb50074a9345caadb1b09b421629c463889c",
+    "sim/results_cold_haar.json": "2bdba05fbc2d2e4ab37d9acdd3bec6f4ef9db888ab9dceac6d3a3e3e50a5fff1",
+    "sim/results_cold_ising.json": "d3c06a018675902dbb1300272dc12bbb9b49b1ffc9e05b602b2dd05ca00ed064",
+    "sim/results_main.json": "1de4aebae50ff13b8cd47a008a2851e5cbba847fc5ebc867955fecfedbaca46f",
+    "sim/results_main_haar.json": "6c7cfb5dff2cc39661d2a3b6f13dade79b55d5f4dd8ee26d3189639330e45a5f",
+    "sim/results_main_ising.json": "4620fb6d5517c4954dcb3093ca14fec611fde767eecdc604dc89c14e5eb0af33",
+    "sim/results_noise.json": "0bb4bedca595473907009a2098674769ce107dfe879a7acbe716cbe83d4a7cbc",
+    "sim/results_noise_haar.json": "ddf8c7f713ef3db22bf82235668d4e477ccf507bb1e06f70918ce1a767de7e65",
+    "sim/results_noise_ising.json": "22f00a8deb8b468872cd5c10f87ac4bed01eefd8dd6a906fa36b76d9196cb9d8",
+    "sim/results_tau.json": "c4ee7005e10e65d6b26638d1eaa5f3b37a39397ec863b4ea20f503f43539b2fe",
+    "sim/run_all.sh": "ea55d4c9bfc9fe19faa0dabd030e4052a172803ff6af754a74e38aaae5d700e9",
+    "sim/test_sim.py": "9c46cfdaef8eed73a019b4c0d3cdfd52cb200c7c90e295ae2257f19f98c65599",
+    "sim/validate_pairs.json": "25d5ce7eec2b61fcaadab702fb60cb9eb88d317a8d2dd8e366f3bfc58c899892",
+    "sim/validate_pairs.py": "605f447493068ce93391ff1f36c73e7b3abb49434c121f78c101f985019b2918"
+  },
+  "status": "Prepared locally; no uploads, submission, DOI reservation or publication.",
+  "transformations": [
+    "Imported 54 source files from mutually matching source/submission/Zenodo archives; preserved all five inputs byte for byte.",
+    "Retained updated Latin Modern typography/Unicode maps, new figures and bibliography, expanded displayed derivations and new finite-precision memory-capacity paragraph.",
+    "Restored confirmed three authors, ORCIDs, one shared QAR-Lab/chair/LMU address, fixed date, array compatibility pin, compact contents and Markus-specific verification attribution.",
+    "Restored GitHub URL in the Supplemental Material reference, now [27], and the code/data section; regenerated 38-entry bibliography.",
+    "Retained sampled memory estimates, independent unitary ensembles across k and continuous-versus-integer depth qualifications. Clarified optimal ceiling versus individual performance in abstract/Figure3/washout.",
+    "Made positive finite iid input variance, positive noise scale and finite readout-noise variance explicit in the new memory-capacity argument; Table S2 now says unital noise cannot raise the memory upper bound.",
+    "Repaired APS-style word counter: no shell escape, checked subprocesses, nofootinbib and disabled automatic bibliography in counting copy; final local count 3688.41.",
+    "Retained exact latest user-approved 100-word justification. Added 588-character plain-text abstract for the PRL form.",
+    "Prepared separately compiled 6-page Letter/18-page SM, combined 24-page arXiv package, and local Zenodo draft metadata/source handoff. Zenodo license/access/DOI remain unselected.",
+    "Updated current documentation and citations; retained historical editions and numerical evidence."
+  ],
+  "unchanged_json_dataset_count": 13,
+  "unchanged_simulation_python_count": 8,
+  "verification_record": "paper/submission/arxiv-2026-10-18-v5/verification.json",
+  "version": "2026-10-18-prl-v5",
+  "visibility_changed": false
+}

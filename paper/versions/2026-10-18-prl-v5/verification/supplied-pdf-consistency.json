@@ -1,0 +1,10 @@
+{
+  "combined_pages": 24,
+  "letter_pages": 6,
+  "sm_pages": 18,
+  "letter_page_text_matches_combined": false,
+  "sm_page_text_matches_combined": true,
+  "first_page_prefix": "The Fundamental Memory Ceiling of Noisy Quantum Reservoirs\nMarkus Baumann1,\u2217\n1Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen, Geschwister-Scholl-Platz 1, 80539 M\u00fcnchen, Germany\n(Dated: October 18, 2026)\nFresh qubits, not size, set how long a noisy quantum reservoir can remember its inputs. Withk\ninput qubits reinitialized per time step, the longest memory any reservoir can attain under depo-\nlarizing noise isexp[\u0398(k)] time steps, whatever its size, dynamics, and input encoding. A universal\nupper bound and an explicit reservoir that attains the exponential scaling establish this optimal\nresource law. The bound rests only on the entropy budget of each time step, so it applies to any\nnoisy quantum dynamics supplied with fresh qubits, from quantum reservoirs to measurement-free\nerror correction.\nIntroduction.\u2014Reservoir computing processes time\nseries with the transient dynamics of a fixed physical\nsystem, the reservoir: inputs are injected into it, and\nonly a linear readout is trained [1\u20135]. Quantum reser-\nvoir computing (QRC) uses interacting qubits for this\npurpose [6\u20138] and has been realized on superconducting\nprocessors with up to 120 qubits [9\u201313]. For temporal\ntasks, memory is the decisive resource. A reservoir that\nforecasts a time series can use an input only as long as\nthat input still influences its state, and on noisy hard-\nware this influence fades at every time step. Can a noi",
+  "letter_text_equal_ignoring_all_whitespace": true,
+  "letter_difference_detail": "Only PDF extraction whitespace differences; characters match after all whitespace is removed."
+}

@@ -1,6 +1,8 @@
 \documentclass[aps,prl,twocolumn,superscriptaddress,floatfix]{revtex4-2}
 
 \usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\pdfgentounicode=1\fi
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{graphicx}
 \usepackage{bm}
@@ -48,7 +50,7 @@ Ludwig-Maximilians-Universit\"at M\"unchen, Oettingenstra\ss e 67, 80538 M\"unch
 \date{October 18, 2026}
 
 \begin{abstract}
-We show that enlarging a noisy quantum reservoir does not raise its fundamental memory ceiling. With $k$ input qubits reinitialized per time step, the longest memory any reservoir can attain under depolarizing noise is $\exp[\Theta(k)]$ time steps, whatever its size, dynamics, and input encoding. A universal upper bound and an explicit reservoir that attains the exponential scaling establish this optimal resource law. It extends to an entropy budget for general noise and applies to any noisy quantum dynamics refreshed by fresh qubits, including measurement-free error correction.
+Fresh qubits, not size, set the memory ceiling of a noisy quantum reservoir. With $k$ input qubits reinitialized per time step, the longest memory any reservoir can attain under depolarizing noise is $\exp[\Theta(k)]$ time steps, whatever its size, dynamics, and input encoding. A universal upper bound and an explicit reservoir that attains the exponential scaling establish this optimal resource law. The bound rests only on the entropy budget of each time step, so it applies to any noisy quantum dynamics supplied with fresh qubits, from quantum reservoirs to measurement-free error correction.
 \end{abstract}
 
 \maketitle
@@ -57,7 +59,7 @@ We show that enlarging a noisy quantum reservoir does not raise its fundamental 
 % MAIN TEXT
 %======================================================================
 
-\runin{Introduction.}Reservoir computing processes time series with the transient dynamics of a fixed physical system, the reservoir: inputs are injected into it, and only a linear readout is trained~\cite{Jaeger2001,Maass2002,JaegerHaas2004,Lukosevicius2009,Tanaka2019}. Quantum reservoir computing (QRC) uses interacting qubits for this purpose~\cite{Fujii2017,Nakajima2019,Mujal2021} and has been realized on superconducting processors with up to 124 qubits~\cite{Chen2020,Suzuki2022,Yasuda2023,Hu2024,Monzani2024,Dao2026}. For temporal tasks, memory is the decisive resource. A reservoir that forecasts a time series can use an input only as long as that input still influences its state, and on noisy hardware this influence fades at every time step. Can a noisy quantum reservoir, or any noisy quantum system refreshed by fresh qubits [Fig.~\ref{fig:scope}], remember for arbitrarily long if it is only made large enough?
+\runin{Introduction.}Reservoir computing processes time series with the transient dynamics of a fixed physical system, the reservoir: inputs are injected into it, and only a linear readout is trained~\cite{Jaeger2001,Maass2002,JaegerHaas2004,Lukosevicius2009,Tanaka2019}. Quantum reservoir computing (QRC) uses interacting qubits for this purpose~\cite{Fujii2017,Nakajima2019,Mujal2021} and has been realized on superconducting processors with up to 120 qubits~\cite{Chen2020,Suzuki2022,Yasuda2023,Hu2024,Monzani2024}. For temporal tasks, memory is the decisive resource. A reservoir that forecasts a time series can use an input only as long as that input still influences its state, and on noisy hardware this influence fades at every time step. Can a noisy quantum reservoir, or any noisy quantum system supplied with fresh qubits [Fig.~\ref{fig:scope}], remember arbitrarily far back, provided it is made large enough?
 
 \begin{figure}[t]
 \centering
@@ -65,7 +67,7 @@ We show that enlarging a noisy quantum reservoir does not raise its fundamental 
 \caption{\textbf{Scope of the memory limit} (schematic).
 (a)~The upper bound of Theorem~\ref{thm:main} holds for every system in $\mathcal N$, whatever its size and dynamics.
 (b)~The lower bound is reached by one explicit reservoir (star): the error-correcting reservoir of Fig.~\ref{fig:attain}(a), which corrects errors without measurements.
-(c)~On the memory axis, no system goes beyond the upper bound and the star reaches the lower bound, so the memory ceiling $\max W$ lies in between and grows as $e^{\Theta(k)}$ [Fig.~\ref{fig:limit}(b)].}
+(c)~No system goes beyond the upper bound and the star reaches the lower bound, so the memory limit $\max W$ lies in between and grows as $e^{\Theta(k)}$ [Fig.~\ref{fig:limit}(a)].}
 \label{fig:scope}
 \end{figure}
 
@@ -78,18 +80,18 @@ We show that enlarging a noisy quantum reservoir does not raise its fundamental 
 \label{fig:overview}
 \end{figure*}
 
-The answer is not obvious. A larger reservoir offers more degrees of freedom in which to distribute information about past inputs, potentially making it more robust to noise. Yet redundancy alone does not prevent information from gradually degrading. Preserving it over long times may also depend on how the system is continually refreshed: in QRC, the input qubits are discarded and reinitialized at every time step, providing a route for removing accumulated entropy [Fig.~\ref{fig:overview}(b)]~\cite{Fujii2017,Yasuda2023,Hu2024}. Noise brings entropy into every qubit at every time step, whereas only the reinitialized qubits carry entropy out.
+The answer is not obvious. A larger reservoir offers more degrees of freedom in which to distribute information about past inputs, which promises robustness to noise. Yet redundancy alone does not prevent information from gradually degrading. Preserving it over long times also depends on how the system is refreshed. In QRC, the input qubits are discarded and reinitialized at every time step, providing a route for removing accumulated entropy [Fig.~\ref{fig:overview}(b)]~\cite{Fujii2017,Yasuda2023,Hu2024}. Noise brings entropy into every qubit at every time step, whereas only the reinitialized qubits carry entropy out.
 
-Echo-state and fading-memory criteria guarantee that old inputs eventually lose their influence~\cite{Jaeger2001,Boyd1985,MartinezPena2023,MorguiSancho2026}, Markovian reservoirs forget exponentially fast~\cite{Sannia2026}, and dissipation and resets are recognized resources for QRC~\cite{Chen2020,Kubota2023,Sannia2024,Monzani2024,Freiheit2026}. In noisy quantum computation, fresh qubits are known to be indispensable, since without them depolarizing noise permits only logarithmically deep computations~\cite{Aharonov1996,BenOr2013,StilckFranca2021,Mele2026}. How much memory a given supply of fresh qubits can buy has remained open.
+Fading memory is well studied. Echo-state and fading-memory criteria guarantee that old inputs eventually lose their influence~\cite{Jaeger2001,Boyd1985,MartinezPena2023,MorguiSancho2026}, and Markovian reservoirs forget exponentially fast~\cite{Sannia2026}. Dissipation and resets, on the other hand, are recognized resources for QRC~\cite{Chen2020,Kubota2023,Sannia2024,Monzani2024,Freiheit2026}, and in noisy quantum computation fresh qubits are known to be indispensable, since without them depolarizing noise permits only logarithmically deep computations~\cite{Aharonov1996,BenOr2013,StilckFranca2021,Mele2026}. But how much memory a given supply of fresh qubits can buy has remained open.
 
-Here we show that fresh qubits, not size, set a fundamental memory ceiling. Let $k$ input qubits be reinitialized at each time step, and let every qubit undergo depolarizing noise that keeps its state with probability $q$. The largest memory depth that any such reservoir can attain, that is, the number of past inputs that still influence its state beyond an accuracy $\varepsilon$, grows exponentially with $k$ and does not depend on the total number of qubits $n$ [Fig.~\ref{fig:limit}(b)]:
+Here we establish a memory ceiling set by fresh qubits, independent of size. Let $k$ input qubits be reinitialized at each time step, and let every qubit undergo depolarizing noise that keeps its state with probability $q$. The memory depth of a reservoir is the number of past inputs that still change its state by more than $\varepsilon$. The largest memory depth that any such reservoir can attain grows exponentially with $k$ and does not depend on the total number of qubits $n$ [Fig.~\ref{fig:limit}(a)]:
 \begin{equation}
-W_{q,k}(\varepsilon)=\exp\!\big[\Theta_q(k)\big].
+W_{q,k}(\varepsilon)=\exp\!\big[\Theta_q(k)\big]\quad\text{at fixed }\varepsilon.
 \label{eq:main}
 \end{equation}
-This result is a fundamental resource limitation for an entire class of open quantum systems, not a property of a specific reservoir architecture [Fig.~\ref{fig:scope}], and three features make it physically significant. First, it is a universal no-go result: within a well-defined noise model, no architecture, however large and including ones not yet conceived, beats the dimension-independent upper bound, and an explicit reservoir attains its exponential dependence on the refresh budget $k$. Second, it identifies entropy removal as the resource that limits memory: memory is bought with reinitialized qubits, not with size, and retaining an input for $T$ time steps requires, and can be achieved with, $\Theta_q(\log T)$ reinitialized qubits per time step [Fig.~\ref{fig:limit}(a)]. Third, it governs the stabilization of information in noisy quantum systems in general: the proof uses only the entropy budget of each noisy time step, so the law applies to any noisy quantum dynamics refreshed by fresh qubits without classical feedback, from dynamical circuits with resets~\cite{Yasuda2023,Hu2024} to measurement-free error correction~\cite{Heussen2024}, and complements space-overhead bounds for fault-tolerant quantum computation~\cite{Fawzi2022}.
+Within this noise model, no architecture, however large, beats the upper bound [Fig.~\ref{fig:scope}], and an explicit reservoir attains its exponential dependence on $k$. Entropy removal is the resource that limits memory. Retaining an input for $T$ time steps needs $\Theta_q(\log T)$ reinitialized qubits per time step, and that many suffice [Fig.~\ref{fig:limit}(b)]. Because the proof uses only the entropy budget of each noisy time step, the same limit applies to the storage of information in any noisy quantum dynamics supplied with fresh qubits and without classical feedback, from dynamical circuits with resets~\cite{Yasuda2023,Hu2024} to measurement-free error correction~\cite{Heussen2024}; the result complements space-overhead bounds for fault-tolerant quantum computation~\cite{Fawzi2022}.
 
-Our explicit error-correcting reservoir shows how fresh qubits sustain long memory under depolarizing noise. Its fixed dynamics protects the stored information while transferring accumulated entropy to the input register, where it is removed at the next reinitialization. The resulting memory depth grows exponentially with the number of reinitialized input qubits, realizing the optimal scaling established by our bounds.
+Our explicit error-correcting reservoir shows how fresh qubits sustain long memory under depolarizing noise. Its fixed dynamics protects the stored information while transferring accumulated entropy to the input register, where it is removed at the next reinitialization. The resulting memory depth grows exponentially with the number of reinitialized input qubits.
 
 \runin{A reservoir with fresh qubits.}A reservoir of $n$ qubits receives one classical input $u_t$ per time step $t$ [Fig.~\ref{fig:overview}(a),(b)]. At each time step, the $k$ qubits of the input register are discarded and reinitialized in an input state $\sigma(u_t)$ that encodes the input. A fixed reservoir unitary $U$ then acts on all qubits. Finally, every qubit undergoes depolarizing noise $\cD_q(\rho)=q\rho+(1-q)\tr(\rho)I/2$. Altogether,
 \begin{equation}
@@ -105,89 +107,88 @@ Noise erases the initial state, so the reservoir eventually reaches a state that
 \tfrac12\Norm{\rho(h)-\rho(h')}_1\le\varepsilon .
 \label{eq:depth}
 \end{equation}
-Inputs older than $W(\varepsilon)$ change every linear readout by at most $2\varepsilon\Norm F$~\cite{SM}: unlike the memory capacity~\cite{Jaeger2002}, the memory depth limits all readouts at once. We write $W_{q,k}(\varepsilon)$ for the largest memory depth of any reservoir with $k$ input qubits, maximized over $n$, $U$, and $\sigma$.
+Inputs older than $W(\varepsilon)$ change every linear readout by at most $2\varepsilon\Norm F$~\cite{SM}, so the memory depth, unlike the memory capacity~\cite{Jaeger2002}, limits all readouts at once. We write $W_{q,k}(\varepsilon)$ for the largest memory depth of any reservoir with $k$ input qubits, maximized over $n$, $U$, and $\sigma$.
 
 \begin{figure*}[t]
 \centering
 \includegraphics{fig3.pdf}
 \caption{\textbf{The memory limit} (schematic).
-(a)~One input stream drives A and B, which differ tenfold in size but share $k=2$ input qubits, and C, which is A with two more. Inputs older than the limit (red) are out of reach for every reservoir with the same $k$: A and B share the limit $W_{q,2}$, and C has a higher attainable limit.
-(b)~The limit lies between two exponentials in $k$, for every $n$ (Theorem~\ref{thm:main}); A, B, and C as in (a).}
+(a)~The limit lies between two exponentials in $k$, for every $n$ (Theorem~\ref{thm:main}); A, B, and C mark the reservoirs of (b).
+(b)~One input stream drives three reservoirs: A and B differ tenfold in size but share $k=2$ input qubits, and C is A with two more input qubits. Inputs older than the limit (red) are out of reach for every reservoir with the same $k$, so A and B share the limit $W_{q,2}$, while C has a higher attainable limit.}
 \label{fig:limit}
 \end{figure*}
 
 \runin{The memory limit.}Our main result bounds $W_{q,k}$ from both sides.
 
 \begin{theorem}[Memory limit]\label{thm:main}
-Let $0<q<1$ and $0<\varepsilon<q$.\\[2pt]
-(i)~Every reservoir with $k\ge4$ input qubits has
+Let $0<q<1$.\\[2pt]
+(i)~For $0<\varepsilon<1$, every reservoir with $k\ge4$ input qubits has
 \begin{equation}
 W(\varepsilon)\le\Bigl\lceil2^{k/(1-q)^2}\ln\frac1\varepsilon\Bigr\rceil,
 \label{eq:upper}
 \end{equation}
 whatever its number of qubits, reservoir unitary, and input encoding.\\[2pt]
-(ii)~For every $k$ with $e^{\alpha_q(k-3)}\ge4$, where $\alpha_q=\frac12\ln\frac1{1-q^2}$, some reservoir with at most $2k$ qubits has
+(ii)~For $0<\varepsilon<q$ and every $k$ with $e^{\alpha_q(k-3)}\ge4$, there is a reservoir with at most $2k$ qubits that has
 \begin{equation}
-W(\varepsilon)\ge\tfrac14\,e^{\alpha_q(k-3)}\ln\frac q\varepsilon .
+W(\varepsilon)\ge\tfrac14\,e^{\alpha_q(k-3)}\ln\frac q\varepsilon ,
 \label{eq:lower}
 \end{equation}
+where $\alpha_q=\frac12\ln\frac1{1-q^2}$.
 \end{theorem}
 
-Theorem~\ref{thm:main} characterizes the optimal resource scaling over the entire class of admissible reservoirs, not the performance of a particular architecture: the upper bound holds for every member, and the lower bound is an existence result, reached by one explicit member [Fig.~\ref{fig:scope}]. Since the two exponents differ, the theorem fixes the scaling class, not the exact rate [Fig.~\ref{fig:limit}(b)]. For $k\le3$, the upper bound holds with $k+1$ in place of $k$~\cite{SM}.
+The lower bound is an existence result, reached by one explicit reservoir [Fig.~\ref{fig:scope}]; since its exponent differs from that of the upper bound, the theorem fixes the scaling class but not the exact rate [Fig.~\ref{fig:limit}(a)]. For $k\le3$, the upper bound holds with $k+1$ in place of $k$~\cite{SM}, and for readouts of finite precision it carries over to the memory capacity~\cite{Jaeger2002,SM}.
 
-The theorem concerns echo states: $n$ redundant copies of an initial bit take $\Theta_q(\log n)$ time steps to wash out~\cite{SM}, so a larger reservoir needs a longer washout but does not remember new inputs for longer. Its constants are conservative~\cite{SM}; it identifies the resource and its scaling.
+The theorem concerns echo states. Since $n$ redundant copies of an initial bit take $\Theta_q(\log n)$ time steps to wash out~\cite{SM}, a larger reservoir needs a longer washout of its initial state, without raising the ceiling for driven memory. The constants in Theorem~\ref{thm:main} are conservative~\cite{SM}; the theorem identifies the resource and its scaling.
 
 \runin{Why no reservoir can remember longer.}A proof must defeat every strategy a reservoir might use to hide information: spreading it over many qubits, entangling it, or using its input qubits for repair. Our proof follows the difference between two reservoir states with different input histories and asks how well the states can be distinguished and how concentrated their difference is on a small part of the Hilbert space. Two established properties of depolarizing noise answer these questions~\cite{King2014,Cubitt2015} and yield the bound in three steps.
 
-\emph{Step 1: Noise caps the purity.} We measure the purity of a state by $\log_2P^2=n-S_2(\rho)$, the number of pure qubits' worth of purity it holds, where $S_2$ is the R\'enyi-2 entropy. Depolarizing noise damps the many-qubit correlations of which purity is made, a property known as hypercontractivity~\cite{King2014}. As a result, every time step multiplies the log-purity by $\theta=2q^2/(1+q^2)<1$, while the input qubits add at most $\theta k$. The log-purity thus has a fading memory of its own, and whatever its size, every echo state holds at most $\log_2P_*^2=2kq^2/(1-q^2)$ pure qubits' worth of purity, about 8.5 per input qubit at $q=0.9$~\cite{SM}.
+\emph{Step 1: Noise caps the purity.} We measure the purity of a state by $\log_2P^2=n-S_2(\rho)$, the number of pure qubits' worth of purity it holds, where $S_2$ is the R\'enyi-2 entropy. Depolarizing noise damps the many-qubit correlations of which purity is made; this property is known as hypercontractivity~\cite{King2014}. As a result, every time step multiplies the log-purity by $\theta=2q^2/(1+q^2)<1$, while the input qubits add at most $\theta k$. The log-purity thus has a fading memory of its own, and in a reservoir of any size, every echo state holds at most $\log_2P_*^2=2kq^2/(1-q^2)$ pure qubits' worth, about 8.5 per input qubit at $q=0.9$~\cite{SM}.
 
-\emph{Step 2: Spread-out differences are erased.} Low purity alone does not mean forgetting: $\ketbra00\otimes I/2^{n-1}$ and $\ketbra11\otimes I/2^{n-1}$ are almost completely mixed, yet perfectly distinguishable. Their difference, however, is spread over the whole Hilbert space, and one layer of noise erases the fraction $1-q$ of their distinguishability. A difference survives noise only if it is concentrated on a small subspace, as for a bit stored in many redundant copies. Reverse hypercontractivity makes this precise~\cite{Cubitt2015}: noise forces two states to overlap unless their difference is concentrated, so one layer of noise erases a fixed fraction of every spread-out difference.
+\emph{Step 2: Spread-out differences are erased.} Low purity alone does not mean forgetting: $\ketbra00\otimes I/2^{n-1}$ and $\ketbra11\otimes I/2^{n-1}$ are almost completely mixed, yet perfectly distinguishable. Their difference, however, is spread over the whole Hilbert space, and one layer of noise erases the fraction $1-q$ of their distinguishability. Reverse hypercontractivity makes this precise~\cite{Cubitt2015}: noise forces two states to overlap unless their difference is concentrated, so one layer of noise erases a fixed fraction of every spread-out difference.
 
 \emph{Step 3: Concentration costs purity.} A distinguishable difference concentrated on a fraction $2^{-m}$ of the Hilbert space, such as a bit stored in $m$ redundant copies, requires about $m$ pure qubits' worth of purity, and Step~1 caps the purity. A distance $V$ that weighs distinguishability against concentration~\cite{SM} therefore shrinks at every time step $\Phi_u$, for any two reservoir states $\rho,\rho'$ and any input $u$:
 \begin{equation}
 V\bigl(\Phi_u\rho-\Phi_u\rho'\bigr)\le(1-\delta)\,V(\rho-\rho'),
 \label{eq:contraction}
 \end{equation}
-with a forgetting rate $\delta\ge2^{-k/(1-q)^2}$ for $k\ge4$~\cite{SM}. Whatever the reservoir does, every time step erases at least the fraction $\delta$ of its past. After $L$ time steps, two echo states are therefore within trace distance $e^{-\delta L}$, which is Theorem~\ref{thm:main}(i).
+with a forgetting rate $\delta\ge2^{-k/(1-q)^2}$ for $k\ge4$~\cite{SM}. Whatever the reservoir does, every time step erases at least the fraction $\delta$ of its past. After $L$ time steps, two echo states are therefore within trace distance $e^{-\delta L}$; this is Theorem~\ref{thm:main}(i).
 
-Without fresh qubits, $k=0$, as for inputs encoded in input-dependent unitaries, the echo state is the completely mixed state for every input sequence: such a reservoir retains nothing.
+Without fresh qubits ($k=0$), as for inputs encoded in input-dependent unitaries, the echo state is the completely mixed state for every input sequence, so such a reservoir retains nothing.
 
 \begin{figure*}[t]
 \centering
 \includegraphics{fig4.pdf}
 \caption{\textbf{Attaining the limit.}
 (a)~Error-correcting reservoir ($r=3$, $k=5$): $U$ writes the new bit, or the majority of the stored copies, into fresh ancillas and swaps them into the memory; the old copies leave with the input register.
-(b)~The error-correcting reservoir (exact single-qubit readout, $n=2k-2$) uses its fresh qubits for repair, and its memory depth grows exponentially with $k$, above the lower bound of Theorem~\ref{thm:main}; without repair, the same $r=k-2$ copies gain almost nothing, even with the best readout. Depths with and without repair are plotted at continuous threshold crossings; the corresponding integer depths are rounded up.
+(b)~The error-correcting reservoir (exact single-qubit readout, $n=2k-2$) uses its fresh qubits for repair, and its memory depth grows exponentially with $k$, above the lower bound of Theorem~\ref{thm:main}; without repair (gray), the same $r=k-2$ copies gain almost nothing, even with the best readout. Plotted depths are continuous threshold crossings; integer depths are rounded up.
 (c)~Within the sampled ensembles, standard reservoirs gain nothing from size, and a second input qubit shortens their memory ($k=1$ filled, $k=2$ open; mean $\pm$ s.d., six realizations). Unitaries are sampled separately for each $k$. (b),~(c)~$q=0.9$, $\varepsilon=0.01$.}
 \label{fig:attain}
 \end{figure*}
 
-\runin{A reservoir that attains the limit.}Because $W_{q,k}$ is an optimum over all admissible reservoirs, a single reservoir suffices to show that the exponential scaling is attained. We deliberately choose the simplest one whose dynamics is exactly solvable; its role is to show that the exponential dependence on $k$ is fundamental rather than an artifact of the upper-bound proof.
+\runin{A reservoir that attains the limit.}Because $W_{q,k}$ is an optimum over all reservoirs, a single example suffices to show that the exponential scaling is attained. We take the simplest one with exactly solvable dynamics: a memory that repairs itself with fresh qubits, an error-correcting reservoir [Fig.~\ref{fig:attain}(a)]. It stores a bit in $r$ memory qubits as a repetition code and corrects it by majority vote. At every time step, its unitary computes the majority of the stored copies, writes it into $r$ freshly reinitialized ancillas, and swaps the ancillas into the memory. The old copies, which carry the noise of the previous time step, end up in the input register and are discarded at the next injection, so the entropy leaves with them. Two further input qubits tell the reservoir whether to keep its memory or to store a new bit, so that $k=r+2$~\cite{SM}. The unitary only permutes computational basis states, so the reservoir corrects errors without measurements or feedback.
 
-The idea is a memory that repairs itself with fresh qubits, an error-correcting reservoir [Fig.~\ref{fig:attain}(a)]. It stores a bit in $r$ memory qubits as a repetition code and corrects it by majority vote: at every time step, its unitary computes the majority of the stored copies, writes it into $r$ freshly reinitialized ancillas, and swaps the ancillas into the memory. The old copies, which carry the noise of the previous time step, end up in the input register and are discarded at the next injection, so the entropy leaves with them. Two further input qubits tell the reservoir whether to keep its memory or to store a new bit, so that $k=r+2$~\cite{SM}. The unitary only permutes computational basis states, so the reservoir corrects errors without measurements or feedback.
-
-Because all states remain diagonal, every qubit behaves as a classical bit that flips with probability $(1-q)/2$ per time step, and the response can be computed exactly. The stored bit is lost only if most of its $r$ copies flip within one time step, which happens with probability $p_r\le(1-q^2)^{r/2}=e^{-\alpha_qr}$ by a Chernoff bound with the exact exponent~\cite{SM}. A bit $b$ stored $t$ time steps ago therefore yields on any memory qubit
+Because all states remain diagonal, every qubit behaves as a classical bit that flips with probability $(1-q)/2$ per time step, and the response can be computed exactly. The stored bit is lost only if most of its $r$ copies flip within one time step, which happens with probability $p_r\le(1-q^2)^{r/2}=e^{-\alpha_qr}$ by a Chernoff bound with the exact exponent~\cite{SM}. A bit $b$ stored $t$ time steps ago therefore leaves every memory qubit with
 \begin{equation}
 \langle Z\rangle_t=(-1)^b\,q\,(1-2p_r)^t .
 \label{eq:response}
 \end{equation}
 The signal still decays, but at a rate that is exponentially small in $r$. Two input histories that differ only in this bit agree on their last $t$ inputs, yet their echo states remain at trace distance at least $q(1-2p_r)^t$; with the bound on $p_r$, this gives Theorem~\ref{thm:main}(ii). At $q=0.9$ and $\varepsilon=0.01$, the memory depth exceeds 300 time steps for $k=5$ and two million for $k=15$, whereas the same copies without the majority vote keep the bit for at most 53 time steps [Fig.~\ref{fig:attain}(b)].
 
-\runin{Standard reservoirs operate far below the limit.}We simulated transverse-field Ising reservoirs with random all-to-all couplings, the workhorse of QRC~\cite{Fujii2017,Nakajima2019,MartinezPena2021}, and Haar-random unitaries at $q=0.9$, and estimated their memory depth $W$ at $\varepsilon=0.01$ from input histories that differ in one input or in all earlier inputs~\cite{SM}. Within these ensembles, size does not extend their memory [Fig.~\ref{fig:attain}(c)]: with one input qubit ($k=1$), the Ising reservoir remembers 16 to 18 time steps for every size from $n=3$ to $9$ qubits, and the Haar reservoir forgets faster as it grows ($W$ drops from 9 to 4 time steps as $n$ grows from 3 to 9). More input qubits do not help either [Fig.~\ref{fig:attain}(c)]~\cite{SM}: at fixed size ($n=8$), raising $k$ from 1 to 4 lowers $W$ from 18 to 8 time steps (Ising) and from 4 to 3 (Haar); the decrease persists when the additional input qubits are reinitialized in $\ket0$. Both stay below an idle qubit that merely holds the input ($W=43$ time steps), whereas the error-correcting reservoir of the same size ($n=8$, of which $k=5$ are input qubits) remembers 316 time steps.
+\runin{Standard reservoirs operate far below the limit.}We simulated transverse-field Ising reservoirs with random all-to-all couplings, the workhorse of QRC~\cite{Fujii2017,Nakajima2019,MartinezPena2021}, and Haar-random unitaries at $q=0.9$, and estimated their memory depth $W$ at $\varepsilon=0.01$ from input histories that differ in one input or in all earlier inputs~\cite{SM}. Within these ensembles, size does not extend their memory [Fig.~\ref{fig:attain}(c)]. With one input qubit ($k=1$), the Ising reservoir remembers 16 to 18 time steps for every size from $n=3$ to $9$ qubits, while the Haar reservoir forgets faster as it grows ($W$ drops from 9 to 4 time steps as $n$ grows from 3 to 9). Nor do more input qubits help [Fig.~\ref{fig:attain}(c)]~\cite{SM}. At fixed size ($n=8$), raising $k$ from 1 to 4 lowers $W$ from 18 to 8 time steps (Ising) and from 4 to 3 (Haar), and the decrease persists when the additional input qubits are reinitialized in $\ket0$. Both stay below an idle qubit that merely holds the input ($W=43$ time steps), whereas the error-correcting reservoir of the same size ($n=8$, of which $k=5$ are input qubits) remembers 316 time steps.
 
-\runin{An entropy budget.}Beyond depolarizing noise, the result becomes an entropy budget~\cite{SM}: any additional channel $\mathcal S$ with $\mathcal S(I)\le2^bI$ adds $b$ bits, and the upper bound holds with $k$ replaced by $k+b$. Unital noise (Pauli errors, dephasing, coherent errors, crosstalk) and projective measurements whose outcomes only enter the readout~\cite{Mujal2023} have $b=0$; since every unital qubit channel with full-rank Choi matrix contains a depolarizing component, the theorem covers generic independent unital noise~\cite{SM}. Resets of $m$ qubits count like $m$ input qubits. Amplitude damping with probability $0<\gamma<1$ adds $n\log_2(1+\gamma)$ bits, and relaxing idle qubits then act as a refrigerator~\cite{BenOr2013} that lets a reservoir with two input qubits remember for a time exponential in $n$~\cite{SM,Hoeffding1963}. Without a depolarizing component, with non-Markovian noise~\cite{Sannia2026}, or with feedback of measurement outcomes, memory can be unbounded~\cite{SM}.
+\runin{An entropy budget.}Beyond depolarizing noise, the result becomes an entropy budget~\cite{SM}. Any additional channel $\mathcal S$ with $\mathcal S(I)\le2^bI$ adds $b$ bits, and the upper bound holds with $k$ replaced by $k+b$. Unital noise (Pauli errors, dephasing, coherent errors, crosstalk) and projective measurements whose outcomes only enter the readout~\cite{Mujal2023} have $b=0$; since every unital qubit channel with full-rank Choi matrix contains a depolarizing component, the theorem covers generic independent unital noise~\cite{SM}. Resets of $m$ qubits count like $m$ input qubits. Amplitude damping with probability $0<\gamma<1$ adds $n\log_2(1+\gamma)$ bits, and relaxing idle qubits then act as a refrigerator~\cite{BenOr2013} that lets a reservoir with two input qubits remember for a time exponential in $n$~\cite{SM,Hoeffding1963}. Without a depolarizing component, with non-Markovian noise~\cite{Sannia2026}, or with feedback of measurement outcomes, memory can be unbounded~\cite{SM}.
 
-\runin{Conclusion.}Fresh qubits, not size, set the memory of noisy quantum reservoirs. A dimension-independent upper bound for arbitrary dynamics and an explicit reservoir that attains its exponential scaling establish an optimal resource law and a universal no-go result for an entire class of open quantum systems, from QRC to measurement-free error correction~\cite{Heussen2024}: with $k$ reinitialized qubits per time step, the memory ceiling is $\exp[\Theta_q(k)]$ time steps, whatever the size. Fresh qubits are necessary to reach the ceiling but not sufficient; standard reservoirs, which do not use them for repair, operate far below it. When a reservoir forgets too quickly, the parameters to check are therefore its supply of fresh qubits and whether its dynamics uses them to remove errors, not its size. The theorem bounds how far back any task can reach, not how well a reservoir processes the inputs within that range~\cite{Cao2026}. Open problems include closing the gap between the two exponents, extending the bound to feedback and non-Markovian noise, and testing the scaling by varying $k$ at fixed $n$ with mid-circuit resets~\cite{Yasuda2023,Hu2024}.
+\runin{Conclusion.}When a noisy quantum reservoir forgets too quickly, the parameters to check are its supply of fresh qubits and whether its dynamics uses them to remove errors, not its size. With $k$ reinitialized qubits per time step, the longest memory any reservoir can attain is $\exp[\Theta_q(k)]$ time steps, for any number of qubits, and the same limit holds for other noisy quantum dynamics supplied with fresh qubits and without classical feedback, such as measurement-free error correction~\cite{Heussen2024}. Fresh qubits are necessary to reach this limit but not sufficient; standard reservoirs, which do not use them for repair, operate far below it. The limit bounds how far back a task can reach; how well a reservoir processes the inputs within that range is a separate question~\cite{Cao2026}. Open problems include closing the gap between the two exponents, identifying what limits memory with feedback or non-Markovian noise, and testing the scaling by varying $k$ at fixed $n$ with mid-circuit resets~\cite{Yasuda2023,Hu2024}.
 
 \begin{acknowledgments}
-\runin{Acknowledgments.}Markus Baumann used Claude Opus 5.5 (Anthropic) to assist with drafting and editing the text, checking derivations and references, and writing the simulation and plotting code. Markus Baumann directed this work, verified every derivation and numerical result, and takes full responsibility for the content of this article.
+\runin{Acknowledgments.}GPT-6 Astra (OpenAI) and Claude Opus 5.5 (Anthropic) were used as assistants for writing, for checking derivations and references, and for the simulation and plotting code; Markus Baumann directed this work and verified all results.
 \end{acknowledgments}
 
 \runin{Data availability.}Code and data that reproduce all numbers and figures of this Letter are provided as a source archive with the Supplemental Material~\cite{SM}.
 
 % References cited only in the Supplemental Material (through the note of Ref. SM); the \nocite lets a single
 % BibTeX run of the Letter alone find them, with the same numbering.
-\nocite{vonNeumann1956,Nelson2026,Xiong2025}
+\nocite{vonNeumann1956,Nelson2026,Xiong2025,Dao2026}
 \bibliography{refs}
 
 %======================================================================
@@ -206,6 +207,8 @@ The signal still decays, but at a rate that is exponentially small in $r$. Two i
 \renewcommand{\thetable}{S\arabic{table}}
 \renewcommand{\thelemma}{S\arabic{lemma}}
 \renewcommand{\thepage}{S\arabic{page}}
+\renewcommand{\theHfigure}{S\arabic{figure}}
+\renewcommand{\theHtable}{S\arabic{table}}
 \setcounter{secnumdepth}{3}
 
 \begin{center}
@@ -230,7 +233,7 @@ This Supplemental Material contains the proofs of the main text, the exact analy
 \label{sm:overview}
 %======================================================================
 
-The upper bound of Theorem~\ref{thm:main} rests on a single statement: every time step shrinks the difference between any two reservoir states by a fixed fraction, whatever the reservoir does. The difficulty is that neither of the two obvious ways to measure a difference shrinks on its own.
+The upper bound of Theorem~\ref{thm:main} rests on a single statement: every time step shrinks the difference between any two reservoir states by a fixed fraction, for any reservoir dynamics. The difficulty is that neither of the two obvious ways to measure a difference shrinks on its own.
 \begin{itemize}
 \item The \emph{trace distance}, which says how well two states can be distinguished, can barely change in one time step: a bit stored in many redundant copies passes a layer of noise almost intact.
 \item The \emph{2-norm}, which is large when a difference is concentrated on a small part of the Hilbert space, can even grow, because the fresh input qubits make the state purer.
@@ -255,17 +258,17 @@ For an operator $X$ on $n$ qubits, let $d=2^n$ and $\tau(X)=\tr(X)/d$, the avera
 \nrm Xp=\bigl(\tau|X|^p\bigr)^{1/p},
 \label{eq:S-norm}
 \end{equation}
-the $p$-th root of the average $p$-th power of the singular values of $X$ (the normalized Schatten $p$-norm). Averaging instead of summing makes $\nrm Ip=1$ for every $p$, so that no factors of $d$ appear in the proofs. We need $p=1$, $p=2$, and, in one place, a value of $p$ between $0$ and $1$, for which the same formula defines a useful quantity, although not a norm. Three standard facts about such averages are used: (i) $\nrm Xp$ grows with $p$; (ii) $p\mapsto\ln\tau|X|^p$ is convex; and (iii) $\nrm Xp\le\nrm X1^{1-\theta}\nrm X2^{\theta}$ whenever $1/p=1-\theta/2$, which is H\"older's inequality.
+the $p$-th root of the average $p$-th power of the singular values of $X$ (the normalized Schatten $p$-norm). Averaging instead of summing makes $\nrm Ip=1$ for every $p$, so that no factors of $d$ appear in the proofs. We need $p=1$, $p=2$, and, in one place, a value of $p$ between $0$ and $1$, for which the same formula defines a useful quantity, although not a norm. We use three standard facts about such averages: (i) $\nrm Xp$ grows with $p$; (ii) $p\mapsto\ln\tau|X|^p$ is convex; and (iii) $\nrm Xp\le\nrm X1^{1-\theta}\nrm X2^{\theta}$ whenever $1/p=1-\theta/2$ (H\"older's inequality).
 
 \subsection{Distinguishability, purity, and concentration}
 
-The proof follows the operator $X=d(\rho-\rho')$ for two reservoir states $\rho$ and $\rho'$. Three properties of it matter.
+The proof tracks three properties of the operator $X=d(\rho-\rho')$ for two reservoir states $\rho$ and $\rho'$.
 \begin{itemize}
 \item \emph{Distinguishability}: $\nrm X1=\Norm{\rho-\rho'}_1$ is twice the trace distance. The best measurement tells $\rho$ from $\rho'$ with success probability $\frac12+\frac14\nrm X1$.
 \item \emph{Purity}: for a single state, $P=\nrm{d\rho}2=(d\tr\rho^2)^{1/2}$, and $\log_2P^2=n-S_2(\rho)$, where $S_2=-\log_2\tr\rho^2$ is the R\'enyi-2 entropy. It counts \emph{pure qubits' worth} of purity: $\log_2P^2$ equals $0$ for the completely mixed state, $n$ for a pure state, and $m$ for a state with $m$ pure and $n-m$ completely mixed qubits.
 \item \emph{Concentration}: the ratio $\nrm X2/\nrm X1\ge1$. It equals one if all eigenvalues of $X$ have the same magnitude, and it is large if $X$ lives on a small subspace.
 \end{itemize}
-Three examples show the scale of the concentration. The difference between $\ketbra00\otimes I/2^{n-1}$ and $\ketbra11\otimes I/2^{n-1}$ has concentration $1$: it is spread over the whole Hilbert space. A bit stored in $m$ redundant copies, $\ketbra00^{\otimes m}$ versus $\ketbra11^{\otimes m}$ with the other qubits completely mixed, has concentration $2^{(m-1)/2}$. Two orthogonal pure states have the largest possible concentration, $2^{(n-1)/2}$. In all three examples, a concentrated difference requires purity, and this holds in general: since $\nrm X2\le\nrm{d\rho}2+\nrm{d\rho'}2$, two states with purity at most $P$ have a difference with $\nrm X2\le2P$.
+The following examples show how widely the concentration varies. The difference between $\ketbra00\otimes I/2^{n-1}$ and $\ketbra11\otimes I/2^{n-1}$ has concentration $1$: it is spread over the whole Hilbert space. A bit stored in $m$ redundant copies, $\ketbra00^{\otimes m}$ versus $\ketbra11^{\otimes m}$ with the other qubits completely mixed, has concentration $2^{(m-1)/2}$. Two orthogonal pure states have the largest possible concentration, $2^{(n-1)/2}$. In all three examples, a concentrated difference requires purity, and this holds in general: since $\nrm X2\le\nrm{d\rho}2+\nrm{d\rho'}2$, two states with purity at most $P$ have a difference with $\nrm X2\le2P$.
 
 \subsection{The fresh qubits are the only source of purity}
 
@@ -278,10 +281,18 @@ The injection step $\cE_u(X)=U[\sigma(u)\otimes\tr_{\mathrm{in}}X]U^\dagger$ obe
 \end{lemma}
 
 \begin{proof}
-The first inequality says that no physical process makes two states more distinguishable (contractivity of the trace norm). For the second, write $X=\sum_{i,j}\ketbra ij\otimes X_{ij}$, where $\ket i$ runs over the $2^k$ basis states of the input register. Then $\tr_{\mathrm{in}}X=\sum_iX_{ii}$, and the Cauchy--Schwarz inequality gives $\tr(\tr_{\mathrm{in}}X)^2\le2^k\sum_i\tr X_{ii}^2\le2^k\tr X^2$. Since $\tr\sigma(u)^2\le1$ and $U$ does not change traces, $\tr(\cE_uX)^2=\tr\sigma(u)^2\,\tr(\tr_{\mathrm{in}}X)^2\le2^k\tr X^2$. Dividing by $d$ gives the claim.
+The first inequality says that no physical process makes two states more distinguishable (contractivity of the trace norm). For the second, write $X=\sum_{i,j}\ketbra ij\otimes X_{ij}$, where $\ket i$ runs over the $2^k$ basis states of the input register. Then $\tr_{\mathrm{in}}X=\sum_iX_{ii}$, and the Cauchy--Schwarz inequality gives
+\[
+\tr(\tr_{\mathrm{in}}X)^2\le2^k\sum_i\tr X_{ii}^2\le2^k\tr X^2 .
+\]
+Since $\tr\sigma(u)^2\le1$ and $U$ does not change traces,
+\[
+\tr(\cE_uX)^2=\tr\sigma(u)^2\,\tr(\tr_{\mathrm{in}}X)^2\le2^k\tr X^2 .
+\]
+Dividing by $d$ gives the claim.
 \end{proof}
 
-In words, discarding $k$ qubits raises the 2-norm of an operator by at most a factor $2^{k/2}$. For a state, $X=d\rho$, a time step thus adds at most $k$ pure qubits' worth of purity: the fresh qubits are the only source of purity.
+Discarding $k$ qubits thus raises the 2-norm of an operator by at most a factor $2^{k/2}$. For a state, $X=d\rho$, a time step adds at most $k$ pure qubits' worth of purity, so the fresh qubits are the only source of purity.
 
 The same two bounds hold, with $k$ replaced by $b$, for every channel $\cE$ with $\cE(I)\le2^bI$; for the 2-norm, this follows from the Kadison--Schwarz inequality $(\cE X)^2\le\Norm{\cE(I)}\,\cE(X^2)$. We call $b$ the \emph{budget} of $\cE$. The injection step has $b=k$, because $\cE_u(I)=2^kU[\sigma(u)\otimes I]U^\dagger\le2^kI$; unitaries and all unital channels have $b=0$; and a reset of $m$ qubits has $b=m$ (Sec.~\ref{sm:budget}). In the following, $\cE$ denotes any channel with a budget of $b$ bits, and $b=k$ for the reservoirs of the main text.
 
@@ -300,14 +311,18 @@ Throughout this section, $\Nq=\cD_q^{\otimes n}$ denotes one layer of depolarizi
 \nrm{\Nq Y}2\le\nrm Y{1+q^2} .
 \label{eq:S-king}
 \end{equation}
-This is King's hypercontractivity theorem for products of unital qubit channels~\cite[Corollary~2]{King2014}, which gives $\nrm{\Nq Y}r\le\nrm Yp$ whenever $q^2\le(p-1)/(r-1)$; here $r=2$ and $p=1+q^2$. Because $1+q^2<2$, the norm on the right is weaker than the one on the left, so noise turns operators with a bounded $(1+q^2)$-norm into operators with a bounded 2-norm. The mechanism is the damping of correlations: written as a sum of Pauli strings, an operator loses the factor $q$ for every qubit on which a string acts, and concentrated operators, such as projectors onto a few states, consist mostly of long strings. As a single-qubit check, $Y=2\ketbra00=I+Z$ becomes $I+qZ$, and Eq.~\eqref{eq:S-king} reads $1.345\le1.364$ at $q=0.9$. (The extension from positive to Hermitian $Y=Y_+-Y_-$ is immediate: $\Nq$ is positive and self-adjoint with respect to $\tau$, so $\nrm{\Nq Y}2^2=\tau[Y\Nq^2(Y)]\le\tau[|Y|\Nq^2(|Y|)]=\nrm{\Nq|Y|}2^2$, while $\nrm{|Y|}p=\nrm Yp$.)
+This is King's hypercontractivity theorem for products of unital qubit channels~\cite[Corollary~2]{King2014}, which gives $\nrm{\Nq Y}r\le\nrm Yp$ whenever $q^2\le(p-1)/(r-1)$; here $r=2$ and $p=1+q^2$. Because $1+q^2<2$, the norm on the right is weaker than the one on the left, so noise turns operators with a bounded $(1+q^2)$-norm into operators with a bounded 2-norm. The mechanism is the damping of correlations: written as a sum of Pauli strings, an operator loses the factor $q$ for every qubit on which a string acts, and concentrated operators, such as projectors onto a few states, consist mostly of long strings. As a single-qubit check, $Y=2\ketbra00=I+Z$ becomes $I+qZ$, and Eq.~\eqref{eq:S-king} reads $1.345\le1.364$ at $q=0.9$. The extension from positive to Hermitian $Y=Y_+-Y_-$ is immediate. Since $\Nq$ is positive and self-adjoint with respect to $\tau$,
+\[
+\nrm{\Nq Y}2^2=\tau\bigl[Y\,\Nq^2(Y)\bigr]\le\tau\bigl[|Y|\,\Nq^2(|Y|)\bigr]=\nrm{\Nq|Y|}2^2,
+\]
+while $\nrm{|Y|}p=\nrm Yp$.
 
 \paragraph*{Noise forces overlap (reverse hypercontractivity).} For positive operators $G_1,G_2\ge0$,
 \begin{equation}
 \tau\bigl[G_1\,\Nq(G_2)\bigr]\ge\nrm{G_1}{1-q}\,\nrm{G_2}{1-q} .
 \label{eq:S-cubitt}
 \end{equation}
-This is the two-point reverse hypercontractive inequality of Cubitt \emph{et al.}~\cite[Corollary~14]{Cubitt2015}, which holds for all exponents $\bar p_1,\bar p_2<1$ with $q\le\sqrt{(1-\bar p_1)(1-\bar p_2)}$; we use the symmetric choice $\bar p_1=\bar p_2=1-q$. To read it, normalize $\tau G=1$, so that $G$ is $d$ times a density matrix. Then $\nrm G{1-q}$ lies between $0$ and $1$: it equals one for $G=I$ and is small only if $G$ is concentrated on a small subspace. After one layer of noise, two positive operators therefore overlap substantially unless they are concentrated. For example, the scaled orthogonal projectors $2\ketbra00$ and $2\ketbra11$ of a single qubit overlap by $1-q$ after one layer of noise.
+This is the two-point reverse hypercontractive inequality of Cubitt \emph{et al.}~\cite[Corollary~14]{Cubitt2015}, which holds for all exponents $\bar p_1,\bar p_2<1$ with $q\le\sqrt{(1-\bar p_1)(1-\bar p_2)}$; we use the symmetric choice $\bar p_1=\bar p_2=1-q$. To interpret it, normalize $\tau G=1$, so that $G$ is $d$ times a density matrix. Then $\nrm G{1-q}$ lies between $0$ and $1$: it equals one for $G=I$ and is small only if $G$ is concentrated on a small subspace. After one layer of noise, two positive operators therefore overlap substantially unless they are concentrated. For example, the scaled orthogonal projectors $2\ketbra00$ and $2\ketbra11$ of a single qubit overlap by $1-q$ after one layer of noise.
 
 \subsection{Step 1: Noise caps the purity}
 \label{sm:cap}
@@ -337,12 +352,12 @@ The log-purity is multiplied by $\theta<1$ at every time step, and the budget ad
 \log_2P_*=\frac{bq^2}{1-q^2},
 \label{eq:S-Pstar}
 \end{equation}
-which is the purity cap of the main text for $b=k$. Whatever the size of the reservoir, the purity approaches the same cap; only the time it takes grows, as $\log n$ [Fig.~\ref{figS:purity} and Sec.~\ref{sm:memory}].
+which is the purity cap of the main text for $b=k$. The purity approaches the same cap for every size of the reservoir; only the time this takes grows, as $\log n$ [Fig.~\ref{figS:purity} and Sec.~\ref{sm:memory}].
 
 \begin{figure}[t]
 \centering
 \includegraphics{figS1.pdf}
-\caption{\textbf{Noise caps the purity.} Purity bound $\log_2P_t^2$ obtained by iterating Eq.~\eqref{eq:S-purityrec} with equality, for reservoirs of $n$ qubits that start in a pure state, at $q=0.9$ and $b=k=2$. Every bound approaches the same cap $\log_2P_*^2=2kq^2/(1-q^2)$ (dashed), whatever the size; only the washout time $t_0$ of Sec.~\ref{sm:memory} (dots) grows, as $\log n$.}
+\caption{\textbf{Noise caps the purity.} Purity bound $\log_2P_t^2$ obtained by iterating Eq.~\eqref{eq:S-purityrec} with equality, for reservoirs of $n$ qubits that start in a pure state, at $q=0.9$ and $b=k=2$. Every bound approaches the same cap $\log_2P_*^2=2kq^2/(1-q^2)$ (dashed) for every size; only the washout time $t_0$ of Sec.~\ref{sm:memory} (dots) grows, as $\log n$.}
 \label{figS:purity}
 \end{figure}
 
@@ -370,7 +385,15 @@ One layer of noise thus removes at least the fraction $c_q(2K)^{-a}$ of the dist
 \label{eq:S-testerror}
 \end{equation}
 
-\emph{Every test errs.} Either $M$ or $I-M$ accepts at least half of the Hilbert space; say $\tau M\ge\frac12$. Reverse hypercontractivity~\eqref{eq:S-cubitt} then bounds the probability that $M$ accepts the noisy negative part: $\mathrm{err}(M)\ge\tau[M\Nq G_-]\ge\nrm M{1-q}\,\nrm{G_-}{1-q}$. Both factors are bounded from below. A test that accepts half of the Hilbert space is not concentrated: $M^{1-q}\ge M$ gives $\nrm M{1-q}\ge(\tau M)^{1/(1-q)}\ge c_q$. A state part with limited purity is not concentrated either: by fact (ii), $\ln\tau G_-^p$ is convex in $p$, and because $\tau G_-=1$ at $p=1$, which lies between $1-q$ and $2$, this gives $\tau G_-^{1-q}\ge(\tau G_-^2)^{-q}$, that is, $\nrm{G_-}{1-q}\ge\nrm{G_-}2^{-a}\ge(2K)^{-a}$. Hence $\mathrm{err}(M)\ge c_q(2K)^{-a}$ for every test, and Eq.~\eqref{eq:S-testerror} proves the lemma.
+\emph{Every test errs.} Either $M$ or $I-M$ accepts at least half of the Hilbert space; say $\tau M\ge\frac12$. Reverse hypercontractivity~\eqref{eq:S-cubitt} then bounds the probability that $M$ accepts the noisy negative part,
+\[
+\mathrm{err}(M)\ge\tau[M\Nq G_-]\ge\nrm M{1-q}\,\nrm{G_-}{1-q},
+\]
+and both factors are bounded from below. A test that accepts half of the Hilbert space is not concentrated: $M^{1-q}\ge M$ gives $\nrm M{1-q}\ge(\tau M)^{1/(1-q)}\ge c_q$. A state part with limited purity is not concentrated either. By fact (ii), $\ln\tau G_-^p$ is convex in $p$, and $\tau G_-=1$ at $p=1$, which lies between $1-q$ and $2$; hence
+\[
+\tau G_-^{1-q}\ge\bigl(\tau G_-^2\bigr)^{-q},\quad\text{that is,}\quad\nrm{G_-}{1-q}\ge\nrm{G_-}2^{-a}\ge(2K)^{-a}.
+\]
+Therefore $\mathrm{err}(M)\ge c_q(2K)^{-a}$ for every test, and Eq.~\eqref{eq:S-testerror} proves the lemma.
 \end{proof}
 
 \subsection{Step 3: One distance shrinks at every time step}
@@ -381,7 +404,7 @@ Lemma~\ref{lem:forget} needs a bound on the concentration, and Lemma~\ref{lem:ca
 V(X)=\max\Bigl\{\nrm X1,\ \frac{\nrm X2}{2P_*}\Bigr\}.
 \label{eq:S-V}
 \end{equation}
-In words, $V$ is twice the trace distance, unless the difference is so concentrated that its 2-norm, measured in units of twice the purity cap, is larger. For the difference of two states with purity at most $P_*$, both entries are at most 2 (Sec.~\ref{sm:norms}).
+That is, $V$ is twice the trace distance, unless the difference is so concentrated that its 2-norm, measured in units of twice the purity cap, is larger. For the difference of two states with purity at most $P_*$, both entries are at most 2 (Sec.~\ref{sm:norms}).
 
 \begin{proposition}[Contraction]\label{prop:contraction}
 For every traceless Hermitian $X$,
@@ -394,14 +417,26 @@ V(\Nq\cE X)\le(1-\delta)\,V(X),\qquad\delta=c_q\bigl(4\cdot2^{b/2}P_*\bigr)^{-a}
 \begin{proof}
 Both sides grow linearly with $X$, so it suffices to take $V(X)=1$, that is, $\nrm X1\le1$ and $\nrm X2\le2P_*$.
 
-\emph{The 2-norm part shrinks.} Lemma~\ref{lem:cap} and $2^{b\theta/2}=P_*^{\,\bar\theta}$ give $\nrm{\Nq\cE X}2\le P_*^{\,\bar\theta}(2P_*)^{\theta}=2^{-\bar\theta}\cdot2P_*$, so the 2-norm part of $V$ shrinks by the factor $2^{-\bar\theta}$.
+\emph{The 2-norm part shrinks.} Lemma~\ref{lem:cap} and $2^{b\theta/2}=P_*^{\,\bar\theta}$ give
+\[
+\nrm{\Nq\cE X}2\le P_*^{\,\bar\theta}(2P_*)^{\theta}=2^{-\bar\theta}\cdot2P_*,
+\]
+so the 2-norm part of $V$ shrinks by the factor $2^{-\bar\theta}$.
 
-\emph{The 1-norm part shrinks.} The operator $Y=\cE X$ is traceless, with $x=\nrm Y1\le1$ and, by Lemma~\ref{lem:norms}, $\nrm Y2\le2^{b/2}\cdot2P_*$. If $Y\ne0$, its concentration is therefore at most $2^{b/2}\cdot2P_*/x$, and Lemma~\ref{lem:forget} gives $\nrm{\Nq Y}1\le x-\delta x^{a+1}$; for $Y=0$, this holds trivially. The right-hand side increases with $x$ on $[0,1]$, because $(a+1)\delta\le1$, so $\nrm{\Nq Y}1\le1-\delta$.
+\emph{The 1-norm part shrinks.} The operator $Y=\cE X$ is traceless, with $x=\nrm Y1\le1$ and, by Lemma~\ref{lem:norms}, $\nrm Y2\le2^{b/2}\cdot2P_*$. If $Y\ne0$, its concentration is therefore at most $2^{b/2}\cdot2P_*/x$, and Lemma~\ref{lem:forget} gives
+\[
+\nrm{\Nq Y}1\le x-\delta x^{a+1};
+\]
+for $Y=0$, this holds trivially. The right-hand side increases with $x$ on $[0,1]$, because $(a+1)\delta\le1$, so $\nrm{\Nq Y}1\le1-\delta$.
 
 Both parts are at most $1-\delta$, because $2^{-\bar\theta}\le1-\delta$.
 \end{proof}
 
-The two small facts used at the end, $(a+1)\delta\le1$ and $\delta\le1-2^{-\bar\theta}$, follow from one elementary inequality. With $s=1/(1-q)\ge1$, we have $\delta\le c_q4^{-a}=2^{4-5s}$, $a+1\le2s$, and $1-2^{-\bar\theta}\ge\bar\theta/2\ge(1-q)/2=1/(2s)$. Both facts thus follow from $2s\cdot2^{4-5s}\le1$, that is, $\log_2s\le5(s-1)$, which holds for all $s\ge1$. No case distinction and no strong-noise condition are needed, and the proposition holds for every channel with a budget of $b$ bits, including input-dependent unitaries.
+The two small facts used at the end, $(a+1)\delta\le1$ and $\delta\le1-2^{-\bar\theta}$, follow from one elementary inequality. With $s=1/(1-q)\ge1$, we have
+\[
+\delta\le c_q4^{-a}=2^{4-5s},\qquad a+1\le2s,\qquad1-2^{-\bar\theta}\ge\frac{\bar\theta}2\ge\frac{1-q}2=\frac1{2s}.
+\]
+Both facts thus follow from $2s\cdot2^{4-5s}\le1$, that is, $\log_2s\le5(s-1)$, which holds for all $s\ge1$. The proposition holds at every noise strength and for every channel with a budget of $b$ bits, including input-dependent unitaries.
 
 \subsection{How large is the forgetting rate?}
 \label{sm:rate}
@@ -416,7 +451,15 @@ In particular, $\delta^{-1}\le2^{b/(1-q)^2}$ for $b\ge4$, and $\delta^{-1}\le2^{
 \end{corollary}
 
 \begin{proof}
-The four factors of $\delta^{-1}=c_q^{-1}\,4^{a}\,2^{ab/2}\,P_*^{\,a}$ contribute $\frac1{1-q}$, $\frac{4q}{1-q}$, $\frac{qb}{1-q}$, and $\frac{2q^3b}{(1-q)(1-q^2)}$ to $\log_2\delta^{-1}$; the first two add up to $(1+4q)/(1-q)$, the last two to $\beta_qb$. For the simple forms, compare exponents after multiplying by $(1-q)^2$, using $(1-q)^2\beta_q=q(1+q^2)/(1+q)$. The first form becomes $b(1+q+q^2)\ge(1+4q)(1+q)$, which holds for $b\ge4$ because $4(1+q+q^2)-(1+4q)(1+q)=3-q>0$. The second becomes $b(1-q^3)+q(4q-3)(1+q)\ge0$, which holds for $b\ge1$ because $1-3q+q^2+3q^3>0$ for $0\le q\le1$.
+The four factors of $\delta^{-1}=c_q^{-1}\,4^{a}\,2^{ab/2}\,P_*^{\,a}$ contribute
+\[
+\frac1{1-q},\qquad\frac{4q}{1-q},\qquad\frac{qb}{1-q},\qquad\frac{2q^3b}{(1-q)(1-q^2)}
+\]
+to $\log_2\delta^{-1}$; the first two add up to $(1+4q)/(1-q)$, the last two to $\beta_qb$. For the simple forms, compare exponents after multiplying by $(1-q)^2$, using $(1-q)^2\beta_q=q(1+q^2)/(1+q)$. The two forms become
+\[
+b\,(1+q+q^2)\ge(1+4q)(1+q)\qquad\text{and}\qquad b\,(1-q^3)+q(4q-3)(1+q)\ge0 .
+\]
+The first holds for $b\ge4$, because $4(1+q+q^2)-(1+4q)(1+q)=3-q>0$; the second holds for $b\ge1$, because $1-3q+q^2+3q^3>0$ for $0\le q\le1$.
 \end{proof}
 
 The inverse forgetting rate $\delta^{-1}$ grows by the factor $2^{\beta_q}$ for every bit of budget. At $q=0.9$, the constants are $\theta=0.895$, $a=18$, $c_q=2^{-10}$, and $\beta_q=85.7$, so $\delta^{-1}=2^{85.7b+46}$, compared with $2^{100b}$ from the first simple form. For $b=3$, the first simple form fails for $q>\sqrt3-1\approx0.73$, which is why Theorem~\ref{thm:main}(i) assumes $k\ge4$.
@@ -429,14 +472,23 @@ The inverse forgetting rate $\delta^{-1}$ grows by the factor $2^{\beta_q}$ for 
 \log_2P_t\le\log_2P_*+\theta^t\,\frac n2 .
 \label{eq:S-washout}
 \end{equation}
-The excess purity of the initial state thus decays geometrically toward the cap. After $t_0=\lceil\ln n/(-\ln\theta)\rceil$ time steps, $\theta^tn\le1$, so the initial state contributes at most one pure qubit's worth, $P_t\le\sqrt2P_*$, and one more time step keeps it there, because $2^{b\theta/2}(\sqrt2P_*)^\theta=2^{\theta/2}P_*\le\sqrt2P_*$. At $q=0.9$, $t_0=42$, $63$, and $84$ for $n=10^2$, $10^3$, and $10^4$ [dots in Fig.~\ref{figS:purity}].
+The excess purity of the initial state thus decays geometrically toward the cap. After $t_0=\lceil\ln n/(-\ln\theta)\rceil$ time steps, $\theta^tn\le1$, so the initial state contributes at most one pure qubit's worth, $P_t\le\sqrt2P_*$, and one more time step keeps it there, because
+\[
+2^{b\theta/2}\bigl(\sqrt2P_*\bigr)^\theta=2^{\theta/2}P_*\le\sqrt2P_* .
+\] At $q=0.9$, $t_0=42$, $63$, and $84$ for $n=10^2$, $10^3$, and $10^4$ [dots in Fig.~\ref{figS:purity}].
 
 \begin{proposition}[Memory bound]\label{prop:echo}
 Let $\delta$ be the rate of Proposition~\ref{prop:contraction}.
 \begin{enumerate}
-\item[(a)] Two reservoirs started in arbitrary states $\rho$ and $\sigma$ and driven by the same inputs obey $\Norm{\Phi_{u_L}\cdots\Phi_{u_1}(\rho-\sigma)}_1\le2(1-\delta)^{L-t_0}$ for $L\ge t_0$.
+\item[(a)] Two reservoirs started in arbitrary states $\rho$ and $\sigma$ and driven by the same inputs obey, for $L\ge t_0$,
+\[
+\Norm{\Phi_{u_L}\cdots\Phi_{u_1}(\rho-\sigma)}_1\le2(1-\delta)^{L-t_0}.
+\]
 \item[(b)] Every input history $h$ that extends into the infinite past determines a unique echo state $\rho(h)$, whose purity is at most $P_*$.
-\item[(c)] If two input histories $h$ and $h'$ agree on their last $L$ inputs, then $\frac12\Norm{\rho(h)-\rho(h')}_1\le(1-\delta)^L\le e^{-\delta L}$.
+\item[(c)] If two input histories $h$ and $h'$ agree on their last $L$ inputs, then
+\[
+\tfrac12\Norm{\rho(h)-\rho(h')}_1\le(1-\delta)^L\le e^{-\delta L}.
+\]
 \end{enumerate}
 \end{proposition}
 
@@ -448,9 +500,24 @@ Let $\delta$ be the rate of Proposition~\ref{prop:contraction}.
 
 \paragraph*{Proof of Theorem~\ref{thm:main}(i).} By Proposition~\ref{prop:echo}(c) with $b=k$, two echo states whose input histories agree on their last $L$ inputs are within trace distance $\varepsilon$ as soon as $e^{-\delta L}\le\varepsilon$. Hence $W(\varepsilon)\le\lceil\delta^{-1}\ln(1/\varepsilon)\rceil$, and Corollary~\ref{cor:rate} gives Eq.~\eqref{eq:upper} for $k\ge4$, and the same bound with $k+1$ in place of $k$ for $k\ge1$. The argument uses the reservoir unitary, the input encoding, and the number of qubits only through the budget, so the bound holds for every reservoir. \hfill$\square$
 
-\paragraph*{What the memory depth bounds.} For two input histories that agree on their last $L$ inputs, a linear readout $\tr(F\rho)$ differs by at most $\Norm F\,\Norm{\rho(h)-\rho(h')}_1\le2\Norm F e^{-\delta L}$, and the best measurement tells the two histories apart with success probability at most $\frac12(1+e^{-\delta L})$. Inputs older than $W(\varepsilon)$ thus change a readout of norm $\Norm F$ by at most $2\varepsilon\Norm F$. Large readout weights extend the reach only logarithmically: a readout with $\Norm F\le B$ sees inputs at most $\lceil\delta^{-1}\ln(2B/\varepsilon)\rceil$ time steps back at accuracy $\varepsilon$, while resolving a change of size $\varepsilon$ in $\tr(F\rho)$ from single-shot outcomes, whose variance is up to $B^2$, takes of order $(B/\varepsilon)^2$ repetitions.
+\paragraph*{What the memory depth bounds.} For two input histories that agree on their last $L$ inputs, a linear readout $\tr(F\rho)$ differs by at most
+\[
+\Norm F\,\Norm{\rho(h)-\rho(h')}_1\le2\Norm F e^{-\delta L},
+\]
+and the best measurement tells the two histories apart with success probability at most $\frac12(1+e^{-\delta L})$. Inputs older than $W(\varepsilon)$ thus change a readout of norm $\Norm F$ by at most $2\varepsilon\Norm F$. Large readout weights extend the reach only logarithmically: a readout with $\Norm F\le B$ sees inputs at most $\lceil\delta^{-1}\ln(2B/\varepsilon)\rceil$ time steps back at accuracy $\varepsilon$, while resolving a change of size $\varepsilon$ in $\tr(F\rho)$ from single-shot outcomes, whose variance is up to $B^2$, takes of order $(B/\varepsilon)^2$ repetitions.
 
-Two further consequences follow directly. By (a), a reservoir started in an arbitrary state is within trace distance $\varepsilon$ of the echo state at all times $t\ge t_0+\lceil\delta^{-1}\ln(1/\varepsilon)\rceil$. And a reservoir with purely unitary input encoding has a budget of zero, so every time step maps the completely mixed state to itself; by (b), the completely mixed state is then the echo state for every input history, consistent with the observation that contractive reservoirs with input-independent fixed points carry no information about their inputs~\cite{MartinezPena2023}.
+Proposition~\ref{prop:echo} has further consequences. By part (a), a reservoir started in an arbitrary state is within trace distance $\varepsilon$ of the echo state at all times $t\ge t_0+\lceil\delta^{-1}\ln(1/\varepsilon)\rceil$. And a reservoir with purely unitary input encoding has a budget of zero, so every time step maps the completely mixed state to itself; by part (b), the completely mixed state is then the echo state for every input history, consistent with the observation that contractive reservoirs with input-independent fixed points carry no information about their inputs~\cite{MartinezPena2023}.
+
+\paragraph*{Memory capacity.} The memory capacity~\cite{Jaeger2002} of a readout $y_t$ is $\mathrm{MC}=\sum_{\ell\ge1}m(\ell)$, where $m(\ell)\le1$ is the squared correlation coefficient between $y_t$ and the input $u_{t-\ell}$, maximized over the readout weights, for independent and identically distributed inputs with $0<\mathrm{Var}(u)<\infty$. A correlation coefficient does not register how weak a dependence is: a noiseless readout of a reservoir that passes its input along a chain of qubits has $m(\ell)=1$ for every $\ell$ up to the length of the chain, although the signal has decayed by $q^\ell$. A finite readout precision removes this artifact. Let $y_t=\tr(F\rho_t)+\xi_t$ with $\Norm F\le B$, where the noise $\xi_t$ (from finite measurement statistics, for instance) has, given the inputs, zero mean and variance at least $\sigma_\xi^2$, with $0<\sigma_\xi\le2B$ and finite unconditional variance. Two histories that differ only in $u_{t-\ell}$ agree on their last $\ell$ inputs, so changing $u_{t-\ell}$ alone changes $\tr(F\rho_t)$ by at most $2Be^{-\delta\ell}$. The average of $\tr(F\rho_t)$ over $u_{t-\ell}$ depends only on the other inputs and is therefore uncorrelated with $u_{t-\ell}$, while $\tr(F\rho_t)$ deviates from it by at most $2Be^{-\delta\ell}$. Hence, with $\mathrm{Var}(y_t)\ge\sigma_\xi^2$,
+\[
+\mathrm{Cov}(y_t,u_{t-\ell})^2\le4B^2e^{-2\delta\ell}\,\mathrm{Var}(u),\qquad m(\ell)\le\frac{4B^2e^{-2\delta\ell}}{\sigma_\xi^2}.
+\]
+Using $m(\ell)\le1$ for $\ell\le L=\lceil\delta^{-1}\ln(2B/\sigma_\xi)\rceil$ and summing the geometric tail beyond,
+\begin{equation}
+\mathrm{MC}\le L+\frac1{e^{2\delta}-1}\le\delta^{-1}\Bigl(\ln\frac{2B}{\sigma_\xi}+\frac12\Bigr)+1 .
+\label{eq:S-mc}
+\end{equation}
+By Corollary~\ref{cor:rate}, the memory capacity of every reservoir with $k\ge4$ input qubits is thus at most $2^{k/(1-q)^2}[\ln(2B/\sigma_\xi)+\frac12]+1$: exponential in $k$, independent of $n$, and only logarithmic in the readout precision $B/\sigma_\xi$.
 
 \subsection{How tight are the bounds?}
 
@@ -480,11 +547,19 @@ Figure~\ref{figS:bounds}(a) compares the two exponents. The exponent of the cons
 \label{figS:washout}
 \end{figure}
 
-A large reservoir can hold much information about its initial state, which new inputs cannot use. Take $U=I$, and let the $m=n-k$ qubits that are never reinitialized start either in $\ket0^{\otimes m}$ or in $\ket1^{\otimes m}$. After $L$ time steps, every such qubit still shows its initial value with probability $(1+q^L)/2$, independently of the others. The trace distance between the two runs therefore equals the total-variation distance between two binomial distributions, which we evaluate exactly [Fig.~\ref{figS:washout}(a)]. Two simple bounds bracket it.
+A large reservoir can hold much information about its initial state, which new inputs cannot use. Take $U=I$, and let the $m=n-k$ qubits that are never reinitialized start either in $\ket0^{\otimes m}$ or in $\ket1^{\otimes m}$. After $L$ time steps, every such qubit still shows its initial value with probability $(1+q^L)/2$, independently of the others. The trace distance between the two runs therefore equals the total-variation distance between two binomial distributions, which we evaluate exactly [Fig.~\ref{figS:washout}(a)]. Simple lower and upper bounds bracket it.
 
-\paragraph*{Lower bound.} The sum of the $Z$ outcomes has mean $\pm mq^L$ and variance at most $m$. By Chebyshev's inequality, deciding by majority errs with probability at most $1/(mq^{2L})$ under either initialization, so the trace distance is at least $1-2/(mq^{2L})$. It stays above $\varepsilon$ as long as $mq^{2L}>2/(1-\varepsilon)$, that is, for $L<\ln[m(1-\varepsilon)/2]/(2|\ln q|)$. A washout that grows as $\log m$ is therefore unavoidable.
+\paragraph*{Lower bound.} The sum of the $Z$ outcomes has mean $\pm mq^L$ and variance at most $m$. By Chebyshev's inequality, deciding by majority errs with probability at most $1/(mq^{2L})$ under either initialization, so the trace distance is at least $1-2/(mq^{2L})$. It stays above $\varepsilon$ as long as $mq^{2L}>2/(1-\varepsilon)$, that is, for
+\[
+L<\frac{\ln[m(1-\varepsilon)/2]}{2|\ln q|}.
+\]
+A washout that grows as $\log m$ is therefore unavoidable.
 
-\paragraph*{Upper bound.} The two product states have fidelity $(1-q^{2L})^{m/2}$, so their trace distance is at most $\sqrt m\,q^L$. It falls below $\varepsilon$ after $\lceil\ln(\sqrt m/\varepsilon)/|\ln q|\rceil$ time steps: copies that are never repaired become indistinguishable after $O_q(\log m)$ time steps.
+\paragraph*{Upper bound.} The two product states have fidelity $(1-q^{2L})^{m/2}$, so their trace distance is at most $\sqrt m\,q^L$. It falls below $\varepsilon$ after
+\[
+\Bigl\lceil\frac{\ln(\sqrt m/\varepsilon)}{|\ln q|}\Bigr\rceil
+\]
+time steps: copies that are never repaired become indistinguishable after $O_q(\log m)$ time steps.
 
 Both bounds and the exact washout time grow as $\log m$ [Fig.~\ref{figS:washout}(b)]. The same estimate shows that $r$ unrepaired copies of an input keep it readable for only $O_q(\log r)$ time steps. The memory of new inputs, in contrast, is bounded independently of $n$.
 
@@ -502,7 +577,7 @@ The reservoir has $n=2r+2$ qubits: an input register of $k=r+2$ qubits, which co
 U\ket{z,c,b,x}=\ket{x,\,c,\,b,\,z\oplus F_{c,b}(x)\bm1},
 \label{eq:S-repU}
 \end{equation}
-where $z$ and $x$ are the contents of the ancillas and of the memory qubits, $\bm1=(1,\dots,1)$, $F_{0,b}(x)=\mathrm{maj}(x)$, and $F_{1,b}(x)=b$. In words, $U$ writes either the majority of the stored copies (blank input) or the new bit (store input) into the fresh ancillas, and it swaps ancillas and memory qubits. The map is invertible, because its output reveals $x$, $c$, and $b$, hence $F_{c,b}(x)$, and hence $z$; a permutation of basis states is a unitary. The construction is classical reversible logic run on qubits, and it uses no measurements and no feedback: majority-vote error correction of a repetition code~\cite{vonNeumann1956}, carried out unitarily with fresh ancillas, which is measurement-free error correction~\cite{Heussen2024} in its simplest form.
+where $z$ and $x$ are the contents of the ancillas and of the memory qubits, $\bm1=(1,\dots,1)$, $F_{0,b}(x)=\mathrm{maj}(x)$, and $F_{1,b}(x)=b$. That is, $U$ writes either the majority of the stored copies (blank input) or the new bit (store input) into the fresh ancillas, and it swaps ancillas and memory qubits. The map is invertible, because its output reveals $x$, $c$, and $b$, hence $F_{c,b}(x)$, and hence $z$; a permutation of basis states is a unitary. The construction is classical reversible logic run on qubits, and it uses no measurements and no feedback: majority-vote error correction of a repetition code~\cite{vonNeumann1956}, carried out unitarily with fresh ancillas. This is measurement-free error correction~\cite{Heussen2024} in its simplest form.
 
 \subsection{Exact response}
 
@@ -534,7 +609,11 @@ the bound quoted in the main text. The exponent $\alpha_q$ is the rate at which 
 \label{figS:rep}
 \end{figure}
 
-By Bernoulli's inequality, $\lambda_r^{\,t}\ge1-2tp_r\ge\frac12$ for $t\le e^{\alpha_qr}/4$, so the half-life of a stored bit is at least $\lfloor e^{\alpha_qr}/4\rfloor$. Figure~\ref{figS:rep} shows the exact decay and half-lives at $q=0.9$, and Table~\ref{tabS:halflife} lists exact half-lives for several noise strengths. From $k=3$ to $k=17$, the half-lives at $q=0.9$ are $6$, $47$, $298$, $1790$, $10\,431$, $59\,739$, $337\,940$, and $1\,894\,286$ time steps: seventeen input qubits per time step keep a stored bit readable for almost two million time steps, and every two additional input qubits multiply this time by more than five.
+By Bernoulli's inequality,
+\[
+\lambda_r^{\,t}\ge1-2tp_r\ge\tfrac12\qquad\text{for }t\le e^{\alpha_qr}/4,
+\]
+so the half-life of a stored bit is at least $\lfloor e^{\alpha_qr}/4\rfloor$. Figure~\ref{figS:rep} shows the exact decay and half-lives at $q=0.9$, and Table~\ref{tabS:halflife} lists exact half-lives for several noise strengths. From $k=3$ to $k=17$, the half-lives at $q=0.9$ are $6$, $47$, $298$, $1790$, $10\,431$, $59\,739$, $337\,940$, and $1\,894\,286$ time steps: seventeen input qubits per time step keep a stored bit readable for almost two million time steps, and every two additional input qubits multiply this time by more than five.
 
 \begin{table}[t]
 \caption{Exact half-lives, in time steps, of a bit stored in the error-correcting reservoir: the largest $T$ with $\lambda_r^T\ge1/2$, for $k=r+2$ input qubits.}
@@ -558,7 +637,10 @@ Two input histories that differ only in the bit stored $L$ time steps ago, follo
 W(\varepsilon)\ge\frac{\ln(q/\varepsilon)}{-\ln\lambda_r}\ge\frac14\,e^{\alpha_qr}\ln\frac q\varepsilon .
 \label{eq:S-lower}
 \end{equation}
-The first inequality requires $\varepsilon<q$, because the readout qubit's own last round of noise contributes the factor $q$. For the second, we use $-\ln(1-x)\le2x$ for $0\le x\le\frac12$ with $x=2p_r$; this requires $p_r\le\frac14$, and then $-\ln\lambda_r\le4p_r\le4e^{-\alpha_qr}$ by Eq.~\eqref{eq:S-chernoff}.
+The factor $q$ comes from the readout qubit's own last round of noise. The second inequality needs $\varepsilon<q$, so that $\ln(q/\varepsilon)>0$, and the inequality $-\ln(1-x)\le2x$ for $0\le x\le\frac12$, applied to $x=2p_r$. This requires $p_r\le\frac14$, and then Eq.~\eqref{eq:S-chernoff} gives
+\[
+-\ln\lambda_r\le4p_r\le4e^{-\alpha_qr}.
+\]
 
 For a general number $k$ of input qubits, choose $r$ as the largest odd number with $r\le k-2$, and leave the remaining input qubits unused. Then $r\ge k-3$ and $n=k+r\le2k$. If $e^{\alpha_q(k-3)}\ge4$, then $p_r\le e^{-\alpha_qr}\le\frac14$, and Eq.~\eqref{eq:S-lower} gives Eq.~\eqref{eq:lower}. At $q=0.9$, the condition holds for $k\ge5$. \hfill$\square$
 
@@ -566,15 +648,19 @@ For a general number $k$ of input qubits, choose $r$ as the largest odd number w
 
 \paragraph*{The single-qubit readout is nearly optimal.} The lower bound uses the readout of a single memory qubit. The full reservoir state carries slightly more information: for $k=5$ and $q=0.9$, the exact trace distance between the two echo states [Fig.~\ref{figS:sim}(a)] gives a memory depth of 316 time steps at $\varepsilon=0.01$, compared with 309 for the single-qubit readout of Eq.~\eqref{eq:S-lower}.
 
-\paragraph*{Without repair.} The same reservoir without the majority vote writes the bit into its $r$ memory qubits and then leaves them alone. After $t$ further time steps, every copy has the Bloch vector $\pm q^{t+1}\hat z$, and the trace distance between the two echo states is the binomial sum $\frac12\sum_{j=0}^{r}\binom rj\bigl|a^jb^{r-j}-b^ja^{r-j}\bigr|$ with $a,b=(1\pm q^{t+1})/2$, which no readout can beat. At $q=0.9$ and $\varepsilon=0.01$, the memory depth of the copies grows only from 43 time steps for $r=1$ to 53 for $r=13$, whereas the error-correcting reservoir with $r=13$ copies ($k=15$) remembers $2.2\times10^6$ time steps [Fig.~\ref{fig:attain}(b)]. The fresh qubits extend the memory only because the reservoir uses them for repair.
+\paragraph*{Without repair.} The same reservoir without the majority vote writes the bit into its $r$ memory qubits and then leaves them alone. After $t$ further time steps, every copy has the Bloch vector $\pm q^{t+1}\hat z$, and the trace distance between the two echo states is the binomial sum
+\[
+\frac12\sum_{j=0}^{r}\binom rj\bigl|a^jb^{r-j}-b^ja^{r-j}\bigr|,\qquad a,b=\frac{1\pm q^{t+1}}2,
+\]
+which no readout can beat. At $q=0.9$ and $\varepsilon=0.01$, the memory depth of the copies grows only from 43 time steps for $r=1$ to 53 for $r=13$, whereas the error-correcting reservoir with $r=13$ copies ($k=15$) remembers $2.2\times10^6$ time steps [Fig.~\ref{fig:attain}(b)]. The fresh qubits extend the memory only because the reservoir uses them for repair.
 
-\paragraph*{Retention cost.} Suppose that a reservoir must keep the expectation values of an observable $O$ with $\Norm O\le1$ for a stored 0 and a stored 1 at least $q$ apart for $T$ time steps. Proposition~\ref{prop:echo}(c) bounds this gap by $2e^{-\delta T}$, so $T\le\delta^{-1}\ln(2/q)$, and with $\delta^{-1}\le2^{k/(1-q)^2}$, $k=\Omega_q(\log T)$. Conversely, Eq.~\eqref{eq:response} keeps the gap for all $t\le T$ if $T\le e^{\alpha_qr}/4$. An odd $r\ge\ln(4T)/\alpha_q$ and $k=r+2$ therefore suffice, so $k=O_q(\log T)$. Retaining an input for $T$ time steps thus requires, and can be achieved with, $\Theta_q(\log T)$ reinitialized qubits per time step.
+\paragraph*{Retention cost.} Suppose that a reservoir must keep the expectation values of an observable $O$ with $\Norm O\le1$ for a stored 0 and a stored 1 at least $q$ apart for $T$ time steps. Proposition~\ref{prop:echo}(c) bounds this gap by $2e^{-\delta T}$, so $T\le\delta^{-1}\ln(2/q)$, and with $\delta^{-1}\le2^{k/(1-q)^2}$, $k=\Omega_q(\log T)$. Conversely, Eq.~\eqref{eq:response} keeps the gap for all $t\le T$ if $T\le e^{\alpha_qr}/4$. An odd $r\ge\ln(4T)/\alpha_q$ and $k=r+2$ therefore suffice, so $k=O_q(\log T)$. Thus $\Theta_q(\log T)$ reinitialized qubits per time step are necessary and sufficient to retain an input for $T$ time steps.
 
 \paragraph*{Anisotropic noise.} For independent unital noise $\mathcal M$ on every qubit, the bit is best stored along the Bloch axis that $\mathcal M$ preserves best. Let $s_{\mathcal M}$ be the largest singular value of the matrix by which $\mathcal M$ acts on Bloch vectors, with unit vectors $\bm v$ and $\bm v'$ such that $\mathcal M$ maps the Bloch vector $\bm v$ to $s_{\mathcal M}\bm v'$. Conjugating the memory block of Eq.~\eqref{eq:S-repU} by single-qubit rotations from the $\bm v'$ basis and into the $\bm v$ basis makes every memory qubit an independent copy of the stored bit, flipped with probability $(1-s_{\mathcal M})/2$. The lower bound then holds with $q$ replaced by $s_{\mathcal M}$.
 
 \paragraph*{Non-Clifford dynamics.} The majority vote is a non-Clifford operation, as long-term memory requires~\cite{Nelson2026}.
 
-\paragraph*{Memory is not computation.} A long memory does not imply computational power or classical hardness: a single number, the bias $\lambda_r^{\,t}$, describes the entire response of this reservoir.
+\paragraph*{Memory versus computation.} A long memory does not imply computational power or classical hardness: a single number, the bias $\lambda_r^{\,t}$, describes the entire response of this reservoir.
 
 %======================================================================
 \section{Entropy budget beyond depolarizing noise}
@@ -593,8 +679,8 @@ Reinitialization of $k$ input qubits & $k$ bits & memory depth $e^{\Theta(k)}$ u
 Measurement followed by reset of $m$ qubits & $m$ bits & counts like $m$ reinitialized input qubits~\cite{Yasuda2023,Hu2024} \\
 Unitary input encoding (input-dependent gates) & 0 & without another entropy sink, the echo state is the completely mixed state \\
 Projective (or other L\"uders) measurement of reservoir qubits whose outcomes only enter the readout & 0 & the averaged measurement channel is unital and cannot raise the memory limit~\cite{Mujal2023}; general instruments count with their own budget, and indirect measurements through fresh meter qubits count like reinitialized qubits~\cite{MorguiSancho2026} \\
-Unital noise (Pauli errors, dephasing, coherent errors, crosstalk) & 0 & leaves the memory limit unchanged \\
-Amplitude damping with probability $0<\gamma<1$ on all $n$ qubits & $n\log_2(1+\gamma)$ bits & memory depth can grow exponentially with $n$, already for $k=2$~\cite{BenOr2013,Monzani2024,Freiheit2026} \\
+Unital noise (Pauli errors, dephasing, coherent errors, crosstalk) & 0 & does not raise the memory upper bound \\
+Amplitude damping with probability $0<\gamma<1$ on all $n$ qubits & $n\log_2(1+\gamma)$ bits & memory depth can grow exponentially with $n$, even for $k=2$~\cite{BenOr2013,Monzani2024,Freiheit2026} \\
 Feedback of measurement outcomes; non-Markovian noise; noise without a depolarizing component & outside the model & memory can be unbounded (Sec.~\ref{sm:counter})~\cite{Sannia2026} \\
 \end{tabular}
 \end{ruledtabular}
@@ -602,7 +688,15 @@ Feedback of measurement outcomes; non-Markovian noise; noise without a depolariz
 
 \subsection{Unital noise and measurements}
 
-Let the noise at time step $t$ be $\mathcal R_t\circ\Nq\circ\mathcal S_t$, where $\mathcal R_t$ and $\mathcal S_t$ are unital channels. They can be correlated across qubits, coherent, input dependent, or drifting in time. Two observations reduce this case to the one already proven. First, $\mathcal S_t$ can be absorbed into the injection step: $\mathcal S_t\circ\cE_u$ is a channel, and because $\mathcal S_t$ is positive and unital, $\mathcal S_t\cE_u(I)\le2^k\mathcal S_t(I)=2^kI$, so it has the same budget of $k$ bits. Second, $\mathcal R_t$ cannot increase $V$, because a unital channel contracts both norms (Lemma~\ref{lem:norms} with $b=0$). Hence $V(\mathcal R_t\Nq\mathcal S_t\cE_uX)\le V(\Nq\mathcal S_t\cE_uX)\le(1-\delta)V(X)$, and the same two facts give the purity recursion. Two input histories that agree on their last $L$ inputs share every map during those $L$ time steps, so Theorem~\ref{thm:main} holds verbatim; its lower bound needs only $\mathcal R_t=\mathcal S_t=\mathrm{id}$.
+Let the noise at time step $t$ be $\mathcal R_t\circ\Nq\circ\mathcal S_t$, where $\mathcal R_t$ and $\mathcal S_t$ are unital channels. They can be correlated across qubits, coherent, input dependent, or drifting in time. This case reduces to the one already proven. First, $\mathcal S_t$ can be absorbed into the injection step: $\mathcal S_t\circ\cE_u$ is a channel, and because $\mathcal S_t$ is positive and unital,
+\[
+\mathcal S_t\cE_u(I)\le2^k\mathcal S_t(I)=2^kI,
+\]
+so it has the same budget of $k$ bits. Second, $\mathcal R_t$ cannot increase $V$, because a unital channel contracts both norms (Lemma~\ref{lem:norms} with $b=0$). Hence
+\[
+V(\mathcal R_t\Nq\mathcal S_t\cE_uX)\le V(\Nq\mathcal S_t\cE_uX)\le(1-\delta)\,V(X),
+\]
+and the same two facts give the purity recursion. Two input histories that agree on their last $L$ inputs share every map during those $L$ time steps, so Theorem~\ref{thm:main} holds verbatim; its lower bound needs only $\mathcal R_t=\mathcal S_t=\mathrm{id}$.
 
 Measurements are covered in the same way. A measurement whose post-measurement states follow the L\"uders rule, with Kraus operators $\sqrt{E_i}$, is unital when its outcomes are discarded, because $\sum_i\sqrt{E_i}\sqrt{E_i}=\sum_iE_i=I$; this includes every projective measurement. Such measurements of the reservoir qubits whose outcomes only enter the readout therefore cannot raise the memory limit. A general measurement instrument with Kraus operators $A_i$, $\sum_iA_i^\dagger A_i=I$, is unital only if also $\sum_iA_iA_i^\dagger=I$; the Kraus operators of amplitude damping are a counterexample. A general instrument therefore counts with its budget $b=\log_2\Norm{\sum_iA_iA_i^\dagger}$, like any other channel. An indirect measurement through a meter qubit that is freshly prepared at every time step is of this kind: the meter is a reinitialized qubit and adds one bit of budget per time step, consistent with the role of measurement back-action as a source of dissipation~\cite{MorguiSancho2026}.
 
@@ -614,11 +708,19 @@ Now let $\mathcal R_t$ and $\mathcal S_t$ be arbitrary channels with budgets of 
 \end{equation}
 and $\mathcal R_0=\mathrm{id}$. By positivity, $\mathcal S_t\cE_{u_t}\mathcal R_{t-1}(I)\le2^{k+b_R+b_S}I$, so Sec.~\ref{sm:upper} applies to $\tilde\rho_t$ with the budget $b=k+b_R+b_S$. Two input histories that agree on their last $L$ inputs share every $\Psi_t$ during those $L$ time steps. The final channel $\mathcal R_t$ cannot increase trace distances, so the memory depth of $\rho_t$ is at most that of $\tilde\rho_t$. Apart from the washout time, the reservoir size thus enters only through $b_R+b_S$. The bounds hold for every realization of random channels $\mathcal R_t$ and $\mathcal S_t$, and hence also on average.
 
-Two budgets are used in the main text. A reset channel $\rho\mapsto\tr(\rho)\ketbra00$ maps $I$ to $2\ketbra00\le2I$, so a reset of $m$ qubits has a budget of $m$ bits. Amplitude damping $\AD_\gamma$ with probability $\gamma$ maps $I$ to $\mathrm{diag}(1+\gamma,1-\gamma)\le(1+\gamma)I$, so a layer of amplitude damping on all $n$ qubits has a budget of $n\log_2(1+\gamma)$ bits.
+The main text uses the budgets of resets and of amplitude damping. A reset channel $\rho\mapsto\tr(\rho)\ketbra00$ maps $I$ to $2\ketbra00\le2I$, so a reset of $m$ qubits has a budget of $m$ bits. Amplitude damping $\AD_\gamma$ with probability $\gamma$ maps $I$ to $\mathrm{diag}(1+\gamma,1-\gamma)\le(1+\gamma)I$, so a layer of amplitude damping on all $n$ qubits has a budget of $n\log_2(1+\gamma)$ bits.
 
 \subsection{Every unital qubit channel with full-rank Choi matrix contains depolarizing noise}
 
-Let $\mathcal M$ be a unital qubit channel, and let $\Omega_{\mathcal M}=\sum_{i,j=0}^1\mathcal M(\ketbra ij)\otimes\ketbra ij$ be its Choi matrix, a positive operator with $\tr\Omega_{\mathcal M}=2$. Complete depolarization, $\cD_0(X)=\tr(X)I/2$, has $\Omega_{\cD_0}=I/2$. Suppose that $\Omega_{\mathcal M}$ is positive definite and that $\mathcal M\ne\cD_0$. Then the smallest eigenvalue of $\Omega_{\mathcal M}$ lies in $(0,1/2)$, and $q_{\mathcal M}=1-2\lambda_{\min}(\Omega_{\mathcal M})\in(0,1)$. The map $\mathcal T=[\mathcal M-(1-q_{\mathcal M})\cD_0]/q_{\mathcal M}$ is trace preserving and unital, and its Choi matrix $[\Omega_{\mathcal M}-\lambda_{\min}(\Omega_{\mathcal M})I]/q_{\mathcal M}$ is positive semidefinite, so $\mathcal T$ is a channel. Because $\mathcal T\circ\cD_q=q\mathcal T+(1-q)\cD_0$ for every unital channel $\mathcal T$, we obtain
+Let $\mathcal M$ be a unital qubit channel, and let
+\[
+\Omega_{\mathcal M}=\sum_{i,j=0}^1\mathcal M(\ketbra ij)\otimes\ketbra ij
+\]
+be its Choi matrix, a positive operator with $\tr\Omega_{\mathcal M}=2$. Complete depolarization, $\cD_0(X)=\tr(X)I/2$, has $\Omega_{\cD_0}=I/2$. Suppose that $\Omega_{\mathcal M}$ is positive definite and that $\mathcal M\ne\cD_0$. Then the smallest eigenvalue of $\Omega_{\mathcal M}$ lies in $(0,1/2)$, and $q_{\mathcal M}=1-2\lambda_{\min}(\Omega_{\mathcal M})\in(0,1)$. The map
+\[
+\mathcal T=\frac{\mathcal M-(1-q_{\mathcal M})\,\cD_0}{q_{\mathcal M}}
+\]
+is trace preserving and unital, and its Choi matrix $[\Omega_{\mathcal M}-\lambda_{\min}(\Omega_{\mathcal M})I]/q_{\mathcal M}$ is positive semidefinite, so $\mathcal T$ is a channel. Because $\mathcal T\circ\cD_q=q\mathcal T+(1-q)\cD_0$ for every unital channel $\mathcal T$, we obtain
 \begin{equation}
 \mathcal M=\mathcal T\circ\cD_{q_{\mathcal M}} .
 \end{equation}
@@ -636,15 +738,22 @@ Every such channel is thus depolarizing noise of strength $q_{\mathcal M}$ follo
 \subsection{Cooling noise: memory exponential in \texorpdfstring{$n$}{n}}
 \label{sm:cooling}
 
-Amplitude damping can make the memory grow with the reservoir size, already with two input qubits. The construction uses idle qubits as a refrigerator~\cite{BenOr2013}. Let every time step end with the noise $(\cD_q\circ\AD_\gamma)^{\otimes n}$, with $0<\gamma<1$.
+Amplitude damping can make the memory grow with the reservoir size, even with two input qubits. The construction uses idle qubits as a refrigerator~\cite{BenOr2013}. Let every time step end with the noise $(\cD_q\circ\AD_\gamma)^{\otimes n}$, with $0<\gamma<1$.
 
-\paragraph*{Idle qubits cool.} On diagonal states, one time step of noise acts on every qubit as a bit channel: a qubit that is 1 with probability $x$ becomes 1 with probability $p+\kappa x$, where $p=(1-q)/2$ and $\kappa=q(1-\gamma)$. Here $0<\kappa<1$ is the fraction of a qubit's polarization that survives one time step. The condition $\gamma<1$ is necessary: for $\gamma=1$, the noise resets every qubit to $\ket0$ before depolarizing it, the state after every time step is $[(I+qZ)/2]^{\otimes n}$ whatever the inputs, and the memory depth is zero. A qubit left alone approaches the stationary probability $p_\infty=p/(1-\kappa)$ of being 1, which is below $1/2$ for every $\gamma>0$: idle qubits cool. After $s$ time steps, starting from either value, a qubit is 1 with probability at most $\mu_s=p_\infty+\kappa^s(1-p_\infty)$, and we choose the cooling time $s$ such that $\mu_s<1/2$.
+\paragraph*{Idle qubits cool.} On diagonal states, one time step of noise acts on every qubit as a bit channel: a qubit that is 1 with probability $x$ becomes 1 with probability
+\[
+p+\kappa x,\qquad p=\frac{1-q}2,\qquad\kappa=q(1-\gamma).
+\] Here $0<\kappa<1$ is the fraction of a qubit's polarization that survives one time step. The condition $\gamma<1$ is necessary: for $\gamma=1$, the noise resets every qubit to $\ket0$ before depolarizing it, the state after every time step is $[(I+qZ)/2]^{\otimes n}$ for all inputs, and the memory depth is zero. A qubit left alone approaches the stationary probability $p_\infty=p/(1-\kappa)$ of being 1, which is below $1/2$ for every $\gamma>0$: idle qubits cool. After $s$ time steps, starting from either value, a qubit is 1 with probability at most
+\[
+\mu_s=p_\infty+\kappa^s(1-p_\infty),
+\]
+and we choose the cooling time $s$ such that $\mu_s<1/2$.
 
 \paragraph*{The reservoir.} The reservoir has the two input qubits $(c,b)$ of Sec.~\ref{sm:rep} and $s+1$ blocks $x_0,\dots,x_s$ of $r=\lfloor(n-2)/(s+1)\rfloor$ qubits each. Block $x_0$ holds the stored bit, and the other blocks form a queue in which qubits cool. The reservoir unitary is the basis permutation
 \begin{equation}
 U\ket{c,b}\ket{x_0,x_1,\dots,x_s}=\ket{c,b}\ket{x_s\oplus F_{c,b}(x_0)\bm1,\,x_0,\dots,x_{s-1}} .
 \end{equation}
-For a store input, $F_{1,b}(x)=b$. For a blank input, $F_{0,b}(x)=1$ if the fraction of ones in $x$ is at least the threshold $\chi=p+\kappa/2$, and $F_{0,b}(x)=0$ otherwise. In words, $U$ decodes the stored bit by a threshold vote, writes it into the coolest block $x_s$, and moves the other blocks one position along the queue.
+For a store input, $F_{1,b}(x)=b$. For a blank input, $F_{0,b}(x)=1$ if the fraction of ones in $x$ is at least the threshold $\chi=p+\kappa/2$, and $F_{0,b}(x)=0$ otherwise. In effect, $U$ decodes the stored bit by a threshold vote, writes it into the coolest block $x_s$, and moves the other blocks one position along the queue.
 
 \paragraph*{Error per time step.} The reused block has cooled for $s$ time steps, so each of its bits differs from the newly written bit $F$ with probability at most $\mu_s$, independently given the past. After the noise, each bit of the new memory block is therefore 1 with probability at least $p+\kappa(1-\mu_s)$ if $F=1$, and at most $p+\kappa\mu_s$ if $F=0$. The threshold $\chi$ lies between these two values, at a distance of at least $\kappa(1/2-\mu_s)$ from both. The next vote therefore errs with probability at most
 \begin{equation}
@@ -665,7 +774,7 @@ This is the classical counterpart of the quantum refrigerator of Ref.~\cite{BenO
 \subsection{Where the limit ends: two counterexamples}
 \label{sm:counter}
 
-Two assumptions of Theorem~\ref{thm:main} cannot be dropped: that the noise has a depolarizing component, and that it is Markovian. Consider a single memory qubit next to the two input qubits $(c,b)$. The reservoir unitary swaps $b$ into the memory qubit when $c=1$ and acts trivially when $c=0$; the old memory value leaves with the input register at the next input injection.
+Theorem~\ref{thm:main} assumes that the noise has a depolarizing component and that it is Markovian, and neither assumption can be dropped. Consider a single memory qubit next to the two input qubits $(c,b)$. The reservoir unitary swaps $b$ into the memory qubit when $c=1$ and acts trivially when $c=0$; the old memory value leaves with the input register at the next input injection.
 
 \paragraph*{Pure dephasing.} Under the dephasing channel $\mathcal Z_\phi(X)=(1-\phi)X+\phi\,ZXZ$, computational-basis states are fixed points, so a stored bit stays perfectly readable forever.
 
@@ -720,7 +829,7 @@ Histories that differ in all earlier inputs set the memory depth of almost every
 
 \subsection{Validation}
 
-Four checks confirm the code and the estimator. (i) The evolution of differences agrees with the difference of evolved states to machine precision. (ii) For the error-correcting reservoir, the simulated single-qubit readout reproduces the exact response $q\lambda_r^L$ of Eq.~\eqref{eq:response} to machine precision for $r=1$ and $r=3$. (iii) Every echo state is prepared by a washout that continues until runs from the completely mixed state and from the product states $\ket{0\cdots0}$ and $\ket{1\cdots1}$, driven by the same inputs, agree within a trace distance of $10^{-6}$, far below $\varepsilon$. This takes at most 130 time steps at $q=0.9$ and up to 2360 time steps as $q\to1$, including the noiseless limit, which the theorem does not cover; there, the three runs agree for every simulated reservoir. (iv) A much larger set of history pairs changes the memory depth by at most one time step. For 24 reservoirs (Ising and Haar, $n=6$ and $8$, $k=1$ and $2$), we compared the estimator with blocks of 2 to 30 differing inputs, all 32 sign patterns of six differing inputs up to exchanging the two histories, constant histories with the input pairs $(0,\frac12)$, $(\frac12,1)$, and $(\frac14,\frac34)$, three pairs of independent random histories, and continuations that maximize the trace distance greedily at every time step.
+The code and the estimator pass the following checks. (i) The evolution of differences agrees with the difference of evolved states to machine precision. (ii) For the error-correcting reservoir, the simulated single-qubit readout reproduces the exact response $q\lambda_r^L$ of Eq.~\eqref{eq:response} to machine precision for $r=1$ and $r=3$. (iii) Every echo state is prepared by a washout that continues until runs from the completely mixed state and from the product states $\ket{0\cdots0}$ and $\ket{1\cdots1}$, driven by the same inputs, agree within a trace distance of $10^{-6}$, far below $\varepsilon$. This takes at most 130 time steps at $q=0.9$ and up to 2360 time steps as $q\to1$, including the noiseless limit, which the theorem does not cover; there, the three runs agree for every simulated reservoir. (iv) A much larger set of history pairs changes the memory depth by at most one time step. For 24 reservoirs (Ising and Haar, $n=6$ and $8$, $k=1$ and $2$), we compared the estimator with blocks of 2 to 30 differing inputs, all 32 sign patterns of six differing inputs up to exchanging the two histories, constant histories with the input pairs $(0,\frac12)$, $(\frac12,1)$, and $(\frac14,\frac34)$, three pairs of independent random histories, and continuations that maximize the trace distance greedily at every time step.
 
 \begin{figure}[t]
 \centering
@@ -753,27 +862,27 @@ The forgetting curves of Fig.~\ref{figS:sim}(a) show the hierarchy of the main t
 
 \subsection{Design lessons}
 
-Return to the forecasting task of Fig.~\ref{fig:overview}(a), $y_{t+1}=0.7\,u_t+0.3\,u_{t-100}$, and consider two reservoirs with the same noise, $q=0.9$, and the same $k=2$ input qubits per time step, a reservoir A with $n=20$ qubits and a reservoir B with $n=200$ qubits [Fig.~\ref{fig:limit}(a)]. To forecast $y_{t+1}$, a reservoir must retain $u_{t-100}$, that is, it needs a memory depth of at least 100 time steps at an accuracy that resolves the second term. In fact, it must retain every input of the last 100 time steps at once, a stronger requirement for which the memory depth is necessary but not sufficient. The natural remedy for a reservoir that falls short is to enlarge it. Theorem~\ref{thm:main} shows that this remedy has a limit that does not move with $n$: with two input qubits, the memory depth of every reservoir, A, B, or any larger one, is bounded by the same constant $W_{q,2}(\varepsilon)$, whereas every additional input qubit can multiply the attainable memory depth by a constant factor. Our constants are far too loose to decide whether 100 time steps lie below $W_{0.9,2}(\varepsilon)$; the theorem identifies the knob, not its setting. The simulations add a practical scale: standard Ising reservoirs remember 16 to 18 time steps at this noise level, for every size from $n=3$ to $n=9$. Four lessons follow.
+Return to the forecasting task of Fig.~\ref{fig:overview}(a), $y_{t+1}=0.7\,u_t+0.3\,u_{t-100}$, and consider two reservoirs with the same noise, $q=0.9$, and the same $k=2$ input qubits per time step, a reservoir A with $n=10$ qubits and a reservoir B with $n=100$ qubits [Fig.~\ref{fig:limit}(b)]. To forecast $y_{t+1}$, a reservoir must retain $u_{t-100}$, that is, it needs a memory depth of at least 100 time steps at an accuracy that resolves the second term. In fact, it must retain every input of the last 100 time steps at once, a stronger requirement, for which a memory depth of 100 time steps is only a necessary condition. The natural remedy for a reservoir that falls short is to enlarge it. Theorem~\ref{thm:main} shows that this remedy has a limit that does not move with $n$: with two input qubits, the memory depth of every reservoir, A, B, or any larger one, is bounded by the same constant $W_{q,2}(\varepsilon)$, whereas every additional input qubit can multiply the attainable memory depth by a constant factor. Our constants are far too loose to decide whether 100 time steps lie below $W_{0.9,2}(\varepsilon)$; the theorem identifies the knob, not its setting. The simulations add a practical scale: standard Ising reservoirs remember 16 to 18 time steps at this noise level, for every size from $n=3$ to $n=9$.
 
-\paragraph*{More qubits are not automatically better.} A larger reservoir can generate richer features of its recent inputs~\cite{Nakajima2019}, but at fixed $k$ and $q$ its best memory depth is bounded independently of $n$. Large random reservoirs can even suffer from an exponential concentration of their outputs, which makes different inputs hard to distinguish~\cite{Xiong2025,Dao2026}, and they forget faster [Fig.~\ref{fig:attain}(c)].
+\paragraph*{Reservoir size.} A larger reservoir can generate richer features of its recent inputs~\cite{Nakajima2019}, but at fixed $k$ and $q$ its best memory depth is bounded independently of $n$. Large random reservoirs can even suffer from an exponential concentration of their outputs, which makes different inputs hard to distinguish~\cite{Xiong2025,Dao2026}, and they forget faster [Fig.~\ref{fig:attain}(c)].
 
-\paragraph*{The input-injection architecture is decisive.} The number of qubits reinitialized per time step sets the limit. More reinitialized qubits do not guarantee a longer memory, however, because reinitialization also erases whatever those qubits stored, even when the additional qubits are reinitialized in $\ket0$ [Fig.~\ref{figS:cold}]. The limit is reached only if the reservoir dynamics moves the relevant information out of the input register before it is reinitialized and uses the fresh qubits to repair it, as the error-correcting reservoir does.
+\paragraph*{Input injection.} The number of qubits reinitialized per time step sets the limit. More reinitialized qubits do not guarantee a longer memory, however, because reinitialization also erases whatever those qubits stored, even when the additional qubits are reinitialized in $\ket0$ [Fig.~\ref{figS:cold}]. The limit is reached only if the reservoir dynamics moves the relevant information out of the input register before it is reinitialized and uses the fresh qubits to repair it, as the error-correcting reservoir does.
 
-\paragraph*{The memory requirement of the task matters.} If a task depends on inputs further back than the memory depth $W(\varepsilon)$, these inputs change every trained readout by at most $2\varepsilon\Norm F$. Estimating how far back the task-relevant inputs lie is therefore a prerequisite for choosing $k$.
+\paragraph*{Memory requirement of the task.} If a task depends on inputs further back than the memory depth $W(\varepsilon)$, these inputs change every trained readout by at most $2\varepsilon\Norm F$. Estimating how far back the task-relevant inputs lie is therefore a prerequisite for choosing $k$.
 
-\paragraph*{A long forecasting horizon is not a long memory.} Predicting many steps ahead does not by itself require a deep memory; what matters is how far back the inputs lie that determine the target. In the task above, already a one-step forecast requires a memory depth of 100 time steps.
+\paragraph*{Forecasting horizon.} Predicting many steps ahead does not by itself require a deep memory; what matters is how far back the inputs lie that determine the target. In the task above, even a one-step forecast requires a memory depth of 100 time steps.
 
 \subsection{What the result does not say}
 
-Memory depth is necessary for a temporal task, but it is not sufficient. A reservoir must also transform its input history nonlinearly and make the relevant information visible to its readout~\cite{Cao2026}, and the error-correcting reservoir, whose memory scaling is optimal, computes nothing beyond a delayed copy of its input. Theorem~\ref{thm:main} therefore makes no statement about task performance, nonlinear processing capacity, sampling noise, or a quantum advantage. It bounds how far back any task can reach, not how well a reservoir solves tasks within that range. In particular, the theorem does not provide an optimal QRC architecture for time series. It does not tell how many input qubits a reservoir of 20 qubits should use, which couplings generate the most useful temporal features~\cite{MartinezPena2021,Cao2026}, how much memory a given real-world time series requires, or when a quantum reservoir outperforms a classical one. The constants of the upper bound are conservative by many orders of magnitude, and our simulations cover sizes up to $n=9$. The result is a fundamental design principle rather than a design recipe.
+Memory depth is only one requirement of a temporal task. A reservoir must also transform its input history nonlinearly and make the relevant information visible to its readout~\cite{Cao2026}, and the error-correcting reservoir, whose memory scaling is optimal, computes nothing beyond a delayed copy of its input. Theorem~\ref{thm:main} therefore makes no statement about task performance, nonlinear processing capacity, sampling noise, or a quantum advantage. It limits how far back any task can reach but says nothing about performance within that range. In particular, the theorem does not provide an optimal QRC architecture for time series. It does not say how many input qubits a reservoir of 10 qubits should use, which couplings generate the most useful temporal features~\cite{MartinezPena2021,Cao2026}, how much memory a given real-world time series requires, or when a quantum reservoir outperforms a classical one. The constants of the upper bound are conservative by many orders of magnitude, and our simulations cover sizes up to $n=9$. The result is a design principle; a recipe would also have to answer the questions listed above.
 
 %======================================================================
 \section{Code and data}
+\label{sm:code}
 
 Project repository: \url{https://github.com/eybmits/fresh-qubits-memory}.
-\label{sm:code}
 %======================================================================
 
-The source archive of this Supplemental Material contains the code and data behind every number, table, and figure. The folder \texttt{sim} holds the density-matrix simulator and the memory-depth estimator (\texttt{qrc\_sim.py}), the simulation runs (\texttt{campaign.py}, \texttt{merge.py}), the validation of the code and of the estimator (\texttt{test\_sim.py}, \texttt{validate\_pairs.py}), the error-correcting reservoir (\texttt{rep\_curve.py}), the exact constants, half-lives, washout times, and the cooling reservoir (\texttt{exact\_numbers.py}), and all results as JSON files. The folder \texttt{figures} holds the sources of all figures, and the folder \texttt{checks} independent checks of the constants and of the elementary steps of the proof (\texttt{verify\_constants.py}, \texttt{verify\_simple\_proof.py}). A README file lists the commands that rebuild every figure from these data. The code was written with the assistance of Claude Opus 5.5 (Anthropic) under the direction of Markus Baumann, who verified it with the checks of Sec.~\ref{sm:numerics} and against the exact results of Secs.~\ref{sm:washoutlogn} and~\ref{sm:rep}.
+The source archive of this Supplemental Material contains the code and data behind every number, table, and figure. The folder \texttt{sim} holds the density-matrix simulator and the memory-depth estimator (\texttt{qrc\_sim.py}), the simulation runs (\texttt{campaign.py}, \texttt{merge.py}), the validation of the code and of the estimator (\texttt{test\_sim.py}, \texttt{validate\_pairs.py}), the error-correcting reservoir (\texttt{rep\_curve.py}), the exact constants, half-lives, washout times, and the cooling reservoir (\texttt{exact\_numbers.py}), and all results as JSON files. The folder \texttt{figures} holds the sources of all figures, and the folder \texttt{checks} independent checks of the constants and of the elementary steps of the proof (\texttt{verify\_constants.py}, \texttt{verify\_simple\_proof.py}). A README file lists the commands that rebuild every figure from these data. The code was written with AI assistance (see the Acknowledgments of the Letter) under the direction of Markus Baumann, who verified it with the checks of Sec.~\ref{sm:numerics} and against the exact results of Secs.~\ref{sm:washoutlogn} and~\ref{sm:rep}.
 
 \end{document}

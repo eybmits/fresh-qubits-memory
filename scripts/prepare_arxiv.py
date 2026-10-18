@@ -16,6 +16,7 @@ import zipfile
 REPO = Path(__file__).resolve().parents[1]
 MAIN = "memory_limits_prl.tex"
 EDITION = "2026-10-18"
+EXPECTED_COMBINED_PAGES = 24
 ZIP_DATE = (2026, 10, 18, 0, 0, 0)
 FINAL_FIGURES = [f"fig{i}.pdf" for i in range(1, 5)] + [
     f"figS{i}.pdf" for i in range(1, 8)
@@ -275,8 +276,8 @@ def build(source, output, author_path):
         "primary_category": "quant-ph",
         "category_status": "recommended_from_manuscript_scope_not_selected_in_portal",
         "cross_lists": [],
-        "comments": "22 pages, 11 figures, including Supplemental Material. Reproducibility code and data included.",
-        "comments_page_count_status": "22 pages from received manuscript; final local build confirmation is recorded in verification.json; inspect the arXiv preview",
+        "comments": f"{EXPECTED_COMBINED_PAGES} pages, 11 figures, including Supplemental Material. Reproducibility code and data included.",
+        "comments_page_count_status": f"{EXPECTED_COMBINED_PAGES} pages expected; final local build confirmation is recorded in verification.json; inspect the arXiv preview",
         "journal_reference": None,
         "doi": None,
         "report_number": None,
@@ -322,7 +323,7 @@ def build(source, output, author_path):
 
 
 def instructions(figure_tex_count):
-    return f"""# arXiv upload preparation — 18 October 2026, revision 4
+    return f"""# arXiv upload preparation — 18 October 2026, revision 5
 
 This directory is a local preparation package. Nothing has been uploaded or
 submitted; no license or submission agreement has been accepted.
@@ -340,7 +341,7 @@ submitted; no license or submission agreement has been accepted.
 - Recommended primary category: **quant-ph**. No cross-list is proposed.
 - `submission_metadata.json` records pending choices. Journal reference, DOI,
   and institutional report number are blank because none was established.
-- The Comments field describes 22 pages and 11 figures. Final local build checks
+- The Comments field describes {EXPECTED_COMBINED_PAGES} pages and 11 figures. Final local build checks
   are recorded in `verification.json`; inspect the arXiv preview before submitting.
 
 The user still needs to select a license, complete any account/category
@@ -350,14 +351,14 @@ not been performed here. License grants for an announced version are irrevocable
 
 ## Code link
 
-Reference [28] and the supplemental code section link to
+The Supplemental Material bibliography entry and the supplemental code section link to
 https://github.com/eybmits/fresh-qubits-memory. At the user's request, the repository
 remains PRIVATE. Readers can use this GitHub link only after the author makes
 the repository public. Code/data are also included in this arXiv source ZIP.
 
 ## Author review
 
-The [revision review](../../../docs/manuscript-2026-10-18-prl-v4.md) records the
+The [revision review](../../../docs/manuscript-2026-10-18-prl-v5.md) records the
 new source import and the applied clarifications: numerical depths are sampled
 estimates, k comparisons use independently sampled unitary ensembles, and the
 continuous crossings in Figure 4 differ from integer depths. The revised
@@ -433,7 +434,7 @@ before final submission.
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source-dir", type=Path, default=REPO / "paper/prl-source")
-    parser.add_argument("--output-dir", type=Path, default=REPO / "paper/submission/arxiv-2026-10-18-v4")
+    parser.add_argument("--output-dir", type=Path, default=REPO / "paper/submission/arxiv-2026-10-18-v5")
     parser.add_argument("--author-file", type=Path, default=REPO / "paper/author_information.json")
     args = parser.parse_args()
     build(args.source_dir.resolve(), args.output_dir.resolve(), args.author_file.resolve())

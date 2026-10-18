@@ -1,0 +1,79 @@
+{
+  "source_files": 54,
+  "added": [
+    "checks/aps_wordcount.py",
+    "figures/fig3a.pdf",
+    "figures/fig3a.py"
+  ],
+  "removed": [
+    "figures/fig3b.pdf",
+    "figures/fig3b.py"
+  ],
+  "changed": [
+    "README.txt",
+    "checks/wordcount.py",
+    "fig1.pdf",
+    "fig2.pdf",
+    "fig3.pdf",
+    "fig4.pdf",
+    "figS1.pdf",
+    "figS3.pdf",
+    "figS4.pdf",
+    "figS5.pdf",
+    "figS6.pdf",
+    "figS7.pdf",
+    "figures/fig1.tex",
+    "figures/fig3.tex",
+    "figures/fig4bc.pdf",
+    "figures/fig4bc.py",
+    "figures/tikzstyle.tex",
+    "memory_limits_prl.bbl",
+    "memory_limits_prl.tex",
+    "refs.bib"
+  ],
+  "unchanged": [
+    "checks/verify_constants.py",
+    "checks/verify_simple_proof.py",
+    "figS2.pdf",
+    "figures/fig2.tex",
+    "figures/fig2a.pdf",
+    "figures/fig2a.py",
+    "figures/fig4.tex",
+    "figures/figS.py",
+    "figures/figstyle.py",
+    "sim/campaign.py",
+    "sim/exact_numbers.json",
+    "sim/exact_numbers.py",
+    "sim/merge.py",
+    "sim/qrc_sim.py",
+    "sim/quoted_numbers.py",
+    "sim/rep_curve.json",
+    "sim/rep_curve.py",
+    "sim/results_cold.json",
+    "sim/results_cold_haar.json",
+    "sim/results_cold_ising.json",
+    "sim/results_main.json",
+    "sim/results_main_haar.json",
+    "sim/results_main_ising.json",
+    "sim/results_noise.json",
+    "sim/results_noise_haar.json",
+    "sim/results_noise_ising.json",
+    "sim/results_tau.json",
+    "sim/run_all.sh",
+    "sim/test_sim.py",
+    "sim/validate_pairs.json",
+    "sim/validate_pairs.py"
+  ],
+  "archive_members": {
+    "standalone": 54,
+    "nested_submission": 54,
+    "nested_zenodo": 54
+  },
+  "nested_archive_content_equal": {
+    "standalone": true,
+    "nested_submission": true,
+    "nested_zenodo": true
+  },
+  "standalone_tex_matches": true,
+  "same_simulation_files": true
+}

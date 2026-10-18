@@ -1,0 +1,19 @@
+DRAFT — author review required before sending
+
+Dear Editors,
+
+We submit the manuscript "The Fundamental Memory Ceiling of Noisy Quantum Reservoirs" for consideration as a Letter in Physical Review Letters.
+
+Quantum reservoir computing processes time series with the transient dynamics of noisy quantum hardware, and for temporal tasks its decisive resource is memory. The natural expectation is that a larger reservoir remembers longer. The Letter proves that adding qubits cannot raise the uniform memory ceiling: with k input qubits reinitialized per time step, the longest memory that any reservoir can attain under depolarizing noise is exp[Theta(k)] time steps, whatever its size, dynamics, and input encoding. The upper bound holds for every member of a well-defined class of noisy quantum dynamics, and an explicit error-correcting reservoir attains its exponential scaling. Because the proof uses only the entropy that a time step can remove, the result extends to general noise through an entropy budget and applies to any noisy quantum system supplied with fresh qubits, including measurement-free error correction.
+
+The result is of broad interest. It identifies entropy removal, not size, as the resource that sets memory, for every architecture within the noise model, and it gives a concrete design target for quantum reservoir computing on current hardware: standard Ising and Haar-random reservoirs operate far below the ceiling, whereas a reservoir that uses its fresh qubits for repair approaches it. With finite readout precision, the bound also limits the memory capacity, the memory measure most widely used in the field.
+
+The Supplemental Material contains the complete proofs, the exact analysis of the error-correcting reservoir, the entropy budget for general noise, and the details of the simulations; the accompanying archive contains all code and data. The use of AI-based tools is disclosed in the Acknowledgments and in the Supplemental Material.
+
+The manuscript is not under consideration elsewhere.
+
+Sincerely,
+Markus Baumann
+On behalf of Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien
+Ludwig-Maximilians-Universitaet Muenchen
+markus.baumann@campus.lmu.de

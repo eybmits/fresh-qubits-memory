@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "edition": "2026-10-18-prl-v5",
+  "checks": [
+    "Exact managed file set and every manifest hash/size",
+    "Outer ZIP CRC, members and byte equality",
+    "54 source mappings byte-identical to canonical source",
+    "Seven Letter source files match production ZIP",
+    "Justification bytes match approved latest 100-word user text",
+    "Plain Unicode abstract matches independent extraction and has 588 characters",
+    "PDF page counts 24=6+18; Letter and SM text equal combined ranges",
+    "SM page labels S1-S18; final Table S2 unital-noise upper-bound wording present",
+    "PDF author metadata and GitHub URLs present; Letter has three ORCID links",
+    "Two complete PRL builds have identical outer ZIP hash"
+  ],
+  "source_files": 54,
+  "managed_files": 20,
+  "outer_zip_sha256": "7553076dbf5e5fb86f1735264c2975ab93e4e89142e762c7848b1d1468202103",
+  "pages": {
+    "combined": 24,
+    "letter": 6,
+    "supplement": 18
+  },
+  "justification_words": 100,
+  "abstract_characters": 588,
+  "pdf_uri_counts": {
+    "combined": 66,
+    "letter": 62,
+    "supplement": 4
+  },
+  "scope": "Independent technical packaging and metadata checks; not proof verification, portal validation or submission."
+}

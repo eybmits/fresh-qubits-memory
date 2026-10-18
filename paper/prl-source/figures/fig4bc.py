@@ -1,7 +1,8 @@
 """Fig. 4, panels b, c: memory depth of the error-correcting reservoir (b) and of standard reservoirs (c)
 (q = 0.9, eps = 0.01). Panel a (circuit) is drawn in fig4.tex.
 Panel b also shows the same reservoir without repair: its r = k - 2 memory copies are written once and then only
-decay, and even the best readout of all r copies (exact trace distance) keeps the bit for only 43 to 53 time steps.
+decay, and even the best readout of all r copies (exact trace distance) keeps the bit for only 43 to 53 time steps;
+the region at or below these memory depths is shaded grey.
 Colours: error-correcting reservoir and the lower bound of Theorem 1 in blue (attain the limit), standard reservoirs
 in greys (Ising dark, Haar light), the idle qubit as a dashed reference line."""
 import sys, json; sys.path.insert(0, ".")
@@ -59,6 +60,9 @@ kk = np.linspace(k0, 15.6, 100)
 b.plot(kk, np.exp(alpha * (kk - 3)) / 4 * log(q / eps), color=BLUE, lw=1.1, ls=(0, (4, 2.2)), zorder=2,
        label=r"lower bound (Thm.~1)")
 Wnr = [W_norepair(k - 2) for k in kr]                                    # the same copies, without repair
+# grey: the region at or below the copies without repair (flat beyond the first and the last point)
+xg = np.linspace(2, 16, 300)
+b.fill_between(xg, 1e-3, np.exp(np.interp(xg, kr, np.log(Wnr))), color=GREY_FILL, lw=0, zorder=0.4)
 b.plot(kr, Wnr, color=GREY, lw=1.0, zorder=2)
 b.plot(kr, Wnr, "o", ms=4.0, mfc="white", mec=GREY_DARK, mew=0.8, zorder=3)
 b.plot(kr, Wrep, color=BLUE_LIGHT, lw=1.0, zorder=2)

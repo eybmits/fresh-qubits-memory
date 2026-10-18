@@ -1,0 +1,35 @@
+{
+  "received_on": "2026-10-18",
+  "inputs": [
+    {
+      "original_name": "memory_limits_prl_zenodo.zip",
+      "archived_path": "paper/versions/2026-10-18-prl-v5/zenodo-original.zip",
+      "bytes": 1349575,
+      "sha256": "dbf82dc338c77786f34d46a4f27179a795391daeb3b628600a8f768b7e403424"
+    },
+    {
+      "original_name": "memory_limits_prl_source (4).zip",
+      "archived_path": "paper/versions/2026-10-18-prl-v5/source-original.zip",
+      "bytes": 1347541,
+      "sha256": "41a5e024b0431cfe32db0452d969b6f8340fe6b121dd2ee3fe230c791f815fdb"
+    },
+    {
+      "original_name": "memory_limits_prl (7).tex",
+      "archived_path": "paper/versions/2026-10-18-prl-v5/manuscript-supplied.tex",
+      "bytes": 89395,
+      "sha256": "fce661c8cacd75f4fb0d5575a83016a658afab7bf566f2921eb4b7a318c505cd"
+    },
+    {
+      "original_name": "memory_limits_prl (37).pdf",
+      "archived_path": "paper/versions/2026-10-18-prl-v5/manuscript-supplied.pdf",
+      "bytes": 909744,
+      "sha256": "b16294efca8d0dc3a67e437437a7ca93c0007781ff130a9a25fa4c819a46f50b"
+    },
+    {
+      "original_name": "memory_limits_prl_submission (2).zip",
+      "archived_path": "paper/versions/2026-10-18-prl-v5/submission-original.zip",
+      "bytes": 3001084,
+      "sha256": "068c3a22d1f1a36b2b027dc987987750accec0281b1c8ad5b0bb9fc873fcc351"
+    }
+  ]
+}

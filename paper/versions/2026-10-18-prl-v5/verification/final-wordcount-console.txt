@@ -1,0 +1,4 @@
+typeset words (wordcount.tex): 2729   (characters incl. spaces: 15798)
+displayed equations: 7 rows -> 112 words
+figures: 847 words
+TOTAL: 3688   (PRL limit 3750)

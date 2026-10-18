@@ -32,5 +32,5 @@ preferred-citation:
       orcid: "https://orcid.org/0000-0001-6284-9286"
       affiliation: "QAR-Lab and Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München"
   year: 2026
-  notes: "PRL-format manuscript revision 4 dated 18 October 2026; separate Letter and Supplemental Material prepared locally for PRL, with a combined arXiv source package. No arXiv identifier or journal acceptance assigned. The linked repository is private pending a separate public release."
+  notes: "PRL-format manuscript revision 5 dated 18 October 2026; separate Letter and Supplemental Material prepared locally for PRL, with a combined arXiv source package and a local unpublished Zenodo metadata draft. No arXiv identifier or journal acceptance assigned. The linked repository is private pending a separate public release."
   url: "https://github.com/eybmits/fresh-qubits-memory"

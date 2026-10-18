@@ -1,4 +1,6 @@
-"""Word count of the Letter according to the APS length guide (journals.aps.org/authors/length-guide):
+"""Simple estimate of the length of the Letter from its LaTeX source (each inline formula, citation, and hyphenated
+compound counts as one word); the count with the method of the APS length guide is checks/aps_wordcount.py.
+APS length guide (journals.aps.org/authors/length-guide):
 Total = Text + Displayed math + Figures + Tables, limit 3750 words for PRL.
   Text: main body including captions and footnotes; not counted: title, byline, abstract, references,
         acknowledgments (the data-availability statement is counted here, to be conservative).

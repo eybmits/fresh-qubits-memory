@@ -1,36 +1,41 @@
 The Fundamental Memory Ceiling of Noisy Quantum Reservoirs -- Physical Review Letters version, source files
 Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien, LMU Munich
 
-Repository edition: 18 October 2026, revision 4. The confirmed three authors,
-ORCIDs, one shared QAR-Lab/chair/LMU address, and code link are retained.
-The fixed date and array-package pin support reproducible TeX Live 2025 builds.
-Numerical captions distinguish sampled estimates, independent ensembles across k,
-and continuous threshold crossings from integer memory depths. The abstract and
-Figure 3 distinguish the optimal memory ceiling from any individual reservoir
-performance; Figure 3 is a schematic, not a numerical dataset.
-
+Repository edition: 18 October 2026, PRL revision 5. Approved three-author metadata,
+one shared address and the repository link are retained. The array package pin
+supports TeX Live 2025. Numerical text distinguishes sampled estimates and
+independent unitary ensembles across k; continuous depths are rounded up.
 
 Manuscript (REVTeX 4.2, prl option): one file with the Letter followed by the Supplemental Material
   pdflatex memory_limits_prl && bibtex memory_limits_prl && pdflatex memory_limits_prl && pdflatex memory_limits_prl
   memory_limits_prl.bbl is included for submission systems that do not run BibTeX.
-  The Letter ends with the reference list; the Supplemental Material starts on a new page (pages S1-S16,
+  Fonts: Latin Modern (Type 1) with ToUnicode maps, so that the text layer of the PDF is searchable and copies
+  correctly (ligatures, accented names).
+  The Letter ends with the reference list; the Supplemental Material starts on a new page (pages S1-S18,
   equations, figures, tables and lemmas numbered S1, S2, ...) and cites the reference list of the Letter.
   For submission, the Letter alone (the file up to \bibliography{refs}) is the manuscript, and the Supplemental
-  Material is uploaded as its own PDF (pages S1-S16 of the combined PDF). References cited only in the Supplemental
-  Material appear in the reference list of the Letter, through the note "which includes Refs. [36-38]" of the
+  Material is uploaded as its own PDF (pages S1-S18 of the combined PDF). References cited only in the Supplemental
+  Material appear in the reference list of the Letter, through the note "which includes Refs. [35-38]" of the
   Supplemental-Material reference. This archive (code and data) is the source archive named in the Data
   availability statement and in Sec. IX of the Supplemental Material; upload it with the Supplemental Material.
 
-Local estimate of Letter length (APS length guide, journals.aps.org/authors/length-guide; limit 3750 words)
-  Text (2312), captions (356), data-availability statement (25)       2693 words
-  Displayed equations: 7 rows x 16 words                             112 words
-  Fig. 1 (one-column, aspect 1.43): 150/1.43 + 20                    125 words
-  Fig. 2 (two-column, aspect 2.88): 300/(0.5 x 2.88) + 40            249 words
-  Fig. 3 (two-column, aspect 2.71)                                   261 words
-  Fig. 4 (two-column, aspect 3.44)                                   214 words
-  Total                                                            ~3654 words
-  Abstract: 575 rendered characters (limit of the PRL instructions: 600 characters; not counted in the 3750 words).
-  Recount after every edit:  python3 checks/wordcount.py memory_limits_prl.tex .
+Length of the Letter (APS length guide, journals.aps.org/authors/length-guide; limit 3750 words)
+  Local estimate using the method the guide recommends: the Letter is typeset with REVTeX after removing \maketitle
+  (title, byline, abstract), the displayed equations, the acknowledgments, and the bibliography, and the words of
+  the typeset text are counted with wordcount.tex from CTAN (hyphenated compounds and each part of a citation
+  list count separately); equations and figures are added with the formulas of the guide.
+  Typeset text: body, captions, data-availability statement           2729 words
+  Displayed equations: 7 rows x 16 words                               112 words
+  Fig. 1 (one-column, aspect 1.43): 150/1.43 + 20                      125 words
+  Fig. 2 (two-column, aspect 2.88): 300/(0.5 x 2.88) + 40              249 words
+  Fig. 3 (two-column, aspect 2.73)                                     259 words
+  Fig. 4 (two-column, aspect 3.44)                                     214 words
+  Total                                                               3688 words
+  A simpler estimate (checks/wordcount.py: each inline formula, citation, and hyphenated compound counted as one
+  word) gives 3524 words. Abstract: 588 rendered characters (limit of the PRL instructions: 600 characters; not counted).
+  The checker fails on TeX errors and unresolved references; its counting copy suppresses REVTeX automatic
+  bibliography insertion. This is a local estimate, not an editorial eligibility determination.
+  Recount after every edit:  python3 checks/aps_wordcount.py memory_limits_prl.tex . <separate-work-directory>
 
 Figures (final PDFs in this folder; sources in figures/)
   Every figure is produced at its printed size (7.05 in or 3.40 in wide) and included without scaling, so all
@@ -39,17 +44,20 @@ Figures (final PDFs in this folder; sources in figures/)
   Fig. 1   fig1.pdf  <- figures/fig1.tex (TikZ; scope of the theorem as nested classes)
   Fig. 2   fig2.pdf  <- figures/fig2.tex (TikZ; panel b, the reservoir, and the bottom row of boxes)
                        + fig2a.pdf <- figures/fig2a.py (panel a, square axes)
-  Fig. 3   fig3.pdf  <- figures/fig3.tex (TikZ; panel a, the reservoirs A, B, C and their memory windows)
-                       + fig3b.pdf <- figures/fig3b.py (panel b, the limit versus k)
+  Fig. 3   fig3.pdf  <- figures/fig3.tex (TikZ; panel b, the reservoirs A, B, C and their memory windows; the
+                       qubit lattices in isometric view use the TikZ library shadows.blur, TeX Live package
+                       pgf-blur)
+                       + fig3a.pdf <- figures/fig3a.py (panel a, the limit versus k)
   Fig. 4   fig4.pdf  <- figures/fig4.tex (TikZ; panel a) + fig4bc.pdf <- figures/fig4bc.py, which also prints the
-                       exact memory depth of the copies without repair quoted in the text
+                       exact memory depth of the copies without repair quoted in the text (grey in panel b: the
+                       region at or below these memory depths)
   Fig. S1-S7  figS1.pdf ... figS7.pdf <- figures/figS.py
   Shared style: figures/figstyle.py (matplotlib with usetex: Helvetica text, Computer Modern math; needs
   LaTeX with helvet and cm-super) and figures/tikzstyle.tex (same colours and size).
   Build, from inside figures/:
     pdflatex fig1.tex
     python3 fig2a.py && pdflatex fig2.tex
-    python3 fig3b.py && pdflatex fig3.tex
+    python3 fig3a.py && pdflatex fig3.tex
     python3 fig4bc.py && pdflatex fig4.tex
     python3 figS.py
   The scripts read the data in ../sim and write the PDFs into figures/.
@@ -83,7 +91,8 @@ Checks
   checks/verify_simple_proof.py  checks of the elementary steps of the Supplemental proof (2-norm bound for the
                               injection step on random instances, the single inequality behind Proposition S4,
                               and the concentration of the examples)
-  checks/wordcount.py         length of the Letter according to the APS length guide
+  checks/aps_wordcount.py     length of the Letter with the method of the APS length guide (wordcount.tex)
+  checks/wordcount.py         simpler length estimate from the LaTeX source
 
-Justification for the editors (user-provided wording, second update on 18 October 2026)
+Justification for the editors (latest user-approved wording)
   How long can a noisy quantum system remember past inputs? We establish a universal memory ceiling under local Markovian depolarizing noise: with \(k\) qubits refreshed per step, the optimal memory depth scales as \(\exp[\Theta(k)]\) at fixed noise strength and accuracy. Our size-independent upper bound covers all admissible dynamics and input encodings. A measurement-free error-correction scheme achieves the same exponential scaling, establishing an optimal resource law. This is a limit on an entire class of quantum dynamics, not on one computing architecture. By identifying entropy removal as the resource governing memory, our result connects quantum information, nonequilibrium physics, and physical computing.

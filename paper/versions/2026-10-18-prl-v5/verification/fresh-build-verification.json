@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-18",
+  "fresh_extraction_build": true,
+  "fresh_build_pdf_text_identical": true,
+  "bibliography_regenerated_byte_identical": true,
+  "source_reconstruction_byte_identical": true,
+  "source_file_count": 54,
+  "archive_entry_count": 57,
+  "deterministic_zip_regeneration": true,
+  "pages": 24,
+  "letter_and_references_pages": 6,
+  "supplement_pages": 18,
+  "unresolved_references_or_citations": 0,
+  "overfull_boxes": 0,
+  "shell_escape": false,
+  "status": "local_preflight_passed_not_uploaded",
+  "archive_sha256": "56a3b79839913bd0779ce68d9e15e8386637b3a8d147263bf2d939537a57824e",
+  "pdf_sha256": "90f0e19e58f22fcdac6fc5c01ce5864adc6b4f87641498bcb53924884c956a62",
+  "aps_word_count": {
+    "method": "APS length guide with CTAN wordcount.tex",
+    "guide_url": "https://journals.aps.org/authors/length-guide",
+    "source_sha256": "cd713685bed963fb0cb0b82b60261e3f7cf2716558ba1cf4d975803502424efe",
+    "typeset_words": 2729,
+    "characters_including_spaces": 15798,
+    "displayed_equation_rows": 7,
+    "equation_word_equivalent": 112,
+    "figures": [
+      {
+        "file": "fig1.pdf",
+        "double_column": false,
+        "width_pt": 245.083,
+        "height_pt": 171.496,
+        "aspect_ratio": 1.42908872510146,
+        "word_equivalent": 124.96199246785784
+      },
+      {
+        "file": "fig2.pdf",
+        "double_column": true,
+        "width_pt": 507.6,
+        "height_pt": 176.4,
+        "aspect_ratio": 2.877551020408163,
+        "word_equivalent": 248.51063829787236
+      },
+      {
+        "file": "fig3.pdf",
+        "double_column": true,
+        "width_pt": 507.6,
+        "height_pt": 185.669,
+        "aspect_ratio": 2.733897419601549,
+        "word_equivalent": 259.46690307328606
+      },
+      {
+        "file": "fig4.pdf",
+        "double_column": true,
+        "width_pt": 507.6,
+        "height_pt": 147.6,
+        "aspect_ratio": 3.439024390243903,
+        "word_equivalent": 214.46808510638297
+      }
+    ],
+    "figure_word_equivalent": 847.4076189453992,
+    "total_word_equivalent": 3688.407618945399,
+    "total_rounded": 3688,
+    "prl_limit": 3750,
+    "tex_errors": []
+  },
+  "simple_source_word_estimate": 3524,
+  "prl_word_limit": 3750,
+  "abstract_rendered_characters": 588,
+  "justification_words_whitespace": 100,
+  "repository_tests": {
+    "passed": 22,
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src OPENBLAS_NUM_THREADS=1 python3 -m unittest discover -s tests -v"
+  },
+  "scientific_checks": {
+    "unchanged_json_datasets": 13,
+    "unchanged_simulation_scripts": 8,
+    "full_campaign_rerun": false,
+    "scope": "Version/source consistency, regression tests, selected new algebra and package/render QA. No complete proof or novelty certification."
+  },
+  "code_repository_visibility": "private",
+  "supplement_code_reference_number": 27,
+  "uploaded": false,
+  "submitted": false,
+  "license_selected": false,
+  "visibility_changed": false
+}

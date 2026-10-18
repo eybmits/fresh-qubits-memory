@@ -1,0 +1,38 @@
+{
+  "changed_combined_pages_after_table_clarification": [
+    18
+  ],
+  "standalone_sm_pixel_identical_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "standalone_letter_pixel_identical_pages": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "standalone_letter_text_identical": true,
+  "standalone_sm_text_identical": true,
+  "combined_sha256": "90f0e19e58f22fcdac6fc5c01ce5864adc6b4f87641498bcb53924884c956a62",
+  "letter_pages": 6,
+  "sm_pages": 18,
+  "combined_pages": 24
+}

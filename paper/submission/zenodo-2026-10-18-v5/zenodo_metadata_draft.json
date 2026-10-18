@@ -1,0 +1,33 @@
+{
+  "creators": [
+    {
+      "affiliation": "Quantum Applications and Research Laboratory (QAR-Lab), Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany",
+      "name": "Baumann, Markus",
+      "orcid": "0009-0007-3575-1006"
+    },
+    {
+      "affiliation": "Quantum Applications and Research Laboratory (QAR-Lab), Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany",
+      "name": "Stein, Jonas",
+      "orcid": "0000-0001-5727-9151"
+    },
+    {
+      "affiliation": "Quantum Applications and Research Laboratory (QAR-Lab), Chair of Mobile and Distributed Systems, Department of Computer Science, Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany",
+      "name": "Linnhoff-Popien, Claudia",
+      "orcid": "0000-0001-6284-9286"
+    }
+  ],
+  "description": "Code, numerical data, and sources accompanying the manuscript \"The Fundamental Memory Ceiling of Noisy Quantum Reservoirs\" and its Supplemental Material. The archive contains a density-matrix simulator of driven quantum reservoirs, finite-history estimates of memory depth, stored numerical results, computations for the measurement-free error-correcting reservoir, numerical diagnostics of constants and proof steps, and LaTeX and plotting sources. README.txt describes the contents, dependencies, and reproduction commands. Numerical checks are distinct from a proof of the universal memory bound. This is the local PRL revision 5 source edition dated 18 October 2026; no journal acceptance or public deposition is claimed.",
+  "keywords": [
+    "quantum reservoir computing",
+    "memory",
+    "depolarizing noise",
+    "open quantum systems",
+    "measurement-free error correction",
+    "entropy",
+    "fading memory"
+  ],
+  "language": "eng",
+  "title": "Code and data for \"The Fundamental Memory Ceiling of Noisy Quantum Reservoirs\"",
+  "upload_type": "dataset",
+  "version": "2026-10-18-prl-v5"
+}
