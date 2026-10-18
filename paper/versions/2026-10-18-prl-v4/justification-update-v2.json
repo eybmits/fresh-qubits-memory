@@ -1,0 +1,183 @@
+{
+  "all_manifest_hashes_and_zip_crcs_verified": true,
+  "all_manuscript_pdfs_byte_unchanged": true,
+  "artifacts": [
+    {
+      "bytes": 7823,
+      "path": "paper/prl-source/README.txt",
+      "sha256": "99548afb4d0b15ce050142d75278015088b56e49e69d9a4d0df97e2e88a6d868"
+    },
+    {
+      "bytes": 5746,
+      "path": "paper/submission/arxiv-2026-10-18-v4/README.md",
+      "sha256": "ebc765a80367d0eb93127996b0c695bff9fa9c346266c3e408f5afe6e7a39a6f"
+    },
+    {
+      "bytes": 586,
+      "path": "paper/submission/arxiv-2026-10-18-v4/abstract.txt",
+      "sha256": "8d87ddf696726986670e985cb5c1e3a6869323836be8f4add91d390273885df7"
+    },
+    {
+      "bytes": 1354195,
+      "path": "paper/submission/arxiv-2026-10-18-v4/arxiv-source.zip",
+      "sha256": "8a3af59bd01a8b358da70cbb309719881d502dc4b62f61c18d3cf587f7081d62"
+    },
+    {
+      "bytes": 1324,
+      "path": "paper/submission/arxiv-2026-10-18-v4/author_information.json",
+      "sha256": "e76e09bddc6bc428ef438213619b9145b4f491dd72ca7556d41e96b5d80c7f16"
+    },
+    {
+      "bytes": 53,
+      "path": "paper/submission/arxiv-2026-10-18-v4/authors.txt",
+      "sha256": "3765b5be90e052407bc28a2a31173d1313c71b6d46220deabfac68ae57f4c01e"
+    },
+    {
+      "bytes": 19524,
+      "path": "paper/submission/arxiv-2026-10-18-v4/package-manifest.json",
+      "sha256": "16132fd79de18db0983c99cfbcffa2ae2a0d2406b5f948c271dd849b7f9a3c35"
+    },
+    {
+      "bytes": 2453,
+      "path": "paper/submission/arxiv-2026-10-18-v4/submission_metadata.json",
+      "sha256": "cd9be718b63a7747d914deb457f64171a1d3b0c61a44914c095ae1e619176adb"
+    },
+    {
+      "bytes": 59,
+      "path": "paper/submission/arxiv-2026-10-18-v4/title.txt",
+      "sha256": "765e1ce958243ccc1d7da68a6b48bf47ab4a500903e68e6a4e2e729ecd454c5d"
+    },
+    {
+      "bytes": 9498,
+      "path": "paper/submission/arxiv-2026-10-18-v4/verification.json",
+      "sha256": "820a3e7e379c599ad3924e19efd4a737e6659dbbd6b87fb7e702f667bd6fad28"
+    },
+    {
+      "bytes": 72090,
+      "path": "paper/submission/prl-2026-10-18-v4/1_manuscript/fig1.pdf",
+      "sha256": "3cb894b0e2e15d10571230fbd25732a39dd9f3dc5b02829112d264b9a691c44b"
+    },
+    {
+      "bytes": 99349,
+      "path": "paper/submission/prl-2026-10-18-v4/1_manuscript/fig2.pdf",
+      "sha256": "5322fdcd0ad7b900d81ea536c00aa32a729515c4877e89081fab54cd3622295f"
+    },
+    {
+      "bytes": 168671,
+      "path": "paper/submission/prl-2026-10-18-v4/1_manuscript/fig3.pdf",
+      "sha256": "822cf59816de4b0bd6b7d7ebdfbcb0fc0deefeaab90b29c7e12f08b82cfbdce4"
+    },
+    {
+      "bytes": 68407,
+      "path": "paper/submission/prl-2026-10-18-v4/1_manuscript/fig4.pdf",
+      "sha256": "5f04d161888130327252cb5368987680d5f5d21ffaab1feaeb9c67314f3a9263"
+    },
+    {
+      "bytes": 32543,
+      "path": "paper/submission/prl-2026-10-18-v4/1_manuscript/memory_limits_prl.bbl",
+      "sha256": "b037dde12264d43c85e15e6263f004defa8047b5707f82a9563907c71b11fbe0"
+    },
+    {
+      "bytes": 23025,
+      "path": "paper/submission/prl-2026-10-18-v4/1_manuscript/memory_limits_prl.tex",
+      "sha256": "9ed2031e3036be0369bfdbfe62088a812113f23f0433186ce1a02c2b254f1037"
+    },
+    {
+      "bytes": 13151,
+      "path": "paper/submission/prl-2026-10-18-v4/1_manuscript/refs.bib",
+      "sha256": "b6f680c7b308f38a2df8ac0d62dd433efaa325b7c7f0bcbef11649895135c4dc"
+    },
+    {
+      "bytes": 1483,
+      "path": "paper/submission/prl-2026-10-18-v4/2_supplemental_material/README.TXT",
+      "sha256": "8a128ad5a7997f23985a2dd6de276bcd0d2b1cae9eab04fd9c51e73c12b3b985"
+    },
+    {
+      "bytes": 744560,
+      "path": "paper/submission/prl-2026-10-18-v4/2_supplemental_material/memory_limits_prl_SM.pdf",
+      "sha256": "1c5e68a563e9ad5df28dccedbbea9884d447f8e366608df4a43062b6b6882c9a"
+    },
+    {
+      "bytes": 1347764,
+      "path": "paper/submission/prl-2026-10-18-v4/2_supplemental_material/memory_limits_prl_source.zip",
+      "sha256": "842fc8e4402b69269dae8e349d56d61bf81a55af916f86bd3b96f071610cfbef"
+    },
+    {
+      "bytes": 4437,
+      "path": "paper/submission/prl-2026-10-18-v4/README.md",
+      "sha256": "0723f9845bb45880cfaadf562a2a9dd4fc8f708282be14d8028641dc2597b41e"
+    },
+    {
+      "bytes": 1409,
+      "path": "paper/submission/prl-2026-10-18-v4/author_information.json",
+      "sha256": "d97d5e4f41dfeb6c592784d8d15516e75ff7bdd94cc3ce7be610af9648dc86a4"
+    },
+    {
+      "bytes": 3041,
+      "path": "paper/submission/prl-2026-10-18-v4/build_verification.json",
+      "sha256": "d85b3b6a5fb0cef5239151e620c3c300f23c2817aa5010466fc24dbcfd4e9c24"
+    },
+    {
+      "bytes": 2075,
+      "path": "paper/submission/prl-2026-10-18-v4/cover_letter.txt",
+      "sha256": "ec4c797e36271ef1dfb139e19bc2af2283dd764f05559865c7e187df1e9e141b"
+    },
+    {
+      "bytes": 721,
+      "path": "paper/submission/prl-2026-10-18-v4/justification.txt",
+      "sha256": "268db2e33705bdb66700766cce0a30e62fdbf92eff6293754cd8765a708e94fb"
+    },
+    {
+      "bytes": 21851,
+      "path": "paper/submission/prl-2026-10-18-v4/manifest.json",
+      "sha256": "711402e016dd1336f904a9d566dba82b42b8666c2f20f5d55e2d06bd99734f55"
+    },
+    {
+      "bytes": 408803,
+      "path": "paper/submission/prl-2026-10-18-v4/manuscript-source.zip",
+      "sha256": "83cb1aa61d9bfce8515a98c6568ce35f9dfa6277c8af1f8b5a54b8e6f90f510d"
+    },
+    {
+      "bytes": 672235,
+      "path": "paper/submission/prl-2026-10-18-v4/memory_limits_prl_letter.pdf",
+      "sha256": "ec074fe8e418ff2e2921d238034d7f158c249a978327b332a29eb52c11f06681"
+    },
+    {
+      "bytes": 3474843,
+      "path": "paper/submission/prl-2026-10-18-v4/prl-submission.zip",
+      "sha256": "b6356ccaa1ccc1dc6ef1a5ec8f83be98df9631060d3b15cf3775e3bfcaa98b8e"
+    },
+    {
+      "bytes": 721,
+      "path": "paper/versions/2026-10-18-prl-v4/justification-user-v2.txt",
+      "sha256": "268db2e33705bdb66700766cce0a30e62fdbf92eff6293754cd8765a708e94fb"
+    },
+    {
+      "bytes": 1347764,
+      "path": "paper/versions/2026-10-18-prl-v4/source-final-prl-v4-justification-v2.zip",
+      "sha256": "842fc8e4402b69269dae8e349d56d61bf81a55af916f86bd3b96f071610cfbef"
+    },
+    {
+      "bytes": 25013,
+      "path": "scripts/prepare_prl.py",
+      "sha256": "0e3c3b338a215e53eea33dd64693e26f7e7bee6c0c2984dd94d9a6d078869fc9"
+    }
+  ],
+  "arxiv_archive_matches_53_canonical_files": true,
+  "base_commit": "92b95eeff332931478fcc6f38e7b9836d7e613e1",
+  "build_verification_reused_for_unchanged_manuscript": true,
+  "characters_excluding_final_newline": 720,
+  "current_justification": "paper/versions/2026-10-18-prl-v4/justification-user-v2.txt",
+  "date": "2026-10-18",
+  "full_code_archive_matches_53_canonical_files": true,
+  "manuscript_sources_figures_and_scientific_data_byte_unchanged": true,
+  "only_canonical_source_change": "README.txt justification paragraph",
+  "previous_justification": "paper/versions/2026-10-18-prl-v4/justification-user.txt",
+  "request": "Replace the PRL justification with the exact new user text.",
+  "scientific_tests_rerun": false,
+  "submitted": false,
+  "uploaded": false,
+  "user_wording_and_latex_delimiters_preserved": true,
+  "visibility_changed": false,
+  "words_whitespace": 100
+}

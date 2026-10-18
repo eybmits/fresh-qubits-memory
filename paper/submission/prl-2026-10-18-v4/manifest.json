@@ -3,9 +3,9 @@
     "README.txt": {
       "archive": "2_supplemental_material/memory_limits_prl_source.zip",
       "archive_path": "README.txt",
-      "bytes": 7769,
+      "bytes": 7823,
       "repository_path": "paper/prl-source/README.txt",
-      "sha256": "0096dc1e0285bd950e046824b65f9b2d85d1fad38aa996e1d82bf7e6643f4b53"
+      "sha256": "99548afb4d0b15ce050142d75278015088b56e49e69d9a4d0df97e2e88a6d868"
     },
     "checks/verify_constants.py": {
       "archive": "2_supplemental_material/memory_limits_prl_source.zip",
@@ -426,8 +426,8 @@
       "sha256": "1c5e68a563e9ad5df28dccedbbea9884d447f8e366608df4a43062b6b6882c9a"
     },
     "2_supplemental_material/memory_limits_prl_source.zip": {
-      "bytes": 1347741,
-      "sha256": "5ead68d8cc31e21adfea747baed1a8999a9ef8b19856c0413a3ec131ef2447fe"
+      "bytes": 1347764,
+      "sha256": "842fc8e4402b69269dae8e349d56d61bf81a55af916f86bd3b96f071610cfbef"
     },
     "README.md": {
       "bytes": 4437,
@@ -446,8 +446,8 @@
       "sha256": "ec4c797e36271ef1dfb139e19bc2af2283dd764f05559865c7e187df1e9e141b"
     },
     "justification.txt": {
-      "bytes": 701,
-      "sha256": "8e7bf893c630f20364bba3a933ac54c2e9bed02a83da26148a90b24b284049e3"
+      "bytes": 721,
+      "sha256": "268db2e33705bdb66700766cce0a30e62fdbf92eff6293754cd8765a708e94fb"
     },
     "manuscript-source.zip": {
       "bytes": 408803,
@@ -485,9 +485,9 @@
     }
   },
   "user_justification": {
-    "bytes": 701,
+    "bytes": 721,
     "handling": "Copied byte-for-byte without a heading; replaces the archived ZIP justification.",
-    "name": "justification-user.txt",
-    "sha256": "8e7bf893c630f20364bba3a933ac54c2e9bed02a83da26148a90b24b284049e3"
+    "name": "justification-user-v2.txt",
+    "sha256": "268db2e33705bdb66700766cce0a30e62fdbf92eff6293754cd8765a708e94fb"
   }
 }

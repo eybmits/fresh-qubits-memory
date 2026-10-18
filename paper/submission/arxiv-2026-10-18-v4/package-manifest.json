@@ -1,6 +1,6 @@
 {
   "archive": "arxiv-source.zip",
-  "archive_bytes": 1354173,
+  "archive_bytes": 1354195,
   "archive_entries": {
     "00README.json": {
       "bytes": 614,
@@ -12,11 +12,11 @@
     },
     "anc/reconstruct_source.py": {
       "bytes": 10477,
-      "sha256": "ace4c34bdba09cd9c90c0f8e1596155160b82cc0663b040433206797349c1734"
+      "sha256": "2f71d693a92cc1f9ba5291254b1d1d55b4af3f281c9ae40610f0388370cbb576"
     },
     "anc/reproducibility/README.txt": {
-      "bytes": 7769,
-      "sha256": "0096dc1e0285bd950e046824b65f9b2d85d1fad38aa996e1d82bf7e6643f4b53"
+      "bytes": 7823,
+      "sha256": "99548afb4d0b15ce050142d75278015088b56e49e69d9a4d0df97e2e88a6d868"
     },
     "anc/reproducibility/checks/verify_constants.py": {
       "bytes": 3588,
@@ -228,7 +228,7 @@
     }
   },
   "archive_entry_count": 56,
-  "archive_sha256": "44124c690fa1e01e809d3eef95ff0068f9a379e7bdb5f6943470a08455c75c13",
+  "archive_sha256": "8a3af59bd01a8b358da70cbb309719881d502dc4b62f61c18d3cf587f7081d62",
   "edition_date": "2026-10-18",
   "format": 1,
   "generator_sha256": "72b04fbed1157cd26e41de9e9b04adf40d761e01fc4e9eea6f598b2d197276c7",
@@ -238,8 +238,8 @@
   "source_to_archive": {
     "README.txt": {
       "archive_path": "anc/reproducibility/README.txt",
-      "bytes": 7769,
-      "sha256": "0096dc1e0285bd950e046824b65f9b2d85d1fad38aa996e1d82bf7e6643f4b53"
+      "bytes": 7823,
+      "sha256": "99548afb4d0b15ce050142d75278015088b56e49e69d9a4d0df97e2e88a6d868"
     },
     "checks/verify_constants.py": {
       "archive_path": "anc/reproducibility/checks/verify_constants.py",

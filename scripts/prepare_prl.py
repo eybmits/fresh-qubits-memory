@@ -33,7 +33,7 @@ from prepare_arxiv import (
 
 EDITION = "2026-10-18-v4"
 GENERATOR = "scripts/prepare_prl.py"
-DEFAULT_JUSTIFICATION = REPO / "paper/versions/2026-10-18-prl-v4/justification-user.txt"
+DEFAULT_JUSTIFICATION = REPO / "paper/versions/2026-10-18-prl-v4/justification-user-v2.txt"
 MANUSCRIPT_FILES = [MAIN, "refs.bib", "memory_limits_prl.bbl"] + [
     f"fig{i}.pdf" for i in range(1, 5)
 ]

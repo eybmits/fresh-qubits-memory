@@ -8,7 +8,7 @@ Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien share one combined affi
 
 - [Combined PDF](memory_limits_prl_2026-10-18-v4.pdf), [six-page Letter](submission/prl-2026-10-18-v4/memory_limits_prl_letter.pdf), [sixteen-page Supplemental Material](submission/prl-2026-10-18-v4/2_supplemental_material/memory_limits_prl_SM.pdf)
 - [Editable LaTeX](prl-source/memory_limits_prl.tex), [bibliography](prl-source/refs.bib), [build instructions](prl-source/README.txt)
-- [Received originals and receipt](versions/2026-10-18-prl-v4/receipt.json), [provenance](versions/2026-10-18-prl-v4/provenance.json), [final source snapshot](versions/2026-10-18-prl-v4/source-final-prl-v4.zip)
+- [Received originals and receipt](versions/2026-10-18-prl-v4/receipt.json), [provenance](versions/2026-10-18-prl-v4/provenance.json), [final source snapshot](versions/2026-10-18-prl-v4/source-final-prl-v4-justification-v2.zip)
 - [Revision scope and checks](../docs/manuscript-2026-10-18-prl-v4.md)
 - [PRL handoff ZIP](submission/prl-2026-10-18-v4/prl-submission.zip) and [upload instructions](submission/prl-2026-10-18-v4/README.md)
 - [Prepared arXiv source ZIP](submission/arxiv-2026-10-18-v4/arxiv-source.zip)
@@ -16,7 +16,7 @@ Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien share one combined affi
 
 This edition imports `memory_limits_prl_submission (1).zip`, `memory_limits_prl_source (3).zip`, `memory_limits_prl (6).tex`, `fig3 (1).pdf`, and `memory_limits_prl (28).pdf`, preserving all five supplied originals. The two full-source archives have the same 53 files; the standalone TeX and Figure 3 match their archived counterparts byte for byte. It incorporates the new abstract, Figures 1, 3, and S2, and the singular-value clarification of normalized Schatten norms. The abstract and Figure 3 are qualified to describe the optimal memory ceiling. The three confirmed authors, ORCIDs, one shared affiliation, and GitHub URL in reference [28] are retained, as are the finite-history, independent-ensemble, and continuous-crossing clarifications.
 
-The [PRL justification TXT](submission/prl-2026-10-18-v4/justification.txt) preserves the user's exact new 100-word text. Its immutable received copy is [justification-user.txt](versions/2026-10-18-prl-v4/justification-user.txt).
+The [PRL justification TXT](submission/prl-2026-10-18-v4/justification.txt) preserves the user's exact new 100-word text. Its current received copy is [justification-user-v2.txt](versions/2026-10-18-prl-v4/justification-user-v2.txt); the earlier paragraph remains archived as [justification-user.txt](versions/2026-10-18-prl-v4/justification-user.txt).
 
 The canonical source combines the Letter and supplement using APS REVTeX 4.2 with `aps,prl,twocolumn`, four main figures, and seven supplemental figures. The combined PDF has 22 pages. The PRL handoff provides a separately compiled six-page Letter and a sixteen-page supplement, with matching text documented in the [PRL build verification](submission/prl-2026-10-18-v4/build_verification.json). Its source archive includes the full reproduction code and data. The final Letter has a local estimate of 3654 equivalent words against the 3750-word PRL limit; its abstract has 575 rendered characters. Neither the estimate nor compilation is an editorial eligibility decision.
 
