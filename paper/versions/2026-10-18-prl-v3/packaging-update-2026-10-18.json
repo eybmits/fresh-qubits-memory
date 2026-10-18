@@ -1,0 +1,78 @@
+{
+  "checked_on": "2026-10-18",
+  "base_commit": "9290096e599800594bbcd46cb4fdf04bd2412d5d",
+  "scope": "Upload instructions and handoff organization only; manuscript content and PDFs unchanged.",
+  "supersedes": "Initial PRL handoff hashes in provenance.json; initial import receipt remains historical.",
+  "official_file_upload_guidance": "https://journals.aps.org/authors/web-submission-guidelines-physical-review#uploading-files",
+  "prl_upload_roles": {
+    "main_manuscript": "memory_limits_prl_letter.pdf (6 pages)",
+    "supplemental_pdf": "2_supplemental_material/memory_limits_prl_SM.pdf (16 pages)",
+    "supplemental_reproduction_files": [
+      "2_supplemental_material/memory_limits_prl_source.zip",
+      "2_supplemental_material/README.TXT"
+    ],
+    "manuscript_sources": "Retained for production after acceptance; not required for initial review."
+  },
+  "arxiv": "Single source ZIP builds both Letter and supplement together,22pages; preview PDF provided alongside it.",
+  "unchanged_artifacts": [
+    {
+      "path": "paper/memory_limits_prl_2026-10-18-v3.pdf",
+      "bytes": 897938,
+      "sha256": "5bb0c681f05e2ed4543264f87c1dabd3589ddbcbf61b00ca3119dea44d25607d"
+    },
+    {
+      "path": "paper/submission/prl-2026-10-18-v3/memory_limits_prl_letter.pdf",
+      "bytes": 616580,
+      "sha256": "46a47f38e19904105d79b0c13060e4ec3da2a5b186fc666378ad07520fe093a4"
+    },
+    {
+      "path": "paper/submission/prl-2026-10-18-v3/2_supplemental_material/memory_limits_prl_SM.pdf",
+      "bytes": 744032,
+      "sha256": "45144cf2a1801653ed93fdaf564e26a490e7c9fb277ac8e26bcdd393c79befdb"
+    },
+    {
+      "path": "paper/submission/arxiv-2026-10-18-v3/arxiv-source.zip",
+      "bytes": 1214009,
+      "sha256": "ae700291bef40429547486528f8f1683a21761fd0064315a34c694d5f3712331"
+    },
+    {
+      "path": "paper/submission/prl-2026-10-18-v3/2_supplemental_material/memory_limits_prl_source.zip",
+      "bytes": 1207734,
+      "sha256": "6046e38380fc62802b024bac85bfa26d34e97c1353bffa3116ec085d8a637d30"
+    }
+  ],
+  "refreshed_prl_artifacts": [
+    {
+      "path": "paper/submission/prl-2026-10-18-v3/README.md",
+      "bytes": 4279,
+      "sha256": "dd96928a5f0206e7436857866bab9173e8a504a108b3ddb2c5666da6f4f45ee2"
+    },
+    {
+      "path": "paper/submission/prl-2026-10-18-v3/manifest.json",
+      "bytes": 20851,
+      "sha256": "517aa8c5e674fb7a6ddb0220e19d1d4ae0917004fe3c3a6d5617418d7b6b81db"
+    },
+    {
+      "path": "paper/submission/prl-2026-10-18-v3/build_verification.json",
+      "bytes": 3041,
+      "sha256": "aea17807d17565e9231644c17fb6880db25910a45d9883bd0bb63219fb37f92e"
+    },
+    {
+      "path": "paper/submission/prl-2026-10-18-v3/prl-submission.zip",
+      "bytes": 3223876,
+      "sha256": "b16bb55bd1c7d482d91f6243f64a467e271d570c10de11fbe9cc573340823d51"
+    }
+  ],
+  "verification": {
+    "all_managed_file_hashes_valid": true,
+    "zip_crc_and_member_bytes_valid": true,
+    "all_three_pdfs_byte_identical": true,
+    "arxiv_source_zip_byte_identical": true,
+    "reproduction_source_zip_byte_identical": true,
+    "repository_tests_passed": 22,
+    "independent_arxiv_check": "54entries;1toplevelcombinedTeX;51canonicalsourcefilesbyteidentical;6/16/22PDFpages and3author names verified."
+  },
+  "uploaded": false,
+  "submitted": false,
+  "repository_visibility_change": false
+}

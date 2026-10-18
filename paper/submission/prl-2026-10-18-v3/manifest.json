@@ -415,8 +415,8 @@
       "sha256": "6046e38380fc62802b024bac85bfa26d34e97c1353bffa3116ec085d8a637d30"
     },
     "README.md": {
-      "bytes": 3783,
-      "sha256": "794609013c8b6e6a16a28a8797cb8df87b57937f30389404d3b0668d6e12b25f"
+      "bytes": 4279,
+      "sha256": "dd96928a5f0206e7436857866bab9173e8a504a108b3ddb2c5666da6f4f45ee2"
     },
     "author_information.json": {
       "bytes": 1409,
@@ -451,7 +451,8 @@
   "official_sources": {
     "length_guide": "https://journals.aps.org/authors/length-guide",
     "prl_author_instructions": "https://journals.aps.org/prl/authors",
-    "supplemental_material": "https://journals.aps.org/authors/supplemental-material-instructions"
+    "supplemental_material": "https://journals.aps.org/authors/supplemental-material-instructions",
+    "web_submission": "https://journals.aps.org/authors/web-submission-guidelines-physical-review"
   },
   "status": "Prepared locally; not uploaded or submitted; author attestations pending.",
   "template_inputs": {

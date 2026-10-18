@@ -12,6 +12,7 @@ Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien share one combined affi
 - [Revision scope and checks](../docs/manuscript-2026-10-18-prl-v3.md)
 - [PRL handoff ZIP](submission/prl-2026-10-18-v3/prl-submission.zip) and [upload instructions](submission/prl-2026-10-18-v3/README.md)
 - [Prepared arXiv source ZIP](submission/arxiv-2026-10-18-v3/arxiv-source.zip)
+- [Upload guide: separate PRL PDFs and combined arXiv version](submission/README.md)
 
 This edition imports `memory_limits_prl_submission.zip`, `memory_limits_prl_letter.pdf`, `memory_limits_prl_SM.pdf`, and `submission_notes.txt`, preserving the supplied originals. It incorporates the supplied proof and precision corrections, updated references and figures, and the 309-step single-qubit depth. The three confirmed authors, ORCIDs, one shared affiliation, and GitHub URL in reference [28] are retained. The manuscript also now explains the finite-history estimate, independent unitary sampling across `k`, and the continuous thresholds in Figure 4(b).
 

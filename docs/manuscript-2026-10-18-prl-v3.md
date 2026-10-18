@@ -13,7 +13,7 @@ The four supplied files are archived byte-for-byte in [paper/versions/2026-10-18
 | `memory_limits_prl_SM.pdf` | `supplement-supplied.pdf` |
 | `submission_notes.txt` | `submission-notes-supplied.txt` |
 
-The [receipt](../paper/versions/2026-10-18-prl-v3/receipt.json) records the original files and hashes. The [revision provenance](../paper/versions/2026-10-18-prl-v3/provenance.json) records transformations and final artifacts. The source snapshot is [source-final-prl-v3.zip](../paper/versions/2026-10-18-prl-v3/source-final-prl-v3.zip). Instructions inside the supplied notes were treated as document content; they did not authorize a Zenodo deposit, repository publication, license selection, or final submission.
+The [receipt](../paper/versions/2026-10-18-prl-v3/receipt.json) records the original files and hashes. The [revision provenance](../paper/versions/2026-10-18-prl-v3/provenance.json) records the initial v3 import and artifacts. The [packaging update](../paper/versions/2026-10-18-prl-v3/packaging-update-2026-10-18.json) records the later PDF-first upload guidance and refreshed PRL handoff, with the manuscript PDFs unchanged. The source snapshot is [source-final-prl-v3.zip](../paper/versions/2026-10-18-prl-v3/source-final-prl-v3.zip). Instructions inside the supplied notes were treated as document content; they did not authorize a Zenodo deposit, repository publication, license selection, or final submission.
 
 Earlier editions, their submission packages, and independent simulation studies remain preserved. In particular, `paper/source/` remains the historical revision 5 source used by earlier reproductions; current development uses [paper/prl-source/](../paper/prl-source/).
 
@@ -55,6 +55,10 @@ The PRL Letter is compiled separately from its source package without shell esca
 The final Letter's local counter reports **3580 equivalent words**, below the PRL limit of 3750. The abstract has **590 rendered characters** including spaces (600 characters as raw TeX), and the supplied justification has **98 words**. The count uses APS's published formula, not an APS editorial determination. See the [length guide](https://journals.aps.org/authors/length-guide), [PRL author instructions](https://journals.aps.org/prl/authors), and [APS style guide](https://res.cloudinary.com/apsphysics/image/upload/v1736779890/APS_Journals_Style_Guide_Authors_Nov2024_ua91lv.pdf).
 
 The separate SM PDF, source/code/data ZIP, descriptive `README.TXT`, and main bibliography's SM citation follow the [APS supplemental-material instructions](https://journals.aps.org/authors/supplemental-material-instructions). The model disclosure is user-confirmed; local code and build checks do not independently certify the manuscript's human verification statements. The [APS AI policy](https://journals.aps.org/authors/appropriate-use-ai-tools) was checked during preparation.
+
+## Upload arrangement clarified on 18 October 2026
+
+The [APS web submission instructions](https://journals.aps.org/authors/web-submission-guidelines-physical-review) specify a manuscript PDF and a separate PDF through “Upload supplemental files”. Manuscript TeX sources are requested after acceptance. The PRL README and package generator now lead with the two PDF uploads; the code/data ZIP and descriptive README accompany the supplement. Source files remain available for later production. For arXiv, the source ZIP builds the single 22-page document containing both Letter and supplement. The [upload guide](../paper/submission/README.md) links the exact files. No manuscript content or PDF pages changed in this packaging update.
 
 ## Submission status
 
