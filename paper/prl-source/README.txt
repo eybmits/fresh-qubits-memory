@@ -1,3 +1,8 @@
+HISTORICAL SOURCE-PACKAGE NOTES
+The text below records the preserved submission-package preparation. Its revision, access, and word-count statements are historical.
+The repository is public. For current installation and safe reproduction commands, use ../../docs/reproduction.md from the repository checkout.
+The submitted source ZIPs retain the original README unchanged.
+
 The Fundamental Memory Ceiling of Noisy Quantum Reservoirs -- Physical Review Letters version, source files
 Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien
 Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München

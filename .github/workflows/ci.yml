@@ -32,3 +32,46 @@ jobs:
       - run: python -m pip install -e ".[validation]"
       - run: python -m unittest discover -s tests -v
       - run: MPLCONFIGDIR=work/mpl-cache OPENBLAS_NUM_THREADS=1 python scripts/validate_empirical.py --output-dir results/local/ci-empirical
+
+  current-paper:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -e ".[paper]"
+      - run: python scripts/reproduce_paper.py check --output-dir results/local/ci-paper-check
+      - run: python scripts/run_prl_campaign.py --smoke --output-dir results/local/ci-paper-smoke
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: current-paper-diagnostics
+          path: |
+            results/local/ci-paper-check/manifest.json
+            results/local/ci-paper-check/logs/
+            results/local/ci-paper-smoke/run_manifest.json
+            results/local/ci-paper-smoke/log_*.txt
+
+  paper-build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -e ".[paper]"
+      - name: Install manuscript and figure build tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y texlive-latex-extra texlive-fonts-recommended texlive-publishers cm-super
+      - run: python scripts/reproduce_paper.py build --output-dir results/local/ci-paper-build
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: paper-build-diagnostics
+          path: |
+            results/local/ci-paper-build/manifest.json
+            results/local/ci-paper-build/logs/
+            results/local/ci-paper-build/source/*.log
+            results/local/ci-paper-build/source/figures/*.log

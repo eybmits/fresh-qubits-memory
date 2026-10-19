@@ -1,96 +1,75 @@
 # The Fundamental Memory Ceiling of Noisy Quantum Reservoirs
 
-Scientific project for **“The Fundamental Memory Ceiling of Noisy Quantum Reservoirs”** by Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien (LMU Munich).
+**Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien · QAR-Lab, LMU Munich**
 
-The manuscript studies how the number of freshly prepared input qubits per cycle limits the memory of a noisy quantum reservoir. This repository preserves the supplied manuscript versions, provides editable LaTeX sources and figures, records a research and validation plan, and includes an independent numerical reproduction of the majority-refresh example.
+[![Scientific checks](https://github.com/eybmits/fresh-qubits-memory/actions/workflows/ci.yml/badge.svg)](https://github.com/eybmits/fresh-qubits-memory/actions/workflows/ci.yml)
 
-**Current manuscript — submitted to PRL on 19 October 2026:** [complete PDF, 25 pages](paper/memory_limits_prl_2026-10-19-concise.pdf) · [Letter, 6 pages](paper/submission/prl-2026-10-19-submitted/The%20Fundamental%20Memory%20Ceiling%20of%20Noisy%20Quantum%20Reservoirs.pdf) · [Supplemental Material, 19 pages](paper/submission/prl-2026-10-19-submitted/Supplemental%20Material.pdf) · [editable source](paper/prl-source/memory_limits_prl.tex) · [current record](docs/manuscript-2026-10-19-submitted.md).
+[Full paper + Supplemental Material](paper/memory_limits_prl_2026-10-19-concise.pdf) · [Letter](paper/submission/prl-2026-10-19-submitted/The%20Fundamental%20Memory%20Ceiling%20of%20Noisy%20Quantum%20Reservoirs.pdf) · [Reproduce the results](docs/reproduction.md) · [Cite this work](CITATION.cff) · [Releases](https://github.com/eybmits/fresh-qubits-memory/releases)
 
-The final manuscript includes the authorized abstract, introduction, budget definition, simulation paragraph, conclusion, Supplemental Material references, Figure 4 caption, and shortening edits made after the Figure 1 revision. This synchronization preserves that final source and PDF exactly. Earlier versions, scientific code, figures, and supplied data remain preserved.
+**How long can a noisy quantum system remember an input?** Under independent local depolarizing noise, after initialization washout, the optimal memory depth grows exponentially with the number of fresh input qubits supplied per step. The upper bound is independent of the total system size; an explicit error-correcting reservoir attains the exponential scaling. Noise strength and distinguishability accuracy are held fixed.
 
-**Current packages:** [PRL handoff](paper/submission/prl-2026-10-19-submitted/README.md) · [full arXiv source ZIP](paper/submission/arxiv-2026-10-19-submitted/arxiv-source.zip) · [arXiv instructions and metadata](paper/submission/arxiv-2026-10-19-submitted/README.md) · [frozen canonical source](paper/versions/2026-10-19-submitted/canonical-source.zip). The approved cover and local significance statement remain byte-identical. The arXiv source compiles to one document containing the Letter and all Supplemental Material; fresh compilation reproduces the complete PDF byte-for-byte. The local APS-method estimate is 3743.41 word equivalents, not an editorial eligibility decision.
+This repository contains the manuscript submitted to **Physical Review Letters on 19 October 2026**, its simulation code and datasets, figure sources, and reproducibility tools. The complete PDF has 25 pages: a six-page Letter and nineteen-page Supplemental Material.
 
-**Submission and access status:** the [author-provided APS confirmation](paper/submission-records/prl-2026-10-19/README.md) shows **Submitted 19Oct2026-07:43 EDT**, temporary ID **es2026oct16_693**. It establishes receipt, not acceptance or external review. Local Desktop and workspace handoff copies match; APS-hosted file bytes and final form prose were not independently downloaded. GitHub is **public** as of 19 October 2026. The complete manuscript is uploaded in arXiv draft **8251813**, with successful 25-page compilation and saved metadata. The [portal record](paper/submission-records/arxiv-2026-10-19/README.md) preserves the final preview; **Submit has not been clicked**. No public arXiv identifier or Zenodo DOI is assigned. Earlier upload records and unsubmitted Zenodo preparations remain historical.
+![Figure 4: an error-correcting reservoir uses fresh qubits to sustain memory; sampled standard reservoirs operate far below it.](docs/assets/memory-scaling.png)
 
-## Scientific scope
+*Figure 4 from the manuscript, with q = 0.9 and ε = 0.01. The explicit construction uses fresh qubits for repair and gains exponential memory. Within the sampled Ising and Haar ensembles, increasing system size does not extend memory. More fresh qubits raise the attainable ceiling; they do not automatically improve every reservoir.*
 
-Each cycle overwrites a register of at most $k$ qubits, applies a fixed unitary, and independently depolarizes every qubit with fixed $0<q<1$. For the driven state after the initial transient, the current manuscript defines memory depth using trace distance between states generated by histories with a common recent-input window. Theorem 1 states that the optimum over reservoir sizes, unitaries, and input encodings scales as $\exp[\Theta_q(k)]$ at fixed $0<\varepsilon<q$. Its upper bound applies to every admissible reservoir, independently of the total register size $n$; adding fresh qubits does not automatically improve an individual reservoir.
+## Quick start: current paper
 
-The matching construction uses an odd number $r$ of repetition copies, $k=r+2$ fresh qubits, and $n=2r+2$ total qubits. With $p=(1-q)/2$:
-
-$$
-p_r=\sum_{j=(r+1)/2}^{r}\binom{r}{j}p^j(1-p)^{r-j},\qquad
-\lambda_r=1-2p_r,\qquad f_b(t)=(-1)^b q\lambda_r^t.
-$$
-
-Table I of the original 15 October manuscript reports the largest integer $T_r$ with $\lambda_r^{T_r}\geq 1/2$; the current PRL revision gives these lifetimes in the Supplemental Material, section “The error-correcting reservoir,” and Figure S4. At $q=0.9$, $r=15$ ($k=17$) gives **1,894,286 hold cycles**. These are ideal-unitary/noise cycles, not elementary gate cycles.
-
-The exponential upper and lower bounds match in scaling class; their exponents differ, and the exact optimal rate remains unresolved. The manuscript distinguishes the standard repetition/majority achievability argument from its claimed converse on the fresh-qubit rate. A shorter main-text comparison points to the complete Supplemental Material discussion of Fawzi et al.'s total-width bounds and Nelson et al.'s Clifford-gate restriction. These comparisons are scoped to the noise and control assumptions of each result; this repository update does not certify novelty. A long memory does not establish classical computational hardness: the example above has a one-scalar recurrence. The current manuscript focuses on memory limits and does not contain the earlier classical-learning theorem. See the [current version note](docs/manuscript-2026-10-19-submitted.md) and [17 October scientific import record](docs/manuscript-2026-10-17-prl.md); the [original paper summary](docs/paper-summary.md) remains explicitly tied to the 15 October baseline.
-
-For the explicit repetition reservoir at $q=0.9$ and $\varepsilon=0.01$, every pair of additional input qubits across the odd values $k=5,7,\ldots,15$ increases the single-qubit memory depth by more than five. The [repeatable finite-range calculation](paper/versions/2026-10-19-prl-v9/verification/factor-five.json) checks exact rational majority-error probabilities and 100-digit logarithms against the saved curve. This is a statement about that construction and range, not about every reservoir or the full-state optimum.
-
-## Supplied numerical study in the PRL revision
-
-The new [simulator and datasets](paper/prl-source/sim/) cover Ising and Haar reservoirs with six realizations per configuration, sizes up to nine qubits, two kinds of differing input histories, and five common continuations. The campaign includes adaptive washout, cold-input controls, and noise/evolution-time scans. These are the supplied PRL results, separate from the older campaigns and the independent repair experiments.
-
-During the 17 October import, the supplied diagnostic scripts completed successfully. A replay of all six realizations for each of two small configurations (`n=3`, `k=1`, `q=0.9`, Ising and Haar) reproduced the saved depths and washout step counts exactly; forgetting curves agreed within `8.4e-14`. These are historical checks of the unchanged scientific code and data, not a new campaign on 19 October. The full large campaign was not rerun. No forecasting readout was trained; Figure 2 illustrates a temporal task.
-
-The interpretation qualifications introduced in revision 3 remain in the submitted edition: finite history pairs estimate rather than exhaust the supremum defining memory depth; unitaries are sampled independently across `k`; and Figure 4(b) plots continuous threshold crossings, with integer depths rounded up. The updated single-qubit depth is **309**, while the full-state depth is **316** at `k=5`, `q=0.9`, and `ε=0.01`. The isolated replay recorded for revision 3 reproduced the full-state curve exactly and the single-qubit curve within `1.11e-16`. The simulator and all 13 supplied JSON datasets are unchanged in the submitted edition, so this evidence remains historical rather than a new campaign. Revision 5 build, package, and test verification remains in its [historical record](docs/manuscript-2026-10-18-prl-v5.md); the [current revision note](docs/manuscript-2026-10-19-submitted.md) records the editorial revision and its verification. These bounded checks and the sampled proof diagnostics do not certify the universal theorem.
-
-## Quick start
-
-Python 3.11 or newer is required. The calculation and tests use only the Python standard library.
+Python 3.11 or newer is required. Install the paper dependencies, including NumPy, SciPy, Matplotlib, and mpmath:
 
 ```bash
 git clone https://github.com/eybmits/fresh-qubits-memory.git
 cd fresh-qubits-memory
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -e .
-python -m unittest discover -s tests -v
-python scripts/reproduce_table1.py --output-dir results/table1
+python -m pip install -e ".[paper]"
+
+# Current numerical checks and numbers extracted from the supplied data.
+python scripts/reproduce_paper.py check --output-dir results/local/paper-check
+
+# Small actual Ising and Haar simulations: six seeded realizations each.
+python scripts/run_prl_campaign.py --smoke --output-dir results/local/paper-smoke
 ```
 
-The script writes CSV values and JSON metadata. The committed [baseline output](results/table1/) is generated from the equations, with the lifetime and conservative-guarantee rows checked against Table I. No stochastic sampling is used. Package installation uses setuptools as its build tool; runtime calculations need no third-party packages.
+Each command writes logs and a provenance manifest in its output directory. Choose a new directory for each run. Supplied data and manuscript files remain untouched. The smoke run covers `n=3`, `k=1`, `q=0.9`; it is a small reproduction check, not the full campaign.
 
-Optional flags are `--q`, `--copies`, and `--precision`; see `--help`. The implementation accepts odd `r` from 1 to 255 and finite-decimal `q` in `(0,1)` with at most 100 decimal places. Output precision is 30–512 digits; adaptive working precision is capped at 4096 digits and extreme cases that exceed the bound are rejected. See the [validation record](docs/validation.md) for the tested scope and the manuscript's display-rounding convention.
+## Figures and manuscript
 
-## Historical independent numerical validation
-
-The [16 October validation report](results/empirical-2026-10-16/REPORT.md) ([PDF](results/empirical-2026-10-16/validation_report.pdf)) adds complete diagonal-channel simulations through 16 qubits, fixed-size physical trajectories, eight million direct error-pattern trials, rare-event importance sampling, 56 small quantum reservoirs, noise controls, and the cooling pipeline. The complete majority channel matches the predicted response within `2.10e-14`. The rare-event estimate for `k=17` is 1.898 million half-life cycles (approximate 99% interval 1.893–1.903 million), consistent with the model prediction; this is not a direct million-cycle hardware observation. The report also identifies two prose qualifications: size can help individual architectures below the uniform ceiling, and additional unital noise preserves the upper bound but can reduce attainable memory.
-
-The [protocol](experiments/empirical-2026-10-16.md), CSV data, seeds, source hashes and uncertainty intervals are preserved. Universal proof validity and asymptotic optimality are not established by finite simulations. Install optional dependencies and reproduce with:
+With the [documented LaTeX tools](docs/reproduction.md#figures-and-manuscript) installed:
 
 ```bash
-python -m pip install -e ".[validation]"
-PYTHONPATH=src python -m unittest discover -s tests -v
-MPLCONFIGDIR=work/mpl-cache OPENBLAS_NUM_THREADS=1 python scripts/validate_empirical.py --output-dir results/local/empirical-replay
+# Regenerate all four main figures and seven supplement figures from saved data.
+python scripts/reproduce_paper.py figures --output-dir results/local/paper-figures
+
+# Regenerate figures and compile a complete paper using those new figures.
+python scripts/reproduce_paper.py build --output-dir results/local/paper-build
 ```
 
-Keep new runs separate from the archived evidence. `python scripts/build_validation_report.py` rebuilds the historical report from its frozen inputs and rejects changed data before writing. Its prose describes the original revision 3 experiment, not a new run or the current manuscript revision.
+The rebuilt PDF is `results/local/paper-build/source/memory_limits_prl.pdf`. The [submitted PDF](paper/memory_limits_prl_2026-10-19-concise.pdf) is preserved separately. Figure regeneration uses the supplied numerical datasets; rerunning the simulations is a separate, more expensive step:
 
-## Repository map
+```bash
+python scripts/run_prl_campaign.py --output-dir results/local/paper-campaign
+```
 
-| Path | Purpose |
+The runner checks both parallel lanes and validates the expected configurations before merging results. See the [reproduction guide](docs/reproduction.md) for outputs, dependencies, checks, and the historical Table-I example.
+
+## What is where?
+
+| Path | Contents |
 | --- | --- |
-| [paper/](paper/) | Current PDF, editable source, archived inputs, provenance and draft citations |
-| [paper/prl-source/](paper/prl-source/) | Current Letter, Supplemental Material, figures, simulator and supplied data |
-| [paper/source/](paper/source/) | Preserved revision 5 source used by historical experiments |
-| [docs/manuscript-2026-10-19-submitted.md](docs/manuscript-2026-10-19-submitted.md) | Submitted manuscript, combined arXiv preparation, and verification |
-| [docs/manuscript-2026-10-17-prl.md](docs/manuscript-2026-10-17-prl.md) | Supplied scientific revision and historical validation record |
-| [docs/paper-summary.md](docs/paper-summary.md) | Source-grounded model, claims and limitations |
-| [docs/research-plan.md](docs/research-plan.md) | Prioritized scientific work and acceptance criteria |
-| [src/fresh_qubits_memory/](src/fresh_qubits_memory/) | Majority-error and readable-lifetime calculations |
-| [scripts/reproduce_table1.py](scripts/reproduce_table1.py) | Reproducible Table I entry point |
-| [tests/](tests/) | Reference values and numerical boundary checks |
-| [experiments/](experiments/) | Protocols for future experiments |
-| [data/](data/) | Data provenance and storage conventions |
-| [results/](results/) | Small reproducible outputs and interpretation |
+| [paper/prl-source/](paper/prl-source/) | Current manuscript, figure sources, simulator, and supplied data |
+| [docs/reproduction.md](docs/reproduction.md) | Installation, commands, and expected outputs |
+| [scripts/reproduce_paper.py](scripts/reproduce_paper.py) | Isolated numerical checks and figure/paper builds |
+| [scripts/run_prl_campaign.py](scripts/run_prl_campaign.py) | Isolated simulation campaign with completion checks |
+| [tests/](tests/) | Numerical regression and reproduction-tool tests |
+| [paper/versions/](paper/versions/) | Frozen manuscript/source versions and provenance |
+| [docs/repository-history.md](docs/repository-history.md) | Earlier overview and detailed validation history |
 
-Start with the [research plan](docs/research-plan.md), whose equation anchors and learning workstream refer to the original 15 October version. The historical numerical report addresses several construction checks; general proof review, hardware validation, and gate-level implementation remain research tasks. The current PRL source is in [paper/prl-source/](paper/prl-source/). The revision 5 tree in [paper/source/](paper/source/) remains unchanged so historical calculations can still be reproduced.
+The upper and lower bounds establish the same exponential scaling class; their exponents differ. Finite simulations illustrate particular constructions and sampled reservoirs. The [manuscript verification](docs/manuscript-2026-10-19-submitted.md) and [reproduction-tool checks](docs/reproducibility-update-2026-10-19.md) identify the checks performed and their scope.
 
-## Citation and reuse
+## Citation and license
 
-[CITATION.cff](CITATION.cff) describes this research repository; [paper/manuscript.bib](paper/manuscript.bib) records the supplied manuscript without inventing a DOI or journal acceptance. Each supplied input is preserved byte-for-byte; [current provenance](paper/versions/2026-10-19-submitted/provenance.json) records this edition's changes and artifact hashes. The [canonical author record](paper/author_information.json) supplies the retained names, ORCIDs, and combined affiliation.
+Use [CITATION.cff](CITATION.cff) or the current entry in [paper/manuscript.bib](paper/manuscript.bib). The manuscript is submitted; no journal acceptance or public arXiv identifier is asserted here.
 
-No software license has been selected. The arXiv distribution license selected for the earlier draft is a separate choice and does not assign a software license to this repository.
+The authors' software is licensed under the [MIT License](LICENSE). Manuscripts, figures, research data, and third-party materials have separate rights; see [licensing scope](LICENSING.md).

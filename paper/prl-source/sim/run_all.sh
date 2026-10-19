@@ -1,10 +1,12 @@
 #!/bin/bash
-# Runs the whole simulation campaign in two parallel lanes (about half an hour on two cores), merges the
-# results, and validates the memory-depth estimator.
-export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
-( python3 campaign.py main ising && python3 campaign.py cold ising && python3 campaign.py noise ising \
-  && python3 campaign.py tau ) > log_lane1.txt 2>&1 &
-( python3 campaign.py main haar && python3 campaign.py cold haar && python3 campaign.py noise haar \
-  && python3 validate_pairs.py ) > log_lane2.txt 2>&1 &
-wait
-python3 merge.py
+# Repository entry point; writes only to a new --output-dir, never supplied data.
+# Example (from the repository root):
+#   bash paper/prl-source/sim/run_all.sh --output-dir results/local/prl-campaign
+set -euo pipefail
+repo_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/../../.." && pwd)"
+runner="$repo_root/scripts/run_prl_campaign.py"
+if [[ ! -f "$runner" ]]; then
+  echo "Use scripts/run_prl_campaign.py from the fresh-qubits-memory repository." >&2
+  exit 1
+fi
+exec python3 "$runner" "$@"

@@ -1,6 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this research repository, cite the manuscript below; historical manuscript citations are in paper/manuscript.bib."
 type: software
+license: MIT
 title: "Fresh Qubits Memory: Research and Reproduction Workspace"
 authors:
   - family-names: Baumann
