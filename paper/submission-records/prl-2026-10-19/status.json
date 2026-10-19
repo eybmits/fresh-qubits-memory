@@ -1,0 +1,22 @@
+{
+  "observed_date": "2026-10-19",
+  "evidence": "User-supplied APS My Submissions screenshot, submitted-confirmation.png",
+  "journal": "Physical Review Letters",
+  "article_type": "Letter",
+  "title": "The Fundamental Memory Ceiling of Noisy Quantum Reservoirs",
+  "authors": [
+    "Markus Baumann",
+    "Jonas Stein",
+    "Claudia Linnhoff-Popien"
+  ],
+  "portal_status": "Submitted",
+  "portal_timestamp": "19Oct2026-07:43 EDT",
+  "temporary_submission_id": "es2026oct16_693",
+  "submitted_by": "User, in the browser",
+  "acceptance_or_referee_assignment": "Not established",
+  "local_artifacts": "Local Desktop and outputs copies match. APS-hosted bytes were not downloaded.",
+  "manuscript_changes_in_this_sync": "None; preserve the final concise edition exactly.",
+  "final_portal_justification_and_referee_text": "Not independently verified; archived local files are preparation copies.",
+  "arxiv_identifier": null,
+  "github_visibility": "PRIVATE, checked 2026-10-19"
+}

@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-19",
+  "scope": "Local exact user-text replacement of the Standard reservoirs operate far below the limit paragraph. All other manuscript content, figures, code and data remain unchanged.",
+  "candidate_source": "/private/tmp/memory-standard-candidate-l1aa1jz9/memory_limits_prl.tex",
+  "source": "paper/prl-source/memory_limits_prl.tex",
+  "source_sha256": "411dd8e4b1609042082fd41c34e80226ae4af62674ce2bfe7fc0c2e8762ec094",
+  "pdf": "paper/memory_limits_prl_2026-10-19-standard-reservoirs.pdf",
+  "pdf_sha256": "9aadf3bc0d8eb7b19213565cd3d4a3d4b3c86959a3c31fc22061a608a59c68d9",
+  "preceding_local_revision": "paper/versions/2026-10-19-standard-reservoirs/preceding-local-manuscript/",
+  "source_diff": "paper/versions/2026-10-19-standard-reservoirs/source.diff",
+  "aps_length_estimate": {
+    "total_word_equivalents": 3743.407618945399,
+    "typeset_text_words": 2800,
+    "equation_word_equivalents": 96,
+    "figure_word_equivalents": 847.407618945399,
+    "report": "paper/versions/2026-10-19-standard-reservoirs/count.json"
+  },
+  "checks": {
+    "exact_candidate_match": true,
+    "abstract_unchanged": true,
+    "abstract_characters": 596,
+    "pdf_pages": 25,
+    "build_diagnostics_clean": true,
+    "bibliography_unchanged": true,
+    "repository_tests_passed": 22,
+    "changed_pages_visually_reviewed": [
+      4,
+      5
+    ],
+    "only_requested_paragraph_changed": true
+  },
+  "status": "Local preparation; no upload, submission, commit or push."
+}

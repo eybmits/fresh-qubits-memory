@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-19",
+  "scope": "Local Beyond reservoirs section update from the exact reviewed candidate, preserving the stated noise, washout and resource conditions. All other manuscript content, figures, code and data remain unchanged.",
+  "candidate_source": "/private/tmp/memory-beyond-candidate-4mt2vfna/memory_limits_prl.tex",
+  "source": "paper/prl-source/memory_limits_prl.tex",
+  "source_sha256": "def2d24113f0283b788b772f161018948f45fcfb1dafa0d60b40523bd0ddd7f8",
+  "pdf": "paper/memory_limits_prl_2026-10-19-beyond-reservoirs.pdf",
+  "pdf_sha256": "5c972647e66232a5deed572e6882a1548e29ad732e0c46572c4f03cf43666210",
+  "preceding_local_revision": "paper/versions/2026-10-19-beyond-reservoirs/preceding-local-manuscript/",
+  "source_diff": "paper/versions/2026-10-19-beyond-reservoirs/source.diff",
+  "aps_length_estimate": {
+    "total_word_equivalents": 3743.407618945399,
+    "typeset_text_words": 2800,
+    "equation_word_equivalents": 96,
+    "figure_word_equivalents": 847.407618945399,
+    "report": "paper/versions/2026-10-19-beyond-reservoirs/count.json"
+  },
+  "checks": {
+    "exact_candidate_match": true,
+    "abstract_unchanged": true,
+    "abstract_characters": 596,
+    "pdf_pages": 25,
+    "build_diagnostics_clean": true,
+    "bibliography_unchanged": true,
+    "repository_tests_passed": 22,
+    "only_beyond_reservoirs_section_changed": true,
+    "count_report_source_hash_matches": true,
+    "changed_pages_visually_reviewed": [
+      4,
+      5
+    ]
+  },
+  "status": "Local preparation; no upload, submission, commit or push."
+}

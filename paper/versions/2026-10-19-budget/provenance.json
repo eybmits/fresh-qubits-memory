@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-19",
+  "scope": "Local entropy-budget terminology update: exactly four user-requested replacements in the model definition, after the theorem, Beyond reservoirs, and SM II.C. Latest introduction and abstract, figures, code and data remain unchanged.",
+  "candidate_source": "/private/tmp/memory-budget-candidate-h434ieu2/memory_limits_prl.tex",
+  "source": "paper/prl-source/memory_limits_prl.tex",
+  "source_sha256": "8e2ba1025b32e15750963ac40d534d42c86cac8d42b6aca04701b3a47c8ff82b",
+  "pdf": "paper/memory_limits_prl_2026-10-19-budget.pdf",
+  "pdf_sha256": "9f0546aea9d4ad2faf3298f2310d491ad567ea7f93c78b7288bac9006b313d5d",
+  "preceding_local_revision": "paper/versions/2026-10-19-budget/preceding-local-manuscript/",
+  "source_diff": "paper/versions/2026-10-19-budget/source.diff",
+  "aps_length_estimate": {
+    "total_word_equivalents": 3725.407618945399,
+    "typeset_text_words": 2782,
+    "equation_word_equivalents": 96,
+    "figure_word_equivalents": 847.407618945399,
+    "report": "paper/versions/2026-10-19-budget/count.json"
+  },
+  "checks": {
+    "exact_candidate_match": true,
+    "abstract_unchanged": true,
+    "abstract_characters": 596,
+    "pdf_pages": 25,
+    "build_diagnostics_clean": true,
+    "bibliography_unchanged": true,
+    "repository_tests_passed": 22,
+    "changed_pages_visually_reviewed": [
+      2,
+      3,
+      4,
+      9
+    ],
+    "exact_four_change_candidate_verified": true
+  },
+  "status": "Local preparation; no upload, submission, commit or push."
+}

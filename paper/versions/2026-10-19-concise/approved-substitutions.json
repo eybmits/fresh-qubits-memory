@@ -1,0 +1,23 @@
+{
+  "baseline_sha256": "0758947bc5f0bc58f0e1bc179f954af79c754cfc11791768fecab3886e73a7e7",
+  "edits": [
+    {
+      "label": "model",
+      "old": "At each time step, the $k$ qubits of the input register are discarded and reinitialized in an input state $\\sigma(u_t)$ that encodes the input.",
+      "new": "At each step, the $k$ input qubits are discarded and reinitialized in the encoding state $\\sigma(u_t)$.",
+      "literal_word_saving": 8
+    },
+    {
+      "label": "decay",
+      "old": "The signal still decays, but at a rate that is exponentially small in $r$.",
+      "new": "The signal decays at a rate exponentially small in $r$.",
+      "literal_word_saving": 4
+    },
+    {
+      "label": "dynamics",
+      "old": "The difference lies not in the supply of fresh qubits but in what the dynamics does with them.",
+      "new": "The difference lies in how the dynamics uses the fresh qubits.",
+      "literal_word_saving": 7
+    }
+  ]
+}

@@ -208,8 +208,11 @@ def author_metadata(source_text, author_path):
     }
 
 
-def build(source, output, author_path):
+def build(source, output, author_path, edition=EDITION, readme_path=None):
     originals = source_files(source)
+    original_readme_hash = digest(originals["README.txt"])
+    if readme_path is not None:
+        originals["README.txt"] = readme_path.read_bytes()
     manuscript = originals[MAIN].decode()
     title = braced_arguments(manuscript, "title")[0]
     abstract = re.search(r"\\begin\{abstract\}(.*?)\\end\{abstract\}", manuscript, re.S).group(1)
@@ -269,7 +272,7 @@ def build(source, output, author_path):
             raise ValueError("ZIP content verification failed")
     metadata = {
         "status": "prepared_locally_not_uploaded_or_submitted",
-        "edition": EDITION,
+        "edition": edition,
         "edition_date": EDITION_DATE,
         "title": title,
         "authors": ", ".join(a["given"] + " " + a["family"] for a in authors["authors"]),
@@ -285,9 +288,9 @@ def build(source, output, author_path):
         "report_number": None,
         "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
         "license_status": "Retains the user's selection for draft 8248308 on 18 October 2026; this revision has not been uploaded or rechecked in the portal.",
-        "account_endorsement_status": "Prior revision-7 draft reached preview; current portal state has not been checked.",
+        "account_endorsement_status": "This generator records local preparation only; consult the separate current portal record for endorsement status.",
         "submission_terms_accepted": None,
-        "submission_terms_scope": "The user accepted the agreement for the prior draft; no portal action was performed for this revision.",
+        "submission_terms_scope": "This generator does not accept submission agreements; consult the separate current portal record for user confirmations.",
         "prior_portal_record": "paper/submission-records/arxiv-2026-10-18-v7/upload-verification.json",
         "prior_portal_draft_id": "8248308",
         "compiler": "pdflatex",
@@ -301,7 +304,7 @@ def build(source, output, author_path):
     }
     manifest = {
         "format": 1,
-        "edition": EDITION,
+        "edition": edition,
         "edition_date": EDITION_DATE,
         "archive": zip_path.name,
         "archive_sha256": digest(zip_path.read_bytes()),
@@ -309,6 +312,12 @@ def build(source, output, author_path):
         "original_source_file_count": len(originals),
         "archive_entry_count": len(files),
         "source_root": "paper/prl-source",
+        "readme_override": None if readme_path is None else {
+            "file": readme_path.name,
+            "canonical_readme_sha256": original_readme_hash,
+            "public_readme_sha256": digest(originals["README.txt"]),
+            "scope": "Reproduction instructions only; scientific source files are unchanged.",
+        },
         "archive_entries": {
             name: {"bytes": len(data), "sha256": digest(data)}
             for name, data in sorted(files.items())
@@ -323,12 +332,58 @@ def build(source, output, author_path):
     (output / "title.txt").write_text(title + "\n")
     (output / "abstract.txt").write_text(abstract + "\n")
     (output / "authors.txt").write_text(metadata["authors"] + "\n")
-    (output / "README.md").write_text(instructions(figure_tex_count))
+    (output / "README.md").write_text(instructions(figure_tex_count, edition, readme_path))
     print(json.dumps({"archive": str(zip_path), "sha256": manifest["archive_sha256"],
                       "source_files": len(originals), "archive_entries": len(files)}, indent=2))
 
 
-def instructions(figure_tex_count):
+def instructions(figure_tex_count, edition=EDITION, readme_path=None):
+    if edition != EDITION:
+        override = (" --readme-file paper/submission/arxiv-2026-10-19-submitted/reproduction-readme.txt"
+                    if readme_path is not None else "")
+        return f"""# arXiv preparation — full manuscript
+
+Edition identifier: `{edition}`. The full PDF contains the Letter and Supplemental
+Material together ({EXPECTED_COMBINED_PAGES} pages, 11 figures). This package is a local preparation;
+an upload, final submission and public announcement are distinct portal actions.
+
+Upload `arxiv-source.zip` as a TeX source submission. The only top-level TeX compilation target is
+`memory_limits_prl.tex`, with pdfLaTeX / TeX Live 2025. Paste the exact title,
+authors and abstract from the matching text files. The primary category is
+`quant-ph`; DOI and journal-reference fields remain blank until assigned.
+`submission_metadata.json` records preparation status and historical license
+selection. Check the current arXiv draft before relying on those historical choices.
+
+The scientific sources, bibliography, figure PDFs, simulator and datasets are
+copied byte for byte from `paper/prl-source/`. The public reproducibility README
+uses the same cleaned instructions as the PRL supplemental archive; editor-only
+correspondence and submission administration are excluded. The main text,
+abstract, authors, affiliation and AI disclosure are unchanged.
+
+The ZIP contains root-level TeX, bibliography and 11 final figures. The
+`00README.json` configuration ignores {figure_tex_count} figure-construction TeX sources in
+`figure_sources/`. Code and data are under `anc/reproducibility/`. After extracting
+the complete ZIP, reconstruct the source layout with:
+
+```sh
+python3 anc/reconstruct_source.py /path/to/new-reproduction-directory
+```
+
+The destination must not exist; every file is SHA-256 checked before writing.
+Follow the restored README for simulation and figure reproduction instructions.
+No figure-building code runs during arXiv compilation.
+
+Rebuild from the repository root:
+
+```sh
+python3 scripts/prepare_arxiv.py --edition {edition} --output-dir paper/submission/arxiv-2026-10-19-submitted{override}
+```
+
+`package-manifest.json` records every entry and the deterministic archive hash.
+`verification.json` records the fresh extraction, compilation and comparison to
+the submitted full manuscript. This package check does not certify the scientific
+theorem or imply arXiv acceptance. Inspect the arXiv-generated preview separately.
+"""
     return f"""# arXiv upload preparation — 19 October 2026, revision 10
 
 This directory is a new local preparation package. Revision 10 has not been
@@ -451,8 +506,13 @@ def main():
     parser.add_argument("--source-dir", type=Path, default=REPO / "paper/prl-source")
     parser.add_argument("--output-dir", type=Path, default=REPO / "paper/submission/arxiv-2026-10-19-v10")
     parser.add_argument("--author-file", type=Path, default=REPO / "paper/author_information.json")
+    parser.add_argument("--edition", default=EDITION,
+                        help="Edition identifier for metadata; does not change manuscript bytes.")
+    parser.add_argument("--readme-file", type=Path,
+                        help="Public reproduction README to include instead of source README.txt.")
     args = parser.parse_args()
-    build(args.source_dir.resolve(), args.output_dir.resolve(), args.author_file.resolve())
+    build(args.source_dir.resolve(), args.output_dir.resolve(), args.author_file.resolve(),
+          args.edition, args.readme_file.resolve() if args.readme_file else None)
 
 
 if __name__ == "__main__":

@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{40}%
+\begin{thebibliography}{41}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -391,13 +391,13 @@
   {2026})\ pp.\ \bibinfo {pages} {38:1--38:13}\BibitemShut {NoStop}%
 \bibitem [{SM()}]{SM}%
   \BibitemOpen
-  \href@noop {} {}\bibinfo {note} {See the Supplemental Material accompanying
-  this manuscript for the complete proofs, the exact analysis of the
+  \href@noop {} {}\bibinfo {note} {See Supplemental Material at [URL will be
+  inserted by publisher] for the complete proofs, the exact analysis of the
   error-correcting reservoir, the entropy budget beyond depolarizing noise, the
   details of the simulations, the relation to earlier limits on noisy
   computation, and the Python code that reproduces all numerical values and
-  data figures, which includes Refs.~\cite{Xiong2025,Dao2026}. Code repository:
-  \url{https://github.com/eybmits/fresh-qubits-memory}.}\BibitemShut {Stop}%
+  data figures, which includes Refs.~\cite{Xiong2025,Dao2026}.}\BibitemShut
+  {Stop}%
 \bibitem [{\citenamefont {Takaki}\ \emph {et~al.}(2021)\citenamefont {Takaki},
   \citenamefont {Mitarai}, \citenamefont {Negoro}, \citenamefont {Fujii},\ and\
   \citenamefont {Kitagawa}}]{Takaki2021}%
@@ -516,6 +516,12 @@
   computing}} (\bibinfo {year} {2026}),\ \Eprint
   {https://arxiv.org/abs/2609.23429} {arXiv:2609.23429 [quant-ph]} \BibitemShut
   {NoStop}%
+\bibitem [{\citenamefont {Baumann}()}]{CodeRepository}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Baumann}},\ }\href@noop {} {\bibinfo {title} {{Fresh Qubits Memory: Research
+  and Reproduction Workspace}}},\ \bibinfo {howpublished}
+  {\url{https://github.com/eybmits/fresh-qubits-memory}}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Xiong}\ \emph {et~al.}(2025)\citenamefont {Xiong},
   \citenamefont {Facelli}, \citenamefont {Sahebi}, \citenamefont {Agnel},
   \citenamefont {Chotibut}, \citenamefont {Thanasilp},\ and\ \citenamefont

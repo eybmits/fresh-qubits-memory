@@ -1,6 +1,22 @@
 # Manuscript versions and source
 
-## Current version: 19 October 2026, PRL revision 10
+## Current version: PRL submission of 19 October 2026
+
+**The Fundamental Memory Ceiling of Noisy Quantum Reservoirs**, by Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien.
+
+The author-provided [APS confirmation](submission-records/prl-2026-10-19/README.md) shows **Submitted**, temporary ID **es2026oct16_693**, at 07:43 EDT on 19 October 2026. This is a submission, not an acceptance.
+
+- [Complete manuscript, 25 pages](memory_limits_prl_2026-10-19-concise.pdf): the exact final Letter plus Supplemental Material.
+- [PRL handoff](submission/prl-2026-10-19-submitted/README.md): separate six-page Letter and nineteen-page supplement, code/data, approved cover, and preserved administrative preparation files.
+- [Full arXiv source archive](submission/arxiv-2026-10-19-submitted/arxiv-source.zip), [metadata and build guide](submission/arxiv-2026-10-19-submitted/README.md), and [verification](submission/arxiv-2026-10-19-submitted/verification.json).
+- [Canonical editable source](prl-source/memory_limits_prl.tex), [frozen source snapshot](versions/2026-10-19-submitted/canonical-source.zip), and [provenance](versions/2026-10-19-submitted/provenance.json).
+- [Current scope and checks](../docs/manuscript-2026-10-19-submitted.md), [local handoff validation](versions/2026-10-19-submitted/local-artifact-verification.json), and [arXiv portal record](submission-records/arxiv-2026-10-19/README.md).
+
+No manuscript text was changed during this synchronization. It preserves the final user-directed edits after revision 10 and all intermediate dated versions. Three authors, ORCIDs, shared QAR-Lab/LMU affiliation, cover letter, and local approved significance statement remain intact. The complete arXiv source compiles to the exact same PDF bytes. The local length estimate is 3743.41 word equivalents.
+
+GitHub remains private. No public arXiv identifier or journal acceptance is assigned. The full arXiv document is uploaded and compiled successfully in draft 8251813, with saved metadata; the final Submit action remains open. The earlier preparation accounts below are historical and retain the status they recorded at the time.
+
+## Historical preparation: 19 October 2026, PRL revision 10
 
 **The Fundamental Memory Ceiling of Noisy Quantum Reservoirs**
 

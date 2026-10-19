@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-19",
+  "scope": "Local conclusion update from the exact reviewed candidate, preserving the stated noise, washout and resource conditions. All other manuscript content, figures, code and data remain unchanged.",
+  "candidate_source": "/private/tmp/memory-conclusion-candidate-k71q_7l1/memory_limits_prl.tex",
+  "source": "paper/prl-source/memory_limits_prl.tex",
+  "source_sha256": "219d1b162925ae94c719b33fe24dca0fdfbc86d3c8dca7ed442adb1c26b5f8e0",
+  "pdf": "paper/memory_limits_prl_2026-10-19-conclusion.pdf",
+  "pdf_sha256": "d550ed1ace079343dce9978e048b31c15314a0d10f9d286d05bbb00da2b78e83",
+  "preceding_local_revision": "paper/versions/2026-10-19-conclusion/preceding-local-manuscript/",
+  "source_diff": "paper/versions/2026-10-19-conclusion/source.diff",
+  "aps_length_estimate": {
+    "total_word_equivalents": 3747.407618945399,
+    "typeset_text_words": 2804,
+    "equation_word_equivalents": 96,
+    "figure_word_equivalents": 847.407618945399,
+    "report": "paper/versions/2026-10-19-conclusion/count.json"
+  },
+  "checks": {
+    "exact_candidate_match": true,
+    "abstract_unchanged": true,
+    "abstract_characters": 596,
+    "pdf_pages": 25,
+    "build_diagnostics_clean": true,
+    "bibliography_unchanged": true,
+    "repository_tests_passed": 22,
+    "changed_pages_visually_reviewed": [
+      5
+    ],
+    "only_conclusion_changed": true,
+    "count_report_source_hash_matches": true
+  },
+  "status": "Local preparation; no upload, submission, commit or push."
+}

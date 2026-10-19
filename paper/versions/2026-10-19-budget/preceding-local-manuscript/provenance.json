@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-19",
+  "scope": "Local introduction update from the exact reviewed candidate. The latest abstract, other manuscript sections, figures, code and data remain unchanged.",
+  "candidate_source": "/private/tmp/memory-intro-candidate-d6htz84h/memory_limits_prl.tex",
+  "source": "paper/prl-source/memory_limits_prl.tex",
+  "source_sha256": "2cf812c8070ce025d132d21c06e9aa3cb56ccc146f82a37fd7fea78f5b74e2a0",
+  "pdf": "paper/memory_limits_prl_2026-10-19-introduction.pdf",
+  "pdf_sha256": "efdbd71c11c2a9ca6c0ddb4246a0e9f458774b083fa6e6c26c93bbce1dd9784d",
+  "preceding_local_revision": "paper/versions/2026-10-19-introduction/preceding-local-manuscript/",
+  "source_diff": "paper/versions/2026-10-19-introduction/source.diff",
+  "aps_length_estimate": {
+    "total_word_equivalents": 3724.407618945399,
+    "typeset_text_words": 2781,
+    "equation_word_equivalents": 96,
+    "figure_word_equivalents": 847.407618945399,
+    "report": "paper/versions/2026-10-19-introduction/count.json"
+  },
+  "checks": {
+    "exact_candidate_match": true,
+    "abstract_unchanged": true,
+    "abstract_characters": 596,
+    "pdf_pages": 25,
+    "build_diagnostics_clean": true,
+    "bibliography_unchanged": true,
+    "repository_tests_passed": 22,
+    "first_two_pages_visually_reviewed": true
+  },
+  "status": "Local preparation; no upload, submission, commit or push."
+}

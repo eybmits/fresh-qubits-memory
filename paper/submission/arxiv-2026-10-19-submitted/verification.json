@@ -1,0 +1,76 @@
+{
+  "edition": "2026-10-19-submitted",
+  "archive_sha256": "216f81e97590796feecb0b1042309bb01d347e610387876d59bdc8ede33fd3f7",
+  "fresh_unzip_compile_success": true,
+  "pages": 25,
+  "fresh_unzip_text_matches_canonical": true,
+  "fresh_pdf_byte_identical_to_canonical": true,
+  "regenerated_bbl_byte_identical": true,
+  "scientific_files_identical_to_canonical": 53,
+  "all_54_source_files_match_submitted_public_archive": true,
+  "restored_source_file_count": 54,
+  "public_readme_scope": "Exact cleaned README from the PRL supplemental Source Code and Data.zip. No cover, justification, submission administration or private visibility label.",
+  "unresolved_citations_labels_overfull_boxes": [],
+  "commands": [
+    [
+      "/Library/TeX/texbin/pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=memory_limits_prl",
+      "\\pdfinfoomitdate=1\\pdftrailerid{}\\pdfsuppressptexinfo=15\\input{memory_limits_prl.tex}"
+    ],
+    [
+      "/Library/TeX/texbin/bibtex",
+      "memory_limits_prl"
+    ],
+    [
+      "/Library/TeX/texbin/pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=memory_limits_prl",
+      "\\pdfinfoomitdate=1\\pdftrailerid{}\\pdfsuppressptexinfo=15\\input{memory_limits_prl.tex}"
+    ],
+    [
+      "/Library/TeX/texbin/bibtex",
+      "memory_limits_prl"
+    ],
+    [
+      "/Library/TeX/texbin/pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=memory_limits_prl",
+      "\\pdfinfoomitdate=1\\pdftrailerid{}\\pdfsuppressptexinfo=15\\input{memory_limits_prl.tex}"
+    ],
+    [
+      "/Library/TeX/texbin/pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=memory_limits_prl",
+      "\\pdfinfoomitdate=1\\pdftrailerid{}\\pdfsuppressptexinfo=15\\input{memory_limits_prl.tex}"
+    ]
+  ],
+  "source_date_epoch": "1792368000",
+  "canonical_combined_pdf": "paper/memory_limits_prl_2026-10-19-concise.pdf",
+  "canonical_combined_pdf_sha256": "f450ca6f27b70e5e10a8464532ab43dd6a593ffaf4ab6171365b777befabd3a9",
+  "fresh_pdf_sha256": "f450ca6f27b70e5e10a8464532ab43dd6a593ffaf4ab6171365b777befabd3a9",
+  "final_log_sha256": "72369f9a260926e1644b20a249ebd925bb8c4455bf967adf3b8949274129cd6c",
+  "current_main_tex_sha256": "77df6be9120b0d5cdde39dd62dfb6d63fab8e07ce4c3de3cc4d7f4c8d0a4fd02",
+  "scope": "Source-package compilation and matching to submitted Letter plus Supplemental Material. No scientific edits, portal action, or theorem certification.",
+  "deterministic_archive_rebuild_matches": true,
+  "render_comparison": "Fresh PDF is byte-identical to canonical PDF, hence all rendering inputs match exactly.",
+  "visual_review": {
+    "all_pages_contact_sheet": true,
+    "detailed_pages": [
+      1,
+      7,
+      25
+    ],
+    "observations": "No missing pages, blank-page artifacts, clipped figure panels or broken section transition observed. Full 25-page Letter plus Supplemental Material retained."
+  },
+  "metadata_title_authors_abstract_match_current_source": true,
+  "final_figure_pdfs_and_bibliography_byte_identical": true
+}

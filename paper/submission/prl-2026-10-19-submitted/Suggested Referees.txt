@@ -1,0 +1,83 @@
+Suggested referees
+
+Michael J. Gullans
+National Institute of Standards and Technology (NIST); Joint Center for Quantum Information and Computer Science (QuICS), University of Maryland, USA
+mgullans@umd.edu
+Memory and error correction in noisy quantum circuits
+
+Daniel Stilck França
+Department of Mathematical Sciences, University of Copenhagen, Denmark
+dsfranca@math.ku.dk
+Entropy-based limitations of noisy quantum devices
+
+Alexander Müller-Hermes
+Department of Mathematics, University of Oslo, Norway
+muellerh@math.uio.no
+Hypercontractivity of quantum channels and resource bounds for fault tolerance
+
+Roberta Zambrini
+Instituto de Física Interdisciplinar y Sistemas Complejos, IFISC (CSIC-UIB), Palma de Mallorca, Spain
+roberta@ifisc.uib-csic.es
+Quantum reservoir computing and dissipation as a resource
+
+Hakan E. Türeci
+Department of Electrical and Computer Engineering, Princeton University, USA
+tureci@princeton.edu
+Quantum reservoir computing and superconducting quantum hardware
+
+Alternate referees
+
+Omar Fawzi
+Inria; Laboratoire de l’Informatique du Parallélisme (LIP), École normale supérieure de Lyon, France
+omar.fawzi@ens-lyon.fr
+
+Juan-Pablo Ortega
+School of Physical and Mathematical Sciences, Nanyang Technological University, Singapore
+juan-pablo.ortega@ntu.edu.sg
+
+Kohei Nakajima
+Department of Mechano-Informatics, Graduate School of Information Science and Technology, The University of Tokyo, Japan
+k-nakajima@isi.imi.i.u-tokyo.ac.jp
+
+Naoki Yamamoto
+Department of Applied Physics and Physico-Informatics, Faculty of Science and Technology, Keio University, Japan
+yamamoto@appi.keio.ac.jp
+
+Excluded referees: none.
+
+Verified institutional sources (checked October 18, 2026):
+
+Michael J. Gullans
+https://quics.umd.edu/people/michael-gullans
+https://www.nist.gov/awards/michael-j-gullans-receives-2026-arthur-s-flemming-award
+
+Daniel Stilck França
+https://www.math.ku.dk/ansatte/vip/?pure=da%2Fpersons%2F624303
+https://www.math.ku.dk/english/news/new-names/daniel-stilck-franca-associate-professor/
+
+Alexander Müller-Hermes
+https://www.mn.uio.no/math/english/people/?page=4&u-page=4
+
+Roberta Zambrini
+https://ifisc.uib-csic.es/en/people/roberta-zambrini/
+https://www.csic.es/sites/default/files/606758.pdf
+
+Hakan E. Türeci
+https://ece.princeton.edu/people/hakan-tureci
+https://ece.princeton.edu/sites/g/files/toruqf1836/files/documents/25-26%20Handbook.pdf
+
+Omar Fawzi
+https://perso.ens-lyon.fr/omar.fawzi/
+
+Juan-Pablo Ortega
+https://www.ntu.edu.sg/spms/about-us/our-people/faculty-affairs
+
+Kohei Nakajima
+https://www.i.u-tokyo.ac.jp/edu/course/m-i/members_e.shtml
+https://www.kohei-nakajima.com/
+
+Naoki Yamamoto
+https://k-ris.keio.ac.jp/html/100011469_en.html
+https://bio2q.keio.ac.jp/ja/members-list/
+
+Institutional affiliations and publicly listed professional contact details. No contact was made; this is not a conflict-of-interest clearance.

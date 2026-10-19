@@ -1,0 +1,21 @@
+--- preceding-local/refs.bib
++++ local-references/refs.bib
+@@ -319,7 +319,7 @@
+   doi       = {10.1515/9781400882618-003}
+ }
+ @misc{SM,
+-  note = {See the Supplemental Material accompanying this manuscript for the complete proofs, the exact analysis of the error-correcting reservoir, the entropy budget beyond depolarizing noise, the details of the simulations, the relation to earlier limits on noisy computation, and the Python code that reproduces all numerical values and data figures, which includes Refs.~\cite{Xiong2025,Dao2026}. Code repository: \url{https://github.com/eybmits/fresh-qubits-memory}.}
++  note = {See Supplemental Material at [URL will be inserted by publisher] for the complete proofs, the exact analysis of the error-correcting reservoir, the entropy budget beyond depolarizing noise, the details of the simulations, the relation to earlier limits on noisy computation, and the Python code that reproduces all numerical values and data figures, which includes Refs.~\cite{Xiong2025,Dao2026}.}
+ }
+ @misc{Freiheit2026,
+   author        = {Freiheit, Jonas and Campaioli, Francesco},
+@@ -349,3 +349,9 @@
+   year      = {2022},
+   doi       = {10.4230/LIPIcs.ITCS.2022.68}
+ }
++
++@misc{CodeRepository,
++  author = {Baumann, Markus},
++  title = {{Fresh Qubits Memory: Research and Reproduction Workspace}},
++  howpublished = {\url{https://github.com/eybmits/fresh-qubits-memory}}
++}

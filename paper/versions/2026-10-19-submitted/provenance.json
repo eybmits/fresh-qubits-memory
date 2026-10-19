@@ -1,0 +1,22 @@
+{
+  "edition": "2026-10-19-submitted",
+  "baseline_commit": "11e6023201f8bff895dfc18a99043cafec8f3957",
+  "source": "paper/prl-source/memory_limits_prl.tex",
+  "source_sha256": "77df6be9120b0d5cdde39dd62dfb6d63fab8e07ce4c3de3cc4d7f4c8d0a4fd02",
+  "complete_pdf": "paper/memory_limits_prl_2026-10-19-concise.pdf",
+  "complete_pdf_sha256": "f450ca6f27b70e5e10a8464532ab43dd6a593ffaf4ab6171365b777befabd3a9",
+  "canonical_source_snapshot_sha256": "6faa7d63ada552e613bf34551392307e2a3411df87e1452d51f3ecf077c3f68f",
+  "pages": {
+    "letter": 6,
+    "supplement": 19,
+    "combined": 25
+  },
+  "local_word_equivalent_estimate": 3743.407618945399,
+  "scope": "Archive authorized editorial changes since revision 10; no further manuscript changes. Freeze handoff and prepare identical combined arXiv companion.",
+  "code_data_figures": "Unchanged since baseline; 53 scientific source members match final public code/data archive.",
+  "readme_difference": "Canonical README retains historical administrative text; public code/data and arXiv packages use cleaned reproduction README.",
+  "approved_cover_preserved": true,
+  "approved_local_justification_preserved": true,
+  "portal_submission_evidence": "paper/submission-records/prl-2026-10-19/status.json",
+  "verification_limits": "Technical consistency checks are not a mathematical or novelty review, and do not verify APS-hosted bytes."
+}

@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-19",
+  "scope": "Local citation-only update from the exact TEX and BIB candidates. Main scientific prose is unchanged except the data-availability citation. No prose cuts were made to meet the length limit.",
+  "candidate_source": "/private/tmp/memory-references-candidate-lnjx77v5",
+  "source": "paper/prl-source/memory_limits_prl.tex",
+  "source_sha256": "571dbdcb6b33806bf1375fb90aeb544c57337215da934453154fb5a762e98a76",
+  "bib_sha256": "b625ecd2bc1135a720c563a6a0e68a1df31bac7502d4fb9f261cc131d0d46708",
+  "bbl_sha256": "062eb585a1ebdf834a32742bd0f2e1a16021607a0974555f1add4f752bc63815",
+  "pdf": "paper/memory_limits_prl_2026-10-19-references.pdf",
+  "pdf_sha256": "c4386efed50e705f220ed8d21639e7f6bdda189e465f95a19236b06e04413fd0",
+  "preceding_local_revision": "paper/versions/2026-10-19-references/preceding-local-manuscript/",
+  "checks": {
+    "exact_candidate_match": true,
+    "abstract_unchanged": true,
+    "abstract_characters": 596,
+    "pdf_pages": 25,
+    "build_diagnostics_clean": true,
+    "repository_tests_passed": 22,
+    "bibliography_entries": 41,
+    "key_reference_numbers": {
+      "SM": 28,
+      "CodeRepository": 39,
+      "Xiong2025": 40,
+      "Dao2026": 41
+    },
+    "pages_visually_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      23
+    ],
+    "reference_scope_audit_passed": true,
+    "count_report_source_hash_matches": true
+  },
+  "status": "Local citation-only preparation, above the PRL length limit by 29.4076 word equivalents; no prose cuts made. No upload, submission, commit or push.",
+  "aps_length_estimate": {
+    "typeset_text_words": 2836,
+    "equation_word_equivalents": 96,
+    "figure_word_equivalents": 847.4076189453992,
+    "total_word_equivalents": 3779.407618945399,
+    "limit": 3750,
+    "excess_word_equivalents": 29.40761894539901,
+    "within_limit": false,
+    "no_prose_cuts_made": true,
+    "report": "paper/versions/2026-10-19-references/count.json"
+  }
+}

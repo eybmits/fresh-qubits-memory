@@ -1,0 +1,105 @@
+Skip to main content
+Search
+Submit
+Donate
+My Account
+Logout
+Start   >>   Add Files   >>   Review Files   >>   Process   >>   Metadata   >>   Preview
+Check your submission
+Metadata saved.
+Review the abstract data displayed on this page. Edit metadata as necessary.
+Check your primary category selection under "Categories" and resolve any conflicts before proceeding. Review arXiv categories on the category taxonomy page.
+View your article by clicking the button. (required)
+Add secondary categories and crosslists. (optional)
+When you are satisfied that your submission is ready, (and after viewing the article), click the "Submit Article" button below. (Depending on your browser settings, you may need to refresh the page to see the "Submit Article" button)
+You may revise your submission until freeze time. Unsubmitted articles are retained for two weeks.
+MathJax will render inline ($-enclosed)
+T
+E
+X
+ in the title, abstract and comments fields (e.g. $P(E) = {n \choose k} p^k (1-p)^{ n-k}$ becomes
+P(E)=(
+n
+k
+)
+p
+k
+(1−p
+)
+n−k
+). Errors or unknown macros are displayed in red. Disable MathJax.
+
+
+Preview Abstract
+The Fundamental Memory Ceiling of Noisy Quantum Reservoirs
+Markus Baumann, Jonas Stein, Claudia Linnhoff-Popien
+Fresh qubits, not size, set how long a noisy quantum system can remember. With
+k
+ input qubits reinitialized per time step, the longest memory any reservoir can attain under depolarizing noise is
+exp[Θ(k)]
+ time steps, whatever its size, dynamics, and input encoding. A universal upper bound and an explicit reservoir that attains the exponential scaling establish this optimal resource law. The bound depends on the dynamics only through the entropy that fresh qubits remove per time step, so it holds for any Markovian noisy dynamics without feedback, including measurement-free error correction.
+Comments:	25 pages, 11 figures, including Supplemental Material. Reproducibility code and data included
+License:	http://arxiv.org/licenses/nonexclusive-distrib/1.0/
+
+
+
+Categories
+Categories
+   Primary:	  Quantum Physics (quant-ph)
+   Cross lists (optional):
+
+----- Choose archive -----
+Astrophysics
+Condensed Matter
+Computer Science
+General Relativity and Quantum Cosmology
+High Energy Physics - Experiment
+High Energy Physics - Lattice
+High Energy Physics - Phenomenology
+High Energy Physics - Theory
+Mathematics
+Mathematical Physics
+Nonlinear Sciences
+Nuclear Experiment
+Nuclear Theory
+Physics
+Quantum Physics
+
+---- Choose Subject Class ----
+Astrophysics of Galaxies
+Cosmology and Nongalactic Astrophysics
+Earth and Planetary Astrophysics
+High Energy Astrophysical Phenomena
+Instrumentation and Methods for Astrophysics
+Solar and Stellar Astrophysics
+
+
+
+Preview Document
+Success. You have already previewed your article PDF. You can preview it again with this link.
+View PDF
+Unauthorized. Your session may be expired. Please try logging out and back in to view your HTML on this page.
+
+Processing your submission may take several minutes.
+
+
+
+
+We gratefully acknowledge support from our major funders, member institutions, and all contributors.
+About
+·
+Help
+·
+Contact
+·
+Subscribe
+·
+Copyright
+·
+Privacy
+·
+Accessibility
+·
+Operational Status
+(opens in new tab)
+Major funding support from

@@ -1,0 +1,219 @@
+{
+  "snapshot_date": "2026-10-19",
+  "scope": "Read-only local artifact verification; no portal downloads, uploads or mutations",
+  "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 12:55:35) [Clang 14.0.6 ]",
+  "HEAD": "11e6023201f8bff895dfc18a99043cafec8f3957",
+  "tests": {
+    "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+    "passed": 22,
+    "failed": 0,
+    "initial_plain_command": "Failed only because src-layout package was not installed in shell environment; PYTHONPATH fix succeeded without editing code"
+  },
+  "hashes": {
+    "paper/prl-source/memory_limits_prl.tex": "77df6be9120b0d5cdde39dd62dfb6d63fab8e07ce4c3de3cc4d7f4c8d0a4fd02",
+    "paper/prl-source/memory_limits_prl.bbl": "062eb585a1ebdf834a32742bd0f2e1a16021607a0974555f1add4f752bc63815",
+    "paper/prl-source/refs.bib": "b625ecd2bc1135a720c563a6a0e68a1df31bac7502d4fb9f261cc131d0d46708",
+    "paper/memory_limits_prl_2026-10-19-concise.pdf": "f450ca6f27b70e5e10a8464532ab43dd6a593ffaf4ab6171365b777befabd3a9",
+    "Complete Manuscript with Supplemental Material.pdf": "f450ca6f27b70e5e10a8464532ab43dd6a593ffaf4ab6171365b777befabd3a9",
+    "The Fundamental Memory Ceiling of Noisy Quantum Reservoirs.pdf": "ed1731be9fc7f5d2e41e655ce74e21c4e46d75a5ae2e81db624402dc64277806",
+    "Supplemental Material.pdf": "f7a99190fa612c07797bc0c78f0fb1ecbe44adfafbf4566a97668eaa3080fe1e",
+    "Source Code and Data.zip": "bda327d30d026e01983e2d3c0203a871319a745b457ab31cf66f55db8c2f2541",
+    "For Production/Manuscript Source Files.zip": "9d38f41cfdc06d3bf4fb33b6f9f43f80f44adf25968d806ba62708cdce68a004"
+  },
+  "combined_pdf_identical_bytes": true,
+  "letter_first6_text_exact": true,
+  "supplement_last19_text_exact": true,
+  "page_counts": {
+    "memory_limits_prl_2026-10-19-concise.pdf": 25,
+    "The Fundamental Memory Ceiling of Noisy Quantum Reservoirs.pdf": 6,
+    "Supplemental Material.pdf": 19
+  },
+  "full_archive": {
+    "count": 54,
+    "crc_ok": true,
+    "identical_canonical_members": [
+      "checks/aps_wordcount.py",
+      "checks/verify_constants.py",
+      "checks/verify_simple_proof.py",
+      "checks/wordcount.py",
+      "fig1.pdf",
+      "fig2.pdf",
+      "fig3.pdf",
+      "fig4.pdf",
+      "figS1.pdf",
+      "figS2.pdf",
+      "figS3.pdf",
+      "figS4.pdf",
+      "figS5.pdf",
+      "figS6.pdf",
+      "figS7.pdf",
+      "figures/fig1.tex",
+      "figures/fig2.tex",
+      "figures/fig2a.pdf",
+      "figures/fig2a.py",
+      "figures/fig3.tex",
+      "figures/fig3a.pdf",
+      "figures/fig3a.py",
+      "figures/fig4.tex",
+      "figures/fig4bc.pdf",
+      "figures/fig4bc.py",
+      "figures/figS.py",
+      "figures/figstyle.py",
+      "figures/tikzstyle.tex",
+      "memory_limits_prl.bbl",
+      "memory_limits_prl.tex",
+      "refs.bib",
+      "sim/campaign.py",
+      "sim/exact_numbers.json",
+      "sim/exact_numbers.py",
+      "sim/merge.py",
+      "sim/qrc_sim.py",
+      "sim/quoted_numbers.py",
+      "sim/rep_curve.json",
+      "sim/rep_curve.py",
+      "sim/results_cold.json",
+      "sim/results_cold_haar.json",
+      "sim/results_cold_ising.json",
+      "sim/results_main.json",
+      "sim/results_main_haar.json",
+      "sim/results_main_ising.json",
+      "sim/results_noise.json",
+      "sim/results_noise_haar.json",
+      "sim/results_noise_ising.json",
+      "sim/results_tau.json",
+      "sim/run_all.sh",
+      "sim/test_sim.py",
+      "sim/validate_pairs.json",
+      "sim/validate_pairs.py"
+    ],
+    "different_members": [
+      "README.txt"
+    ],
+    "interpretation": "README.txt only: publication-neutral administrative cleanup; all 53 manuscript, figures, bibliography, scientific scripts and data match byte-for-byte."
+  },
+  "production_archive": {
+    "count": 7,
+    "crc_ok": true,
+    "letter_tex_is_exact_source_prefix_plus_end_document": true,
+    "other_members_exact": true
+  },
+  "authors": [
+    {
+      "name": "Markus Baumann",
+      "orcid": "0009-0007-3575-1006",
+      "source_has_orcid": true
+    },
+    {
+      "name": "Jonas Stein",
+      "orcid": "0000-0001-5727-9151",
+      "source_has_orcid": true
+    },
+    {
+      "name": "Claudia Linnhoff-Popien",
+      "orcid": "0000-0001-6284-9286",
+      "source_has_orcid": true
+    }
+  ],
+  "names_in_both_pdf_parts": {
+    "Markus Baumann": true,
+    "Jonas Stein": true,
+    "Claudia Linnhoff-Popien": true
+  },
+  "original_frozen_pdf": {
+    "expected_sha256": "9541fc433286b830a8d679e6ab2bb5a08c53dff915b8dc48411f16b626f0c08b",
+    "actual_sha256": "9541fc433286b830a8d679e6ab2bb5a08c53dff915b8dc48411f16b626f0c08b"
+  },
+  "git_diff_check": true,
+  "diff_scope": "3 tracked canonical text files changed since HEAD: combined LaTeX, bibliography source and .bbl; user-approved 19 Oct abstract, introduction, budget, simulations, conclusion, sectional SM references, Fig.4 caption, and 19-word final shortening. No tracked simulator, dataset or figure changes at snapshot.",
+  "untracked": {
+    "count": 75,
+    "total_bytes": 19274084,
+    "max_file_bytes": 1358736,
+    "contents": "Dated manuscript PDFs and source/provenance snapshots; preserve as research evidence."
+  },
+  "security_scan": {
+    "method": "Filename screen and high-signal private-key, GitHub-token, AWS-key, quoted API-secret regex scan over changed/untracked text files. Does not prove absence of secrets or inspect binary archive contents beyond member names.",
+    "matches": [],
+    "repository_visibility": "Not checked; no authorization inferred to make public."
+  },
+  "limitations": [
+    "Local handoff matches local canonical artifacts; submitted APS file bytes were not downloaded in this subtask.",
+    "Technical checks do not establish mathematical validity, novelty, acceptance, or full empirical campaign reproduction.",
+    "Abstract broad-Markovian sentence remains unchanged by explicit user direction.",
+    "This report records the pre-sync snapshot; parent agent may update documentation and add current handoff artifacts afterward."
+  ],
+  "letter_first6_text_method": "pdftotext -raw output byte-for-byte identical; default pdftotext whitespace-token sequence also identical. -layout output differs because standalone Letter balances last reference-page columns and math glyph placement.",
+  "combined_first6_layout_exact": false,
+  "desktop_submission_copy": {
+    "exists": true,
+    "files": {
+      "Complete Manuscript with Supplemental Material.pdf": {
+        "size_bytes": 938642,
+        "matches_output": true,
+        "sha256": "f450ca6f27b70e5e10a8464532ab43dd6a593ffaf4ab6171365b777befabd3a9"
+      },
+      "Supplemental Material.pdf": {
+        "size_bytes": 758875,
+        "matches_output": true,
+        "sha256": "f7a99190fa612c07797bc0c78f0fb1ecbe44adfafbf4566a97668eaa3080fe1e"
+      },
+      "Upload Guide.txt": {
+        "size_bytes": 2187,
+        "matches_output": false,
+        "sha256": "b26a1455be1f75e48c5b625ec51972e8a002a11ce91d74de115c1d9d1cc1fef8"
+      },
+      "Source Code and Data.zip": {
+        "size_bytes": 1352202,
+        "matches_output": true,
+        "sha256": "bda327d30d026e01983e2d3c0203a871319a745b457ab31cf66f55db8c2f2541"
+      },
+      "Suggested Referees.txt": {
+        "size_bytes": 2876,
+        "matches_output": true,
+        "sha256": "7f7f90a65c51e9fd2bc32c292865b135bc5cb787e915e87df3fe3953ee988b9d"
+      },
+      "Abstract.txt": {
+        "size_bytes": 598,
+        "matches_output": true,
+        "sha256": "a58b8eb888b69080d33e4f7a52e33b30bf44420b9e4223f714fa41be52cde04e"
+      },
+      "Cover Letter.pdf": {
+        "size_bytes": 137391,
+        "matches_output": true,
+        "sha256": "944dd2a7b3e05817324021048220a32ef7cbe3bb4c22a340430874d654a06236"
+      },
+      "PRL Significance Statement.txt": {
+        "size_bytes": 721,
+        "matches_output": true,
+        "sha256": "268db2e33705bdb66700766cce0a30e62fdbf92eff6293754cd8765a708e94fb"
+      },
+      "Submission Details.txt": {
+        "size_bytes": 5253,
+        "matches_output": true,
+        "sha256": "bfbaf6bd39b6c7cb21626687a147b22d2056baabee2bc9401f59452cd607a756"
+      },
+      "The Fundamental Memory Ceiling of Noisy Quantum Reservoirs.pdf": {
+        "size_bytes": 660039,
+        "matches_output": true,
+        "sha256": "ed1731be9fc7f5d2e41e655ce74e21c4e46d75a5ae2e81db624402dc64277806"
+      },
+      "Cover Letter.txt": {
+        "size_bytes": 2745,
+        "matches_output": true,
+        "sha256": "d09ed97744413fd60a74f856dadb12cbb0d3d8e9d1edf5af3ed529bad7aa3280"
+      },
+      "Material Description.txt": {
+        "size_bytes": 1407,
+        "matches_output": true,
+        "sha256": "9fb5346e57b5674609b8430e62e31a4ec92dab688515b491c484c7e5a4767aad"
+      },
+      "For Production/Manuscript Source Files.zip": {
+        "size_bytes": 410132,
+        "matches_output": true,
+        "sha256": "9d38f41cfdc06d3bf4fb33b6f9f43f80f44adf25968d806ba62708cdce68a004"
+      }
+    },
+    "summary": "All manuscript, Letter, SM, cover, source archives, approved statements, abstract, author/referee files byte-identical. Description file only renamed on Desktop, same bytes. Upload Guide differs administratively. This matches screenshot file sizes but does not download APS uploads."
+  },
+  "repository_visibility": "Root separately verified PRIVATE with gh; this agent made no network or repository-visibility changes."
+}

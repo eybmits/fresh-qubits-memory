@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-19",
+  "scope": "Local user-requested replacement of the middle two abstract sentences; first and last sentences and all other manuscript content unchanged.",
+  "base_commit": "11e6023201f8bff895dfc18a99043cafec8f3957",
+  "source": "paper/prl-source/memory_limits_prl.tex",
+  "source_sha256": "72f3d4f0a563780455ba54d5e9c139b72397a8a2cc18951e0b8b68845fa18b46",
+  "pdf": "paper/memory_limits_prl_2026-10-19-abstract.pdf",
+  "pdf_sha256": "fe12e168228919cc047085db17e98ed81126c8da84ddcfe4d813da7a59ecad49",
+  "previous_abstract_latex": "Fresh qubits, not size, set how long a noisy quantum system can remember. With $k$ fresh qubits per time step, the longest memory under depolarizing noise is $\\exp[\\Theta(k)]$ time steps, whatever the size and unitary: keeping an input for $T$ steps needs $\\Theta(\\log T)$ fresh qubits per step, and that many suffice. A universal upper bound and an explicit reservoir that attains the scaling prove this for quantum reservoirs. The bound uses only the entropy budget of a time step and holds for any Markovian noisy dynamics with fresh qubits and no classical feedback, including measurement-free error correction.",
+  "updated_abstract_latex": "Fresh qubits, not size, set how long a noisy quantum system can remember. With $k$ input qubits reinitialized per time step, the longest memory any reservoir can attain under depolarizing noise is $\\exp[\\Theta(k)]$ time steps, whatever its size, dynamics, and input encoding. A universal upper bound and an explicit reservoir that attains the exponential scaling establish this optimal resource law. The bound uses only the entropy budget of a time step and holds for any Markovian noisy dynamics with fresh qubits and no classical feedback, including measurement-free error correction.",
+  "checks": {
+    "outside_abstract_identical": true,
+    "pdf_pages": 25,
+    "first_page_visually_reviewed": true,
+    "repository_tests_passed": 22
+  },
+  "status": "Local preparation; no upload, submission, commit or push for this abstract correction."
+}

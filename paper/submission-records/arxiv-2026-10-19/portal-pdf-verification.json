@@ -1,0 +1,366 @@
+{
+  "result": "passed",
+  "portal_pdf": "paper/submission-records/arxiv-2026-10-19/arxiv-compiled.pdf",
+  "portal_pdf_sha256": "4d799acac22c059cbb1e6c0771c12e189f98634fb0f09379f8d60c6b71cfd35e",
+  "portal_pdf_bytes": 944356,
+  "canonical_pdf": "paper/memory_limits_prl_2026-10-19-concise.pdf",
+  "canonical_pdf_sha256": "f450ca6f27b70e5e10a8464532ab43dd6a593ffaf4ab6171365b777befabd3a9",
+  "page_count": 25,
+  "letter_pages": 6,
+  "supplemental_pages": 19,
+  "pdf_byte_identical": false,
+  "all_25_pages_scientific_text_equal": true,
+  "pages_2_through_25_renders_pixel_identical_at_90dpi": true,
+  "page_1_render_difference": "Only the arXiv submission watermark in the left margin, bbox [30,255,53,735] at 90dpi; the manuscript content region is pixel-identical.",
+  "portal_stamp": "arXiv:submit/8251813 [quant-ph] 19 Oct 2026",
+  "stamp_is_public_arxiv_identifier": false,
+  "visual_review_pages": [
+    1,
+    6,
+    7,
+    25
+  ],
+  "visual_review_observations": "Side-by-side images inspected: original title, three authors, affiliation, unchanged abstract and Figure 1 preserved; Letter references end on page6; Supplemental Material begins on page7 as S1; final page S19 present. No added blank pages, missing figures or clipping observed.",
+  "tools": {
+    "text": "pdftotext -layout",
+    "render": "pdftoppm -r 90 -png",
+    "comparison": "Pillow RGB pixel comparison"
+  },
+  "observed_tool_warnings": [
+    "Syntax Warning: Mismatch between font type and embedded font file"
+  ],
+  "warning_assessment": "Poppler emitted this warning on the portal PDF. All scientific text matches and all content pixels match at the tested render resolution; only the expected first-page arXiv stamp differs. No manuscript modification was made.",
+  "pages": [
+    {
+      "page": 1,
+      "text_raw_equal": false,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": false,
+      "difference_bbox_pixels": [
+        30,
+        255,
+        53,
+        735
+      ],
+      "canonical_rgb_sha256": "20f4f171711f5596ec9a2ed49e0f3dd04d2c4f49348b740a2b592694bf55df86",
+      "portal_rgb_sha256": "14666d4bbf2c83f6afac65267c399b7edcd3141bc3788b6b8053bdd5c389b43e"
+    },
+    {
+      "page": 2,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "4e3454e4d0f2ce1800e7d5d0e9306927aff2b80ba7d5381e42099f7ce6879057",
+      "portal_rgb_sha256": "4e3454e4d0f2ce1800e7d5d0e9306927aff2b80ba7d5381e42099f7ce6879057"
+    },
+    {
+      "page": 3,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "58b627a41165ee7ea0070b05091bfc3dfafd77a45e39756dd974d6d833643561",
+      "portal_rgb_sha256": "58b627a41165ee7ea0070b05091bfc3dfafd77a45e39756dd974d6d833643561"
+    },
+    {
+      "page": 4,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "dae537b6dd3d5f490bcd0d088135e069ed3b1d57ce3e919195c985334569e74c",
+      "portal_rgb_sha256": "dae537b6dd3d5f490bcd0d088135e069ed3b1d57ce3e919195c985334569e74c"
+    },
+    {
+      "page": 5,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "1624be80583cbc1ae20d0e9379588a42733bc1cc6e7f846923972f6006431c04",
+      "portal_rgb_sha256": "1624be80583cbc1ae20d0e9379588a42733bc1cc6e7f846923972f6006431c04"
+    },
+    {
+      "page": 6,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "0e9c26f9959248f3f3acec30fb8a8fe98da05899ec23061f153c71011aead969",
+      "portal_rgb_sha256": "0e9c26f9959248f3f3acec30fb8a8fe98da05899ec23061f153c71011aead969"
+    },
+    {
+      "page": 7,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "5e85af87e4695b41277fbfa3b2ba000461f8cb3b1b571e5486765b73416363c4",
+      "portal_rgb_sha256": "5e85af87e4695b41277fbfa3b2ba000461f8cb3b1b571e5486765b73416363c4"
+    },
+    {
+      "page": 8,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "60a0a5ace9a3ecf89f33507696a8c27cf97b6fa8e4efd86ed36dcec033c0ee23",
+      "portal_rgb_sha256": "60a0a5ace9a3ecf89f33507696a8c27cf97b6fa8e4efd86ed36dcec033c0ee23"
+    },
+    {
+      "page": 9,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "94e1f10363f45359419a4ef3bbc82dc2bf9965eb0d15ecb6c8e00506037e12f2",
+      "portal_rgb_sha256": "94e1f10363f45359419a4ef3bbc82dc2bf9965eb0d15ecb6c8e00506037e12f2"
+    },
+    {
+      "page": 10,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "fc611010026bd0b02eebffc59b5cada5e551ad2eab8cd036dc072035397813d3",
+      "portal_rgb_sha256": "fc611010026bd0b02eebffc59b5cada5e551ad2eab8cd036dc072035397813d3"
+    },
+    {
+      "page": 11,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "6dc17656cefff5bc01a5464090328e7de40e16e2d079242f6a59433ae6d9426e",
+      "portal_rgb_sha256": "6dc17656cefff5bc01a5464090328e7de40e16e2d079242f6a59433ae6d9426e"
+    },
+    {
+      "page": 12,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "5ae98fe01ea6d35d60232c387eec963ab11e7e4a6091bf345dd2ee3337f31fc2",
+      "portal_rgb_sha256": "5ae98fe01ea6d35d60232c387eec963ab11e7e4a6091bf345dd2ee3337f31fc2"
+    },
+    {
+      "page": 13,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "32b0111bab7c7372b976f8436699e932c9a0b71f887114c6eb5f3fe2da262599",
+      "portal_rgb_sha256": "32b0111bab7c7372b976f8436699e932c9a0b71f887114c6eb5f3fe2da262599"
+    },
+    {
+      "page": 14,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "0a180d380503b5fe81e41e7396270e8f6e393c8144b99ca900f8067c4fa7fe49",
+      "portal_rgb_sha256": "0a180d380503b5fe81e41e7396270e8f6e393c8144b99ca900f8067c4fa7fe49"
+    },
+    {
+      "page": 15,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "975fac24989e4a77f233d3bab71324df4fe3f0caafd891686878a36b7aa57883",
+      "portal_rgb_sha256": "975fac24989e4a77f233d3bab71324df4fe3f0caafd891686878a36b7aa57883"
+    },
+    {
+      "page": 16,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "4631dd69181ceb3da7e3437f9241161d917a70ee4b2cf6e07a693d4af29cf33b",
+      "portal_rgb_sha256": "4631dd69181ceb3da7e3437f9241161d917a70ee4b2cf6e07a693d4af29cf33b"
+    },
+    {
+      "page": 17,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "332509b882da231f9147ec24b37987c36ac7da530ac79f520ca606febe2363a5",
+      "portal_rgb_sha256": "332509b882da231f9147ec24b37987c36ac7da530ac79f520ca606febe2363a5"
+    },
+    {
+      "page": 18,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "427c25ea30a622cea552bf98e239c7e815a8d4833865e2fd7382cfff631da617",
+      "portal_rgb_sha256": "427c25ea30a622cea552bf98e239c7e815a8d4833865e2fd7382cfff631da617"
+    },
+    {
+      "page": 19,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "e89e577c7050206b1074e691a4bcbc9db1be15668c4df89c94c79db9df75211c",
+      "portal_rgb_sha256": "e89e577c7050206b1074e691a4bcbc9db1be15668c4df89c94c79db9df75211c"
+    },
+    {
+      "page": 20,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "1416ecbeef78fd559477edea4d9a9ab3b455586882208d804303fddea10f6742",
+      "portal_rgb_sha256": "1416ecbeef78fd559477edea4d9a9ab3b455586882208d804303fddea10f6742"
+    },
+    {
+      "page": 21,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "e9315f89ae2937eea67746da6dff0d37e2b66501b1348a423ed4f887d49d38e6",
+      "portal_rgb_sha256": "e9315f89ae2937eea67746da6dff0d37e2b66501b1348a423ed4f887d49d38e6"
+    },
+    {
+      "page": 22,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "2c8f2ea4862201ea4d89088c84d671fa7e2144416da552da4cb0bb01d885b630",
+      "portal_rgb_sha256": "2c8f2ea4862201ea4d89088c84d671fa7e2144416da552da4cb0bb01d885b630"
+    },
+    {
+      "page": 23,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "b86f7bffc0f03e7be4d8e658f4260bfd10def5c0c454fdaf5947fba0c42b4043",
+      "portal_rgb_sha256": "b86f7bffc0f03e7be4d8e658f4260bfd10def5c0c454fdaf5947fba0c42b4043"
+    },
+    {
+      "page": 24,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "8a9e56b7c09ca438e47a3adc424ede0b612cfabe958a4b99796395c77d2c0345",
+      "portal_rgb_sha256": "8a9e56b7c09ca438e47a3adc424ede0b612cfabe958a4b99796395c77d2c0345"
+    },
+    {
+      "page": 25,
+      "text_raw_equal": true,
+      "text_equal_after_removing_arxiv_stamp_and_normalizing_whitespace": true,
+      "render_size_pixels": [
+        765,
+        990
+      ],
+      "render_pixel_equal": true,
+      "difference_bbox_pixels": null,
+      "canonical_rgb_sha256": "3a129bfdeb151a616a8e54e5cc9fdc01ac29876fd8c68e14f976959b93f133f9",
+      "portal_rgb_sha256": "3a129bfdeb151a616a8e54e5cc9fdc01ac29876fd8c68e14f976959b93f133f9"
+    }
+  ],
+  "scope": "Verification of the actual downloaded arXiv-generated preview against the unchanged full manuscript underlying the submitted PRL Letter and supplement; does not establish public announcement or scientific correctness."
+}

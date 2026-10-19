@@ -1,0 +1,13 @@
+--- preceding-local-manuscript
++++ local-fig4-caption
+@@ -154,8 +154,8 @@
+ \includegraphics{fig4.pdf}
+ \caption{\textbf{Attaining the limit.}
+ (a)~Error-correcting reservoir ($r=3$, $k=5$): $U$ writes the new bit, or the majority of the stored copies, into fresh ancillas and swaps them into the memory; the old copies leave with the input register.
+-(b)~The error-correcting reservoir (exact single-qubit readout, $n=2k-2$) uses its fresh qubits for repair, and its memory depth grows exponentially with $k$, above the lower bound of Theorem~\ref{thm:main}; without repair (gray), the same $r=k-2$ copies gain almost nothing, even with the best readout. Plotted depths are continuous threshold crossings; integer depths are rounded up.
+-(c)~Within the sampled ensembles, standard reservoirs gain nothing from size, and a second input qubit shortens their memory ($k=1$ filled, $k=2$ open; mean $\pm$ s.d., six realizations). Unitaries are sampled separately for each $k$. (b),~(c)~$q=0.9$, $\varepsilon=0.01$.}
++(b)~With its fresh qubits used for repair, the memory depth of the error-correcting reservoir (exact single-qubit readout, $n=2k-2$) grows exponentially with $k$, above the lower bound of Theorem~\ref{thm:main}; without repair (gray), the same $r=k-2$ copies gain almost nothing. Depths are continuous threshold crossings, rounded up to integers.
++(c)~Within the sampled ensembles, standard reservoirs gain nothing from size at $k=1$ (filled) or $k=2$ (open); mean $\pm$ s.d., six realizations per $k$. (b),~(c)~$q=0.9$, $\varepsilon=0.01$.}
+ \label{fig:attain}
+ \end{figure*}
+ 

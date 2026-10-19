@@ -1,0 +1,76 @@
+{
+  "pdf": "/Users/superposition/Documents/Codex/2026-10-15/https-github-com-eybmits-fresh-qubits/work/fresh-qubits-memory/paper/memory_limits_prl_2026-10-19-references.pdf",
+  "pdf_sha256": "c4386efed50e705f220ed8d21639e7f6bdda189e465f95a19236b06e04413fd0",
+  "page_previews": {
+    "1": "/private/tmp/memory-local-references-build-qw3__3_b/references-page-01.png",
+    "2": "/private/tmp/memory-local-references-build-qw3__3_b/references-page-02.png",
+    "3": "/private/tmp/memory-local-references-build-qw3__3_b/references-page-03.png",
+    "4": "/private/tmp/memory-local-references-build-qw3__3_b/references-page-04.png",
+    "5": "/private/tmp/memory-local-references-build-qw3__3_b/references-page-05.png",
+    "6": "/private/tmp/memory-local-references-build-qw3__3_b/references-page-06.png",
+    "23": "/private/tmp/memory-local-references-build-qw3__3_b/references-page-23.png"
+  },
+  "changed_supplemental_pages": [
+    23
+  ],
+  "log": "/private/tmp/memory-local-references-build-qw3__3_b/memory_limits_prl.log",
+  "pages": 25,
+  "letter_pages": 6,
+  "supplemental_pages": 19,
+  "abstract_characters": 596,
+  "abstract_words": 91,
+  "unresolved_or_duplicate_build_warnings": [],
+  "bibliography_entries": 41,
+  "key_reference_numbers": {
+    "SM": 28,
+    "CodeRepository": 39,
+    "Xiong2025": 40,
+    "Dao2026": 41
+  },
+  "source_sha256": "571dbdcb6b33806bf1375fb90aeb544c57337215da934453154fb5a762e98a76",
+  "bib_sha256": "b625ecd2bc1135a720c563a6a0e68a1df31bac7502d4fb9f261cc131d0d46708",
+  "bbl_sha256": "062eb585a1ebdf834a32742bd0f2e1a16021607a0974555f1add4f752bc63815",
+  "candidate_exact_match": true,
+  "commands": [
+    [
+      "pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=memory_limits_prl",
+      "\\pdfinfoomitdate=1\\pdftrailerid{}\\pdfsuppressptexinfo=15\\input{memory_limits_prl.tex}"
+    ],
+    [
+      "bibtex",
+      "memory_limits_prl"
+    ],
+    [
+      "pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=memory_limits_prl",
+      "\\pdfinfoomitdate=1\\pdftrailerid{}\\pdfsuppressptexinfo=15\\input{memory_limits_prl.tex}"
+    ],
+    [
+      "bibtex",
+      "memory_limits_prl"
+    ],
+    [
+      "pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=memory_limits_prl",
+      "\\pdfinfoomitdate=1\\pdftrailerid{}\\pdfsuppressptexinfo=15\\input{memory_limits_prl.tex}"
+    ],
+    [
+      "pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=memory_limits_prl",
+      "\\pdfinfoomitdate=1\\pdftrailerid{}\\pdfsuppressptexinfo=15\\input{memory_limits_prl.tex}"
+    ]
+  ]
+}

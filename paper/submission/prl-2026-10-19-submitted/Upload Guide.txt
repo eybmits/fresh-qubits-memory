@@ -1,0 +1,37 @@
+PHYSICAL REVIEW LETTERS — DATEIEN FÜR DIE EINREICHUNG
+The Fundamental Memory Ceiling of Noisy Quantum Reservoirs
+
+1. HAUPTMANUSKRIPT
+The Fundamental Memory Ceiling of Noisy Quantum Reservoirs.pdf
+Als Manuskript-PDF auswählen: 6 Seiten einschließlich Literatur und 4 Abbildungen.
+Im Feld zur Zahl der Abbildungen: 4.
+
+2. SUPPLEMENTAL MATERIAL — DIESE ZWEI DATEIEN
+Über „Upload supplemental files“ hinzufügen:
+• Supplemental Material.pdf — vollständiges Zusatzmaterial, 19 Seiten (S1–S19).
+• Source Code and Data.zip — vollständige Quellen, Code und Daten zur Reproduktion.
+Supplemental Material Description.txt ist eine Kopiervorlage für die Beschreibung
+und Systemanforderungen im Einreichungsformular, keine zusätzliche Upload-Datei.
+README.TXT nicht separat hochladen: Das Portal reserviert diesen Dateinamen.
+Der interne README im Code-Archiv enthält Reproduktionshinweise; redaktionelle
+Begründung und Einreichungsverwaltung wurden daraus entfernt.
+
+3. COVER LETTER UND FORMULARANGABEN
+• Cover Letter.pdf oder Cover Letter.txt — unverändertes, genehmigtes Anschreiben.
+• PRL Significance Statement.txt — separate Begründung mit 100 Wörtern.
+• Abstract.txt — vollständiger Abstract.
+• Suggested Referees.txt — Gutachtervorschläge und Kontaktdaten.
+• Submission Details.txt — geprüfte Angaben; offene Portalfragen sind markiert.
+Diese administrativen Dateien gehören in die jeweiligen Formularfelder bzw.
+Anschreiben-Funktion, nicht in das öffentlich zugängliche Supplemental Material.
+
+WEITERE DATEIEN
+Complete Manuscript with Supplemental Material.pdf ist eine Lesefassung mit 25 Seiten.
+For Production/Manuscript Source Files.zip enthält die Quellen des Letters für eine
+spätere Produktion oder ausdrückliche Quellenanforderung; nicht als Zusatzmaterial hochladen.
+Physical Review Letters Submission.zip dient ausschließlich dem Transport und Entpacken.
+Es enthält auch Anschreiben und Gutachtervorschläge und ist kein öffentliches Zusatzmaterial.
+
+EINREICHUNG
+PRL-Draft: es2026oct16_693.
+Dateiauswahl, Upload und abschließende Einreichung bleiben bei dir.

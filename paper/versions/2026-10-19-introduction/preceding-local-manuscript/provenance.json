@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-19",
+  "scope": "Local user-requested replacement of the abstract final sentence; preceding abstract sentences and all other manuscript content unchanged.",
+  "source": "paper/prl-source/memory_limits_prl.tex",
+  "source_sha256": "df3597c80f00fc6c40c13c9f34d91972b496fd68f3ca7995ecfcc57bc2d307ae",
+  "pdf": "paper/memory_limits_prl_2026-10-19-abstract.pdf",
+  "pdf_sha256": "5b93b69b0808f2b2e0005d344b37628868458f080dd65d1ecaee6990463c87de",
+  "preceding_local_revision": "paper/versions/2026-10-19-abstract/previous-576-character-abstract/",
+  "previous_abstract_latex": "Fresh qubits, not size, set how long a noisy quantum system can remember. With $k$ input qubits reinitialized per time step, the longest memory any reservoir can attain under depolarizing noise is $\\exp[\\Theta(k)]$ time steps, whatever its size, dynamics, and input encoding. A universal upper bound and an explicit reservoir that attains the exponential scaling establish this optimal resource law. The bound uses only the entropy budget of a time step and holds for any Markovian noisy dynamics with fresh qubits and no classical feedback, including measurement-free error correction.",
+  "updated_abstract_latex": "Fresh qubits, not size, set how long a noisy quantum system can remember. With $k$ input qubits reinitialized per time step, the longest memory any reservoir can attain under depolarizing noise is $\\exp[\\Theta(k)]$ time steps, whatever its size, dynamics, and input encoding. A universal upper bound and an explicit reservoir that attains the exponential scaling establish this optimal resource law. The bound depends on the dynamics only through the entropy that fresh qubits remove per time step, so it holds for any Markovian noisy dynamics without feedback, including measurement-free error correction.",
+  "checks": {
+    "outside_abstract_identical": true,
+    "abstract_characters": 596,
+    "abstract_words": 91,
+    "pdf_pages": 25,
+    "build_diagnostics_clean": true,
+    "bibliography_unchanged": true,
+    "exact_user_abstract_verified": true,
+    "outside_abstract_identical_to_base_commit": true,
+    "first_page_visually_reviewed": true,
+    "repository_tests_passed": 22
+  },
+  "status": "Local preparation; no upload, submission, commit or push for this abstract correction."
+}

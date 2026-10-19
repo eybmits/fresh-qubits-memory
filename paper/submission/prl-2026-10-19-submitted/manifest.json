@@ -1,0 +1,58 @@
+{
+  "Abstract.txt": {
+    "sha256": "a58b8eb888b69080d33e4f7a52e33b30bf44420b9e4223f714fa41be52cde04e",
+    "bytes": 598
+  },
+  "Complete Manuscript with Supplemental Material.pdf": {
+    "sha256": "f450ca6f27b70e5e10a8464532ab43dd6a593ffaf4ab6171365b777befabd3a9",
+    "bytes": 938642
+  },
+  "Cover Letter.pdf": {
+    "sha256": "944dd2a7b3e05817324021048220a32ef7cbe3bb4c22a340430874d654a06236",
+    "bytes": 137391
+  },
+  "Cover Letter.txt": {
+    "sha256": "d09ed97744413fd60a74f856dadb12cbb0d3d8e9d1edf5af3ed529bad7aa3280",
+    "bytes": 2745
+  },
+  "For Production/Manuscript Source Files.zip": {
+    "sha256": "9d38f41cfdc06d3bf4fb33b6f9f43f80f44adf25968d806ba62708cdce68a004",
+    "bytes": 410132
+  },
+  "Material Description.txt": {
+    "sha256": "9fb5346e57b5674609b8430e62e31a4ec92dab688515b491c484c7e5a4767aad",
+    "bytes": 1407
+  },
+  "PRL Significance Statement.txt": {
+    "sha256": "268db2e33705bdb66700766cce0a30e62fdbf92eff6293754cd8765a708e94fb",
+    "bytes": 721
+  },
+  "README.md": {
+    "sha256": "32d020dbd28958801aa8c38fa7029330677cdfe1fe3d64b5586d5e2fe0159e03",
+    "bytes": 1839
+  },
+  "Source Code and Data.zip": {
+    "sha256": "bda327d30d026e01983e2d3c0203a871319a745b457ab31cf66f55db8c2f2541",
+    "bytes": 1352202
+  },
+  "Submission Details.txt": {
+    "sha256": "bfbaf6bd39b6c7cb21626687a147b22d2056baabee2bc9401f59452cd607a756",
+    "bytes": 5253
+  },
+  "Suggested Referees.txt": {
+    "sha256": "7f7f90a65c51e9fd2bc32c292865b135bc5cb787e915e87df3fe3953ee988b9d",
+    "bytes": 2876
+  },
+  "Supplemental Material.pdf": {
+    "sha256": "f7a99190fa612c07797bc0c78f0fb1ecbe44adfafbf4566a97668eaa3080fe1e",
+    "bytes": 758875
+  },
+  "The Fundamental Memory Ceiling of Noisy Quantum Reservoirs.pdf": {
+    "sha256": "ed1731be9fc7f5d2e41e655ce74e21c4e46d75a5ae2e81db624402dc64277806",
+    "bytes": 660039
+  },
+  "Upload Guide.txt": {
+    "sha256": "265583d10d831a717db69a21b0dff105983850db835699ab967e092da3b651e9",
+    "bytes": 2129
+  }
+}

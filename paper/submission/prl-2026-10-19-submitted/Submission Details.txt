@@ -1,0 +1,74 @@
+PHYSICAL REVIEW LETTERS — SUBMISSION DETAILS
+Prepared locally on October 19, 2026. File upload and final submission remain user-controlled.
+
+ARTICLE
+Journal: Physical Review Letters
+Article type: Letter
+Title: The Fundamental Memory Ceiling of Noisy Quantum Reservoirs
+
+AUTHORS — IN MANUSCRIPT ORDER
+1. Markus Baumann — corresponding author
+   Email: markus.baumann@campus.lmu.de
+   ORCID: https://orcid.org/0009-0007-3575-1006
+2. Jonas Stein
+   Email: jonas.stein@ifi.lmu.de
+   ORCID: https://orcid.org/0000-0001-5727-9151
+3. Claudia Linnhoff-Popien
+   Email: linnhoff@ifi.lmu.de
+   ORCID: https://orcid.org/0000-0001-6284-9286
+Shared affiliation (enter once and associate with all three authors):
+Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany
+ORCID identifiers match the manuscript; portal authentication is pending.
+
+ABSTRACT — 596 CHARACTERS, 91 WORDS
+Fresh qubits, not size, set how long a noisy quantum system can remember. With k input qubits reinitialized per time step, the longest memory any reservoir can attain under depolarizing noise is exp[Θ(k)] time steps, whatever its size, dynamics, and input encoding. A universal upper bound and an explicit reservoir that attains the exponential scaling establish this optimal resource law. The bound depends on the dynamics only through the entropy that fresh qubits remove per time step, so it holds for any Markovian noisy dynamics without feedback, including measurement-free error correction.
+
+PRL SIGNIFICANCE STATEMENT — EXACT APPROVED 100-WORD TEXT
+How long can a noisy quantum system remember past inputs? We establish a universal memory ceiling under local Markovian depolarizing noise: with \(k\) qubits refreshed per step, the optimal memory depth scales as \(\exp[\Theta(k)]\) at fixed noise strength and accuracy. Our size-independent upper bound covers all admissible dynamics and input encodings. A measurement-free error-correction scheme achieves the same exponential scaling, establishing an optimal resource law. This is a limit on an entire class of quantum dynamics, not on one computing architecture. By identifying entropy removal as the resource governing memory, our result connects quantum information, nonequilibrium physics, and physical computing.
+
+FILES AND VERIFIED COUNTS
+Main manuscript: The Fundamental Memory Ceiling of Noisy Quantum Reservoirs.pdf
+6 pages, 4 main figures, 41 references.
+Supplemental Material.pdf: 19 pages (S1–S19).
+Complete Manuscript with Supplemental Material.pdf: 25 pages; reading copy.
+Local APS length estimate: 3743.4076 / 3750 word equivalents (6.5924 below the limit).
+Components: 2800 typeset words + 96 equation equivalents + 847.4076 figure equivalents.
+This is a local length/build check, not an editorial eligibility decision.
+Source Code and Data.zip: 54 source, code, data and reproduction files.
+For Production/Manuscript Source Files.zip: Letter TeX, BIB, BBL and four figure PDFs.
+
+CODE AND DATA
+Repository cited as reference [39]: https://github.com/eybmits/fresh-qubits-memory
+Supplemental Material is reference [28]. Code and data are included in the local source archive.
+Current public accessibility of the repository: pending live verification.
+
+ADMINISTRATION AND ITEMS TO CONFIRM
+Use Cover Letter.pdf or Cover Letter.txt unchanged (approved letter dated October 18, 2026).
+Suggested and alternate referees: Suggested Referees.txt. Approved exclusions: none.
+The approved cover records no competing interests or referee conflicts for all three authors,
+no prior Physical Review submission, and no simultaneous consideration elsewhere.
+Funding agency and grant numbers: pending; none are specified in the manuscript.
+Public arXiv identifier and Zenodo DOI: pending; no verified public identifiers supplied here.
+Portal classification/keywords, current review-model selection, funding declarations,
+publication-license choices and required agreements: pending portal/user confirmation.
+
+PUBLIC SUPPLEMENTAL MATERIAL
+Upload these three files as Supplemental Material: Supplemental Material.pdf,
+Source Code and Data.zip, and README.TXT. The source archive contains reproduction
+materials; editor-only justification and submission-administration text were removed
+from its README. All other 53 archive members are unchanged.
+
+CURRENT PORTAL OBSERVATION — OCTOBER 19, 2026
+Temporary draft ID: es2026oct16_693
+Journal/type shown: Physical Review Letters (Letter)
+Page: Manage and Upload Files
+URL: https://authors.aps.org/Submissions/submissions/es2026oct16_693/file_info
+No files uploaded, no form fields changed or saved, and no Save/Next or Submit action.
+The portal currently requests the manuscript PDF and figure count (4).
+Authors, Open Science, Data Availability, Article Info, Editorial Info and Review/Finish
+remain inactive until the file step is completed. Values above are prepared locally,
+not entered into those locked sections. Uploads and final submission remain user-controlled.
+
+TRANSPORT BUNDLE
+Physical Review Letters Submission.zip is for transfer and unpacking. It includes the cover
+letter and referee suggestions; do not upload the whole transport ZIP as public Supplemental Material.

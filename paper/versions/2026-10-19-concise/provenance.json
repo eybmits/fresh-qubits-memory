@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-19",
+  "scope": "Local application of exactly three user-approved shortening substitutions in the model, decay and standard-reservoir discussion; 19 word equivalents saved. All other manuscript content, Fig. 4 caption, bibliography, figures, code and data remain unchanged.",
+  "candidate_source": "/private/tmp/memory-shortening-proposals-o90pgyx0/combined/memory_limits_prl.tex",
+  "source": "paper/prl-source/memory_limits_prl.tex",
+  "source_sha256": "77df6be9120b0d5cdde39dd62dfb6d63fab8e07ce4c3de3cc4d7f4c8d0a4fd02",
+  "pdf": "paper/memory_limits_prl_2026-10-19-concise.pdf",
+  "pdf_sha256": "f450ca6f27b70e5e10a8464532ab43dd6a593ffaf4ab6171365b777befabd3a9",
+  "preceding_local_revision": "paper/versions/2026-10-19-concise/preceding-local-manuscript/",
+  "source_diff": "paper/versions/2026-10-19-concise/source.diff",
+  "aps_length_estimate": {
+    "total_word_equivalents": 3743.407618945399,
+    "typeset_text_words": 2800,
+    "equation_word_equivalents": 96,
+    "figure_word_equivalents": 847.407618945399,
+    "report": "paper/versions/2026-10-19-concise/count.json",
+    "limit": 3750,
+    "margin_word_equivalents": 6.592381054601,
+    "within_limit": true,
+    "word_equivalents_saved": 19,
+    "only_three_approved_substitutions": true
+  },
+  "checks": {
+    "exact_candidate_match": true,
+    "abstract_unchanged": true,
+    "abstract_characters": 596,
+    "pdf_pages": 25,
+    "build_diagnostics_clean": true,
+    "bibliography_unchanged": true,
+    "repository_tests_passed": 22,
+    "exactly_three_approved_substitutions": true,
+    "count_report_source_hash_matches": true,
+    "bibliography_entries": 41,
+    "supplement_text_pages_and_surviving_links_unchanged": true,
+    "changed_pages_visually_reviewed": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "status": "Local approved shortening update. APS estimate 3743.4076 is below the 3750 limit by 6.5924 word equivalents; this is a length/build check, not a submission action. No upload, submission, commit or push."
+}

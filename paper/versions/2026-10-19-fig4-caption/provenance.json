@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-19",
+  "scope": "Local exact user-text update to Figure 4 caption panels (b) and (c). All other manuscript text, bibliography, figures, code and data remain unchanged. No additional prose cuts were made.",
+  "candidate_source": "/private/tmp/memory-fig4-caption-candidate-joy81phw/memory_limits_prl.tex",
+  "source": "paper/prl-source/memory_limits_prl.tex",
+  "source_sha256": "0758947bc5f0bc58f0e1bc179f954af79c754cfc11791768fecab3886e73a7e7",
+  "pdf": "paper/memory_limits_prl_2026-10-19-fig4-caption.pdf",
+  "pdf_sha256": "0e853cdc58aff3400a1b14860557d2b2f142a9bdd42be622b89c66666bd0d7f0",
+  "preceding_local_revision": "paper/versions/2026-10-19-fig4-caption/preceding-local-manuscript/",
+  "source_diff": "paper/versions/2026-10-19-fig4-caption/source.diff",
+  "aps_length_estimate": {
+    "total_word_equivalents": 3762.407618945399,
+    "typeset_text_words": 2819,
+    "equation_word_equivalents": 96,
+    "figure_word_equivalents": 847.407618945399,
+    "report": "paper/versions/2026-10-19-fig4-caption/count.json",
+    "limit": 3750,
+    "excess_word_equivalents": 12.407618945399,
+    "within_limit": false,
+    "no_additional_prose_cuts_made": true
+  },
+  "checks": {
+    "exact_candidate_match": true,
+    "abstract_unchanged": true,
+    "abstract_characters": 596,
+    "pdf_pages": 25,
+    "build_diagnostics_clean": true,
+    "bibliography_unchanged": true,
+    "repository_tests_passed": 22,
+    "only_fig4_caption_changed": true,
+    "count_report_source_hash_matches": true,
+    "bibliography_entries": 41,
+    "supplement_text_pages_and_surviving_links_unchanged": true,
+    "changed_pages_visually_reviewed": [
+      4,
+      5,
+      6
+    ]
+  },
+  "status": "Local Figure 4 caption update; APS estimate remains 12.4076 word equivalents above the limit. No additional prose cuts, upload, submission, commit or push."
+}

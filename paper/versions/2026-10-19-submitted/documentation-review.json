@@ -1,0 +1,579 @@
+{
+  "date": "2026-10-19",
+  "local_markdown_links": [
+    {
+      "file": "README.md",
+      "label": "complete PDF, 25 pages",
+      "target": "paper/memory_limits_prl_2026-10-19-concise.pdf",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "Letter, 6 pages",
+      "target": "paper/submission/prl-2026-10-19-submitted/The Fundamental Memory Ceiling of Noisy Quantum Reservoirs.pdf",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "Supplemental Material, 19 pages",
+      "target": "paper/submission/prl-2026-10-19-submitted/Supplemental Material.pdf",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "editable source",
+      "target": "paper/prl-source/memory_limits_prl.tex",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "current record",
+      "target": "docs/manuscript-2026-10-19-submitted.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "PRL handoff",
+      "target": "paper/submission/prl-2026-10-19-submitted/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "full arXiv source ZIP",
+      "target": "paper/submission/arxiv-2026-10-19-submitted/arxiv-source.zip",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "arXiv instructions and metadata",
+      "target": "paper/submission/arxiv-2026-10-19-submitted/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "frozen canonical source",
+      "target": "paper/versions/2026-10-19-submitted/canonical-source.zip",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "author-provided APS confirmation",
+      "target": "paper/submission-records/prl-2026-10-19/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "portal record",
+      "target": "paper/submission-records/arxiv-2026-10-19/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "current version note",
+      "target": "docs/manuscript-2026-10-19-submitted.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "17 October scientific import record",
+      "target": "docs/manuscript-2026-10-17-prl.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "original paper summary",
+      "target": "docs/paper-summary.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "repeatable finite-range calculation",
+      "target": "paper/versions/2026-10-19-prl-v9/verification/factor-five.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "simulator and datasets",
+      "target": "paper/prl-source/sim/",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "historical record",
+      "target": "docs/manuscript-2026-10-18-prl-v5.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "current revision note",
+      "target": "docs/manuscript-2026-10-19-submitted.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "baseline output",
+      "target": "results/table1/",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "validation record",
+      "target": "docs/validation.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "16 October validation report",
+      "target": "results/empirical-2026-10-16/REPORT.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "PDF",
+      "target": "results/empirical-2026-10-16/validation_report.pdf",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "protocol",
+      "target": "experiments/empirical-2026-10-16.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "paper/",
+      "target": "paper/",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "paper/prl-source/",
+      "target": "paper/prl-source/",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "paper/source/",
+      "target": "paper/source/",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "docs/manuscript-2026-10-19-submitted.md",
+      "target": "docs/manuscript-2026-10-19-submitted.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "docs/manuscript-2026-10-17-prl.md",
+      "target": "docs/manuscript-2026-10-17-prl.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "docs/paper-summary.md",
+      "target": "docs/paper-summary.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "docs/research-plan.md",
+      "target": "docs/research-plan.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "src/fresh_qubits_memory/",
+      "target": "src/fresh_qubits_memory/",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "scripts/reproduce_table1.py",
+      "target": "scripts/reproduce_table1.py",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "tests/",
+      "target": "tests/",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "experiments/",
+      "target": "experiments/",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "data/",
+      "target": "data/",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "results/",
+      "target": "results/",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "research plan",
+      "target": "docs/research-plan.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "paper/prl-source/",
+      "target": "paper/prl-source/",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "paper/source/",
+      "target": "paper/source/",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "CITATION.cff",
+      "target": "CITATION.cff",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "paper/manuscript.bib",
+      "target": "paper/manuscript.bib",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "current provenance",
+      "target": "paper/versions/2026-10-19-submitted/provenance.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "label": "canonical author record",
+      "target": "paper/author_information.json",
+      "exists": true
+    },
+    {
+      "file": "paper/README.md",
+      "label": "APS confirmation",
+      "target": "submission-records/prl-2026-10-19/README.md",
+      "exists": true
+    },
+    {
+      "file": "paper/README.md",
+      "label": "Complete manuscript, 25 pages",
+      "target": "memory_limits_prl_2026-10-19-concise.pdf",
+      "exists": true
+    },
+    {
+      "file": "paper/README.md",
+      "label": "PRL handoff",
+      "target": "submission/prl-2026-10-19-submitted/README.md",
+      "exists": true
+    },
+    {
+      "file": "paper/README.md",
+      "label": "Full arXiv source archive",
+      "target": "submission/arxiv-2026-10-19-submitted/arxiv-source.zip",
+      "exists": true
+    },
+    {
+      "file": "paper/README.md",
+      "label": "metadata and build guide",
+      "target": "submission/arxiv-2026-10-19-submitted/README.md",
+      "exists": true
+    },
+    {
+      "file": "paper/README.md",
+      "label": "verification",
+      "target": "submission/arxiv-2026-10-19-submitted/verification.json",
+      "exists": true
+    },
+    {
+      "file": "paper/README.md",
+      "label": "Canonical editable source",
+      "target": "prl-source/memory_limits_prl.tex",
+      "exists": true
+    },
+    {
+      "file": "paper/README.md",
+      "label": "frozen source snapshot",
+      "target": "versions/2026-10-19-submitted/canonical-source.zip",
+      "exists": true
+    },
+    {
+      "file": "paper/README.md",
+      "label": "provenance",
+      "target": "versions/2026-10-19-submitted/provenance.json",
+      "exists": true
+    },
+    {
+      "file": "paper/README.md",
+      "label": "Current scope and checks",
+      "target": "../docs/manuscript-2026-10-19-submitted.md",
+      "exists": true
+    },
+    {
+      "file": "paper/README.md",
+      "label": "local handoff validation",
+      "target": "versions/2026-10-19-submitted/local-artifact-verification.json",
+      "exists": true
+    },
+    {
+      "file": "paper/README.md",
+      "label": "arXiv portal record",
+      "target": "submission-records/arxiv-2026-10-19/README.md",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/README.md",
+      "label": "Current provenance",
+      "target": "../versions/2026-10-19-submitted/provenance.json",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/README.md",
+      "label": "verification record",
+      "target": "../../docs/manuscript-2026-10-19-submitted.md",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/README.md",
+      "label": "submitted handoff folder",
+      "target": "prl-2026-10-19-submitted/README.md",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/README.md",
+      "label": "APS screenshot record",
+      "target": "../submission-records/prl-2026-10-19/README.md",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/README.md",
+      "label": "Source archive to upload",
+      "target": "arxiv-2026-10-19-submitted/arxiv-source.zip",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/README.md",
+      "label": "Complete PDF, 25 pages",
+      "target": "arxiv-2026-10-19-submitted/memory_limits_arxiv.pdf",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/README.md",
+      "label": "Build instructions and form metadata",
+      "target": "arxiv-2026-10-19-submitted/README.md",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/README.md",
+      "label": "Fresh-extract compilation and integrity checks",
+      "target": "arxiv-2026-10-19-submitted/verification.json",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/README.md",
+      "label": "Browser draft and upload record",
+      "target": "../submission-records/arxiv-2026-10-19/README.md",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/README.md",
+      "label": "PRL revision 10",
+      "target": "prl-2026-10-19-v10/README.md",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/README.md",
+      "label": "arXiv revision 10",
+      "target": "arxiv-2026-10-19-v10/README.md",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/README.md",
+      "label": "revision-7 arXiv upload",
+      "target": "../submission-records/arxiv-2026-10-18-v7/README.md",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/README.md",
+      "label": "local Zenodo revision-10 preparation",
+      "target": "zenodo-2026-10-19-v10/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/manuscript-2026-10-19-submitted.md",
+      "label": "Complete PDF",
+      "target": "../paper/memory_limits_prl_2026-10-19-concise.pdf",
+      "exists": true
+    },
+    {
+      "file": "docs/manuscript-2026-10-19-submitted.md",
+      "label": "PRL handoff",
+      "target": "../paper/submission/prl-2026-10-19-submitted/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/manuscript-2026-10-19-submitted.md",
+      "label": "Canonical source snapshot",
+      "target": "../paper/versions/2026-10-19-submitted/canonical-source.zip",
+      "exists": true
+    },
+    {
+      "file": "docs/manuscript-2026-10-19-submitted.md",
+      "label": "provenance",
+      "target": "../paper/versions/2026-10-19-submitted/provenance.json",
+      "exists": true
+    },
+    {
+      "file": "docs/manuscript-2026-10-19-submitted.md",
+      "label": "arXiv source ZIP",
+      "target": "../paper/submission/arxiv-2026-10-19-submitted/arxiv-source.zip",
+      "exists": true
+    },
+    {
+      "file": "docs/manuscript-2026-10-19-submitted.md",
+      "label": "fresh-build verification",
+      "target": "../paper/submission/arxiv-2026-10-19-submitted/verification.json",
+      "exists": true
+    },
+    {
+      "file": "docs/manuscript-2026-10-19-submitted.md",
+      "label": "local artifact report",
+      "target": "../paper/versions/2026-10-19-submitted/local-artifact-verification.json",
+      "exists": true
+    },
+    {
+      "file": "docs/manuscript-2026-10-19-submitted.md",
+      "label": "author-provided APS screenshot",
+      "target": "../paper/submission-records/prl-2026-10-19/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/manuscript-2026-10-19-submitted.md",
+      "label": "arXiv record",
+      "target": "../paper/submission-records/arxiv-2026-10-19/README.md",
+      "exists": true
+    },
+    {
+      "file": "paper/submission-records/prl-2026-10-19/README.md",
+      "label": "APS confirmation screenshot",
+      "target": "submitted-confirmation.png",
+      "exists": true
+    },
+    {
+      "file": "paper/submission-records/prl-2026-10-19/README.md",
+      "label": "local handoff",
+      "target": "../../submission/prl-2026-10-19-submitted/README.md",
+      "exists": true
+    },
+    {
+      "file": "paper/submission-records/arxiv-2026-10-19/README.md",
+      "label": "complete source package",
+      "target": "../../submission/arxiv-2026-10-19-submitted/arxiv-source.zip",
+      "exists": true
+    },
+    {
+      "file": "paper/submission-records/arxiv-2026-10-19/README.md",
+      "label": "verification record",
+      "target": "../../submission/arxiv-2026-10-19-submitted/verification.json",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/prl-2026-10-19-submitted/README.md",
+      "label": "user-provided APS confirmation",
+      "target": "../../submission-records/prl-2026-10-19/README.md",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/prl-2026-10-19-submitted/README.md",
+      "label": "Letter",
+      "target": "The Fundamental Memory Ceiling of Noisy Quantum Reservoirs.pdf",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/prl-2026-10-19-submitted/README.md",
+      "label": "Supplemental Material",
+      "target": "Supplemental Material.pdf",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/prl-2026-10-19-submitted/README.md",
+      "label": "Source code and data",
+      "target": "Source Code and Data.zip",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/prl-2026-10-19-submitted/README.md",
+      "label": "Material description",
+      "target": "Material Description.txt",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/prl-2026-10-19-submitted/README.md",
+      "label": "Complete manuscript",
+      "target": "Complete Manuscript with Supplemental Material.pdf",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/prl-2026-10-19-submitted/README.md",
+      "label": "Cover letter",
+      "target": "Cover Letter.pdf",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/prl-2026-10-19-submitted/README.md",
+      "label": "Local significance statement",
+      "target": "PRL Significance Statement.txt",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/prl-2026-10-19-submitted/README.md",
+      "label": "Referee suggestions",
+      "target": "Suggested Referees.txt",
+      "exists": true
+    },
+    {
+      "file": "paper/submission/prl-2026-10-19-submitted/README.md",
+      "label": "Production sources",
+      "target": "For Production/Manuscript Source Files.zip",
+      "exists": true
+    }
+  ],
+  "broken_links": [],
+  "frozen_manuscript_bytes_unchanged": {
+    "paper/prl-source/memory_limits_prl.tex": true,
+    "paper/prl-source/memory_limits_prl.bbl": true,
+    "paper/prl-source/refs.bib": true,
+    "paper/memory_limits_prl_2026-10-19-concise.pdf": true
+  },
+  "arxiv_zip_admin_files": [],
+  "arxiv_zip_high_signal_privacy_flags": [],
+  "publication_claims": "Reviewed current README sections, submitted-record documents and status files. Distinguish PRL submitted from accepted; arXiv draft from uploaded/submitted/published. No public ID invented. Portal states are root observations, not independently browsed in this review.",
+  "limitations": "Does not prove secret absence; binary figure metadata not examined for arbitrary embedded content. Historical sections outside new-current scope not revalidated.",
+  "package_manifest_checks": {
+    "arxiv_archive_hash_match": true,
+    "arxiv_member_checks": 57,
+    "arxiv_member_hash_mismatches": [],
+    "arxiv_member_set_match": true,
+    "prl_manifest_mismatches": []
+  },
+  "minor_documentation_findings": [
+    {
+      "file": "paper/submission/arxiv-2026-10-19-submitted/README.md",
+      "finding": "The only top-level file should read only top-level TeX compilation target; root also contains bibliography and figures."
+    },
+    {
+      "file": "paper/submission/arxiv-2026-10-19-submitted/submission_metadata.json",
+      "finding": "Current portal not checked / no portal action wording is stale relative to new draft8251813; clarify as package-generation history or refer to new portal record."
+    }
+  ]
+}
