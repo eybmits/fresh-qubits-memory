@@ -15,7 +15,7 @@ import zipfile
 
 REPO = Path(__file__).resolve().parents[1]
 MAIN = "memory_limits_prl.tex"
-EDITION = "2026-10-19-prl-v9"
+EDITION = "2026-10-19-prl-v10"
 EDITION_DATE = "2026-10-19"
 EXPECTED_COMBINED_PAGES = 25
 ZIP_DATE = (2026, 10, 19, 0, 0, 0)
@@ -329,9 +329,9 @@ def build(source, output, author_path):
 
 
 def instructions(figure_tex_count):
-    return f"""# arXiv upload preparation — 19 October 2026, revision 9
+    return f"""# arXiv upload preparation — 19 October 2026, revision 10
 
-This directory is a new local preparation package. Revision 9 has not been
+This directory is a new local preparation package. Revision 10 has not been
 uploaded or submitted. The earlier revision-7 upload to draft 8248308 is
 documented in the [historical portal record](../../submission-records/arxiv-2026-10-18-v7/README.md).
 That record reports successful compilation and saved metadata, with the final
@@ -372,10 +372,12 @@ the repository public. Code/data are also included in this arXiv source ZIP.
 
 ## Author review
 
-The [revision review](../../../docs/manuscript-2026-10-19-prl-v9.md) records the
-editorial changes based on revision 8 and the removal of Figure 1(c), while
-retaining the abstract, three-author metadata, shared QAR-Lab/LMU affiliation,
-and approved AI disclosure. Finite checks and packaging do not
+The [revision review](../../../docs/manuscript-2026-10-19-prl-v10.md) records the
+revised Figure 1: an upper bound for every admissible system in panel (a), one
+attaining construction in panel (b), and the restored earlier scaling graph
+alongside the inherited scaling of all three class maxima in panel (c).
+The abstract, three-author metadata, shared QAR-Lab/LMU
+affiliation, and approved AI disclosure are retained. Finite checks and packaging do not
 certify the universal theorem. The author's statement about reviewing AI
 outputs remains the author's responsibility.
 
@@ -447,7 +449,7 @@ before final submission.
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source-dir", type=Path, default=REPO / "paper/prl-source")
-    parser.add_argument("--output-dir", type=Path, default=REPO / "paper/submission/arxiv-2026-10-19-v9")
+    parser.add_argument("--output-dir", type=Path, default=REPO / "paper/submission/arxiv-2026-10-19-v10")
     parser.add_argument("--author-file", type=Path, default=REPO / "paper/author_information.json")
     args = parser.parse_args()
     build(args.source_dir.resolve(), args.output_dir.resolve(), args.author_file.resolve())

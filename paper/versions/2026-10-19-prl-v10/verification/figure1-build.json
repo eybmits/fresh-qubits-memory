@@ -1,0 +1,104 @@
+{
+  "checked_utc": "2026-10-19T09:08:00.728238+00:00",
+  "build_directory": "/private/tmp/fresh-qubits-fig1-v10",
+  "compile_command": [
+    "pdflatex",
+    "-no-shell-escape",
+    "-interaction=nonstopmode",
+    "-halt-on-error",
+    "-file-line-error",
+    "fig1.tex"
+  ],
+  "compile_cwd": "/private/tmp/fresh-qubits-fig1-v10",
+  "compile_returncode": 0,
+  "inputs_copied_byte_for_byte": [
+    "fig1.tex",
+    "tikzstyle.tex"
+  ],
+  "source": {
+    "path": "paper/prl-source/figures/fig1.tex",
+    "bytes": 8352,
+    "sha256": "4ffbb99ed2b3dddf8a2ed045bbef420572b2f6f08ce6819b1060ae67c0a0dd4a"
+  },
+  "shared_style": {
+    "path": "paper/prl-source/figures/tikzstyle.tex",
+    "bytes": 2526,
+    "sha256": "816e35861a8e58d3acaa810670b2fc96be2645e5381e05c581e26494d4a54ada"
+  },
+  "delivered_pdf": {
+    "path": "paper/prl-source/fig1.pdf",
+    "bytes": 74587,
+    "sha256": "6e1081789cfe33318666d13761d382c8324d19908fb95d686edb0587f6097ddf"
+  },
+  "delivered_pdf_equals_final_build": true,
+  "compile_stdout": {
+    "path": "/private/tmp/fresh-qubits-fig1-v10/compile-output.txt",
+    "bytes": 10893,
+    "sha256": "97b5a1b6750fb922d6164643c1107590351203b4b94a3d0a66fc28fc2bb73246"
+  },
+  "render_commands": [
+    [
+      "pdftoppm",
+      "-r",
+      "200",
+      "-singlefile",
+      "-png",
+      "/private/tmp/fresh-qubits-fig1-v10/fig1.pdf",
+      "/private/tmp/fresh-qubits-fig1-v10/fig1"
+    ],
+    [
+      "pdftoppm",
+      "-r",
+      "96",
+      "-singlefile",
+      "-png",
+      "/private/tmp/fresh-qubits-fig1-v10/fig1.pdf",
+      "/private/tmp/fresh-qubits-fig1-v10/fig1-column"
+    ]
+  ],
+  "dimensions": {
+    "width_pdf_points": 245.083,
+    "height_pdf_points": 171.496,
+    "width_cm_from_tikz": 8.646,
+    "height_cm_from_tikz": 6.05,
+    "aspect_ratio_width_over_height": 1.42908872510146,
+    "previous_v9_height_pdf_points": 121.323,
+    "original_v8_height_pdf_points": 171.496,
+    "maximum_target_height_cm": 6.08,
+    "height_target_met": true
+  },
+  "pages": 1,
+  "all_fonts_embedded": true,
+  "build_warnings": [],
+  "restored_graph": {
+    "source_commit": "4d3584a0ad4293832c42b9cec100875ff40c21bf",
+    "source_path": "paper/prl-source/figures/fig1.tex",
+    "original_panel_c_graph_reused": true,
+    "only_graph_label_change": "max W becomes max_{calS} W to identify the chosen class, without equating exact maxima across classes.",
+    "graph_block_byte_identical_after_normalizing_that_label": true
+  },
+  "visual_qa": {
+    "inspected_renders": [
+      {
+        "path": "/private/tmp/fresh-qubits-fig1-v10/fig1.png",
+        "bytes": 92070,
+        "sha256": "57dac33be97656ec670f433935b2ce1d90f13867f79cbef15bce4e466483fae1"
+      },
+      {
+        "path": "/private/tmp/fresh-qubits-fig1-v10/fig1-column.png",
+        "bytes": 36650,
+        "sha256": "bb68b5a20fce9c7f868b12c45900dce301ba4b44ca2aaf09d19e6a72d965b967"
+      }
+    ],
+    "scope": "Full 200dpi render and single-column-size 96dpi render: key, both set diagrams, headings, universal and existential formulas, restored panel-c scaling graph with hatching/curves/star, class-specific maximum label, adjacent all-three-classes inference, panel labels and margins.",
+    "result": "PASS: no observed clipping, overlap, missing glyphs or unreadable labels.",
+    "typography": "Original shared 8pt node typography retained; no font shrink. Overall figure height matches original revision8.",
+    "inference": "For each class calS in {Q,E,N}, exponential lower and upper bounds apply to max over systems S in calS; the figure does not identify the exact maxima across classes."
+  },
+  "vector_artifact": true,
+  "only_canonical_figure_source_and_pdf_changed_by_this_agent": true,
+  "scope_limits": [
+    "Figure build and visual evidence only; no new scientific proof or numerical validation.",
+    "No repository tests repeated; root handles repository tests and mathematical-preservation evidence."
+  ]
+}

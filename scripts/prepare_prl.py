@@ -31,7 +31,7 @@ from prepare_arxiv import (
 )
 
 
-EDITION = "2026-10-19-v9"
+EDITION = "2026-10-19-v10"
 PACKAGE_REVISION = EDITION
 GENERATOR = "scripts/prepare_prl.py"
 DEFAULT_JUSTIFICATION = REPO / "paper/versions/2026-10-18-prl-v5/justification-user.txt"
@@ -251,7 +251,7 @@ def readme(title, author_names):
 {title}
 {', '.join(author_names)}
 
-This is a local, unsubmitted PRL preparation package for manuscript revision 9.
+This is a local, unsubmitted PRL preparation package for manuscript revision 10.
 The previously approved cover letter (revision 2, dated 18 October) and the
 100-word justification are preserved byte-for-byte. Earlier packages and the
 separate revision-7 arXiv draft upload remain preserved; this new revision has

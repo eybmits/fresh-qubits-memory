@@ -65,7 +65,8 @@ Fresh qubits, not size, set how long a noisy quantum system can remember. With $
 \includegraphics{fig1.pdf}
 \caption{\textbf{Scope of the memory limit} (schematic).
 (a)~The upper bound of Theorem~\ref{thm:main} holds for every system in $\mathcal N$: dynamics with Markovian depolarizing noise, $k$ fresh qubits per time step, and no classical feedback, whatever its size and gate set.
-(b)~One explicit reservoir (star) attains the lower bound: the error-correcting reservoir of Fig.~\ref{fig:attain}(a), which corrects errors without measurements. Together, the bounds give $\max W=e^{\Theta(k)}$ at fixed noise and accuracy [Fig.~\ref{fig:limit}(a)].}
+(b)~One explicit system (star) in $\mathcal E\cap\mathcal Q$, the error-correcting reservoir of Fig.~\ref{fig:attain}(a), attains the lower bound, so it bounds the largest memory in both sets from below.
+(c)~Since $\mathcal Q,\mathcal E\subseteq\mathcal N$, all three maxima grow as $e^{\Theta(k)}$ at fixed noise and accuracy [Fig.~\ref{fig:limit}(a)].}
 \label{fig:scope}
 \end{figure}
 

@@ -1,0 +1,101 @@
+{
+  "edition": "2026-10-19-prl-v10",
+  "archive_sha256": "ec11ebb117e643a95c28f417588e877b0e9438c68aae18d6d36710f5a327fe3b",
+  "fresh_unzip_compile_success": true,
+  "pages": 25,
+  "fresh_unzip_text_matches_canonical": true,
+  "fresh_pdf_byte_identical_to_canonical": true,
+  "regenerated_bbl_byte_identical": true,
+  "restored_source_file_count": 54,
+  "restored_source_matches_canonical_bytes": true,
+  "unresolved_citations_labels_overfull_boxes": [],
+  "duplicate_pdf_destinations": 0,
+  "supplemental_equation_named_destinations_1_based_pages": {
+    "equation.S1": 8,
+    "equation.S2": 9,
+    "equation.S3": 9,
+    "equation.S4": 10,
+    "equation.S5": 10,
+    "equation.S6": 10
+  },
+  "supplemental_equation_aux_labels": [
+    {
+      "label": "eq:S-norm",
+      "printed_equation": "S1",
+      "destination": "equation.S1"
+    },
+    {
+      "label": "eq:S-norms",
+      "printed_equation": "S2",
+      "destination": "equation.S2"
+    },
+    {
+      "label": "eq:S-king",
+      "printed_equation": "S3",
+      "destination": "equation.S3"
+    },
+    {
+      "label": "eq:S-cubitt",
+      "printed_equation": "S4",
+      "destination": "equation.S4"
+    },
+    {
+      "label": "eq:S-cap",
+      "printed_equation": "S5",
+      "destination": "equation.S5"
+    },
+    {
+      "label": "eq:S-purityrec",
+      "printed_equation": "S6",
+      "destination": "equation.S6"
+    }
+  ],
+  "build_directory": "/private/tmp/fresh-qubits-v10-restored-c-arxiv-rumw_bll",
+  "final_log_path": "/private/tmp/fresh-qubits-v10-restored-c-arxiv-rumw_bll/unpacked/memory_limits_prl.log",
+  "fresh_pdf_sha256": "aa3d392a93f9e4df9b3b1a73466ee8f9a05348e076d6c0adc2eb589a2cc058d9",
+  "final_log_sha256": "6a1c82fe74a9b8d40447eb5b6a23e46a5b4a9a261b1e2e9606fee3a3585e76ea",
+  "commands": [
+    [
+      "pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=memory_limits_prl",
+      "\\pdfinfoomitdate=1\\pdftrailerid{}\\pdfsuppressptexinfo=15\\input{memory_limits_prl.tex}"
+    ],
+    [
+      "bibtex",
+      "memory_limits_prl"
+    ],
+    [
+      "pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=memory_limits_prl",
+      "\\pdfinfoomitdate=1\\pdftrailerid{}\\pdfsuppressptexinfo=15\\input{memory_limits_prl.tex}"
+    ],
+    [
+      "bibtex",
+      "memory_limits_prl"
+    ],
+    [
+      "pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=memory_limits_prl",
+      "\\pdfinfoomitdate=1\\pdftrailerid{}\\pdfsuppressptexinfo=15\\input{memory_limits_prl.tex}"
+    ],
+    [
+      "pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=memory_limits_prl",
+      "\\pdfinfoomitdate=1\\pdftrailerid{}\\pdfsuppressptexinfo=15\\input{memory_limits_prl.tex}"
+    ]
+  ],
+  "source_date_epoch": "1792368000",
+  "scope": "Fresh source-package compilation, hyperlink destinations and reconstruction checks; no portal upload or scientific proof certification."
+}

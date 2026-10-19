@@ -1,0 +1,31 @@
+{
+  "baseline_commit": "bf54d6694878ae9228434666ee27c6c0d4f26315",
+  "current_manuscript": {
+    "path": "paper/prl-source/memory_limits_prl.tex",
+    "bytes": 96793,
+    "sha256": "48e046b8e5919e2595e791df93ad4ab596b086bd5b629c5d53ddcfe1c167ea7b"
+  },
+  "only_manuscript_change": "Figure 1 caption",
+  "manuscript_outside_figure1_caption_byte_identical": true,
+  "all_compared_mathematical_environments_byte_identical": true,
+  "protected_directories": {
+    "src": {
+      "files_compared": 3,
+      "all_byte_identical": true
+    },
+    "tests": {
+      "files_compared": 4,
+      "all_byte_identical": true
+    },
+    "paper/prl-source/sim": {
+      "files_compared": 22,
+      "all_byte_identical": true
+    },
+    "paper/prl-source/checks": {
+      "files_compared": 4,
+      "all_byte_identical": true
+    }
+  },
+  "other_ten_figure_pdfs_byte_identical": true,
+  "scope": "Preservation checks and repository regression tests; no new scientific simulation or proof certification."
+}

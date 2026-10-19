@@ -1,0 +1,13 @@
+[
+  {
+    "change": "Replace maximum statements in panels a/b by individual-system quantifiers; restore c as inheritance of both bounds by all three classes. Caption makes the set argument explicit.",
+    "before": "\\caption{\\textbf{Scope of the memory limit} (schematic).\n(a)~The upper bound of Theorem~\\ref{thm:main} holds for every system in $\\mathcal N$: dynamics with Markovian depolarizing noise, $k$ fresh qubits per time step, and no classical feedback, whatever its size and gate set.\n(b)~One explicit reservoir (star) attains the lower bound: the error-correcting reservoir of Fig.~\\ref{fig:attain}(a), which corrects errors without measurements. Together, the bounds give $\\max W=e^{\\Theta(k)}$ at fixed noise and accuracy [Fig.~\\ref{fig:limit}(a)].}\n\\label{fig:scope}",
+    "after": "\\caption{\\textbf{Scope of the memory limit} (schematic).\n(a)~The upper bound of Theorem~\\ref{thm:main} holds for every system in $\\mathcal N$: dynamics with Markovian depolarizing noise, $k$ fresh qubits per time step, and no classical feedback, whatever its size and gate set.\n(b)~One explicit system (star) in $\\mathcal E\\cap\\mathcal Q$, the error-correcting reservoir of Fig.~\\ref{fig:attain}(a), attains the lower bound, so it bounds the largest memory in both sets from below.\n(c)~Since $\\mathcal Q,\\mathcal E\\subseteq\\mathcal N$, all three maxima grow as $e^{\\Theta(k)}$ at fixed noise and accuracy [Fig.~\\ref{fig:limit}(a)].}\n\\label{fig:scope}"
+  },
+  {
+    "change": "Restore the original panel-c scaling graph in response to the additional user instruction; combine it with the new statement about all three class maxima.",
+    "graph_baseline_commit": "4d3584a0ad4293832c42b9cec100875ff40c21bf",
+    "graph_source": "paper/prl-source/figures/fig1.tex",
+    "numerical_data_changed": false
+  }
+]

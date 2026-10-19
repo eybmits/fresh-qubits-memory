@@ -1,0 +1,35 @@
+Markus Baumann
+Quantum Applications and Research Laboratory (QAR-Lab)
+Ludwig-Maximilians-Universität München
+Oettingenstraße 67, 80538 München, Germany
+markus.baumann@campus.lmu.de
+
+Munich, October 18, 2026
+
+To the Editors of Physical Review Letters
+
+Dear Editors,
+
+Please consider “The Fundamental Memory Ceiling of Noisy Quantum Reservoirs,” by Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien, for publication as a Letter in Physical Review Letters.
+
+Main result
+
+How long can a noisy quantum system remember past inputs? We establish an optimal resource law: with k qubits refreshed per step, the maximum attainable input-memory depth scales as exp[Θ(k)]. This holds under local Markovian depolarizing noise, after initialization washout, at fixed noise strength and a fixed, sufficiently small distinguishability threshold, without external classical memory or feedback. Three results establish its significance:
+
+1. No-go theorem. A size-independent upper bound holds for arbitrary unitaries and input encodings. Increasing system size at fixed refresh budget cannot sustain arbitrarily long input memory.
+
+2. Attainability. An explicit unitary, measurement-free error-correcting construction achieves exponential memory. Thus, Θ(log T) refreshed qubits per step are necessary and sufficient to retain an input for T steps.
+
+3. Universality. The proof depends only on the entropy budget of each noisy step. The bound therefore extends beyond quantum reservoir computing to an entire class of quantum dynamics under the same noise and resource assumptions, including measurement-free error correction.
+
+Why Physical Review Letters
+
+Noise introduces entropy throughout the system, while refreshed qubits provide a limited outlet. We turn this physical competition into a quantitative, optimal relation between entropy removal and information lifetime. The advance is not merely that old inputs eventually fade, but a determination of how much memory a given supply of fresh qubits can sustain. This architecture-independent law connects quantum information, nonequilibrium physics, and physical computing, providing a fundamental benchmark of relevance to PRL’s broad readership.
+
+Materials and declarations
+
+Complete proofs, code, and data accompany the manuscript. AI use is disclosed; as corresponding author, I take responsibility for the results and that use. The manuscript has not previously been submitted to a Physical Review journal and is not under consideration elsewhere. All authors declare no competing interests or conflicts with the suggested referees. Referee suggestions are provided separately; we request no exclusions.
+
+Sincerely,
+Markus Baumann
+On behalf of Jonas Stein and Claudia Linnhoff-Popien

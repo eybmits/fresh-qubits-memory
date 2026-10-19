@@ -1,0 +1,88 @@
+{
+  "edition": "2026-10-19-prl-v10",
+  "source_files": 54,
+  "packages": {
+    "PRL": {
+      "manifest_files_verified": 22,
+      "source_mappings_verified": 54,
+      "original_input_version": "2026-10-19-prl-v8",
+      "outer_sha256": "e45c69215cff0c3b30a56a66b3c9e273a4e39ebb0da87e65ef3fd1793cd007ef"
+    },
+    "Zenodo": {
+      "manifest_files_verified": 5,
+      "source_mappings_verified": 54,
+      "original_input_version": "2026-10-19-prl-v8",
+      "outer_sha256": "27ae6db638b9304c5ec3f656e28518dc2f6aa5eea8f1da615b40e3fa8a0188ea"
+    },
+    "arXiv": {
+      "archive_entries_verified": 57,
+      "source_mappings_verified": 54,
+      "archive_sha256": "ec11ebb117e643a95c28f417588e877b0e9438c68aae18d6d36710f5a327fe3b"
+    }
+  },
+  "changed_source_files_since_v9": [
+    "README.txt",
+    "fig1.pdf",
+    "figures/fig1.tex",
+    "memory_limits_prl.tex"
+  ],
+  "simulation_code_data_checks_unchanged_since_v9": true,
+  "pages": {
+    "combined": 25,
+    "letter": 6,
+    "supplement": 19,
+    "cover_letter": 1
+  },
+  "letter_and_sm_text_match_combined": true,
+  "supplement_tex_and_extracted_text_unchanged_since_v9": true,
+  "shared_affiliation": "Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany",
+  "affiliation_checked_across_all_packages": true,
+  "admin_files_byte_identical_to_v9_and_approved_v7_cover_v2": [
+    "cover_letter.txt",
+    "cover_letter.pdf",
+    "referees.txt",
+    "referees.json",
+    "cover_letter_notes.txt"
+  ],
+  "cover_date_preserved": "October 18, 2026",
+  "user_justification_byte_identical_to_v5": true,
+  "user_justification_words": 100,
+  "abstract_characters": 595,
+  "abstract_byte_identical_to_v9": true,
+  "source_zip_identical_prl_zenodo": true,
+  "source_zip_sha256": "74b46814129e071da49ee9338f097005e13b92b4cc5893a55ea0a0ef79dbdf16",
+  "combined_pdf_sha256": "aa3d392a93f9e4df9b3b1a73466ee8f9a05348e076d6c0adc2eb589a2cc058d9",
+  "source_tex_sha256": "48e046b8e5919e2595e791df93ad4ab596b086bd5b629c5d53ddcfe1c167ea7b",
+  "duplicate_pdf_destinations": 0,
+  "supplemental_equation_targets_verified_after_split": {
+    "equation.S1": {
+      "combined_pdf_page": 8,
+      "supplement_pdf_page": 2
+    },
+    "equation.S2": {
+      "combined_pdf_page": 9,
+      "supplement_pdf_page": 3
+    },
+    "equation.S3": {
+      "combined_pdf_page": 9,
+      "supplement_pdf_page": 3
+    },
+    "equation.S4": {
+      "combined_pdf_page": 10,
+      "supplement_pdf_page": 4
+    },
+    "equation.S5": {
+      "combined_pdf_page": 10,
+      "supplement_pdf_page": 4
+    },
+    "equation.S6": {
+      "combined_pdf_page": 10,
+      "supplement_pdf_page": 4
+    }
+  },
+  "arxiv_historical_prior_license_retained": true,
+  "zenodo_publication_fields_unset": true,
+  "checks_scope": "Package contents, manifests, source equality, affiliations, preserved cover/justification/abstract, PDF text, hyperlink destinations and page counts; no new scientific experiments or proof certification.",
+  "figure_1_sha256": "6e1081789cfe33318666d13761d382c8324d19908fb95d686edb0587f6097ddf",
+  "figure_1_has_restored_earlier_scaling_graph": true
+}

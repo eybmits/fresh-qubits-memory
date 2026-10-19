@@ -1,0 +1,245 @@
+{
+  "checked_utc": "2026-10-19T09:08:47.328255+00:00",
+  "current_pdf": {
+    "path": "paper/memory_limits_prl_2026-10-19-v10.pdf",
+    "bytes": 938527,
+    "sha256": "aa3d392a93f9e4df9b3b1a73466ee8f9a05348e076d6c0adc2eb589a2cc058d9"
+  },
+  "current_source": {
+    "path": "paper/prl-source/memory_limits_prl.tex",
+    "bytes": 96793,
+    "sha256": "48e046b8e5919e2595e791df93ad4ab596b086bd5b629c5d53ddcfe1c167ea7b"
+  },
+  "prior_committed_pdf": {
+    "path": "paper/memory_limits_prl_2026-10-19-v9.pdf",
+    "bytes": 933438,
+    "sha256": "18b6038597eb8bb4c3600359f7085ff8b445475d0114132062b7412d83ff035c"
+  },
+  "prior_pdf_commit": "bf54d6694878ae9228434666ee27c6c0d4f26315",
+  "prior_pdf_byte_identical_to_commit": true,
+  "figure1": {
+    "build_evidence": {
+      "path": "paper/versions/2026-10-19-prl-v10/verification/figure1-build.json",
+      "bytes": 3909,
+      "sha256": "c87b2115ebfa414b7a9ab36f36424ff6754ed32e6eed72bc487355c0f4770db6"
+    },
+    "source": {
+      "path": "paper/prl-source/figures/fig1.tex",
+      "bytes": 8352,
+      "sha256": "4ffbb99ed2b3dddf8a2ed045bbef420572b2f6f08ce6819b1060ae67c0a0dd4a"
+    },
+    "pdf": {
+      "path": "paper/prl-source/fig1.pdf",
+      "bytes": 74587,
+      "sha256": "6e1081789cfe33318666d13761d382c8324d19908fb95d686edb0587f6097ddf"
+    },
+    "reviewed_at_dpi": [
+      200,
+      96
+    ],
+    "result": "PASS: native vector three-panel figure with restored original panel-c scaling graph and adjacent inference inspected in detail and at single-column size; no clipping, overlap or missing glyphs. Shared 8pt typography retained.",
+    "graph_restoration": "Figure build evidence compares the complete c graph block to commit 4d3584a; byte-identical except the class-specific max_calS W label."
+  },
+  "supplement_comparison": {
+    "pdf_pages": [
+      7,
+      25
+    ],
+    "supplement_page_count": 19,
+    "text_command": "pdftotext -f 7 -l 25 -layout PDF -",
+    "extracted_text_byte_identical": true,
+    "extracted_text_sha256": "d3b20f46c19035440ad98b325799e82af9665c0914615a0161dfa8f3d2a19e89",
+    "raster_commands": [
+      [
+        "pdftoppm",
+        "-f",
+        "7",
+        "-l",
+        "25",
+        "-r",
+        "100",
+        "/Users/superposition/Documents/Codex/2026-10-15/https-github-com-eybmits-fresh-qubits/work/fresh-qubits-memory/paper/memory_limits_prl_2026-10-19-v9.pdf",
+        "/private/tmp/memory-v10-final-supp-pixels-maq21qgr/v9"
+      ],
+      [
+        "pdftoppm",
+        "-f",
+        "7",
+        "-l",
+        "25",
+        "-r",
+        "100",
+        "/Users/superposition/Documents/Codex/2026-10-15/https-github-com-eybmits-fresh-qubits/work/fresh-qubits-memory/paper/memory_limits_prl_2026-10-19-v10.pdf",
+        "/private/tmp/memory-v10-final-supp-pixels-maq21qgr/v10"
+      ]
+    ],
+    "raster_method": "Poppler binary PPM at 100dpi; complete raster bytes compared and raw RGB pixel hashes recorded per page.",
+    "all_pages_pixel_identical": true,
+    "pages": [
+      {
+        "pdf_page": 7,
+        "supplement_page": 1,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "1e50e6f5b131faad0ec2594d29fac8b7fdbd4f9236afb21f97f169b4402e90ac",
+        "pixels_identical": true
+      },
+      {
+        "pdf_page": 8,
+        "supplement_page": 2,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "6f54817483ea854ca92377059cf052335da809f076e7bf5674cb2c6d02d469b0",
+        "pixels_identical": true
+      },
+      {
+        "pdf_page": 9,
+        "supplement_page": 3,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "1cada4baac1120be313e528e9b20368307f094c0a6c54e1854a5417f5eee8047",
+        "pixels_identical": true
+      },
+      {
+        "pdf_page": 10,
+        "supplement_page": 4,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "dc23080e082ac573582d867195ef5ccc768d6d75f66b319af26e3a95f8da9e13",
+        "pixels_identical": true
+      },
+      {
+        "pdf_page": 11,
+        "supplement_page": 5,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "74a046cd25bef831ec460cdcc95acad12b580a176ae4d091eb82192a7da8d3f5",
+        "pixels_identical": true
+      },
+      {
+        "pdf_page": 12,
+        "supplement_page": 6,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "77d261774a203429dda8c237a9a27ac4e49eb0c6e17ca6db5b9e43dd3cdbdab7",
+        "pixels_identical": true
+      },
+      {
+        "pdf_page": 13,
+        "supplement_page": 7,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "11266f81a448d2975600f9c1dd16bdfd2e32973e8d662a48318c31386441cda2",
+        "pixels_identical": true
+      },
+      {
+        "pdf_page": 14,
+        "supplement_page": 8,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "1611cb56d764bd160a78cbbd2c7dbfd3e11e6aff617c2120f49abd700f18f7b8",
+        "pixels_identical": true
+      },
+      {
+        "pdf_page": 15,
+        "supplement_page": 9,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "fbda7ff3104aa0f283e01f0b35246c3c842e8ab5a1802764860fce955f0a7508",
+        "pixels_identical": true
+      },
+      {
+        "pdf_page": 16,
+        "supplement_page": 10,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "ce4776bf2d29eb4f6263d5e9291ebedebd7b6fa4c519276d47fb8928edc4a9f5",
+        "pixels_identical": true
+      },
+      {
+        "pdf_page": 17,
+        "supplement_page": 11,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "3058b0eb9941b9a2ddb3f702d5de3a532147750eab9529788976a57edc2f3cde",
+        "pixels_identical": true
+      },
+      {
+        "pdf_page": 18,
+        "supplement_page": 12,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "5f34335b42901c1f33020142521a41aee04a014d29eeaaf80b44798d4bd464aa",
+        "pixels_identical": true
+      },
+      {
+        "pdf_page": 19,
+        "supplement_page": 13,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "50a88422dcaf79e05d05162c685be2b193f71e35ab7188f7c8cf311c1e8f75fa",
+        "pixels_identical": true
+      },
+      {
+        "pdf_page": 20,
+        "supplement_page": 14,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "514aa96ca113ae648ff7b99aad21ce8c3dd15b050d0082b7c86ae96d86426c08",
+        "pixels_identical": true
+      },
+      {
+        "pdf_page": 21,
+        "supplement_page": 15,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "7fefa0f5a293f52b1def70a54dc179591a4ff8cc941796871d6d61c9a56a0dcc",
+        "pixels_identical": true
+      },
+      {
+        "pdf_page": 22,
+        "supplement_page": 16,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "881a8fc043c9b34f2571d454f8d3d770f1207266cc56682da67f27c23af9f3db",
+        "pixels_identical": true
+      },
+      {
+        "pdf_page": 23,
+        "supplement_page": 17,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "a4881a0abb2c5c44b40b479d30545b66d368e27131d1f1d26f77cfbd7c06ac05",
+        "pixels_identical": true
+      },
+      {
+        "pdf_page": 24,
+        "supplement_page": 18,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "75d9f58f3bee229887b8e698e1652b57e49d05bc3dc6e03256ea6f0435e12178",
+        "pixels_identical": true
+      },
+      {
+        "pdf_page": 25,
+        "supplement_page": 19,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "50b43470dd9ef132223912801eaedca72b4ebb952b626ca94bc824bb56ffbf8f",
+        "pixels_identical": true
+      }
+    ],
+    "previous_supplement_visual_evidence": "paper/versions/2026-10-19-prl-v9/verification/supplement-visual.json",
+    "conclusion": "All 19 supplemental pages are text- and render-identical to committed revision 9; the prior visual QA remains applicable.",
+    "temporary_rasters_removed": true
+  },
+  "duration_seconds": 0.665933,
+  "result": "PASS",
+  "issues": [],
+  "scope_limits": [
+    "This report covers final restored-graph Figure 1 and the 19-page Supplemental Material comparison only. The parent agent reviews the new Letter pages 1\u20136 separately.",
+    "No canonical source, PDFs or packages were edited during this evidence task.",
+    "Repository tests and scientific-preservation checks are recorded separately by the parent agent; no numerical campaign was rerun.",
+    "Pixel and text equality establish visual preservation, not independent correctness of scientific content."
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-19",
+  "parent_commit": "bf54d6694878ae9228434666ee27c6c0d4f26315",
+  "request": "request.json",
+  "baseline": "paper/versions/2026-10-19-prl-v9/source-final-prl-v9.zip",
+  "scope": "Figure 1 and its caption; rebuild current artifacts and retain approved correspondence"
+}
