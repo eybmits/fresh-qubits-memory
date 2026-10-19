@@ -1,45 +1,48 @@
 # Current upload files: PRL, arXiv, and local Zenodo draft
 
-Manuscript revision 7, 18 October 2026. PRL and arXiv packages use the same scientific
-content and the same three authors. Revision 7 has been uploaded to arXiv draft
-**8248308**, with successful compilation and saved metadata; the final **Submit**
-action was left open. PRL and Zenodo remain local preparations. Revision 7 shortens
-the shared affiliation to Quantum Applications and Research Laboratory (QAR-Lab),
-Ludwig-Maximilians-Universität München, retaining the existing address. Scientific
-content, figures, simulation code, datasets, and the AI disclosure remain unchanged
-from revision 6.
+Manuscript revision 8, 19 October 2026. These are **local preparation packages**;
+revision 8 has not been uploaded, submitted, or published. They use the same
+scientific content, three authors, ORCIDs, and shared QAR-Lab/LMU affiliation.
+The new prior-work discussion and scientific qualifications are documented in the
+[revision record](../../docs/manuscript-2026-10-19-prl-v8.md). Simulation code and
+supplied datasets are unchanged.
 
 ## Physical Review Letters
 
-The current PRL handoff uses the user's replacement cover letter (cover revision 2).
-The cover PDF is one page; referee suggestions are supplied separately.
-The manuscript remains revision 7 and the uploaded arXiv version is unchanged.
+The approved cover letter (cover revision 2, dated 18 October) and the approved
+100-word justification are retained **byte for byte**. The cover PDF is one page;
+referee suggestions are supplied separately.
 
 | File | Upload role |
 | --- | --- |
-| [Cover letter PDF](prl-2026-10-18-v7-cover-v2/cover_letter.pdf) / [TXT](prl-2026-10-18-v7-cover-v2/cover_letter.txt) | One-page replacement letter with three headings and three numbered results; referees supplied separately |
-| [Referee contacts and sources](prl-2026-10-18-v7-cover-v2/referees.txt) | Verified affiliations and professional emails for five suggestions and four alternates |
-| [PRL justification TXT, 100 words](prl-2026-10-18-v7-cover-v2/justification.txt) | Paste verbatim into the PRL significance/justification field |
-| [Letter PDF, 6 pages](prl-2026-10-18-v7-cover-v2/memory_limits_prl_letter.pdf) | Main manuscript, including figures and references |
-| [Supplement PDF, 18 pages](prl-2026-10-18-v7-cover-v2/2_supplemental_material/memory_limits_prl_SM.pdf) | “Upload supplemental files” |
-| [Code and data ZIP](prl-2026-10-18-v7-cover-v2/2_supplemental_material/memory_limits_prl_source.zip) | Accompanying Supplemental Material deposit |
-| [Supplement description](prl-2026-10-18-v7-cover-v2/2_supplemental_material/README.TXT) | Description and requirements for the Supplemental Material deposit |
+| [Cover letter PDF](prl-2026-10-19-v8/cover_letter.pdf) / [TXT](prl-2026-10-19-v8/cover_letter.txt) | Previously approved one-page letter, preserved with its original date |
+| [Referee contacts and sources](prl-2026-10-19-v8/referees.txt) | Five suggestions and four alternates, with professional contacts checked during the 18 October preparation |
+| [PRL justification TXT, 100 words](prl-2026-10-19-v8/justification.txt) | Paste verbatim into the separate PRL significance/justification field |
+| [Abstract TXT, 595 characters](prl-2026-10-19-v8/abstract.txt) | Current plain-text abstract for the form |
+| [Letter PDF, 6 pages](prl-2026-10-19-v8/memory_limits_prl_letter.pdf) | Main manuscript, including figures and references |
+| [Supplement PDF, 19 pages](prl-2026-10-19-v8/2_supplemental_material/memory_limits_prl_SM.pdf) | Supplemental Material |
+| [Code and data ZIP](prl-2026-10-19-v8/2_supplemental_material/memory_limits_prl_source.zip) | Accompanying Supplemental Material deposit |
+| [Supplement description](prl-2026-10-19-v8/2_supplemental_material/README.TXT) | Description and requirements for the Supplemental Material deposit |
 
 The Letter and supplement belong to one submission and are uploaded as separate
-PDFs. APS requires only PDFs for initial manuscript review; manuscript TeX
-sources are requested after acceptance. The code/data ZIP is the research
-material cited by the paper and accompanies the supplement.
+PDFs. Under the APS upload guidance checked on 18 October, PDFs suffice for
+initial manuscript review; manuscript TeX sources are requested after acceptance.
+The code/data ZIP is the research material cited by the paper and accompanies
+the supplement.
 
-The [complete PRL handoff ZIP](prl-2026-10-18-v7-cover-v2/prl-submission.zip) also retains
-manuscript sources for later production, author information, a draft cover
-letter and the justification. Unpack it and follow the [PRL upload guide](prl-2026-10-18-v7-cover-v2/README.md).
+The [complete PRL handoff ZIP](prl-2026-10-19-v8/prl-submission.zip) also retains
+manuscript sources for later production and author information. Unpack it and
+follow the [package upload guide](prl-2026-10-19-v8/README.md). The local APS-method
+length estimate is **3732 word equivalents**; this is not an editorial eligibility
+decision. See the [revision verification](../../docs/manuscript-2026-10-19-prl-v8.md)
+for the method and checks.
 
-The replacement cover letter uses three section headings, the three authors, and
-the shared QAR-Lab/LMU address. [Preparation notes](prl-2026-10-18-v7-cover-v2/cover_letter_notes.txt)
-record the supplied submission-history statements and the user's explicit
-all-author conflict declaration. No correspondence has been sent.
-The [cover revision record](../../docs/prl-cover-letter-2026-10-18-v2.md)
-documents the formatting and preservation checks.
+The retained cover letter uses three section headings, the three authors, and
+the shared QAR-Lab/LMU address. [Preparation notes](prl-2026-10-19-v8/cover_letter_notes.txt)
+record the supplied submission-history statements and the user's all-author
+conflict declaration. The [cover revision record](../../docs/prl-cover-letter-2026-10-18-v2.md)
+documents its original formatting and preservation checks. No correspondence has
+been sent by this update.
 
 Source: [APS web submission guidelines, Uploading Files](https://journals.aps.org/authors/web-submission-guidelines-physical-review#uploading-files), checked 18 October 2026.
 
@@ -47,25 +50,26 @@ Source: [APS web submission guidelines, Uploading Files](https://journals.aps.or
 
 | File | Purpose |
 | --- | --- |
-| [Combined PDF, 24 pages](../memory_limits_prl_2026-10-18-v7.pdf) | Preview of the Letter followed by the full supplement |
-| [arXiv source ZIP](arxiv-2026-10-18-v7/arxiv-source.zip) | Source archive uploaded to draft 8248308; one main file builds both parts together |
-| [arXiv instructions and metadata](arxiv-2026-10-18-v7/README.md) | Frozen pre-upload instructions and metadata |
-| [arXiv upload record and generated PDF](../submission-records/arxiv-2026-10-18-v7/README.md) | Observed draft status, saved metadata, and actual portal-generated document |
+| [Combined PDF, 25 pages](../memory_limits_prl_2026-10-19-v8.pdf) | Preview of the six-page Letter followed by the nineteen-page supplement |
+| [arXiv source ZIP](arxiv-2026-10-19-v8/arxiv-source.zip) | Current local archive; one main file builds both parts together |
+| [arXiv instructions and metadata](arxiv-2026-10-19-v8/README.md) | Current local package and historical portal-state distinction |
+| [Previous revision-7 upload record](../submission-records/arxiv-2026-10-18-v7/README.md) | Historical observation of draft 8248308 on 18 October and its portal-generated PDF |
 
 The main file is `memory_limits_prl.tex`. The ZIP includes all eleven figures,
 matching bibliography, and reproducibility code/data. The combined PDF is a
-preview outside the TeX source ZIP; it is not an extra compilation target.
+preview outside the TeX source ZIP, not an extra compilation target.
 
-The portal compiler reported **SUCCEEDED** and produced a 24-page PDF. Metadata
-was saved, and the user selected arXiv's non-exclusive distribution license. The
-final **Submit** action was left open: draft 8248308 has not been submitted or
-announced and is not a public arXiv identifier. The linked upload record is the
-current status record; the pre-upload packages and their original pending-status
-metadata remain unchanged. GitHub remains private as requested.
+Revision 8 has **not** replaced the source in the arXiv portal. The separate
+revision-7 draft **8248308** was last observed on **18 October 2026** with
+**SUCCEEDED** compilation, a 24-page PDF, and saved metadata. The user selected
+arXiv's non-exclusive distribution license; the final **Submit** action was left
+open. That historical record does not establish the portal's current status,
+and the draft number is not a public arXiv identifier. Historical packages and
+upload records remain unchanged. GitHub remains private as requested.
 
 ## Local Zenodo draft
 
-The [Zenodo handoff](zenodo-2026-10-18-v7/README.md) contains the same current
+The [Zenodo handoff](zenodo-2026-10-19-v8/README.md) contains the same current
 code/data source archive, draft metadata with the three authors and ORCIDs, and
 hashes. It has not been uploaded. The supplied CC BY 4.0/open-access proposal is
 preserved as input, not selected. License, access right, publication date, and

@@ -1,41 +1,37 @@
 The Fundamental Memory Ceiling of Noisy Quantum Reservoirs -- Physical Review Letters version, source files
-Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien, LMU Munich
-
-Repository edition: 18 October 2026, PRL revision 5. Approved three-author metadata,
-one shared address and the repository link are retained. The array package pin
-supports TeX Live 2025. Numerical text distinguishes sampled estimates and
-independent unitary ensembles across k; continuous depths are rounded up.
+Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien
+Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München
+Revision 8, October 19, 2026; 25 pages (6-page Letter and 19-page Supplemental Material).
+Project repository: https://github.com/eybmits/fresh-qubits-memory (currently private).
 
 Manuscript (REVTeX 4.2, prl option): one file with the Letter followed by the Supplemental Material
   pdflatex memory_limits_prl && bibtex memory_limits_prl && pdflatex memory_limits_prl && pdflatex memory_limits_prl
   memory_limits_prl.bbl is included for submission systems that do not run BibTeX.
   Fonts: Latin Modern (Type 1) with ToUnicode maps, so that the text layer of the PDF is searchable and copies
   correctly (ligatures, accented names).
-  The Letter ends with the reference list; the Supplemental Material starts on a new page (pages S1-S18,
+  The Letter ends with the reference list; the Supplemental Material starts on a new page (pages S1-S19,
   equations, figures, tables and lemmas numbered S1, S2, ...) and cites the reference list of the Letter.
   For submission, the Letter alone (the file up to \bibliography{refs}) is the manuscript, and the Supplemental
-  Material is uploaded as its own PDF (pages S1-S18 of the combined PDF). References cited only in the Supplemental
-  Material appear in the reference list of the Letter, through the note "which includes Refs. [35-38]" of the
+  Material is uploaded as its own PDF (pages S1-S19 of the combined PDF). References cited only in the Supplemental
+  Material appear in the reference list of the Letter, through the inclusive citation note in the
   Supplemental-Material reference. This archive (code and data) is the source archive named in the Data
   availability statement and in Sec. IX of the Supplemental Material; upload it with the Supplemental Material.
 
 Length of the Letter (APS length guide, journals.aps.org/authors/length-guide; limit 3750 words)
-  Local estimate using the method the guide recommends: the Letter is typeset with REVTeX after removing \maketitle
+  Counted with the method the guide recommends: the Letter is typeset with REVTeX after removing \maketitle
   (title, byline, abstract), the displayed equations, the acknowledgments, and the bibliography, and the words of
   the typeset text are counted with wordcount.tex from CTAN (hyphenated compounds and each part of a citation
   list count separately); equations and figures are added with the formulas of the guide.
-  Typeset text: body, captions, data-availability statement           2729 words
-  Displayed equations: 7 rows x 16 words                               112 words
+  Typeset text: body, captions, data-availability statement           2789 words
+  Displayed equations: 6 rows x 16 words                                96 words
   Fig. 1 (one-column, aspect 1.43): 150/1.43 + 20                      125 words
   Fig. 2 (two-column, aspect 2.88): 300/(0.5 x 2.88) + 40              249 words
   Fig. 3 (two-column, aspect 2.73)                                     259 words
   Fig. 4 (two-column, aspect 3.44)                                     214 words
-  Total                                                               3688 words
-  A simpler estimate (checks/wordcount.py: each inline formula, citation, and hyphenated compound counted as one
-  word) gives 3524 words. Abstract: 588 rendered characters (limit of the PRL instructions: 600 characters; not counted).
-  The checker fails on TeX errors and unresolved references; its counting copy suppresses REVTeX automatic
-  bibliography insertion. This is a local estimate, not an editorial eligibility determination.
-  Recount after every edit:  python3 checks/aps_wordcount.py memory_limits_prl.tex . <separate-work-directory>
+  Total                                                               3732 words
+  This is a local length estimate, not an APS editorial eligibility decision.
+  Abstract: 595 plain-Unicode characters (PRL style-guide limit: 600; not counted above).
+  Recount after every edit:  python3 checks/aps_wordcount.py memory_limits_prl.tex . /tmp/memory-limits-wordcount
 
 Figures (final PDFs in this folder; sources in figures/)
   Every figure is produced at its printed size (7.05 in or 3.40 in wide) and included without scaling, so all
@@ -94,5 +90,10 @@ Checks
   checks/aps_wordcount.py     length of the Letter with the method of the APS length guide (wordcount.tex)
   checks/wordcount.py         simpler length estimate from the LaTeX source
 
-Justification for the editors (latest user-approved wording)
-  How long can a noisy quantum system remember past inputs? We establish a universal memory ceiling under local Markovian depolarizing noise: with \(k\) qubits refreshed per step, the optimal memory depth scales as \(\exp[\Theta(k)]\) at fixed noise strength and accuracy. Our size-independent upper bound covers all admissible dynamics and input encodings. A measurement-free error-correction scheme achieves the same exponential scaling, establishing an optimal resource law. This is a limit on an entire class of quantum dynamics, not on one computing architecture. By identifying entropy removal as the resource governing memory, our result connects quantum information, nonequilibrium physics, and physical computing.
+Justification for the editors (preserved exactly from the approved previous version)
+How long can a noisy quantum system remember past inputs? We establish a universal memory ceiling under local Markovian depolarizing noise: with \(k\) qubits refreshed per step, the optimal memory depth scales as \(\exp[\Theta(k)]\) at fixed noise strength and accuracy. Our size-independent upper bound covers all admissible dynamics and input encodings. A measurement-free error-correction scheme achieves the same exponential scaling, establishing an optimal resource law. This is a limit on an entire class of quantum dynamics, not on one computing architecture. By identifying entropy removal as the resource governing memory, our result connects quantum information, nonequilibrium physics, and physical computing.
+
+The approved cover letter and 100-word justification are unchanged in this revision.
+The manuscript and supplementary source archive were updated; this archive does not submit
+or publish them. Numerical campaign data are preserved; current verification is bounded to
+repository/simulator tests and numerical checks of stated proof steps.

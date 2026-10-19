@@ -1,43 +1,48 @@
 # Manuscript versions and source
 
-## Current version: 18 October 2026, PRL revision 7
+## Current version: 19 October 2026, PRL revision 8
 
 **The Fundamental Memory Ceiling of Noisy Quantum Reservoirs**
 
-Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien share one combined affiliation: Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany. The shared address appears once in each of the Letter and Supplemental Material bylines. All three approved ORCID links and the campus.lmu.de contact address are retained in the [canonical author record](author_information.json).
+Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien share one affiliation: Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany. The address appears once in each of the Letter and Supplemental Material bylines. The three approved ORCID links and campus.lmu.de contact address are retained in the [canonical author record](author_information.json).
 
-- [Combined PDF](memory_limits_prl_2026-10-18-v7.pdf), [Letter](submission/prl-2026-10-18-v7-cover-v2/memory_limits_prl_letter.pdf), [Supplemental Material](submission/prl-2026-10-18-v7-cover-v2/2_supplemental_material/memory_limits_prl_SM.pdf)
+- [Combined PDF, 25 pages](memory_limits_prl_2026-10-19-v8.pdf), [Letter, 6 pages](submission/prl-2026-10-19-v8/memory_limits_prl_letter.pdf), [Supplemental Material, 19 pages](submission/prl-2026-10-19-v8/2_supplemental_material/memory_limits_prl_SM.pdf)
 - [Editable LaTeX](prl-source/memory_limits_prl.tex), [bibliography](prl-source/refs.bib), [build instructions](prl-source/README.txt)
-- [Received originals and receipt](versions/2026-10-18-prl-v5/receipt.json), [provenance](versions/2026-10-18-prl-v7/provenance.json), [final source snapshot](versions/2026-10-18-prl-v7/source-final-prl-v7.zip)
-- [Revision scope and verification](../docs/manuscript-2026-10-18-prl-v7.md)
-- [PRL handoff ZIP](submission/prl-2026-10-18-v7-cover-v2/prl-submission.zip) and [upload instructions](submission/prl-2026-10-18-v7-cover-v2/README.md)
-- [Prepared arXiv source ZIP](submission/arxiv-2026-10-18-v7/arxiv-source.zip)
-- [arXiv draft 8248308: upload record and generated PDF](submission-records/arxiv-2026-10-18-v7/README.md)
-- [Local Zenodo handoff](submission/zenodo-2026-10-18-v7/README.md)
+- [Received originals and receipt](versions/2026-10-19-prl-v8/receipt.json), [provenance](versions/2026-10-19-prl-v8/provenance.json), [final source snapshot](versions/2026-10-19-prl-v8/source-final-prl-v8.zip)
+- [Revision scope and verification](../docs/manuscript-2026-10-19-prl-v8.md)
+- [PRL handoff ZIP](submission/prl-2026-10-19-v8/prl-submission.zip) and [upload instructions](submission/prl-2026-10-19-v8/README.md)
+- [Prepared arXiv source ZIP](submission/arxiv-2026-10-19-v8/arxiv-source.zip)
+- [Local Zenodo handoff](submission/zenodo-2026-10-19-v8/README.md)
 - [Upload guide: separate PRL PDFs, combined arXiv version, and Zenodo draft](submission/README.md)
 
-This edition shortens the shared affiliation to Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München, with the existing postal address. The affiliation is synchronized across the manuscript, cover letter, and submission metadata. Scientific arguments, figures, simulation code, data, and the AI disclosure are unchanged from PRL revision 6. The five originals received for revision 5 remain preserved in its archive; revision 7 is a local revision and has no separate receipt. The three-author order, ORCIDs, and GitHub code link are retained. The code/supplement reference is [27].
+Revision 8 incorporates the new supplied source and figures and retains the requested additions on prior work and the limits of the result. The introduction and new Supplemental Material subsection distinguish classical repetition/majority achievability from the claimed fresh-qubit-rate converse, compare total-width and Clifford-gate limits, and retain the question of whether quantum encoding can improve the classical repetition exponent. The upper and lower bounds match in exponential scaling class, not in their exponents. Source checks of those comparisons do not establish general novelty or complete proof validity.
 
-The integration retains the numerical interpretation qualifications: sampled histories estimate the memory supremum, unitary ensembles are sampled separately across `k`, and continuous threshold crossings are rounded up for integer depths. The abstract and Figure 3 describe the optimal attainable ceiling rather than automatic memory improvement in every reservoir. The memory-capacity discussion explicitly assumes finite positive input variance; its readout-resolution range and initialization-washout statement are qualified in the source. See the [revision note](../docs/manuscript-2026-10-18-prl-v7.md) for exact scope and evidence.
+The integration retains the confirmed authorship, affiliation, disclosure wording, and GitHub code link. It also preserves the earlier precision statements: sampled histories estimate the memory supremum, unitary ensembles are sampled separately across `k`, continuous threshold crossings are rounded up for integer depths, and finite-precision memory-capacity claims state their variance assumptions. The result concerns the optimal ceiling; extra resets alone need not improve an individual reservoir. Details and the small source-scope corrections are in the [revision note](../docs/manuscript-2026-10-19-prl-v8.md).
 
-The [PRL justification TXT](submission/prl-2026-10-18-v7-cover-v2/justification.txt) retains the latest user-approved 100-word text byte for byte, including the supplied LaTeX delimiters. Its current frozen input is [justification-user.txt](versions/2026-10-18-prl-v5/justification-user.txt); the previous two paragraphs remain in the revision 4 archive.
+The [cover letter PDF](submission/prl-2026-10-19-v8/cover_letter.pdf) and [TXT](submission/prl-2026-10-19-v8/cover_letter.txt) preserve the approved cover revision 2, including its original 18 October date. Referee suggestions remain separate. The [PRL justification TXT](submission/prl-2026-10-19-v8/justification.txt) retains the approved 100-word text byte for byte, including the supplied LaTeX delimiters; its frozen input is [justification-user.txt](versions/2026-10-18-prl-v5/justification-user.txt). New supplied cover/justification templates remain archived as inputs rather than replacing those approved files.
 
-The canonical source combines the Letter and supplement using APS REVTeX 4.2 with `aps,prl,twocolumn`, four main figures, and seven supplemental figures. Current page counts, local length accounting, and build/package checks are recorded in the [revision note](../docs/manuscript-2026-10-18-prl-v7.md) and [PRL build verification](submission/prl-2026-10-18-v7-cover-v2/build_verification.json). The abstract is unchanged. Local length estimates do not constitute an APS editorial eligibility decision.
+The canonical source combines the Letter and supplement using APS REVTeX 4.2 with `aps,prl,twocolumn`, four main figures, and seven supplemental figures. The combined manuscript has 25 pages (6 Letter + 19 supplement), the plain-text abstract has 595 characters, and the local APS-method length estimate is 3732 word equivalents. Accounting and build/package checks are recorded in the [revision note](../docs/manuscript-2026-10-19-prl-v8.md) and [PRL build verification](submission/prl-2026-10-19-v8/build_verification.json). Local length estimates are not an APS editorial eligibility decision.
 
 Build the combined manuscript from the repository root (TeX Live with REVTeX 4.2, pdfLaTeX, BibTeX, and orcidlink):
 
 ```bash
 latexmk -cd -pdf -interaction=nonstopmode -halt-on-error \
-  -outdir=../../work/manuscript-build-2026-10-18-prl-v7 paper/prl-source/memory_limits_prl.tex
+  -outdir=../../work/manuscript-build-2026-10-19-prl-v8 paper/prl-source/memory_limits_prl.tex
 ```
 
-A matching BBL is included. Reference [27] identifies the supplement/source archive, the GitHub repository, and the references cited only in the supplement. No shell escape is needed to compile from the bundled figure PDFs. Rerunning simulations needs NumPy and SciPy, and the constants checker additionally needs mpmath. Rebuilding figures also needs matplotlib, LaTeX, TikZ, and the fonts listed in [prl-source/README.txt](prl-source/README.txt).
+A matching BBL is included. Reference [28] identifies the source archive, the GitHub repository, and references cited only in the supplement. No shell escape is needed to compile from bundled figure PDFs. Rerunning simulations needs NumPy and SciPy; the constants checker additionally needs mpmath. Rebuilding figures also needs matplotlib, LaTeX, TikZ, and the fonts listed in [prl-source/README.txt](prl-source/README.txt).
 
-All eight simulator Python files and all 13 supplied JSON datasets are unchanged from the preceding edition. The revision 3 repetition-curve replay remains historical evidence: full-state depth 316 and single-qubit depth 309, with full-state agreement exact and single-qubit agreement within `1.11e-16`. The large campaign was not rerun for revision 7. Finite numerical checks and sampled proof diagnostics do not certify the universal theorem.
+All eight simulator Python files and all 13 supplied JSON datasets are unchanged from the preceding edition. The revision-3 repetition-curve replay remains historical evidence: full-state depth 316 and single-qubit depth 309, with full-state agreement exact and single-qubit agreement within `1.11e-16`. The large campaign was not rerun for this update. Current verification is recorded separately; finite checks and sampled proof diagnostics do not certify the universal theorem.
 
-The user confirmed the disclosed model name Claude Opus 5.5 and clarified GPT's editorial-only role on 18 October 2026. The unchanged disclosure statements remain attributed to Markus Baumann; automated checks do not independently establish those human attestations.
+The AI disclosure retains the author's 18 October clarification that GPT assistance was limited to language and formatting. The statements about verification remain attributed to Markus Baumann; automated checks do not independently establish those attestations.
 
-The repository remains **private**, as explicitly requested. On 18 October 2026, revision 7 was uploaded to arXiv draft **8248308**, its metadata was saved, and the user selected arXiv's non-exclusive distribution license. The portal compiler reported **SUCCEEDED** and produced the 24-page document preserved with the [upload record](submission-records/arxiv-2026-10-18-v7/README.md). The final **Submit** action was left open; the draft has not been submitted or announced, and no public arXiv identifier is assigned. PRL and Zenodo packages remain local preparations. The local Zenodo draft leaves license, access, publication date, and DOI unset; its supplied CC BY 4.0/open-access proposal remains unselected. Pre-upload packages, their preparation-status metadata, and historical PRL/PRA administrative drafts remain preserved unchanged.
+Revision 8 is a **local preparation**, not an upload or submission. GitHub remains **private**. No new PRL, arXiv, or Zenodo portal action accompanies this update. The local Zenodo draft leaves license, access right, publication date, and DOI unset; the supplied CC BY 4.0/open-access proposal remains unselected. The earlier arXiv draft is described below as a historical observation.
+
+## Previous PRL revision 7: 18 October 2026
+
+The [24-page PDF](memory_limits_prl_2026-10-18-v7.pdf), [provenance](versions/2026-10-18-prl-v7/provenance.json), [source snapshot](versions/2026-10-18-prl-v7/source-final-prl-v7.zip), [PRL package with cover revision 2](submission/prl-2026-10-18-v7-cover-v2/README.md), [arXiv source ZIP](submission/arxiv-2026-10-18-v7/arxiv-source.zip), [Zenodo draft](submission/zenodo-2026-10-18-v7/README.md), and [revision record](../docs/manuscript-2026-10-18-prl-v7.md) remain preserved. Revision 7 shortened the shared affiliation to QAR-Lab and LMU while retaining the address. Scientific content and the AI disclosure were unchanged from revision 6.
+
+On 18 October 2026, revision 7 was last observed in arXiv draft **8248308** with saved metadata and a **SUCCEEDED** 24-page portal compilation. The user selected arXiv's non-exclusive distribution license; the final **Submit** action was left open. The [upload record and portal-generated PDF](submission-records/arxiv-2026-10-18-v7/README.md) preserve that historical state, which does not establish the portal's current status. The draft number is not a public arXiv identifier. Revision 8 has not replaced that uploaded source in the portal. Historical packages and administrative drafts remain unchanged.
 
 ## Previous PRL revision 6: 18 October 2026
 

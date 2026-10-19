@@ -31,8 +31,8 @@ from prepare_arxiv import (
 )
 
 
-EDITION = "2026-10-18-v7"
-PACKAGE_REVISION = EDITION + "-cover-v2"
+EDITION = "2026-10-19-v8"
+PACKAGE_REVISION = EDITION
 GENERATOR = "scripts/prepare_prl.py"
 DEFAULT_JUSTIFICATION = REPO / "paper/versions/2026-10-18-prl-v5/justification-user.txt"
 ADMIN = REPO / "paper/submission-admin/prl-2026-10-18"
@@ -46,6 +46,7 @@ OFFICIAL_SOURCES = {
     "prl_author_instructions": "https://journals.aps.org/prl/authors",
     "supplemental_material": "https://journals.aps.org/authors/supplemental-material-instructions",
     "length_guide": "https://journals.aps.org/authors/length-guide",
+    "style_guide": "https://res.cloudinary.com/apsphysics/image/upload/v1736779890/APS_Journals_Style_Guide_Authors_Nov2024_ua91lv.pdf",
 }
 
 
@@ -79,12 +80,16 @@ def portal_abstract(combined):
     if len(matches) != 1:
         raise ValueError("Expected exactly one manuscript abstract")
     abstract = " ".join(matches[0].split())
-    for before, after in ((r"$k$", "k"), (r"$\exp[\Theta(k)]$", "exp[Θ(k)]")):
+    for before, after in (
+        (r"$k$", "k"), (r"$T$", "T"),
+        (r"$\exp[\Theta(k)]$", "exp[Θ(k)]"),
+        (r"$\Theta(\log T)$", "Θ(log T)"),
+    ):
         abstract = abstract.replace(before, after)
     if any(character in abstract for character in "\\${}%~"):
         raise ValueError("Unconverted abstract TeX; review the plain-text conversion")
     if not abstract or len(abstract) > 600:
-        raise ValueError(f"Portal abstract has {len(abstract)} characters; review the 600-character limit")
+        raise ValueError(f"PRL abstract has {len(abstract)} characters; review the 600-character style-guide limit without automatically shortening the abstract")
     return (abstract + "\n").encode("utf-8")
 
 
@@ -237,15 +242,16 @@ def administrative_files(author_names):
 
 
 def readme(title, author_names):
-    return f"""# PRL submission preparation — {EDITION}, cover letter revision 2
+    return f"""# PRL submission preparation — {EDITION}
 
 {title}
 {', '.join(author_names)}
 
-This is a local, unsubmitted PRL preparation package. This cover-letter update
-has not been uploaded or sent. The manuscript remains revision 7; this package
-replaces only its administrative cover-letter material. The earlier PRL package
-and the separate arXiv draft upload remain preserved.
+This is a local, unsubmitted PRL preparation package for manuscript revision 8.
+The previously approved cover letter (revision 2, dated 18 October) and the
+100-word justification are preserved byte-for-byte. Earlier packages and the
+separate revision-7 arXiv draft upload remain preserved; this new revision has
+not been uploaded or sent.
 The outer `prl-submission.zip` is a convenient handoff; unpack it first. It is
 not a single manuscript file to upload indiscriminately to the APS portal.
 
@@ -264,9 +270,10 @@ not a single manuscript file to upload indiscriminately to the APS portal.
    user's confirmed all-author conflict statement. The cover follows the user's
    latest replacement text of 18 October and has no placeholders or preparation notes.
    `abstract.txt` contains the manuscript abstract as plain Unicode text, with
-   its character count checked against the portal's 600-character limit.
-   `justification.txt` contains the exact text supplied by the user for this
-   revision, with no heading; it is ready to paste into the justification field.
+   the full wording preserved and its character count checked against the
+   PRL style guide's 600-character limit. No abstract shortening is performed.
+   `justification.txt` retains the user's previously approved 100-word text,
+   with no heading; it is ready to paste into the justification field.
    Submission history and exclusivity reproduce the user's declarations;
    coauthor approval and conflict clearance are not independently certified.
 4. Enter the confirmed author order, contact address, ORCIDs and one shared
@@ -319,6 +326,10 @@ Official APS guidance checked 18 October 2026:
 - PRL author instructions: {OFFICIAL_SOURCES['prl_author_instructions']}
 - Supplemental Material: {OFFICIAL_SOURCES['supplemental_material']}
 - Length guide: {OFFICIAL_SOURCES['length_guide']}
+
+The [APS style guide, Abstract section]({OFFICIAL_SOURCES['style_guide']})
+was checked again on 19 October 2026 and states the 600-character PRL limit.
+The live APS portal has not been rechecked for this revision.
 
 These files do not create a DOI, select a publication license, change repository
 visibility, accept an agreement, or submit the manuscript.
@@ -406,6 +417,8 @@ def build(combined_pdf, output, input_package, justification_file=DEFAULT_JUSTIF
         "combined_pages": len(combined.pages),
         "portal_abstract_characters": len(abstract.decode("utf-8").rstrip("\n")),
         "portal_abstract_max_characters": 600,
+        "abstract_character_limit_source": OFFICIAL_SOURCES["style_guide"],
+        "abstract_wording_preserved": True,
         "letter_text_matches_combined": True,
         "letter_combined_page_range": [1, EXPECTED_PAGES[0]],
         "supplemental_text_matches_combined": True,
@@ -447,10 +460,10 @@ def build(combined_pdf, output, input_package, justification_file=DEFAULT_JUSTIF
         "package_revision": PACKAGE_REVISION,
         "administrative_revision": {
             "name": "cover-v2",
-            "scope": "User-supplied replacement cover letter; referee suggestions supplied separately.",
+            "scope": "Previously approved cover letter dated 18 October 2026 retained byte-for-byte; referee suggestions supplied separately.",
             "cover_letter_pages": len(PdfReader(BytesIO(files["cover_letter.pdf"])).pages),
             "referees_appended_to_cover": False,
-            "manuscript_edition_unchanged": True,
+            "cover_material_preserved_byte_for_byte": True,
         },
         "status": "PRL package prepared locally; not uploaded or submitted; final author review pending.",
         "input_package": {"name": input_package.name, "sha256": digest(input_package.read_bytes())},
@@ -483,11 +496,11 @@ def build(combined_pdf, output, input_package, justification_file=DEFAULT_JUSTIF
             "Split the SM from the supplied fresh combined PDF and set title, authors and S page labels.",
             "Retained the three confirmed authors, their ORCIDs, and one shared affiliation.",
             "Packed every selected canonical reproduction source with deterministic ZIP metadata.",
-            "Replaced the archived cover-letter template with the user's latest supplied text, retaining the canonical three-author affiliation header.",
-            "Added a standalone rendered cover letter; source-verified professional contacts for five suggested referees and four alternates remain in separate files.",
+            "Retained the previously approved cover letter and its original date byte-for-byte; the newly supplied template remains in the input provenance.",
+            "Retained the standalone rendered cover letter and separate source-verified referee contacts without rerendering or editing them.",
             "Retained the user's submission-history and exclusivity declarations and explicit all-author competing-interest/referee-conflict confirmation.",
             "Used the user's exact replacement justification without a heading; retained the original ZIP text in input provenance.",
-            "Prepared plain Unicode abstract text with a checked 600-character maximum.",
+            "Converted the complete new abstract to plain Unicode without shortening it and checked the PRL style guide's 600-character maximum.",
             "Replaced stale submission notes with the current README.",
         ],
     }
@@ -509,7 +522,7 @@ def main():
     parser.add_argument("--output-dir", type=Path,
                         default=REPO / ("paper/submission/prl-" + PACKAGE_REVISION))
     parser.add_argument("--input-package", type=Path,
-                        default=REPO / "paper/versions/2026-10-18-prl-v5/submission-original.zip")
+                        default=REPO / "paper/versions/2026-10-19-prl-v8/submission-original.zip")
     parser.add_argument("--justification-file", type=Path, default=DEFAULT_JUSTIFICATION,
                         help="User-approved plain UTF-8 text copied byte-for-byte to justification.txt")
     args = parser.parse_args()

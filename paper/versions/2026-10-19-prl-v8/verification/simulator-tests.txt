@@ -1,0 +1,25 @@
+{
+  "command": [
+    "python3",
+    "/Users/superposition/Documents/Codex/2026-10-15/https-github-com-eybmits-fresh-qubits/work/fresh-qubits-memory/paper/prl-source/sim/test_sim.py"
+  ],
+  "cwd": "isolated temporary directory",
+  "started_utc": "2026-10-19T08:24:56.227440+00:00",
+  "duration_seconds": 1.293756,
+  "returncode": 0,
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONPATH": "/Users/superposition/Documents/Codex/2026-10-15/https-github-com-eybmits-fresh-qubits/work/fresh-qubits-memory/src",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "scope": "Bounded supplied numerical checks; no broad campaign or proof certification."
+}
+
+STDOUT
+linearity ok; trace preserved: 1.0000000000000004
+depolarize single qubit: [0.95 0.05] expected [0.95, 0.05]
+r=1: ['l=0 D=0.90000 Zgap/2=0.90000 q*lam^l=0.90000', 'l=1 D=0.81000 Zgap/2=0.81000 q*lam^l=0.81000', 'l=2 D=0.72900 Zgap/2=0.72900 q*lam^l=0.72900', 'l=3 D=0.65610 Zgap/2=0.65610 q*lam^l=0.65610']
+r=3: ['l=0 D=0.98550 Zgap/2=0.90000 q*lam^l=0.90000', 'l=1 D=0.98165 Zgap/2=0.88695 q*lam^l=0.88695', 'l=2 D=0.96742 Zgap/2=0.87409 q*lam^l=0.87409', 'l=3 D=0.95339 Zgap/2=0.86141 q*lam^l=0.86141']
+
+STDERR

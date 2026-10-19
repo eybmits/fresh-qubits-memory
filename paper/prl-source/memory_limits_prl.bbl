@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{38}%
+\begin{thebibliography}{40}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -351,18 +351,17 @@
   }\href {https://doi.org/10.1038/s41567-026-03245-z} {\bibfield  {journal}
   {\bibinfo  {journal} {Nat. Phys.}\ }\textbf {\bibinfo {volume} {22}},\
   \bibinfo {pages} {751} (\bibinfo {year} {2026})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Heu{\ss}en}\ \emph {et~al.}(2024)\citenamefont
-  {Heu{\ss}en}, \citenamefont {Locher},\ and\ \citenamefont
-  {M\"uller}}]{Heussen2024}%
+\bibitem [{\citenamefont {von Neumann}(1956)}]{vonNeumann1956}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Heu{\ss}en}}, \bibinfo {author} {\bibfnamefont {D.~F.}\ \bibnamefont
-  {Locher}},\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {M\"uller}},\ }\bibfield  {title} {\bibinfo {title} {Measurement-free
-  fault-tolerant quantum error correction in near-term devices},\ }\href
-  {https://doi.org/10.1103/PRXQuantum.5.010333} {\bibfield  {journal} {\bibinfo
-   {journal} {PRX Quantum}\ }\textbf {\bibinfo {volume} {5}},\ \bibinfo {pages}
-  {010333} (\bibinfo {year} {2024})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {von
+  Neumann}},\ }\bibfield  {title} {\bibinfo {title} {Probabilistic logics and
+  the synthesis of reliable organisms from unreliable components},\ }in\ \href
+  {https://doi.org/10.1515/9781400882618-003} {\emph {\bibinfo {booktitle}
+  {Automata Studies}}},\ \bibinfo {editor} {edited by\ \bibinfo {editor}
+  {\bibfnamefont {C.~E.}\ \bibnamefont {Shannon}}\ and\ \bibinfo {editor}
+  {\bibfnamefont {J.}~\bibnamefont {McCarthy}}}\ (\bibinfo  {publisher}
+  {Princeton University Press},\ \bibinfo {address} {Princeton},\ \bibinfo
+  {year} {1956})\ pp.\ \bibinfo {pages} {43--98}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Fawzi}\ \emph {et~al.}(2022)\citenamefont {Fawzi},
   \citenamefont {M\"uller-Hermes},\ and\ \citenamefont {Shayeghi}}]{Fawzi2022}%
   \BibitemOpen
@@ -377,15 +376,68 @@
   (LIPIcs)}, Vol.\ \bibinfo {volume} {215}\ (\bibinfo  {publisher} {Schloss
   Dagstuhl--Leibniz-Zentrum f\"ur Informatik},\ \bibinfo {year} {2022})\ pp.\
   \bibinfo {pages} {68:1--68:20}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Nelson}\ \emph {et~al.}(2026)\citenamefont {Nelson},
+  \citenamefont {Rajakumar},\ and\ \citenamefont {Gullans}}]{Nelson2026}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Nelson}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Rajakumar}},\
+  and\ \bibinfo {author} {\bibfnamefont {M.~J.}\ \bibnamefont {Gullans}},\
+  }\bibfield  {title} {\bibinfo {title} {Non-{C}lifford gates are required for
+  long-term memory},\ }in\ \href {https://doi.org/10.4230/LIPIcs.CCC.2026.38}
+  {\emph {\bibinfo {booktitle} {41st Computational Complexity Conference (CCC
+  2026)}}},\ \bibinfo {series} {Leibniz International Proceedings in
+  Informatics (LIPIcs)}, Vol.\ \bibinfo {volume} {383}\ (\bibinfo  {publisher}
+  {Schloss Dagstuhl--Leibniz-Zentrum f\"ur Informatik},\ \bibinfo {year}
+  {2026})\ pp.\ \bibinfo {pages} {38:1--38:13}\BibitemShut {NoStop}%
 \bibitem [{SM()}]{SM}%
   \BibitemOpen
   \href@noop {} {}\bibinfo {note} {See the Supplemental Material accompanying
   this manuscript for the complete proofs, the exact analysis of the
   error-correcting reservoir, the entropy budget beyond depolarizing noise, the
-  details of the simulations, and the Python code that reproduces all numerical
-  values and data figures, which includes
-  Refs.~\cite{vonNeumann1956,Nelson2026,Xiong2025,Dao2026}. Code repository:
+  details of the simulations, the relation to earlier limits on noisy
+  computation, and the Python code that reproduces all numerical values and
+  data figures, which includes Refs.~\cite{Xiong2025,Dao2026}. Code repository:
   \url{https://github.com/eybmits/fresh-qubits-memory}.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Takaki}\ \emph {et~al.}(2021)\citenamefont {Takaki},
+  \citenamefont {Mitarai}, \citenamefont {Negoro}, \citenamefont {Fujii},\ and\
+  \citenamefont {Kitagawa}}]{Takaki2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Takaki}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Mitarai}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Negoro}}, \bibinfo
+  {author} {\bibfnamefont {K.}~\bibnamefont {Fujii}},\ and\ \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Kitagawa}},\ }\bibfield  {title} {\bibinfo
+  {title} {Learning temporal data with a variational quantum recurrent neural
+  network},\ }\href {https://doi.org/10.1103/PhysRevA.103.052414} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. A}\ }\textbf {\bibinfo {volume}
+  {103}},\ \bibinfo {pages} {052414} (\bibinfo {year} {2021})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Cattaneo}\ \emph {et~al.}(2021)\citenamefont
+  {Cattaneo}, \citenamefont {De~Chiara}, \citenamefont {Maniscalco},
+  \citenamefont {Zambrini},\ and\ \citenamefont {Giorgi}}]{Cattaneo2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Cattaneo}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {De~Chiara}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Maniscalco}}, \bibinfo
+  {author} {\bibfnamefont {R.}~\bibnamefont {Zambrini}},\ and\ \bibinfo
+  {author} {\bibfnamefont {G.~L.}\ \bibnamefont {Giorgi}},\ }\bibfield  {title}
+  {\bibinfo {title} {Collision models can efficiently simulate any multipartite
+  {M}arkovian quantum dynamics},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.126.130403} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {126}},\
+  \bibinfo {pages} {130403} (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Heu{\ss}en}\ \emph {et~al.}(2024)\citenamefont
+  {Heu{\ss}en}, \citenamefont {Locher},\ and\ \citenamefont
+  {M\"uller}}]{Heussen2024}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Heu{\ss}en}}, \bibinfo {author} {\bibfnamefont {D.~F.}\ \bibnamefont
+  {Locher}},\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {M\"uller}},\ }\bibfield  {title} {\bibinfo {title} {Measurement-free
+  fault-tolerant quantum error correction in near-term devices},\ }\href
+  {https://doi.org/10.1103/PRXQuantum.5.010333} {\bibfield  {journal} {\bibinfo
+   {journal} {PRX Quantum}\ }\textbf {\bibinfo {volume} {5}},\ \bibinfo {pages}
+  {010333} (\bibinfo {year} {2024})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Jaeger}(2002)}]{Jaeger2002}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
@@ -464,30 +516,6 @@
   computing}} (\bibinfo {year} {2026}),\ \Eprint
   {https://arxiv.org/abs/2609.23429} {arXiv:2609.23429 [quant-ph]} \BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {von Neumann}(1956)}]{vonNeumann1956}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {von
-  Neumann}},\ }\bibfield  {title} {\bibinfo {title} {Probabilistic logics and
-  the synthesis of reliable organisms from unreliable components},\ }in\ \href
-  {https://doi.org/10.1515/9781400882618-003} {\emph {\bibinfo {booktitle}
-  {Automata Studies}}},\ \bibinfo {editor} {edited by\ \bibinfo {editor}
-  {\bibfnamefont {C.~E.}\ \bibnamefont {Shannon}}\ and\ \bibinfo {editor}
-  {\bibfnamefont {J.}~\bibnamefont {McCarthy}}}\ (\bibinfo  {publisher}
-  {Princeton University Press},\ \bibinfo {address} {Princeton},\ \bibinfo
-  {year} {1956})\ pp.\ \bibinfo {pages} {43--98}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Nelson}\ \emph {et~al.}(2026)\citenamefont {Nelson},
-  \citenamefont {Rajakumar},\ and\ \citenamefont {Gullans}}]{Nelson2026}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Nelson}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Rajakumar}},\
-  and\ \bibinfo {author} {\bibfnamefont {M.~J.}\ \bibnamefont {Gullans}},\
-  }\bibfield  {title} {\bibinfo {title} {Non-{C}lifford gates are required for
-  long-term memory},\ }in\ \href {https://doi.org/10.4230/LIPIcs.CCC.2026.38}
-  {\emph {\bibinfo {booktitle} {41st Computational Complexity Conference (CCC
-  2026)}}},\ \bibinfo {series} {Leibniz International Proceedings in
-  Informatics (LIPIcs)}, Vol.\ \bibinfo {volume} {383}\ (\bibinfo  {publisher}
-  {Schloss Dagstuhl--Leibniz-Zentrum f\"ur Informatik},\ \bibinfo {year}
-  {2026})\ pp.\ \bibinfo {pages} {38:1--38:13}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Xiong}\ \emph {et~al.}(2025)\citenamefont {Xiong},
   \citenamefont {Facelli}, \citenamefont {Sahebi}, \citenamefont {Agnel},
   \citenamefont {Chotibut}, \citenamefont {Thanasilp},\ and\ \citenamefont

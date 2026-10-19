@@ -1,0 +1,334 @@
+{
+  "command": [
+    "python3",
+    "-c",
+    "import sys, runpy; sys.path.append(sys.argv[1]); runpy.run_path(sys.argv[2], run_name=\"__main__\")",
+    "/Users/superposition/Documents/Codex/2026-10-15/https-github-com-eybmits-fresh-qubits/work-archives/fresh-qubits-memory-2026-10-16-work/supplement-env/lib/python3.14/site-packages",
+    "/Users/superposition/Documents/Codex/2026-10-15/https-github-com-eybmits-fresh-qubits/work/fresh-qubits-memory/paper/prl-source/checks/verify_constants.py"
+  ],
+  "cwd": "isolated temporary directory",
+  "started_utc": "2026-10-19T08:25:39.728410+00:00",
+  "duration_seconds": 2.425938,
+  "returncode": 0,
+  "dependency_fallback": "/Users/superposition/Documents/Codex/2026-10-15/https-github-com-eybmits-fresh-qubits/work-archives/fresh-qubits-memory-2026-10-16-work/supplement-env/lib/python3.14/site-packages",
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONPATH": "/Users/superposition/Documents/Codex/2026-10-15/https-github-com-eybmits-fresh-qubits/work/fresh-qubits-memory/src",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "scope": "Finite-grid and algebraic constant diagnostics; not a proof of the universal theorem."
+}
+
+STDOUT
+max |direct - closed form| (new): 1.9644485432749806e-31
+max |direct - closed form| (old): 2.033782021272921e-31
+min (1-delta) - 2^{-bartheta}  (must be >= 0): 0.00017326716323057078
+max (a+1) delta  (must be <= 1): 0.499926701248013
+min k/(1-q)^2 - log2 delta^-1 for k>=4 (>=0): 2.9142136046675757
+min (k+1)/(1-q)^2 - log2 delta^-1 for k>=1 (>=0): 0.2859937094376161
+q=0.74: k=3 simple k/(1-q)^2 margin = -0.061 | k=0 (k+1) margin = -0.438
+q=0.8: k=3 simple k/(1-q)^2 margin = -0.667 | k=0 (k+1) margin = 4.000
+q=0.9: k=3 simple k/(1-q)^2 margin = -3.211 | k=0 (k+1) margin = 54.000
+q=0.99: k=3 simple k/(1-q)^2 margin = -48.246 | k=0 (k+1) margin = 9504.000
+max (1+q)/(1-q) 2^{-5q/(1-q)} (<=1): 0.9999985342617057 | min bartheta - 2^{-5q/(1-q)} (>=0): 1.0000005000398168e-06 | min 1-2^{-bartheta} - bartheta/2 (>=0): 3.06810132855162e-13
+q=0.9: theta=0.8950 bartheta=0.1050 a=18.0 beta=85.737 (1+4q)/(1-q)=46.0 log2P*/b=4.2632
+  k=2: log2 delta^-1 new=217.5 old=388.9 simple=200
+  k=4: log2 delta^-1 new=388.9 old=560.4 simple=400
+  k=5: log2 delta^-1 new=474.7 old=646.2 simple=500
+  k=10: log2 delta^-1 new=903.4 old=1074.8 simple=1000
+  k=17: log2 delta^-1 new=1503.5 old=1675.0 simple=1700
+
+STDERR
+
+INDEPENDENT EXACT RATE CROSS-CHECK
+{
+  "method": "Exact Fraction arithmetic for the proof-factor logarithm 1/(1-q)+2a+ak/2+a log2(P*) versus (1+4q)/(1-q)+beta_q k at 42 rational parameter pairs. Main and SM TeX rate expressions were checked against these factors.",
+  "q_samples": [
+    "1/10000",
+    "1/10",
+    "1/2",
+    "9/10",
+    "99/100",
+    "999/1000"
+  ],
+  "k_samples": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    17
+  ],
+  "exact_checks": [
+    {
+      "q": "1/10000",
+      "k": 0,
+      "log2_delta_inverse": "10004/9999",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "1/10000",
+      "k": 1,
+      "log2_delta_inverse": "1000499989997/999899990001",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "1/10000",
+      "k": 2,
+      "log2_delta_inverse": "1000599989998/999899990001",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "1/10000",
+      "k": 3,
+      "log2_delta_inverse": "333566663333/333299996667",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "1/10000",
+      "k": 4,
+      "log2_delta_inverse": "1000799990000/999899990001",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "1/10000",
+      "k": 5,
+      "log2_delta_inverse": "1000899990001/999899990001",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "1/10000",
+      "k": 17,
+      "log2_delta_inverse": "1002099990013/999899990001",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "1/10",
+      "k": 0,
+      "log2_delta_inverse": "14/9",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "1/10",
+      "k": 1,
+      "log2_delta_inverse": "1487/891",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "1/10",
+      "k": 2,
+      "log2_delta_inverse": "1588/891",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "1/10",
+      "k": 3,
+      "log2_delta_inverse": "563/297",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "1/10",
+      "k": 4,
+      "log2_delta_inverse": "1790/891",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "1/10",
+      "k": 5,
+      "log2_delta_inverse": "1891/891",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "1/10",
+      "k": 17,
+      "log2_delta_inverse": "3103/891",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "1/2",
+      "k": 0,
+      "log2_delta_inverse": "6",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "1/2",
+      "k": 1,
+      "log2_delta_inverse": "23/3",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "1/2",
+      "k": 2,
+      "log2_delta_inverse": "28/3",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "1/2",
+      "k": 3,
+      "log2_delta_inverse": "11",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "1/2",
+      "k": 4,
+      "log2_delta_inverse": "38/3",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "1/2",
+      "k": 5,
+      "log2_delta_inverse": "43/3",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "1/2",
+      "k": 17,
+      "log2_delta_inverse": "103/3",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "9/10",
+      "k": 0,
+      "log2_delta_inverse": "46",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "9/10",
+      "k": 1,
+      "log2_delta_inverse": "2503/19",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "9/10",
+      "k": 2,
+      "log2_delta_inverse": "4132/19",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "9/10",
+      "k": 3,
+      "log2_delta_inverse": "5761/19",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "9/10",
+      "k": 4,
+      "log2_delta_inverse": "7390/19",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "9/10",
+      "k": 5,
+      "log2_delta_inverse": "9019/19",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "9/10",
+      "k": 17,
+      "log2_delta_inverse": "28567/19",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "99/100",
+      "k": 0,
+      "log2_delta_inverse": "496",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "99/100",
+      "k": 1,
+      "log2_delta_inverse": "2059003/199",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "99/100",
+      "k": 2,
+      "log2_delta_inverse": "4019302/199",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "99/100",
+      "k": 3,
+      "log2_delta_inverse": "5979601/199",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "99/100",
+      "k": 4,
+      "log2_delta_inverse": "7939900/199",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "99/100",
+      "k": 5,
+      "log2_delta_inverse": "9900199/199",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "99/100",
+      "k": 17,
+      "log2_delta_inverse": "33423787/199",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "999/1000",
+      "k": 0,
+      "log2_delta_inverse": "4996",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "999/1000",
+      "k": 1,
+      "log2_delta_inverse": "2005990003/1999",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "999/1000",
+      "k": 2,
+      "log2_delta_inverse": "4001993002/1999",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "999/1000",
+      "k": 3,
+      "log2_delta_inverse": "5997996001/1999",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "999/1000",
+      "k": 4,
+      "log2_delta_inverse": "7993999000/1999",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "999/1000",
+      "k": 5,
+      "log2_delta_inverse": "9990001999/1999",
+      "direct_equals_closed_exactly": true
+    },
+    {
+      "q": "999/1000",
+      "k": 17,
+      "log2_delta_inverse": "33942037987/1999",
+      "direct_equals_closed_exactly": true
+    }
+  ],
+  "main_equation": "W(\\varepsilon)\\le\\Bigl\\lceil\\delta^{-1}\\ln\\frac1\\varepsilon\\Bigr\\rceil,\\qquad\\delta^{-1}=2^{(1+4q)/(1-q)}\\,2^{\\beta_qk},\n\\label{eq:upper}",
+  "supplement_equation": "\\delta^{-1}=2^{(1+4q)/(1-q)}\\cdot2^{\\beta_qb},\\qquad\\beta_q=\\frac{q(1+q^2)}{(1-q)(1-q^2)} .\n\\label{eq:S-rate}",
+  "q_0_9_k_5_comparison": {
+    "q": "0.9",
+    "k": 5,
+    "epsilon": "0.01",
+    "beta_exact": "1629/19",
+    "beta_decimal": "85.7368421052631578947368421052631578947368421052631578947368",
+    "constant_log2_factor_exact": "46",
+    "log2_delta_inverse_exact": "9019/19",
+    "log2_delta_inverse_decimal": "474.684210526315789473684210526315789473684210526315789473684",
+    "upper_bound_exceeds_2_power_470": true,
+    "ceil_changes_no_reported_digits": true,
+    "log2_unceiled_upper_bound": "476.887464999015511200575891575902716515099313812871342592890"
+  },
+  "scope": "Finite exact rational cross-checks and direct comparison of displayed rate expressions, not independent certification of the universal contraction theorem."
+}

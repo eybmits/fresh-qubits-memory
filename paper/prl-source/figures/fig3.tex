@@ -112,14 +112,14 @@
 % region names above the top lane
 \node[anchor=base east,inner sep=0pt,text=cRedDark] at ({\wTwo-0.14},{\yB+\hT+0.17}) {\textbf{out of reach, for any $\bm n$}};
 \node[anchor=base west,inner sep=0pt,text=cBlueDark] at ({\wTwo+0.14},{\yB+\hT+0.17}) {\textbf{within reach}};
-% same limit for B and A
+% same bound for B and A
 \draw[cRed,line width=0.8pt,dash pattern=on 2.2pt off 1.6pt] (\wTwo,{\yB-\hT-0.07}) -- (\wTwo,{\yA+\hT+0.07});
-\node[anchor=west,inner sep=0pt,text=cRedDark] at ({\wTwo+0.12},{(\yA+\yB)/2}) {same limit};
+\node[anchor=west,inner sep=0pt,text=cRedDark] at ({\wTwo+0.12},{(\yA+\yB)/2}) {same bound};
 % two more input qubits move the wall from A to C
 \draw[arr,cPurple,line width=1.0pt] (\wTwo,{\yA-\hT-0.09})
   .. controls (\wTwo,{\yA-\hT-0.62}) and (\wFour,{\yC+\hT+0.62}) .. (\wFour,{\yC+\hT+0.10});
 \node[anchor=west,align=left,inner sep=0pt,text=cPurpleDark] at ({\wTwo+0.26},{(\yA+\yC)/2+0.02})
-  {$+2$ input qubits:\\higher limit};
+  {$+2$ input qubits:\\higher bound};
 % ------------------------------------------------------------------ time axis
 \def\yX{1.27}
 \draw[line width=0.8pt,cInk] (\xL,\yX) -- (\xE,\yX);

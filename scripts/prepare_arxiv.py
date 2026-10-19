@@ -15,10 +15,10 @@ import zipfile
 
 REPO = Path(__file__).resolve().parents[1]
 MAIN = "memory_limits_prl.tex"
-EDITION = "2026-10-18-prl-v7"
-EDITION_DATE = "2026-10-18"
-EXPECTED_COMBINED_PAGES = 24
-ZIP_DATE = (2026, 10, 18, 0, 0, 0)
+EDITION = "2026-10-19-prl-v8"
+EDITION_DATE = "2026-10-19"
+EXPECTED_COMBINED_PAGES = 25
+ZIP_DATE = (2026, 10, 19, 0, 0, 0)
 FINAL_FIGURES = [f"fig{i}.pdf" for i in range(1, 5)] + [
     f"figS{i}.pdf" for i in range(1, 8)
 ]
@@ -276,17 +276,20 @@ def build(source, output, author_path):
         "abstract": abstract,
         "abstract_characters": len(abstract),
         "primary_category": "quant-ph",
-        "category_status": "recommended_from_manuscript_scope_not_selected_in_portal",
+        "category_status": "Retained from the user's prior revision-7 draft; not entered or rechecked for this revision.",
         "cross_lists": [],
         "comments": f"{EXPECTED_COMBINED_PAGES} pages, 11 figures, including Supplemental Material. Reproducibility code and data included.",
         "comments_page_count_status": f"{EXPECTED_COMBINED_PAGES} pages expected; final local build confirmation is recorded in verification.json; inspect the arXiv preview",
         "journal_reference": None,
         "doi": None,
         "report_number": None,
-        "license": None,
-        "license_status": "pending_user_choice",
-        "account_endorsement_status": "not_checked_in_portal",
-        "submission_terms_accepted": False,
+        "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+        "license_status": "Retains the user's selection for draft 8248308 on 18 October 2026; this revision has not been uploaded or rechecked in the portal.",
+        "account_endorsement_status": "Prior revision-7 draft reached preview; current portal state has not been checked.",
+        "submission_terms_accepted": None,
+        "submission_terms_scope": "The user accepted the agreement for the prior draft; no portal action was performed for this revision.",
+        "prior_portal_record": "paper/submission-records/arxiv-2026-10-18-v7/upload-verification.json",
+        "prior_portal_draft_id": "8248308",
         "compiler": "pdflatex",
         "texlive_version": 2025,
         "main_file": MAIN,
@@ -326,10 +329,13 @@ def build(source, output, author_path):
 
 
 def instructions(figure_tex_count):
-    return f"""# arXiv upload preparation — 18 October 2026, revision 7
+    return f"""# arXiv upload preparation — 19 October 2026, revision 8
 
-This directory is a local preparation package. Nothing has been uploaded or
-submitted; no license or submission agreement has been accepted.
+This directory is a new local preparation package. Revision 8 has not been
+uploaded or submitted. The earlier revision-7 upload to draft 8248308 is
+documented in the [historical portal record](../../submission-records/arxiv-2026-10-18-v7/README.md).
+That record reports successful compilation and saved metadata, with the final
+Submit action left open. It is not a public arXiv identifier or a live status check.
 
 ## Upload and metadata
 
@@ -341,16 +347,21 @@ submitted; no license or submission agreement has been accepted.
 - `author_information.json` retains the confirmed author order, affiliations,
   ORCIDs, and contact data from the earlier author record, with names and ORCIDs
   checked against this manuscript. Local historical source paths are omitted.
-- Recommended primary category: **quant-ph**. No cross-list is proposed.
-- `submission_metadata.json` records pending choices. Journal reference, DOI,
+- Primary category: **quant-ph**, retaining the prior draft's selection.
+  No cross-list is proposed.
+- `submission_metadata.json` distinguishes current preparation from the prior
+  portal record and retains the user's prior license choice. Journal reference, DOI,
   and institutional report number are blank because none was established.
 - The Comments field describes {EXPECTED_COMBINED_PAGES} pages and 11 figures. Final local build checks
   are recorded in `verification.json`; inspect the arXiv preview before submitting.
 
-The user still needs to select a license, complete any account/category
-endorsement required by the portal, inspect the arXiv-generated PDF, accept the
-submission terms, and explicitly finalize the submission. These actions have
-not been performed here. License grants for an announced version are irrevocable.
+The user previously selected arXiv's perpetual, non-exclusive distribution
+license and accepted the submission agreement in draft 8248308. Those are
+recorded historical choices; the current portal state has not been checked.
+Replace the older draft files and metadata with this revision, verify the
+retained license and any portal requirements, inspect the new arXiv-generated
+PDF, and explicitly finalize submission when ready. No portal action has been
+performed for this revision. License grants for an announced version are irrevocable.
 
 ## Code link
 
@@ -361,14 +372,11 @@ the repository public. Code/data are also included in this arXiv source ZIP.
 
 ## Author review
 
-The [revision review](../../../docs/manuscript-2026-10-18-prl-v7.md) records the
-shortened shared affiliation, retaining the full QAR-Lab name, LMU, and address.
-The AI disclosure remains unchanged from revision 6.
-The numerical qualifications are unchanged: depths are sampled estimates,
-k comparisons use independently sampled unitary ensembles, and continuous
-crossings in Figure 4 differ from integer depths. Finite checks and packaging
-do not certify the universal theorem. The author's statement about reviewing
-AI outputs remains the author's responsibility.
+The [revision review](../../../docs/manuscript-2026-10-19-prl-v8.md) records the
+new source import and the retained three-author metadata, shared QAR-Lab/LMU
+affiliation, and approved AI disclosure. Finite checks and packaging do not
+certify the universal theorem. The author's statement about reviewing AI
+outputs remains the author's responsibility.
 
 ## What is in the ZIP
 
@@ -438,7 +446,7 @@ before final submission.
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source-dir", type=Path, default=REPO / "paper/prl-source")
-    parser.add_argument("--output-dir", type=Path, default=REPO / "paper/submission/arxiv-2026-10-18-v7")
+    parser.add_argument("--output-dir", type=Path, default=REPO / "paper/submission/arxiv-2026-10-19-v8")
     parser.add_argument("--author-file", type=Path, default=REPO / "paper/author_information.json")
     args = parser.parse_args()
     build(args.source_dir.resolve(), args.output_dir.resolve(), args.author_file.resolve())

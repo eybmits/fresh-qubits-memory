@@ -1,0 +1,58 @@
+{
+  "edition": "2026-10-19-prl-v8",
+  "source_files": 54,
+  "packages": {
+    "PRL": {
+      "manifest_files_verified": 22,
+      "source_mappings_verified": 54,
+      "outer_sha256": "383d40800a7a4c3fd9d95b8d4e7c234e7c447bd45477ab6c3da512689e4b27da"
+    },
+    "Zenodo": {
+      "manifest_files_verified": 5,
+      "source_mappings_verified": 54,
+      "outer_sha256": "ef15988e1d07f30404cadd8c0f467c3c9de96f484d512594ebae18506432ee78"
+    },
+    "arXiv": {
+      "archive_entries_verified": 57,
+      "source_mappings_verified": 54,
+      "archive_sha256": "3880ff9ee026ca89e497f05d841458ed0e9a404687ad4b1ea956faf25d32e422"
+    }
+  },
+  "changed_source_files_since_v7": [
+    "README.txt",
+    "fig3.pdf",
+    "fig4.pdf",
+    "figures/fig3.tex",
+    "figures/fig4bc.pdf",
+    "memory_limits_prl.bbl",
+    "memory_limits_prl.tex",
+    "refs.bib"
+  ],
+  "pages": {
+    "combined": 25,
+    "letter": 6,
+    "supplement": 19,
+    "cover_letter": 1
+  },
+  "letter_and_sm_text_match_combined": true,
+  "shared_affiliation": "Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany",
+  "affiliation_checked_across_all_packages": true,
+  "admin_files_byte_identical_to_approved_v7_cover_v2": [
+    "cover_letter.txt",
+    "cover_letter.pdf",
+    "referees.txt",
+    "referees.json",
+    "cover_letter_notes.txt"
+  ],
+  "cover_date_preserved": "October 18, 2026",
+  "user_justification_byte_identical_to_v5": true,
+  "user_justification_words": 100,
+  "abstract_characters": 595,
+  "full_incoming_abstract_preserved": true,
+  "source_zip_identical_prl_zenodo": true,
+  "source_zip_sha256": "f3fb975ca1329b1c3c0c689b1be2164e2f40b55b479769b49752424cc8553786",
+  "combined_pdf_sha256": "d52e06547c42f3ccd7332408f50055c5af0f8f3de33f79afc443c3e35856e1e9",
+  "arxiv_historical_prior_license_retained": true,
+  "zenodo_publication_fields_unset": true,
+  "checks_scope": "Package contents, manifests, source equality, affiliations, preserved cover/justification, full abstract, PDF text and page counts; no new scientific experiments or proof certification."
+}

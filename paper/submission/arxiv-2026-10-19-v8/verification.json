@@ -1,0 +1,58 @@
+{
+  "edition": "2026-10-19-prl-v8",
+  "archive_sha256": "3880ff9ee026ca89e497f05d841458ed0e9a404687ad4b1ea956faf25d32e422",
+  "fresh_unzip_compile_success": true,
+  "pages": 25,
+  "fresh_unzip_text_matches_canonical": true,
+  "regenerated_bbl_byte_identical": true,
+  "restored_source_file_count": 54,
+  "restored_source_matches_canonical_bytes": true,
+  "unresolved_citations_labels_overfull_boxes": [],
+  "build_directory": "/private/tmp/fresh-qubits-v8-arxiv-cy257jrw",
+  "fresh_pdf_sha256": "d1e3f66fbf9d7ed76b186b4788ee1d86dc50a6655c88191f4627917cf61e2267",
+  "final_log_sha256": "53baeafdad60638d3aa0b7a9110aae33d1943527a6b99f7874de628243f78699",
+  "commands": [
+    [
+      "pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=memory_limits_prl",
+      "\\pdfinfoomitdate=1\\pdftrailerid{}\\pdfsuppressptexinfo=15\\input{memory_limits_prl.tex}"
+    ],
+    [
+      "bibtex",
+      "memory_limits_prl"
+    ],
+    [
+      "pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=memory_limits_prl",
+      "\\pdfinfoomitdate=1\\pdftrailerid{}\\pdfsuppressptexinfo=15\\input{memory_limits_prl.tex}"
+    ],
+    [
+      "bibtex",
+      "memory_limits_prl"
+    ],
+    [
+      "pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=memory_limits_prl",
+      "\\pdfinfoomitdate=1\\pdftrailerid{}\\pdfsuppressptexinfo=15\\input{memory_limits_prl.tex}"
+    ],
+    [
+      "pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=memory_limits_prl",
+      "\\pdfinfoomitdate=1\\pdftrailerid{}\\pdfsuppressptexinfo=15\\input{memory_limits_prl.tex}"
+    ]
+  ],
+  "source_date_epoch": "1792368000",
+  "scope": "Fresh source-package compilation and reconstruction checks; no portal upload or scientific proof certification."
+}

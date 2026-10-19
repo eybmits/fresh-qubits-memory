@@ -1,0 +1,126 @@
+{
+  "abstract_character_limit_source": "https://res.cloudinary.com/apsphysics/image/upload/v1736779890/APS_Journals_Style_Guide_Authors_Nov2024_ua91lv.pdf",
+  "abstract_wording_preserved": true,
+  "bibliography_keys": [
+    "Jaeger2001",
+    "Maass2002",
+    "JaegerHaas2004",
+    "Lukosevicius2009",
+    "Tanaka2019",
+    "Fujii2017",
+    "Nakajima2019",
+    "Mujal2021",
+    "Chen2020",
+    "Suzuki2022",
+    "Yasuda2023",
+    "Hu2024",
+    "Monzani2024",
+    "Boyd1985",
+    "MartinezPena2023",
+    "MorguiSancho2026",
+    "Sannia2026",
+    "Kubota2023",
+    "Sannia2024",
+    "Freiheit2026",
+    "Aharonov1996",
+    "BenOr2013",
+    "StilckFranca2021",
+    "Mele2026",
+    "vonNeumann1956",
+    "Fawzi2022",
+    "Nelson2026",
+    "SM",
+    "Takaki2021",
+    "Cattaneo2021",
+    "Heussen2024",
+    "Jaeger2002",
+    "King2014",
+    "Cubitt2015",
+    "MartinezPena2021",
+    "Mujal2023",
+    "Hoeffding1963",
+    "Cao2026",
+    "Xiong2025",
+    "Dao2026"
+  ],
+  "combined_pages": 25,
+  "combined_pdf_sha256": "d52e06547c42f3ccd7332408f50055c5af0f8f3de33f79afc443c3e35856e1e9",
+  "commands": [
+    [
+      "pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=memory_limits_prl",
+      "\\pdfinfoomitdate=1\\pdftrailerid{}\\pdfsuppressptexinfo=15\\input{memory_limits_prl.tex}"
+    ],
+    [
+      "bibtex",
+      "memory_limits_prl"
+    ],
+    [
+      "pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=memory_limits_prl",
+      "\\pdfinfoomitdate=1\\pdftrailerid{}\\pdfsuppressptexinfo=15\\input{memory_limits_prl.tex}"
+    ],
+    [
+      "bibtex",
+      "memory_limits_prl"
+    ],
+    [
+      "pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=memory_limits_prl",
+      "\\pdfinfoomitdate=1\\pdftrailerid{}\\pdfsuppressptexinfo=15\\input{memory_limits_prl.tex}"
+    ],
+    [
+      "pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-jobname=memory_limits_prl",
+      "\\pdfinfoomitdate=1\\pdftrailerid{}\\pdfsuppressptexinfo=15\\input{memory_limits_prl.tex}"
+    ]
+  ],
+  "final_log_sha256": "31bdf699bfbcfd1d30a9ceb1a82e1d223e0c8eee86174917d6f6ba2e1865d7cf",
+  "letter_combined_page_range": [
+    1,
+    6
+  ],
+  "letter_link_validation": {
+    "dangling_links": 0,
+    "internal_links": 97,
+    "uri_links": 66
+  },
+  "letter_pages": 6,
+  "letter_pdf_sha256": "ef2e1ae87252b1b9c3944d23c82606570d9026f18e726ff2b93e6c8c622bd27f",
+  "letter_text_matches_combined": true,
+  "portal_abstract_characters": 595,
+  "portal_abstract_max_characters": 600,
+  "scope": "Technical packaging checks only; no independent certification of all proofs.",
+  "shell_escape": false,
+  "source_date_epoch": "1792368000",
+  "supplemental_combined_page_range": [
+    7,
+    25
+  ],
+  "supplemental_link_validation": {
+    "dangling_links": 0,
+    "preserved_internal_links": 114,
+    "preserved_uri_links": 4,
+    "removed_links_to_separate_letter": 79
+  },
+  "supplemental_pages": 19,
+  "supplemental_pdf_sha256": "aef54d0a79f4049f4a4a698175f9d39b49861934006c9fe20ba1e2057318c067",
+  "supplemental_text_matches_combined": true,
+  "tool_versions": {
+    "bibtex": "BibTeX 0.99d (TeX Live 2025)",
+    "pdflatex": "pdfTeX 3.141592653-2.6-1.40.27 (TeX Live 2025)"
+  },
+  "unresolved_references_or_citations": false
+}

@@ -1,0 +1,43 @@
+[
+  "Retain REVTeX-compatible array version pin",
+  "Retain three-author PDF metadata and ORCID package",
+  "Retain confirmed author byline, Contact author label, ORCIDs, shared QAR-Lab/LMU affiliation",
+  "Freeze revision date",
+  "Retain three-author Supplemental Material byline and shared affiliation",
+  "Retain approved factual Claude-only disclosure",
+  "Retain approved code-assistance disclosure",
+  "Retain positive finite input variance and positive noise floor with finite unconditional variance",
+  "State only proven unital-noise upper-bound invariance",
+  "Retain caption qualifications: \\caption{\\textbf{Attaining the limit.}",
+  "Retain caption qualifications: \\caption{\\textbf{More input qubits do not help standard reservoirs.}",
+  "Restore GitHub link in SM IX",
+  "Qualify Fawzi comparison to depolarizing noise in main text",
+  "Avoid claiming dephasing does not erase coherence",
+  "Match Fawzi classical-assistance scope to unital channels",
+  "State Nelson circuit model explicitly",
+  "Restore GitHub repository link in the Supplemental Material bibliography entry while retaining new prior-work text",
+  "Retain previously validated APS word-count helper with no automatic bibliography, fail-fast checks, no shell escape and JSON accounting",
+  "Within these ensembles, size does not extend their memory",
+  "without raising the ceiling for driven memory.",
+  "$\\delta^{-1}\\approx2^{85.7k+46}$",
+  "so at $k=5$ and $\\varepsilon=0.01$ the bound exceeds $2^{470}$ time steps, whereas the full-state memory of the reservoir in Fig.~\\ref{fig:attain} is 316.",
+  "with $0<\\sigma_\\xi\\le2B$ and finite unconditional variance, so $0<\\mathrm{Var}(y_t)<\\infty$.",
+  "proved that, at fixed sufficiently small simulation error, a fault-tolerant simulation of a quantum circuit of width $n$",
+  {
+    "reason": "Ported precision and source-scope qualifiers raised initial local APS length estimate to 3771; compacted redundant exposition without removing claims.",
+    "prose_edits": [
+      {
+        "before": "Reservoir computing processes time series with the transient dynamics of a fixed physical system, the reservoir: inputs are injected into it, and only a linear readout is trained",
+        "after": "Reservoir computing processes time series by injecting inputs into a fixed physical system and training only a linear readout"
+      },
+      {
+        "before": "Here we show that the answer is no: the memory ceiling is set by the fresh qubits, and size does not enter.",
+        "after": "The memory ceiling is set by fresh qubits, independently of size."
+      },
+      {
+        "before": "Because $W_{q,k}$ is an optimum over all reservoirs, a single example suffices to show that the exponential scaling is attained, and a classical one suffices because the upper bound applies to every quantum reservoir. We take the simplest one with exactly solvable dynamics, an error-correcting reservoir that repairs its memory with fresh qubits",
+        "after": "A single reservoir suffices to attain the optimal scaling of $W_{q,k}$; it may be classical because the upper bound covers every quantum reservoir. Our exactly solvable error-correcting reservoir repairs its memory with fresh qubits"
+      }
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "command": [
+    "python3",
+    "/Users/superposition/Documents/Codex/2026-10-15/https-github-com-eybmits-fresh-qubits/work/fresh-qubits-memory/paper/prl-source/checks/verify_simple_proof.py"
+  ],
+  "cwd": "isolated temporary directory",
+  "started_utc": "2026-10-19T08:24:56.227496+00:00",
+  "duration_seconds": 0.291537,
+  "returncode": 0,
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONPATH": "/Users/superposition/Documents/Codex/2026-10-15/https-github-com-eybmits-fresh-qubits/work/fresh-qubits-memory/src",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "scope": "Bounded supplied numerical checks; no broad campaign or proof certification."
+}
+
+STDOUT
+Lemma S1: max |E X|_2 / (2^{k/2}|X|_2) = 0.6386 (must be <= 1)
+c_q 4^-a == 2^(4-5s): True
+a+1 <= 2s: True | bartheta >= 1-q: True | 1-2^-bartheta >= bartheta/2: True
+max 2s 2^(4-5s) = 0.9999975342641712 (must be <= 1)
+m=1 copies: concentration 1.0000, predicted 1.0000
+m=2 copies: concentration 1.4142, predicted 1.4142
+m=3 copies: concentration 2.0000, predicted 2.0000
+m=5 copies: concentration 4.0000, predicted 4.0000
+
+STDERR

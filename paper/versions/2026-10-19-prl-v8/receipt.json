@@ -1,0 +1,31 @@
+{
+  "received_date": "2026-10-19",
+  "parent_commit": "2c1088646fd3932c67d004988c07d278866415dd",
+  "inputs": {
+    "source-original.zip": {
+      "original_path": "/Users/superposition/Downloads/memory_limits_prl_source (5).zip",
+      "bytes": 1349948,
+      "sha256": "ff54033cea418ffdf7b8a6f8b025d16d7a8a8c99f8286efd15cff2c4344506db"
+    },
+    "manuscript-original.tex": {
+      "original_path": "/Users/superposition/Downloads/memory_limits_prl (8).tex",
+      "bytes": 95310,
+      "sha256": "1643c91d30a8500ce8c2d18591c82c98d777fa2fc602b8dfda753dc3181a8cf4"
+    },
+    "manuscript-original.pdf": {
+      "original_path": "/Users/superposition/Downloads/memory_limits_prl (40).pdf",
+      "bytes": 919309,
+      "sha256": "4f388d180900526739d8ec05acf7365f79ecc6e094a681da9fa07c58241b30ca"
+    },
+    "submission-original.zip": {
+      "original_path": "/Users/superposition/Downloads/memory_limits_prl_submission (3).zip",
+      "bytes": 3025131,
+      "sha256": "9d8f8025861121f7dade7aab36f15f7e1a83fd7e78e47e430ba007acc6dfce99"
+    },
+    "zenodo-original.zip": {
+      "original_path": "/Users/superposition/Downloads/memory_limits_prl_zenodo (1).zip",
+      "bytes": 1352022,
+      "sha256": "9ad524dfd75296ce23aef43bede3b58d10b4363537c85e48e1d265ff35f53656"
+    }
+  }
+}
