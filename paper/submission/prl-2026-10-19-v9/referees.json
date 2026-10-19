@@ -1,0 +1,71 @@
+{
+  "verified_on": "2026-10-18",
+  "verification_scope": "Institutional affiliations and publicly listed professional contact details. No contact was made; this is not a conflict-of-interest clearance.",
+  "suggested": [
+    {
+      "name": "Michael J. Gullans",
+      "affiliation": "National Institute of Standards and Technology (NIST); Joint Center for Quantum Information and Computer Science (QuICS), University of Maryland, USA",
+      "email": "mgullans@umd.edu",
+      "expertise": "Memory and error correction in noisy quantum circuits",
+      "sources": ["https://quics.umd.edu/people/michael-gullans", "https://www.nist.gov/awards/michael-j-gullans-receives-2026-arthur-s-flemming-award"]
+    },
+    {
+      "name": "Daniel Stilck França",
+      "affiliation": "Department of Mathematical Sciences, University of Copenhagen, Denmark",
+      "email": "dsfranca@math.ku.dk",
+      "expertise": "Entropy-based limitations of noisy quantum devices",
+      "sources": ["https://www.math.ku.dk/ansatte/vip/?pure=da%2Fpersons%2F624303", "https://www.math.ku.dk/english/news/new-names/daniel-stilck-franca-associate-professor/"]
+    },
+    {
+      "name": "Alexander Müller-Hermes",
+      "affiliation": "Department of Mathematics, University of Oslo, Norway",
+      "email": "muellerh@math.uio.no",
+      "expertise": "Hypercontractivity of quantum channels and resource bounds for fault tolerance",
+      "sources": ["https://www.mn.uio.no/math/english/people/?page=4&u-page=4"]
+    },
+    {
+      "name": "Roberta Zambrini",
+      "affiliation": "Instituto de Física Interdisciplinar y Sistemas Complejos, IFISC (CSIC-UIB), Palma de Mallorca, Spain",
+      "email": "roberta@ifisc.uib-csic.es",
+      "expertise": "Quantum reservoir computing and dissipation as a resource",
+      "sources": ["https://ifisc.uib-csic.es/en/people/roberta-zambrini/", "https://www.csic.es/sites/default/files/606758.pdf"],
+      "editorial_role_note": "Her institutional personal page lists PRL Divisional Associate Editor service in 2020-2026, without a precise end date. Editors should determine eligibility; this is not itself evidence of an author conflict.",
+      "editorial_role_source": "https://ifisc.uib-csic.es//~roberta/"
+    },
+    {
+      "name": "Hakan E. Türeci",
+      "affiliation": "Department of Electrical and Computer Engineering, Princeton University, USA",
+      "email": "tureci@princeton.edu",
+      "expertise": "Quantum reservoir computing and superconducting quantum hardware",
+      "sources": ["https://ece.princeton.edu/people/hakan-tureci", "https://ece.princeton.edu/sites/g/files/toruqf1836/files/documents/25-26%20Handbook.pdf"]
+    }
+  ],
+  "alternates": [
+    {
+      "name": "Omar Fawzi",
+      "affiliation": "Inria; Laboratoire de l’Informatique du Parallélisme (LIP), École normale supérieure de Lyon, France",
+      "email": "omar.fawzi@ens-lyon.fr",
+      "sources": ["https://perso.ens-lyon.fr/omar.fawzi/"]
+    },
+    {
+      "name": "Juan-Pablo Ortega",
+      "affiliation": "School of Physical and Mathematical Sciences, Nanyang Technological University, Singapore",
+      "email": "juan-pablo.ortega@ntu.edu.sg",
+      "sources": ["https://www.ntu.edu.sg/spms/about-us/our-people/faculty-affairs"]
+    },
+    {
+      "name": "Kohei Nakajima",
+      "affiliation": "Department of Mechano-Informatics, Graduate School of Information Science and Technology, The University of Tokyo, Japan",
+      "email": "k-nakajima@isi.imi.i.u-tokyo.ac.jp",
+      "sources": ["https://www.i.u-tokyo.ac.jp/edu/course/m-i/members_e.shtml", "https://www.kohei-nakajima.com/"]
+    },
+    {
+      "name": "Naoki Yamamoto",
+      "affiliation": "Department of Applied Physics and Physico-Informatics, Faculty of Science and Technology, Keio University, Japan",
+      "email": "yamamoto@appi.keio.ac.jp",
+      "sources": ["https://k-ris.keio.ac.jp/html/100011469_en.html", "https://bio2q.keio.ac.jp/ja/members-list/"],
+      "identity_note": "Quantum-control/QRC researcher, profile 100011469; distinct from Keio's particle/nuclear physicist of the same romanized name."
+    }
+  ],
+  "excluded": []
+}

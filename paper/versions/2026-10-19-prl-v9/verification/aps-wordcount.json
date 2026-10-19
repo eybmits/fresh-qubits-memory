@@ -1,0 +1,48 @@
+{
+  "method": "APS length guide with CTAN wordcount.tex",
+  "guide_url": "https://journals.aps.org/authors/length-guide",
+  "source_sha256": "0ed87c79ccdd5c5b45854c81ba6582ce079b4d507819957c933a67ce1b36e73e",
+  "typeset_words": 2792,
+  "characters_including_spaces": 16231,
+  "displayed_equation_rows": 6,
+  "equation_word_equivalent": 96,
+  "figures": [
+    {
+      "file": "fig1.pdf",
+      "double_column": false,
+      "width_pt": 245.083,
+      "height_pt": 121.323,
+      "aspect_ratio": 2.0200868755306085,
+      "word_equivalent": 94.25423223969023
+    },
+    {
+      "file": "fig2.pdf",
+      "double_column": true,
+      "width_pt": 507.6,
+      "height_pt": 176.4,
+      "aspect_ratio": 2.877551020408163,
+      "word_equivalent": 248.51063829787236
+    },
+    {
+      "file": "fig3.pdf",
+      "double_column": true,
+      "width_pt": 507.6,
+      "height_pt": 185.669,
+      "aspect_ratio": 2.733897419601549,
+      "word_equivalent": 259.46690307328606
+    },
+    {
+      "file": "fig4.pdf",
+      "double_column": true,
+      "width_pt": 507.6,
+      "height_pt": 147.6,
+      "aspect_ratio": 3.439024390243903,
+      "word_equivalent": 214.46808510638297
+    }
+  ],
+  "figure_word_equivalent": 816.6998587172316,
+  "total_word_equivalent": 3704.6998587172316,
+  "total_rounded": 3705,
+  "prl_limit": 3750,
+  "tex_errors": []
+}

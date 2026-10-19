@@ -1,0 +1,77 @@
+[
+  {
+    "change": "Replace finite-k gap headline with structural scaling statement; retain explicit exponent-gap qualification",
+    "before": "The lower bound is an existence result, reached by one explicit reservoir [Fig.~\\ref{fig:scope}]; since its exponent differs from that of the upper bound, the theorem fixes the scaling class but not the exact rate [Fig.~\\ref{fig:limit}(a)]. The constants of the upper bound are conservative by many orders of magnitude: at $q=0.9$, $\\delta^{-1}\\approx2^{85.7k+46}$, so at $k=5$ and $\\varepsilon=0.01$ the bound exceeds $2^{470}$ time steps, whereas the full-state memory of the reservoir in Fig.~\\ref{fig:attain} is 316. For readouts of finite precision, the upper bound carries over to the memory capacity~\\cite{Jaeger2002,SM}.",
+    "after": "At fixed noise strength and accuracy, both bounds are exponential in $k$ and independent of $n$: the fresh-qubit rate sets the optimal memory scaling. One explicit reservoir attains the lower bound [Fig.~\\ref{fig:scope}], while the upper bound covers every reservoir; neither size nor entanglement nor the choice of unitary can change this scaling class. The two exponents differ, so the theorem fixes the class but not the exact rate~\\cite[Sec.~III\\,G]{SM}. For readouts of finite precision, the upper bound carries over to the memory capacity~\\cite{SM,Jaeger2002}."
+  },
+  {
+    "change": "Strengthen converse while preserving model scope",
+    "before": "New is the converse: $\\Omega(\\log T)$ fresh qubits per time step are necessary for any noisy dynamics,",
+    "after": "New is the converse, and it is universal within this noise model: $\\Omega(\\log T)$ fresh qubits per time step are necessary for any admissible dynamics,"
+  },
+  {
+    "change": "Condense prior-work contrast; retain complete scoped comparison in SM VIII B",
+    "before": "Known limits on noisy computation constrain other resources. Under depolarizing noise, a fault-tolerant computation of length $T$ needs $\\Omega(\\log T)$ physical qubits in total, even with free classical computation~\\cite{Fawzi2022}, and Clifford circuits forget within polylogarithmic depth however many qubits they reset~\\cite{Nelson2026}; Theorem~\\ref{thm:main} bounds the rate of fresh qubits instead, for any gate set and any number of qubits.",
+    "after": "Earlier limits on noisy computation bound the total number of physical qubits~\\cite{Fawzi2022} or restrict the gate set to Clifford circuits~\\cite{Nelson2026}. Theorem~\\ref{thm:main} bounds the fresh-qubit rate instead, for any gate set and any system size~\\cite[Sec.~VIII\\,B]{SM}."
+  },
+  {
+    "change": "Match two-panel Figure 1 and avoid claiming attainability for every fixed n",
+    "before": "\\caption{\\textbf{Scope of the memory limit} (schematic).\n(a)~The upper bound of Theorem~\\ref{thm:main} holds for every system in $\\mathcal N$: any dynamics with Markovian depolarizing noise, $k$ fresh qubits per time step, and no classical feedback, whatever its size and gate set.\n(b)~The lower bound is reached by one explicit reservoir (star): the error-correcting reservoir of Fig.~\\ref{fig:attain}(a), which corrects errors without measurements.\n(c)~The memory limit $\\max W$ lies between the two bounds and grows as $e^{\\Theta(k)}$ [Fig.~\\ref{fig:limit}(a)].}\n",
+    "after": "\\caption{\\textbf{Scope of the memory limit} (schematic).\n(a)~The upper bound of Theorem~\\ref{thm:main} holds for every system in $\\mathcal N$: dynamics with Markovian depolarizing noise, $k$ fresh qubits per time step, and no classical feedback, whatever its size and gate set.\n(b)~One explicit reservoir (star) attains the lower bound: the error-correcting reservoir of Fig.~\\ref{fig:attain}(a), which corrects errors without measurements. Together, the bounds give $\\max W=e^{\\Theta(k)}$ at fixed noise and accuracy [Fig.~\\ref{fig:limit}(a)].}\n"
+  },
+  {
+    "change": "Clarify optimum over n in companion Figure 3 caption",
+    "before": "(a)~The limit lies between two exponentials in $k$, for every $n$ (Theorem~\\ref{thm:main});",
+    "after": "(a)~The optimum over reservoir sizes lies between two exponentials in $k$ (Theorem~\\ref{thm:main});"
+  },
+  {
+    "change": "Add verified factor-five example for plotted single-qubit depths; do not misuse half-life Table S1",
+    "before": "At $q=0.9$ and $\\varepsilon=0.01$, the memory depth exceeds 300 time steps for $k=5$ and two million for $k=15$, whereas the same copies without the majority vote keep the bit for at most 53 time steps [Fig.~\\ref{fig:attain}(b)].",
+    "after": "At $q=0.9$ and $\\varepsilon=0.01$, the single-qubit memory depth exceeds 300 time steps for $k=5$ and two million for $k=15$. For the odd values $k=5,\\ldots,15$ in Fig.~\\ref{fig:attain}(b), each pair of additional input qubits increases this depth by more than a factor of five. The same copies without majority vote keep the bit for at most 53 time steps; the fresh qubits extend memory because the reservoir uses them for repair."
+  },
+  {
+    "change": "Make conclusion direct without claiming individual memory is independent of size",
+    "before": "When a noisy quantum reservoir forgets too quickly, the parameters to check are its supply of fresh qubits and whether its dynamics uses them to remove errors, not its size.",
+    "after": "Under the stated noise model, the fresh-qubit supply sets the memory ceiling; reaching its scaling requires dynamics that uses those qubits to remove errors."
+  },
+  {
+    "change": "Add stable cross-reference anchor for quantitative gap discussion",
+    "before": "\\subsection{How tight are the bounds?}\n",
+    "after": "\\subsection{How tight are the bounds?}\n\\label{sm:tight}\n"
+  },
+  {
+    "change": "Move numerical gap to SM III G and distinguish full-state versus single-qubit depth",
+    "before": "The scaling with $k$ is nevertheless the same, exponential on both sides, and neither bound depends on $n$.",
+    "after": "The scaling with $k$ is nevertheless the same, exponential on both sides, and neither bound depends on $n$.\n\nThe constants of the upper bound are conservative by many orders of magnitude. At $q=0.9$ and $\\varepsilon=0.01$, the bound at $k=5$ exceeds $2^{470}$ time steps, while the error-correcting reservoir has a full-state memory depth of 316 (309 for its single-qubit readout). Theorem~\\ref{thm:main} fixes the exponential dependence on $k$, not these finite-$k$ constants. Closing the gap between the exponents remains an open problem (main text, Conclusion)."
+  },
+  {
+    "change": "Cross-reference quantitative limitations in SM VIII A",
+    "before": "Our constants are far too loose to decide whether 100 time steps lie below $W_{0.9,2}(\\varepsilon)$; the theorem identifies the knob, not its setting.",
+    "after": "Deciding whether 100 time steps lie below $W_{0.9,2}(\\varepsilon)$ requires sharper constants (Sec.~\\ref{sm:tight}); the theorem identifies the resource, not its numerical setting."
+  },
+  {
+    "change": "Remove repeated constants warning in SM VIII C",
+    "before": "The constants of the upper bound are conservative by many orders of magnitude. The simulations cover sizes up to $n=9$;",
+    "after": "The simulations cover sizes up to $n=9$;"
+  },
+  {
+    "change": "Mark rounded SM numerical constants as approximate",
+    "before": "$\\theta=0.895$, $a=18$, $c_q=2^{-10}$, and $\\beta_q=85.7$, so $\\delta^{-1}=2^{85.7b+46}$",
+    "after": "$\\theta\\approx0.895$, $a=18$, $c_q=2^{-10}$, and $\\beta_q\\approx85.7$, so $\\delta^{-1}\\approx2^{85.7b+46}$"
+  },
+  {
+    "change": "Mark rounded q=0.5 inverse rate as approximate",
+    "before": "$\\delta^{-1}=2^{1.67k+6}$",
+    "after": "$\\delta^{-1}\\approx2^{1.67k+6}$"
+  },
+  {
+    "change": "Keep exact 316 value only in SM as requested; retain favorable main-text magnitude",
+    "before": "($n=8$, $k=5$) remembers 316 time steps.",
+    "after": "($n=8$, $k=5$) remembers over 300 time steps."
+  },
+  {
+    "change": "Give supplemental equation hyperlinks distinct destinations after the equation counter resets; fixes prior main/SM anchor collision without changing visible content",
+    "before": "\\renewcommand{\\theequation}{S\\arabic{equation}}",
+    "after": "\\renewcommand{\\theequation}{S\\arabic{equation}}\n\\renewcommand{\\theHequation}{S\\arabic{equation}}"
+  }
+]

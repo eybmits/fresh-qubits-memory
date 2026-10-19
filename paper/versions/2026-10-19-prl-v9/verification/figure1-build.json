@@ -1,0 +1,70 @@
+{
+  "checked_utc": "2026-10-19T08:44:41.825910+00:00",
+  "baseline_commit": "4d3584a0ad4293832c42b9cec100875ff40c21bf",
+  "build_directory": "/private/tmp/fresh-qubits-fig1-v9",
+  "source_and_style_copied_byte_for_byte_to_build_directory": true,
+  "compile_command": [
+    "pdflatex",
+    "-no-shell-escape",
+    "-interaction=nonstopmode",
+    "-halt-on-error",
+    "-file-line-error",
+    "fig1.tex"
+  ],
+  "compile_cwd": "/private/tmp/fresh-qubits-fig1-v9",
+  "compile_returncode": 0,
+  "render_command": [
+    "pdftoppm",
+    "-r",
+    "200",
+    "-singlefile",
+    "-png",
+    "/private/tmp/fresh-qubits-fig1-v9/fig1.pdf",
+    "/private/tmp/fresh-qubits-fig1-v9/fig1"
+  ],
+  "copy_to_canonical": "shutil.copy2(\"/private/tmp/fresh-qubits-fig1-v9/fig1.pdf\", \"paper/prl-source/fig1.pdf\")",
+  "source": {
+    "path": "paper/prl-source/figures/fig1.tex",
+    "bytes": 6192,
+    "sha256": "94202507b6a38c3e5a8691dba5959b9cae29f87fcb4f2338e804f410124b798d"
+  },
+  "style": {
+    "path": "paper/prl-source/figures/tikzstyle.tex",
+    "bytes": 2526,
+    "sha256": "816e35861a8e58d3acaa810670b2fc96be2645e5381e05c581e26494d4a54ada"
+  },
+  "delivered_pdf": {
+    "path": "paper/prl-source/fig1.pdf",
+    "bytes": 69725,
+    "sha256": "3990dedf26f4ab5ac9d4f483277946ea07b16e3c849d45737d2da987c2846c66"
+  },
+  "compile_stdout": {
+    "path": "/private/tmp/fresh-qubits-fig1-v9/compile-output.txt",
+    "bytes": 10897,
+    "sha256": "938adf8476f224a293ca491b2009e6f95c89490b72d843d4e22de856803d683f"
+  },
+  "dimensions": {
+    "width_pdf_points": 245.083,
+    "height_pdf_points": 121.323,
+    "width_cm_from_tikz": 8.646,
+    "height_cm_from_tikz": 4.28,
+    "aspect_ratio_width_over_height": 2.0200868755306085,
+    "previous_height_pdf_points": 171.496,
+    "height_reduction_percent": 29.256075943462246
+  },
+  "pages": 1,
+  "all_fonts_embedded": true,
+  "reported_build_warnings": [],
+  "visual_qa": {
+    "render": "/private/tmp/fresh-qubits-fig1-v9/fig1.png",
+    "resolution_dpi": 200,
+    "scope": "Single-page figure inspected at full render size; both retained panels, two-line key, formulas, panel labels, ring/star marks, outlines and margins.",
+    "result": "Pass: no clipping, overlap, missing glyphs or unreadable labels observed.",
+    "unchanged": "Panels a and b retain their node/font styling, width, horizontal coordinates and inter-row spacing; only vertical translation and total height change.",
+    "removed": "Panel c scaling graph and unused hatch color; main manuscript caption handled separately."
+  },
+  "no_raster_asset_inserted": true,
+  "canonical_pdf_equals_compiled_pdf": true,
+  "historical_version_8_untouched": true,
+  "limits": "Figure/layout build evidence; not a scientific proof or new numerical experiment."
+}

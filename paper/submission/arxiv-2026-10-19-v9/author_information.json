@@ -1,0 +1,45 @@
+{
+  "affiliations": [
+    {
+      "id": "lmu_qar_mvs",
+      "name": "Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany"
+    }
+  ],
+  "authors": [
+    {
+      "affiliation_ids": [
+        "lmu_qar_mvs"
+      ],
+      "corresponding": true,
+      "email": "markus.baumann@campus.lmu.de",
+      "family": "Baumann",
+      "given": "Markus",
+      "orcid": "0009-0007-3575-1006",
+      "orcid_authenticated_in_arxiv": null
+    },
+    {
+      "affiliation_ids": [
+        "lmu_qar_mvs"
+      ],
+      "corresponding": false,
+      "email": "jonas.stein@ifi.lmu.de",
+      "family": "Stein",
+      "given": "Jonas",
+      "orcid": "0000-0001-5727-9151",
+      "orcid_authenticated_in_arxiv": null
+    },
+    {
+      "affiliation_ids": [
+        "lmu_qar_mvs"
+      ],
+      "corresponding": false,
+      "email": "linnhoff@ifi.lmu.de",
+      "family": "Linnhoff-Popien",
+      "given": "Claudia",
+      "orcid": "0000-0001-6284-9286",
+      "orcid_authenticated_in_arxiv": null
+    }
+  ],
+  "metadata_source": "paper/author_information.json",
+  "verification": "Names and ORCID order matched to the current manuscript; portal authentication was not performed."
+}

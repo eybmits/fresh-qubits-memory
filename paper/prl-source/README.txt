@@ -1,7 +1,7 @@
 The Fundamental Memory Ceiling of Noisy Quantum Reservoirs -- Physical Review Letters version, source files
 Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien
 Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München
-Revision 8, October 19, 2026; 25 pages (6-page Letter and 19-page Supplemental Material).
+Revision 9, October 19, 2026; 25 pages (6-page Letter and 19-page Supplemental Material).
 Project repository: https://github.com/eybmits/fresh-qubits-memory (currently private).
 
 Manuscript (REVTeX 4.2, prl option): one file with the Letter followed by the Supplemental Material
@@ -22,13 +22,13 @@ Length of the Letter (APS length guide, journals.aps.org/authors/length-guide; l
   (title, byline, abstract), the displayed equations, the acknowledgments, and the bibliography, and the words of
   the typeset text are counted with wordcount.tex from CTAN (hyphenated compounds and each part of a citation
   list count separately); equations and figures are added with the formulas of the guide.
-  Typeset text: body, captions, data-availability statement           2789 words
+  Typeset text: body, captions, data-availability statement           2792 words
   Displayed equations: 6 rows x 16 words                                96 words
-  Fig. 1 (one-column, aspect 1.43): 150/1.43 + 20                      125 words
+  Fig. 1 (one-column, aspect 2.02): 150/2.02 + 20                       94 words
   Fig. 2 (two-column, aspect 2.88): 300/(0.5 x 2.88) + 40              249 words
   Fig. 3 (two-column, aspect 2.73)                                     259 words
   Fig. 4 (two-column, aspect 3.44)                                     214 words
-  Total                                                               3732 words
+  Total                                                               3705 words
   This is a local length estimate, not an APS editorial eligibility decision.
   Abstract: 595 plain-Unicode characters (PRL style-guide limit: 600; not counted above).
   Recount after every edit:  python3 checks/aps_wordcount.py memory_limits_prl.tex . /tmp/memory-limits-wordcount
@@ -37,7 +37,7 @@ Figures (final PDFs in this folder; sources in figures/)
   Every figure is produced at its printed size (7.05 in or 3.40 in wide) and included without scaling, so all
   text in all figures is set in 8 pt. One palette throughout: purple = input, blue = memory and the reservoir
   that attains the limit, red = noise and the limit, greys = standard reservoirs and references.
-  Fig. 1   fig1.pdf  <- figures/fig1.tex (TikZ; scope of the theorem as nested classes)
+  Fig. 1   fig1.pdf  <- figures/fig1.tex (TikZ; two-panel scope of the theorem as nested classes)
   Fig. 2   fig2.pdf  <- figures/fig2.tex (TikZ; panel b, the reservoir, and the bottom row of boxes)
                        + fig2a.pdf <- figures/fig2a.py (panel a, square axes)
   Fig. 3   fig3.pdf  <- figures/fig3.tex (TikZ; panel b, the reservoirs A, B, C and their memory windows; the
@@ -94,6 +94,7 @@ Justification for the editors (preserved exactly from the approved previous vers
 How long can a noisy quantum system remember past inputs? We establish a universal memory ceiling under local Markovian depolarizing noise: with \(k\) qubits refreshed per step, the optimal memory depth scales as \(\exp[\Theta(k)]\) at fixed noise strength and accuracy. Our size-independent upper bound covers all admissible dynamics and input encodings. A measurement-free error-correction scheme achieves the same exponential scaling, establishing an optimal resource law. This is a limit on an entire class of quantum dynamics, not on one computing architecture. By identifying entropy removal as the resource governing memory, our result connects quantum information, nonequilibrium physics, and physical computing.
 
 The approved cover letter and 100-word justification are unchanged in this revision.
-The manuscript and supplementary source archive were updated; this archive does not submit
+The editorial framing and Figure 1 were updated; the exact theorem, abstract, code and data remain unchanged.
+This archive does not submit
 or publish them. Numerical campaign data are preserved; current verification is bounded to
 repository/simulator tests and numerical checks of stated proof steps.

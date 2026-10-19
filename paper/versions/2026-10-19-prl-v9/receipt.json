@@ -1,0 +1,12 @@
+{
+  "received_date": "2026-10-19",
+  "parent_commit": "4d3584a0ad4293832c42b9cec100875ff40c21bf",
+  "input": {
+    "original_path": "/Users/superposition/.codex/attachments/6c544080-c833-4836-a213-705ce4019aac/Pasted text.txt",
+    "archived_name": "editorial-request-original.txt",
+    "bytes": 7353,
+    "sha256": "f8cf3f469ff9375793c896436f453119b0261a73b867b854f4fc47ecf2da960f"
+  },
+  "base_manuscript": "paper/versions/2026-10-19-prl-v8/source-final-prl-v8.zip",
+  "instruction_scope": "User explicitly requested implementation of the pasted editorial improvements; scientific scope and approved correspondence retained."
+}

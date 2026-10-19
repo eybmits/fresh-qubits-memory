@@ -1,6 +1,5 @@
-% Fig. 1: scope of Theorem 1 (single column, 246 pt = 8.646 cm wide), in the style of nested search-space
-% diagrams: the same sets in rows a and b, where a thick line marks what each bound is about, and the memory
-% axis in row c, where the two bounds enclose the largest memory.
+% Fig. 1: scope of Theorem 1 (single column, 245.083 bp = 8.646 cm wide), in the style of nested search-space
+% diagrams: the same sets in rows a and b, where a thick line marks what each bound is about.
 %   N: quantum systems with depolarizing noise on every qubit and entropy budget k, E(I) <= 2^k I (any size,
 %      any dynamics); without a depolarizing component the bound fails (SM, entropy budget)
 %   Q: quantum reservoirs, E: measurement-free error correction,
@@ -8,15 +7,11 @@
 %   measurements, so it lies in the overlap of Q and E.
 % a: the upper bound holds for every system in N (all members: thick outline of N).
 % b: the lower bound is reached by one reservoir (one member: thick ring around the star).
-% c: a thumbnail of Fig. 3(a): log memory versus k, upper bound (red), lower bound (blue) reached by the star,
-%    and the largest memory max W (dashed) in the hatched band between them.
-%    Since Q lies in N, e^{Omega(k)} <= max_Q W <= max_N W <= e^{O(k)}.
 % Palette of all figures (tikzstyle.tex): red = noise and the limit (upper bound, set N), blue = memory and the
 % reservoir that attains it (lower bound, set Q), greys = neutral. Each statement carries the colour of its bound.
 \documentclass[border=0pt]{standalone}
 \input{tikzstyle}
 \definecolor{cLens}{HTML}{CDD9E7}% overlap of Q and E: cBlueFill multiplied by cGreyFill
-\definecolor{cHatch}{HTML}{C8C8C8}% hatching of the band between the bounds, as in Fig. 3(b)
 \begin{document}
 % the ringed star as an inline symbol for the statement of row b
 \newsavebox\RingStar
@@ -25,7 +20,7 @@
     line width=0.5pt] at (0,0) {};
   \draw[cBlue,line width=0.8pt] (0,0) circle[radius=0.13];}}%
 \begin{tikzpicture}[x=1cm,y=1cm]
-\def\H{6.05}
+\def\H{4.28}
 \useasboundingbox (0,0) rectangle (8.646,\H);
 % ------------------------------------------------------------------ the sets (relative to the centre of a row)
 \def\XS{2.13}% centre of the sets
@@ -60,52 +55,22 @@
 \node[anchor=base,inner sep=0pt] at (4.323,\H-0.70)
   {\textcolor{cBlueDark}{$\mathcal Q$}\, quantum reservoirs \qquad \textcolor{cGreyDark}{$\mathcal E$}\, measurement-free error correction};
 % ------------------------------------------------------------------ a: upper bound, for every member of N
-\begin{scope}[shift={(\XS,4.33)}]
+\begin{scope}[shift={(\XS,2.56)}]
   \Sets{\Thick}{0}
   \node[anchor=base,inner sep=0pt] at (-2.00,-0.05) {\textbf{a}};
 \end{scope}
-\begin{scope}[shift={(0,4.33)}]
+\begin{scope}[shift={(0,2.56)}]
   \Statement{cRedDark}{Upper bound}{\color{cRedDark}$\displaystyle\max_{\mathcal N}W\le e^{O(k)}$}
     {holds for every system in \textcolor{cRedDark}{$\mathcal N$}}
 \end{scope}
 % ------------------------------------------------------------------ b: lower bound, reached by one reservoir
-\begin{scope}[shift={(\XS,2.56)}]
+\begin{scope}[shift={(\XS,0.79)}]
   \Sets{\Thin}{1}
   \node[anchor=base,inner sep=0pt] at (-2.00,-0.05) {\textbf{b}};
 \end{scope}
-\begin{scope}[shift={(0,2.56)}]
+\begin{scope}[shift={(0,0.79)}]
   \Statement{cBlueDark}{Lower bound}{\color{cBlueDark}$\displaystyle\max_{\mathcal Q}W\ge e^{\Omega(k)}$}
     {reached by one reservoir (\usebox\RingStar)}
-\end{scope}
-% ------------------------------------------------------------------ c: both bounds on a thumbnail of Fig. 3(a)
-\begin{scope}[shift={(\XS,0.79)}]
-  \def\xo{-1.05}\def\yo{-0.52}\def\xe{0.80}\def\ye{0.62}
-  \begin{scope}
-    \clip (\xo,\yo) rectangle (\xe,\ye);
-    \fill[cRedFill] (\xo,{\yo+0.18}) -- (\xe,{\ye-0.10}) -- (\xe,\ye) -- (\xo,\ye) -- cycle;
-    \fill[cBlueFill] (\xo,{\yo+0.05}) -- (\xe,{\yo+0.42}) -- (\xe,\yo) -- (\xo,\yo) -- cycle;
-    \fill[pattern={Lines[angle=45,distance=2.4pt,line width=0.5pt]},pattern color=cHatch]
-      (\xo,{\yo+0.05}) -- (\xe,{\yo+0.42}) -- (\xe,{\ye-0.10}) -- (\xo,{\yo+0.18}) -- cycle;
-  \end{scope}
-  \draw[cRed,line width=1.4pt] (\xo,{\yo+0.18}) -- (\xe,{\ye-0.10});
-  \draw[cBlue,line width=1.4pt] (\xo,{\yo+0.05}) -- (\xe,{\yo+0.42});
-  \draw[cInk,line width=0.8pt,dash pattern=on 2.2pt off 1.6pt] (\xo,{\yo+0.11}) .. controls (-0.40,{\yo+0.40}) and (0.30,{\yo+0.48}) .. (\xe,{\yo+0.74});
-  \draw[cInk,line width=0.8pt,-{Stealth[length=4pt,width=3.6pt]}] (\xo,\yo) -- (\xo,{\ye+0.06});
-  \draw[cInk,line width=0.8pt,-{Stealth[length=4pt,width=3.6pt]}] (\xo,\yo) -- ({\xe+0.10},\yo);
-  \filldraw[fill=white,draw=cBlue,line width=1.6pt] (0.30,{\yo+0.05+0.37*1.35/1.85}) circle[radius=0.13];
-  \StarMark{(0.30,{\yo+0.05+0.37*1.35/1.85})}
-  \node[anchor=west,inner sep=0pt,text=cRedDark] at ({\xe+0.05},{\ye-0.10}) {$e^{O(k)}$};
-  \node[anchor=west,inner sep=0pt] at ({\xe+0.05},{\yo+0.74}) {$\max W$};
-  \node[anchor=west,inner sep=0pt,text=cBlueDark] at ({\xe+0.05},{\yo+0.42}) {$e^{\Omega(k)}$};
-  \node[anchor=north,inner sep=0pt] at ({\xe+0.05},{\yo-0.05}) {$k$};
-  \node[anchor=east,inner sep=0pt,text=cGreyDark,align=right] at ({\xo-0.08},{(\yo+\ye)/2+0.05}) {log\\$W$};
-  \node[anchor=base,inner sep=0pt] at (-2.00,-0.05) {\textbf{c}};
-\end{scope}
-\begin{scope}[shift={(0,0.79)}]
-  \Statement{cInk}{Together: optimal scaling}
-    {$\displaystyle\thickmuskip=4mu {\color{cBlueDark}e^{\Omega(k)}\le\max_{\mathcal Q}W}\le
-      {\color{cRedDark}\max_{\mathcal N}W\le e^{O(k)}}$}
-    {both maxima grow as $e^{\Theta(k)}$}
 \end{scope}
 \end{tikzpicture}
 \end{document}

@@ -1,42 +1,48 @@
 # Manuscript versions and source
 
-## Current version: 19 October 2026, PRL revision 8
+## Current version: 19 October 2026, PRL revision 9
 
 **The Fundamental Memory Ceiling of Noisy Quantum Reservoirs**
 
 Markus Baumann, Jonas Stein, and Claudia Linnhoff-Popien share one affiliation: Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München, Oettingenstraße 67, 80538 München, Germany. The address appears once in each of the Letter and Supplemental Material bylines. The three approved ORCID links and campus.lmu.de contact address are retained in the [canonical author record](author_information.json).
 
-- [Combined PDF, 25 pages](memory_limits_prl_2026-10-19-v8.pdf), [Letter, 6 pages](submission/prl-2026-10-19-v8/memory_limits_prl_letter.pdf), [Supplemental Material, 19 pages](submission/prl-2026-10-19-v8/2_supplemental_material/memory_limits_prl_SM.pdf)
+- [Combined PDF, 25 pages](memory_limits_prl_2026-10-19-v9.pdf), [Letter, 6 pages](submission/prl-2026-10-19-v9/memory_limits_prl_letter.pdf), [Supplemental Material, 19 pages](submission/prl-2026-10-19-v9/2_supplemental_material/memory_limits_prl_SM.pdf)
 - [Editable LaTeX](prl-source/memory_limits_prl.tex), [bibliography](prl-source/refs.bib), [build instructions](prl-source/README.txt)
-- [Received originals and receipt](versions/2026-10-19-prl-v8/receipt.json), [provenance](versions/2026-10-19-prl-v8/provenance.json), [final source snapshot](versions/2026-10-19-prl-v8/source-final-prl-v8.zip)
-- [Revision scope and verification](../docs/manuscript-2026-10-19-prl-v8.md)
-- [PRL handoff ZIP](submission/prl-2026-10-19-v8/prl-submission.zip) and [upload instructions](submission/prl-2026-10-19-v8/README.md)
-- [Prepared arXiv source ZIP](submission/arxiv-2026-10-19-v8/arxiv-source.zip)
-- [Local Zenodo handoff](submission/zenodo-2026-10-19-v8/README.md)
+- [Received originals and receipt](versions/2026-10-19-prl-v9/receipt.json), [provenance](versions/2026-10-19-prl-v9/provenance.json), [final source snapshot](versions/2026-10-19-prl-v9/source-final-prl-v9.zip)
+- [Revision scope and verification](../docs/manuscript-2026-10-19-prl-v9.md)
+- [PRL handoff ZIP](submission/prl-2026-10-19-v9/prl-submission.zip) and [upload instructions](submission/prl-2026-10-19-v9/README.md)
+- [Prepared arXiv source ZIP](submission/arxiv-2026-10-19-v9/arxiv-source.zip)
+- [Local Zenodo handoff](submission/zenodo-2026-10-19-v9/README.md)
 - [Upload guide: separate PRL PDFs, combined arXiv version, and Zenodo draft](submission/README.md)
 
-Revision 8 incorporates the new supplied source and figures and retains the requested additions on prior work and the limits of the result. The introduction and new Supplemental Material subsection distinguish classical repetition/majority achievability from the claimed fresh-qubit-rate converse, compare total-width and Clifford-gate limits, and retain the question of whether quantum encoding can improve the classical repetition exponent. The upper and lower bounds match in exponential scaling class, not in their exponents. Source checks of those comparisons do not establish general novelty or complete proof validity.
+Revision 9 applies the supplied editorial suggestions. The paragraph after Theorem 1 emphasizes the universal converse and the shared exponential scaling class; the large numerical gap is retained in Supplemental Material Sec. III G. The main-text prior-work comparison is shortened while the full discussion remains in Sec. VIII B. Figure 1 drops its redundant third panel and is about 29% shorter at the same width. The caption and conclusion refer to the optimal ceiling, not automatic memory improvement in every fixed-size reservoir.
 
-The integration retains the confirmed authorship, affiliation, disclosure wording, and GitHub code link. It also preserves the earlier precision statements: sampled histories estimate the memory supremum, unitary ensembles are sampled separately across `k`, continuous threshold crossings are rounded up for integer depths, and finite-precision memory-capacity claims state their variance assumptions. The result concerns the optimal ceiling; extra resets alone need not improve an individual reservoir. Details and the small source-scope corrections are in the [revision note](../docs/manuscript-2026-10-19-prl-v8.md).
+The factor-five example is explicitly restricted to the single-qubit readout of the repetition reservoir at $q=0.9$, $\varepsilon=0.01$, and odd $k=5,\ldots,15$. The [quantitative report](versions/2026-10-19-prl-v9/verification/factor-five.json) and [reproduction script](versions/2026-10-19-prl-v9/verification/check_factor_five.py) verify all five successive ratios. Table S1 continues to report half-lives; it is not relabeled as a memory-depth table.
 
-The [cover letter PDF](submission/prl-2026-10-19-v8/cover_letter.pdf) and [TXT](submission/prl-2026-10-19-v8/cover_letter.txt) preserve the approved cover revision 2, including its original 18 October date. Referee suggestions remain separate. The [PRL justification TXT](submission/prl-2026-10-19-v8/justification.txt) retains the approved 100-word text byte for byte, including the supplied LaTeX delimiters; its frozen input is [justification-user.txt](versions/2026-10-18-prl-v5/justification-user.txt). New supplied cover/justification templates remain archived as inputs rather than replacing those approved files.
+The theorem, proofs, abstract, simulation code, and all supplied datasets are unchanged from revision 8. The two exponents still differ; the revision does not claim the exact optimal rate. Confirmed authorship, affiliation, disclosure, the GitHub code link, and the qualifications on sampled histories, independently sampled unitaries, integer depths, and finite-precision capacity are retained. See the [revision note](../docs/manuscript-2026-10-19-prl-v9.md) for the precise scope and verification.
 
-The canonical source combines the Letter and supplement using APS REVTeX 4.2 with `aps,prl,twocolumn`, four main figures, and seven supplemental figures. The combined manuscript has 25 pages (6 Letter + 19 supplement), the plain-text abstract has 595 characters, and the local APS-method length estimate is 3732 word equivalents. Accounting and build/package checks are recorded in the [revision note](../docs/manuscript-2026-10-19-prl-v8.md) and [PRL build verification](submission/prl-2026-10-19-v8/build_verification.json). Local length estimates are not an APS editorial eligibility decision.
+The [cover letter PDF](submission/prl-2026-10-19-v9/cover_letter.pdf) and [TXT](submission/prl-2026-10-19-v9/cover_letter.txt) preserve the approved cover revision 2, including its original 18 October date. Referee suggestions remain separate. The [PRL justification TXT](submission/prl-2026-10-19-v9/justification.txt) retains the approved 100-word text byte for byte, including the supplied LaTeX delimiters; its frozen input is [justification-user.txt](versions/2026-10-18-prl-v5/justification-user.txt). The new editorial attachment does not replace those approved submission texts.
+
+The canonical source combines the Letter and supplement using APS REVTeX 4.2 with `aps,prl,twocolumn`, four main figures, and seven supplemental figures. The combined manuscript has 25 pages (6 Letter + 19 supplement), the plain-text abstract has 595 characters, and the local APS-method length estimate is 3705 word equivalents. Accounting and build/package checks are recorded in the [revision note](../docs/manuscript-2026-10-19-prl-v9.md) and [PRL build verification](submission/prl-2026-10-19-v9/build_verification.json). Local length estimates are not an APS editorial eligibility decision.
 
 Build the combined manuscript from the repository root (TeX Live with REVTeX 4.2, pdfLaTeX, BibTeX, and orcidlink):
 
 ```bash
 latexmk -cd -pdf -interaction=nonstopmode -halt-on-error \
-  -outdir=../../work/manuscript-build-2026-10-19-prl-v8 paper/prl-source/memory_limits_prl.tex
+  -outdir=../../work/manuscript-build-2026-10-19-prl-v9 paper/prl-source/memory_limits_prl.tex
 ```
 
 A matching BBL is included. Reference [28] identifies the source archive, the GitHub repository, and references cited only in the supplement. No shell escape is needed to compile from bundled figure PDFs. Rerunning simulations needs NumPy and SciPy; the constants checker additionally needs mpmath. Rebuilding figures also needs matplotlib, LaTeX, TikZ, and the fonts listed in [prl-source/README.txt](prl-source/README.txt).
 
 All eight simulator Python files and all 13 supplied JSON datasets are unchanged from the preceding edition. The revision-3 repetition-curve replay remains historical evidence: full-state depth 316 and single-qubit depth 309, with full-state agreement exact and single-qubit agreement within `1.11e-16`. The large campaign was not rerun for this update. Current verification is recorded separately; finite checks and sampled proof diagnostics do not certify the universal theorem.
 
-The AI disclosure retains the author's 18 October clarification that GPT assistance was limited to language and formatting. The statements about verification remain attributed to Markus Baumann; automated checks do not independently establish those attestations.
+The AI disclosure names Claude Opus 5.5 and attributes review and responsibility to Markus Baumann. Automated checks do not independently establish those human attestations.
 
-Revision 8 is a **local preparation**, not an upload or submission. GitHub remains **private**. No new PRL, arXiv, or Zenodo portal action accompanies this update. The local Zenodo draft leaves license, access right, publication date, and DOI unset; the supplied CC BY 4.0/open-access proposal remains unselected. The earlier arXiv draft is described below as a historical observation.
+Revision 9 is a **local preparation**, not an upload or submission. GitHub remains **private**. No new PRL, arXiv, or Zenodo portal action accompanies this update. The local Zenodo draft leaves license, access right, publication date, and DOI unset; the supplied CC BY 4.0/open-access proposal remains unselected. The earlier arXiv draft is described below as a historical observation.
+
+## Previous PRL revision 8: 19 October 2026
+
+The [25-page PDF](memory_limits_prl_2026-10-19-v8.pdf), [received inputs and receipt](versions/2026-10-19-prl-v8/receipt.json), [provenance](versions/2026-10-19-prl-v8/provenance.json), [source snapshot](versions/2026-10-19-prl-v8/source-final-prl-v8.zip), [PRL package](submission/prl-2026-10-19-v8/README.md), [arXiv source ZIP](submission/arxiv-2026-10-19-v8/arxiv-source.zip), [Zenodo draft](submission/zenodo-2026-10-19-v8/README.md), and [revision record](../docs/manuscript-2026-10-19-prl-v8.md) remain unchanged. Revision 8 incorporated the new supplied manuscript and figures, expanded the discussion of prior work, and retained the approved cover letter and justification. Its 6-page Letter, 19-page supplement, 595-character abstract, and 3732-word-equivalent estimate belong to that edition. Its packages were prepared locally, without replacing the previously uploaded revision-7 arXiv draft.
 
 ## Previous PRL revision 7: 18 October 2026
 

@@ -1,0 +1,307 @@
+{
+  "checked_utc": "2026-10-19T08:54:31.850618+00:00",
+  "pdf": {
+    "path": "paper/memory_limits_prl_2026-10-19-v9.pdf",
+    "sha256": "18b6038597eb8bb4c3600359f7085ff8b445475d0114132062b7412d83ff035c",
+    "bytes": 933438,
+    "page_count": 25
+  },
+  "manuscript_source_sha256": "0ed87c79ccdd5c5b45854c81ba6582ce079b4d507819957c933a67ce1b36e73e",
+  "contact_sheets": [
+    {
+      "path": "/private/tmp/memory-v9-contact-09.png",
+      "sha256": "dbdf4a167fbacf7909605cc1d1974f38424ae6fe1deaf4ddaa833e6873bffa71"
+    },
+    {
+      "path": "/private/tmp/memory-v9-contact-13.png",
+      "sha256": "53af505550b3ae797a30748e5ab117e77acc2395c543aaed7f2021e3e856b398"
+    },
+    {
+      "path": "/private/tmp/memory-v9-contact-17.png",
+      "sha256": "4611b0d0b4a2cfadb3fee3999a0e494d3d946a3d71eafdbf12e5ef057251664f"
+    },
+    {
+      "path": "/private/tmp/memory-v9-contact-21.png",
+      "sha256": "c58a69698ec813e3177b985c25a5ab6fd8f25e733d8e62d5f4c7ee09fbde8aa9"
+    },
+    {
+      "path": "/private/tmp/memory-v9-contact-25.png",
+      "sha256": "699921cfc5dc1bbf906d04f8e44c183b952aa779e9182582a5911f7d546de514"
+    }
+  ],
+  "overview_pages": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "full_page_visual_inspections": [
+    12,
+    13,
+    14,
+    18,
+    21,
+    23,
+    24,
+    25
+  ],
+  "section_locations": {
+    "SM_III_G_numeric_gap": {
+      "pdf_page": 13,
+      "printed_page": "S7",
+      "observed": "Full paragraph visible within margins: upper bound exceeds 2^470; full-state memory 316 and single-qubit 309; scaling-class qualification and open exponent gap retained."
+    },
+    "SM_VIII_B_prior_work": {
+      "pdf_page": 24,
+      "printed_page": "S18",
+      "observed": "Complete prior-work section visible: no-fresh-qubit restrictions, Fawzi et al. width bound, complementary fresh-qubit rate, Nelson et al. Clifford restrictions, and differing scope assumptions."
+    },
+    "SM_IX_code_and_data": {
+      "pdf_page": 25,
+      "printed_page": "S19",
+      "observed": "Precise project repository URL and retained Claude Opus 5.5 code disclosure render correctly. Last page has normal unused space below the short final section."
+    }
+  },
+  "targeted_checks": {
+    "equations_and_proof_blocks": "No clipping, collisions, missing glyphs or malformed mathematical layout observed. Rounded approximate constants render correctly on page 12.",
+    "tables": "Table S2 on page 18 and Table S3 on page 21 checked at full page size; cells and borders are intact.",
+    "figures_and_captions": "All supplemental figures covered in overview; detailed checks of S2/S3 on page 14 and S7 on page 23 show intact axes, legends and captions. S7 caption retains independently sampled ensembles across k.",
+    "variance_qualification": "Page 13 retains finite nonzero input variance and finite unconditional readout variance.",
+    "unresolved_reference_markers_in_extracted_SM_text": false,
+    "prior_work_text_extraction": "Page 24 text extraction includes the expected Fawzi, Nelson and Clifford passages."
+  },
+  "text_extraction_commands": [
+    "pdftotext -f 13 -l 13 -layout paper/memory_limits_prl_2026-10-19-v9.pdf -",
+    "pdftotext -f 24 -l 24 -layout paper/memory_limits_prl_2026-10-19-v9.pdf -",
+    "pdftotext -f 25 -l 25 -layout paper/memory_limits_prl_2026-10-19-v9.pdf -",
+    "pdftotext -f 9 -l 25 -layout paper/memory_limits_prl_2026-10-19-v9.pdf -"
+  ],
+  "result": "PASS",
+  "issues": [],
+  "scope_limits": [
+    "Visual and text-extraction QA of pages 9\u201325 only; pages 1\u20138 reviewed separately by the parent agent.",
+    "Root-supplied pre-anchor-fix render images were inspected; the final anchor-fixed PDF was independently rendered and proved pixel-identical on all 25 pages, with exact extracted-text equality. No source, package or PDF edits made.",
+    "No claim of independent scientific proof verification or new numerical validation."
+  ],
+  "anchor_only_followup": {
+    "checked_utc": "2026-10-19T08:54:31.850618+00:00",
+    "previous_reviewed_pdf_sha256": "873dc2e28ccd02c821018c85ede1b2250027ccc3aaa5cb5293ee956a2c4537c6",
+    "anchor_fixed_pdf_sha256": "18b6038597eb8bb4c3600359f7085ff8b445475d0114132062b7412d83ff035c",
+    "previous_reviewed_pdf_preserved_at": "/private/tmp/memory-v9-qa-before-anchor-fix.pdf",
+    "change": "Only supplemental equation hyperlink destination naming changed; visible content unchanged.",
+    "text_command": "pdftotext -layout PDF -",
+    "complete_extracted_text_byte_identical": true,
+    "extracted_text_sha256": "3abb463cb93eca1766f864195b82c0faf0ac1f1a9df0d9c7747d286f2915cc4a",
+    "render_commands": [
+      [
+        "pdftoppm",
+        "-r",
+        "100",
+        "/private/tmp/memory-v9-qa-before-anchor-fix.pdf",
+        "/private/tmp/memory-v9-anchor-pixels-39iwo03y/before"
+      ],
+      [
+        "pdftoppm",
+        "-r",
+        "100",
+        "/Users/superposition/Documents/Codex/2026-10-15/https-github-com-eybmits-fresh-qubits/work/fresh-qubits-memory/paper/memory_limits_prl_2026-10-19-v9.pdf",
+        "/private/tmp/memory-v9-anchor-pixels-39iwo03y/after"
+      ]
+    ],
+    "render_format": "Poppler binary PPM, RGB pixels, 100 dpi; all 25 pages compared byte-for-byte and raw RGB pixel hashes recorded.",
+    "all_25_rendered_pages_pixel_identical": true,
+    "pages": [
+      {
+        "page": 1,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "d9192e9ccd03881b590dbcf859cd1d3273dfd1a8fd4472952cc46d4bfdc6ab03",
+        "pixels_identical": true
+      },
+      {
+        "page": 2,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "5ba781bd2630b659e717091d5fa7d262f9c10702ec6fb798475a2eb36ce99aad",
+        "pixels_identical": true
+      },
+      {
+        "page": 3,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "0da438447b1e8e53ef33cc3b8a7311b5729fdd1d640124ee9acc51cc6980cf06",
+        "pixels_identical": true
+      },
+      {
+        "page": 4,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "8a67302faec5987e69edd272f51be64c29779a0e7901989e6377cf9d24fe2f4b",
+        "pixels_identical": true
+      },
+      {
+        "page": 5,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "fa96b44f4b0bcd6540493556a610cdef862cd44ca4a873204aa5f234a50ce050",
+        "pixels_identical": true
+      },
+      {
+        "page": 6,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "8c386f488d483313077d001a985d19e26b4e30b7b36ec7c54a840d7fbfc4a010",
+        "pixels_identical": true
+      },
+      {
+        "page": 7,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "1e50e6f5b131faad0ec2594d29fac8b7fdbd4f9236afb21f97f169b4402e90ac",
+        "pixels_identical": true
+      },
+      {
+        "page": 8,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "6f54817483ea854ca92377059cf052335da809f076e7bf5674cb2c6d02d469b0",
+        "pixels_identical": true
+      },
+      {
+        "page": 9,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "1cada4baac1120be313e528e9b20368307f094c0a6c54e1854a5417f5eee8047",
+        "pixels_identical": true
+      },
+      {
+        "page": 10,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "dc23080e082ac573582d867195ef5ccc768d6d75f66b319af26e3a95f8da9e13",
+        "pixels_identical": true
+      },
+      {
+        "page": 11,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "74a046cd25bef831ec460cdcc95acad12b580a176ae4d091eb82192a7da8d3f5",
+        "pixels_identical": true
+      },
+      {
+        "page": 12,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "77d261774a203429dda8c237a9a27ac4e49eb0c6e17ca6db5b9e43dd3cdbdab7",
+        "pixels_identical": true
+      },
+      {
+        "page": 13,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "11266f81a448d2975600f9c1dd16bdfd2e32973e8d662a48318c31386441cda2",
+        "pixels_identical": true
+      },
+      {
+        "page": 14,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "1611cb56d764bd160a78cbbd2c7dbfd3e11e6aff617c2120f49abd700f18f7b8",
+        "pixels_identical": true
+      },
+      {
+        "page": 15,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "fbda7ff3104aa0f283e01f0b35246c3c842e8ab5a1802764860fce955f0a7508",
+        "pixels_identical": true
+      },
+      {
+        "page": 16,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "ce4776bf2d29eb4f6263d5e9291ebedebd7b6fa4c519276d47fb8928edc4a9f5",
+        "pixels_identical": true
+      },
+      {
+        "page": 17,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "3058b0eb9941b9a2ddb3f702d5de3a532147750eab9529788976a57edc2f3cde",
+        "pixels_identical": true
+      },
+      {
+        "page": 18,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "5f34335b42901c1f33020142521a41aee04a014d29eeaaf80b44798d4bd464aa",
+        "pixels_identical": true
+      },
+      {
+        "page": 19,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "50a88422dcaf79e05d05162c685be2b193f71e35ab7188f7c8cf311c1e8f75fa",
+        "pixels_identical": true
+      },
+      {
+        "page": 20,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "514aa96ca113ae648ff7b99aad21ce8c3dd15b050d0082b7c86ae96d86426c08",
+        "pixels_identical": true
+      },
+      {
+        "page": 21,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "7fefa0f5a293f52b1def70a54dc179591a4ff8cc941796871d6d61c9a56a0dcc",
+        "pixels_identical": true
+      },
+      {
+        "page": 22,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "881a8fc043c9b34f2571d454f8d3d770f1207266cc56682da67f27c23af9f3db",
+        "pixels_identical": true
+      },
+      {
+        "page": 23,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "a4881a0abb2c5c44b40b479d30545b66d368e27131d1f1d26f77cfbd7c06ac05",
+        "pixels_identical": true
+      },
+      {
+        "page": 24,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "75d9f58f3bee229887b8e698e1652b57e49d05bc3dc6e03256ea6f0435e12178",
+        "pixels_identical": true
+      },
+      {
+        "page": 25,
+        "width_px": 850,
+        "height_px": 1100,
+        "rgb_pixel_sha256": "50b43470dd9ef132223912801eaedca72b4ebb952b626ca94bc824bb56ffbf8f",
+        "pixels_identical": true
+      }
+    ],
+    "duration_seconds": 0.934118,
+    "temporary_rasters_removed": true,
+    "conclusion": "Render-identical anchor-only change: prior visual inspection remains applicable to the final PDF."
+  }
+}

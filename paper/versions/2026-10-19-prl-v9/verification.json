@@ -1,0 +1,147 @@
+{
+  "edition": "2026-10-19-prl-v9",
+  "combined_pages": 25,
+  "letter_pages": 6,
+  "supplemental_pages": 19,
+  "build": {
+    "engine": "pdfLaTeX + BibTeX",
+    "shell_escape": false,
+    "overfull_boxes": 0,
+    "unresolved_references_or_citations": 0,
+    "multiply_defined_labels": 0,
+    "all_fonts_embedded": true,
+    "duplicate_pdf_destinations": 0,
+    "supplemental_equation_pdf_pages": {
+      "S1": 8,
+      "S2": 9,
+      "S3": 9,
+      "S4": 10,
+      "S5": 10,
+      "S6": 10
+    },
+    "font_count": 140,
+    "log": "verification/combined-build.txt",
+    "raw_log_sha256": "1457c12d0517eea0d9a1ffcaa04ec2497f63b9a2e8505e0574023c07fe27eb4c",
+    "log_normalization": "Trailing whitespace and trailing empty lines removed; diagnostic content preserved.",
+    "font_inventory": "verification/fonts.txt"
+  },
+  "visual_review": {
+    "render_command": "pdftoppm -r 85 -png paper/memory_limits_prl_2026-10-19-v9.pdf /private/tmp/memory-v9-page",
+    "all_25_pages_rendered": true,
+    "all_pages_reviewed_in_contact_sheets": true,
+    "main_full_page_inspections": [
+      1,
+      2,
+      4
+    ],
+    "supplement_report": "verification/supplement-visual.json",
+    "result": "No clipped or overlapping elements, missing glyphs, or unresolved-reference markers observed. Figure 1 now has two scope panels; contents continues onto S2; document ends on S19."
+  },
+  "length": {
+    "method": "APS length guide with CTAN wordcount.tex",
+    "guide_url": "https://journals.aps.org/authors/length-guide",
+    "source_sha256": "0ed87c79ccdd5c5b45854c81ba6582ce079b4d507819957c933a67ce1b36e73e",
+    "typeset_words": 2792,
+    "characters_including_spaces": 16231,
+    "displayed_equation_rows": 6,
+    "equation_word_equivalent": 96,
+    "figures": [
+      {
+        "file": "fig1.pdf",
+        "double_column": false,
+        "width_pt": 245.083,
+        "height_pt": 121.323,
+        "aspect_ratio": 2.0200868755306085,
+        "word_equivalent": 94.25423223969023
+      },
+      {
+        "file": "fig2.pdf",
+        "double_column": true,
+        "width_pt": 507.6,
+        "height_pt": 176.4,
+        "aspect_ratio": 2.877551020408163,
+        "word_equivalent": 248.51063829787236
+      },
+      {
+        "file": "fig3.pdf",
+        "double_column": true,
+        "width_pt": 507.6,
+        "height_pt": 185.669,
+        "aspect_ratio": 2.733897419601549,
+        "word_equivalent": 259.46690307328606
+      },
+      {
+        "file": "fig4.pdf",
+        "double_column": true,
+        "width_pt": 507.6,
+        "height_pt": 147.6,
+        "aspect_ratio": 3.439024390243903,
+        "word_equivalent": 214.46808510638297
+      }
+    ],
+    "figure_word_equivalent": 816.6998587172316,
+    "total_word_equivalent": 3704.6998587172316,
+    "total_rounded": 3705,
+    "prl_limit": 3750,
+    "tex_errors": []
+  },
+  "abstract_plain_unicode_characters": 595,
+  "abstract_byte_identical_to_v8": true,
+  "code_reference_number": 28,
+  "github_link_count": 3,
+  "orcid_links_verified": true,
+  "preserved_correspondence": {
+    "cover_letter.pdf": {
+      "sha256": "944dd2a7b3e05817324021048220a32ef7cbe3bb4c22a340430874d654a06236",
+      "bytes": 137391,
+      "byte_identical_to_approved_previous_package": true
+    },
+    "cover_letter.txt": {
+      "sha256": "d09ed97744413fd60a74f856dadb12cbb0d3d8e9d1edf5af3ed529bad7aa3280",
+      "bytes": 2745,
+      "byte_identical_to_approved_previous_package": true
+    },
+    "cover_letter_notes.txt": {
+      "sha256": "52b4f63f9994af9a1eb3874432535e490667ea858ba115446613dbd22deb5ff4",
+      "bytes": 3217,
+      "byte_identical_to_approved_previous_package": true
+    },
+    "referees.txt": {
+      "sha256": "7f7f90a65c51e9fd2bc32c292865b135bc5cb787e915e87df3fe3953ee988b9d",
+      "bytes": 2876,
+      "byte_identical_to_approved_previous_package": true
+    },
+    "referees.json": {
+      "sha256": "44e936610873e5892f377a09c35003ea139866dc4352edb85bb2c931172b15f6",
+      "bytes": 4125,
+      "byte_identical_to_approved_previous_package": true
+    },
+    "justification.txt": {
+      "sha256": "268db2e33705bdb66700766cce0a30e62fdbf92eff6293754cd8765a708e94fb",
+      "bytes": 721,
+      "byte_identical_to_approved_previous_package": true
+    }
+  },
+  "source_file_count": 54,
+  "package_verification": "verification/package-verification.json",
+  "arxiv_fresh_build": "verification/arxiv-fresh-build.json",
+  "scientific_preservation": "verification/scientific-preservation.json",
+  "repository_tests": {
+    "passed": 22,
+    "report": "verification/repository-tests.txt"
+  },
+  "factor_five_check": "verification/factor-five.json",
+  "new_simulation_campaign": false,
+  "prior_paths_unchanged_against_parent": [
+    "paper/source",
+    "paper/submission-admin",
+    "paper/submission-records",
+    "paper/versions/2026-10-19-prl-v8",
+    "paper/submission/prl-2026-10-19-v8",
+    "paper/submission/arxiv-2026-10-19-v8",
+    "paper/submission/zenodo-2026-10-19-v8"
+  ],
+  "scope": "Finite numeric checks, source preservation and package/render verification; not independent certification of the proof or novelty.",
+  "portal_updated": false,
+  "final_submission_made": false
+}

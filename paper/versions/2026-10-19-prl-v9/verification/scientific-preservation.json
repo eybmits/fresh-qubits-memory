@@ -1,0 +1,771 @@
+{
+  "checked_utc": "2026-10-19T08:53:27.041119+00:00",
+  "baseline_commit": "4d3584a0ad4293832c42b9cec100875ff40c21bf",
+  "baseline_version": "PRL revision 8",
+  "current_version": "PRL revision 9",
+  "current_manuscript": {
+    "path": "paper/prl-source/memory_limits_prl.tex",
+    "bytes": 96706,
+    "sha256": "0ed87c79ccdd5c5b45854c81ba6582ce079b4d507819957c933a67ce1b36e73e"
+  },
+  "baseline_manuscript_sha256": "ed294f6f98e824d7ceb78a7d25a4eaac3f0de5d825423e71d6863b178112eb9c",
+  "byte_comparisons": {
+    "simulator_and_data": {
+      "file_count": 22,
+      "all_byte_identical": true,
+      "additional_files_excluding_bytecode": [],
+      "files": [
+        {
+          "path": "paper/prl-source/sim/campaign.py",
+          "bytes": 3649,
+          "sha256": "8d296197a2881a7d29f5267dc3c33e5264f639d6cbdaf53ede7c26f60997d765",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/sim/exact_numbers.json",
+          "bytes": 86015,
+          "sha256": "b4437247cc8722f7415ebecf2fea179b5642b521f7c3a8a70538df6f2219adea",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/sim/exact_numbers.py",
+          "bytes": 5589,
+          "sha256": "1a98b3d0f3e58460d42d698c2b88d83582e7c976d90e242b5dcb9d5aa4005b96",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/sim/merge.py",
+          "bytes": 600,
+          "sha256": "2df27f2a47d2d386d2fbb1ecf5ae637ca0cb887b5625c55059317ad9873f3055",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/sim/qrc_sim.py",
+          "bytes": 6763,
+          "sha256": "5224eb19b1d2b90166e81bba360b8417fbdf0ccd74a5471be9b3db7ed43b2390",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/sim/quoted_numbers.py",
+          "bytes": 2716,
+          "sha256": "c2e7ec4bfaf791f66060efb9da627a9f8182a1f1268e0d89a7a6cf43863f435c",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/sim/rep_curve.json",
+          "bytes": 30795,
+          "sha256": "ccde0e49d5b9bd1ebc3858e8927a1fa41d817612b53f7971d9c9baa314f6b192",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/sim/rep_curve.py",
+          "bytes": 1768,
+          "sha256": "7a819a626e1f29d09abf43a8a5194247120ec0e6e196a0c6d0f8651f15678bf1",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/sim/results_cold.json",
+          "bytes": 17078,
+          "sha256": "b417161b768aad61ad2b61145785cb50074a9345caadb1b09b421629c463889c",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/sim/results_cold_haar.json",
+          "bytes": 7319,
+          "sha256": "2bdba05fbc2d2e4ab37d9acdd3bec6f4ef9db888ab9dceac6d3a3e3e50a5fff1",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/sim/results_cold_ising.json",
+          "bytes": 9759,
+          "sha256": "d3c06a018675902dbb1300272dc12bbb9b49b1ffc9e05b602b2dd05ca00ed064",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/sim/results_main.json",
+          "bytes": 100892,
+          "sha256": "1de4aebae50ff13b8cd47a008a2851e5cbba847fc5ebc867955fecfedbaca46f",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/sim/results_main_haar.json",
+          "bytes": 40337,
+          "sha256": "6c7cfb5dff2cc39661d2a3b6f13dade79b55d5f4dd8ee26d3189639330e45a5f",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/sim/results_main_ising.json",
+          "bytes": 60555,
+          "sha256": "4620fb6d5517c4954dcb3093ca14fec611fde767eecdc604dc89c14e5eb0af33",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/sim/results_noise.json",
+          "bytes": 65077,
+          "sha256": "0bb4bedca595473907009a2098674769ce107dfe879a7acbe716cbe83d4a7cbc",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/sim/results_noise_haar.json",
+          "bytes": 22622,
+          "sha256": "ddf8c7f713ef3db22bf82235668d4e477ccf507bb1e06f70918ce1a767de7e65",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/sim/results_noise_ising.json",
+          "bytes": 42455,
+          "sha256": "22f00a8deb8b468872cd5c10f87ac4bed01eefd8dd6a906fa36b76d9196cb9d8",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/sim/results_tau.json",
+          "bytes": 22580,
+          "sha256": "c4ee7005e10e65d6b26638d1eaa5f3b37a39397ec863b4ea20f503f43539b2fe",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/sim/run_all.sh",
+          "bytes": 573,
+          "sha256": "ea55d4c9bfc9fe19faa0dabd030e4052a172803ff6af754a74e38aaae5d700e9",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/sim/test_sim.py",
+          "bytes": 2647,
+          "sha256": "9c46cfdaef8eed73a019b4c0d3cdfd52cb200c7c90e295ae2257f19f98c65599",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/sim/validate_pairs.json",
+          "bytes": 5550,
+          "sha256": "25d5ce7eec2b61fcaadab702fb60cb9eb88d317a8d2dd8e366f3bfc58c899892",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/sim/validate_pairs.py",
+          "bytes": 4508,
+          "sha256": "605f447493068ce93391ff1f36c73e7b3abb49434c121f78c101f985019b2918",
+          "byte_identical_to_baseline": true
+        }
+      ]
+    },
+    "supplied_checks": {
+      "file_count": 4,
+      "all_byte_identical": true,
+      "additional_files_excluding_bytecode": [],
+      "files": [
+        {
+          "path": "paper/prl-source/checks/aps_wordcount.py",
+          "bytes": 7582,
+          "sha256": "5931e9b2fbb6e63ae3281841c6fc9d1781e2b4f6e4b294e175435205cc5056fa",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/checks/verify_constants.py",
+          "bytes": 3588,
+          "sha256": "c34b6ef9744e8ab5b019f604ffa2a0e5398c11fbca538e60658573fce9b0868a",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/checks/verify_simple_proof.py",
+          "bytes": 2530,
+          "sha256": "95ecc42e00dd3d58fe8e65fec9fb84fc8b3e7dddfda376e25bdc2526adba4588",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/prl-source/checks/wordcount.py",
+          "bytes": 3699,
+          "sha256": "20941a54257f6079a6dc73d5a2eef3b872cba28fda4cf7825b4f445f8b1e9c3f",
+          "byte_identical_to_baseline": true
+        }
+      ]
+    },
+    "independent_core": {
+      "file_count": 3,
+      "all_byte_identical": true,
+      "additional_files_excluding_bytecode": [],
+      "files": [
+        {
+          "path": "src/fresh_qubits_memory/__init__.py",
+          "bytes": 246,
+          "sha256": "18c765cbcd4e379b1cc69343d508b1fee329177a31650aae520926c689c33509",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "src/fresh_qubits_memory/majority.py",
+          "bytes": 8018,
+          "sha256": "f3a54f54603ec49bdb3e081ba3dbe52257eda1f2e71625bf2a52ad216bc1994a",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "src/fresh_qubits_memory/validation.py",
+          "bytes": 4190,
+          "sha256": "c61aa7de572c8da37d83785cb2874704153bb0659a991923cc76373cd2dd5a7a",
+          "byte_identical_to_baseline": true
+        }
+      ]
+    },
+    "repository_tests": {
+      "file_count": 4,
+      "all_byte_identical": true,
+      "additional_files_excluding_bytecode": [],
+      "files": [
+        {
+          "path": "tests/test_global_repair.py",
+          "bytes": 4935,
+          "sha256": "a4daf39d2c4f62cfda983a469fd2f0acd17d953e250b5b44094fdc6111526f9c",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "tests/test_majority.py",
+          "bytes": 4731,
+          "sha256": "6145366269f5f53a62d77725dfbbe4077597045395501cda3d46ddf7b3f229ba",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "tests/test_modular_repair.py",
+          "bytes": 4942,
+          "sha256": "c5e5adbf1120db6bea5c7e73727ace901f4932318d3901458992db28cd5bd76a",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "tests/test_validation.py",
+          "bytes": 3625,
+          "sha256": "7b5ef3d62650c4548b89367c42fc72101403d4b5fb610f871a43bc3317c765b8",
+          "byte_identical_to_baseline": true
+        }
+      ]
+    },
+    "historical_version_8": {
+      "file_count": 20,
+      "all_byte_identical": true,
+      "additional_files_excluding_bytecode": [],
+      "files": [
+        {
+          "path": "paper/versions/2026-10-19-prl-v8/integration-changes.json",
+          "bytes": 3254,
+          "sha256": "f94e50e0c0960c77f8dd5443a1b1e8f60136f0383bd8f753f801e4a05d090385",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/versions/2026-10-19-prl-v8/manuscript-original.pdf",
+          "bytes": 919309,
+          "sha256": "4f388d180900526739d8ec05acf7365f79ecc6e094a681da9fa07c58241b30ca",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/versions/2026-10-19-prl-v8/manuscript-original.tex",
+          "bytes": 95310,
+          "sha256": "1643c91d30a8500ce8c2d18591c82c98d777fa2fc602b8dfda753dc3181a8cf4",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/versions/2026-10-19-prl-v8/provenance.json",
+          "bytes": 9674,
+          "sha256": "96b2b21c94d07dafaa4db33346fdae49a8c9c47a2a0826684307bc7a87393212",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/versions/2026-10-19-prl-v8/receipt.json",
+          "bytes": 1282,
+          "sha256": "c4751d7dc9a13166ba2f01a9378e8b050c719e104419e0e0749356096ab2a8fe",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/versions/2026-10-19-prl-v8/source-final-prl-v8.zip",
+          "bytes": 1350542,
+          "sha256": "f3fb975ca1329b1c3c0c689b1be2164e2f40b55b479769b49752424cc8553786",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/versions/2026-10-19-prl-v8/source-original.zip",
+          "bytes": 1349948,
+          "sha256": "ff54033cea418ffdf7b8a6f8b025d16d7a8a8c99f8286efd15cff2c4344506db",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/versions/2026-10-19-prl-v8/submission-original.zip",
+          "bytes": 3025131,
+          "sha256": "9d8f8025861121f7dade7aab36f15f7e1a83fd7e78e47e430ba007acc6dfce99",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/versions/2026-10-19-prl-v8/verification.json",
+          "bytes": 4530,
+          "sha256": "4cb0dca0ad8acb9a87e21a128d5495feb692af06f1639add1260abc1ea25d8df",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/versions/2026-10-19-prl-v8/verification/aps-wordcount.json",
+          "bytes": 1341,
+          "sha256": "e011eb066dc7797d074a309cccc31fc51872850a1ce3fa4ece343790561a1f37",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/versions/2026-10-19-prl-v8/verification/arxiv-fresh-build.json",
+          "bytes": 1943,
+          "sha256": "022cb90f48e78af125499fe8da7a3132a6e3840bcc7ec2f00ed4830f42aa2f66",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/versions/2026-10-19-prl-v8/verification/combined-build.txt",
+          "bytes": 47910,
+          "sha256": "f3882c8b44163a5d94a9e0b88812d0e97aa6ed0633ff92ce59256150ac83d9c3",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/versions/2026-10-19-prl-v8/verification/constants-check.txt",
+          "bytes": 9541,
+          "sha256": "db500de2c2989b3814e0b5554e774c1b906419641e65211459ee460763578e5e",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/versions/2026-10-19-prl-v8/verification/fonts.txt",
+          "bytes": 13348,
+          "sha256": "3351c2d7948f56e2f9a69243cf1a1ffc52f1a1e9f61afb2a10847e4acfca7289",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/versions/2026-10-19-prl-v8/verification/numerical-checks.json",
+          "bytes": 18790,
+          "sha256": "81534d46fcdd2dd3cd72864463fa339d9aba79b5f78428429354a48c87bfbcc9",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/versions/2026-10-19-prl-v8/verification/package-verification.json",
+          "bytes": 2133,
+          "sha256": "11521b2a180f8fdb5acd109a40e5fc0ec671f59aa14891dc0553568ce38b958b",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/versions/2026-10-19-prl-v8/verification/proof-step-check.txt",
+          "bytes": 1132,
+          "sha256": "e145cddc69356017bd1f4b1df96f0dded0482c33e192d9044e32272bba0a6529",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/versions/2026-10-19-prl-v8/verification/repository-tests.txt",
+          "bytes": 3752,
+          "sha256": "031f0510bb4e776ae8be0ef5e8c424d48650a2487df1fca2244e8114d40e6470",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/versions/2026-10-19-prl-v8/verification/simulator-tests.txt",
+          "bytes": 1201,
+          "sha256": "3780a9c4c532ab7644ae918227419d6d5d21b161b653afa683affc0c95548c4d",
+          "byte_identical_to_baseline": true
+        },
+        {
+          "path": "paper/versions/2026-10-19-prl-v8/zenodo-original.zip",
+          "bytes": 1352022,
+          "sha256": "9ad524dfd75296ce23aef43bede3b58d10b4363537c85e48e1d265ff35f53656",
+          "byte_identical_to_baseline": true
+        }
+      ]
+    }
+  },
+  "mathematical_environments": {
+    "theorem": {
+      "baseline_count": 1,
+      "current_count": 1,
+      "byte_identical_ordered_blocks": true,
+      "blocks": [
+        {
+          "index": 1,
+          "sha256": "f992b64fd89c0f656eaf12b4ec0642474a2f1919b8ae13d412847876ec061dca"
+        }
+      ]
+    },
+    "lemma": {
+      "baseline_count": 3,
+      "current_count": 3,
+      "byte_identical_ordered_blocks": true,
+      "blocks": [
+        {
+          "index": 1,
+          "sha256": "ba3a837286ff161ee7da1a622fa89bd5d9d73f690bc0dc2b25b6aa33e1c73c81"
+        },
+        {
+          "index": 2,
+          "sha256": "4ff9cb66ed87250e3a5fd0de3158591d8922e2ea41921c2c0b97c4c4fa65ff27"
+        },
+        {
+          "index": 3,
+          "sha256": "533bf6362232b71a402ace7b6edd218938ecbaac5c7f5386b5536269018bd6ab"
+        }
+      ]
+    },
+    "proposition": {
+      "baseline_count": 2,
+      "current_count": 2,
+      "byte_identical_ordered_blocks": true,
+      "blocks": [
+        {
+          "index": 1,
+          "sha256": "d39f42978f9411860001aaa3d615dc6de5820448c8001734f0aa230f05d85ad9"
+        },
+        {
+          "index": 2,
+          "sha256": "f76c171aaa06de8dd6865159f108a591be5c4359022b5262f9ad2a776caccaff"
+        }
+      ]
+    },
+    "corollary": {
+      "baseline_count": 1,
+      "current_count": 1,
+      "byte_identical_ordered_blocks": true,
+      "blocks": [
+        {
+          "index": 1,
+          "sha256": "16964a789433f44d938f6df07973f11b585d7184321fb88cee15cca5209b06f8"
+        }
+      ]
+    },
+    "proof": {
+      "baseline_count": 6,
+      "current_count": 6,
+      "byte_identical_ordered_blocks": true,
+      "blocks": [
+        {
+          "index": 1,
+          "sha256": "fe71da5a5ccb079afeac1d6d0e5a17d5ad34d1e851efc28e3179bbe384556a98"
+        },
+        {
+          "index": 2,
+          "sha256": "39b5dcf562412ae11a73913599939ae31028a5d8db43d9dd1d096602b136ef1d"
+        },
+        {
+          "index": 3,
+          "sha256": "3768689a2d18860e4344d40f8d79133614e6cc116965dd942fbab3e653ed20eb"
+        },
+        {
+          "index": 4,
+          "sha256": "901083465d4f4f8b6e86f962185635e031ce4bfc7def16cfd811da7d3cec4a48"
+        },
+        {
+          "index": 5,
+          "sha256": "67b52ba36bcbfb3bdbd97b99b28f7413e91b7675b4c7388779a62e8a83460cdb"
+        },
+        {
+          "index": 6,
+          "sha256": "2ced5192c69badad8bf965c80047991c5e8c0c695ebf3ac4f7c7fee179af55d2"
+        }
+      ]
+    },
+    "equation": {
+      "baseline_count": 32,
+      "current_count": 32,
+      "byte_identical_ordered_blocks": true,
+      "blocks": [
+        {
+          "index": 1,
+          "sha256": "8b0d83f7fcacc4697419c2b7fa0efd17fce8de41292b2cc4d8915039ba6e3bc4"
+        },
+        {
+          "index": 2,
+          "sha256": "fb3aa97da980f2639b6945e46a30be77fc7dc1453c7754376ea0df1e5d585ed3"
+        },
+        {
+          "index": 3,
+          "sha256": "158f62c6feeeb14939900d8755b7bbd4c6f1999e2878a4016987f89ab6947377"
+        },
+        {
+          "index": 4,
+          "sha256": "b19c22145928b75d1d5d826eb0ec5e9338413e27856300b2373761104a2b8978"
+        },
+        {
+          "index": 5,
+          "sha256": "266cd0328b5f978353c9d6cc0cdf3dd985e2ffb3e1fa76bd21afd82dcebbc073"
+        },
+        {
+          "index": 6,
+          "sha256": "8a371d2205bfee4ea15254fd8d75cc8dee03936f60adb56a9b8e420590e3abda"
+        },
+        {
+          "index": 7,
+          "sha256": "326c23816a9f737084cade79ed941ab408767aa28f98c50d0e6eeb6a103a17df"
+        },
+        {
+          "index": 8,
+          "sha256": "878579323a9ab379d7d1e9730771434d4a3f66a5ee95b75eb16565cedd8853d0"
+        },
+        {
+          "index": 9,
+          "sha256": "5b6ccfc150a946c2b2c05124a41c7b0d4db0b11a6b067439902acb43d1b21075"
+        },
+        {
+          "index": 10,
+          "sha256": "4e2f43e58fa34eda3bfba8a30fcc80781c3f1356a23d2cbc36e5e13d42e9fdc9"
+        },
+        {
+          "index": 11,
+          "sha256": "ac16d71957cc8fb1c7cc687d36536bc75e250afec342240675377dd370daf82b"
+        },
+        {
+          "index": 12,
+          "sha256": "55a650dac4f819a6bd939e81a18af3ba77dd04de218e18dc70424af18f4e3f55"
+        },
+        {
+          "index": 13,
+          "sha256": "f470a60e985893b4181be974a4e05f911fc87c94b316b37ca67b14c9800d6869"
+        },
+        {
+          "index": 14,
+          "sha256": "3187cb0a883edc0fcba859b64a37bd4ede20f6bc4dbe3c7e7e15938e3dd4d35d"
+        },
+        {
+          "index": 15,
+          "sha256": "797408b33e137482389219fc4fe4b3a4d8707b3182fd3e8ff09d363aa78e8cca"
+        },
+        {
+          "index": 16,
+          "sha256": "691164c5249b380ca25c7c84706141e8125bc871e03f976b1233a9ede9f10963"
+        },
+        {
+          "index": 17,
+          "sha256": "cab38a133c66dd8a98f80d8331ec967c8679ac4cb18048bfa097c459091c049b"
+        },
+        {
+          "index": 18,
+          "sha256": "15343e0583cbfe0528cda2c3ff1063d404c00567b510382a75082e643586644e"
+        },
+        {
+          "index": 19,
+          "sha256": "b6201464c760ab7d3d45da9efbd6266d27c52d595b364a2f3ef398d9cb349a32"
+        },
+        {
+          "index": 20,
+          "sha256": "85b843141df9e453528b1e23ce361e65cc5e2aa0301d38762df15950a3770d97"
+        },
+        {
+          "index": 21,
+          "sha256": "f9638b6f9cda9b09f0b3e2777f8473a470048d74d087bf52c1389da87d0e99f9"
+        },
+        {
+          "index": 22,
+          "sha256": "98ffe1e86604ad006725264a474112fd79af71564d7ac91d2e3e5ee2dd69df3e"
+        },
+        {
+          "index": 23,
+          "sha256": "ad91e649b0a1ad409f83e2ed3b0c0fb740245b45d1fe822862cd2db1351c6e07"
+        },
+        {
+          "index": 24,
+          "sha256": "53581e6af7e33b78b7503b193adc96453944494933678327b881dd161bba8b3b"
+        },
+        {
+          "index": 25,
+          "sha256": "eed8a7a496f04b11dde999c7cd93a169b48af31ec04f5a8deb007ee73c0f25f6"
+        },
+        {
+          "index": 26,
+          "sha256": "e53c795841ed4525a91bba0cc4b1c485ab02503842f97401baf16f8a3634f1c6"
+        },
+        {
+          "index": 27,
+          "sha256": "9e85b1ab78bd8b224e10adac3ad4ac766100a218cc2797bdea01f40db169c3ca"
+        },
+        {
+          "index": 28,
+          "sha256": "2d99f7795e05bd2b02f7e8f54837993b52eef3259fc95190f64a3850e2cfc915"
+        },
+        {
+          "index": 29,
+          "sha256": "07e8be9998d9567588b2bf0f2cd3a5913bdb3e038d74a139de9f5bf3f1152e24"
+        },
+        {
+          "index": 30,
+          "sha256": "9cfde68403180dd1e0ee2b3748e144612a58def069c018ed822fc0f67f915c4d"
+        },
+        {
+          "index": 31,
+          "sha256": "4c8ab3f9968fcdbd941b0ddb8c30d5101458c99ac907d98326374b4657bdf19a"
+        },
+        {
+          "index": 32,
+          "sha256": "de227ad4cd70bba8fe45a43841a4cd554bdade9e9d8888b738431fb7da256487"
+        }
+      ]
+    },
+    "tabular": {
+      "baseline_count": 3,
+      "current_count": 3,
+      "byte_identical_ordered_blocks": true,
+      "blocks": [
+        {
+          "index": 1,
+          "sha256": "87281291b3de22013bd98a8947f848854e4956d1fb189d5a3e8582aeaf67efcb"
+        },
+        {
+          "index": 2,
+          "sha256": "9a91efb302e558cd227925a926c29c7e3a275c91ed059d56ef9b62fba23ad204"
+        },
+        {
+          "index": 3,
+          "sha256": "d961c2d70db206fe00ebd9121cc496782d7e6274669108466e1750353d336eac"
+        }
+      ]
+    },
+    "display_brackets": {
+      "baseline_count": 28,
+      "current_count": 28,
+      "byte_identical_ordered_blocks": true,
+      "blocks": [
+        {
+          "index": 1,
+          "sha256": "51172e0ee1815f977d6eb5b20b27015a4603605dfea73571776b4cc88048d1e9"
+        },
+        {
+          "index": 2,
+          "sha256": "60d4249c8e36d30a7eb9daae6bba35ca416eba762d6130a6826c75ddf8151f16"
+        },
+        {
+          "index": 3,
+          "sha256": "3f7fe4cf3c8e91f7c996dd7ccf9d88ead61e17b766f9c248303cd1b904fa45d9"
+        },
+        {
+          "index": 4,
+          "sha256": "4846ca3942a5b915e03597f4b7f4cd4dc6056e32e778abaefa5992c29adff88a"
+        },
+        {
+          "index": 5,
+          "sha256": "fb73a04795f1076d77b00c9232ce450e23719fec2ecf35f53a7e6de1bd6d2432"
+        },
+        {
+          "index": 6,
+          "sha256": "9db31182321946109d39e3cfa758777f427a7cfddc30b5f618c70b7641b829b8"
+        },
+        {
+          "index": 7,
+          "sha256": "3ba621bd84ef50f0bff65ac27752005f325262897eee97383fae3e5bd456b791"
+        },
+        {
+          "index": 8,
+          "sha256": "75f6bb094c60bed0cc8f9cbda623d64f1aae3651dc3622d04a6545ca7433b66b"
+        },
+        {
+          "index": 9,
+          "sha256": "ef591d8612517799db86dcde43e3510c08eb9ae57391c5b9dbb7d70c1e418dc6"
+        },
+        {
+          "index": 10,
+          "sha256": "578db08538c637ab56deb26a6ad17623c7e6f526e2743f84bbb6e8c145b005f9"
+        },
+        {
+          "index": 11,
+          "sha256": "63b80326686dfc383ae983a7de4112d86c0d7845597d6b3033d134f5af834e2b"
+        },
+        {
+          "index": 12,
+          "sha256": "83e3a2f0bd4cd9e475e59da683582ad0b85e5b5e51d10d4c03470245abd52b43"
+        },
+        {
+          "index": 13,
+          "sha256": "73bb1cec14030b137d6a4838c66a00eeccaf2492256d43ce685c9a8f0c009637"
+        },
+        {
+          "index": 14,
+          "sha256": "1518ffec9e1971f1f79873037a8145c6e1c6e285e0f5c1e9f2f89e5cb2ae508f"
+        },
+        {
+          "index": 15,
+          "sha256": "eaab476311c196e215e70801500449fa24e18b6cd101b780f8f463fc20b3c986"
+        },
+        {
+          "index": 16,
+          "sha256": "f75fab629742e56aa53c89670c14905ac2d530a4f5f3ed800a5f5784571ee288"
+        },
+        {
+          "index": 17,
+          "sha256": "3d131ca5446467c3d6590331e07345c04c5259ee96916c8637a02169d6502ecb"
+        },
+        {
+          "index": 18,
+          "sha256": "d700ae16a866b8a1278bd9246a7f48f634209edc31f95abe00830a6dfd247fad"
+        },
+        {
+          "index": 19,
+          "sha256": "eac85c75018575923c82f85a9eef859b73c4fe6f0b98557feaba6aac3b8d1a97"
+        },
+        {
+          "index": 20,
+          "sha256": "eaca7ea672238eef7ca17aedd0cf3fcce519cce4e78353913d7c0d5373af3505"
+        },
+        {
+          "index": 21,
+          "sha256": "bc3642497f43775e7632f68814e41b92d277538e75a841c4c22a8cd370e318d6"
+        },
+        {
+          "index": 22,
+          "sha256": "f0b6f4fbdc3325e5c1a4991aa8e05ca644927a79075361abde36e4dba85e1672"
+        },
+        {
+          "index": 23,
+          "sha256": "5f5ad82db161d4f9f69cecb1c567957a53bd464bac2c58039a8fe3f4219705ad"
+        },
+        {
+          "index": 24,
+          "sha256": "f48971d573ec009a8d5dff58dd61d8e82e66625704e29129d145223826fbe763"
+        },
+        {
+          "index": 25,
+          "sha256": "a8fb69409822c1b5b7443031f4cc392c1b7fa9916ff5a244898a04164af56fa0"
+        },
+        {
+          "index": 26,
+          "sha256": "363b9a3887695faa7606b4155dffa8b3a54bc7053f89d3c6f4bd421d1c2cee18"
+        },
+        {
+          "index": 27,
+          "sha256": "f76691048526f2ee29ae87e4489e0e4f8fb08e9c62fcf2ac40c13645ea560848"
+        },
+        {
+          "index": 28,
+          "sha256": "da26d0862ae71bb14df9976ff9863bcab7e06a1e2c6068113a65e411d855a97c"
+        }
+      ]
+    }
+  },
+  "all_compared_mathematical_environments_byte_identical": true,
+  "acknowledgment_byte_identical": true,
+  "allowed_editorial_changes": [
+    "Removal of Figure 1(c) and corresponding caption update.",
+    "Reframed main-text motivation, theorem interpretation, prior-work comparison and conclusion under the same noise/model restrictions.",
+    "Moved finite-k upper-bound gap example from the Letter to SM III G; retained full-state 316 versus single-qubit 309 distinction. Main-text standard-reservoir comparison now rounds 316 to over 300.",
+    "Corrected rounded decimal equality signs to approximation signs in prose.",
+    "Qualified Fig. 3(a) as the optimum over reservoir sizes.",
+    "Added a bounded k=5,...,15 single-qubit memory growth statement based on the existing repetition construction.",
+    "Technical hyperlink fix: define supplemental theHequation as S plus the equation counter, so SM equation destinations cannot collide with main-text equation destinations; visible numbering and all mathematical content are unchanged."
+  ],
+  "repository_test_evidence": {
+    "path": "paper/versions/2026-10-19-prl-v9/verification/repository-tests.txt",
+    "bytes": 3780,
+    "sha256": "5c40562a8fc4dd6920f652e350c057282d00f9364ae463091d71324eb98771bc"
+  },
+  "figure_build_evidence": {
+    "path": "paper/versions/2026-10-19-prl-v9/verification/figure1-build.json",
+    "bytes": 2749,
+    "sha256": "a04c22488746b49c21cd4290db34491570cbeac507598a09e6970443a565d04a"
+  },
+  "previous_numerical_evidence": {
+    "path": "paper/versions/2026-10-19-prl-v8/verification/numerical-checks.json",
+    "bytes": 18790,
+    "sha256": "81534d46fcdd2dd3cd72864463fa339d9aba79b5f78428429354a48c87bfbcc9"
+  },
+  "new_simulator_or_proof_diagnostic_campaign_run": false,
+  "comparison_method": "Read baseline bytes with git show at the exact baseline commit; compare complete file bytes and ordered exact theorem/lemma/proposition/corollary/proof/equation/tabular environments plus standalone display-bracket blocks. TeX linebreaks with optional spacing are excluded from the display-bracket parser.",
+  "scope_limits": [
+    "Byte equality establishes preservation of the checked code, datasets, theorem/proof blocks and equations, not independent correctness of their contents.",
+    "Only the 22-test repository regression suite was rerun in revision 9; unchanged simulator/proof diagnostics remain historical revision-8 evidence.",
+    "Prose relocation and rounded-constant notation changes lie outside the identical mathematical environments.",
+    "Source hash fixes the exact manuscript snapshot checked; later edits require comparing against this record."
+  ],
+  "anchor_only_followup": {
+    "previous_checked_source_sha256": "f3121025a6705d4f60b920fbf2b9c9446e0e8753bfa0e29ce30b67c95196d36e",
+    "inserted_line": "\\renewcommand{\\theHequation}{S\\arabic{equation}}",
+    "only_source_change_since_prior_preservation_check": true,
+    "all_mathematical_environments_recompared_identical_to_baseline": true,
+    "repository_tests_repeated": false,
+    "reason_no_test_repeat": "Only TeX PDF destination names changed; all code and mathematical environments remain unchanged."
+  }
+}

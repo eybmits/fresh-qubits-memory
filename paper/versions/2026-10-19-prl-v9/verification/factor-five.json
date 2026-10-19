@@ -1,0 +1,229 @@
+{
+  "asymptotic_two_qubit_factor": "5.26315789473684210526315789474",
+  "decimal_working_precision_digits": 100,
+  "finite_range_bounds": {
+    "all_five_ratios_exceed": 5,
+    "depth_at_k15_exceeds": 2000000,
+    "depth_at_k5_exceeds": 300,
+    "interpretation": "Computed finite-range extrema at stated precision, not rigorous interval-arithmetic certificates",
+    "maximum_continuous_ratio": "6.29864224559867534377700653255",
+    "maximum_integer_ratio": "6.28155339805825242718446601942",
+    "minimum_continuous_ratio": "5.65686844683146758725495491339",
+    "minimum_integer_ratio": "5.65686150640885146058898002439"
+  },
+  "formulas": {
+    "asymptotic_two_qubit_factor": "1/(1-q**2), from p_(r+2)/p_r -> 1-q**2",
+    "continuous_depth": "ln(q/epsilon)/(-ln(lambda_r))",
+    "continuous_half_life": "ln(2)/(-ln(lambda_r))",
+    "integer_depth": "ceil(continuous_depth)",
+    "integer_half_life": "floor(continuous_half_life)",
+    "lambda_r": "1 - 2*p_r",
+    "n": "2*r + 2",
+    "p_r": "sum(comb(r,j)*p**j*(1-p)**(r-j), j=(r+1)/2,...,r)",
+    "r": "k - 2 (odd)",
+    "response": "q*lambda_r**t"
+  },
+  "method": "Exact Fraction binomial probabilities; Decimal logarithms; no stochastic simulation",
+  "parameters": {
+    "bit_flip_probability": "0.05",
+    "epsilon": "0.01",
+    "k_values": [
+      5,
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "q": "0.9"
+  },
+  "reported_transcendental_significant_digits": 30,
+  "reproduce": "python3 paper/versions/2026-10-19-prl-v9/verification/check_factor_five.py",
+  "revision": "2026-10-19-prl-v9",
+  "rows": [
+    {
+      "continuous_half_life": "47.4558365599946082682340587181",
+      "continuous_single_qubit_depth": "308.076319510915976622077114995",
+      "integer_half_life_floor": 47,
+      "integer_single_qubit_depth_ceil": 309,
+      "k": 5,
+      "lambda_exact": {
+        "denominator": 2000,
+        "numerator": 1971
+      },
+      "majority_error_exact": {
+        "decimal": "0.00725",
+        "denominator": 4000,
+        "numerator": 29
+      },
+      "n": 8,
+      "r": 3,
+      "saved_continuous_depth": "308.0763195109169",
+      "saved_relative_difference": "2.99723758174891931487768572512e-15"
+    },
+    {
+      "continuous_half_life": "298.907336957008155877305540987",
+      "continuous_single_qubit_depth": "1940.46252094001080548999984349",
+      "integer_half_life_floor": 298,
+      "integer_single_qubit_depth_ceil": 1941,
+      "k": 7,
+      "lambda_exact": {
+        "denominator": 800000,
+        "numerator": 798147
+      },
+      "majority_error_exact": {
+        "decimal": "0.001158125",
+        "denominator": 1600000,
+        "numerator": 1853
+      },
+      "n": 12,
+      "r": 5,
+      "saved_continuous_depth": "1940.4625209399942",
+      "saved_relative_difference": "8.55749071195631853840412037615e-15"
+    },
+    {
+      "continuous_half_life": "1790.00853988208472295589070017",
+      "continuous_single_qubit_depth": "11620.4724820900717313309148690",
+      "integer_half_life_floor": 1790,
+      "integer_single_qubit_depth_ceil": 11621,
+      "k": 9,
+      "lambda_exact": {
+        "denominator": 32000000,
+        "numerator": 31987611
+      },
+      "majority_error_exact": {
+        "decimal": "0.000193578125",
+        "denominator": 64000000,
+        "numerator": 12389
+      },
+      "n": 16,
+      "r": 7,
+      "saved_continuous_depth": "11620.472482091129",
+      "saved_relative_difference": "9.09832772044884533276138243618e-14"
+    },
+    {
+      "continuous_half_life": "10431.6391709589217893177903003",
+      "continuous_single_qubit_depth": "67720.6690517835973334287806148",
+      "integer_half_life_floor": 10431,
+      "integer_single_qubit_depth_ceil": 67721,
+      "k": 11,
+      "lambda_exact": {
+        "denominator": 25600000000,
+        "numerator": 25598299023
+      },
+      "majority_error_exact": {
+        "decimal": "0.00003322220703125",
+        "denominator": 51200000000,
+        "numerator": 1700977
+      },
+      "n": 20,
+      "r": 9,
+      "saved_continuous_depth": "67720.66905183473",
+      "saved_relative_difference": "7.55052590105393758969621021449e-13"
+    },
+    {
+      "continuous_half_life": "59739.8665624465305978772131921",
+      "continuous_single_qubit_depth": "387822.437717740110227166682308",
+      "integer_half_life_floor": 59739,
+      "integer_single_qubit_depth_ceil": 387823,
+      "k": 13,
+      "lambda_exact": {
+        "denominator": 25600000000000,
+        "numerator": 25599702971133
+      },
+      "majority_error_exact": {
+        "decimal": "0.00000580134505859375",
+        "denominator": 51200000000000,
+        "numerator": 297028867
+      },
+      "n": 24,
+      "r": 11,
+      "saved_continuous_depth": "387822.43771596596",
+      "saved_relative_difference": "4.57464564868193955402420912077e-12"
+    },
+    {
+      "continuous_half_life": "337940.566175026030214915496007",
+      "continuous_single_qubit_depth": "2193860.51089874607054512548969",
+      "integer_half_life_floor": 337940,
+      "integer_single_qubit_depth_ceil": 2193861,
+      "k": 15,
+      "lambda_exact": {
+        "denominator": 10240000000000000,
+        "numerator": 10239978996839799
+      },
+      "majority_error_exact": {
+        "decimal": "0.000001025544931689453125",
+        "denominator": 20480000000000000,
+        "numerator": 21003160201
+      },
+      "n": 28,
+      "r": 13,
+      "saved_continuous_depth": "2193860.5108789485",
+      "saved_relative_difference": "9.02407899079013649757739489331e-12"
+    }
+  ],
+  "saved_dataset_check": {
+    "all_six_values_agree_within_tolerance": true,
+    "path": "paper/prl-source/sim/exact_numbers.json",
+    "relative_tolerance": "1e-9",
+    "sha256": "b4437247cc8722f7415ebecf2fea179b5642b521f7c3a8a70538df6f2219adea"
+  },
+  "scope": {
+    "citation": "Main Figure 4(b) and Supplemental Material, The error-correcting reservoir (exact response and lower-bound formula)",
+    "not_established_by_this_check": [
+      "A universal claim for every reservoir, every k, or every noise strength",
+      "The same finite ratios for full-state distinguishability or optimized memory depth",
+      "A new numerical campaign, hardware result, or proof of the universal theorem"
+    ],
+    "quantity": "Exact single-qubit threshold depth, which lower-bounds the full-state memory depth; not a ratio statement about the optimum over all reservoirs",
+    "supported_claim": "At q=0.9 and epsilon=0.01, for odd k=5,...,15 in the explicit repetition reservoir, every two additional input qubits increase the single-qubit memory depth by more than a factor of five.",
+    "table_S1_qualification": "Table S1 reports integer half-lives and only selected k values; it is not a table of memory depths at epsilon=0.01."
+  },
+  "successive_ratios": [
+    {
+      "continuous_and_integer_depth_ratios_exceed_five": true,
+      "continuous_depth_ratio": "6.29864224559867534377700653255",
+      "continuous_half_life_ratio": "6.29864224559867534377700653255",
+      "from_k": 5,
+      "integer_depth_ratio": "6.28155339805825242718446601942",
+      "integer_half_life_ratio": "6.34042553191489361702127659574",
+      "to_k": 7
+    },
+    {
+      "continuous_and_integer_depth_ratios_exceed_five": true,
+      "continuous_depth_ratio": "5.98850653217502540700396706029",
+      "continuous_half_life_ratio": "5.98850653217502540700396706029",
+      "from_k": 7,
+      "integer_depth_ratio": "5.98712004121586810922205048944",
+      "integer_half_life_ratio": "6.00671140939597315436241610738",
+      "to_k": 9
+    },
+    {
+      "continuous_and_integer_depth_ratios_exceed_five": true,
+      "continuous_depth_ratio": "5.82770357712712201425903905532",
+      "continuous_half_life_ratio": "5.82770357712712201425903905532",
+      "from_k": 9,
+      "integer_depth_ratio": "5.82746751570432837105240512865",
+      "integer_half_life_ratio": "5.82737430167597765363128491620",
+      "to_k": 11
+    },
+    {
+      "continuous_and_integer_depth_ratios_exceed_five": true,
+      "continuous_depth_ratio": "5.72679572053823075232779823848",
+      "continuous_half_life_ratio": "5.72679572053823075232779823848",
+      "from_k": 11,
+      "integer_depth_ratio": "5.72677603697523663265456800697",
+      "integer_half_life_ratio": "5.72706356054069600230083405234",
+      "to_k": 13
+    },
+    {
+      "continuous_and_integer_depth_ratios_exceed_five": true,
+      "continuous_depth_ratio": "5.65686844683146758725495491339",
+      "continuous_half_life_ratio": "5.65686844683146758725495491339",
+      "from_k": 13,
+      "integer_depth_ratio": "5.65686150640885146058898002439",
+      "integer_half_life_ratio": "5.65694102679991295468621838330",
+      "to_k": 15
+    }
+  ]
+}

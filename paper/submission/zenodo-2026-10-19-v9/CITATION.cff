@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this research repository, cite the manuscript below; historical manuscript citations are in paper/manuscript.bib."
+type: software
+title: "Fresh Qubits Memory: Research and Reproduction Workspace"
+authors:
+  - family-names: Baumann
+    given-names: Markus
+    affiliation: "Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München"
+version: 0.1.0
+repository-code: "https://github.com/eybmits/fresh-qubits-memory"
+abstract: "Research workspace for The Fundamental Memory Ceiling of Noisy Quantum Reservoirs, with editable Letter and Supplemental Material sources, supplied numerical campaigns, and independent historical validation."
+keywords:
+  - quantum reservoir computing
+  - memory
+  - depolarizing noise
+  - fresh qubits
+  - reproducibility
+preferred-citation:
+  type: unpublished
+  title: "The Fundamental Memory Ceiling of Noisy Quantum Reservoirs"
+  authors:
+    - family-names: Baumann
+      given-names: Markus
+      orcid: "https://orcid.org/0009-0007-3575-1006"
+      affiliation: "Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München"
+    - family-names: Stein
+      given-names: Jonas
+      orcid: "https://orcid.org/0000-0001-5727-9151"
+      affiliation: "Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München"
+    - family-names: Linnhoff-Popien
+      given-names: Claudia
+      orcid: "https://orcid.org/0000-0001-6284-9286"
+      affiliation: "Quantum Applications and Research Laboratory (QAR-Lab), Ludwig-Maximilians-Universität München"
+  year: 2026
+  notes: "PRL-format manuscript revision 9 dated 19 October 2026; locally prepared, not uploaded or submitted. Revision 7 was last observed on 18 October 2026 in arXiv draft 8248308, compiled with saved metadata and without the final Submit action; that historical record does not establish the current portal status. No public arXiv identifier or journal acceptance is assigned here. PRL, arXiv, and Zenodo packages for revision 9 are local preparations. The linked repository remains private pending a separate public release."
+  url: "https://github.com/eybmits/fresh-qubits-memory"
