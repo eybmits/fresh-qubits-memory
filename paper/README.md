@@ -14,7 +14,7 @@ The author-provided [APS confirmation](submission-records/prl-2026-10-19/README.
 
 No manuscript text was changed during this synchronization. It preserves the final user-directed edits after revision 10 and all intermediate dated versions. Three authors, ORCIDs, shared QAR-Lab/LMU affiliation, cover letter, and local approved significance statement remain intact. The complete arXiv source compiles to the exact same PDF bytes. The local length estimate is 3743.41 word equivalents.
 
-GitHub remains private. No public arXiv identifier or journal acceptance is assigned. The full arXiv document is uploaded and compiled successfully in draft 8251813, with saved metadata; the final Submit action remains open. The earlier preparation accounts below are historical and retain the status they recorded at the time.
+GitHub is public as of 19 October 2026. No public arXiv identifier or journal acceptance is assigned. The full arXiv document is uploaded and compiled successfully in draft 8251813, with saved metadata; the final Submit action remains open. The earlier preparation accounts below are historical and retain the status they recorded at the time.
 
 ## Historical preparation: 19 October 2026, PRL revision 10
 

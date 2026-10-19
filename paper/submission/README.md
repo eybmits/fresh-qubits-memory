@@ -22,4 +22,4 @@ The main file is `memory_limits_prl.tex`. One compilation produces both parts. T
 
 [PRL revision 10](prl-2026-10-19-v10/README.md), [arXiv revision 10](arxiv-2026-10-19-v10/README.md), and the [revision-7 arXiv upload](../submission-records/arxiv-2026-10-18-v7/README.md) remain unchanged as historical evidence. The earlier arXiv draft was no longer listed when the account was inspected on 19 October.
 
-The [local Zenodo revision-10 preparation](zenodo-2026-10-19-v10/README.md) is historical and has not been updated or published in this synchronization. No DOI, public release, or software license is assigned. GitHub remains private.
+The [local Zenodo revision-10 preparation](zenodo-2026-10-19-v10/README.md) is historical and has not been updated or published in this synchronization. No Zenodo DOI, Zenodo publication, or software license is assigned. GitHub is public as of 19 October 2026.
